@@ -218,7 +218,7 @@ impl CargoToml<IconLibrary> {
             readme = "./README.md"
             repository = "https://github.com/Carlosted/icondata"
             license = "MIT"
-            keywords = ["leptos", "icons"]
+            keywords = ["icons"]
             categories = ["web-programming"]
 
             [dependencies]
