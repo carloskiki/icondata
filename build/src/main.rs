@@ -12,6 +12,7 @@ use crate::main_library::MainLibrary;
 use crate::package::Package;
 
 mod feature;
+mod fs;
 mod git;
 mod icon;
 mod icon_library;
@@ -59,9 +60,9 @@ async fn main() -> Result<()> {
                 })?;
 
                 // Generate the library for that package.
-                let lib_name = format!("leptos-icons-{}", package.meta.short_name);
-                let lib_path = path::library_crate(&lib_name, "");
-                let mut lib = IconLibrary::new(package, lib_name, lib_path);
+                let lib_path =
+                    path::library_crate(format!("icondata_{}", package.meta.short_name), "");
+                let mut lib = IconLibrary::new(package, lib_path);
 
                 lib.generate().await?;
 
@@ -86,9 +87,8 @@ async fn main() -> Result<()> {
 
     let num_libs = libs.len();
 
-    let lib_name = "leptos-icons".to_owned();
-    let lib_path = path::library_crate(&lib_name, "");
-    let mut main_lib = MainLibrary::new(lib_name, lib_path);
+    let lib_path = path::library_crate("icondata", "");
+    let mut main_lib = MainLibrary::new(lib_path);
     main_lib.generate(libs).await?;
 
     let end = time::OffsetDateTime::now_utc();
@@ -122,21 +122,21 @@ fn init_tracing(level: tracing::level_filters::LevelFilter) {
     Registry::default().with(fmt_layer_filtered).init();
 }
 
-/// Simply tests that from the assumed repository root, both the "build" and "leptos-icons" directories are visible.
+/// Simply tests that from the assumed repository root, both the "build" and "icondata" directories are visible.
 /// This may prevent unwanted file operations in wrong directories.
 fn assert_paths() {
     let build_crate_root = path::build_crate("");
-    let leptos_icons_crate_root = path::library_crate("leptos-icons", "");
+    let icondata_crate_root = path::library_crate("icondata", "");
     info!(?build_crate_root, "Using");
-    info!(?leptos_icons_crate_root, "Using");
+    info!(?icondata_crate_root, "Using");
 
     assert_eq!(
         Some("build"),
         build_crate_root.file_name().and_then(|it| it.to_str())
     );
     assert_eq!(
-        Some("leptos-icons"),
-        leptos_icons_crate_root
+        Some("icondata"),
+        icondata_crate_root
             .file_name()
             .and_then(|it| it.to_str())
     );

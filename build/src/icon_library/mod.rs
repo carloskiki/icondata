@@ -5,42 +5,37 @@ use heck::ToUpperCamelCase;
 use tracing::{error, info, instrument, trace};
 
 use crate::{
+    fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme, src_dir::SrcDir},
     icon::SvgIcon,
-    icon_library::{
-        cargo_toml::CargoToml, icons_md::Icons, lib_rs::LibRs, readme_md::Readme, src_dir::SrcDir,
-    },
+    icon_library::icons_md::Icons,
     package::{Downloaded, Package},
 };
 
-mod cargo_toml;
 mod icons_md;
-mod lib_rs;
-mod readme_md;
-mod src_dir;
 
 #[derive(Debug)]
 pub(crate) struct IconLibrary {
     pub package: Package<Downloaded>,
-    pub name: String,
     pub path: PathBuf,
-    pub cargo_toml: CargoToml,
-    pub readme_md: Readme,
+    pub cargo_toml: CargoToml<IconLibrary>,
+    pub readme_md: Readme<IconLibrary>,
+    pub src_dir: SrcDir<IconLibrary>,
     pub icons_md: Icons,
-    pub src_dir: SrcDir,
     pub icons: Vec<SvgIcon>,
 }
 
 impl IconLibrary {
-    pub fn new(package: Package<Downloaded>, name: String, root: PathBuf) -> Self {
+    pub fn new(package: Package<Downloaded>, root: PathBuf) -> Self {
         Self {
             package,
-            name,
             path: root.clone(),
             cargo_toml: CargoToml {
                 path: root.join("Cargo.toml"),
+                _phantom: std::marker::PhantomData,
             },
             readme_md: Readme {
                 path: root.join("README.md"),
+                _phantom: std::marker::PhantomData,
             },
             icons_md: Icons {
                 path: root.join("ICONS.md"),
@@ -49,6 +44,7 @@ impl IconLibrary {
                 path: root.join("src"),
                 lib_rs: LibRs {
                     path: root.join("src").join("lib.rs"),
+                    _phantom: std::marker::PhantomData,
                 },
             },
             icons: Vec::new(),
@@ -64,7 +60,7 @@ impl IconLibrary {
 
         trace!("Resetting library directory.");
         self.src_dir.reset().await?;
-        self.cargo_toml.reset(&self.name, &self.package.meta.package_name).await?;
+        self.cargo_toml.reset().await?;
         self.readme_md.reset().await?;
         self.icons_md.reset().await?;
 
@@ -83,18 +79,16 @@ impl IconLibrary {
         self.icons
             .sort_by(|a, b| a.feature.name.cmp(&b.feature.name));
 
-        let enum_code = LibRs::build_enum(&self.enum_name(), &self.icons)?;
-        self.src_dir.lib_rs.write_enum(enum_code).await?;
+        self.src_dir
+            .lib_rs
+            .write_lib_rs(&self.enum_name(), &self.icons)
+            .await?;
 
-        let component_code = LibRs::build_icon_component(&self.enum_name(), &self.icons)?;
-        self.src_dir.lib_rs.write_component(component_code).await?;
-
-        self.cargo_toml.append_features(&self.icons).await?;
+        trace!("Writing crate manifest.");
+        self.cargo_toml.write_cargo_toml(&self).await?;
 
         trace!("Writing README.md.");
-        self.readme_md.write_usage().await?;
-        self.readme_md.write_package_table().await?;
-        self.readme_md.write_contribution().await?;
+        self.readme_md.write_readme(&self.package.meta).await?;
 
         trace!("Writing ICONS.md.");
         self.icons_md

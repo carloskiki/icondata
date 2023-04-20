@@ -1,13 +1,13 @@
 # Leptos-Icons
 
-This is the parent for the:
+This is the parent for:
 
 | Crate             | Path               | Type | Description                                      |
 | ---               | ---                | ---  | ---                                              |
-| builder           | /build             | bin  | Generates the `leptos-icons` library.            |
-| leptos-icons      | /leptos-icons      | lib  | Actual library published on crates.io.           |
-| leptos-icons-core | /leptos-icons-core | lib  | Helpers and utility functions                    |
-| leptos-icons-\*   | /leptos-icons-\*   | lib  | A library containing all icons from package "\*" |
+| builder           | /build             | bin  | Generates the `icondata` library and all of the sub libraries.            |
+| icondata      | /icondata      | lib  | Actual library published on crates.io.           |
+| icondata_core | /icondata_core | lib  | Helpers and utility functions                    |
+| icondata_*   | /icondata_*   | lib  | A library containing all icons from package "*" |
 
 ## Executing commands
 
