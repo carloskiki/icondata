@@ -222,7 +222,7 @@ impl CargoToml<IconLibrary> {
             categories = ["web-programming"]
 
             [dependencies]
-            icondata_core = {{ path = "../icondata_core" }}
+            icondata_core = "0.0.1"
             serde = {{ version = "1", features = ["derive"], optional = true }}
 
             [features]
