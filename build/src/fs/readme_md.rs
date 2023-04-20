@@ -100,12 +100,7 @@ impl Readme<MainLibrary> {
         let header = indoc! {r#"
             # Icondata
 
-            Add icons from popular icon libraries into your leptos projects. Every icon is packaged as its own cargo feature to reduce build times.
-
-            - This crate is inspired by other frameworks' icon libraries such as [solidjs-icons](https://github.com/x64Bits/solid-icons),
-            [yew_icons](https://github.com/finnbear/yew_icons),
-            [dioxus-free-icons](https://github.com/nissy-dev/dioxus-free-icons),
-            etc.
+            This crate provides SVG icon data from popular and free icon libraries. Every icon is packaged as its own cargo feature to reduce build times.
 
             ## Table of Contents
 
@@ -125,14 +120,15 @@ impl Readme<MainLibrary> {
         let usage = indoc::indoc! {r#"
             ## Usage
 
-            To use this crate, it is currently required to use Git linking, as it is not yet published to crates.io.
-            Use icons by specifying their feature names. For example `BsFolder` for the Bootstrap-Icons `Folder` icon.
+            If you are using this crate in one of your rust project, and use icons by specifying their feature names.
 
             ```toml
             [dependencies]
             # ...
             icondata = { git = "https://github.com/Carlosted/icondata.git" features = ["BsFolder"] }
             ```
+
+            If you are creating a web framework library based on this crate, please follow this guide (TODO).
 
         "#};
 
@@ -295,8 +291,6 @@ impl Readme<IconLibrary> {
             # Icondata_{short_name}
 
             Icon data from the {} library. Every icon is packaged as its own cargo feature to reduce build times.
-
-            This crate cannot be used on its own. It is only a crate containing data for its icon library.
 
             "#,
             package_meta.package_name
