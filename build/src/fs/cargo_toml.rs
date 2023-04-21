@@ -87,16 +87,9 @@ impl CargoToml<MainLibrary> {
     async fn write_package_section(&self) -> Result<()> {
         let package_section = formatdoc! {r#"
                 [package]
-                name = "icondata"
-                version = "0.0.1"
-                authors = ["Charles Edward Gagnon"]
-                edition = "2021"
-                description = "Icon data from free icon libraries."
-                readme = "./README.md"
-                repository = "https://github.com/Carlosted/icondata"
-                license = "MIT"
-                keywords = ["leptos", "icons"]
-                categories = ["web-programming"]
+                # ---------------
+                # Package section
+                # ---------------
 
                 "#};
 
@@ -125,7 +118,7 @@ impl CargoToml<MainLibrary> {
                 // Example: icondata_ai = { path = "../icondata_ai" }
                 .write_all(
                     format!(
-                        "icondata_{short_name} = {{  path = \"../icondata_{short_name}\", optional = true }}\n",
+                        "icondata_{short_name} = {{  version = \"0.0.1\", optional = true }}\n",
                         short_name = &lib.meta.short_name
                     )
                     .as_bytes(),

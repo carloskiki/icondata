@@ -1,3 +1,13 @@
+//! This crate provides a collection of icons in the form of SVG data
+//! and an enum to select them.
+//!
+//! ## Usage
+//!
+//! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
+//! identical.
+//!
+//! The enum implements [Into<icondata_core::IconData>].
+//!
 #[non_exhaustive]
 #[cfg_attr(
     feature = "serde",

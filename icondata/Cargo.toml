@@ -3,36 +3,29 @@
 # ------------------------------------------------------------------------------------------
 
 [package]
-name = "icondata"
-version = "0.0.1"
-authors = ["Charles Edward Gagnon"]
-edition = "2021"
-description = "Icon data from free icon libraries."
-readme = "./README.md"
-repository = "https://github.com/Carlosted/icondata"
-license = "MIT"
-keywords = ["leptos", "icons"]
-categories = ["web-programming"]
+# ---------------
+# Package section
+# ---------------
 
 [dependencies]
 icondata_core = { path = "../icondata_core" }
 
-icondata_ai = {  path = "../icondata_ai", optional = true }
-icondata_fa = {  path = "../icondata_fa", optional = true }
-icondata_wi = {  path = "../icondata_wi", optional = true }
-icondata_fi = {  path = "../icondata_fi", optional = true }
-icondata_vs = {  path = "../icondata_vs", optional = true }
-icondata_bs = {  path = "../icondata_bs", optional = true }
-icondata_bi = {  path = "../icondata_bi", optional = true }
-icondata_im = {  path = "../icondata_im", optional = true }
-icondata_io = {  path = "../icondata_io", optional = true }
-icondata_ri = {  path = "../icondata_ri", optional = true }
-icondata_si = {  path = "../icondata_si", optional = true }
-icondata_ti = {  path = "../icondata_ti", optional = true }
-icondata_hi = {  path = "../icondata_hi", optional = true }
-icondata_cg = {  path = "../icondata_cg", optional = true }
-icondata_tb = {  path = "../icondata_tb", optional = true }
-icondata_oc = {  path = "../icondata_oc", optional = true }
+icondata_ai = {  version = "0.0.1", optional = true }
+icondata_fa = {  version = "0.0.1", optional = true }
+icondata_wi = {  version = "0.0.1", optional = true }
+icondata_fi = {  version = "0.0.1", optional = true }
+icondata_vs = {  version = "0.0.1", optional = true }
+icondata_bs = {  version = "0.0.1", optional = true }
+icondata_bi = {  version = "0.0.1", optional = true }
+icondata_im = {  version = "0.0.1", optional = true }
+icondata_io = {  version = "0.0.1", optional = true }
+icondata_ri = {  version = "0.0.1", optional = true }
+icondata_si = {  version = "0.0.1", optional = true }
+icondata_ti = {  version = "0.0.1", optional = true }
+icondata_hi = {  version = "0.0.1", optional = true }
+icondata_cg = {  version = "0.0.1", optional = true }
+icondata_tb = {  version = "0.0.1", optional = true }
+icondata_oc = {  version = "0.0.1", optional = true }
 
 [features]
 default = []

@@ -1,6 +1,8 @@
 # Icondata_tb
 
-Icon data from the Tabler Icons library. Every icon is packaged as its own cargo feature to reduce build times.
+Icon data from the *Tabler Icons* library. Every icon is packaged as its own cargo feature to reduce build times.
+
+Visit this [repository](https://github.com/Carlosted/icondata) to see a list of available libraries.
 
 ## Contributing
 
