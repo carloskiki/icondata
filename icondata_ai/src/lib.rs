@@ -6,7 +6,7 @@
 //! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
 //! identical.
 //!
-//! The enum implements [Into<icondata_core::IconData>].
+//! The enum implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
 //!
 #[non_exhaustive]
 #[cfg_attr(
