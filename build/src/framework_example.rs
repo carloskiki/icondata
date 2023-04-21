@@ -3,28 +3,23 @@ use std::path::PathBuf;
 use anyhow::Result;
 use tracing::{info, instrument, trace};
 
-use crate::fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme, src_dir::SrcDir};
+use crate::fs::{cargo_toml::CargoToml, lib_rs::LibRs, src_dir::SrcDir};
 
 use crate::icon_library::IconLibrary;
 
 #[derive(Debug)]
-pub(crate) struct MainLibrary {
+pub(crate) struct FrameworkExample {
     pub path: PathBuf,
-    pub cargo_toml: CargoToml<MainLibrary>,
-    pub readme_md: Readme<MainLibrary>,
-    pub src_dir: SrcDir<MainLibrary>,
+    pub cargo_toml: CargoToml<FrameworkExample>,
+    pub src_dir: SrcDir<FrameworkExample>,
 }
 
-impl MainLibrary {
+impl FrameworkExample {
     pub fn new(root: PathBuf) -> Self {
         Self {
             path: root.clone(),
             cargo_toml: CargoToml {
                 path: root.join("Cargo.toml"),
-                _phantom: std::marker::PhantomData,
-            },
-            readme_md: Readme {
-                path: root.join("README.md"),
                 _phantom: std::marker::PhantomData,
             },
             src_dir: SrcDir {
@@ -48,15 +43,8 @@ impl MainLibrary {
         self.src_dir.reset().await?;
         self.cargo_toml.reset().await?;
         self.cargo_toml.write_cargo_toml(&icon_libs).await?;
-        self.readme_md.reset().await?;
 
-        self.src_dir
-            .lib_rs
-            .write_lib_rs()
-            .await?;
-
-        trace!("Writing README.md.");
-        self.readme_md.write_readme().await?;
+        self.src_dir.lib_rs.write_lib_rs().await?;
 
         info!("Library generated.");
         Ok(())

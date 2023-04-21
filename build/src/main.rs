@@ -7,8 +7,9 @@ use tracing_subscriber::prelude::__tracing_subscriber_SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
+use crate::base_repo::BaseRepo;
 use crate::icon_library::IconLibrary;
-use crate::main_library::MainLibrary;
+use crate::framework_example::FrameworkExample;
 use crate::package::Package;
 
 mod feature;
@@ -16,10 +17,11 @@ mod fs;
 mod git;
 mod icon;
 mod icon_library;
-mod main_library;
+mod framework_example;
 mod package;
 mod path;
 mod sem_ver;
+mod base_repo;
 
 #[derive(Debug, Parser)]
 #[command(author, version, about, long_about = None)]
@@ -87,8 +89,13 @@ async fn main() -> Result<()> {
 
     let num_libs = libs.len();
 
-    let lib_path = path::library_crate("icondata", "");
-    let mut main_lib = MainLibrary::new(lib_path);
+    let mut base_path = path::build_crate("");
+    base_path.pop();
+    let base_repo = BaseRepo::new(base_path);
+    base_repo.generate().await?;
+
+    let lib_path = path::library_crate("framework_example", "");
+    let mut main_lib = FrameworkExample::new(lib_path);
     main_lib.generate(libs).await?;
 
     let end = time::OffsetDateTime::now_utc();

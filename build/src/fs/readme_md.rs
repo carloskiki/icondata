@@ -6,8 +6,7 @@ use tracing::{error, instrument, trace};
 
 use crate::{
     icon_library::IconLibrary,
-    main_library::MainLibrary,
-    package::{GitTarget, Package, PackageMetadata, PackageSource},
+    package::{GitTarget, Package, PackageMetadata, PackageSource}, base_repo::BaseRepo,
 };
 
 #[derive(Debug)]
@@ -15,9 +14,6 @@ pub(crate) struct Readme<T> {
     pub(crate) path: PathBuf,
     pub(crate) _phantom: std::marker::PhantomData<T>,
 }
-
-#[derive(Debug)]
-pub(crate) struct BaseRepo;
 
 impl<T: std::fmt::Debug> Readme<T> {
     #[instrument(level = "info")]
@@ -86,11 +82,12 @@ impl<T: std::fmt::Debug> Readme<T> {
     }
 }
 
-impl Readme<MainLibrary> {
+impl Readme<BaseRepo> {
     pub(crate) async fn write_readme(&self) -> Result<()> {
         self.write_header().await?;
         self.write_usage().await?;
         self.write_package_table().await?;
+        self.write_developing().await?;
         self.write_contribution().await?;
 
         Ok(())
@@ -108,6 +105,7 @@ impl Readme<MainLibrary> {
             - [Table of Contents](#table-of-contents)
             - [Usage](#usage)
             - [Icon Packages](#icon-packages)
+            - [Developing](#developing)
             - [Contributing](#contributing)
 
             "#};
@@ -120,15 +118,17 @@ impl Readme<MainLibrary> {
         let usage = indoc::indoc! {r#"
             ## Usage
 
-            If you are using this crate in one of your rust project, and use icons by specifying their feature names.
+            Every crate is tied to a specific icon package. You can find the name of the crate corresponding to a package in the [Icon Packages](#icon-packages) section.
+
+            To use an icon package, add the following to your `Cargo.toml`:
 
             ```toml
             [dependencies]
             # ...
-            icondata = { git = "https://github.com/Carlosted/icondata.git" features = ["BsFolder"] }
+            icondata_{} = { git = "https://github.com/Carlosted/icondata.git" features = ["BsFolder"] }
             ```
 
-            If you are creating a web framework library based on this crate, please follow this guide (TODO).
+            If you are creating a component library for a web framework, you can use the [framework example](/framework_example) as boilerplate.
 
         "#};
 
@@ -143,7 +143,7 @@ impl Readme<MainLibrary> {
             version: String,
             source: String,
             license: String,
-            short_name: String,
+            crate_name: String,
         }
 
         let mut entries = Vec::new();
@@ -152,14 +152,14 @@ impl Readme<MainLibrary> {
             version: "Version".to_owned(),
             source: "Source".to_owned(),
             license: "License".to_owned(),
-            short_name: "Short name".to_owned(),
+            crate_name: "Crate Name".to_owned(),
         });
         entries.push(TableEntry {
             name: "---".to_owned(),
             version: "---".to_owned(),
             source: "---".to_owned(),
             license: "---".to_owned(),
-            short_name: "---".to_owned(),
+            crate_name: "---".to_owned(),
         });
 
         for package in Package::all() {
@@ -201,7 +201,7 @@ impl Readme<MainLibrary> {
                         acc.push_str(", ");
                         acc
                     }),
-                short_name: package.meta.short_name.clone().into_owned(),
+                crate_name: format!("icondata_{}", package.meta.short_name),
             });
         }
 
@@ -230,7 +230,7 @@ impl Readme<MainLibrary> {
             .fold(0, |acc, it| usize::max(acc, it.license.len()));
         let longest_short_name = entries
             .iter()
-            .fold(0, |acc, it| usize::max(acc, it.short_name.len()));
+            .fold(0, |acc, it| usize::max(acc, it.crate_name.len()));
 
         for entry in entries {
             file.write_all("| ".as_bytes()).await?;
@@ -254,9 +254,9 @@ impl Readme<MainLibrary> {
                 .await?;
 
             file.write_all(" | ".as_bytes()).await?;
-            file.write_all(entry.short_name.as_bytes()).await?;
+            file.write_all(entry.crate_name.as_bytes()).await?;
             file.write_all(
-                " ".repeat(longest_short_name - entry.short_name.len())
+                " ".repeat(longest_short_name - entry.crate_name.len())
                     .as_bytes(),
             )
             .await?;
@@ -272,6 +272,29 @@ impl Readme<MainLibrary> {
         })?;
 
         Ok(())
+    }
+
+    async fn write_developing(&self) -> Result<()> {
+        let developing = indoc! {r#"
+            ## Developing
+
+            This repository uses Just
+
+            Simply call
+            ```bash
+            just
+            ```
+            to see a list of available commands.
+
+            You may need to install just using
+
+            ```bash
+            cargo install just
+            ```
+
+            "#};
+
+        self.write_section(developing).await
     }
 }
 
@@ -299,121 +322,5 @@ impl Readme<IconLibrary> {
         );
 
         self.write_section(&header).await
-    }
-}
-
-impl Readme<BaseRepo> {
-    pub async fn write_readme(&self) -> Result<()> {
-        self.write_header().await?;
-        self.write_repository_content().await?;
-        self.write_developing().await?;
-        self.write_contribution().await?;
-
-        Ok(())
-    }
-
-    async fn write_header(&self) -> Result<()> {
-        trace!("Writing header section.");
-        let header = indoc! {r#"
-            # Icondata
-
-            This repository is the parent for the `icondata` crate.
-            It also contains the build crate, the icondata_core crate, and crates for individual icon packages.
-
-            ## Table of Contents
-            - [icondata](#icondata)
-            - [Table of Contents](#table-of-contents)
-            - [Repository Content](#repository-content)
-            - [Developing](#developing)
-            - [Contributing](#contributing)
-            "#};
-
-        self.write_section(header).await
-    }
-
-    async fn write_developing(&self) -> Result<()> {
-        let developing = indoc! {r#"
-            ## Developing
-
-            This repository uses Just
-
-            Simply call
-            ```bash
-            just
-            ```
-            to see a list of available commands.
-
-            You may need to install just using
-
-            ```bash
-            cargo install just
-            ```
-
-            "#};
-
-        self.write_section(developing).await
-    }
-
-    async fn write_repository_content(&self) -> Result<()> {
-        trace!("Writing the repository content section header.");
-        let section_header = indoc! {r#"
-            ## Repository Content
-
-            here is what this repository is parent for:
-
-            "#};
-
-        struct TableEntry {
-            lib: String,
-            description: String,
-        }
-
-        let mut entries = Vec::new();
-        entries.push(TableEntry {
-            lib: "Crate".to_owned(),
-            description: "Description".to_owned(),
-        });
-        entries.push(TableEntry {
-            lib: "---".to_owned(),
-            description: "---".to_owned(),
-        });
-
-        entries.push(TableEntry {
-            lib: "icondata".to_owned(),
-            description: "The main icon library; the whole point of this repository.".to_owned(),
-        });
-        entries.push(TableEntry {
-            lib: "icondata_core".to_owned(),
-            description: "A core library that contains utilities for the icondata crate."
-                .to_owned(),
-        });
-        entries.push(TableEntry {
-            lib: "build".to_owned(),
-            description: "The build crate that generates most of this repository.".to_owned(),
-        });
-        for package in Package::all() {
-            entries.push(TableEntry {
-                lib: format!("icondata_{}", package.meta.short_name),
-                description: format!("The icon library for {}.", package.meta.package_name),
-            })
-        }
-
-        let mut file = self.append().await?;
-        file.write_all(section_header.as_bytes()).await?;
-
-        for entry in entries {
-            file.write_all("| ".as_bytes()).await?;
-            file.write_all(entry.lib.as_bytes()).await?;
-            file.write_all(" | ".as_bytes()).await?;
-            file.write_all(entry.description.as_bytes()).await?;
-            file.write_all(" |\n".as_bytes()).await?;
-        }
-
-        file.flush().await.map_err(|err| {
-            error!(?err, "Could not flush file after writing.");
-            err
-        })?;
-
-        Ok(())
     }
 }

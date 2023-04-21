@@ -8,7 +8,6 @@ This crate provides SVG icon data from popular and free icon libraries. Every ic
 - [Table of Contents](#table-of-contents)
 - [Usage](#usage)
 - [Icon Packages](#icon-packages)
-- [Developing](#developing)
 - [Contributing](#contributing)
 
 ## Usage
@@ -48,22 +47,6 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | css.gg           | 2.0.0   | Git: <https://github.com/astrit/css.gg> - Tag: 2.0.0                                                                      | MIT,                | icondata_cg |
 | Tabler Icons     | 2.11.0  | Git: <https://github.com/tabler/tabler-icons> - Tag: v2.11.0                                                              | MIT,                | icondata_tb |
 | Github Octicons  | 18.3.0  | Git: <https://github.com/primer/octicons> - Tag: v18.3.0                                                                  | MIT,                | icondata_oc |
-
-## Developing
-
-This repository uses Just
-
-Simply call
-```bash
-just
-```
-to see a list of available commands.
-
-You may need to install just using
-
-```bash
-cargo install just
-```
 
 ## Contributing
 
