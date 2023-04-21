@@ -120,12 +120,12 @@ impl Readme<BaseRepo> {
 
             Every crate is tied to a specific icon package. You can find the name of the crate corresponding to a package in the [Icon Packages](#icon-packages) section.
 
-            To use an icon package, add the following to your `Cargo.toml`:
+            As an example, to use the bootstrap folder icon, add the following to your `Cargo.toml`:
 
             ```toml
             [dependencies]
             # ...
-            icondata_{} = { git = "https://github.com/Carlosted/icondata.git" features = ["BsFolder"] }
+            icondata_bs = { version = "0.0.1", features = ["BsFolder"] }
             ```
 
             If you are creating a component library for a web framework, you can use the [framework example](/framework_example) as boilerplate.
