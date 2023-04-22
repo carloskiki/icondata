@@ -49,12 +49,4 @@ impl FrameworkExample {
         info!("Library generated.");
         Ok(())
     }
-
-    pub fn enum_name(&self) -> String {
-        "Icon".to_owned()
-    }
-
-    pub fn component_name(&self) -> String {
-        "LeptosIcon".to_owned()
-    }
 }

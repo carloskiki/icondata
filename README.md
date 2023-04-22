@@ -48,6 +48,7 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | css.gg           | 2.0.0   | Git: <https://github.com/astrit/css.gg> - Tag: 2.0.0                                                                      | MIT,                | icondata_cg |
 | Tabler Icons     | 2.11.0  | Git: <https://github.com/tabler/tabler-icons> - Tag: v2.11.0                                                              | MIT,                | icondata_tb |
 | Github Octicons  | 18.3.0  | Git: <https://github.com/primer/octicons> - Tag: v18.3.0                                                                  | MIT,                | icondata_oc |
+| Lucide           | 0.171.0 | Git: <https://github.com/lucide-icons/lucide> - Tag: v0.171.0                                                             | ISC,                | icondata_lu |
 
 ## Developing
 

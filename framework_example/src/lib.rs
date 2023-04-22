@@ -30,5 +30,7 @@ pub use icondata_cg::*;
 pub use icondata_tb::*;
 #[cfg(feature = "Oc")]
 pub use icondata_oc::*;
+#[cfg(feature = "Lu")]
+pub use icondata_lu::*;
 
 // specific framework code ... 

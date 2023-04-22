@@ -162,6 +162,7 @@ pub(crate) enum PackageType {
     CssGg,
     TablerIcons,
     GithubOcticons,
+    Lucide,
 }
 
 #[derive(Debug, Clone)]
@@ -178,6 +179,7 @@ pub(crate) struct PackageMetadata {
     pub download_dir: Cow<'static, str>,
     /// Directory relative to download_dir under which raw SVG files can be found.
     pub svg_dir: Cow<'static, str>, // TODO: PathBuf?
+    pub crate_version: SemVer,
 }
 
 #[derive(Debug, Clone)]
@@ -238,6 +240,13 @@ impl PackageType {
                 },
                 download_dir: "ant-design-icons".into(),
                 svg_dir: Cow::Borrowed("packages/icons-svg/svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::FontAwesome => PackageMetadata {
                 short_name: Cow::Borrowed("fa"),
@@ -258,6 +267,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("font-awesome"),
                 svg_dir: Cow::Borrowed("svgs"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::WeatherIcons => PackageMetadata {
                 short_name: Cow::Borrowed("wi"),
@@ -278,6 +294,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("weather-icons"),
                 svg_dir: Cow::Borrowed("svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::Feather => PackageMetadata {
                 short_name: Cow::Borrowed("fi"),
@@ -298,6 +321,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("feather"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::VSCodeIcons => PackageMetadata {
                 short_name: Cow::Borrowed("vs"),
@@ -318,6 +348,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("vscode-codicons"),
                 svg_dir: Cow::Borrowed("src/icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::BootstrapIcons => PackageMetadata {
                 short_name: Cow::Borrowed("bs"),
@@ -338,6 +375,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("bootstrap-icons"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::BoxIcons => PackageMetadata {
                 short_name: Cow::Borrowed("bi"),
@@ -359,6 +403,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("boxicons"),
                 svg_dir: Cow::Borrowed("svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::IcoMoonFree => PackageMetadata {
                 short_name: Cow::Borrowed("im"),
@@ -374,6 +425,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("icomoon-free"),
                 svg_dir: Cow::Borrowed("svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::Ionicons => PackageMetadata {
                 short_name: Cow::Borrowed("io"),
@@ -394,6 +452,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("ionicons"),
                 svg_dir: Cow::Borrowed("src/svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::RemixIcon => PackageMetadata {
                 short_name: Cow::Borrowed("ri"),
@@ -414,6 +479,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("RemixIcon"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::SimpleIcons => PackageMetadata {
                 short_name: Cow::Borrowed("si"),
@@ -434,6 +506,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("simple-icons"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::Typicons => PackageMetadata {
                 short_name: Cow::Borrowed("ti"),
@@ -454,6 +533,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("typicons"),
                 svg_dir: Cow::Borrowed("src/svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::Heroicons => PackageMetadata {
                 short_name: Cow::Borrowed("hi"),
@@ -474,6 +560,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("heroicons"),
                 svg_dir: Cow::Borrowed("src"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::CssGg => PackageMetadata {
                 short_name: Cow::Borrowed("cg"),
@@ -494,6 +587,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("css.gg"),
                 svg_dir: Cow::Borrowed("icons/svg"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::TablerIcons => PackageMetadata {
                 short_name: Cow::Borrowed("tb"),
@@ -514,6 +614,13 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("tabler-icons"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
             PackageType::GithubOcticons => PackageMetadata {
                 short_name: Cow::Borrowed("oc"),
@@ -534,6 +641,40 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("octicons"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
+            },
+            PackageType::Lucide => PackageMetadata {
+                short_name: Cow::Borrowed("lu"),
+                package_name: Cow::Borrowed("Lucide"),
+                licenses: &[Cow::Borrowed("ISC")],
+                source: PackageSource::Git {
+                    url: Cow::Borrowed("https://github.com/lucide-icons/lucide"),
+                    target: GitTarget::Tag {
+                        name: Cow::Borrowed("v0.171.0"),
+                        version: SemVer {
+                            major: 0,
+                            minor: 171,
+                            patch: 0,
+                            prerelease: None,
+                            build: None,
+                        },
+                    },
+                },
+                download_dir: Cow::Borrowed("lucide"),
+                svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 1,
+                    prerelease: None,
+                    build: None,
+                },
             },
         }
     }

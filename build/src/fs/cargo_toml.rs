@@ -108,8 +108,9 @@ impl CargoToml<FrameworkExample> {
                 // Example: icondata_ai = { path = "../icondata_ai" }
                 .write_all(
                     format!(
-                        "icondata_{short_name} = {{  version = \"0.0.1\", optional = true }}\n",
-                        short_name = &lib.meta.short_name
+                        "icondata_{short_name} = {{  version = \"{crate_version}\", optional = true }}\n",
+                        short_name = &lib.meta.short_name,
+                        crate_version = lib.meta.crate_version,
                     )
                     .as_bytes(),
                 )
@@ -194,7 +195,7 @@ impl CargoToml<IconLibrary> {
             r#"
             [package]
             name = "icondata_{short_name}"
-            version = "0.0.1"
+            version = "{crate_version}"
             authors = ["Charles Edward Gagnon"]
             edition = "2021"
             description = "Library providing SVG and corresponding metadata for \"{package_name}\"."
@@ -212,6 +213,7 @@ impl CargoToml<IconLibrary> {
             serde = ["dep:serde"]
 
             "#,
+            crate_version = package_meta.crate_version,
             short_name = package_meta.short_name,
             package_name = package_meta.package_name
         );
