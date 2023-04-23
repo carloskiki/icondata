@@ -7,11 +7,8 @@ use tracing::{error, info, instrument, trace};
 use crate::{
     fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme, src_dir::SrcDir},
     icon::SvgIcon,
-    icon_library::icons_md::Icons,
     package::{Downloaded, Package},
 };
-
-mod icons_md;
 
 #[derive(Debug)]
 pub(crate) struct IconLibrary {
@@ -20,7 +17,6 @@ pub(crate) struct IconLibrary {
     pub cargo_toml: CargoToml<IconLibrary>,
     pub readme_md: Readme<IconLibrary>,
     pub src_dir: SrcDir<IconLibrary>,
-    pub icons_md: Icons,
     pub icons: Vec<SvgIcon>,
 }
 
@@ -36,9 +32,6 @@ impl IconLibrary {
             readme_md: Readme {
                 path: root.join("README.md"),
                 _phantom: std::marker::PhantomData,
-            },
-            icons_md: Icons {
-                path: root.join("ICONS.md"),
             },
             src_dir: SrcDir {
                 path: root.join("src"),
@@ -62,7 +55,6 @@ impl IconLibrary {
         self.src_dir.reset().await?;
         self.cargo_toml.reset().await?;
         self.readme_md.reset().await?;
-        self.icons_md.reset().await?;
 
         // Extract icon information from that package.
         // Sorting the resulting Vec is necessary, as we want to reduce churn in the later generated output as much as possible.
@@ -89,11 +81,6 @@ impl IconLibrary {
 
         trace!("Writing README.md.");
         self.readme_md.write_readme(&self.package.meta).await?;
-
-        trace!("Writing ICONS.md.");
-        self.icons_md
-            .write_icon_table(self.package.ty, &self.icons)
-            .await?;
 
         info!("Library generated.");
         Ok(())

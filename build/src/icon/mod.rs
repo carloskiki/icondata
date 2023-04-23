@@ -15,7 +15,6 @@ mod svg;
 #[derive(Debug, Clone)]
 pub(crate) struct SvgIcon {
     pub svg: svg::ParsedSvg,
-    pub categories: Vec<Category>,
     pub feature: Feature,
 }
 
@@ -48,7 +47,6 @@ impl SvgIcon {
 
         Ok(SvgIcon {
             svg: ParsedSvg::parse(svg.as_bytes())?,
-            categories,
             feature,
         })
     }
