@@ -9,24 +9,9 @@
 //! The enum implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
 //!
 #[non_exhaustive]
-#[cfg_attr(
-    feature = "serde",
-    derive(
-        Debug,
-        PartialEq,
-        Eq,
-        PartialOrd,
-        Ord,
-        Clone,
-        Copy,
-        serde::Serialize,
-        serde::Deserialize
-    )
-)]
-#[cfg_attr(
-    not(feature = "serde"),
-    derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)
-)]
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+#[cfg_attr(feature = "enum-iterator", derive(enum_iterator::Sequence))]
 pub enum RiIcon {
     #[cfg(feature = "Ri24HoursFinanceFill")]
     Ri24HoursFinanceFill,

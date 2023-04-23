@@ -6,8 +6,8 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
+    dirs::{boilerplate::Boilerpate, icon_library::IconLibrary},
     icon::SvgIcon,
-    dirs::{icon_library::IconLibrary, boilerplate::Boilerpate},
     package::{Package, PackageMetadata},
 };
 
@@ -42,8 +42,7 @@ impl<T: std::fmt::Debug> CargoToml<T> {
         }
 
         trace!("Writing BASE_CARGO_TOML content.");
-        self.create_file()
-            .await?;
+        self.create_file().await?;
 
         Ok(())
     }
@@ -129,17 +128,24 @@ impl CargoToml<Boilerpate> {
     async fn write_features_section(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         let mut writer = self.append().await?;
 
-        let libs_serde_feature = Package::all().iter().map(|pack| {
-            format!("\n\"icondata_{}/serde\",", pack.meta.short_name)
-        }).collect::<String>();
-        
+        fn icondata_feature_list(feature_name: &str) -> String {
+            Package::all()
+                .iter()
+                .map(|pack| format!("\n\"icondata_{}/{feature_name}\",", pack.meta.short_name))
+                .collect::<String>()
+        }
+
         let base_features = formatdoc! {r#"
             [features]
             default = []
-            serde = [{libs_serde_feature}
+            serde = [{serde}
+            ]
+            enum-iterator = [{enum_iterator}
             ]
 
-            "#};
+            "#, serde = icondata_feature_list("serde"),
+            enum_iterator = icondata_feature_list("enum-iterator")
+        };
 
         writer.write_all(base_features.as_bytes()).await?;
 
@@ -207,10 +213,9 @@ impl CargoToml<IconLibrary> {
             [dependencies]
             icondata_core = "0.0.1"
             serde = {{ version = "1", features = ["derive"], optional = true }}
+            enum-iterator = {{ version = "1", optional = true }}
 
             [features]
-            serde = ["dep:serde"]
-
             "#,
             crate_version = package_meta.crate_version,
             short_name = package_meta.short_name,

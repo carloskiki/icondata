@@ -143,8 +143,9 @@ impl LibRs<IconLibrary> {
 
         let icon_enum = quote! {
             #[non_exhaustive]
-            #[cfg_attr(feature = "serde", derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy, serde::Serialize, serde::Deserialize))]
-            #[cfg_attr(not(feature = "serde"), derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy))]
+            #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
+            #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+            #[cfg_attr(feature = "enum-iterator", derive(enum_iterator::Sequence))]
             pub enum #enum_ident {
                 #(#variants),*
             }

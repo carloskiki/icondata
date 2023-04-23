@@ -13,10 +13,9 @@ categories = ["web-programming"]
 [dependencies]
 icondata_core = "0.0.1"
 serde = { version = "1", features = ["derive"], optional = true }
+enum-iterator = { version = "1", optional = true }
 
 [features]
-serde = ["dep:serde"]
-
 Fa0Solid = []
 Fa1Solid = []
 Fa2Solid = []
