@@ -5,8 +5,8 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
-    icon_library::IconLibrary,
-    package::{GitTarget, Package, PackageMetadata, PackageSource}, base_repo::BaseRepo,
+    dirs::{base_repo::BaseRepo, icon_library::IconLibrary},
+    package::{GitTarget, Package, PackageMetadata, PackageSource},
 };
 
 #[derive(Debug)]

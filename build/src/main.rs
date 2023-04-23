@@ -7,21 +7,19 @@ use tracing_subscriber::prelude::__tracing_subscriber_SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
-use crate::base_repo::BaseRepo;
-use crate::icon_library::IconLibrary;
-use crate::boilerplate::Boilerpate;
+use crate::dirs::base_repo::BaseRepo;
+use crate::dirs::icon_library::IconLibrary;
+use crate::dirs::boilerplate::Boilerpate;
 use crate::package::Package;
 
-mod feature;
 mod fs;
+mod dirs;
+mod feature;
 mod git;
 mod icon;
-mod icon_library;
-mod boilerplate;
 mod package;
 mod path;
 mod sem_ver;
-mod base_repo;
 
 #[derive(Debug, Parser)]
 #[command(author, version, about, long_about = None)]

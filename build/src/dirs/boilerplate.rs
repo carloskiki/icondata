@@ -5,7 +5,7 @@ use tracing::{info, instrument, trace};
 
 use crate::fs::{cargo_toml::CargoToml, lib_rs::LibRs, src_dir::SrcDir};
 
-use crate::icon_library::IconLibrary;
+use super::icon_library::IconLibrary;
 
 #[derive(Debug)]
 pub(crate) struct Boilerpate {

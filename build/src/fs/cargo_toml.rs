@@ -7,8 +7,7 @@ use tracing::{error, instrument, trace};
 
 use crate::{
     icon::SvgIcon,
-    icon_library::IconLibrary,
-    boilerplate::Boilerpate,
+    dirs::{icon_library::IconLibrary, boilerplate::Boilerpate},
     package::{Package, PackageMetadata},
 };
 

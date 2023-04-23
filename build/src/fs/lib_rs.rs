@@ -9,7 +9,11 @@ use snafu::{prelude::*, Backtrace};
 use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
 
-use crate::{icon::SvgIcon, icon_library::IconLibrary, boilerplate::Boilerpate, package::Package};
+use crate::{
+    dirs::{boilerplate::Boilerpate, icon_library::IconLibrary},
+    icon::SvgIcon,
+    package::Package,
+};
 
 const DOCS: &[u8] = indoc! {r#"
             //! This crate provides a collection of icons in the form of SVG data
@@ -86,11 +90,11 @@ impl<T: std::fmt::Debug> LibRs<T> {
 }
 
 impl LibRs<Boilerpate> {
-    pub async fn write_lib_rs(
-        &self) -> Result<()> {
+    pub async fn write_lib_rs(&self) -> Result<()> {
         let reexports = Self::build_reexports()?;
         self.write(reexports.as_bytes()).await?;
-        self.write("\n// specific framework code ... ".as_bytes()).await?;
+        self.write("\n// specific framework code ... ".as_bytes())
+            .await?;
 
         Ok(())
     }
