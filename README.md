@@ -20,7 +20,7 @@ As an example, to use the bootstrap folder icon, add the following to your `Carg
 ```toml
 [dependencies]
 # ...
-icondata_bs = { version = "0.0.1", features = ["BsFolder"] }
+icondata_bs = { version = "...", features = ["BsFolder"] }
 ```
 
 If you are creating a component library for a web framework, you can use this [boilerplate](/boilerplate) setup.
