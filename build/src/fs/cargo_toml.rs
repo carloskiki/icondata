@@ -8,7 +8,7 @@ use tracing::{error, instrument, trace};
 use crate::{
     icon::SvgIcon,
     icon_library::IconLibrary,
-    framework_example::FrameworkExample,
+    boilerplate::Boilerpate,
     package::{Package, PackageMetadata},
 };
 
@@ -65,7 +65,7 @@ impl<T: std::fmt::Debug> CargoToml<T> {
     }
 }
 
-impl CargoToml<FrameworkExample> {
+impl CargoToml<Boilerpate> {
     pub(crate) async fn write_cargo_toml(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         self.write_package_section().await?;
         self.write_dependencies_section().await?;

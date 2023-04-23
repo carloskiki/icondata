@@ -768,6 +768,7 @@
 | LuSalad                           |            |
 | LuSandwich                        |            |
 | LuSave                            |            |
+| LuSaveAll                         |            |
 | LuScale                           |            |
 | LuScale3d                         |            |
 | LuScaling                         |            |

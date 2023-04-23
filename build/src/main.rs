@@ -9,7 +9,7 @@ use tracing_subscriber::{Layer, Registry};
 
 use crate::base_repo::BaseRepo;
 use crate::icon_library::IconLibrary;
-use crate::framework_example::FrameworkExample;
+use crate::boilerplate::Boilerpate;
 use crate::package::Package;
 
 mod feature;
@@ -17,7 +17,7 @@ mod fs;
 mod git;
 mod icon;
 mod icon_library;
-mod framework_example;
+mod boilerplate;
 mod package;
 mod path;
 mod sem_ver;
@@ -94,9 +94,9 @@ async fn main() -> Result<()> {
     let base_repo = BaseRepo::new(base_path);
     base_repo.generate().await?;
 
-    let lib_path = path::library_crate("framework_example", "");
-    let mut main_lib = FrameworkExample::new(lib_path);
-    main_lib.generate(libs).await?;
+    let boilerplate_path = path::library_crate("boilerplate", "");
+    let mut boilerplate_dir = Boilerpate::new(boilerplate_path);
+    boilerplate_dir.generate(libs).await?;
 
     let end = time::OffsetDateTime::now_utc();
     info!(

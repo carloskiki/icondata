@@ -128,7 +128,7 @@ impl Readme<BaseRepo> {
             icondata_bs = { version = "0.0.1", features = ["BsFolder"] }
             ```
 
-            If you are creating a component library for a web framework, you can use the [framework example](/framework_example) as boilerplate.
+            If you are creating a component library for a web framework, you can use this [boilerplate](/boilerplate) setup.
 
         "#};
 

@@ -1556,6 +1556,8 @@ pub enum LuIcon {
     LuSandwich,
     #[cfg(feature = "LuSave")]
     LuSave,
+    #[cfg(feature = "LuSaveAll")]
+    LuSaveAll,
     #[cfg(feature = "LuScale")]
     LuScale,
     #[cfg(feature = "LuScale3d")]
@@ -13441,6 +13443,21 @@ const LU_SAVE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: "<path d=\"M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z\" />\n<polyline points=\"17 21 17 13 7 13 7 21\" />\n<polyline points=\"7 3 7 8 15 8\" />",
 };
+#[cfg(feature = "LuSaveAll")]
+const LU_SAVE_ALL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: "<path d=\"M6 4a2 2 0 0 1 2-2h10l4 4v10.2a2 2 0 0 1-2 1.8H8a2 2 0 0 1-2-2Z\" />\n<path d=\"M10 2v4h6\" />\n<path d=\"M18 18v-7h-8v7\" />\n<path d=\"M18 22H4a2 2 0 0 1-2-2V6\" />",
+};
 #[cfg(feature = "LuScale")]
 const LU_SCALE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18158,6 +18175,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuSandwich => LU_SANDWICH,
             #[cfg(feature = "LuSave")]
             LuIcon::LuSave => LU_SAVE,
+            #[cfg(feature = "LuSaveAll")]
+            LuIcon::LuSaveAll => LU_SAVE_ALL,
             #[cfg(feature = "LuScale")]
             LuIcon::LuScale => LU_SCALE,
             #[cfg(feature = "LuScale3d")]
