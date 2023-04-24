@@ -11,8 +11,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Print cargo rust info
         run: |
-          rustc --version
-          cargo --version
+          cargo +nightly --version
 
 
 #   env:
