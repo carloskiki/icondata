@@ -1,4 +1,4 @@
 /.vscode
-/icondata*/Cargo.lock
-/icondata*/target
+**/Cargo.lock
+**/target
 .DS_Store

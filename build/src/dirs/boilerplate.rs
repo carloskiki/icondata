@@ -33,7 +33,7 @@ impl Boilerpate {
     }
 
     #[instrument(level = "info", skip_all)]
-    pub async fn generate(&mut self, icon_libs: Vec<IconLibrary>) -> Result<()> {
+    pub async fn generate(&mut self, icon_libs: &[IconLibrary]) -> Result<()> {
         trace!("Ensuring library directory exists.");
         if !self.path.exists() {
             tokio::fs::create_dir_all(&self.path).await?;

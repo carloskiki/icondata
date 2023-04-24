@@ -8,6 +8,7 @@ use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
 use crate::dirs::base_repo::BaseRepo;
+use crate::dirs::icon_index::IconIndex;
 use crate::dirs::icon_library::IconLibrary;
 use crate::dirs::boilerplate::Boilerpate;
 use crate::package::Package;
@@ -94,13 +95,16 @@ async fn main() -> Result<()> {
 
     let boilerplate_path = path::library_crate("boilerplate", "");
     let mut boilerplate_dir = Boilerpate::new(boilerplate_path);
-    boilerplate_dir.generate(libs).await?;
+    boilerplate_dir.generate(&libs).await?;
 
     let end = time::OffsetDateTime::now_utc();
     info!(
         took = format!("{}s", (end - start).whole_seconds()),
         num_libs, "Build successful!"
     );
+
+    let icon_index = IconIndex::new(path::library_crate("icon_index", ""));
+    icon_index.generate(&libs).await?;
 
     Ok(())
 }

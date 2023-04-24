@@ -48,7 +48,7 @@ impl<T: std::fmt::Debug> CargoToml<T> {
     }
 
     #[instrument(level = "info", skip_all)]
-    async fn append(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
+    pub(crate) async fn append(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
         trace!("Creating file.");
         Ok(tokio::io::BufWriter::new(
             tokio::fs::OpenOptions::new()
@@ -61,6 +61,7 @@ impl<T: std::fmt::Debug> CargoToml<T> {
                 })?,
         ))
     }
+
 }
 
 impl CargoToml<Boilerpate> {
