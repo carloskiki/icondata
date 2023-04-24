@@ -1,0 +1,21 @@
+name: Publish Crate
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish_crate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Print cargo rust info
+        run: |
+          rustc --version
+          cargo --version
+
+
+#   env:
+#     CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
+#   run: cargo publish --token $CRATES_IO_TOKEN
+# - name: Publish Crate
