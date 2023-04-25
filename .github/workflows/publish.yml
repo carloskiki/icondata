@@ -10,13 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install nightly with wasm
-        uses: actions-rs/toolchain@v1
+        uses: ThexXTURBOXx/toolchain@master
         with:
           override: true
           profile: minimal
           target: wasm32-unknown-unknown
           toolchain: nightly
-      - name: list all icondata directories
-        #  env:
-        #  CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
-        run: ls -d icondata_!(core)
+      - name: Dry run publish
+        env:
+          CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
+        run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN --dry-run'
