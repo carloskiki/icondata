@@ -1,8 +1,9 @@
 jobs:
   publish_crate:
     if: >
-      github.event.pull_request.merged
-      && startsWith(github.event.pull_request.title, 'Publish ')
+      (github.event.pull_request.merged
+      && startsWith(github.event.pull_request.title, 'Publish '))
+      || github.event_name = 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,7 +18,7 @@ jobs:
       - env:
           CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
         name: Publish all Crates  
-        run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN'
+        run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN --dry-run'
         if: steps['Publish all Crates'].outcome == 'failure' && steps['Publish all Crates'].exitCode == 101
 
 name: Publish Crate
