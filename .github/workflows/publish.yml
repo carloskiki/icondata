@@ -1,10 +1,8 @@
-name: Publish Crate
-
-on:
-  workflow_dispatch:
-
 jobs:
   publish_crate:
+    if: >
+      github.event.pull_request.merged
+      && github.event.pull_request.
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,7 +14,17 @@ jobs:
           profile: minimal
           target: wasm32-unknown-unknown
           toolchain: nightly
-      - name: Publish all Crates
-        env:
+      - env:
           CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
+        name: Publish all Crates  
         run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN'
+        if: steps['Publish all Crates'].outcome == 'failure' && steps['Publish all Crates'].exitCode == 101
+
+name: Publish Crate
+on:
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
