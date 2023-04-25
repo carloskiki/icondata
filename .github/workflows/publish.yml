@@ -16,7 +16,7 @@ jobs:
           profile: minimal
           target: wasm32-unknown-unknown
           toolchain: nightly
-      - name: Dry run publish
+      - name: Publish all Crates
         env:
           CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
-        run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN --dry-run'
+        run: find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0 | xargs -0 -I {} sh -c 'cd {} && cargo publish --token $CRATES_IO_TOKEN'
