@@ -3,7 +3,7 @@ jobs:
     if: >
       (github.event.pull_request.merged
       && startsWith(github.event.pull_request.title, 'Publish '))
-      || github.event_name = 'workflow_dispatch'
+      || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
