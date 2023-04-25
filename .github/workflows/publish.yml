@@ -2,7 +2,7 @@ jobs:
   publish_crate:
     if: >
       github.event.pull_request.merged
-      && github.event.pull_request
+      && startsWith(github.event.pull_request.title, 'Publish ')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
