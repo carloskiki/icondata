@@ -6,7 +6,7 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
-    dirs::{boilerplate::Boilerpate, icon_library::IconLibrary},
+    dirs::{boilerplate::Boilerplate, icon_library::IconLibrary},
     icon::SvgIcon,
     package::{Package, PackageMetadata},
 };
@@ -64,7 +64,7 @@ impl<T: std::fmt::Debug> CargoToml<T> {
 
 }
 
-impl CargoToml<Boilerpate> {
+impl CargoToml<Boilerplate> {
     pub(crate) async fn write_cargo_toml(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         self.write_package_section().await?;
         self.write_dependencies_section().await?;
