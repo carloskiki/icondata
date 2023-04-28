@@ -24,7 +24,7 @@ jobs:
           'cd {} && cargo publish --token $CRATES_IO_TOKEN
           || (exit_code=$?; [ $exit_code -eq 101 ] && true || exit $exit_code)'
 
-name: Publish Crate
+name: Publish Crates
 on:
   pull_request:
     types: [closed]
