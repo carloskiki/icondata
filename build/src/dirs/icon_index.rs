@@ -1,6 +1,6 @@
 use crate::fs::cargo_toml::CargoToml;
 use anyhow::Result;
-use indoc::{indoc, formatdoc};
+use indoc::indoc;
 use tokio::io::AsyncWriteExt;
 use tracing::error;
 

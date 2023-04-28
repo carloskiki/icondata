@@ -6,23 +6,23 @@
 [dependencies]
 icondata_core = "0.0.1"
 
-icondata_ai = {  version = "0.0.2", optional = true }
-icondata_fa = {  version = "0.0.2", optional = true }
-icondata_wi = {  version = "0.0.2", optional = true }
-icondata_fi = {  version = "0.0.2", optional = true }
-icondata_vs = {  version = "0.0.2", optional = true }
-icondata_bs = {  version = "0.0.2", optional = true }
-icondata_bi = {  version = "0.0.2", optional = true }
-icondata_im = {  version = "0.0.2", optional = true }
-icondata_io = {  version = "0.0.2", optional = true }
-icondata_ri = {  version = "0.0.2", optional = true }
-icondata_si = {  version = "0.0.2", optional = true }
-icondata_ti = {  version = "0.0.2", optional = true }
-icondata_hi = {  version = "0.0.2", optional = true }
-icondata_cg = {  version = "0.0.2", optional = true }
-icondata_tb = {  version = "0.0.2", optional = true }
-icondata_oc = {  version = "0.0.2", optional = true }
-icondata_lu = {  version = "0.0.2", optional = true }
+icondata_ai = {  version = "0.0.3", optional = true }
+icondata_fa = {  version = "0.0.3", optional = true }
+icondata_wi = {  version = "0.0.3", optional = true }
+icondata_fi = {  version = "0.0.3", optional = true }
+icondata_vs = {  version = "0.0.3", optional = true }
+icondata_bs = {  version = "0.0.3", optional = true }
+icondata_bi = {  version = "0.0.3", optional = true }
+icondata_im = {  version = "0.0.3", optional = true }
+icondata_io = {  version = "0.0.3", optional = true }
+icondata_ri = {  version = "0.0.3", optional = true }
+icondata_si = {  version = "0.0.3", optional = true }
+icondata_ti = {  version = "0.0.3", optional = true }
+icondata_hi = {  version = "0.0.3", optional = true }
+icondata_cg = {  version = "0.0.3", optional = true }
+icondata_tb = {  version = "0.0.3", optional = true }
+icondata_oc = {  version = "0.0.3", optional = true }
+icondata_lu = {  version = "0.0.3", optional = true }
 
 [features]
 default = []
