@@ -10,7 +10,7 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
 
 use crate::{
-    dirs::{boilerplate::Boilerpate, icon_library::IconLibrary},
+    dirs::{boilerplate::Boilerplate, icon_library::IconLibrary},
     icon::SvgIcon,
     package::Package,
 };
@@ -89,11 +89,11 @@ impl<T: std::fmt::Debug> LibRs<T> {
     }
 }
 
-impl LibRs<Boilerpate> {
+impl LibRs<Boilerplate> {
     pub async fn write_lib_rs(&self) -> Result<()> {
         let reexports = Self::build_reexports()?;
         self.write(reexports.as_bytes()).await?;
-        self.write("\n// specific framework code ... ".as_bytes())
+        self.write("\n// specific crate code ... ".as_bytes())
             .await?;
 
         Ok(())

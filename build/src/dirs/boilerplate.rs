@@ -8,13 +8,13 @@ use crate::fs::{cargo_toml::CargoToml, lib_rs::LibRs, src_dir::SrcDir};
 use super::icon_library::IconLibrary;
 
 #[derive(Debug)]
-pub(crate) struct Boilerpate {
+pub(crate) struct Boilerplate {
     pub path: PathBuf,
-    pub cargo_toml: CargoToml<Boilerpate>,
-    pub src_dir: SrcDir<Boilerpate>,
+    pub cargo_toml: CargoToml<Boilerplate>,
+    pub src_dir: SrcDir<Boilerplate>,
 }
 
-impl Boilerpate {
+impl Boilerplate {
     pub fn new(root: PathBuf) -> Self {
         Self {
             path: root.clone(),

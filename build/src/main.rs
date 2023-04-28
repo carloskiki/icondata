@@ -10,7 +10,7 @@ use tracing_subscriber::{Layer, Registry};
 use crate::dirs::base_repo::BaseRepo;
 use crate::dirs::icon_index::IconIndex;
 use crate::dirs::icon_library::IconLibrary;
-use crate::dirs::boilerplate::Boilerpate;
+use crate::dirs::boilerplate::Boilerplate;
 use crate::package::Package;
 
 mod fs;
@@ -94,7 +94,7 @@ async fn main() -> Result<()> {
     base_repo.generate().await?;
 
     let boilerplate_path = path::library_crate("boilerplate", "");
-    let mut boilerplate_dir = Boilerpate::new(boilerplate_path);
+    let mut boilerplate_dir = Boilerplate::new(boilerplate_path);
     boilerplate_dir.generate(&libs).await?;
 
     let end = time::OffsetDateTime::now_utc();
