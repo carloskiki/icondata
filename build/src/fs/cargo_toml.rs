@@ -141,11 +141,11 @@ impl CargoToml<Boilerplate> {
             default = []
             serde = [{serde}
             ]
-            enum-iterator = [{enum_iterator}
+            strum = [{strum}
             ]
 
             "#, serde = icondata_feature_list("serde"),
-            enum_iterator = icondata_feature_list("enum-iterator")
+            strum = icondata_feature_list("strum")
         };
 
         writer.write_all(base_features.as_bytes()).await?;
@@ -214,7 +214,7 @@ impl CargoToml<IconLibrary> {
             [dependencies]
             icondata_core = "0.0.1"
             serde = {{ version = "1", features = ["derive"], optional = true }}
-            enum-iterator = {{ version = "1", optional = true }}
+            strum = {{ version = "0.24", optional = true, features = ["derive"] }}
 
             [features]
             "#,

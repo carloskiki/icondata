@@ -13,7 +13,7 @@ categories = ["web-programming"]
 [dependencies]
 icondata_core = "0.0.1"
 serde = { version = "1", features = ["derive"], optional = true }
-enum-iterator = { version = "1", optional = true }
+strum = { version = "0.24", optional = true, features = ["derive"] }
 
 [features]
 Bi500px = []
