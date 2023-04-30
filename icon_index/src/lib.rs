@@ -1,9 +1,10 @@
+
 use leptos_icons::*;
 use strum::IntoEnumIterator;
 
 fn all_icons() -> impl Iterator<Item = IconData> {
     [
-        AiIcon::iter().map(|icon: AiIcon| IconData::from(icon)),
+        AiIcon::iter(),
         FaIcon::iter(),
         WiIcon::iter(),
         FiIcon::iter(),
@@ -20,5 +21,5 @@ fn all_icons() -> impl Iterator<Item = IconData> {
         TbIcon::iter(),
         OcIcon::iter(),
         LuIcon::iter(),
-    ].into_iter().flatten()
+    ]
 }
