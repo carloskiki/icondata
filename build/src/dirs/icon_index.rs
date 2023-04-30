@@ -85,7 +85,7 @@ impl CargoToml<IconIndex> {
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.4\", default_features = false, features = [\n\"csr\",\n\"strum\"".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.4\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 
