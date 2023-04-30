@@ -67,21 +67,25 @@ impl CargoToml<IconIndex> {
             console_error_panic_hook = "0.1"
             console_log = "1"
             log = "0.4"
-            icondata_core = { version = "0.0.1" }
-            enum-iterator = "1"
+            leptos_icons = "0.0.5"
+            strum = "0.24"
 
             "#};
 
-        let icon_features = icon_libs.iter().map(|lib| {
-            lib.icons.iter().map(|icon| {
-                format!("\"{}\",\n", icon.feature.name)
-            }).collect::<String>()
-        }).collect::<String>();
+        let icon_features = icon_libs
+            .iter()
+            .map(|lib| {
+                lib.icons
+                    .iter()
+                    .map(|icon| format!("\"{}\",\n", icon.feature.name))
+                    .collect::<String>()
+            })
+            .collect::<String>();
 
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.4\", default_features = false, features = [\n\"csr\",\n".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.4\", default_features = false, features = [\n\"csr\",\n\"strum\"".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 
@@ -92,6 +96,5 @@ impl CargoToml<IconIndex> {
             err
         })?;
         Ok(())
-
     }
 }
