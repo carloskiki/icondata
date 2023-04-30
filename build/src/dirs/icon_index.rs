@@ -1,4 +1,4 @@
-use crate::fs::cargo_toml::CargoToml;
+use crate::fs::{cargo_toml::CargoToml, lib_rs::LibRs, src_dir::SrcDir};
 use anyhow::Result;
 use indoc::indoc;
 use tokio::io::AsyncWriteExt;
@@ -11,6 +11,7 @@ use super::icon_library::IconLibrary;
 #[derive(Debug)]
 pub(crate) struct IconIndex {
     cargo_toml: CargoToml<IconIndex>,
+    src_dir: SrcDir<IconIndex>,
 }
 
 impl IconIndex {
@@ -20,6 +21,13 @@ impl IconIndex {
                 path: path.as_ref().join("Cargo.toml"),
                 _phantom: std::marker::PhantomData,
             },
+            src_dir: SrcDir {
+                path: path.as_ref().join("src/"),
+                lib_rs: LibRs {
+                    path: path.as_ref().join("src/lib.rs"),
+                    _phantom: std::marker::PhantomData,
+                },
+            },
         }
     }
 
@@ -27,7 +35,11 @@ impl IconIndex {
         tracing::trace!("Generating icon-index.");
         self.cargo_toml.reset().await?;
 
-        self.cargo_toml.write_cargo_toml(icon_libs).await
+        self.cargo_toml.write_cargo_toml(icon_libs).await?;
+
+        tracing::trace!("Generating lib file.");
+        self.src_dir.lib_rs.reset().await?;
+        self.src_dir.lib_rs.write_lib_rs(icon_libs).await
     }
 }
 
@@ -84,7 +96,7 @@ impl CargoToml<IconIndex> {
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.5\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.6\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 
