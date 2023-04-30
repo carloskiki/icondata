@@ -5,8 +5,8 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
-    icon_library::IconLibrary,
-    package::{GitTarget, Package, PackageMetadata, PackageSource}, base_repo::BaseRepo,
+    dirs::{base_repo::BaseRepo, icon_library::IconLibrary},
+    package::{GitTarget, Package, PackageMetadata, PackageSource},
 };
 
 #[derive(Debug)]
@@ -125,7 +125,7 @@ impl Readme<BaseRepo> {
             ```toml
             [dependencies]
             # ...
-            icondata_bs = { version = "0.0.1", features = ["BsFolder"] }
+            icondata_bs = { version = "...", features = ["BsFolder"] }
             ```
 
             If you are creating a component library for a web framework, you can use this [boilerplate](/boilerplate) setup.

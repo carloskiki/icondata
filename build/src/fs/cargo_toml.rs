@@ -6,9 +6,8 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
+    dirs::{boilerplate::Boilerplate, icon_library::IconLibrary},
     icon::SvgIcon,
-    icon_library::IconLibrary,
-    boilerplate::Boilerpate,
     package::{Package, PackageMetadata},
 };
 
@@ -43,14 +42,13 @@ impl<T: std::fmt::Debug> CargoToml<T> {
         }
 
         trace!("Writing BASE_CARGO_TOML content.");
-        self.create_file()
-            .await?;
+        self.create_file().await?;
 
         Ok(())
     }
 
     #[instrument(level = "info", skip_all)]
-    async fn append(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
+    pub(crate) async fn append(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
         trace!("Creating file.");
         Ok(tokio::io::BufWriter::new(
             tokio::fs::OpenOptions::new()
@@ -63,9 +61,10 @@ impl<T: std::fmt::Debug> CargoToml<T> {
                 })?,
         ))
     }
+
 }
 
-impl CargoToml<Boilerpate> {
+impl CargoToml<Boilerplate> {
     pub(crate) async fn write_cargo_toml(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         self.write_package_section().await?;
         self.write_dependencies_section().await?;
@@ -130,17 +129,24 @@ impl CargoToml<Boilerpate> {
     async fn write_features_section(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         let mut writer = self.append().await?;
 
-        let libs_serde_feature = Package::all().iter().map(|pack| {
-            format!("\n\"icondata_{}/serde\",", pack.meta.short_name)
-        }).collect::<String>();
-        
+        fn icondata_feature_list(feature_name: &str) -> String {
+            Package::all()
+                .iter()
+                .map(|pack| format!("\n\"icondata_{}/{feature_name}\",", pack.meta.short_name))
+                .collect::<String>()
+        }
+
         let base_features = formatdoc! {r#"
             [features]
             default = []
-            serde = [{libs_serde_feature}
+            serde = [{serde}
+            ]
+            strum = [{strum}
             ]
 
-            "#};
+            "#, serde = icondata_feature_list("serde"),
+            strum = icondata_feature_list("strum")
+        };
 
         writer.write_all(base_features.as_bytes()).await?;
 
@@ -208,10 +214,9 @@ impl CargoToml<IconLibrary> {
             [dependencies]
             icondata_core = "0.0.1"
             serde = {{ version = "1", features = ["derive"], optional = true }}
+            strum = {{ version = "0.24", optional = true, features = ["derive"] }}
 
             [features]
-            serde = ["dep:serde"]
-
             "#,
             crate_version = package_meta.crate_version,
             short_name = package_meta.short_name,

@@ -9,7 +9,11 @@ use snafu::{prelude::*, Backtrace};
 use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
 
-use crate::{icon::SvgIcon, icon_library::IconLibrary, boilerplate::Boilerpate, package::Package};
+use crate::{
+    dirs::{boilerplate::Boilerplate, icon_library::IconLibrary},
+    icon::SvgIcon,
+    package::Package,
+};
 
 const DOCS: &[u8] = indoc! {r#"
             //! This crate provides a collection of icons in the form of SVG data
@@ -85,12 +89,12 @@ impl<T: std::fmt::Debug> LibRs<T> {
     }
 }
 
-impl LibRs<Boilerpate> {
-    pub async fn write_lib_rs(
-        &self) -> Result<()> {
+impl LibRs<Boilerplate> {
+    pub async fn write_lib_rs(&self) -> Result<()> {
         let reexports = Self::build_reexports()?;
         self.write(reexports.as_bytes()).await?;
-        self.write("\n// specific framework code ... ".as_bytes()).await?;
+        self.write("\n// specific crate code ... ".as_bytes())
+            .await?;
 
         Ok(())
     }
@@ -139,8 +143,9 @@ impl LibRs<IconLibrary> {
 
         let icon_enum = quote! {
             #[non_exhaustive]
-            #[cfg_attr(feature = "serde", derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy, serde::Serialize, serde::Deserialize))]
-            #[cfg_attr(not(feature = "serde"), derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy))]
+            #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
+            #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
+            #[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::AsRefStr))]
             pub enum #enum_ident {
                 #(#variants),*
             }
