@@ -12,10 +12,9 @@ leptos_router = { version = "0.2", default-features = false, features = [
 console_error_panic_hook = "0.1"
 console_log = "1"
 log = "0.4"
-leptos_icons = "0.0.5"
 strum = "0.24"
 
-leptos_icons = { version = "0.0.4", default_features = false, features = [
+leptos_icons = { version = "0.0.5", default_features = false, features = [
 "csr",
 "strum",
 "AiAccountBookFilled",

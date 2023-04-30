@@ -67,7 +67,6 @@ impl CargoToml<IconIndex> {
             console_error_panic_hook = "0.1"
             console_log = "1"
             log = "0.4"
-            leptos_icons = "0.0.5"
             strum = "0.24"
 
             "#};
@@ -85,7 +84,7 @@ impl CargoToml<IconIndex> {
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.4\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.5\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 
