@@ -1,3 +1,4 @@
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub struct IconData {
     pub style: Option<&'static str>,
     pub x: Option<&'static str>,
