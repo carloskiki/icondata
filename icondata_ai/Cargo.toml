@@ -1,6 +1,6 @@
 [package]
 name = "icondata_ai"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"
 description = "Library providing SVG and corresponding metadata for \"Ant Design Icons\"."
@@ -13,7 +13,7 @@ categories = ["web-programming"]
 [dependencies]
 icondata_core = "0.0.1"
 serde = { version = "1", features = ["derive"], optional = true }
-enum-iterator = { version = "1", optional = true }
+strum = { version = "0.24", optional = true, features = ["derive"] }
 
 [features]
 AiAccountBookFilled = []

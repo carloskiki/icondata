@@ -145,7 +145,7 @@ impl LibRs<IconLibrary> {
             #[non_exhaustive]
             #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
             #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-            #[cfg_attr(feature = "enum-iterator", derive(enum_iterator::Sequence))]
+            #[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::AsRefStr))]
             pub enum #enum_ident {
                 #(#variants),*
             }
