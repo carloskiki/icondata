@@ -97,7 +97,7 @@ impl CargoToml<Boilerplate> {
         let mut file = self.append().await?;
         let dependencies = indoc! {r#"
             [dependencies]
-            icondata_core = "0.0.1"
+            icondata_core = "0.0.2"
 
         "#};
         file.write_all(dependencies.as_bytes()).await?;
