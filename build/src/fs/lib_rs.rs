@@ -10,7 +10,7 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
 
 use crate::{
-    dirs::{boilerplate::Boilerplate, icon_library::IconLibrary},
+    dirs::{boilerplate::Boilerplate, icon_index::IconIndex, icon_library::IconLibrary},
     icon::SvgIcon,
     package::Package,
 };
@@ -321,5 +321,65 @@ impl LibRs<IconLibrary> {
 
         let tokens_file: syn::File = syn::parse2(enum_impl)?;
         Ok(prettyplease::unparse(&tokens_file))
+    }
+}
+
+impl LibRs<IconIndex> {
+    pub(crate) async fn write_lib_rs(&self, icon_libs: &[IconLibrary]) -> Result<()> {
+        let mut file = self.append().await?;
+
+        let imports = Self::imports();
+        let all_icons_func = Self::generate_all_icons(icon_libs)?;
+
+        file.write_all(imports.as_bytes()).await?;
+        file.write_all(all_icons_func.as_bytes()).await?;
+
+        file.flush().await.map_err(|err| {
+            error!(?err, "Could not flush file after writing.");
+            err
+        })?;
+        Ok(())
+    }
+
+    fn imports() -> String {
+        indoc! {"
+
+            use leptos_icons::*;
+            use strum::IntoEnumIterator;
+
+            "}.to_string()
+    }
+
+    fn generate_all_icons(icon_libs: &[IconLibrary]) -> Result<String> {
+        trace!("Generating all_icons function.");
+        let packages = icon_libs.iter().map(|lib| {
+            let enum_name_ident = Ident::new(&lib.enum_name(), Span::call_site());
+            quote!(#enum_name_ident::iter())
+        });
+
+
+        trace!("Quoting Code.");
+        let function = quote! {
+            fn all_icons() -> impl Iterator<Item = IconData> {
+                [
+                #(#packages),*
+                ]
+            }
+        };
+
+        let tokens_file: syn::File = syn::parse2(function)?;
+        Ok(prettyplease::unparse(&tokens_file))
+    }
+
+    pub(crate) async fn reset(&self) -> Result<()> {
+        if self.path.exists() {
+            trace!("Removing file.");
+            tokio::fs::remove_file(&self.path).await?;
+        }
+
+        trace!("Creating new file.");
+        self.init().await?;
+
+        Ok(())
     }
 }
