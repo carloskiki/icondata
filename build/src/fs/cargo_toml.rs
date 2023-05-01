@@ -212,7 +212,7 @@ impl CargoToml<IconLibrary> {
             categories = ["web-programming"]
 
             [dependencies]
-            icondata_core = "0.0.1"
+            icondata_core = "0.0.2"
             serde = {{ version = "1", features = ["derive"], optional = true }}
             strum = {{ version = "0.24", optional = true, features = ["derive"] }}
 

@@ -4,7 +4,7 @@
 # ---------------
 
 [dependencies]
-icondata_core = "0.0.1"
+icondata_core = "0.0.2"
 
 icondata_ai = {  version = "0.0.4", optional = true }
 icondata_fa = {  version = "0.0.4", optional = true }
