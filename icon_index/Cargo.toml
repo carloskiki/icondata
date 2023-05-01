@@ -14,7 +14,7 @@ console_log = "1"
 log = "0.4"
 strum = "0.24"
 
-leptos_icons = { version = "0.0.6", default_features = false, features = [
+leptos_icons = { version = "0.0.7", default_features = false, features = [
 "csr",
 "strum",
 "AiAccountBookFilled",
