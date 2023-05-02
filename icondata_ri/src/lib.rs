@@ -11,7 +11,7 @@
 #[non_exhaustive]
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-#[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::AsRefStr))]
+#[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::EnumVariantNames))]
 pub enum RiIcon {
     #[cfg(feature = "Ri24HoursFinanceFill")]
     Ri24HoursFinanceFill,

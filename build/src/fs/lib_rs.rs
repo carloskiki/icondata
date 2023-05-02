@@ -145,7 +145,7 @@ impl LibRs<IconLibrary> {
             #[non_exhaustive]
             #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
             #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-            #[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::AsRefStr))]
+            #[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::EnumVariantNames))]
             pub enum #enum_ident {
                 #(#variants),*
             }
@@ -343,7 +343,6 @@ impl LibRs<IconIndex> {
 
     fn imports() -> String {
         indoc! {"
-
             use leptos_icons::*;
             use strum::IntoEnumIterator;
 
@@ -354,16 +353,16 @@ impl LibRs<IconIndex> {
         trace!("Generating all_icons function.");
         let packages = icon_libs.iter().map(|lib| {
             let enum_name_ident = Ident::new(&lib.enum_name(), Span::call_site());
-            quote!(#enum_name_ident::iter())
+            quote!(#enum_name_ident::iter().map(|i| (i.as_ref().to_owned(), IconData::from(i))))
         });
 
 
         trace!("Quoting Code.");
         let function = quote! {
-            fn all_icons() -> impl Iterator<Item = IconData> {
-                [
-                #(#packages),*
-                ]
+            pub fn all_icons() -> impl Iterator<Item = (&'static str, IconData)> {
+                itertools::chain!{
+                    #(#packages),*
+                }
             }
         };
 
