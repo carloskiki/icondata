@@ -71,7 +71,7 @@ impl CargoToml<IconIndex> {
     async fn write_dependencies(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         let base_dependencies = indoc! {r#"
             [dependencies]
-            leptos = { version = "0.2", default-features = false, features = ["csr", "serde", "stable"] }
+            leptos = { version = "0.2", default-features = false, features = ["csr", "serde"] }
             leptos_meta = { version = "0.2", default-features = false, features = ["csr"] }
             leptos_router = { version = "0.2", default-features = false, features = [
                 "csr",
@@ -80,6 +80,7 @@ impl CargoToml<IconIndex> {
             console_log = "1"
             log = "0.4"
             strum = "0.24"
+            itertools = "0.10.5"
 
             "#};
 
@@ -96,7 +97,7 @@ impl CargoToml<IconIndex> {
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.6\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.8\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 
