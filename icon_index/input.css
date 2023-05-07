@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary: 241 242 238;
+        --color-secondary: 221 161 94;
+        --color-emphasis: 67 188 205;
+        --color-primary-dark: 30 30 36;
+        --color-secondary-dark: 140 163 207;
+        --color-emphasis-dark: 224 248 119;
+    }
+}

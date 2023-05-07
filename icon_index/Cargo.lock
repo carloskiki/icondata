@@ -744,60 +744,55 @@ version = "0.1.0"
 dependencies = [
  "console_error_panic_hook",
  "console_log",
- "icondata_core 0.0.2",
+ "itertools",
  "leptos",
  "leptos_icons",
  "leptos_meta",
  "leptos_router",
  "log",
  "strum",
+ "web-sys",
 ]
 
 [[package]]
 name = "icondata_ai"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7024d5862510bac62f37f64f13ed8d4447d7322617a68ee22743cb8d964907c"
+checksum = "e462449658a71cf63c2d717f931e3cd19be0ae60202780300e7ae3f9587067c9"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_bi"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8d8f951f42485df704bf2399b1ae2399656e6a7d43619ba3eea67b63825773d3"
+checksum = "24d69be6d42d99e3b93e5bf553f0546746bea8cfbe9ccf85c40c7d174db18ea0"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_bs"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3f7e677644d1d9929f7849dbefef71abfa248452b3fa6a336ab1d779d0f67c90"
+checksum = "c30f849bb207a0e7cac78627b45cfd1b765ba6a225307df2fc0e64042ba618f4"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_cg"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "90af14cd0f81ae2b868f89099c15011bd17ce450835ae191e191d93e183965f1"
+checksum = "308fbf9b4c39a6f0ad9fd306dc3586e0370bb6ed4cf85aff8ae6acfcbf2b1fa8"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
-
-[[package]]
-name = "icondata_core"
-version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6c8064b9ba0d5959d06f211b8a98135e2fad9862e88d746908ba6b715489c662"
 
 [[package]]
 name = "icondata_core"
@@ -807,131 +802,131 @@ checksum = "1640a4c1d5ddd08ab1d9854ffa7a2fa3dc52339492676b6d3031e77ca579f434"
 
 [[package]]
 name = "icondata_fa"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d61cf25b271f9b38012dbcbdda9c16285a3a5a96e45d4d190da62bc986a68322"
+checksum = "f4a1f7f5fbdae603078400f1c17d8e551f526dbe9da28efd95a4ed4c33aec3be"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_fi"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83c892a61f1c1b82a0478a51826482dfa98b5780a283c45fc5060f832fcab594"
+checksum = "0a2086642395cc2fd1e3a6ba6cf0bf2cbb7cfcba6352b4c07f8f859abcdcbbcc"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_hi"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c124d0af8f5985155d674a72fb472eed6e82d070b6e54eb1594e3e3c5f636a79"
+checksum = "b38e36f11f7f4d105b60d758908c01809bafd65c08661c6bc34a9816042ed87a"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_im"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5aa8e2e6c8d924d971b612c52ce0bd6b806a71d28a97c286bb60940ee9c1efd7"
+checksum = "d6c93f8717a34bd03f7835ad07a59a72d00b32547b1bc269c9a115c97cef594b"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_io"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "81f12b57288b2716bc68827953611ef295991bfb4c17d24dc0ece6d14e7201e9"
+checksum = "ba1e5ae2f30c54cccd18843473fd6a59a56e4078add8344abec7949c3b285c91"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_lu"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fe406ccef4e8aac950ef0fa28871df4f74e34aac3fc0b320e56ccb8d6192aa14"
+checksum = "ad486d1988db53ddf6b502eabf3a5f25d58cdf05f0e797b2154d264eb1d960cb"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_oc"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0bb6166d0e54a575cb708f382e7d1400863ba947490ac2a0119cc5262029476"
+checksum = "f03c479aa6e34216b6a46cfcedffab65903ec48e2f7443eb0f28a8a25bfd5125"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_ri"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dfb2f75e7898efb3fa79a8c8c414180973e4a8807006d9d8312aa4a3c6c83c7f"
+checksum = "fc2eebc9cb6c1479878f980467193e3d6f55bec669de4971f2656a0e338d0e49"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_si"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b316d3ef7087fd67e4c1ba6b9fecf0a5fb812c8a3756ef99ef98b90e6b01bbaf"
+checksum = "aab24f3ce8ea9db9c0586f75f0a0df0a369d41a597525b081c45733e5d0e92b1"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_tb"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "664506f7b630c1d00cdf8407d7c9573d897867437031ed48705f1d03a7b9eea3"
+checksum = "3bcdc8423c0433f31690bd394a4fb72904045e4f89293cd6073945a266b8368d"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_ti"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83a1c33cba00ea60e46c627af0381f52aa2ec9798e8752fda3476f3da2278250"
+checksum = "af1ea6dd490fb79331829e05cabaec591a616b9e68cee61b22a4a1af0611d85f"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_vs"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed63d30ffa4fb50ae8bbcba386ddb3307395a3e54c3d5660af0e62a59394e3b8"
+checksum = "35e8adfb7406773f5a9accd73fab0f0007417b3ec3f15b725de87be7e25f8e98"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
 [[package]]
 name = "icondata_wi"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b818a99f55cf95ff90ae3264e15c02f55f181a61d31ba43387f868d064cc71cd"
+checksum = "a8d3c23e8dab1411c26fac6fecbfa55fccc12e19044c21543ab1434d52584f13"
 dependencies = [
- "icondata_core 0.0.1",
+ "icondata_core",
  "strum",
 ]
 
@@ -1116,15 +1111,15 @@ dependencies = [
 
 [[package]]
 name = "leptos_icons"
-version = "0.0.7"
+version = "0.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ba66bacfa69f449977c533517d505dfd21a9c10263b4f54cc3d4f2fd01883c6"
+checksum = "88945afe039ede731f13bdbb1dcb5bc08158cd4e63ced83e5fbf78556d5fafad"
 dependencies = [
  "icondata_ai",
  "icondata_bi",
  "icondata_bs",
  "icondata_cg",
- "icondata_core 0.0.2",
+ "icondata_core",
  "icondata_fa",
  "icondata_fi",
  "icondata_hi",

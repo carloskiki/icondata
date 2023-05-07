@@ -344,7 +344,7 @@ impl LibRs<IconIndex> {
     fn imports() -> String {
         indoc! {"
             use leptos_icons::*;
-            use strum::IntoEnumIterator;
+            use strum::{IntoEnumIterator, VariantNames};
 
             "}.to_string()
     }
@@ -353,7 +353,7 @@ impl LibRs<IconIndex> {
         trace!("Generating all_icons function.");
         let packages = icon_libs.iter().map(|lib| {
             let enum_name_ident = Ident::new(&lib.enum_name(), Span::call_site());
-            quote!(#enum_name_ident::iter().map(|i| (i.as_ref().to_owned(), IconData::from(i))))
+            quote!(#enum_name_ident::iter().zip(#enum_name_ident::VARIANTS).map(|(i, n)| (*n, IconData::from(i))))
         });
 
 

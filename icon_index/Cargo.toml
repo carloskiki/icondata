@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-leptos = { version = "0.2", default-features = false, features = ["csr", "serde", "stable"] }
+leptos = { version = "0.2", default-features = false, features = ["csr", "serde"] }
 leptos_meta = { version = "0.2", default-features = false, features = ["csr"] }
 leptos_router = { version = "0.2", default-features = false, features = [
     "csr",
@@ -13,8 +13,21 @@ console_error_panic_hook = "0.1"
 console_log = "1"
 log = "0.4"
 strum = "0.24"
+itertools = "0.10.5"
+web-sys = { version = "0.3.61", features = [
+    "Window",
+    "Navigator",
+    "Clipboard",
+    "Storage",
+    "HtmlElement",
+    "DomRect",
+    "CssStyleDeclaration",
+    "ScrollToOptions",
+    "ScrollBehavior",
+    "KeyboardEvent",
+] }
 
-leptos_icons = { version = "0.0.6", default_features = false, features = [
+leptos_icons = { version = "0.0.9", default_features = false, features = [
 "csr",
 "strum",
 "AiAccountBookFilled",
