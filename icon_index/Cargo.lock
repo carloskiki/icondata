@@ -750,6 +750,7 @@ dependencies = [
  "leptos_meta",
  "leptos_router",
  "log",
+ "once_cell",
  "strum",
  "web-sys",
 ]
