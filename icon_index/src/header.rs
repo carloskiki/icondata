@@ -1,6 +1,5 @@
 use leptos::{ev::MouseEvent, *};
 use leptos_icons::{BsIcon, Icon, IconProps};
-use leptos_router::*;
 use web_sys::{HtmlHeadingElement, ScrollToOptions, ScrollBehavior};
 
 use crate::searchbar::*;
@@ -9,11 +8,11 @@ use crate::DarkModeRw;
 #[component]
 pub fn Header(cx: Scope) -> impl IntoView {
     view! {cx,
-    <nav class="sticky top-0 left-0 w-screen flex justify-between px-16 p-6 items-center bg-primary dark:bg-primary-dark z-50">
+    <nav class="sticky top-0 left-0 w-screen flex justify-between px-8 sm:px-16 p-6 items-center bg-primary dark:bg-primary-dark z-50">
         <HeaderLogo />
         <div class="flex space-x-6 items-center">
             <SearchBar />
-            <A href="docs" class="cursor-pointer hover:text-emphasis dark:hover:text-emphasis-dark".to_string()>"Docs"</A>
+            <a href="https://github.com/Carlosted/icondata" class="cursor-pointer hover:text-emphasis dark:hover:text-emphasis-dark">"Docs"</a>
             <ThemeButton />
         </div>
     </nav>
@@ -63,14 +62,12 @@ pub fn HeaderLogo(cx: Scope) -> impl IntoView {
     };
 
     view! { cx,
-        <A href="">
             <h1
             on:mousemove=logo_animation
             on:click=scroll_to_top
             style=logo_style
-            class="font-extrabold text-2xl p-2 cursor-pointer hover:text-transparent transition-colors duration-500 ease-in-out"
+            class="font-extrabold text-xl sm:text-2xl p-2 cursor-pointer hover:text-transparent transition-colors duration-500 ease-in-out"
             >"Icondata"</h1>
-        </A>
     }
 }
 
