@@ -163,6 +163,7 @@ pub(crate) enum PackageType {
     TablerIcons,
     GithubOcticons,
     Lucide,
+    Charm,
 }
 
 #[derive(Debug, Clone)]
@@ -667,6 +668,33 @@ impl PackageType {
                     },
                 },
                 download_dir: Cow::Borrowed("lucide"),
+                svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 6,
+                    prerelease: None,
+                    build: None,
+                },
+            },
+            PackageType::Charm => PackageMetadata {
+                short_name: Cow::Borrowed("ch"),
+                package_name: Cow::Borrowed("Charm"),
+                licenses: &[Cow::Borrowed("MIT")],
+                source: PackageSource::Git {
+                    url: Cow::Borrowed("https://github.com/jaynewey/charm-icons"),
+                    target: GitTarget::Tag {
+                        name: Cow::Borrowed("v0.18.0"),
+                        version: SemVer {
+                            major: 0,
+                            minor: 8,
+                            patch: 0,
+                            prerelease: None,
+                            build: None,
+                        },
+                    },
+                },
+                download_dir: Cow::Borrowed("charm"),
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,

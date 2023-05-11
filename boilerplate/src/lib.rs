@@ -32,5 +32,7 @@ pub use icondata_tb::*;
 pub use icondata_oc::*;
 #[cfg(feature = "Lu")]
 pub use icondata_lu::*;
+#[cfg(feature = "Ch")]
+pub use icondata_ch::*;
 
 // specific crate code ... 
