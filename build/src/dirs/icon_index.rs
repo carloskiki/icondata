@@ -56,6 +56,11 @@ impl CargoToml<IconIndex> {
             version = "0.1.0"
             edition = "2021"
 
+            [profile.release]
+            opt-level = 'z'
+            lto = true
+            codegen-units = 1
+
             "#};
 
         let mut file = self.append().await?;
@@ -81,6 +86,19 @@ impl CargoToml<IconIndex> {
             log = "0.4"
             strum = "0.24"
             itertools = "0.10.5"
+            web-sys = { version = "0.3.61", features = [
+                "Window",
+                "Navigator",
+                "Clipboard",
+                "Storage",
+                "HtmlElement",
+                "DomRect",
+                "CssStyleDeclaration",
+                "ScrollToOptions",
+                "ScrollBehavior",
+                "KeyboardEvent",
+            ] }
+            once_cell = "1.17"
 
             "#};
 
@@ -97,7 +115,7 @@ impl CargoToml<IconIndex> {
         let mut file = self.append().await?;
 
         file.write_all(base_dependencies.as_bytes()).await?;
-        file.write_all("leptos_icons = { version = \"0.0.8\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
+        file.write_all("leptos_icons = { version = \"0.0.9\", default_features = false, features = [\n\"csr\",\n\"strum\",\n".as_bytes()).await?;
 
         file.write_all(icon_features.as_bytes()).await?;
 

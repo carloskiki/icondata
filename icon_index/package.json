@@ -1,0 +1,15 @@
+{
+  "name": "icon_index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwind": "^4.0.0"
+  }
+}

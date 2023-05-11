@@ -329,7 +329,7 @@ impl LibRs<IconIndex> {
         let mut file = self.append().await?;
 
         let imports = Self::imports();
-        let all_icons_func = Self::generate_all_icons(icon_libs)?;
+        let all_icons_func = Self::generate_constants(icon_libs)?;
 
         file.write_all(imports.as_bytes()).await?;
         file.write_all(all_icons_func.as_bytes()).await?;
@@ -344,29 +344,37 @@ impl LibRs<IconIndex> {
     fn imports() -> String {
         indoc! {"
             use leptos_icons::*;
-            use strum::IntoEnumIterator;
+            use strum::{IntoEnumIterator, VariantNames};
+            use once_cell::sync::Lazy;
 
-            "}.to_string()
+            "}
+        .to_string()
     }
 
-    fn generate_all_icons(icon_libs: &[IconLibrary]) -> Result<String> {
+    fn generate_constants(icon_libs: &[IconLibrary]) -> Result<String> {
         trace!("Generating all_icons function.");
-        let packages = icon_libs.iter().map(|lib| {
+        let (names, packages): (Vec<_>, Vec<_>)  = icon_libs.iter().map(|lib| {
             let enum_name_ident = Ident::new(&lib.enum_name(), Span::call_site());
-            quote!(#enum_name_ident::iter().map(|i| (i.as_ref().to_owned(), IconData::from(i))))
-        });
-
+            let names = quote!(#enum_name_ident::VARIANTS);
+            let packages = quote!(#enum_name_ident::iter().map(|i| IconData::from(i)));
+            (names, packages)
+        }).unzip();
 
         trace!("Quoting Code.");
-        let function = quote! {
-            pub fn all_icons() -> impl Iterator<Item = (&'static str, IconData)> {
+        let consts = quote! {
+            pub const NAMES: Lazy<Vec<&'static str>> = Lazy::new(|| [
+                    #(#names),*
+                ].concat()
+            );
+
+            pub static ALL_ICONS: Lazy<Vec<IconData>> = Lazy::new(|| {
                 itertools::chain!{
                     #(#packages),*
-                }
-            }
+                }.collect()
+            });
         };
 
-        let tokens_file: syn::File = syn::parse2(function)?;
+        let tokens_file: syn::File = syn::parse2(consts)?;
         Ok(prettyplease::unparse(&tokens_file))
     }
 
