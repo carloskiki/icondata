@@ -56,6 +56,11 @@ impl CargoToml<IconIndex> {
             version = "0.1.0"
             edition = "2021"
 
+            [profile.release]
+            opt-level = 'z'
+            lto = true
+            codegen-units = 1
+
             "#};
 
         let mut file = self.append().await?;

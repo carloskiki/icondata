@@ -1,6 +1,6 @@
 use leptos_icons::*;
-use once_cell::sync::Lazy;
 use strum::{IntoEnumIterator, VariantNames};
+use once_cell::sync::Lazy;
 
 pub const NAMES: Lazy<Vec<&'static str>> = Lazy::new(|| {
     [
@@ -22,7 +22,7 @@ pub const NAMES: Lazy<Vec<&'static str>> = Lazy::new(|| {
         OcIcon::VARIANTS,
         LuIcon::VARIANTS,
     ]
-    .concat()
+        .concat()
 });
 pub static ALL_ICONS: Lazy<Vec<IconData>> = Lazy::new(|| {
     itertools::chain! {
@@ -38,5 +38,5 @@ pub static ALL_ICONS: Lazy<Vec<IconData>> = Lazy::new(|| {
         OcIcon::iter().map(| i | IconData::from(i)), LuIcon::iter().map(| i |
         IconData::from(i))
     }
-    .collect()
+        .collect()
 });
