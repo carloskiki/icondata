@@ -3,6 +3,11 @@ name = "icon_index"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+
 [dependencies]
 leptos = { version = "0.2", default-features = false, features = ["csr", "serde"] }
 leptos_meta = { version = "0.2", default-features = false, features = ["csr"] }

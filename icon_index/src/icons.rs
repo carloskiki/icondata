@@ -1,4 +1,4 @@
-use std::{time::Duration, cmp::min};
+use std::{time::Duration, cmp::{min, max}};
 
 use icon_index::{ALL_ICONS, NAMES};
 use leptos::{html::Main, *};
@@ -41,7 +41,7 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     let base_font = base_font();
     let item_size = item_rem_size * base_font;
 
-    let col_count = move || window_size().0 / item_size;
+    let col_count = move || max(window_size().0 / item_size, 1);
     let row_count = move || window_size().1 / item_size;
 
     let item_count = move || filtered_search.with(|indicies| {
@@ -61,7 +61,7 @@ pub fn Icons(cx: Scope) -> impl IntoView {
             indicies[show_items_range()].iter().enumerate().map(move |(pos, index)| {
                 let top = (skipped_items() + pos as u32) / col_count() * item_size;
 
-                let gap_size = (window_size().0 - col_count() * item_size) / (col_count() - 1);
+                let gap_size = (window_size().0 - col_count() * item_size) / max(col_count() - 1, 1);
 
                 let left = (skipped_items() + pos as u32) % col_count() * (item_size + gap_size);
 
