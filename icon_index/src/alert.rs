@@ -34,7 +34,7 @@ pub fn Alerts(cx: Scope, alert_manager: AlertManager) -> impl IntoView {
     };
 
     view! { cx,
-        <div class="fixed top-32 right-4 flex flex-col gap-2">
+        <div class="fixed top-32 right-6 flex flex-col gap-2">
             {rendered_alerts}
         </div>
     }
@@ -48,8 +48,8 @@ pub struct Alert {
 impl Alert {
     fn render(&self, cx: Scope) -> impl IntoView {
         view! { cx,
-            <div class="flex w-64 h-14 rounded-md bg-green-300 dark:bg-green-600 px-4 justify-between items-center">
-                <p class="line-clamp-1 break-all z-10">{&self.text}</p>
+            <div class="flex w-72 h-14 rounded-md bg-green-300 dark:bg-green-600 px-4 gap-2 justify-between items-center">
+                <p class="line-clamp-1 break-all">{&self.text}</p>
                 <Icon icon=FaIcon::FaCircleCheckSolid width="1.5em" height="1.5em" />
             </div>
         }

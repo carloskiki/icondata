@@ -82,11 +82,18 @@ impl CargoToml<IconIndex> {
             strum = "0.24"
             itertools = "0.10.5"
             web-sys = { version = "0.3.61", features = [
+                "Window",
+                "Navigator",
+                "Clipboard",
                 "Storage",
                 "HtmlElement",
                 "DomRect",
                 "CssStyleDeclaration",
+                "ScrollToOptions",
+                "ScrollBehavior",
+                "KeyboardEvent",
             ] }
+            once_cell = "1.17"
 
             "#};
 

@@ -1,4 +1,4 @@
-use std::time::Duration;
+use std::{time::Duration, cmp::min};
 
 use icon_index::{ALL_ICONS, NAMES};
 use leptos::{html::Main, *};
@@ -29,9 +29,8 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     });
 
     let filtered_search = create_memo(cx, move |_| {
-        log!("in memo");
         NAMES
-            .into_iter()
+            .iter()
             .enumerate()
             .filter_map(move |(index, feat_name)| feat_name.contains(&search_content()).then_some(index))
             .collect::<Vec<_>>()
@@ -39,7 +38,6 @@ pub fn Icons(cx: Scope) -> impl IntoView {
 
     let item_rem_size = 10;
 
-    // This size is in px
     let base_font = base_font();
     let item_size = item_rem_size * base_font;
 
@@ -49,29 +47,34 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     let item_count = move || filtered_search.with(|indicies| {
         indicies.len()
     });
+
     let skipped_items = move || scroll_pos() / item_size * col_count();
 
     let show_items_range = move || {
         // start + the numbers of items in screen
         let end = skipped_items() + col_count() * (row_count() + 1);
-        (skipped_items() as usize)..(std::cmp::min(end as usize, item_count()))
+        (min(skipped_items() as usize, item_count()))..(min(end as usize, item_count()))
     };
 
     let item_parts = create_memo(cx, move |_| {
         filtered_search.with(|indicies: &Vec<usize>| {
             indicies[show_items_range()].iter().enumerate().map(move |(pos, index)| {
                 let top = (skipped_items() + pos as u32) / col_count() * item_size;
-                let right = (skipped_items() + pos as u32) % col_count() * item_size;
 
-                (*index, top, right)
+                let gap_size = (window_size().0 - col_count() * item_size) / (col_count() - 1);
+
+                let left = (skipped_items() + pos as u32) % col_count() * (item_size + gap_size);
+
+
+                (*index, top, left)
             }).collect::<Vec<_>>()
         })
     });
     
     let items = move || item_parts.with(|parts| {
-        parts.iter().map(|(index, top, right)| {
+        parts.iter().map(|(index, top, left)| {
             view! {cx, 
-                <IconItem icon=ALL_ICONS[*index] feat_name=NAMES[*index] top=*top right=*right />
+                <IconItem icon=ALL_ICONS[*index] feat_name=NAMES[*index] top=*top left=*left />
             }
         }).collect::<Vec<_>>()
     });
@@ -82,16 +85,17 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     // 3. Get the number of icons in window + 2 rows on top and bottom
     // 4. Every icon should have its own pos
 
-    let container_styles = move || {
-        let height = item_count() as u32 / col_count() * item_size;
-        let col_count = col_count();
-        format!("grid-template-columns: repeat({col_count}, 1fr); height: {height};")
+    let container_height = move || {
+        let height = (item_count() as u32 / col_count() + 1) * item_size;
+        let styles = format!("height: {height}px;");
+        log!("{}", styles);
+        styles
     };
 
     view! { cx,
-        <main _ref=container_ref class="relative grid items-center mx-auto gap-y-8 grid-flow-row"
+        <main _ref=container_ref class="relative mx-4"
             // Set the number of columns
-            style=container_styles
+            style=container_height
         >
             {items}
         </main>
@@ -121,7 +125,7 @@ fn base_font() -> u32 {
 }
 
 #[component]
-pub fn IconItem(cx: Scope, icon: IconData, feat_name: &'static str, top: u32, right: u32) -> impl IntoView {
+pub fn IconItem(cx: Scope, icon: IconData, feat_name: &'static str, top: u32, left: u32) -> impl IntoView {
     let text_size = match feat_name.len() {
         0..=16 => "text-xs",
         17..=22 => "text-[0.6rem]",
@@ -143,17 +147,17 @@ pub fn IconItem(cx: Scope, icon: IconData, feat_name: &'static str, top: u32, ri
 
     view! { cx,
         <div
-            class="rounded-xl border-gray-400 place-self-center dark:border-gray-200 border-4
+            class="rounded-xl border-gray-400 absolute dark:border-gray-200 border-4
             hover:border-secondary hover:dark:border-secondary-dark w-32 h-32
             flex justify-around items-center flex-col group hover:cursor-pointer
             "
             on:click=copy_name
-            style=move || format!("top: {top}; right: {right};")
+            style=move || format!("top: {top}px; left: {left}px;")
             >
             <Icon icon=icon width="4em" height="4em" class="group-hover:text-emphasis
             group-hover:dark:text-emphasis-dark transition-colors delay-75 duration-200
             ease-in-out" />
-            <p class=text_size>{move || feat_name}</p>
+            <p class={"line-clamp-1 break-all px-1 ".to_owned() + text_size}>{move || feat_name}</p>
         </div>
     }
 }
