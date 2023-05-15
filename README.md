@@ -2,7 +2,7 @@
 
 This crate provides SVG icon data from popular and free icon libraries. Every icon is packaged as its own cargo feature to reduce build times.
 
-Please note that as long as version 0.1.0 is not published, any patch version can cause breaking changes and is not guaranteed to work.
+Please note that as long as version 0.1.0 is not published, any patch update may cause breaking changes and is not guaranteed to work.
 
 ## Table of Contents
 
@@ -51,8 +51,7 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | Tabler Icons     | 2.17.0  | Git: <https://github.com/tabler/tabler-icons> - Tag: v2.17.0                                                              | MIT,                | icondata_tb |
 | Github Octicons  | 18.3.0  | Git: <https://github.com/primer/octicons> - Tag: v18.3.0                                                                  | MIT,                | icondata_oc |
 | Lucide           | 0.172.0 | Git: <https://github.com/lucide-icons/lucide> - Tag: v0.172.0                                                             | ISC,                | icondata_lu |
-| Charm Icons      | 0.18.0  | Git: <https://github.com/jaynewey/charm-icons> - Tag: v0.18.0                                                             | MIT,                | icondata_ch |
-
+| Charm            | 0.8.0   | Git: <https://github.com/jaynewey/charm-icons> - Tag: v0.18.0                                                             | MIT,                | icondata_ch |
 
 ## Developing
 

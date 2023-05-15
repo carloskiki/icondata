@@ -21,6 +21,7 @@ pub const NAMES: Lazy<Vec<&'static str>> = Lazy::new(|| {
         TbIcon::VARIANTS,
         OcIcon::VARIANTS,
         LuIcon::VARIANTS,
+        ChIcon::VARIANTS,
     ]
         .concat()
 });
@@ -36,7 +37,7 @@ pub static ALL_ICONS: Lazy<Vec<IconData>> = Lazy::new(|| {
         IconData::from(i)), HiIcon::iter().map(| i | IconData::from(i)), CgIcon::iter()
         .map(| i | IconData::from(i)), TbIcon::iter().map(| i | IconData::from(i)),
         OcIcon::iter().map(| i | IconData::from(i)), LuIcon::iter().map(| i |
-        IconData::from(i))
+        IconData::from(i)), ChIcon::iter().map(| i | IconData::from(i))
     }
         .collect()
 });
