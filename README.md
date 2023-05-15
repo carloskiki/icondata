@@ -51,6 +51,8 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | Tabler Icons     | 2.17.0  | Git: <https://github.com/tabler/tabler-icons> - Tag: v2.17.0                                                              | MIT,                | icondata_tb |
 | Github Octicons  | 18.3.0  | Git: <https://github.com/primer/octicons> - Tag: v18.3.0                                                                  | MIT,                | icondata_oc |
 | Lucide           | 0.172.0 | Git: <https://github.com/lucide-icons/lucide> - Tag: v0.172.0                                                             | ISC,                | icondata_lu |
+| Charm Icons      | 0.18.0  | Git: <https://github.com/jaynewey/charm-icons> - Tag: v0.18.0                                                             | MIT,                | icondata_ch |
+
 
 ## Developing
 
