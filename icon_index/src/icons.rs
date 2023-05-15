@@ -2,7 +2,7 @@ use std::{time::Duration, cmp::{min, max}};
 
 use icon_index::{ALL_ICONS, NAMES};
 use leptos::{html::Main, *};
-use leptos_icons::{Icon, IconData, IconProps};
+use leptos_icons::{Icon, IconData};
 use web_sys::MouseEvent;
 
 use crate::{
@@ -18,11 +18,11 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     let (scroll_pos, set_scroll_pos) = create_signal(cx, 0);
 
     // Set event listener for the resize of the window, to update the number of columns
-    window_event_listener("resize", move |_| {
+    window_event_listener(ev::resize, move |_| {
         set_window_size(fetch_window_size());
     });
     // Set event listener for the scrolling of the window
-    window_event_listener("scroll", move |_| {
+    window_event_listener(ev::scroll, move |_| {
         let scroll_y = window().scroll_y().unwrap() as u32;
 
         set_scroll_pos(scroll_y);
@@ -76,7 +76,7 @@ pub fn Icons(cx: Scope) -> impl IntoView {
             view! {cx, 
                 <IconItem icon=ALL_ICONS[*index] feat_name=NAMES[*index] top=*top left=*left />
             }
-        }).collect::<Vec<_>>()
+        }).collect_view(cx)
     });
 
     // 0. Get rem conversion

@@ -1,7 +1,7 @@
 use std::collections::VecDeque;
 
 use leptos::*;
-use leptos_icons::{FaIcon, Icon, IconProps};
+use leptos_icons::{FaIcon, Icon};
 
 #[derive(Copy, Clone, Debug)]
 pub struct AlertManager {

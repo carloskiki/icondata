@@ -1,6 +1,5 @@
 use leptos::*;
 use leptos_meta::*;
-use leptos_router::*;
 
 use crate::icons::*;
 use crate::header::*;
@@ -31,11 +30,9 @@ pub fn App(cx: Scope) -> impl IntoView {
         "".to_string()
     }} />
     <Body class="bg-primary text-black dark:bg-primary-dark dark:text-white" />
-    <Router>
         <Header />
         <Icons />
         <Alerts alert_manager=alert_manager />
-    </Router>
     }
 }
 

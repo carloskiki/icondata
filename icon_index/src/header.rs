@@ -1,5 +1,5 @@
 use leptos::{ev::MouseEvent, *};
-use leptos_icons::{BsIcon, Icon, IconProps};
+use leptos_icons::{BsIcon, Icon};
 use web_sys::{HtmlHeadingElement, ScrollToOptions, ScrollBehavior};
 
 use crate::searchbar::*;

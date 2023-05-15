@@ -1,5 +1,5 @@
 use leptos::{leptos_dom::console_log, *};
-use leptos_icons::{FaIcon, Icon, IconProps};
+use leptos_icons::{FaIcon, Icon};
 use web_sys::KeyboardEvent;
 
 #[derive(Clone, Debug)]

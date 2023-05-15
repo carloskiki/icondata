@@ -9,11 +9,8 @@ lto = true
 codegen-units = 1
 
 [dependencies]
-leptos = { version = "0.2", default-features = false, features = ["csr", "serde"] }
-leptos_meta = { version = "0.2", default-features = false, features = ["csr"] }
-leptos_router = { version = "0.2", default-features = false, features = [
-    "csr",
-] }
+leptos = { version = "0.3", default-features = false, features = ["csr"] }
+leptos_meta = { version = "0.3", default-features = false, features = ["csr"] }
 console_error_panic_hook = "0.1"
 console_log = "1"
 log = "0.4"
@@ -33,7 +30,7 @@ web-sys = { version = "0.3.61", features = [
 ] }
 once_cell = "1.17"
 
-leptos_icons = { version = "0.0.9", default_features = false, features = [
+leptos_icons = { version = "0.0.10", default_features = false, features = [
 "csr",
 "strum",
 "AiAccountBookFilled",
