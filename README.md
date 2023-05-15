@@ -2,6 +2,8 @@
 
 This crate provides SVG icon data from popular and free icon libraries. Every icon is packaged as its own cargo feature to reduce build times.
 
+Please note that as long as version 0.1.0 is not published, any patch version can cause breaking changes and is not guaranteed to work.
+
 ## Table of Contents
 
 - [Icondata](#icondata)
