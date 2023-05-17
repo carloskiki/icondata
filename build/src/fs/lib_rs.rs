@@ -89,6 +89,108 @@ impl<T: std::fmt::Debug> LibRs<T> {
     }
 }
 
+impl LibRs<MainLibrary> {
+    pub async fn write_lib_rs(
+        &self) -> Result<()> {
+        let icon_data = "pub use icondata_core::IconData;\n".as_bytes();
+        let reexports = Self::build_reexports()?;
+        self.write(reexports.as_bytes()).await?;
+        self.write(icon_data).await?;
+
+        Ok(())
+    }
+
+    fn build_reexports() -> Result<String> {
+        let packages = Package::all();
+        let statements = packages.iter().map(|pack| {
+            let lib_short_name = &pack.meta.short_name;
+            let short_name_upper = lib_short_name.to_upper_camel_case();
+            let lib_name_ident = format_ident!("icondata_{}", lib_short_name);
+            quote! {
+                #[cfg(feature = #short_name_upper)]
+                pub use #lib_name_ident::*;
+            }
+        });
+        let statements = quote! {
+            #(#statements)*
+        };
+        let tokens_file = syn::parse2::<syn::File>(statements).context(ParseTokenStreamSnafu {})?;
+        Ok(prettyplease::unparse(&tokens_file))
+    }
+
+    #[allow(dead_code)]
+    fn build_enum(enum_name: &str, icon_libs: &[IconLibrary]) -> Result<String> {
+        let variants = icon_libs.iter().map(|lib| {
+            let short_name_upper = &lib.package.meta.short_name.to_upper_camel_case();
+            let short_name_upper_ident = Ident::new(&short_name_upper, Span::call_site());
+            let lib_name_ident = format_ident!("icondata_{}", &lib.package.meta.short_name);
+            let lib_enum_ident = Ident::new(&lib.enum_name(), Span::call_site());
+            quote! {
+                #[cfg(feature = #short_name_upper)]
+                #short_name_upper_ident(#lib_name_ident::#lib_enum_ident)
+            }
+        });
+
+        let enum_ident = Ident::new(enum_name, Span::call_site());
+
+        let icon_enum = quote! {
+            #[cfg_attr(feature = "serde", derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy, serde::Serialize, serde::Deserialize))]
+            #[cfg_attr(not(feature = "serde"), derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy))]
+            pub enum #enum_ident {
+                #(#variants),*
+            }
+        };
+
+        let data_impl_match_arms = icon_libs.iter().map(|lib| {
+            let short_name_upper = &lib.package.meta.short_name.to_upper_camel_case();
+            let lib_short_name_ident = Ident::new(&short_name_upper, Span::call_site());
+            quote! {
+                #[cfg(feature = #short_name_upper)]
+                Self::#lib_short_name_ident(icon) => icondata_core::IconData::data(icon)
+            }
+        });
+
+        let data_impl = quote! {
+            impl<'a> icondata_core::IconData<'a> for crate::#enum_ident {
+                fn data(self) -> &'a icondata_core::Data {
+                    match self {
+                        #(#data_impl_match_arms),*
+                    }
+                }
+            }
+        };
+
+        let from_impls = icon_libs
+            .iter()
+            .map(|lib| {
+                let short_name_upper = &lib.package.meta.short_name.to_upper_camel_case();
+                let lib_short_name_ident = Ident::new(&short_name_upper, Span::call_site());
+                let lib_enum_ident = Ident::new(&lib.enum_name(), Span::call_site());
+                quote! {
+                    #[cfg(feature = #short_name_upper)]
+                    impl From<#lib_enum_ident> for #enum_ident {
+                        fn from(value: #lib_enum_ident) -> Self {
+                            Self::#lib_short_name_ident(value)
+                        }
+                    }
+
+                }
+            })
+            .collect::<Vec<_>>();
+
+        let code = quote! {
+            #icon_enum
+
+            #data_impl
+
+            #(#from_impls)*
+        };
+
+        let tokens_file = syn::parse2::<syn::File>(code).context(ParseTokenStreamSnafu {})?;
+        Ok(prettyplease::unparse(&tokens_file))
+    }
+
+
 impl LibRs<Boilerplate> {
     pub async fn write_lib_rs(&self) -> Result<()> {
         let reexports = Self::build_reexports()?;

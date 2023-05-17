@@ -64,6 +64,42 @@ impl<T: std::fmt::Debug> CargoToml<T> {
 
 }
 
+impl CargoToml<MainLibrary> {
+    pub(crate) async fn write_cargo_toml(&self, icon_libs: &[IconLibrary]) -> Result<()> {
+        self.write_package_section().await?;
+        self.write_dependencies_section().await?;
+        self.write_features_section(icon_libs).await?;
+
+        Ok(())
+    }
+
+    async fn write_package_section(&self) -> Result<()> {
+        let package_section = formatdoc! {r#"
+                [package]
+                name = "icondata"
+                version = "0.0.1"
+                authors = ["Charles Edward Gagnon"]
+                edition = "2021"
+                description = "Icon data from free icon libraries."
+                readme = "./README.md"
+                repository = "https://github.com/Carlosted/icondata"
+                license = "MIT"
+                keywords = ["leptos", "icons"]
+                categories = ["web-programming"]
+
+                "#};
+
+        let mut file = self.append().await?;
+
+        file.write_all(package_section.as_bytes()).await?;
+        file.flush().await.map_err(|err| {
+            error!(?err, "Could not flush Cargo.toml file after writing.");
+            err
+        })?;
+        Ok(())
+    }
+}
+
 impl CargoToml<Boilerplate> {
     pub(crate) async fn write_cargo_toml(&self, icon_libs: &[IconLibrary]) -> Result<()> {
         self.write_package_section().await?;
