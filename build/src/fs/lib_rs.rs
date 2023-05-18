@@ -189,6 +189,7 @@ impl LibRs<MainLibrary> {
         let tokens_file = syn::parse2::<syn::File>(code).context(ParseTokenStreamSnafu {})?;
         Ok(prettyplease::unparse(&tokens_file))
     }
+}
 
 
 impl LibRs<Boilerplate> {

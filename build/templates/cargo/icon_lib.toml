@@ -1,0 +1,21 @@
+[package]
+name = "icondata_{{crate_short_name}}"
+version = "{{crate_version}}"
+authors = ["Charles Edward Gagnon"]
+edition = "2021"
+description = "Library providing SVG and corresponding metadata for \"{{icon_package_name}}\"."
+readme = "./README.md"
+repository = "https://github.com/Carlosted/icondata"
+license = "MIT"
+keywords = ["icons"]
+categories = ["web-programming"]
+
+[dependencies]
+icondata_core = "0.0.2"
+serde = { version = "1", features = ["derive"], optional = true }
+strum = { version = "0.24", optional = true, features = ["derive"] }
+
+[features]
+{% for feat in features %}
+{{feat}} = []
+{% endfor %}

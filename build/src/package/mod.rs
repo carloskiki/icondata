@@ -1,6 +1,6 @@
 use anyhow::Result;
 use snafu::{prelude::*, Backtrace};
-use std::{borrow::Cow, marker::PhantomData, path::PathBuf};
+use std::{borrow::Cow, marker::PhantomData, ops::Range, path::PathBuf};
 use strum::{EnumIter, IntoEnumIterator};
 use tracing::{info, instrument};
 
@@ -41,14 +41,15 @@ pub(crate) enum Error {
 pub(crate) struct Package<S> {
     pub ty: PackageType,
     pub meta: PackageMetadata,
+    icon_range: Range<usize>,
     phantom_data: PhantomData<S>,
 }
 
-/// It is not guaranteed that the package was downloaded to teh exact version specified.
+/// It is not guaranteed that the package was downloaded to the exact version specified.
 #[derive(Debug, Clone)]
 pub struct Unknown {}
 
-/// The package was successfully downloaded. Icon data can be read.
+/// The package was successfully downloaded, and Icon data was read successfully.
 #[derive(Debug, Clone)]
 pub struct Downloaded {}
 
@@ -68,6 +69,7 @@ impl Package<Unknown> {
             .map(|ty| Package::<Unknown> {
                 ty,
                 meta: ty.metadata(),
+                icon_range: 0..0,
                 phantom_data: PhantomData {},
             })
             .collect()
@@ -84,7 +86,7 @@ impl Package<Unknown> {
     }
 
     #[instrument(level = "info")]
-    pub fn download(self) -> Result<Package<Downloaded>, Error> {
+    pub(crate) async fn download(self, all_icons: &mut Vec<SvgIcon>) -> Result<Package<Downloaded>, Error> {
         let download_path = self.download_path();
         info!(?download_path, "Downloading...");
 
@@ -126,21 +128,27 @@ impl Package<Unknown> {
             }
         };
 
+        let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
+        let icons = reader::read_icons(&self, icons_path).await?;
+
+        let slice_begin = all_icons.len();
+        all_icons.extend(icons.into_iter());
+        let slice_end = all_icons.len();
+
+        let icon_range = (slice_begin..slice_end);
+
         Ok(Package::<Downloaded> {
             ty: self.ty,
             meta: self.meta,
+            icon_range,
             phantom_data: PhantomData {},
         })
     }
 }
 
 impl Package<Downloaded> {
-    pub fn icons_path(&self) -> PathBuf {
-        self.download_path().join(self.meta.svg_dir.as_ref())
-    }
-
-    pub async fn read_icons(&self) -> Result<Vec<SvgIcon>> {
-        reader::read_icons(self).await
+    pub fn icon_range(&self) -> Range<usize> {
+        self.icon_range
     }
 }
 

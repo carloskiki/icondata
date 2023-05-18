@@ -1,5 +1,8 @@
 use anyhow::Result;
 use clap::{command, Parser};
+use icon::SvgIcon;
+use package::Downloaded;
+use std::sync::{Arc, Mutex};
 use tracing::{error, info};
 use tracing_subscriber::filter::Targets;
 use tracing_subscriber::fmt::format::{Format, Pretty};
@@ -8,14 +11,14 @@ use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
 use crate::dirs::base_repo::BaseRepo;
+use crate::dirs::boilerplate::Boilerplate;
 use crate::dirs::icon_index::IconIndex;
 use crate::dirs::icon_library::IconLibrary;
-use crate::dirs::boilerplate::Boilerplate;
 use crate::package::Package;
 
-mod fs;
 mod dirs;
 mod feature;
+mod fs;
 mod git;
 mod icon;
 mod package;
@@ -30,6 +33,9 @@ struct BuildArgs {
     clean: bool,
 }
 
+static ICONS: Arc<Mutex<Vec<SvgIcon>>> = Arc::new(Mutex::new(Vec::new()));
+static PACKAGES: Arc<Mutex<Vec<Package<Downloaded>>>> = Arc::new(Mutex::new(Vec::new()));
+
 #[tokio::main]
 async fn main() -> Result<()> {
     init_tracing(tracing::level_filters::LevelFilter::INFO);
@@ -41,6 +47,7 @@ async fn main() -> Result<()> {
 
     let start = time::OffsetDateTime::now_utc();
 
+    info!("Downloading all packages.");
     let handles = Package::all()
         .into_iter()
         .map(|package| {
@@ -49,9 +56,10 @@ async fn main() -> Result<()> {
                     package.remove().await?;
                 }
 
+                let mut icons = Arc::clone(&ICONS).lock()?;
                 // Download the package.
                 let package_type = package.ty;
-                let package = package.download().map_err(|err| {
+                let package = package.download(&mut icons).await.map_err(|err| {
                     error!(
                         ?package_type,
                         ?err,
@@ -60,33 +68,26 @@ async fn main() -> Result<()> {
                     err
                 })?;
 
-                // Generate the library for that package.
-                let lib_path =
-                    path::library_crate(format!("icondata_{}", package.meta.short_name), "");
-                let mut lib = IconLibrary::new(package, lib_path);
+                let mut packages = Arc::clone(&PACKAGES).lock()?;
+                packages.push(package);
 
-                lib.generate().await?;
-
-                Ok::<IconLibrary, anyhow::Error>(lib)
+                Ok::<(), anyhow::Error>(package)
             })
         })
         .collect::<Vec<_>>();
 
-    let libs = {
-        let mut libs = Vec::new();
-        for handle in handles {
-            match handle.await.unwrap() {
-                Ok(lib) => libs.push(lib),
-                Err(err) => {
-                    error!(?err, "Could not process package successfully.");
-                    return Err(err);
-                }
+    for handle in handles {
+        match handle.await.unwrap() {
+            Ok(()) => (),
+            Err(err) => {
+                error!(?err, "Could not process package successfully.");
+                return Err(err);
             }
         }
-        libs
-    };
+    }
 
-    let num_libs = libs.len();
+    info!("Generating individual icon crates.");
+    todo!();
 
     let mut base_path = path::build_crate("");
     base_path.pop();
@@ -145,8 +146,6 @@ fn assert_paths() {
     );
     assert_eq!(
         Some("icondata"),
-        icondata_crate_root
-            .file_name()
-            .and_then(|it| it.to_str())
+        icondata_crate_root.file_name().and_then(|it| it.to_str())
     );
 }

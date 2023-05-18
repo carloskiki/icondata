@@ -1,0 +1,22 @@
+[package]
+name = "icondata"
+version = "0.0.1"
+authors = ["Charles Edward Gagnon"]
+edition = "2021"
+description = "Icon data from free icon libraries."
+readme = "../README.md"
+repository = "https://github.com/Carlosted/icondata"
+license = "MIT"
+keywords = ["leptos", "icons"]
+categories = ["web-programming"]
+
+[dependencies]
+{{base_dependencies}}
+{% for dep in dependencies %}
+{{dep}}
+{% endfor %}
+
+[features]
+{% for feat in features %}
+{{feat}}
+{% endfor %}
