@@ -1,7 +1,8 @@
-use anyhow::Result;
+use anyhow::{anyhow, Result};
 use clap::{command, Parser};
 use icon::SvgIcon;
-use package::Downloaded;
+use package::{Downloaded, Unknown};
+use std::marker::PhantomData;
 use std::sync::{Arc, Mutex};
 use tracing::{error, info};
 use tracing_subscriber::filter::Targets;
@@ -15,6 +16,7 @@ use crate::dirs::boilerplate::Boilerplate;
 use crate::dirs::icon_index::IconIndex;
 use crate::dirs::icon_library::IconLibrary;
 use crate::package::Package;
+use once_cell::sync::OnceCell;
 
 mod dirs;
 mod feature;
@@ -33,8 +35,24 @@ struct BuildArgs {
     clean: bool,
 }
 
-static ICONS: Arc<Mutex<Vec<SvgIcon>>> = Arc::new(Mutex::new(Vec::new()));
-static PACKAGES: Arc<Mutex<Vec<Package<Downloaded>>>> = Arc::new(Mutex::new(Vec::new()));
+static PACKAGES: OnceCell<Packages> = OnceCell::new();
+
+pub struct Packages {
+    pub icons: Vec<SvgIcon>,
+    pub packages: Vec<Package>,
+}
+
+impl Packages {
+    pub fn get() -> Result<&'static Packages<Downloaded>> {
+        PACKAGES.get().or("Packages not initialized yet.")
+    }
+
+    pub fn set(icons: Vec<SvgIcon>, packages: Vec<Package<Downloaded>>) -> Result<()> {
+        PACKAGES.set(Packages { icons, packages }).or(anyhow!(
+            "Could not packages value because it was already set."
+        ))
+    }
+}
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -47,6 +65,9 @@ async fn main() -> Result<()> {
 
     let start = time::OffsetDateTime::now_utc();
 
+    let icons: Arc<Mutex<Vec<SvgIcon>>> = Arc::new(Mutex::new(Vec::new()));
+    let packages: Arc<Mutex<Vec<Package<Downloaded>>>> = Arc::new(Mutex::new(Vec::new()));
+
     info!("Downloading all packages.");
     let handles = Package::all()
         .into_iter()
@@ -56,7 +77,7 @@ async fn main() -> Result<()> {
                     package.remove().await?;
                 }
 
-                let mut icons = Arc::clone(&ICONS).lock()?;
+                let mut icons = Arc::clone(&icons).lock()?;
                 // Download the package.
                 let package_type = package.ty;
                 let package = package.download(&mut icons).await.map_err(|err| {
@@ -68,14 +89,13 @@ async fn main() -> Result<()> {
                     err
                 })?;
 
-                let mut packages = Arc::clone(&PACKAGES).lock()?;
+                let mut packages = Arc::clone(&packages).lock()?;
                 packages.push(package);
 
-                Ok::<(), anyhow::Error>(package)
+                Ok::<(), anyhow::Error>()
             })
         })
         .collect::<Vec<_>>();
-
     for handle in handles {
         match handle.await.unwrap() {
             Ok(()) => (),
@@ -86,8 +106,16 @@ async fn main() -> Result<()> {
         }
     }
 
+    info!("Setting the package global variable.");
+    Packages::set(icons.into_inner()?, packages.into_inner()?)?;
+
+    // TODO: Try spawning multiple threads.
     info!("Generating individual icon crates.");
-    todo!();
+    Packages::get()?.packages.iter().map(|package| {
+        Library {
+
+        }
+    })
 
     let mut base_path = path::build_crate("");
     base_path.pop();

@@ -11,12 +11,9 @@ keywords = ["leptos", "icons"]
 categories = ["web-programming"]
 
 [dependencies]
-{{base_dependencies}}
-{% for dep in dependencies %}
-{{dep}}
-{% endfor %}
+
 
 [features]
 {% for feat in features %}
-{{feat}}
+{{ feat }} = []
 {% endfor %}

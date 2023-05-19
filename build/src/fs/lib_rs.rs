@@ -44,9 +44,8 @@ pub(crate) enum Error {
 }
 
 #[derive(Debug)]
-pub(crate) struct LibRs<T> {
+pub(crate) struct LibRs {
     pub path: PathBuf,
-    pub(crate) _phantom: std::marker::PhantomData<T>,
 }
 
 impl<T: std::fmt::Debug> LibRs<T> {

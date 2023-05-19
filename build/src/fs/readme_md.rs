@@ -10,9 +10,8 @@ use crate::{
 };
 
 #[derive(Debug)]
-pub(crate) struct Readme<T> {
+pub(crate) struct Readme {
     pub(crate) path: PathBuf,
-    pub(crate) _phantom: std::marker::PhantomData<T>,
 }
 
 impl<T: std::fmt::Debug> Readme<T> {
