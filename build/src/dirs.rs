@@ -13,7 +13,7 @@ pub mod main_library;
 pub struct Library {
     path: PathBuf,
     cargo_toml: Option<CargoToml>,
-    src_dir: Option<SrcDir>,
+    lib_rs: Option<LibRs>,
     readme: Option<Readme>,
     ty: LibType,
 }
@@ -23,16 +23,13 @@ impl Library {
         match &ty {
             LibType::IconLib(_) => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let src_dir_path = path.join("src");
-                let lib_rs_path = src_dir_path.join("lib.rs");
+                let lib_rs_path = src_dir_path.join("src/lib.rs");
                 let readme_path = path.join("README.md");
 
                 Library {
                     path,
                     cargo_toml: Some(CargoToml { path: cargo_toml_path }),
-                    src_dir: Some(SrcDir { path: src_dir_path, lib_rs: LibRs {
-                        path: lib_rs_path,
-                    } }),
+                    lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: Some(Readme {
                         path: readme_path,
                     }),
@@ -42,8 +39,7 @@ impl Library {
 
             LibType::MainLib => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let src_dir_path = path.join("src");
-                let lib_rs_path = src_dir_path.join("lib.rs");
+                let lib_rs_path = src_dir_path.join("src/lib.rs");
                 let lib_path = path.clone();
 
                 path.pop();
@@ -52,9 +48,7 @@ impl Library {
                 Library {
                     path: lib_path,
                     cargo_toml: Some(CargoToml { path: cargo_toml_path }),
-                    src_dir: Some(SrcDir { path: src_dir_path, lib_rs: LibRs {
-                        path: lib_rs_path,
-                    } }),
+                    lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: Some(Readme {
                         path: readme_path,
                     }),
@@ -64,15 +58,12 @@ impl Library {
 
             LibType::IconIndex => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let src_dir_path = path.join("src");
-                let lib_rs_path = src_dir_path.join("lib.rs");
+                let lib_rs_path = src_dir_path.join("src/lib.rs");
 
                 Library {
                     path,
                     cargo_toml: Some(CargoToml { path: cargo_toml_path }),
-                    src_dir: Some(SrcDir { path: src_dir_path, lib_rs: LibRs {
-                        path: lib_rs_path,
-                    } }),
+                    lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: None,
                     ty,
                 }
@@ -82,11 +73,11 @@ impl Library {
                 Library {
                     path,
                     cargo_toml: Some(CargoToml { path: path.join("Cargo.toml") }),
-                    src_dir: None,
+                    lib_rs: None,
                     readme: None,
                     ty,
                 }
-            },
+            }
         }
     }
 
