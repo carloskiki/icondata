@@ -3,7 +3,7 @@
 //!
 //! ## Usage
 //!
-//! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
+//! Every icon is shipped as its own feature; the enum variant and its corresponding feature name are
 //! identical.
 //!
 //! The enum implements [`Into<icondata_core::IconData>`][icondata_core::IconData].

@@ -5,28 +5,15 @@ use heck::{ToShoutySnakeCase, ToUpperCamelCase};
 use indoc::indoc;
 use proc_macro2::{Ident, Span, TokenStream};
 use quote::{format_ident, quote};
-use snafu::{prelude::*, Backtrace};
+use snafu::{prelude::*, Backtrace, OptionExt};
 use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
 
 use crate::{
-    dirs::{boilerplate::Boilerplate, icon_index::IconIndex, icon_library::IconLibrary},
+    dirs::{boilerplate::Boilerplate, icon_index::IconIndex, icon_library::IconLibrary, LibType},
     icon::SvgIcon,
-    package::Package,
+    package::Package, Packages,
 };
-
-const DOCS: &[u8] = indoc! {r#"
-            //! This crate provides a collection of icons in the form of SVG data
-            //! and an enum to select them.
-            //!
-            //! ## Usage
-            //!
-            //! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
-            //! identical.
-            //!
-            //! The enum implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
-            //!
-            "#}.as_bytes();
 
 #[derive(Debug, Snafu)]
 pub(crate) enum Error {
@@ -48,11 +35,20 @@ pub(crate) struct LibRs {
     pub path: PathBuf,
 }
 
-impl<T: std::fmt::Debug> LibRs<T> {
-    pub(crate) async fn init(&self) -> Result<(), Error> {
+impl LibRs {
+    pub(crate) async fn init(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>, Error> {
+        // If unwrap errors here, it's because the path is "/" or "" (should never happen)
+        let src_dir = self.path.parent().unwrap();
+
+        trace!("Creating src dir if non-existent.");
+        if !src_dir.exists() {
+            // Safe to call unwrap because the path doesn't exist
+            tokio::fs::create_dir_all(src_dir).await.unwrap();
+        }
+
         trace!(path = ?self.path, "Creating new lib.rs file.");
         tokio::fs::OpenOptions::new()
-            .create_new(true)
+            .create(true)
             .write(true)
             .open(&self.path)
             .await
@@ -62,19 +58,39 @@ impl<T: std::fmt::Debug> LibRs<T> {
         Ok(())
     }
 
-    /// Opens the file for appending thereby creating it if non-existent.
-    async fn append(&self) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
-        Ok(tokio::io::BufWriter::new(
-            tokio::fs::OpenOptions::new()
-                .create(true)
-                .append(true)
-                .open(&self.path)
-                .await
-                .map_err(|err| {
-                    error!(?err, "Could not open lib.rs file to append modules.");
-                    err
-                })?,
-        ))
+    #[instrument(level = "info")]
+    fn contents(lib_type: &LibType) -> Result<String> {
+        info!("Generating contents.");
+        match lib_type {
+            LibType::IconLib(pkg) => {
+                #[derive(Template)]
+                #[template(path = "icon_lib/lib.rs")]
+                struct LibTemplate<'a> {
+                    icons: &'a [SvgIcon],
+                }
+
+                let icons = &Packages::get()?.icons[pkg.icon_range()];
+
+                LibTemplate { icons }.render()
+            },
+            LibType::MainLib => {
+                #[derive(Template)]
+                #[template(path = "main_lib/lib.rs")]
+                struct LibTemplate {
+                    lib_names: Vec<&'a str>,
+                }
+
+                let lib_names = Packages::get()?.packages.iter().map(|package| {
+                    &package.meta.short_name
+                }).collect::<Vec<_>>();
+
+                LibTemplate {
+                    lib_names,
+                }.render()
+            },
+            LibType::IconIndex => todo!(),
+            LibType::Boilerplate => unreachable!("Boilerplate does not have a lib.rs file"),
+        }
     }
 
     async fn write(&self, content: &[u8]) -> Result<()> {
@@ -490,5 +506,12 @@ impl LibRs<IconIndex> {
         self.init().await?;
 
         Ok(())
+    }
+}
+
+mod filters {
+    pub fn shouty_snake_case<T: std::fmt::Display>(s: T) -> ::askama::Result<String> {
+        let input = s.to_string();
+        Ok(input.to_shouty_snake_case())
     }
 }

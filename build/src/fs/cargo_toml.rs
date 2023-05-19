@@ -51,10 +51,11 @@ impl CargoToml {
         &mut self,
         lib_type: &LibType,
     ) -> Result<tokio::io::BufWriter<tokio::fs::File>> {
-        let content = self.get_content(lib_type);
+
+        info!(directory = ?lib_type, "Generating file.");
+        let content = Self::contents(lib_type)?;
 
         let file = self.reset().await?;
-
         let writer = tokio::io::BufWriter::new(file);
 
         file.write_all(content.as_bytes()).await?;
@@ -65,9 +66,9 @@ impl CargoToml {
         Ok(())
     }
 
-    #[instrument(level = "info", skip_all)]
-    fn get_content(lib_type: &LibType) -> Result<String> {
-        info!(directory = ?lib_type, "Generating content for Cargo.toml.");
+    #[instrument(level = "info")]
+    fn contents(lib_type: &LibType) -> Result<String> {
+        info!("Generating contents.");
         match lib_type {
             LibType::IconLib(pkg) => {
 
@@ -79,8 +80,6 @@ impl CargoToml {
                     icon_package_name: &'a str,
                     features: Vec<&'a str>,
                 }
-
-                let crate_name = format!("icondata_{}", pkg.meta.short_name);
 
                 let icons = crate::Packages::get()?;
                 let pkg_icons = icons[pkg.icon_range()];
