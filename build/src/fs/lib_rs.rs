@@ -88,7 +88,22 @@ impl LibRs {
                     lib_names,
                 }.render()
             },
-            LibType::IconIndex => todo!(),
+            LibType::IconIndex => {
+                #[derive(Template)]
+                #[template(path = "main_lib/lib.rs")]
+                struct LibTemplate {
+                    short_names_cap: Vec<String>,
+                }
+
+                let short_names_cap = Packages::get()?.packages.iter().map(|package| {
+                    package.meta.short_name.to_upper_camel_case()
+                }).collect::<Vec<_>>();
+
+                LibTemplate {
+                    short_names_cap,
+                }.render()
+            }
+
             LibType::Boilerplate => unreachable!("Boilerplate does not have a lib.rs file"),
         }
     }
