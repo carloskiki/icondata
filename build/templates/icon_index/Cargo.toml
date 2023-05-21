@@ -33,7 +33,7 @@ once_cell = "1.17"
 leptos_icons = { version = "0.0.10", default_features = false, features = [
 "csr",
 "strum",
-{% for feat in features %}
+{% for feat in features -%}
 "{{ feat }}",
-{% endfor %}
+{%- endfor %}
 ] }

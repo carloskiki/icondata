@@ -12,8 +12,7 @@ categories = ["web-programming"]
 
 [dependencies]
 
-
 [features]
-{% for feat in features %}
+{% for feat in features -%}
 {{ feat }} = []
-{% endfor %}
+{%- endfor %}
