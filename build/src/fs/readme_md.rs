@@ -1,9 +1,9 @@
 use anyhow::Result;
 use indoc::{formatdoc, indoc};
 use std::path::PathBuf;
-use tokio::io::AsyncWriteExt;
+use tokio::{io::AsyncWriteExt, fs::File};
 use tracing::{error, instrument, trace};
-use askama::{Template, Template};
+use askama::Template;
 
 use crate::{
     dirs::{base_repo::BaseRepo, icon_library::IconLibrary, LibType},
@@ -16,7 +16,7 @@ pub struct Readme {
 }
 
 impl Readme {
-    pub fn contents(ty: &LibType) -> Result<String> {
+    pub fn contents(ty: &LibType) ->  Result<String> {
         match ty {
             LibType::IconLib(pkg) => {
                 #[derive(Template)]
@@ -26,11 +26,10 @@ impl Readme {
                     package_name: &'a str,
                 }
 
-                ReadmeTemplate {
+                Ok(ReadmeTemplate {
                     short_name: &pkg.meta.short_name,
                     package_name: &pkg.meta.package_name,
-                }
-                .render().map_err(|e| e.into())
+                }.render()?)
             }
 
             LibType::MainLib => {
@@ -85,7 +84,7 @@ impl Readme {
                     )
                 }).collect();
 
-                ReadmeTemplate { packages }.render().map_err(|e| e.into())
+                Ok(ReadmeTemplate { packages }.render()?)
             }
 
             LibType::IconIndex => unreachable!("IconIndex does not have a README.md file"),

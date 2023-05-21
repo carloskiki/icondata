@@ -1,19 +1,16 @@
 use std::{io, path::PathBuf};
 
 use anyhow::Result;
+use askama::Template;
 use heck::ToUpperCamelCase;
-use indoc::indoc;
-use proc_macro2::{Ident, Span, TokenStream};
-use quote::{format_ident, quote};
-use snafu::{prelude::*, Backtrace, OptionExt};
 use tokio::io::AsyncWriteExt;
 use tracing::{error, trace};
-use askama::{Template, Template};
 
 use crate::{
     dirs::{boilerplate::Boilerplate, icon_index::IconIndex, icon_library::IconLibrary, LibType},
     icon::SvgIcon,
-    package::Package, Packages,
+    package::Package,
+    Packages,
 };
 
 #[derive(Debug)]
@@ -21,50 +18,49 @@ pub(crate) struct LibRs {
     pub path: PathBuf,
 }
 
+#[derive(Template)]
+#[template(path = "main_lib/lib.rs")]
+struct IconIndexTemplate<'a> {
+    short_names: Vec<&'a str>,
+}
+
+#[derive(Template)]
+#[template(path = "icon_lib/lib.rs")]
+struct IconLibTemplate<'a> {
+    icons: &'a [SvgIcon],
+}
+
+#[derive(Template)]
+#[template(path = "main_lib/lib.rs")]
+struct MainLibTemplate<'a> {
+    lib_names: Vec<&'a str>,
+}
+
 impl LibRs {
-    pub fn template(lib_type: &LibType) -> impl Template {
+    pub fn contents(lib_type: &LibType) -> Result<String> {
         match lib_type {
             LibType::IconLib(pkg) => {
-                #[derive(Template)]
-                #[template(path = "icon_lib/lib.rs")]
-                struct LibTemplate<'a> {
-                    icons: &'a [SvgIcon],
-                }
-
                 let icons = &Packages::get()?.icons[pkg.icon_range()];
 
-                LibTemplate { icons }
-            },
+                Ok(Template::render(&IconLibTemplate { icons })?)
+            }
             LibType::MainLib => {
-                #[derive(Template)]
-                #[template(path = "main_lib/lib.rs")]
-                struct LibTemplate<'a> {
-                    lib_names: Vec<&'a str>,
-                }
+                let lib_names = Packages::get()?
+                    .packages
+                    .iter()
+                    .map(|package| package.meta.short_name.as_ref())
+                    .collect::<Vec<_>>();
 
-                let lib_names = Packages::get()?.packages.iter().map(|package| {
-                    package.meta.short_name.as_ref()
-                }).collect::<Vec<_>>();
-
-                LibTemplate {
-                    lib_names,
-                }
-            },
+                Ok(Template::render(&MainLibTemplate { lib_names })?)
+            }
             LibType::IconIndex => {
+                let short_names = Packages::get()?
+                    .packages
+                    .iter()
+                    .map(|package| package.meta.short_name.as_ref())
+                    .collect::<Vec<_>>();
 
-                #[derive(Template)]
-                #[template(path = "main_lib/lib.rs")]
-                struct LibTemplate {
-                    short_names_cap: Vec<String>,
-                }
-
-                let short_names_cap = Packages::get()?.packages.iter().map(|package| {
-                    package.meta.short_name.to_upper_camel_case()
-                }).collect::<Vec<_>>();
-
-                LibTemplate {
-                    short_names_cap,
-                }
+                Ok(Template::render(&IconIndexTemplate { short_names })?)
             }
 
             LibType::Boilerplate => unreachable!("Boilerplate does not have a lib.rs file"),

@@ -19,7 +19,7 @@ pub struct CargoToml {
 }
 
 impl CargoToml {
-    pub fn contents(lib_type: &LibType) -> impl Template {
+    pub fn contents(lib_type: &LibType) -> Result<String> {
         match lib_type {
             LibType::IconLib(pkg) => {
 
@@ -39,12 +39,12 @@ impl CargoToml {
                     &*icon.feature.name
                 }).collect::<Vec<_>>();
 
-                CargoTemplate {
+                Ok(CargoTemplate {
                     crate_version: pkg.meta.crate_version.to_string(),
                     features,
                     icon_short_name: &pkg.meta.short_name,
                     icon_package_name: &pkg.meta.package_name,
-                }
+                }.render()?)
             }
 
             LibType::MainLib => {
@@ -58,9 +58,9 @@ impl CargoToml {
                     &*icon.feature.name
                 }).collect::<Vec<_>>();
 
-                CargoTemplate {
+                Ok(CargoTemplate {
                     features,
-                }
+                }.render()?)
 
             },
 
@@ -75,9 +75,9 @@ impl CargoToml {
                     &*icon.feature.name
                 }).collect::<Vec<_>>();
 
-                CargoTemplate {
+                Ok(CargoTemplate {
                     features,
-                }
+                }.render()?)
             },
 
             LibType::Boilerplate => todo!(),

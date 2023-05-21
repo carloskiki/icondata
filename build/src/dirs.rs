@@ -1,5 +1,6 @@
 use std::path::PathBuf;
 
+use tokio::io::AsyncWriteExt;
 use tracing::instrument;
 use anyhow::Result;
 
@@ -121,5 +122,6 @@ pub async fn write_to_file(path: &PathBuf, contents: String) -> Result<()> {
     file.flush().await.map_err(|err| {
         error!(?err, "Could not flush file.");
         err
-    })
+    })?;
+    Ok(())
 }
