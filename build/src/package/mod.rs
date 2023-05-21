@@ -135,9 +135,10 @@ impl Package<Unknown> {
         };
 
         let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
-        let icons = reader::read_icons(&self, icons_path.clone()).await.with_context(|_| IconReadSnafu {
+        let mut icons = reader::read_icons(&self, icons_path.clone()).await.with_context(|_| IconReadSnafu {
             path: icons_path,
         })?;
+        icons.sort_by(|a, b| a.feature.name.cmp(&b.feature.name));
 
         let slice_begin = all_icons.len();
         all_icons.extend(icons.into_iter());
