@@ -14,6 +14,12 @@ pub(crate) struct ParsedSvg {
     pub svg_attributes: SvgAttributes,
 }
 
+impl ParsedSvg {
+    pub fn svg_attributes(&self) -> &SvgAttributes {
+        &self.svg_attributes
+    }
+}
+
 /// Parsed attributes of the xml root element.
 #[derive(Debug, Clone)]
 pub(crate) struct XmlAttributes {

@@ -1,29 +1,29 @@
 use std::path::PathBuf;
 
 use tokio::io::AsyncWriteExt;
-use tracing::instrument;
+use tracing::{instrument, trace, error};
 use anyhow::Result;
 
 use crate::{
-    fs::{cargo_toml::CargoToml, readme_md::Readme, src_dir::SrcDir, lib_rs::{LibRs, self}},
-    package::{Downloaded, Package}, icon::SvgIcon,
+    fs::{cargo_toml::CargoToml, readme_md::Readme, lib_rs::LibRs},
+    package::{Downloaded, Package},
 };
 
 #[derive(Debug)]
-pub struct Library {
+pub struct Library<'a> {
     path: PathBuf,
     cargo_toml: Option<CargoToml>,
     lib_rs: Option<LibRs>,
     readme: Option<Readme>,
-    ty: LibType,
+    ty: LibType<'a>,
 }
 
-impl Library {
-    pub fn new(mut path: PathBuf, ty: LibType) -> Self {
+impl<'a> Library<'a> {
+    pub fn new(mut path: PathBuf, ty: LibType<'a>) -> Self {
         match &ty {
             LibType::IconLib(_) => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let lib_rs_path = src_dir_path.join("src/lib.rs");
+                let lib_rs_path = path.join("src/lib.rs");
                 let readme_path = path.join("README.md");
 
                 Library {
@@ -39,7 +39,7 @@ impl Library {
 
             LibType::MainLib => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let lib_rs_path = src_dir_path.join("src/lib.rs");
+                let lib_rs_path = path.join("src/lib.rs");
                 let lib_path = path.clone();
 
                 path.pop();
@@ -58,7 +58,7 @@ impl Library {
 
             LibType::IconIndex => {
                 let cargo_toml_path = path.join("Cargo.toml");
-                let lib_rs_path = src_dir_path.join("src/lib.rs");
+                let lib_rs_path = path.join("src/lib.rs");
 
                 Library {
                     path,
@@ -71,8 +71,8 @@ impl Library {
 
             LibType::Boilerplate => {
                 Library {
-                    path,
                     cargo_toml: Some(CargoToml { path: path.join("Cargo.toml") }),
+                    path,
                     lib_rs: None,
                     readme: None,
                     ty,
@@ -82,16 +82,16 @@ impl Library {
     }
 
     pub async fn generate(&self) -> Result<()> {
-        if let Some(cargo_toml) = self.cargo_toml {
-            let contents = CargoToml::template(&self.ty);
+        if let Some(cargo_toml) = &self.cargo_toml {
+            let contents = CargoToml::contents(&self.ty)?;
             write_to_file(&cargo_toml.path, contents).await?;
         };
-        if let Some(lib_rs) = self.lib_rs {
-            let contents = LibRs::template(&self.ty);
-            write_to_file(&src_dir.path, contents).await?;
+        if let Some(lib_rs) = &self.lib_rs {
+            let contents = LibRs::contents(&self.ty)?;
+            write_to_file(&lib_rs.path, contents).await?;
         };
-        if let Some(readme) = self.readme {
-            let contents = Readme::template(&self.ty);
+        if let Some(readme) = &self.readme {
+            let contents = Readme::contents(&self.ty)?;
             write_to_file(&readme.path, contents).await?;
         };
         Ok(())
@@ -99,8 +99,8 @@ impl Library {
 }
 
 #[derive(Debug)]
-pub enum LibType {
-    IconLib(Package<Downloaded>),
+pub enum LibType<'a> {
+    IconLib(&'a Package<Downloaded>),
     MainLib,
     IconIndex,
     Boilerplate,

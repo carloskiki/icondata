@@ -1,9 +1,7 @@
-use anyhow::{bail, Result};
+use anyhow::{anyhow, Result};
 use clap::{command, Parser};
 use icon::SvgIcon;
-use package::{Downloaded, Unknown};
-use std::any;
-use std::marker::PhantomData;
+use package::Downloaded;
 use std::sync::Arc;
 use tokio::sync::Mutex;
 use tracing::{error, info};
@@ -13,10 +11,7 @@ use tracing_subscriber::prelude::__tracing_subscriber_SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
-use crate::dirs::base_repo::BaseRepo;
-use crate::dirs::boilerplate::Boilerplate;
-use crate::dirs::icon_index::IconIndex;
-use crate::dirs::icon_library::IconLibrary;
+use crate::dirs::{LibType, Library};
 use crate::package::Package;
 use once_cell::sync::OnceCell;
 
@@ -40,7 +35,7 @@ struct BuildArgs {
 static PACKAGES: OnceCell<Packages> = OnceCell::new();
 
 pub struct Packages {
-    pub icons: Vec<SvgIcon>,
+    pub(crate) icons: Vec<SvgIcon>,
     pub packages: Vec<Package<Downloaded>>,
 }
 
@@ -51,10 +46,10 @@ impl Packages {
             .ok_or(anyhow!("Packages not initialized yet."))
     }
 
-    pub fn set(icons: Vec<SvgIcon>, packages: Vec<Package<Downloaded>>) -> Result<()> {
-        PACKAGES.set(Packages { icons, packages }).or(anyhow!(
+    pub(crate) fn set(icons: Vec<SvgIcon>, packages: Vec<Package<Downloaded>>) -> Result<()> {
+        PACKAGES.set(Packages { icons, packages }).or(Err(anyhow!(
             "Could not set value because it was already set."
-        ))
+        )))
     }
 }
 
@@ -76,8 +71,9 @@ async fn main() -> Result<()> {
     let handles = Package::all()
         .into_iter()
         .map(|package| {
-            let mut icons = Arc::clone(&icons);
-            let mut packages = Arc::clone(&packages);
+            let icons = Arc::clone(&icons);
+            let packages = Arc::clone(&packages);
+
             tokio::spawn(async move {
                 if args.clean {
                     package.remove().await?;
@@ -112,29 +108,51 @@ async fn main() -> Result<()> {
     }
 
     info!("Setting the package global variable.");
-    Packages::set(icons.into_inner(), packages.into_inner())?;
+    Packages::set(
+        Arc::try_unwrap(icons)
+            .or(Err(anyhow!("More than one hold of icons ARC.")))?
+            .into_inner(),
+        Arc::try_unwrap(packages)
+            .or(Err(anyhow!("More than one hold of packages ARC.")))?
+            .into_inner(),
+    )?;
 
-    // TODO: Try spawning multiple threads.
     info!("Generating individual icon crates.");
-    Packages::get()?.packages.iter().map(|package| Library {});
+    let handles = Packages::get()?.packages.iter().map(|package| {
+        tokio::spawn(async move {
+            let lib = Library::new(
+                path::library_crate(format!("icondata_{}", package.meta.short_name)),
+                LibType::IconLib(&package),
+            );
+            lib.generate().await
+        })
+    }).collect::<Vec<_>>();
 
-    let mut base_path = path::build_crate("");
-    base_path.pop();
-    let base_repo = BaseRepo::new(base_path);
-    base_repo.generate().await?;
+    for handle in handles {
+        match handle.await.unwrap() {
+            Ok(()) => (),
+            Err(err) => {
+                error!(?err, "Could not process package successfully.");
+                return Err(err);
+            }
+        }
+    }
 
-    let boilerplate_path = path::library_crate("boilerplate", "");
-    let mut boilerplate_dir = Boilerplate::new(boilerplate_path);
-    boilerplate_dir.generate(&libs).await?;
+    let main_lib = Library::new(path::library_crate("icondata"), LibType::MainLib);
+    main_lib.generate().await?;
 
+    let boilerplate = Library::new(path::library_crate("boilerplate"), LibType::Boilerplate);
+    boilerplate.generate().await?;
+
+    let icon_index = Library::new(path::library_crate("icon_index"), LibType::IconIndex);
+    icon_index.generate().await?;
+
+    let num_icons = Packages::get()?.icons.len();
     let end = time::OffsetDateTime::now_utc();
     info!(
         took = format!("{}s", (end - start).whole_seconds()),
-        num_libs, "Build successful!"
+        num_icons, "Build successful!"
     );
-
-    let icon_index = IconIndex::new(path::library_crate("icon_index", ""));
-    icon_index.generate(&libs).await?;
 
     Ok(())
 }
@@ -165,7 +183,7 @@ fn init_tracing(level: tracing::level_filters::LevelFilter) {
 /// This may prevent unwanted file operations in wrong directories.
 fn assert_paths() {
     let build_crate_root = path::build_crate("");
-    let icondata_crate_root = path::library_crate("icondata", "");
+    let icondata_crate_root = path::library_crate("icondata");
     info!(?build_crate_root, "Using");
     info!(?icondata_crate_root, "Using");
 

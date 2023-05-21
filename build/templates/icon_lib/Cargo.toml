@@ -1,5 +1,5 @@
 [package]
-name = "icondata_{{crate_short_name}}"
+name = "icondata_{{short_name}}"
 version = "{{crate_version}}"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"

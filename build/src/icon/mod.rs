@@ -5,7 +5,7 @@ use heck::ToPascalCase;
 
 use crate::{
     feature::Feature,
-    package::{Downloaded, Package, PackageType},
+    package::{Unknown, Package, PackageType},
 };
 
 use self::svg::ParsedSvg;

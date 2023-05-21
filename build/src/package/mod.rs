@@ -37,14 +37,14 @@ pub(crate) enum Error {
     },
     #[snafu(display("Could not read icon data from {path:?}"))]
     IconRead {
-        source: reader::Error,
+        source: anyhow::Error,
         path: PathBuf,
         backtrace: Backtrace,
     },
 }
 
 #[derive(Debug, Clone)]
-pub(crate) struct Package<S> {
+pub struct Package<S> {
     pub ty: PackageType,
     pub meta: PackageMetadata,
     icon_range: Range<usize>,
@@ -155,13 +155,13 @@ impl Package<Unknown> {
 }
 
 impl Package<Downloaded> {
-    pub fn icon_range(&self) -> Range<usize> {
-        self.icon_range
+    pub fn icon_range(&self) -> &Range<usize> {
+        &self.icon_range
     }
 }
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, EnumIter, Clone, Copy)]
-pub(crate) enum PackageType {
+pub enum PackageType {
     AntDesignIcons,
     FontAwesome,
     WeatherIcons,
@@ -183,7 +183,7 @@ pub(crate) enum PackageType {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) struct PackageMetadata {
+pub struct PackageMetadata {
     /// Two-character identifier like "fa" for "Font Awesome".
     pub short_name: Cow<'static, str>,
     /// Full human readable name of this icon package.
@@ -200,7 +200,7 @@ pub(crate) struct PackageMetadata {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) enum PackageSource {
+pub enum PackageSource {
     Git {
         url: Cow<'static, str>, // TODO use url type?
         target: GitTarget,
@@ -208,7 +208,7 @@ pub(crate) enum PackageSource {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) enum GitTarget {
+pub enum GitTarget {
     Branch {
         name: Cow<'static, str>,
         commit_ref: Cow<'static, str>,
