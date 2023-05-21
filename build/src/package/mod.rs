@@ -91,7 +91,7 @@ impl Package<Unknown> {
         Ok(())
     }
 
-    #[instrument(level = "info")]
+    #[instrument(level = "info", skip_all)]
     pub(crate) async fn download(self, all_icons: &mut Vec<SvgIcon>) -> Result<Package<Downloaded>, Error> {
         let download_path = self.download_path();
         info!(?download_path, "Downloading...");

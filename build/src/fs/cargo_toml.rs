@@ -72,7 +72,7 @@ impl CargoToml {
                 Ok(CargoTemplate { features }.render()?)
             }
 
-            LibType::Boilerplate => todo!(),
+            LibType::Boilerplate => Ok("test".to_string()),
         }
     }
 }
