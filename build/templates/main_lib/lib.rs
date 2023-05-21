@@ -15,7 +15,10 @@ pub use icondata_{{short_name}}::*;
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Icon {
-
+    {% for short_name in short_names -%}
+    #[cfg(feature = "{{short_name|capitalize}}")]
+    {{short_name|capitalize}}({{short_name|capitalize}}Icon),
+    {% endfor %}
 }
 impl<'a> icondata_core::IconData<'a> for crate::Icon {
     fn data(self) -> &'a icondata_core::Data {
