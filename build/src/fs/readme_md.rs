@@ -70,11 +70,11 @@ impl Readme {
                         });
 
                         (
-                            pkg.meta.short_name.as_ref(),
+                            pkg.meta.package_name.as_ref(),
                             version,
                             source,
                             license,
-                            pkg.meta.package_name.as_ref(),
+                            pkg.meta.short_name.as_ref(),
                         )
                     })
                     .collect();

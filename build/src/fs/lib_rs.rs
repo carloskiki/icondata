@@ -43,7 +43,7 @@ impl LibRs {
             }
             LibType::IconIndex => {
                 #[derive(Template)]
-                #[template(path = "main_lib/lib.rs", escape = "none")]
+                #[template(path = "icon_index/lib.rs", escape = "none")]
                 struct Template<'a> {
                     short_names: Vec<&'a str>,
                 }

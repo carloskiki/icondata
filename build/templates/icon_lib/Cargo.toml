@@ -18,4 +18,4 @@ strum = { version = "0.24", optional = true, features = ["derive"] }
 [features]
 {% for feat in features -%}
 {{feat}} = []
-{%- endfor %}
+{% endfor %}

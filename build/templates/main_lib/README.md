@@ -34,7 +34,7 @@ but must only be taken as a hint. Please check the individual icon repositories 
 
 | Icon Library | Version | Source | License | Crate Name |
 | ------------ | ------- | ------ | ------- | ---------- |
-{% for (pack_name, version, source, license, short_name) in packages -%}
+{% for (pack_name, version, source, license, short_name) in packages %}
 | {{pack_name}} | {{version}} | {{source}} | {{license}} | icondata_{{short_name}} |
 {%- endfor %}
 

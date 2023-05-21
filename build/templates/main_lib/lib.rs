@@ -7,7 +7,7 @@
 //! identical.
 //!
 pub use icondata_core::IconData;
-{% for short_name in short_names -%}
+{% for short_name in short_names %}
 #[cfg!(feature = "{{short_name|capitalize}}")]
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
@@ -23,7 +23,7 @@ impl<'a> icondata_core::IconData<'a> for crate::Icon {
             {% for short_name in short_names -%}
             #[cfg(feature = "{{short_name|capitalize}}")]
             Self::{{short_name|capitalize}}(icon) => icondata_core::IconData::from(icon),
-            {%- endfor %}
+            {% endfor %}
         }
     }
 }
