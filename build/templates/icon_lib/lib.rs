@@ -23,17 +23,17 @@ pub enum {{short_name|capitalize}}Icon {
 {% for icon in icons -%}
 {% let attributes = icon.svg.svg_attributes() %}
 const {{ icon.feature.name()|shouty_snake_case }}: icondata_core::IconData = icondata_core::IconData {
-    style: {{ "{:?}"|format(attributes.style) }},
-    x: {{ "{:?}"|format(attributes.x) }},
-    y: {{ "{:?}"|format(attributes.y) }},
-    width: {{ "{:?}"|format(attributes.width) }},
-    height: {{ "{:?}"|format(attributes.height) }},
-    view_box: {{ "{:?}"|format(attributes.view_box) }},
-    stroke_linecap: {{ "{:?}"|format(attributes.stroke_linecap) }},
-    stroke_linejoin: {{ "{:?}"|format(attributes.stroke_linejoin) }},
-    stroke_width: {{ "{:?}"|format(attributes.stroke_width) }},
-    stroke: {{ "{:?}"|format(attributes.stroke) }},
-    fill: {{ "{:?}"|format(attributes.fill) }},
+    style: {{ attributes.style|attribute_value }},
+    x: {{ attributes.x|attribute_value }},
+    y: {{ attributes.y|attribute_value }},
+    width: {{ attributes.width|attribute_value }},
+    height: {{ attributes.height|attribute_value }},
+    view_box: {{ attributes.view_box|attribute_value }},
+    stroke_linecap: {{ attributes.stroke_linecap|attribute_value }},
+    stroke_linejoin: {{ attributes.stroke_linejoin|attribute_value }},
+    stroke_width: {{ attributes.stroke_width|attribute_value }},
+    stroke: {{ attributes.stroke|attribute_value }},
+    fill: {{ attributes.fill|attribute_value }},
     data: r#"{{ icon.svg.content }}"#
 };
 {%- endfor %}

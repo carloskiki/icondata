@@ -64,8 +64,13 @@ impl LibRs {
 
 mod filters {
     use heck::ToShoutySnakeCase;
+    use xml::attribute::OwnedAttribute;
     pub fn shouty_snake_case<T: std::fmt::Display>(s: T) -> ::askama::Result<String> {
         let input = s.to_string();
         Ok(input.to_shouty_snake_case())
+    }
+
+    pub fn attribute_value(opt: &Option<OwnedAttribute>) -> ::askama::Result<String> {
+        Ok(format!("{:?}", opt.as_ref().map(|attr| &attr.value)))
     }
 }
