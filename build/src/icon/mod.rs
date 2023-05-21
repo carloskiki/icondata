@@ -20,7 +20,7 @@ pub(crate) struct SvgIcon {
 
 impl SvgIcon {
     pub async fn new(
-        package: &Package<Downloaded>,
+        package: &Package<Unknown>,
         path: &Path,
         size: Option<IconSize>,
         mut categories: Vec<Category>,

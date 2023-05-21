@@ -35,6 +35,12 @@ pub(crate) enum Error {
         path: PathBuf,
         backtrace: Backtrace,
     },
+    #[snafu(display("Could not read icon data from {path:?}"))]
+    IconRead {
+        source: reader::Error,
+        path: PathBuf,
+        backtrace: Backtrace,
+    },
 }
 
 #[derive(Debug, Clone)]
@@ -129,13 +135,15 @@ impl Package<Unknown> {
         };
 
         let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
-        let icons = reader::read_icons(&self, icons_path).await?;
+        let icons = reader::read_icons(&self, icons_path.clone()).await.with_context(|_| IconReadSnafu {
+            path: icons_path,
+        })?;
 
         let slice_begin = all_icons.len();
         all_icons.extend(icons.into_iter());
         let slice_end = all_icons.len();
 
-        let icon_range = (slice_begin..slice_end);
+        let icon_range = slice_begin..slice_end;
 
         Ok(Package::<Downloaded> {
             ty: self.ty,

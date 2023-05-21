@@ -1,13 +1,12 @@
+use std::path::PathBuf;
+
+use tracing::instrument;
+use anyhow::Result;
+
 use crate::{
     fs::{cargo_toml::CargoToml, readme_md::Readme, src_dir::SrcDir, lib_rs::{LibRs, self}},
     package::{Downloaded, Package}, icon::SvgIcon,
 };
-
-pub mod base_repo;
-pub mod boilerplate;
-pub mod icon_index;
-pub mod icon_library;
-pub mod main_library;
 
 #[derive(Debug)]
 pub struct Library {
@@ -81,15 +80,18 @@ impl Library {
         }
     }
 
-    pub fn generate(&self) -> Result<()> {
+    pub async fn generate(&self) -> Result<()> {
         if let Some(cargo_toml) = self.cargo_toml {
-            cargo_toml.generate(&self.ty).await?;
+            let contents = CargoToml::template(&self.ty);
+            write_to_file(&cargo_toml.path, contents).await?;
         };
-        if let Some(src_dir) = self.src_dir {
-            src_dir.generate(&self.ty).await?;
+        if let Some(lib_rs) = self.lib_rs {
+            let contents = LibRs::template(&self.ty);
+            write_to_file(&src_dir.path, contents).await?;
         };
         if let Some(readme) = self.readme {
-            readme.generate(&self.ty).await?;
+            let contents = Readme::template(&self.ty);
+            write_to_file(&readme.path, contents).await?;
         };
         Ok(())
     }
@@ -101,4 +103,23 @@ pub enum LibType {
     MainLib,
     IconIndex,
     Boilerplate,
+}
+
+#[instrument(level = "info", skip(contents))]
+pub async fn write_to_file(path: &PathBuf, contents: String) -> Result<()> {
+    trace!(?path, "Making sure full path exists.");
+    tokio::fs::create_dir_all(path.parent().unwrap()).await?;
+
+    let mut file = tokio::fs::OpenOptions::new()
+        .create(true)
+        .write(true)
+        .open(path)
+        .await?;
+
+    trace!(?path, "Writing contents to file.");
+    file.write_all(contents.as_bytes()).await?;
+    file.flush().await.map_err(|err| {
+        error!(?err, "Could not flush file.");
+        err
+    })
 }

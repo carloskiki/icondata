@@ -1,9 +1,11 @@
-use anyhow::{anyhow, Result};
+use anyhow::{bail, Result};
 use clap::{command, Parser};
 use icon::SvgIcon;
 use package::{Downloaded, Unknown};
+use std::any;
 use std::marker::PhantomData;
-use std::sync::{Arc, Mutex};
+use std::sync::Arc;
+use tokio::sync::Mutex;
 use tracing::{error, info};
 use tracing_subscriber::filter::Targets;
 use tracing_subscriber::fmt::format::{Format, Pretty};
@@ -39,17 +41,19 @@ static PACKAGES: OnceCell<Packages> = OnceCell::new();
 
 pub struct Packages {
     pub icons: Vec<SvgIcon>,
-    pub packages: Vec<Package>,
+    pub packages: Vec<Package<Downloaded>>,
 }
 
 impl Packages {
-    pub fn get() -> Result<&'static Packages<Downloaded>> {
-        PACKAGES.get().or("Packages not initialized yet.")
+    pub fn get() -> Result<&'static Packages> {
+        PACKAGES
+            .get()
+            .ok_or(anyhow!("Packages not initialized yet."))
     }
 
     pub fn set(icons: Vec<SvgIcon>, packages: Vec<Package<Downloaded>>) -> Result<()> {
         PACKAGES.set(Packages { icons, packages }).or(anyhow!(
-            "Could not packages value because it was already set."
+            "Could not set value because it was already set."
         ))
     }
 }
@@ -72,13 +76,15 @@ async fn main() -> Result<()> {
     let handles = Package::all()
         .into_iter()
         .map(|package| {
+            let mut icons = Arc::clone(&icons);
+            let mut packages = Arc::clone(&packages);
             tokio::spawn(async move {
                 if args.clean {
                     package.remove().await?;
                 }
 
-                let mut icons = Arc::clone(&icons).lock()?;
                 // Download the package.
+                let mut icons = icons.lock().await;
                 let package_type = package.ty;
                 let package = package.download(&mut icons).await.map_err(|err| {
                     error!(
@@ -89,10 +95,9 @@ async fn main() -> Result<()> {
                     err
                 })?;
 
-                let mut packages = Arc::clone(&packages).lock()?;
-                packages.push(package);
+                packages.lock().await.push(package);
 
-                Ok::<(), anyhow::Error>()
+                Ok::<(), anyhow::Error>(())
             })
         })
         .collect::<Vec<_>>();
@@ -107,15 +112,11 @@ async fn main() -> Result<()> {
     }
 
     info!("Setting the package global variable.");
-    Packages::set(icons.into_inner()?, packages.into_inner()?)?;
+    Packages::set(icons.into_inner(), packages.into_inner())?;
 
     // TODO: Try spawning multiple threads.
     info!("Generating individual icon crates.");
-    Packages::get()?.packages.iter().map(|package| {
-        Library {
-
-        }
-    })
+    Packages::get()?.packages.iter().map(|package| Library {});
 
     let mut base_path = path::build_crate("");
     base_path.pop();
