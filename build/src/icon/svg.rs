@@ -7,16 +7,22 @@ use xml::namespace::Namespace;
 use xml::{attribute::OwnedAttribute, EmitterConfig, ParserConfig};
 
 #[derive(Debug, Clone)]
-pub(crate) struct ParsedSvg {
+pub struct ParsedSvg {
     pub content: String,
     #[allow(unused)]
     pub xml_attributes: XmlAttributes,
     pub svg_attributes: SvgAttributes,
 }
 
+impl ParsedSvg {
+    pub fn svg_attributes(&self) -> &SvgAttributes {
+        &self.svg_attributes
+    }
+}
+
 /// Parsed attributes of the xml root element.
 #[derive(Debug, Clone)]
-pub(crate) struct XmlAttributes {
+pub struct XmlAttributes {
     #[allow(unused)]
     pub version: XmlVersion,
     #[allow(unused)]
@@ -25,7 +31,7 @@ pub(crate) struct XmlAttributes {
 
 /// Parsed attributes of the svg element.
 #[derive(Debug, Clone)]
-pub(crate) struct SvgAttributes {
+pub struct SvgAttributes {
     #[allow(unused)]
     pub namespace: Namespace,
     #[allow(unused)]

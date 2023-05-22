@@ -47,7 +47,7 @@ impl Packages {
     }
 
     pub fn get_icons() -> Result<impl Iterator<Item = &'static SvgIcon>> {
-        Self::get()?.iter().flat_map(|package| package.icons.iter())
+        Ok(Self::get()?.iter().flat_map(|package| package.icons().iter()))
     }
 
     pub fn set(packages: Vec<Package<Downloaded>>) -> Result<()> {

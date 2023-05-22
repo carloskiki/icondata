@@ -3,7 +3,7 @@ use std::path::PathBuf;
 use anyhow::Result;
 use askama::Template;
 
-use crate::{dirs::LibType, icon::SvgIcon, Packages};
+use crate::{dirs::LibType, Packages, icon::svg::ParsedSvg};
 
 #[derive(Debug)]
 pub struct LibRs {
@@ -17,14 +17,15 @@ impl LibRs {
                 #[derive(Template)]
                 #[template(path = "icon_lib/lib.rs", escape = "none")]
                 struct Template<'a> {
-                    icons: &'a [SvgIcon],
+                    features_svgs: Vec<(&'a str, &'a ParsedSvg)>,
                     short_name: String,
                 }
 
                 let icons = pkg.icons();
+                let features_svgs = icons.iter().map(|icon| (icon.feature.name.as_ref(), &icon.svg)).collect::<Vec<_>>();
                 let short_name = pkg.meta.short_name.to_string();
 
-                Ok(Template { icons, short_name }.render()?)
+                Ok(Template { features_svgs, short_name }.render()?)
             }
             LibType::MainLib => {
                 #[derive(Template)]
