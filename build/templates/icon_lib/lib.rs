@@ -34,7 +34,7 @@ const {{ icon.feature.name()|shouty_snake_case }}: icondata_core::IconData = ico
     stroke_width: {{ attributes.stroke_width|attribute_value }},
     stroke: {{ attributes.stroke|attribute_value }},
     fill: {{ attributes.fill|attribute_value }},
-    data: r#"{{ icon.svg.content }}"#
+    data: r###"{{ icon.svg.content }}"###
 };
 {%- endfor %}
 
