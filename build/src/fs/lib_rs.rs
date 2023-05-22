@@ -21,7 +21,7 @@ impl LibRs {
                     short_name: String,
                 }
 
-                let icons = &Packages::get()?.icons[pkg.icon_range().clone()];
+                let icons = pkg.icons();
                 let short_name = pkg.meta.short_name.to_string();
 
                 Ok(Template { icons, short_name }.render()?)
@@ -34,7 +34,6 @@ impl LibRs {
                 }
 
                 let short_names = Packages::get()?
-                    .packages
                     .iter()
                     .map(|package| package.meta.short_name.as_ref())
                     .collect::<Vec<_>>();
@@ -49,7 +48,6 @@ impl LibRs {
                 }
 
                 let short_names = Packages::get()?
-                    .packages
                     .iter()
                     .map(|package| package.meta.short_name.as_ref())
                     .collect::<Vec<_>>();

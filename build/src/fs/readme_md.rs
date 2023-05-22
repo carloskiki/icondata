@@ -39,7 +39,6 @@ impl Readme {
                 }
 
                 let packages = Packages::get()?
-                    .packages
                     .iter()
                     .map(|pkg| {
                         let version = match &pkg.meta.source {

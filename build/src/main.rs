@@ -35,19 +35,23 @@ struct BuildArgs {
 static PACKAGES: OnceCell<Packages> = OnceCell::new();
 
 pub struct Packages {
-    pub(crate) icons: Vec<SvgIcon>,
-    pub packages: Vec<Package<Downloaded>>,
+    packages: Vec<Package<Downloaded>>,
 }
 
 impl Packages {
-    pub fn get() -> Result<&'static Packages> {
+    pub fn get() -> Result<&'static [Package<Downloaded>]> {
         PACKAGES
             .get()
             .ok_or(anyhow!("Packages not initialized yet."))
+            .map(|packages| packages.packages.as_ref())
     }
 
-    pub(crate) fn set(icons: Vec<SvgIcon>, packages: Vec<Package<Downloaded>>) -> Result<()> {
-        PACKAGES.set(Packages { icons, packages }).or(Err(anyhow!(
+    pub fn get_icons() -> Result<impl Iterator<Item = &'static SvgIcon>> {
+        Self::get()?.iter().flat_map(|package| package.icons.iter())
+    }
+
+    pub fn set(packages: Vec<Package<Downloaded>>) -> Result<()> {
+        PACKAGES.set(Packages { packages }).or(Err(anyhow!(
             "Could not set value because it was already set."
         )))
     }
@@ -64,14 +68,12 @@ async fn main() -> Result<()> {
 
     let start = time::OffsetDateTime::now_utc();
 
-    let icons: Arc<Mutex<Vec<SvgIcon>>> = Arc::new(Mutex::new(Vec::new()));
     let packages: Arc<Mutex<Vec<Package<Downloaded>>>> = Arc::new(Mutex::new(Vec::new()));
 
     info!("Downloading all packages.");
     let handles = Package::all()
         .into_iter()
         .map(|package| {
-            let icons = Arc::clone(&icons);
             let packages = Arc::clone(&packages);
 
             tokio::spawn(async move {
@@ -80,9 +82,8 @@ async fn main() -> Result<()> {
                 }
 
                 // Download the package.
-                let mut icons = icons.lock().await;
                 let package_type = package.ty;
-                let package = package.download(&mut icons).await.map_err(|err| {
+                let package = package.download().await.map_err(|err| {
                     error!(
                         ?package_type,
                         ?err,
@@ -90,6 +91,13 @@ async fn main() -> Result<()> {
                     );
                     err
                 })?;
+
+                info!("Generating icon crate.");
+                let lib = Library::new(
+                    path::library_crate(format!("icondata_{}", package.meta.short_name)),
+                    LibType::IconLib(&package),
+                );
+                lib.generate().await?;
 
                 packages.lock().await.push(package);
 
@@ -108,50 +116,29 @@ async fn main() -> Result<()> {
     }
 
     info!("Setting the package global variable.");
-    Packages::set(
-        Arc::try_unwrap(icons)
-            .or(Err(anyhow!("More than one hold of icons ARC.")))?
-            .into_inner(),
-        Arc::try_unwrap(packages)
-            .or(Err(anyhow!("More than one hold of packages ARC.")))?
-            .into_inner(),
-    )?;
+    let mut packages = Arc::try_unwrap(packages)
+        .or(Err(anyhow!("More than one hold of packages ARC.")))?
+        .into_inner();
+    packages.sort_by(|a, b| a.meta.short_name.cmp(&b.meta.short_name));
+    Packages::set(packages)?;
 
-    info!("Generating individual icon crates.");
-    let handles = Packages::get()?.packages.iter().map(|package| {
-        tokio::spawn(async move {
-            let lib = Library::new(
-                path::library_crate(format!("icondata_{}", package.meta.short_name)),
-                LibType::IconLib(&package),
-            );
-            lib.generate().await
-        })
-    }).collect::<Vec<_>>();
-
-    for handle in handles {
-        match handle.await.unwrap() {
-            Ok(()) => (),
-            Err(err) => {
-                error!(?err, "Could not process package successfully.");
-                return Err(err);
-            }
-        }
-    }
-
+    info!("Generating main library.");
     let main_lib = Library::new(path::library_crate("icondata"), LibType::MainLib);
     main_lib.generate().await?;
 
+    info!("Generating boilerplate directory.");
     let boilerplate = Library::new(path::library_crate("boilerplate"), LibType::Boilerplate);
     boilerplate.generate().await?;
 
+    info!("Generating icon index.");
     let icon_index = Library::new(path::library_crate("icon_index"), LibType::IconIndex);
     icon_index.generate().await?;
 
-    let num_icons = Packages::get()?.icons.len();
+    let num_libs = Packages::get()?.len();
     let end = time::OffsetDateTime::now_utc();
     info!(
         took = format!("{}s", (end - start).whole_seconds()),
-        num_icons, "Build successful!"
+        num_libs, "Build successful!"
     );
 
     Ok(())
