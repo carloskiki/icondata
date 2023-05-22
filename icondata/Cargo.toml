@@ -11,6 +11,9 @@ keywords = ["leptos", "icons"]
 categories = ["web-programming"]
 
 [dependencies]
+icondata_core = "0.0.2"
+serde = { version = "1", optional = true }
+
 icondata_ai = { version = "0.0.6", optional = true }
 icondata_bi = { version = "0.0.6", optional = true }
 icondata_bs = { version = "0.0.6", optional = true }
@@ -51,6 +54,7 @@ strum = [
 "icondata_wi/strum",
 ]
 serde = [
+"dep:serde",
 "icondata_ai/serde",
 "icondata_bi/serde",
 "icondata_bs/serde",

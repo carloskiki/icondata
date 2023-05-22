@@ -8,7 +8,7 @@
 //!
 pub use icondata_core::IconData;
 {% for short_name in short_names %}
-#[cfg!(feature = "{{short_name|capitalize}}")]
+#[cfg(feature = "{{short_name|capitalize}}")]
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
 
@@ -20,12 +20,12 @@ pub enum Icon {
     {{short_name|capitalize}}({{short_name|capitalize}}Icon),
     {% endfor %}
 }
-impl<'a> icondata_core::IconData<'a> for crate::Icon {
-    fn data(self) -> &'a icondata_core::Data {
-        match self {
+impl From<Icon> for icondata_core::IconData {
+    fn from(icon: Icon) -> Self {
+        match icon {
             {% for short_name in short_names -%}
             #[cfg(feature = "{{short_name|capitalize}}")]
-            Self::{{short_name|capitalize}}(icon) => icondata_core::IconData::from(icon),
+            Icon::{{short_name|capitalize}}(icon) => icondata_core::IconData::from(icon),
             {% endfor %}
         }
     }
@@ -33,8 +33,8 @@ impl<'a> icondata_core::IconData<'a> for crate::Icon {
 {% for short_name in short_names %}
 #[cfg(feature = "{{short_name|capitalize}}")]
 impl From<{{short_name|capitalize}}Icon> for Icon {
-    fn from(value: {{short_name|capitalize}}Icon) -> Self {
-        Self::{{short_name|capitalize}}(value)
+    fn from(icon: {{short_name|capitalize}}Icon) -> Self {
+        Self::{{short_name|capitalize}}(icon)
     }
 }
 {% endfor %}

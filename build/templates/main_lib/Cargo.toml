@@ -11,6 +11,9 @@ keywords = ["leptos", "icons"]
 categories = ["web-programming"]
 
 [dependencies]
+icondata_core = "0.0.2"
+serde = { version = "1", optional = true }
+
 {% for (short_name, version) in sn_version -%}
 icondata_{{short_name}} = { version = "{{version}}", optional = true }
 {% endfor -%}
@@ -22,6 +25,7 @@ strum = [
 {% endfor -%}
 ]
 serde = [
+"dep:serde",
 {% for (short_name, _) in sn_version -%}
 "icondata_{{short_name}}/serde",
 {% endfor -%}

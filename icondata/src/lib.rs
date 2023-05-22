@@ -8,41 +8,41 @@
 //!
 pub use icondata_core::IconData;
 
-#[cfg!(feature = "Ai")]
+#[cfg(feature = "Ai")]
 pub use icondata_ai::*;
-#[cfg!(feature = "Bi")]
+#[cfg(feature = "Bi")]
 pub use icondata_bi::*;
-#[cfg!(feature = "Bs")]
+#[cfg(feature = "Bs")]
 pub use icondata_bs::*;
-#[cfg!(feature = "Cg")]
+#[cfg(feature = "Cg")]
 pub use icondata_cg::*;
-#[cfg!(feature = "Ch")]
+#[cfg(feature = "Ch")]
 pub use icondata_ch::*;
-#[cfg!(feature = "Fa")]
+#[cfg(feature = "Fa")]
 pub use icondata_fa::*;
-#[cfg!(feature = "Fi")]
+#[cfg(feature = "Fi")]
 pub use icondata_fi::*;
-#[cfg!(feature = "Hi")]
+#[cfg(feature = "Hi")]
 pub use icondata_hi::*;
-#[cfg!(feature = "Im")]
+#[cfg(feature = "Im")]
 pub use icondata_im::*;
-#[cfg!(feature = "Io")]
+#[cfg(feature = "Io")]
 pub use icondata_io::*;
-#[cfg!(feature = "Lu")]
+#[cfg(feature = "Lu")]
 pub use icondata_lu::*;
-#[cfg!(feature = "Oc")]
+#[cfg(feature = "Oc")]
 pub use icondata_oc::*;
-#[cfg!(feature = "Ri")]
+#[cfg(feature = "Ri")]
 pub use icondata_ri::*;
-#[cfg!(feature = "Si")]
+#[cfg(feature = "Si")]
 pub use icondata_si::*;
-#[cfg!(feature = "Tb")]
+#[cfg(feature = "Tb")]
 pub use icondata_tb::*;
-#[cfg!(feature = "Ti")]
+#[cfg(feature = "Ti")]
 pub use icondata_ti::*;
-#[cfg!(feature = "Vs")]
+#[cfg(feature = "Vs")]
 pub use icondata_vs::*;
-#[cfg!(feature = "Wi")]
+#[cfg(feature = "Wi")]
 pub use icondata_wi::*;
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
@@ -86,45 +86,45 @@ pub enum Icon {
     Wi(WiIcon),
     
 }
-impl<'a> icondata_core::IconData<'a> for crate::Icon {
-    fn data(self) -> &'a icondata_core::Data {
-        match self {
+impl From<Icon> for icondata_core::IconData {
+    fn from(icon: Icon) -> Self {
+        match icon {
             #[cfg(feature = "Ai")]
-            Self::Ai(icon) => icondata_core::IconData::from(icon),
+            Icon::Ai(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Bi")]
-            Self::Bi(icon) => icondata_core::IconData::from(icon),
+            Icon::Bi(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Bs")]
-            Self::Bs(icon) => icondata_core::IconData::from(icon),
+            Icon::Bs(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Cg")]
-            Self::Cg(icon) => icondata_core::IconData::from(icon),
+            Icon::Cg(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Ch")]
-            Self::Ch(icon) => icondata_core::IconData::from(icon),
+            Icon::Ch(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Fa")]
-            Self::Fa(icon) => icondata_core::IconData::from(icon),
+            Icon::Fa(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Fi")]
-            Self::Fi(icon) => icondata_core::IconData::from(icon),
+            Icon::Fi(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Hi")]
-            Self::Hi(icon) => icondata_core::IconData::from(icon),
+            Icon::Hi(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Im")]
-            Self::Im(icon) => icondata_core::IconData::from(icon),
+            Icon::Im(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Io")]
-            Self::Io(icon) => icondata_core::IconData::from(icon),
+            Icon::Io(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Lu")]
-            Self::Lu(icon) => icondata_core::IconData::from(icon),
+            Icon::Lu(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Oc")]
-            Self::Oc(icon) => icondata_core::IconData::from(icon),
+            Icon::Oc(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Ri")]
-            Self::Ri(icon) => icondata_core::IconData::from(icon),
+            Icon::Ri(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Si")]
-            Self::Si(icon) => icondata_core::IconData::from(icon),
+            Icon::Si(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Tb")]
-            Self::Tb(icon) => icondata_core::IconData::from(icon),
+            Icon::Tb(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Ti")]
-            Self::Ti(icon) => icondata_core::IconData::from(icon),
+            Icon::Ti(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Vs")]
-            Self::Vs(icon) => icondata_core::IconData::from(icon),
+            Icon::Vs(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Wi")]
-            Self::Wi(icon) => icondata_core::IconData::from(icon),
+            Icon::Wi(icon) => icondata_core::IconData::from(icon),
             
         }
     }
@@ -132,126 +132,126 @@ impl<'a> icondata_core::IconData<'a> for crate::Icon {
 
 #[cfg(feature = "Ai")]
 impl From<AiIcon> for Icon {
-    fn from(value: AiIcon) -> Self {
-        Self::Ai(value)
+    fn from(icon: AiIcon) -> Self {
+        Self::Ai(icon)
     }
 }
 
 #[cfg(feature = "Bi")]
 impl From<BiIcon> for Icon {
-    fn from(value: BiIcon) -> Self {
-        Self::Bi(value)
+    fn from(icon: BiIcon) -> Self {
+        Self::Bi(icon)
     }
 }
 
 #[cfg(feature = "Bs")]
 impl From<BsIcon> for Icon {
-    fn from(value: BsIcon) -> Self {
-        Self::Bs(value)
+    fn from(icon: BsIcon) -> Self {
+        Self::Bs(icon)
     }
 }
 
 #[cfg(feature = "Cg")]
 impl From<CgIcon> for Icon {
-    fn from(value: CgIcon) -> Self {
-        Self::Cg(value)
+    fn from(icon: CgIcon) -> Self {
+        Self::Cg(icon)
     }
 }
 
 #[cfg(feature = "Ch")]
 impl From<ChIcon> for Icon {
-    fn from(value: ChIcon) -> Self {
-        Self::Ch(value)
+    fn from(icon: ChIcon) -> Self {
+        Self::Ch(icon)
     }
 }
 
 #[cfg(feature = "Fa")]
 impl From<FaIcon> for Icon {
-    fn from(value: FaIcon) -> Self {
-        Self::Fa(value)
+    fn from(icon: FaIcon) -> Self {
+        Self::Fa(icon)
     }
 }
 
 #[cfg(feature = "Fi")]
 impl From<FiIcon> for Icon {
-    fn from(value: FiIcon) -> Self {
-        Self::Fi(value)
+    fn from(icon: FiIcon) -> Self {
+        Self::Fi(icon)
     }
 }
 
 #[cfg(feature = "Hi")]
 impl From<HiIcon> for Icon {
-    fn from(value: HiIcon) -> Self {
-        Self::Hi(value)
+    fn from(icon: HiIcon) -> Self {
+        Self::Hi(icon)
     }
 }
 
 #[cfg(feature = "Im")]
 impl From<ImIcon> for Icon {
-    fn from(value: ImIcon) -> Self {
-        Self::Im(value)
+    fn from(icon: ImIcon) -> Self {
+        Self::Im(icon)
     }
 }
 
 #[cfg(feature = "Io")]
 impl From<IoIcon> for Icon {
-    fn from(value: IoIcon) -> Self {
-        Self::Io(value)
+    fn from(icon: IoIcon) -> Self {
+        Self::Io(icon)
     }
 }
 
 #[cfg(feature = "Lu")]
 impl From<LuIcon> for Icon {
-    fn from(value: LuIcon) -> Self {
-        Self::Lu(value)
+    fn from(icon: LuIcon) -> Self {
+        Self::Lu(icon)
     }
 }
 
 #[cfg(feature = "Oc")]
 impl From<OcIcon> for Icon {
-    fn from(value: OcIcon) -> Self {
-        Self::Oc(value)
+    fn from(icon: OcIcon) -> Self {
+        Self::Oc(icon)
     }
 }
 
 #[cfg(feature = "Ri")]
 impl From<RiIcon> for Icon {
-    fn from(value: RiIcon) -> Self {
-        Self::Ri(value)
+    fn from(icon: RiIcon) -> Self {
+        Self::Ri(icon)
     }
 }
 
 #[cfg(feature = "Si")]
 impl From<SiIcon> for Icon {
-    fn from(value: SiIcon) -> Self {
-        Self::Si(value)
+    fn from(icon: SiIcon) -> Self {
+        Self::Si(icon)
     }
 }
 
 #[cfg(feature = "Tb")]
 impl From<TbIcon> for Icon {
-    fn from(value: TbIcon) -> Self {
-        Self::Tb(value)
+    fn from(icon: TbIcon) -> Self {
+        Self::Tb(icon)
     }
 }
 
 #[cfg(feature = "Ti")]
 impl From<TiIcon> for Icon {
-    fn from(value: TiIcon) -> Self {
-        Self::Ti(value)
+    fn from(icon: TiIcon) -> Self {
+        Self::Ti(icon)
     }
 }
 
 #[cfg(feature = "Vs")]
 impl From<VsIcon> for Icon {
-    fn from(value: VsIcon) -> Self {
-        Self::Vs(value)
+    fn from(icon: VsIcon) -> Self {
+        Self::Vs(icon)
     }
 }
 
 #[cfg(feature = "Wi")]
 impl From<WiIcon> for Icon {
-    fn from(value: WiIcon) -> Self {
-        Self::Wi(value)
+    fn from(icon: WiIcon) -> Self {
+        Self::Wi(icon)
     }
 }
