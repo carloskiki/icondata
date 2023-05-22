@@ -1,4 +1,4 @@
-# Icondata_lu
+# Icondata - lu
 
 Icon data from the *Lucide* library. Every icon is packaged as its own cargo feature to reduce build times.
 

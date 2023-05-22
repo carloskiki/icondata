@@ -1,4 +1,4 @@
-# Icondata_ai
+# Icondata - ai
 
 Icon data from the *Ant Design Icons* library. Every icon is packaged as its own cargo feature to reduce build times.
 

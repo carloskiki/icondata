@@ -3,7 +3,7 @@
 ###################
 
 [dependencies]
-icondata = [...]
+icondata = "..."
 
 [features]
 {% for short_name in short_names -%}

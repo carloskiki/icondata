@@ -1,4 +1,4 @@
-# Icondata_im
+# Icondata - im
 
 Icon data from the *IcoMoon Free* library. Every icon is packaged as its own cargo feature to reduce build times.
 

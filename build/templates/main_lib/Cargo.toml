@@ -11,8 +11,25 @@ keywords = ["leptos", "icons"]
 categories = ["web-programming"]
 
 [dependencies]
+{% for (short_name, version) in sn_version -%}
+icondata_{{short_name}} = { version = "{{version}}", optional = true }
+{% endfor -%}
 
 [features]
+strum = [
+{% for (short_name, _) in sn_version -%}
+"icondata_{{short_name}}/strum",
+{% endfor -%}
+]
+serde = [
+{% for (short_name, _) in sn_version -%}
+"icondata_{{short_name}}/serde",
+{% endfor -%}
+]
+
+{% for (short_name, features) in sn_features -%}
+{{short_name|capitalize}} = []
 {% for feat in features -%}
-{{ feat }} = []
-{%- endfor %}
+{{ feat }} = ["icondata_{{short_name}}/{{feat}}", "{{short_name|capitalize}}"]
+{% endfor -%}
+{% endfor %}

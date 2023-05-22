@@ -1,4 +1,4 @@
-# Icondata_ch
+# Icondata - ch
 
 Icon data from the *Charm* library. Every icon is packaged as its own cargo feature to reduce build times.
 

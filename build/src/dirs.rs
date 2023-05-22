@@ -1,17 +1,16 @@
 use std::path::PathBuf;
 
-use tokio::io::AsyncWriteExt;
-use tracing::{instrument, trace, error};
 use anyhow::Result;
+use tokio::io::AsyncWriteExt;
+use tracing::{error, instrument, trace};
 
 use crate::{
-    fs::{cargo_toml::CargoToml, readme_md::Readme, lib_rs::LibRs},
+    fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme},
     package::{Downloaded, Package},
 };
 
 #[derive(Debug)]
 pub struct Library<'a> {
-    path: PathBuf,
     cargo_toml: Option<CargoToml>,
     lib_rs: Option<LibRs>,
     readme: Option<Readme>,
@@ -22,62 +21,59 @@ impl<'a> Library<'a> {
     pub fn new(mut path: PathBuf, ty: LibType<'a>) -> Self {
         match &ty {
             LibType::IconLib(_) => {
-                let cargo_toml_path = path.join("Cargo.toml");
+                let cargo_path = path.join("Cargo.toml");
                 let lib_rs_path = path.join("src/lib.rs");
                 let readme_path = path.join("README.md");
 
                 Library {
-                    path,
-                    cargo_toml: Some(CargoToml { path: cargo_toml_path }),
-                    lib_rs: Some(LibRs { path: lib_rs_path }),
-                    readme: Some(Readme {
-                        path: readme_path,
+                    cargo_toml: Some(CargoToml {
+                        path: cargo_path,
                     }),
+                    lib_rs: Some(LibRs { path: lib_rs_path }),
+                    readme: Some(Readme { path: readme_path }),
                     ty,
                 }
-            },
+            }
 
             LibType::MainLib => {
-                let cargo_toml_path = path.join("Cargo.toml");
+                let cargo_path = path.join("Cargo.toml");
                 let lib_rs_path = path.join("src/lib.rs");
-                let lib_path = path.clone();
 
                 path.pop();
                 let readme_path = path.join("README.md");
 
                 Library {
-                    path: lib_path,
-                    cargo_toml: Some(CargoToml { path: cargo_toml_path }),
-                    lib_rs: Some(LibRs { path: lib_rs_path }),
-                    readme: Some(Readme {
-                        path: readme_path,
+                    cargo_toml: Some(CargoToml {
+                        path: cargo_path,
                     }),
+                    lib_rs: Some(LibRs { path: lib_rs_path }),
+                    readme: Some(Readme { path: readme_path }),
                     ty,
                 }
-            },
+            }
 
             LibType::IconIndex => {
-                let cargo_toml_path = path.join("Cargo.toml");
+                let cargo_path = path.join("Cargo.toml");
                 let lib_rs_path = path.join("src/lib.rs");
 
                 Library {
-                    path,
-                    cargo_toml: Some(CargoToml { path: cargo_toml_path }),
+                    cargo_toml: Some(CargoToml {
+                        path: cargo_path,
+                    }),
                     lib_rs: Some(LibRs { path: lib_rs_path }),
-                    readme: None,
-                    ty,
-                }
-            },
-
-            LibType::Boilerplate => {
-                Library {
-                    cargo_toml: Some(CargoToml { path: path.join("Cargo.toml") }),
-                    path,
-                    lib_rs: None,
                     readme: None,
                     ty,
                 }
             }
+
+            LibType::Boilerplate => Library {
+                cargo_toml: Some(CargoToml {
+                    path: path.join("Cargo.toml"),
+                }),
+                lib_rs: None,
+                readme: None,
+                ty,
+            },
         }
     }
 
@@ -110,6 +106,11 @@ pub enum LibType<'a> {
 pub async fn write_to_file(path: &PathBuf, contents: String) -> Result<()> {
     trace!(?path, "Making sure full path exists.");
     tokio::fs::create_dir_all(path.parent().unwrap()).await?;
+
+    if path.exists() {
+        trace!("Removing existing file.");
+        tokio::fs::remove_file(&path).await?;
+    }
 
     let mut file = tokio::fs::OpenOptions::new()
         .create(true)

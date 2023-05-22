@@ -1,4 +1,4 @@
-# Icondata_bi
+# Icondata - bi
 
 Icon data from the *BoxIcons* library. Every icon is packaged as its own cargo feature to reduce build times.
 

@@ -1,4 +1,4 @@
-# Icondata_ri
+# Icondata - ri
 
 Icon data from the *Remix Icon* library. Every icon is packaged as its own cargo feature to reduce build times.
 
