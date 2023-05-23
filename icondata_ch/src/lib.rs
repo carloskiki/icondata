@@ -6,8 +6,9 @@
 //! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
 //! identical.
 //!
-//! The enum implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
-//!
+
+/// This enum provides every icon as a variant.
+/// It implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
 #[non_exhaustive]
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]

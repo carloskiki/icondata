@@ -2,7 +2,7 @@
 
 Icon data from the *Ant Design Icons* library. Every icon is packaged as its own cargo feature to reduce build times.
 
-Visit this [repository](https://github.com/Carlosted/icondata) to see a list of available libraries.
+Visit this [repository](https://github.com/Carlosted/icondata) for in-depth information.
 
 ## Contributing
 
