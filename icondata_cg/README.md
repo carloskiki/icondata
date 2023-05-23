@@ -1,4 +1,4 @@
-# Icondata_cg
+# Icondata - cg
 
 Icon data from the *css.gg* library. Every icon is packaged as its own cargo feature to reduce build times.
 

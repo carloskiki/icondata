@@ -5,22 +5,22 @@ use heck::ToPascalCase;
 
 use crate::{
     feature::Feature,
-    package::{Downloaded, Package, PackageType},
+    package::{Unknown, Package, PackageType},
 };
 
 use self::svg::ParsedSvg;
 
-mod svg;
+pub mod svg;
 
 #[derive(Debug, Clone)]
-pub(crate) struct SvgIcon {
+pub struct SvgIcon {
     pub svg: svg::ParsedSvg,
     pub feature: Feature,
 }
 
 impl SvgIcon {
     pub async fn new(
-        package: &Package<Downloaded>,
+        package: &Package<Unknown>,
         path: &Path,
         size: Option<IconSize>,
         mut categories: Vec<Category>,
@@ -53,10 +53,10 @@ impl SvgIcon {
 }
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone)]
-pub(crate) struct Category(pub String);
+pub struct Category(pub String);
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
-pub(crate) enum IconSize {
+pub enum IconSize {
     Xs,
     Sm,
     Md,

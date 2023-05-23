@@ -1,4 +1,4 @@
-# Icondata_io
+# Icondata - io
 
 Icon data from the *Ionicons* library. Every icon is packaged as its own cargo feature to reduce build times.
 

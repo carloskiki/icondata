@@ -1,4 +1,4 @@
-# Icondata_fa
+# Icondata - fa
 
 Icon data from the *Font Awesome* library. Every icon is packaged as its own cargo feature to reduce build times.
 

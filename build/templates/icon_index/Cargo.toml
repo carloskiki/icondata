@@ -1,0 +1,39 @@
+[package]
+name = "icon_index"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+
+[dependencies]
+leptos = { version = "0.3", default-features = false, features = ["csr"] }
+leptos_meta = { version = "0.3", default-features = false, features = ["csr"] }
+console_error_panic_hook = "0.1"
+console_log = "1"
+log = "0.4"
+strum = "0.24"
+itertools = "0.10.5"
+web-sys = { version = "0.3.61", features = [
+    "Window",
+    "Navigator",
+    "Clipboard",
+    "Storage",
+    "HtmlElement",
+    "DomRect",
+    "CssStyleDeclaration",
+    "ScrollToOptions",
+    "ScrollBehavior",
+    "KeyboardEvent",
+] }
+once_cell = "1.17"
+
+leptos_icons = { version = "0.0.10", default_features = false, features = [
+"csr",
+"strum",
+{% for feat in features %}
+"{{ feat }}",
+{%- endfor %}
+] }

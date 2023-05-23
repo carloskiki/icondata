@@ -35,20 +35,27 @@ pub(crate) enum Error {
         path: PathBuf,
         backtrace: Backtrace,
     },
+    #[snafu(display("Could not read icon data from {path:?}"))]
+    IconRead {
+        source: anyhow::Error,
+        path: PathBuf,
+        backtrace: Backtrace,
+    },
 }
 
 #[derive(Debug, Clone)]
-pub(crate) struct Package<S> {
+pub struct Package<S> {
     pub ty: PackageType,
     pub meta: PackageMetadata,
+    icons: Vec<SvgIcon>,
     phantom_data: PhantomData<S>,
 }
 
-/// It is not guaranteed that the package was downloaded to teh exact version specified.
+/// It is not guaranteed that the package was downloaded to the exact version specified.
 #[derive(Debug, Clone)]
 pub struct Unknown {}
 
-/// The package was successfully downloaded. Icon data can be read.
+/// The package was successfully downloaded, and Icon data was read successfully.
 #[derive(Debug, Clone)]
 pub struct Downloaded {}
 
@@ -68,6 +75,7 @@ impl Package<Unknown> {
             .map(|ty| Package::<Unknown> {
                 ty,
                 meta: ty.metadata(),
+                icons: Vec::new(),
                 phantom_data: PhantomData {},
             })
             .collect()
@@ -83,8 +91,8 @@ impl Package<Unknown> {
         Ok(())
     }
 
-    #[instrument(level = "info")]
-    pub fn download(self) -> Result<Package<Downloaded>, Error> {
+    #[instrument(level = "info", skip_all)]
+    pub(crate) async fn download(self) -> Result<Package<Downloaded>, Error> {
         let download_path = self.download_path();
         info!(?download_path, "Downloading...");
 
@@ -126,26 +134,29 @@ impl Package<Unknown> {
             }
         };
 
+        let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
+        let mut icons = reader::read_icons(&self, icons_path.clone()).await.with_context(|_| IconReadSnafu {
+            path: icons_path,
+        })?;
+        icons.sort_by(|a, b| a.feature.name.cmp(&b.feature.name));
+
         Ok(Package::<Downloaded> {
             ty: self.ty,
             meta: self.meta,
+            icons,
             phantom_data: PhantomData {},
         })
     }
 }
 
 impl Package<Downloaded> {
-    pub fn icons_path(&self) -> PathBuf {
-        self.download_path().join(self.meta.svg_dir.as_ref())
-    }
-
-    pub async fn read_icons(&self) -> Result<Vec<SvgIcon>> {
-        reader::read_icons(self).await
+    pub fn icons(&self) -> &[SvgIcon] {
+        &self.icons
     }
 }
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, EnumIter, Clone, Copy)]
-pub(crate) enum PackageType {
+pub enum PackageType {
     AntDesignIcons,
     FontAwesome,
     WeatherIcons,
@@ -167,7 +178,7 @@ pub(crate) enum PackageType {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) struct PackageMetadata {
+pub struct PackageMetadata {
     /// Two-character identifier like "fa" for "Font Awesome".
     pub short_name: Cow<'static, str>,
     /// Full human readable name of this icon package.
@@ -184,7 +195,7 @@ pub(crate) struct PackageMetadata {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) enum PackageSource {
+pub enum PackageSource {
     Git {
         url: Cow<'static, str>, // TODO use url type?
         target: GitTarget,
@@ -192,7 +203,7 @@ pub(crate) enum PackageSource {
 }
 
 #[derive(Debug, Clone)]
-pub(crate) enum GitTarget {
+pub enum GitTarget {
     Branch {
         name: Cow<'static, str>,
         commit_ref: Cow<'static, str>,

@@ -7,7 +7,7 @@ use crate::{
     package::Package,
 };
 
-use super::Downloaded;
+use super::Unknown;
 
 /// A directory to be searched, combined with:
 ///     - a list of categories valid for the contents of that directory and
@@ -20,14 +20,14 @@ struct SearchDir {
 }
 
 #[instrument(level = "info", skip(package), fields(package = ?package.ty))]
-pub(crate) async fn read_icons(package: &Package<Downloaded>) -> Result<Vec<SvgIcon>> {
+pub(crate) async fn read_icons(package: &Package<Unknown>, icons_path: PathBuf) -> Result<Vec<SvgIcon>> {
     trace!("Reading icon data...");
     let mut icons = Vec::new();
 
     let mut search_dirs = Vec::<SearchDir>::new();
 
     search_dirs.push(SearchDir {
-        path: package.icons_path(),
+        path: icons_path,
         categories: Vec::new(),
         icon_size: None,
     });

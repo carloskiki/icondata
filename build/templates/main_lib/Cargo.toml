@@ -1,0 +1,39 @@
+[package]
+name = "icondata"
+version = "0.0.2"
+authors = ["Charles Edward Gagnon"]
+edition = "2021"
+description = "Icon data from free icon libraries."
+readme = "../README.md"
+repository = "https://github.com/Carlosted/icondata"
+license = "MIT"
+keywords = ["leptos", "icons"]
+categories = ["web-programming"]
+
+[dependencies]
+icondata_core = "0.0.2"
+serde = { version = "1", optional = true }
+
+{% for (short_name, version) in sn_version -%}
+icondata_{{short_name}} = { version = "{{version}}", optional = true }
+{% endfor -%}
+
+[features]
+strum = [
+{% for (short_name, _) in sn_version -%}
+"icondata_{{short_name}}/strum",
+{% endfor -%}
+]
+serde = [
+"dep:serde",
+{% for (short_name, _) in sn_version -%}
+"icondata_{{short_name}}/serde",
+{% endfor -%}
+]
+
+{% for (short_name, features) in sn_features -%}
+{{short_name|capitalize}} = []
+{% for feat in features -%}
+{{ feat }} = ["icondata_{{short_name}}/{{feat}}", "{{short_name|capitalize}}"]
+{% endfor -%}
+{% endfor %}

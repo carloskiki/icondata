@@ -1,5 +1,9 @@
-use anyhow::Result;
+use anyhow::{anyhow, Result};
 use clap::{command, Parser};
+use icon::SvgIcon;
+use package::Downloaded;
+use std::sync::Arc;
+use tokio::sync::Mutex;
 use tracing::{error, info};
 use tracing_subscriber::filter::Targets;
 use tracing_subscriber::fmt::format::{Format, Pretty};
@@ -7,15 +11,13 @@ use tracing_subscriber::prelude::__tracing_subscriber_SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::{Layer, Registry};
 
-use crate::dirs::base_repo::BaseRepo;
-use crate::dirs::icon_index::IconIndex;
-use crate::dirs::icon_library::IconLibrary;
-use crate::dirs::boilerplate::Boilerplate;
+use crate::dirs::{LibType, Library};
 use crate::package::Package;
+use once_cell::sync::OnceCell;
 
-mod fs;
 mod dirs;
 mod feature;
+mod fs;
 mod git;
 mod icon;
 mod package;
@@ -30,6 +32,31 @@ struct BuildArgs {
     clean: bool,
 }
 
+static PACKAGES: OnceCell<Packages> = OnceCell::new();
+
+pub struct Packages {
+    packages: Vec<Package<Downloaded>>,
+}
+
+impl Packages {
+    pub fn get() -> Result<&'static [Package<Downloaded>]> {
+        PACKAGES
+            .get()
+            .ok_or(anyhow!("Packages not initialized yet."))
+            .map(|packages| packages.packages.as_ref())
+    }
+
+    pub fn get_icons() -> Result<impl Iterator<Item = &'static SvgIcon>> {
+        Ok(Self::get()?.iter().flat_map(|package| package.icons().iter()))
+    }
+
+    pub fn set(packages: Vec<Package<Downloaded>>) -> Result<()> {
+        PACKAGES.set(Packages { packages }).or(Err(anyhow!(
+            "Could not set value because it was already set."
+        )))
+    }
+}
+
 #[tokio::main]
 async fn main() -> Result<()> {
     init_tracing(tracing::level_filters::LevelFilter::INFO);
@@ -41,9 +68,14 @@ async fn main() -> Result<()> {
 
     let start = time::OffsetDateTime::now_utc();
 
+    let packages: Arc<Mutex<Vec<Package<Downloaded>>>> = Arc::new(Mutex::new(Vec::new()));
+
+    info!("Downloading all packages.");
     let handles = Package::all()
         .into_iter()
         .map(|package| {
+            let packages = Arc::clone(&packages);
+
             tokio::spawn(async move {
                 if args.clean {
                     package.remove().await?;
@@ -51,7 +83,7 @@ async fn main() -> Result<()> {
 
                 // Download the package.
                 let package_type = package.ty;
-                let package = package.download().map_err(|err| {
+                let package = package.download().await.map_err(|err| {
                     error!(
                         ?package_type,
                         ?err,
@@ -60,51 +92,54 @@ async fn main() -> Result<()> {
                     err
                 })?;
 
-                // Generate the library for that package.
-                let lib_path =
-                    path::library_crate(format!("icondata_{}", package.meta.short_name), "");
-                let mut lib = IconLibrary::new(package, lib_path);
-
+                info!("Generating icon crate.");
+                let lib = Library::new(
+                    path::library_crate(format!("icondata_{}", package.meta.short_name)),
+                    LibType::IconLib(&package),
+                );
                 lib.generate().await?;
 
-                Ok::<IconLibrary, anyhow::Error>(lib)
+                packages.lock().await.push(package);
+
+                Ok::<(), anyhow::Error>(())
             })
         })
         .collect::<Vec<_>>();
-
-    let libs = {
-        let mut libs = Vec::new();
-        for handle in handles {
-            match handle.await.unwrap() {
-                Ok(lib) => libs.push(lib),
-                Err(err) => {
-                    error!(?err, "Could not process package successfully.");
-                    return Err(err);
-                }
+    for handle in handles {
+        match handle.await.unwrap() {
+            Ok(()) => (),
+            Err(err) => {
+                error!(?err, "Could not process package successfully.");
+                return Err(err);
             }
         }
-        libs
-    };
+    }
 
-    let num_libs = libs.len();
+    info!("Setting the package global variable.");
+    let mut packages = Arc::try_unwrap(packages)
+        .or(Err(anyhow!("More than one hold of packages ARC.")))?
+        .into_inner();
+    packages.sort_by(|a, b| a.meta.short_name.cmp(&b.meta.short_name));
+    Packages::set(packages)?;
 
-    let mut base_path = path::build_crate("");
-    base_path.pop();
-    let base_repo = BaseRepo::new(base_path);
-    base_repo.generate().await?;
+    info!("Generating main library.");
+    let main_lib = Library::new(path::library_crate("icondata"), LibType::MainLib);
+    main_lib.generate().await?;
 
-    let boilerplate_path = path::library_crate("boilerplate", "");
-    let mut boilerplate_dir = Boilerplate::new(boilerplate_path);
-    boilerplate_dir.generate(&libs).await?;
+    info!("Generating boilerplate directory.");
+    let boilerplate = Library::new(path::library_crate("boilerplate"), LibType::Boilerplate);
+    boilerplate.generate().await?;
 
+    info!("Generating icon index.");
+    let icon_index = Library::new(path::library_crate("icon_index"), LibType::IconIndex);
+    icon_index.generate().await?;
+
+    let num_libs = Packages::get()?.len();
     let end = time::OffsetDateTime::now_utc();
     info!(
-        took = format!("{}s", (end - start).whole_seconds()),
+        took = format!("{}s", (end - start).whole_milliseconds()),
         num_libs, "Build successful!"
     );
-
-    let icon_index = IconIndex::new(path::library_crate("icon_index", ""));
-    icon_index.generate(&libs).await?;
 
     Ok(())
 }
@@ -135,7 +170,7 @@ fn init_tracing(level: tracing::level_filters::LevelFilter) {
 /// This may prevent unwanted file operations in wrong directories.
 fn assert_paths() {
     let build_crate_root = path::build_crate("");
-    let icondata_crate_root = path::library_crate("icondata", "");
+    let icondata_crate_root = path::library_crate("icondata");
     info!(?build_crate_root, "Using");
     info!(?icondata_crate_root, "Using");
 
@@ -145,8 +180,6 @@ fn assert_paths() {
     );
     assert_eq!(
         Some("icondata"),
-        icondata_crate_root
-            .file_name()
-            .and_then(|it| it.to_str())
+        icondata_crate_root.file_name().and_then(|it| it.to_str())
     );
 }

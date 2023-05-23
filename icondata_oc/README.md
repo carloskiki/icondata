@@ -1,4 +1,4 @@
-# Icondata_oc
+# Icondata - oc
 
 Icon data from the *Github Octicons* library. Every icon is packaged as its own cargo feature to reduce build times.
 
