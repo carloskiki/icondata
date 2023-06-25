@@ -24,7 +24,7 @@ jobs:
           'cd {} && cargo publish --token $CRATES_IO_TOKEN
           || (exit_code=$?; [ $exit_code -eq 101 ] && true || exit $exit_code)'
           && cd icondata 
-          && cargo publish --token $CRATES_IO_TOKEN
+          && cargo publish --token $CRATES_IO_TOKEN || (exit_code=$?; [ $exit_code -eq 101 ] && true || exit $exit_code)
 
 name: Publish Crates
 on:
