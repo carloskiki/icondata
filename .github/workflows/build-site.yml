@@ -13,6 +13,12 @@ jobs:
           toolchain: nightly
       - name: Build website
         run: "just build-site"
+  
+  deploy_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        uses: actions/deploy-pages@v2
 
 
 name: Build & Deploy Site
