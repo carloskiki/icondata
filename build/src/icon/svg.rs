@@ -2,7 +2,9 @@ use anyhow::{anyhow, Result};
 use std::str::from_utf8;
 use std::{borrow::Cow, collections::HashMap};
 use tracing::warn;
+use xml::attribute::Attribute;
 use xml::common::XmlVersion;
+use xml::name::Name;
 use xml::namespace::Namespace;
 use xml::{attribute::OwnedAttribute, EmitterConfig, ParserConfig};
 
@@ -58,7 +60,7 @@ pub struct SvgAttributes {
 }
 
 impl ParsedSvg {
-    pub(crate) fn parse<R: std::io::Read>(icon_content: R) -> Result<ParsedSvg> {
+    pub(crate) fn parse<R: std::io::Read>(icon_content: R, twotone: bool) -> Result<ParsedSvg> {
         let parser_config = ParserConfig {
             trim_whitespace: true,
             whitespace_to_characters: false,
@@ -180,10 +182,43 @@ impl ParsedSvg {
                             attributes,
                             namespace: _,
                         } => {
+                            let mut is_twotone_light_element = false;
+
+                            let mut attributes = attributes
+                                .into_iter()
+                                .filter_map(|attr| {
+                                    if attr.name.local_name != "fill" {
+                                        return Some(Ok(*attr));
+                                    }
+                                    match is_light(&attr.value) {
+                                        Ok(fill_contents) => match fill_contents {
+                                            FillContents::Dark => None,
+                                            FillContents::Unknown => Some(Ok(*attr)),
+                                            FillContents::Light => {
+                                                if twotone {
+                                                    is_twotone_light_element = true;
+                                                } else {
+                                                    warn!(?attr, "Encountered a light fill attribute on a non twotone icon.");
+                                                }
+                                                Some(Ok(*attr))
+                                            },
+                                        },
+                                        Err(err) => Some(Err(err)),
+                                    }
+                                })
+                                .collect::<Result<Vec<_>>>()?;
+
+                            if is_twotone_light_element {
+                                attributes.push(Attribute {
+                                    name: Name::local("class"),
+                                    value: "twotone-icon-secondary-color",
+                                });
+                            };
+
                             writer
                                 .write(xml::writer::XmlEvent::StartElement {
                                     name,
-                                    attributes,
+                                    attributes: attributes.into(),
                                     // namespace will be non empty, when the initially read svg element contained that information.
                                     // We are only writing the inner parts of an svg (we reconstruct an <svg> element around that later)
                                     // and therefore do not want namespace information to be emitted on any child element.
@@ -231,6 +266,36 @@ impl ParsedSvg {
     }
 }
 
+enum FillContents {
+    Light,
+    Dark,
+    Unknown,
+}
+
+fn is_light(color: &str) -> Result<FillContents> {
+    if !color.starts_with('#') {
+        return Ok(FillContents::Unknown);
+    }
+
+    let (r, g, b) = if color.len() == 4 {
+        let r = u8::from_str_radix(&color[1..2].repeat(2), 16)?;
+        let g = u8::from_str_radix(&color[2..3].repeat(2), 16)?;
+        let b = u8::from_str_radix(&color[3..4].repeat(2), 16)?;
+        (r, g, b)
+    } else if color.len() == 7 {
+        let r = u8::from_str_radix(&color[1..3], 16)?;
+        let g = u8::from_str_radix(&color[3..5], 16)?;
+        let b = u8::from_str_radix(&color[5..7], 16)?;
+        (r, g, b)
+    } else {
+        return Err(anyhow!("Hex value without 3 or 6 digits."));
+    };
+    match r.saturating_add(g).saturating_add(b) > 0xE0 {
+        true => Ok(FillContents::Light),
+        false => Ok(FillContents::Dark),
+    }
+}
+
 #[cfg(test)]
 mod test {
     use super::ParsedSvg;
@@ -261,7 +326,7 @@ mod test {
         "# }.replace("\n", "\r\n");
 
         // When parsing such a file.
-        let out = ParsedSvg::parse(original.as_bytes()).expect("no errors");
+        let out = ParsedSvg::parse(original.as_bytes(), false).expect("no errors");
 
         // We expect all conversions to be made to just "&#xA;" (representing \n) instead of "&#xD;&#xA;" (representing \r\n).
         pretty_assertions::assert_eq!(
@@ -278,6 +343,28 @@ mod test {
                     l55.9-55.9c3.1-3.1,3.1-8.2,0-11.3L234.2,167z" />
                 <path d="M457,389.8L307.6,240.4c-3.1-3.1-8.2-3.1-11.3,0l-55.9,55.9c-3.1,3.1-3.1,8.2,0,11.3L389.8,457c18.4,18.7,48.5,19,67.2,0.7
                     c18.7-18.4,19-48.5,0.7-67.2C457.5,390.3,457.3,390,457,389.8L457,389.8z" />"# },
+            out.content,
+        )
+    }
+
+    #[test]
+    fn parse_twotone() {
+        let original = indoc::indoc! { r###"
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                  <path fill="#333" d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 632H136V232h752v560z"/>
+                  <path fill="#E6E6E6" d="M136 792h752V232H136v560zm56.4-130.5l214.9-215c3.1-3.1 8.2-3.1 11.3 0L533 561l254.5-254.6c3.1-3.1 8.2-3.1 11.3 0l36.8 36.8c3.1 3.1 3.1 8.2 0 11.3l-297 297.2a8.03 8.03 0 0 1-11.3 0L412.9 537.2 240.4 709.7a8.03 8.03 0 0 1-11.3 0l-36.7-36.9a8.03 8.03 0 0 1 0-11.3z"/>
+                  <path fill="#333" d="M229.1 709.7c3.1 3.1 8.2 3.1 11.3 0l172.5-172.5 114.4 114.5c3.1 3.1 8.2 3.1 11.3 0l297-297.2c3.1-3.1 3.1-8.2 0-11.3l-36.8-36.8a8.03 8.03 0 0 0-11.3 0L533 561 418.6 446.5a8.03 8.03 0 0 0-11.3 0l-214.9 215a8.03 8.03 0 0 0 0 11.3l36.7 36.9z"/>
+                </svg>
+            "### };
+
+        let out = ParsedSvg::parse(original.as_bytes(), true).expect("no errors");
+
+        // We expect all conversions to be made to just "&#xA;" (representing \n) instead of "&#xD;&#xA;" (representing \r\n).
+        pretty_assertions::assert_eq!(
+            indoc::indoc! { r##"
+                  <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 632H136V232h752v560z" />
+                  <path class="twotone-icon-secondary-color" d="M136 792h752V232H136v560zm56.4-130.5l214.9-215c3.1-3.1 8.2-3.1 11.3 0L533 561l254.5-254.6c3.1-3.1 8.2-3.1 11.3 0l36.8 36.8c3.1 3.1 3.1 8.2 0 11.3l-297 297.2a8.03 8.03 0 0 1-11.3 0L412.9 537.2 240.4 709.7a8.03 8.03 0 0 1-11.3 0l-36.7-36.9a8.03 8.03 0 0 1 0-11.3z" />
+                  <path d="M229.1 709.7c3.1 3.1 8.2 3.1 11.3 0l172.5-172.5 114.4 114.5c3.1 3.1 8.2 3.1 11.3 0l297-297.2c3.1-3.1 3.1-8.2 0-11.3l-36.8-36.8a8.03 8.03 0 0 0-11.3 0L533 561 418.6 446.5a8.03 8.03 0 0 0-11.3 0l-214.9 215a8.03 8.03 0 0 0 0 11.3l36.7 36.9z" />"## },
             out.content,
         )
     }

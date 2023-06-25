@@ -1,11 +1,11 @@
 use std::{fmt::Display, path::Path, str::FromStr};
 
-use anyhow::Result;
+use anyhow::{Context, Result};
 use heck::ToPascalCase;
 
 use crate::{
     feature::Feature,
-    package::{Unknown, Package, PackageType},
+    package::{Package, PackageType, Unknown},
 };
 
 use self::svg::ParsedSvg;
@@ -46,7 +46,18 @@ impl SvgIcon {
         let svg = tokio::fs::read_to_string(path).await?;
 
         Ok(SvgIcon {
-            svg: ParsedSvg::parse(svg.as_bytes())?,
+            svg: ParsedSvg::parse(
+                svg.as_bytes(),
+                categories.contains(&Category("twotone".to_string())),
+            )
+            .with_context(|| {
+                format!(
+                    "Error parsing icon: {} from package: {}, with path: {:?}",
+                    feature.name,
+                    package.meta.short_name,
+                    path.to_str()
+                )
+            })?,
             feature,
         })
     }

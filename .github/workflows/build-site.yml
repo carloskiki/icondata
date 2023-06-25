@@ -1,0 +1,28 @@
+jobs: 
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install nightly with wasm
+        uses: ThexXTURBOXx/toolchain@master
+        with:
+          override: true
+          profile: minimal
+          target: wasm32-unknown-unknown
+          toolchain: nightly
+      - name: Build website
+        run: "just build-site"
+  
+  deploy_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        uses: actions/deploy-pages@v2
+
+
+name: Build & Deploy Site
+on:
+  pull_request:
+    types:
+      - closed

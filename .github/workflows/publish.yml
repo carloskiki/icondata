@@ -19,10 +19,12 @@ jobs:
           CRATES_IO_TOKEN: ${{ secrets.CARGO_LOGIN }}
         name: Publish all Crates  
         run: >
-          find . -maxdepth 1 -type d -name 'icondata*' ! -name 'icondata_core' -print0
+          find . -maxdepth 1 -type d -name 'icondata_*'
           | xargs -0 -I {} sh -c
           'cd {} && cargo publish --token $CRATES_IO_TOKEN
           || (exit_code=$?; [ $exit_code -eq 101 ] && true || exit $exit_code)'
+          && cd icondata 
+          && cargo publish --token $CRATES_IO_TOKEN
 
 name: Publish Crates
 on:

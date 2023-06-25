@@ -14,6 +14,10 @@ install-tools:
   cargo install twiggy
   cargo install cargo-expand
 
+# Build website
+build-site:
+    cd icon_index && trunk build
+
 # Build all libraries
 build:
     cd build && cargo run
