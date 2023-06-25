@@ -92,7 +92,7 @@ impl Package<Unknown> {
     }
 
     #[instrument(level = "info", skip_all)]
-    pub(crate) async fn download(self) -> Result<Package<Downloaded>, Error> {
+    pub(crate) async fn download(self) -> Result<Package<Downloaded>> {
         let download_path = self.download_path();
         info!(?download_path, "Downloading...");
 
@@ -135,9 +135,7 @@ impl Package<Unknown> {
         };
 
         let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
-        let mut icons = reader::read_icons(&self, icons_path.clone()).await.with_context(|_| IconReadSnafu {
-            path: icons_path,
-        })?;
+        let mut icons = reader::read_icons(&self, icons_path.clone()).await?;
         icons.sort_by(|a, b| a.feature.name.cmp(&b.feature.name));
 
         Ok(Package::<Downloaded> {
@@ -255,7 +253,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -282,7 +280,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -309,7 +307,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -336,7 +334,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -363,7 +361,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -390,7 +388,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -418,7 +416,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -440,7 +438,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -467,7 +465,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -494,7 +492,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -521,7 +519,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -548,7 +546,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -575,7 +573,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -602,7 +600,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -629,7 +627,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -656,7 +654,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -683,7 +681,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },
@@ -710,7 +708,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 6,
+                    patch: 7,
                     prerelease: None,
                     build: None,
                 },

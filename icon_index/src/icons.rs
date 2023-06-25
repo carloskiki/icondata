@@ -32,7 +32,7 @@ pub fn Icons(cx: Scope) -> impl IntoView {
         NAMES
             .iter()
             .enumerate()
-            .filter_map(move |(index, feat_name)| feat_name.contains(&search_content()).then_some(index))
+            .filter_map(move |(index, feat_name)| feat_name.to_lowercase().contains(&search_content()).then_some(index))
             .collect::<Vec<_>>()
     });
 

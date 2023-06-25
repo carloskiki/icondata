@@ -80,7 +80,7 @@ pub(crate) async fn read_icons(package: &Package<Unknown>, icons_path: PathBuf) 
                             SvgIcon::new(package, &entry_path, icon_size, categories.clone())
                                 .await?,
                         ),
-                        _ => warn!(
+                        _ => trace!(
                             ?entry_path,
                             file_extension, "Found file without svg extension. Ignoring it."
                         ),
