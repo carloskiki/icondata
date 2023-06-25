@@ -11,6 +11,8 @@ jobs:
           profile: minimal
           target: wasm32-unknown-unknown
           toolchain: nightly
+      - name: Install trunk
+        run: "cargo install trunk"
       - name: Build website
         run: "cd icon_index && trunk build"
   
