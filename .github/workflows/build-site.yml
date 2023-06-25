@@ -7,8 +7,9 @@ jobs:
       - name: Install nightly with wasm
         uses: ThexXTURBOXx/toolchain@master
         with:
+          components: rust-src
           override: true
-          profile: default
+          profile: minimal
           target: wasm32-unknown-unknown
           toolchain: nightly
       - name: Install trunk
