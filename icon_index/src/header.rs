@@ -81,9 +81,9 @@ pub fn ThemeButton(cx: Scope) -> impl IntoView {
 
     let icon = move || {
         if dark_mode() {
-            view! { cx, <Icon icon=BsIcon::BsSun width=icon_size height=icon_size /> }
+            view! { cx, <Icon icon=Icon::from(BsIcon::BsSun) width=icon_size height=icon_size /> }
         } else {
-            view! { cx, <Icon icon=BsIcon::BsMoonStars width=icon_size height=icon_size /> }
+            view! { cx, <Icon icon=Icon::from(BsIcon::BsMoonStars) width=icon_size height=icon_size /> }
         }
     };
 

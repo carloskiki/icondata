@@ -2,7 +2,7 @@ use std::{time::Duration, cmp::{min, max}};
 
 use icon_index::{ALL_ICONS, NAMES};
 use leptos::{html::Main, *};
-use leptos_icons::{Icon, IconData};
+use leptos_icons::Icon;
 use web_sys::MouseEvent;
 
 use crate::{
@@ -88,7 +88,6 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     let container_height = move || {
         let height = (item_count() as u32 / col_count() + 1) * item_size;
         let styles = format!("height: {height}px;");
-        log!("{}", styles);
         styles
     };
 
@@ -125,7 +124,7 @@ fn base_font() -> u32 {
 }
 
 #[component]
-pub fn IconItem(cx: Scope, icon: IconData, feat_name: &'static str, top: u32, left: u32) -> impl IntoView {
+pub fn IconItem(cx: Scope, icon: Icon, feat_name: &'static str, top: u32, left: u32) -> impl IntoView {
     let text_size = match feat_name.len() {
         0..=16 => "text-xs",
         17..=22 => "text-[0.6rem]",

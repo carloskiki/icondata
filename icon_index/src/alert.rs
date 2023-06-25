@@ -50,7 +50,7 @@ impl Alert {
         view! { cx,
             <div class="flex w-72 h-14 rounded-md bg-green-300 dark:bg-green-600 px-4 gap-2 justify-between items-center">
                 <p class="line-clamp-1 break-all">{&self.text}</p>
-                <Icon icon=FaIcon::FaCircleCheckSolid width="1.5em" height="1.5em" />
+                <Icon icon=Icon::from(FaIcon::FaCircleCheckSolid) width="1.5em" height="1.5em" />
             </div>
         }
     }
