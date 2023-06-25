@@ -8,7 +8,7 @@ jobs:
         uses: ThexXTURBOXx/toolchain@master
         with:
           override: true
-          profile: minimal
+          profile: default
           target: wasm32-unknown-unknown
           toolchain: nightly
       - name: Install trunk
