@@ -8,11 +8,13 @@
 //! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data.
 //!
 //!
-pub use icondata_core::IconData;
 {% for short_name in short_names %}
 #[cfg(feature = "{{short_name|capitalize}}")]
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
+
+#[cfg(feature = "macros")]
+pub use icondata_macros::*;
 
 /// The main enum to select an icon. This enum contains all icons from icondata_* libraries, and
 /// implements [`From`] for [`IconData`], so it can be converted into an [`IconData`] struct.
