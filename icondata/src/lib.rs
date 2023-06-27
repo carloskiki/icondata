@@ -8,6 +8,7 @@
 //! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data.
 //!
 //!
+pub use icondata_core::IconData;
 
 #[cfg(feature = "Ai")]
 pub use icondata_ai::*;
