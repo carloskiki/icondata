@@ -14,6 +14,17 @@ pub use icondata_core::IconData;
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
 
+/// # Icon Macro
+/// This macro allows you to write `icon!(IconName)` instead of `Icon::from(Library::IconName)`.
+/// It is simply a quality of life improvement, and is not required to use this crate. It is
+/// enabled with the **`macros`** feature.
+///
+/// ### Example
+/// ```
+/// let icon: Icon = icon!(AiFileImageTwotone);
+/// // Instead of:
+/// let icon: Icon = Icon::from(AiIcon::AiFileImageTwotone);
+/// ```
 #[cfg(feature = "macros")]
 pub use icondata_macros::*;
 
