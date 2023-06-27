@@ -4,6 +4,7 @@ version = "0.1.1"
 edition = "2021"
 authors = ["Charles Edward Gagnon"]
 license = "MIT"
+repository = "https://github.com/Carlosted/icondata"
 
 description = "A helper macro to specify icons in a declarative way."
 keywords = ["icons", "svg", "macro"]
