@@ -1,5 +1,16 @@
 extern crate proc_macro;
 
+/// # Icon Macro
+/// This macro allows you to write `icon!(IconName)` instead of `Icon::from(Library::IconName)`.
+/// It is simply a quality of life improvement, and is not required to use this crate. It is
+/// enabled with the **`macros`** feature.
+///
+/// ### Example
+/// ```
+/// let icon: Icon = icon!(AiFileImageTwotone);
+/// // Instead of:
+/// let icon: Icon = Icon::from(AiIcon::AiFileImageTwotone);
+/// ```
 #[proc_macro]
 pub fn icon(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
     let mut input = input.into_iter();
