@@ -48,4 +48,10 @@ impl From<{{short_name|capitalize}}Icon> for Icon {
         Self::{{short_name|capitalize}}(icon)
     }
 }
+#[cfg(all("{{short_name|capitalize}}", "leptos"))]
+impl From<{{short_name|capitalize}}Icon> for leptos::MaybeSignal<Icon> {
+    fn from(icon: {{short_name|capitalize}}|Icon) -> Self {
+        Self::Static(Icon::from(icon))
+    }
+}
 {% endfor %}

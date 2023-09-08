@@ -14,6 +14,7 @@ categories = ["web-programming"]
 icondata_core = "0.0.2"
 serde = { version = "1", optional = true }
 icondata_macros = { version = "0.1.2", optional = true }
+leptos = { version = "0.5.0-beta2", optional = true }
 
 {% for (short_name, version) in sn_version -%}
 icondata_{{short_name}} = { version = "{{version}}", optional = true }
@@ -32,6 +33,7 @@ serde = [
 "icondata_{{short_name}}/serde",
 {% endfor -%}
 ]
+leptos = ["dep:leptos"]
 
 {% for (short_name, features) in sn_features -%}
 {{short_name|capitalize}} = []
