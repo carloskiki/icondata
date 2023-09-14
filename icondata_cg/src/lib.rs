@@ -1380,6 +1380,8 @@ pub enum CgIcon {
     CgUserRemove,
     #[cfg(feature = "CgUserlane")]
     CgUserlane,
+    #[cfg(feature = "CgVercel")]
+    CgVercel,
     #[cfg(feature = "CgViewCols")]
     CgViewCols,
     #[cfg(feature = "CgViewComfortable")]
@@ -1416,8 +1418,6 @@ pub enum CgIcon {
     CgYinyang,
     #[cfg(feature = "CgYoutube")]
     CgYoutube,
-    #[cfg(feature = "CgZeit")]
-    CgZeit,
     #[cfg(feature = "CgZoomIn")]
     CgZoomIn,
     #[cfg(feature = "CgZoomOut")]
@@ -3220,7 +3220,7 @@ const CG_BORDER_TOP: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("none"),
     data: r###"<path d="M8 16H16V9L19 9L19 19L5 19L5 9L8 9V16Z" fill="currentColor" fill-opacity="0.3" />
-<path d="M5 7L19 7V4L5 4L5 7Z" />"###
+<path d="M5 7L19 7V4L5 4L5 7Z" fill="currentColor" />"###
 };
 #[cfg(feature = "CgBot")]
 const CG_BOT: icondata_core::IconData = icondata_core::IconData {
@@ -6286,7 +6286,7 @@ const CG_FORMAT_BOLD: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("none"),
-    data: r###"<path d="M12.946 10.7833L11.2754 12.209L13.4476 12.533C14.8919 12.7485 16 13.9957 16 15.5C16 13.8431 14.6569 12.5 13 12.5H9H8V11.5H9H11C12.6283 11.5 13.9536 10.2028 13.9988 8.58539C13.9743 9.4647 13.5724 10.2488 12.946 10.7833Z" stroke="currentColor" stroke-width="2" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4.504H7v14.992h6a4 4 0 0 0 .604-7.955A4 4 0 0 0 11 4.505Zm-2 2h2a2 2 0 1 1 0 4H9v-4Zm0 10.991v-4h4a2 2 0 1 1 0 4H9Z" fill="currentColor" />"###
 };
 #[cfg(feature = "CgFormatCenter")]
 const CG_FORMAT_CENTER: icondata_core::IconData = icondata_core::IconData {
@@ -12610,6 +12610,21 @@ const CG_USERLANE: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12H3Z" fill="currentColor" />
 <path d="M6 10C7.65685 10 9 8.65685 9 7C9 5.34315 7.65685 4 6 4C4.34315 4 3 5.34315 3 7C3 8.65685 4.34315 10 6 10Z" fill="currentColor" />"###
 };
+#[cfg(feature = "CgVercel")]
+const CG_VERCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("none"),
+    data: r###"<path d="M17.9923 17.0225L11.9806 6.97729L6.00775 17.0225H17.9923Z" fill="currentColor" />"###
+};
 #[cfg(feature = "CgViewCols")]
 const CG_VIEW_COLS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -12890,21 +12905,6 @@ const CG_YOUTUBE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("none"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z" fill="currentColor" />"###
-};
-#[cfg(feature = "CgZeit")]
-const CG_ZEIT: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: None,
-    stroke_linejoin: None,
-    stroke_width: None,
-    stroke: None,
-    fill: Some("none"),
-    data: r###"<path d="M17.9923 17.0225L11.9806 6.97729L6.00775 17.0225H17.9923Z" fill="currentColor" />"###
 };
 #[cfg(feature = "CgZoomIn")]
 const CG_ZOOM_IN: icondata_core::IconData = icondata_core::IconData {
@@ -14306,6 +14306,8 @@ impl From<CgIcon> for icondata_core::IconData {
             CgIcon::CgUserRemove => CG_USER_REMOVE,
             #[cfg(feature = "CgUserlane")]
             CgIcon::CgUserlane => CG_USERLANE,
+            #[cfg(feature = "CgVercel")]
+            CgIcon::CgVercel => CG_VERCEL,
             #[cfg(feature = "CgViewCols")]
             CgIcon::CgViewCols => CG_VIEW_COLS,
             #[cfg(feature = "CgViewComfortable")]
@@ -14342,8 +14344,6 @@ impl From<CgIcon> for icondata_core::IconData {
             CgIcon::CgYinyang => CG_YINYANG,
             #[cfg(feature = "CgYoutube")]
             CgIcon::CgYoutube => CG_YOUTUBE,
-            #[cfg(feature = "CgZeit")]
-            CgIcon::CgZeit => CG_ZEIT,
             #[cfg(feature = "CgZoomIn")]
             CgIcon::CgZoomIn => CG_ZOOM_IN,
             #[cfg(feature = "CgZoomOut")]

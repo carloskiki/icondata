@@ -116,14 +116,14 @@ pub enum VsIcon {
     VsChromeMinimize,
     #[cfg(feature = "VsChromeRestore")]
     VsChromeRestore,
+    #[cfg(feature = "VsCircle")]
+    VsCircle,
     #[cfg(feature = "VsCircleFilled")]
     VsCircleFilled,
+    #[cfg(feature = "VsCircleLarge")]
+    VsCircleLarge,
     #[cfg(feature = "VsCircleLargeFilled")]
     VsCircleLargeFilled,
-    #[cfg(feature = "VsCircleLargeOutline")]
-    VsCircleLargeOutline,
-    #[cfg(feature = "VsCircleOutline")]
-    VsCircleOutline,
     #[cfg(feature = "VsCircleSlash")]
     VsCircleSlash,
     #[cfg(feature = "VsCircleSmall")]
@@ -158,6 +158,8 @@ pub enum VsIcon {
     VsComment,
     #[cfg(feature = "VsCommentDiscussion")]
     VsCommentDiscussion,
+    #[cfg(feature = "VsCommentDraft")]
+    VsCommentDraft,
     #[cfg(feature = "VsCommentUnresolved")]
     VsCommentUnresolved,
     #[cfg(feature = "VsCompass")]
@@ -398,6 +400,8 @@ pub enum VsIcon {
     VsIndent,
     #[cfg(feature = "VsInfo")]
     VsInfo,
+    #[cfg(feature = "VsInsert")]
+    VsInsert,
     #[cfg(feature = "VsInspect")]
     VsInspect,
     #[cfg(feature = "VsIssueDraft")]
@@ -658,8 +662,12 @@ pub enum VsIcon {
     VsScreenNormal,
     #[cfg(feature = "VsSearch")]
     VsSearch,
+    #[cfg(feature = "VsSearchFuzzy")]
+    VsSearchFuzzy,
     #[cfg(feature = "VsSearchStop")]
     VsSearchStop,
+    #[cfg(feature = "VsSend")]
+    VsSend,
     #[cfg(feature = "VsServer")]
     VsServer,
     #[cfg(feature = "VsServerEnvironment")]
@@ -682,6 +690,8 @@ pub enum VsIcon {
     VsSortPrecedence,
     #[cfg(feature = "VsSourceControl")]
     VsSourceControl,
+    #[cfg(feature = "VsSparkle")]
+    VsSparkle,
     #[cfg(feature = "VsSplitHorizontal")]
     VsSplitHorizontal,
     #[cfg(feature = "VsSplitVertical")]
@@ -1639,6 +1649,21 @@ const VS_CHROME_RESTORE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M3 5v9h9V5H3zm8 8H4V6h7v7z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 5h1V4h7v7h-1v1h2V3H5v2z" />"###
 };
+#[cfg(feature = "VsCircle")]
+const VS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm2.61-4a2.61 2.61 0 1 1-5.22 0 2.61 2.61 0 0 1 5.22 0zM8 5.246z" />"###
+};
 #[cfg(feature = "VsCircleFilled")]
 const VS_CIRCLE_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -1654,6 +1679,21 @@ const VS_CIRCLE_FILLED: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M8 4c.367 0 .721.048 1.063.145a3.943 3.943 0 0 1 1.762 1.031 3.944 3.944 0 0 1 1.03 1.762c.097.34.145.695.145 1.062 0 .367-.048.721-.145 1.063a3.94 3.94 0 0 1-1.03 1.765 4.017 4.017 0 0 1-1.762 1.031C8.72 11.953 8.367 12 8 12s-.721-.047-1.063-.14a4.056 4.056 0 0 1-1.765-1.032A4.055 4.055 0 0 1 4.14 9.062 3.992 3.992 0 0 1 4 8c0-.367.047-.721.14-1.063a4.02 4.02 0 0 1 .407-.953A4.089 4.089 0 0 1 5.98 4.546a3.94 3.94 0 0 1 .957-.401A3.89 3.89 0 0 1 8 4z" />"###
 };
+#[cfg(feature = "VsCircleLarge")]
+const VS_CIRCLE_LARGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9.588 2.215A5.808 5.808 0 0 0 8 2c-.554 0-1.082.073-1.588.215l-.006.002c-.514.141-.99.342-1.432.601A6.156 6.156 0 0 0 2.82 4.98l-.002.004A5.967 5.967 0 0 0 2.21 6.41 5.986 5.986 0 0 0 2 8c0 .555.07 1.085.21 1.591a6.05 6.05 0 0 0 1.548 2.651c.37.365.774.677 1.216.94a6.1 6.1 0 0 0 1.435.609A6.02 6.02 0 0 0 8 14c.555 0 1.085-.07 1.591-.21.515-.145.99-.348 1.426-.607l.004-.002a6.16 6.16 0 0 0 2.161-2.155 5.85 5.85 0 0 0 .6-1.432l.003-.006A5.807 5.807 0 0 0 14 8c0-.554-.072-1.082-.215-1.588l-.002-.006a5.772 5.772 0 0 0-.6-1.423l-.002-.004a5.9 5.9 0 0 0-.942-1.21l-.008-.008a5.902 5.902 0 0 0-1.21-.942l-.004-.002a5.772 5.772 0 0 0-1.423-.6l-.006-.002zm4.455 9.32a7.157 7.157 0 0 1-2.516 2.508 6.966 6.966 0 0 1-1.668.71A6.984 6.984 0 0 1 8 15a6.984 6.984 0 0 1-1.86-.246 7.098 7.098 0 0 1-1.674-.711 7.3 7.3 0 0 1-1.415-1.094 7.295 7.295 0 0 1-1.094-1.415 7.098 7.098 0 0 1-.71-1.675A6.985 6.985 0 0 1 1 8c0-.643.082-1.262.246-1.86a6.968 6.968 0 0 1 .711-1.667 7.156 7.156 0 0 1 2.509-2.516 6.895 6.895 0 0 1 1.675-.704A6.808 6.808 0 0 1 8 1a6.8 6.8 0 0 1 1.86.253 6.899 6.899 0 0 1 3.083 1.805 6.903 6.903 0 0 1 1.804 3.083C14.916 6.738 15 7.357 15 8s-.084 1.262-.253 1.86a6.9 6.9 0 0 1-.704 1.674z" />"###
+};
 #[cfg(feature = "VsCircleLargeFilled")]
 const VS_CIRCLE_LARGE_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -1668,36 +1708,6 @@ const VS_CIRCLE_LARGE_FILLED: icondata_core::IconData = icondata_core::IconData 
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M8 1a6.8 6.8 0 0 1 1.86.253 6.899 6.899 0 0 1 3.083 1.805 6.903 6.903 0 0 1 1.804 3.083C14.916 6.738 15 7.357 15 8s-.084 1.262-.253 1.86a6.9 6.9 0 0 1-.704 1.674 7.157 7.157 0 0 1-2.516 2.509 6.966 6.966 0 0 1-1.668.71A6.984 6.984 0 0 1 8 15a6.984 6.984 0 0 1-1.86-.246 7.098 7.098 0 0 1-1.674-.711 7.3 7.3 0 0 1-1.415-1.094 7.295 7.295 0 0 1-1.094-1.415 7.098 7.098 0 0 1-.71-1.675A6.985 6.985 0 0 1 1 8c0-.643.082-1.262.246-1.86a6.968 6.968 0 0 1 .711-1.667 7.156 7.156 0 0 1 2.509-2.516 6.895 6.895 0 0 1 1.675-.704A6.808 6.808 0 0 1 8 1z" />"###
-};
-#[cfg(feature = "VsCircleLargeOutline")]
-const VS_CIRCLE_LARGE_OUTLINE: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("16"),
-    height: Some("16"),
-    view_box: Some("0 0 16 16"),
-    stroke_linecap: None,
-    stroke_linejoin: None,
-    stroke_width: None,
-    stroke: None,
-    fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9.588 2.215A5.808 5.808 0 0 0 8 2c-.554 0-1.082.073-1.588.215l-.006.002c-.514.141-.99.342-1.432.601A6.156 6.156 0 0 0 2.82 4.98l-.002.004A5.967 5.967 0 0 0 2.21 6.41 5.986 5.986 0 0 0 2 8c0 .555.07 1.085.21 1.591a6.05 6.05 0 0 0 1.548 2.651c.37.365.774.677 1.216.94a6.1 6.1 0 0 0 1.435.609A6.02 6.02 0 0 0 8 14c.555 0 1.085-.07 1.591-.21.515-.145.99-.348 1.426-.607l.004-.002a6.16 6.16 0 0 0 2.161-2.155 5.85 5.85 0 0 0 .6-1.432l.003-.006A5.807 5.807 0 0 0 14 8c0-.554-.072-1.082-.215-1.588l-.002-.006a5.772 5.772 0 0 0-.6-1.423l-.002-.004a5.9 5.9 0 0 0-.942-1.21l-.008-.008a5.902 5.902 0 0 0-1.21-.942l-.004-.002a5.772 5.772 0 0 0-1.423-.6l-.006-.002zm4.455 9.32a7.157 7.157 0 0 1-2.516 2.508 6.966 6.966 0 0 1-1.668.71A6.984 6.984 0 0 1 8 15a6.984 6.984 0 0 1-1.86-.246 7.098 7.098 0 0 1-1.674-.711 7.3 7.3 0 0 1-1.415-1.094 7.295 7.295 0 0 1-1.094-1.415 7.098 7.098 0 0 1-.71-1.675A6.985 6.985 0 0 1 1 8c0-.643.082-1.262.246-1.86a6.968 6.968 0 0 1 .711-1.667 7.156 7.156 0 0 1 2.509-2.516 6.895 6.895 0 0 1 1.675-.704A6.808 6.808 0 0 1 8 1a6.8 6.8 0 0 1 1.86.253 6.899 6.899 0 0 1 3.083 1.805 6.903 6.903 0 0 1 1.804 3.083C14.916 6.738 15 7.357 15 8s-.084 1.262-.253 1.86a6.9 6.9 0 0 1-.704 1.674z" />"###
-};
-#[cfg(feature = "VsCircleOutline")]
-const VS_CIRCLE_OUTLINE: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("16"),
-    height: Some("16"),
-    view_box: Some("0 0 16 16"),
-    stroke_linecap: None,
-    stroke_linejoin: None,
-    stroke_width: None,
-    stroke: None,
-    fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm2.61-4a2.61 2.61 0 1 1-5.22 0 2.61 2.61 0 0 1 5.22 0zM8 5.246z" />"###
 };
 #[cfg(feature = "VsCircleSlash")]
 const VS_CIRCLE_SLASH: icondata_core::IconData = icondata_core::IconData {
@@ -1955,6 +1965,21 @@ const VS_COMMENT_DISCUSSION: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 11.29l1-1v1.42l-1.15 1.14L3 12.5V10H1.5L1 9.5v-8l.5-.5h12l.5.5V6h-1V2H2v7h1.5l.5.5v1.79zM10.29 13l1.86 1.85.85-.35V13h1.5l.5-.5v-5l-.5-.5h-8l-.5.5v5l.5.5h3.79zm.21-1H7V8h7v4h-1.5l-.5.5v.79l-1.15-1.14-.35-.15z" />"###
+};
+#[cfg(feature = "VsCommentDraft")]
+const VS_COMMENT_DRAFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 2.00098H13V3.00098H14V4.00098H15V2.50098L14.5 2.00098ZM9 2.00098H11V3.00098H9V2.00098ZM5 2.00098H7V3.00098H5V2.00098ZM14 10.001V11.001V12.001H14.5L15 11.501V10.001H14ZM12 12.001V11.001H10V12.001H12ZM8 11.001H7.5L7.146 11.147L5 13.294V11.501L4.5 11.001H4V12.001V14.501L4.854 14.855L7.707 12.001H8V11.001ZM15 8.00098V6.00098H14V8.00098H15ZM2 11.001V10.001H1V11.501L1.5 12.001H2V11.001ZM2 8.00098V6.00098H1V8.00098H2ZM2 3.00098V4.00098H1V2.50098L1.5 2.00098H3V3.00098H2Z" />"###
 };
 #[cfg(feature = "VsCommentUnresolved")]
 const VS_COMMENT_UNRESOLVED: icondata_core::IconData = icondata_core::IconData {
@@ -3789,6 +3814,23 @@ const VS_INFO: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8.568 1.031A6.8 6.8 0 0 1 12.76 3.05a7.06 7.06 0 0 1 .46 9.39 6.85 6.85 0 0 1-8.58 1.74 7 7 0 0 1-3.12-3.5 7.12 7.12 0 0 1-.23-4.71 7 7 0 0 1 2.77-3.79 6.8 6.8 0 0 1 4.508-1.149zM9.04 13.88a5.89 5.89 0 0 0 3.41-2.07 6.07 6.07 0 0 0-.4-8.06 5.82 5.82 0 0 0-7.43-.74 6.06 6.06 0 0 0 .5 10.29 5.81 5.81 0 0 0 3.92.58zM7.375 6h1.25V5h-1.25v1zm1.25 1v4h-1.25V7h1.25z" />"###
 };
+#[cfg(feature = "VsInsert")]
+const VS_INSERT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14 1L15 2V6L14 7L6 7L5 6L5 2L6 1L14 1ZM14 2L6 2L6 6L14 6L14 2Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 9L15 10V14L14 15L6 15L5 14L5 10L6 9L14 9ZM14 10L6 10L6 14L14 14L14 10Z" />
+<path d="M1 6.39268L2.61414 8.00682L1 9.62096L1.69352 10.3141L4 8.00682L1.69352 5.69995L1 6.39268Z" />"###
+};
 #[cfg(feature = "VsInspect")]
 const VS_INSPECT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -4063,10 +4105,7 @@ const VS_LAYOUT_MENUBAR: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M6 3H3V4H6V3Z" />
-<path d="M3 5H6V6H3V5Z" />
-<path d="M6 7H3V8H6V7Z" />
-<path d="M2 1L1 2V14L2 15H14L15 14V2L14 1H2ZM2 14V2H14V14H2Z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.00085L2 1.00085H14L15 2.00085V14.0009L14 15.0009H2L1 14.0009V2.00085ZM2 2.00085V14.0009H14V2.00085H2ZM3 3.00085H5V4.00085H3V3.00085ZM6 3.00085H8V4.00085H6V3.00085ZM11 3.00085H9V4.00085H11V3.00085Z" />"###
 };
 #[cfg(feature = "VsLayoutPanel")]
 const VS_LAYOUT_PANEL: icondata_core::IconData = icondata_core::IconData {
@@ -4338,7 +4377,10 @@ const VS_LIST_FLAT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M2 10V9h12v1H2zm0-4h12v1H2V6zm12-3v1H2V3h12zM2 12v1h12v-1H2z" />"###
+    data: r###"<rect x="2" y="9" width="9" height="1" />
+<rect x="2" y="12" width="8" height="1" />
+<rect x="2" y="6" width="12" height="1" />
+<rect x="2" y="3" width="11" height="1" />"###
 };
 #[cfg(feature = "VsListOrdered")]
 const VS_LIST_ORDERED: icondata_core::IconData = icondata_core::IconData {
@@ -4383,8 +4425,11 @@ const VS_LIST_TREE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M14 3v1H2V3h12zm-1 3v1H6V6h7zm0 3v1H5V9h8zm0 3v1H5v-1h8z" />
-<path d="M5 4h1v9H5z" />"###
+    data: r###"<rect x="4" y="9" width="9" height="1" />
+<rect x="4" y="12" width="7" height="1" />
+<rect x="4" y="6" width="10" height="1" />
+<rect x="1" y="3" width="11" height="1" />
+<rect x="4" y="4" width="1" height="9" />"###
 };
 #[cfg(feature = "VsListUnordered")]
 const VS_LIST_UNORDERED: icondata_core::IconData = icondata_core::IconData {
@@ -5534,7 +5579,7 @@ const VS_REQUEST_CHANGES: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 1h-13l-.5.5v10l.5.5H4v2.5l.854.354L7.707 12H14.5l.5-.5v-10l-.5-.5zM14 11H7.5l-.354.146L5 13.293V11.5l-.5-.5H2V2h12v9zm-4-1H6V8.979h4V10zM7.5 3h1v2h2v1h-2v2h-1V6h-2V5h2V3z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7099 1.29L13.7099 4.29L13.9999 5V14L12.9999 15H3.99994L2.99994 14V2L3.99994 1H9.99994L10.7099 1.29ZM3.99994 14H12.9999V5L9.99994 2H3.99994V14ZM8 6H6V7H8V9H9V7H11V6H9V4H8V6ZM6 11H11V12H6V11Z" />"###
 };
 #[cfg(feature = "VsRocket")]
 const VS_ROCKET: icondata_core::IconData = icondata_core::IconData {
@@ -5767,6 +5812,22 @@ const VS_SEARCH: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z" />"###
 };
+#[cfg(feature = "VsSearchFuzzy")]
+const VS_SEARCH_FUZZY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 1.5C5.51472 1.5 3.5 3.51472 3.5 6C3.5 7.20114 3.9706 8.29237 4.73749 9.09937L1.04291 12.7939L1.75001 13.5011L5.5053 9.74577C6.2193 10.2222 7.07721 10.5 8 10.5C10.4853 10.5 12.5 8.48528 12.5 6C12.5 3.51472 10.4853 1.5 8 1.5ZM4.5 6C4.5 4.067 6.067 2.5 8 2.5C9.933 2.5 11.5 4.067 11.5 6C11.5 7.933 9.933 9.5 8 9.5C6.067 9.5 4.5 7.933 4.5 6Z" />
+<path d="M8.99998 13.8546L6.85353 16.0011H6.14642L4.64642 14.5011L5.35353 13.7939L6.49998 14.9404L8.64642 12.7939H9.35353L11.5 14.9404L13.6464 12.7939H14.3535L16 14.4404V15.8546L14 13.8546L11.8535 16.0011H11.1464L8.99998 13.8546Z" />"###
+};
 #[cfg(feature = "VsSearchStop")]
 const VS_SEARCH_STOP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -5781,6 +5842,21 @@ const VS_SEARCH_STOP: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.738 3.318a4.5 4.5 0 0 0-.877 5.123A4.48 4.48 0 0 0 6.1 10a4.62 4.62 0 0 0-.1 1v.17c-.16-.11-.32-.22-.47-.34L1.75 14.5 1 13.84l3.8-3.69a5.5 5.5 0 1 1 9.62-3.65c0 .268-.02.535-.06.8a5.232 5.232 0 0 0-.94-.68V6.5a4.5 4.5 0 0 0-7.682-3.182zm3.04 4.356a4 4 0 1 1 4.444 6.652 4 4 0 0 1-4.444-6.652zm.1 5.447A3 3 0 0 0 11 14a3 3 0 0 0 1.74-.55L8.55 9.26A3 3 0 0 0 8 11a3 3 0 0 0 .879 2.121zm.382-4.57l4.19 4.189A3 3 0 0 0 14 11a3 3 0 0 0-3-3 3 3 0 0 0-1.74.55z" />"###
+};
+#[cfg(feature = "VsSend")]
+const VS_SEND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M15 8L1 14L2.55634 8L1 2L15 8ZM2.32996 3.52208L3.38403 7.5855H11.8024L2.32996 3.52208ZM3.36988 8.45527L2.32996 12.4779L11.7175 8.45527H3.36988Z" />"###
 };
 #[cfg(feature = "VsServer")]
 const VS_SERVER: icondata_core::IconData = icondata_core::IconData {
@@ -5946,6 +6022,21 @@ const VS_SOURCE_CONTROL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M21.007 8.222A3.738 3.738 0 0 0 15.045 5.2a3.737 3.737 0 0 0 1.156 6.583 2.988 2.988 0 0 1-2.668 1.67h-2.99a4.456 4.456 0 0 0-2.989 1.165V7.4a3.737 3.737 0 1 0-1.494 0v9.117a3.776 3.776 0 1 0 1.816.099 2.99 2.99 0 0 1 2.668-1.667h2.99a4.484 4.484 0 0 0 4.223-3.039 3.736 3.736 0 0 0 3.25-3.687zM4.565 3.738a2.242 2.242 0 1 1 4.484 0 2.242 2.242 0 0 1-4.484 0zm4.484 16.441a2.242 2.242 0 1 1-4.484 0 2.242 2.242 0 0 1 4.484 0zm8.221-9.715a2.242 2.242 0 1 1 0-4.485 2.242 2.242 0 0 1 0 4.485z" />"###
+};
+#[cfg(feature = "VsSparkle")]
+const VS_SPARKLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.39804 10.8069C5.57428 10.9312 5.78476 10.9977 6.00043 10.9973C6.21633 10.9975 6.42686 10.93 6.60243 10.8043C6.77993 10.6739 6.91464 10.4936 6.98943 10.2863L7.43643 8.91335C7.55086 8.56906 7.74391 8.25615 8.00028 7.99943C8.25665 7.74272 8.56929 7.54924 8.91343 7.43435L10.3044 6.98335C10.4564 6.92899 10.5936 6.84019 10.7055 6.7239C10.8174 6.60762 10.9008 6.467 10.9492 6.31308C10.9977 6.15916 11.0098 5.99611 10.9847 5.83672C10.9596 5.67732 10.8979 5.52591 10.8044 5.39435C10.6703 5.20842 10.4794 5.07118 10.2604 5.00335L8.88543 4.55635C8.54091 4.44212 8.22777 4.24915 7.97087 3.99277C7.71396 3.73638 7.52035 3.42363 7.40543 3.07935L6.95343 1.69135C6.88113 1.48904 6.74761 1.31428 6.57143 1.19135C6.43877 1.09762 6.28607 1.03614 6.12548 1.01179C5.96489 0.987448 5.80083 1.00091 5.64636 1.05111C5.49188 1.1013 5.35125 1.18685 5.23564 1.30095C5.12004 1.41505 5.03265 1.55454 4.98043 1.70835L4.52343 3.10835C4.40884 3.44317 4.21967 3.74758 3.97022 3.9986C3.72076 4.24962 3.41753 4.44067 3.08343 4.55735L1.69243 5.00535C1.54065 5.05974 1.40352 5.14852 1.29177 5.26474C1.18001 5.38095 1.09666 5.52145 1.04824 5.67523C0.999819 5.82902 0.987639 5.99192 1.01265 6.1512C1.03767 6.31048 1.0992 6.46181 1.19243 6.59335C1.32027 6.7728 1.50105 6.90777 1.70943 6.97935L3.08343 7.42435C3.52354 7.57083 3.90999 7.84518 4.19343 8.21235C4.35585 8.42298 4.4813 8.65968 4.56443 8.91235L5.01643 10.3033C5.08846 10.5066 5.22179 10.6826 5.39804 10.8069ZM5.48343 3.39235L6.01043 2.01535L6.44943 3.39235C6.61312 3.8855 6.88991 4.33351 7.25767 4.70058C7.62544 5.06765 8.07397 5.34359 8.56743 5.50635L9.97343 6.03535L8.59143 6.48335C8.09866 6.64764 7.65095 6.92451 7.28382 7.29198C6.9167 7.65945 6.64026 8.10742 6.47643 8.60035L5.95343 9.97835L5.50443 8.59935C5.34335 8.10608 5.06943 7.65718 4.70443 7.28835C4.3356 6.92031 3.88653 6.64272 3.39243 6.47735L2.01443 5.95535L3.40043 5.50535C3.88672 5.33672 4.32775 5.05855 4.68943 4.69235C5.04901 4.32464 5.32049 3.88016 5.48343 3.39235ZM11.5353 14.8494C11.6713 14.9456 11.8337 14.9973 12.0003 14.9974C12.1654 14.9974 12.3264 14.9464 12.4613 14.8514C12.6008 14.7529 12.7058 14.6129 12.7613 14.4514L13.0093 13.6894C13.0625 13.5309 13.1515 13.3869 13.2693 13.2684C13.3867 13.1498 13.5307 13.0611 13.6893 13.0094L14.4613 12.7574C14.619 12.7029 14.7557 12.6004 14.8523 12.4644C14.9257 12.3614 14.9736 12.2424 14.9921 12.1173C15.0106 11.9922 14.9992 11.8645 14.9588 11.7447C14.9184 11.6249 14.8501 11.5163 14.7597 11.428C14.6692 11.3396 14.5591 11.2739 14.4383 11.2364L13.6743 10.9874C13.5162 10.9348 13.3724 10.8462 13.2544 10.7285C13.1364 10.6109 13.0473 10.4674 12.9943 10.3094L12.7423 9.53638C12.6886 9.37853 12.586 9.24191 12.4493 9.14638C12.3473 9.07343 12.2295 9.02549 12.1056 9.00642C11.9816 8.98736 11.8549 8.99772 11.7357 9.03665C11.6164 9.07558 11.508 9.142 11.4192 9.23054C11.3304 9.31909 11.2636 9.42727 11.2243 9.54638L10.9773 10.3084C10.925 10.466 10.8375 10.6097 10.7213 10.7284C10.6066 10.8449 10.4667 10.9335 10.3123 10.9874L9.53931 11.2394C9.38025 11.2933 9.2422 11.3959 9.1447 11.5326C9.04721 11.6694 8.99522 11.8333 8.99611 12.0013C8.99699 12.1692 9.0507 12.3326 9.14963 12.4683C9.24856 12.604 9.38769 12.7051 9.54731 12.7574L10.3103 13.0044C10.4692 13.0578 10.6136 13.1471 10.7323 13.2654C10.8505 13.3836 10.939 13.5283 10.9903 13.6874L11.2433 14.4614C11.2981 14.6178 11.4001 14.7534 11.5353 14.8494ZM10.6223 12.0564L10.4433 11.9974L10.6273 11.9334C10.9291 11.8284 11.2027 11.6556 11.4273 11.4284C11.6537 11.1994 11.8248 10.9216 11.9273 10.6164L11.9853 10.4384L12.0443 10.6194C12.1463 10.9261 12.3185 11.2047 12.5471 11.4332C12.7757 11.6617 13.0545 11.8336 13.3613 11.9354L13.5563 11.9984L13.3763 12.0574C13.0689 12.1596 12.7898 12.3322 12.5611 12.5616C12.3324 12.791 12.1606 13.0707 12.0593 13.3784L12.0003 13.5594L11.9423 13.3784C11.8409 13.0702 11.6687 12.7901 11.4394 12.5605C11.2102 12.3309 10.9303 12.1583 10.6223 12.0564Z" />"###
 };
 #[cfg(feature = "VsSplitHorizontal")]
 const VS_SPLIT_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
@@ -7376,14 +7467,14 @@ impl From<VsIcon> for icondata_core::IconData {
             VsIcon::VsChromeMinimize => VS_CHROME_MINIMIZE,
             #[cfg(feature = "VsChromeRestore")]
             VsIcon::VsChromeRestore => VS_CHROME_RESTORE,
+            #[cfg(feature = "VsCircle")]
+            VsIcon::VsCircle => VS_CIRCLE,
             #[cfg(feature = "VsCircleFilled")]
             VsIcon::VsCircleFilled => VS_CIRCLE_FILLED,
+            #[cfg(feature = "VsCircleLarge")]
+            VsIcon::VsCircleLarge => VS_CIRCLE_LARGE,
             #[cfg(feature = "VsCircleLargeFilled")]
             VsIcon::VsCircleLargeFilled => VS_CIRCLE_LARGE_FILLED,
-            #[cfg(feature = "VsCircleLargeOutline")]
-            VsIcon::VsCircleLargeOutline => VS_CIRCLE_LARGE_OUTLINE,
-            #[cfg(feature = "VsCircleOutline")]
-            VsIcon::VsCircleOutline => VS_CIRCLE_OUTLINE,
             #[cfg(feature = "VsCircleSlash")]
             VsIcon::VsCircleSlash => VS_CIRCLE_SLASH,
             #[cfg(feature = "VsCircleSmall")]
@@ -7418,6 +7509,8 @@ impl From<VsIcon> for icondata_core::IconData {
             VsIcon::VsComment => VS_COMMENT,
             #[cfg(feature = "VsCommentDiscussion")]
             VsIcon::VsCommentDiscussion => VS_COMMENT_DISCUSSION,
+            #[cfg(feature = "VsCommentDraft")]
+            VsIcon::VsCommentDraft => VS_COMMENT_DRAFT,
             #[cfg(feature = "VsCommentUnresolved")]
             VsIcon::VsCommentUnresolved => VS_COMMENT_UNRESOLVED,
             #[cfg(feature = "VsCompass")]
@@ -7658,6 +7751,8 @@ impl From<VsIcon> for icondata_core::IconData {
             VsIcon::VsIndent => VS_INDENT,
             #[cfg(feature = "VsInfo")]
             VsIcon::VsInfo => VS_INFO,
+            #[cfg(feature = "VsInsert")]
+            VsIcon::VsInsert => VS_INSERT,
             #[cfg(feature = "VsInspect")]
             VsIcon::VsInspect => VS_INSPECT,
             #[cfg(feature = "VsIssueDraft")]
@@ -7918,8 +8013,12 @@ impl From<VsIcon> for icondata_core::IconData {
             VsIcon::VsScreenNormal => VS_SCREEN_NORMAL,
             #[cfg(feature = "VsSearch")]
             VsIcon::VsSearch => VS_SEARCH,
+            #[cfg(feature = "VsSearchFuzzy")]
+            VsIcon::VsSearchFuzzy => VS_SEARCH_FUZZY,
             #[cfg(feature = "VsSearchStop")]
             VsIcon::VsSearchStop => VS_SEARCH_STOP,
+            #[cfg(feature = "VsSend")]
+            VsIcon::VsSend => VS_SEND,
             #[cfg(feature = "VsServer")]
             VsIcon::VsServer => VS_SERVER,
             #[cfg(feature = "VsServerEnvironment")]
@@ -7942,6 +8041,8 @@ impl From<VsIcon> for icondata_core::IconData {
             VsIcon::VsSortPrecedence => VS_SORT_PRECEDENCE,
             #[cfg(feature = "VsSourceControl")]
             VsIcon::VsSourceControl => VS_SOURCE_CONTROL,
+            #[cfg(feature = "VsSparkle")]
+            VsIcon::VsSparkle => VS_SPARKLE,
             #[cfg(feature = "VsSplitHorizontal")]
             VsIcon::VsSplitHorizontal => VS_SPLIT_HORIZONTAL,
             #[cfg(feature = "VsSplitVertical")]

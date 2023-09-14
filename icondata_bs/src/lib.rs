@@ -126,8 +126,14 @@ pub enum BsIcon {
     BsAlignTop,
     #[cfg(feature = "BsAlipay")]
     BsAlipay,
+    #[cfg(feature = "BsAlphabet")]
+    BsAlphabet,
+    #[cfg(feature = "BsAlphabetUppercase")]
+    BsAlphabetUppercase,
     #[cfg(feature = "BsAlt")]
     BsAlt,
+    #[cfg(feature = "BsAmazon")]
+    BsAmazon,
     #[cfg(feature = "BsAmd")]
     BsAmd,
     #[cfg(feature = "BsAndroid")]
@@ -266,18 +272,26 @@ pub enum BsIcon {
     BsArrowUpSquare,
     #[cfg(feature = "BsArrowUpSquareFill")]
     BsArrowUpSquareFill,
+    #[cfg(feature = "BsArrows")]
+    BsArrows,
     #[cfg(feature = "BsArrowsAngleContract")]
     BsArrowsAngleContract,
     #[cfg(feature = "BsArrowsAngleExpand")]
     BsArrowsAngleExpand,
     #[cfg(feature = "BsArrowsCollapse")]
     BsArrowsCollapse,
+    #[cfg(feature = "BsArrowsCollapseVertical")]
+    BsArrowsCollapseVertical,
     #[cfg(feature = "BsArrowsExpand")]
     BsArrowsExpand,
+    #[cfg(feature = "BsArrowsExpandVertical")]
+    BsArrowsExpandVertical,
     #[cfg(feature = "BsArrowsFullscreen")]
     BsArrowsFullscreen,
     #[cfg(feature = "BsArrowsMove")]
     BsArrowsMove,
+    #[cfg(feature = "BsArrowsVertical")]
+    BsArrowsVertical,
     #[cfg(feature = "BsAspectRatio")]
     BsAspectRatio,
     #[cfg(feature = "BsAspectRatioFill")]
@@ -292,6 +306,22 @@ pub enum BsIcon {
     BsAwardFill,
     #[cfg(feature = "BsBack")]
     BsBack,
+    #[cfg(feature = "BsBackpack")]
+    BsBackpack,
+    #[cfg(feature = "BsBackpack2")]
+    BsBackpack2,
+    #[cfg(feature = "BsBackpack2Fill")]
+    BsBackpack2Fill,
+    #[cfg(feature = "BsBackpack3")]
+    BsBackpack3,
+    #[cfg(feature = "BsBackpack3Fill")]
+    BsBackpack3Fill,
+    #[cfg(feature = "BsBackpack4")]
+    BsBackpack4,
+    #[cfg(feature = "BsBackpack4Fill")]
+    BsBackpack4Fill,
+    #[cfg(feature = "BsBackpackFill")]
+    BsBackpackFill,
     #[cfg(feature = "BsBackspace")]
     BsBackspace,
     #[cfg(feature = "BsBackspaceFill")]
@@ -380,6 +410,10 @@ pub enum BsIcon {
     BsBalloonHeart,
     #[cfg(feature = "BsBalloonHeartFill")]
     BsBalloonHeartFill,
+    #[cfg(feature = "BsBan")]
+    BsBan,
+    #[cfg(feature = "BsBanFill")]
+    BsBanFill,
     #[cfg(feature = "BsBandaid")]
     BsBandaid,
     #[cfg(feature = "BsBandaidFill")]
@@ -434,6 +468,8 @@ pub enum BsIcon {
     BsBezier2,
     #[cfg(feature = "BsBicycle")]
     BsBicycle,
+    #[cfg(feature = "BsBing")]
+    BsBing,
     #[cfg(feature = "BsBinoculars")]
     BsBinoculars,
     #[cfg(feature = "BsBinocularsFill")]
@@ -600,6 +636,8 @@ pub enum BsIcon {
     BsBrightnessLow,
     #[cfg(feature = "BsBrightnessLowFill")]
     BsBrightnessLowFill,
+    #[cfg(feature = "BsBrilliance")]
+    BsBrilliance,
     #[cfg(feature = "BsBroadcast")]
     BsBroadcast,
     #[cfg(feature = "BsBroadcastPin")]
@@ -686,6 +724,14 @@ pub enum BsIcon {
     BsCSquare,
     #[cfg(feature = "BsCSquareFill")]
     BsCSquareFill,
+    #[cfg(feature = "BsCake")]
+    BsCake,
+    #[cfg(feature = "BsCake2")]
+    BsCake2,
+    #[cfg(feature = "BsCake2Fill")]
+    BsCake2Fill,
+    #[cfg(feature = "BsCakeFill")]
+    BsCakeFill,
     #[cfg(feature = "BsCalculator")]
     BsCalculator,
     #[cfg(feature = "BsCalculatorFill")]
@@ -1278,6 +1324,10 @@ pub enum BsIcon {
     BsConeStriped,
     #[cfg(feature = "BsController")]
     BsController,
+    #[cfg(feature = "BsCookie")]
+    BsCookie,
+    #[cfg(feature = "BsCopy")]
+    BsCopy,
     #[cfg(feature = "BsCpu")]
     BsCpu,
     #[cfg(feature = "BsCpuFill")]
@@ -1296,6 +1346,10 @@ pub enum BsIcon {
     BsCreditCardFill,
     #[cfg(feature = "BsCrop")]
     BsCrop,
+    #[cfg(feature = "BsCrosshair")]
+    BsCrosshair,
+    #[cfg(feature = "BsCrosshair2")]
+    BsCrosshair2,
     #[cfg(feature = "BsCup")]
     BsCup,
     #[cfg(feature = "BsCupFill")]
@@ -1476,6 +1530,10 @@ pub enum BsIcon {
     BsDropletFill,
     #[cfg(feature = "BsDropletHalf")]
     BsDropletHalf,
+    #[cfg(feature = "BsDuffle")]
+    BsDuffle,
+    #[cfg(feature = "BsDuffleFill")]
+    BsDuffleFill,
     #[cfg(feature = "BsEar")]
     BsEar,
     #[cfg(feature = "BsEarFill")]
@@ -1508,6 +1566,10 @@ pub enum BsIcon {
     BsEmojiAngry,
     #[cfg(feature = "BsEmojiAngryFill")]
     BsEmojiAngryFill,
+    #[cfg(feature = "BsEmojiAstonished")]
+    BsEmojiAstonished,
+    #[cfg(feature = "BsEmojiAstonishedFill")]
+    BsEmojiAstonishedFill,
     #[cfg(feature = "BsEmojiDizzy")]
     BsEmojiDizzy,
     #[cfg(feature = "BsEmojiDizzyFill")]
@@ -1520,6 +1582,14 @@ pub enum BsIcon {
     BsEmojiFrown,
     #[cfg(feature = "BsEmojiFrownFill")]
     BsEmojiFrownFill,
+    #[cfg(feature = "BsEmojiGrimace")]
+    BsEmojiGrimace,
+    #[cfg(feature = "BsEmojiGrimaceFill")]
+    BsEmojiGrimaceFill,
+    #[cfg(feature = "BsEmojiGrin")]
+    BsEmojiGrin,
+    #[cfg(feature = "BsEmojiGrinFill")]
+    BsEmojiGrinFill,
     #[cfg(feature = "BsEmojiHeartEyes")]
     BsEmojiHeartEyes,
     #[cfg(feature = "BsEmojiHeartEyesFill")]
@@ -1548,12 +1618,28 @@ pub enum BsIcon {
     BsEmojiSunglasses,
     #[cfg(feature = "BsEmojiSunglassesFill")]
     BsEmojiSunglassesFill,
+    #[cfg(feature = "BsEmojiSurprise")]
+    BsEmojiSurprise,
+    #[cfg(feature = "BsEmojiSurpriseFill")]
+    BsEmojiSurpriseFill,
+    #[cfg(feature = "BsEmojiTear")]
+    BsEmojiTear,
+    #[cfg(feature = "BsEmojiTearFill")]
+    BsEmojiTearFill,
     #[cfg(feature = "BsEmojiWink")]
     BsEmojiWink,
     #[cfg(feature = "BsEmojiWinkFill")]
     BsEmojiWinkFill,
     #[cfg(feature = "BsEnvelope")]
     BsEnvelope,
+    #[cfg(feature = "BsEnvelopeArrowDown")]
+    BsEnvelopeArrowDown,
+    #[cfg(feature = "BsEnvelopeArrowDownFill")]
+    BsEnvelopeArrowDownFill,
+    #[cfg(feature = "BsEnvelopeArrowUp")]
+    BsEnvelopeArrowUp,
+    #[cfg(feature = "BsEnvelopeArrowUpFill")]
+    BsEnvelopeArrowUpFill,
     #[cfg(feature = "BsEnvelopeAt")]
     BsEnvelopeAt,
     #[cfg(feature = "BsEnvelopeAtFill")]
@@ -1650,6 +1736,8 @@ pub enum BsIcon {
     BsExplicit,
     #[cfg(feature = "BsExplicitFill")]
     BsExplicitFill,
+    #[cfg(feature = "BsExposure")]
+    BsExposure,
     #[cfg(feature = "BsEye")]
     BsEye,
     #[cfg(feature = "BsEyeFill")]
@@ -1678,6 +1766,10 @@ pub enum BsIcon {
     BsFastForwardCircleFill,
     #[cfg(feature = "BsFastForwardFill")]
     BsFastForwardFill,
+    #[cfg(feature = "BsFeather")]
+    BsFeather,
+    #[cfg(feature = "BsFeather2")]
+    BsFeather2,
     #[cfg(feature = "BsFile")]
     BsFile,
     #[cfg(feature = "BsFileArrowDown")]
@@ -2060,6 +2152,14 @@ pub enum BsIcon {
     BsFlag,
     #[cfg(feature = "BsFlagFill")]
     BsFlagFill,
+    #[cfg(feature = "BsFloppy")]
+    BsFloppy,
+    #[cfg(feature = "BsFloppy2")]
+    BsFloppy2,
+    #[cfg(feature = "BsFloppy2Fill")]
+    BsFloppy2Fill,
+    #[cfg(feature = "BsFloppyFill")]
+    BsFloppyFill,
     #[cfg(feature = "BsFlower1")]
     BsFlower1,
     #[cfg(feature = "BsFlower2")]
@@ -2126,6 +2226,8 @@ pub enum BsIcon {
     BsGenderFemale,
     #[cfg(feature = "BsGenderMale")]
     BsGenderMale,
+    #[cfg(feature = "BsGenderNeuter")]
+    BsGenderNeuter,
     #[cfg(feature = "BsGenderTrans")]
     BsGenderTrans,
     #[cfg(feature = "BsGeo")]
@@ -2144,6 +2246,8 @@ pub enum BsIcon {
     BsGit,
     #[cfg(feature = "BsGithub")]
     BsGithub,
+    #[cfg(feature = "BsGitlab")]
+    BsGitlab,
     #[cfg(feature = "BsGlobe")]
     BsGlobe,
     #[cfg(feature = "BsGlobe2")]
@@ -2282,6 +2386,10 @@ pub enum BsIcon {
     BsHexagonFill,
     #[cfg(feature = "BsHexagonHalf")]
     BsHexagonHalf,
+    #[cfg(feature = "BsHighlighter")]
+    BsHighlighter,
+    #[cfg(feature = "BsHighlights")]
+    BsHighlights,
     #[cfg(feature = "BsHospital")]
     BsHospital,
     #[cfg(feature = "BsHospitalFill")]
@@ -2538,6 +2646,10 @@ pub enum BsIcon {
     BsLock,
     #[cfg(feature = "BsLockFill")]
     BsLockFill,
+    #[cfg(feature = "BsLuggage")]
+    BsLuggage,
+    #[cfg(feature = "BsLuggageFill")]
+    BsLuggageFill,
     #[cfg(feature = "BsLungs")]
     BsLungs,
     #[cfg(feature = "BsLungsFill")]
@@ -2552,6 +2664,10 @@ pub enum BsIcon {
     BsMailbox,
     #[cfg(feature = "BsMailbox2")]
     BsMailbox2,
+    #[cfg(feature = "BsMailbox2Flag")]
+    BsMailbox2Flag,
+    #[cfg(feature = "BsMailboxFlag")]
+    BsMailboxFlag,
     #[cfg(feature = "BsMap")]
     BsMap,
     #[cfg(feature = "BsMapFill")]
@@ -2560,6 +2676,8 @@ pub enum BsIcon {
     BsMarkdown,
     #[cfg(feature = "BsMarkdownFill")]
     BsMarkdownFill,
+    #[cfg(feature = "BsMarkerTip")]
+    BsMarkerTip,
     #[cfg(feature = "BsMask")]
     BsMask,
     #[cfg(feature = "BsMastodon")]
@@ -2664,18 +2782,26 @@ pub enum BsIcon {
     BsNodePlus,
     #[cfg(feature = "BsNodePlusFill")]
     BsNodePlusFill,
+    #[cfg(feature = "BsNoiseReduction")]
+    BsNoiseReduction,
     #[cfg(feature = "BsNut")]
     BsNut,
     #[cfg(feature = "BsNutFill")]
     BsNutFill,
     #[cfg(feature = "BsNvidia")]
     BsNvidia,
+    #[cfg(feature = "BsNvme")]
+    BsNvme,
+    #[cfg(feature = "BsNvmeFill")]
+    BsNvmeFill,
     #[cfg(feature = "BsOctagon")]
     BsOctagon,
     #[cfg(feature = "BsOctagonFill")]
     BsOctagonFill,
     #[cfg(feature = "BsOctagonHalf")]
     BsOctagonHalf,
+    #[cfg(feature = "BsOpencollective")]
+    BsOpencollective,
     #[cfg(feature = "BsOpticalAudio")]
     BsOpticalAudio,
     #[cfg(feature = "BsOpticalAudioFill")]
@@ -2708,6 +2834,10 @@ pub enum BsIcon {
     BsPass,
     #[cfg(feature = "BsPassFill")]
     BsPassFill,
+    #[cfg(feature = "BsPassport")]
+    BsPassport,
+    #[cfg(feature = "BsPassportFill")]
+    BsPassportFill,
     #[cfg(feature = "BsPatchCheck")]
     BsPatchCheck,
     #[cfg(feature = "BsPatchCheckFill")]
@@ -2752,6 +2882,10 @@ pub enum BsIcon {
     BsPcHorizontal,
     #[cfg(feature = "BsPciCard")]
     BsPciCard,
+    #[cfg(feature = "BsPciCardNetwork")]
+    BsPciCardNetwork,
+    #[cfg(feature = "BsPciCardSound")]
+    BsPciCardSound,
     #[cfg(feature = "BsPeace")]
     BsPeace,
     #[cfg(feature = "BsPeaceFill")]
@@ -2782,6 +2916,8 @@ pub enum BsIcon {
     BsPerson,
     #[cfg(feature = "BsPersonAdd")]
     BsPersonAdd,
+    #[cfg(feature = "BsPersonArmsUp")]
+    BsPersonArmsUp,
     #[cfg(feature = "BsPersonBadge")]
     BsPersonBadge,
     #[cfg(feature = "BsPersonBadgeFill")]
@@ -2838,12 +2974,18 @@ pub enum BsIcon {
     BsPersonPlus,
     #[cfg(feature = "BsPersonPlusFill")]
     BsPersonPlusFill,
+    #[cfg(feature = "BsPersonRaisedHand")]
+    BsPersonRaisedHand,
     #[cfg(feature = "BsPersonRolodex")]
     BsPersonRolodex,
     #[cfg(feature = "BsPersonSlash")]
     BsPersonSlash,
     #[cfg(feature = "BsPersonSquare")]
     BsPersonSquare,
+    #[cfg(feature = "BsPersonStanding")]
+    BsPersonStanding,
+    #[cfg(feature = "BsPersonStandingDress")]
+    BsPersonStandingDress,
     #[cfg(feature = "BsPersonUp")]
     BsPersonUp,
     #[cfg(feature = "BsPersonVcard")]
@@ -2856,6 +2998,10 @@ pub enum BsIcon {
     BsPersonVideo2,
     #[cfg(feature = "BsPersonVideo3")]
     BsPersonVideo3,
+    #[cfg(feature = "BsPersonWalking")]
+    BsPersonWalking,
+    #[cfg(feature = "BsPersonWheelchair")]
+    BsPersonWheelchair,
     #[cfg(feature = "BsPersonWorkspace")]
     BsPersonWorkspace,
     #[cfg(feature = "BsPersonX")]
@@ -3010,6 +3156,8 @@ pub enum BsIcon {
     BsRSquare,
     #[cfg(feature = "BsRSquareFill")]
     BsRSquareFill,
+    #[cfg(feature = "BsRadar")]
+    BsRadar,
     #[cfg(feature = "BsRadioactive")]
     BsRadioactive,
     #[cfg(feature = "BsRainbow")]
@@ -3130,6 +3278,14 @@ pub enum BsIcon {
     BsSegmentedNav,
     #[cfg(feature = "BsSend")]
     BsSend,
+    #[cfg(feature = "BsSendArrowDown")]
+    BsSendArrowDown,
+    #[cfg(feature = "BsSendArrowDownFill")]
+    BsSendArrowDownFill,
+    #[cfg(feature = "BsSendArrowUp")]
+    BsSendArrowUp,
+    #[cfg(feature = "BsSendArrowUpFill")]
+    BsSendArrowUpFill,
     #[cfg(feature = "BsSendCheck")]
     BsSendCheck,
     #[cfg(feature = "BsSendCheckFill")]
@@ -3158,6 +3314,8 @@ pub enum BsIcon {
     BsSendXFill,
     #[cfg(feature = "BsServer")]
     BsServer,
+    #[cfg(feature = "BsShadows")]
+    BsShadows,
     #[cfg(feature = "BsShare")]
     BsShare,
     #[cfg(feature = "BsShareFill")]
@@ -3300,6 +3458,10 @@ pub enum BsIcon {
     BsSim,
     #[cfg(feature = "BsSimFill")]
     BsSimFill,
+    #[cfg(feature = "BsSimSlash")]
+    BsSimSlash,
+    #[cfg(feature = "BsSimSlashFill")]
+    BsSimSlashFill,
     #[cfg(feature = "BsSinaWeibo")]
     BsSinaWeibo,
     #[cfg(feature = "BsSkipBackward")]
@@ -3408,6 +3570,8 @@ pub enum BsIcon {
     BsSortUpAlt,
     #[cfg(feature = "BsSoundwave")]
     BsSoundwave,
+    #[cfg(feature = "BsSourceforge")]
+    BsSourceforge,
     #[cfg(feature = "BsSpeaker")]
     BsSpeaker,
     #[cfg(feature = "BsSpeakerFill")]
@@ -3474,6 +3638,8 @@ pub enum BsIcon {
     BsStripe,
     #[cfg(feature = "BsSubscript")]
     BsSubscript,
+    #[cfg(feature = "BsSubstack")]
+    BsSubstack,
     #[cfg(feature = "BsSubtract")]
     BsSubtract,
     #[cfg(feature = "BsSuitClub")]
@@ -3492,6 +3658,18 @@ pub enum BsIcon {
     BsSuitSpade,
     #[cfg(feature = "BsSuitSpadeFill")]
     BsSuitSpadeFill,
+    #[cfg(feature = "BsSuitcase")]
+    BsSuitcase,
+    #[cfg(feature = "BsSuitcase2")]
+    BsSuitcase2,
+    #[cfg(feature = "BsSuitcase2Fill")]
+    BsSuitcase2Fill,
+    #[cfg(feature = "BsSuitcaseFill")]
+    BsSuitcaseFill,
+    #[cfg(feature = "BsSuitcaseLg")]
+    BsSuitcaseLg,
+    #[cfg(feature = "BsSuitcaseLgFill")]
+    BsSuitcaseLgFill,
     #[cfg(feature = "BsSun")]
     BsSun,
     #[cfg(feature = "BsSunFill")]
@@ -3610,6 +3788,10 @@ pub enum BsIcon {
     BsThermometerSnow,
     #[cfg(feature = "BsThermometerSun")]
     BsThermometerSun,
+    #[cfg(feature = "BsThreads")]
+    BsThreads,
+    #[cfg(feature = "BsThreadsFill")]
+    BsThreadsFill,
     #[cfg(feature = "BsThreeDots")]
     BsThreeDots,
     #[cfg(feature = "BsThreeDotsVertical")]
@@ -3662,6 +3844,8 @@ pub enum BsIcon {
     BsTrainLightrailFrontFill,
     #[cfg(feature = "BsTranslate")]
     BsTranslate,
+    #[cfg(feature = "BsTransparency")]
+    BsTransparency,
     #[cfg(feature = "BsTrash")]
     BsTrash,
     #[cfg(feature = "BsTrash2")]
@@ -3710,6 +3894,8 @@ pub enum BsIcon {
     BsTwitch,
     #[cfg(feature = "BsTwitter")]
     BsTwitter,
+    #[cfg(feature = "BsTwitterX")]
+    BsTwitterX,
     #[cfg(feature = "BsType")]
     BsType,
     #[cfg(feature = "BsTypeBold")]
@@ -3720,6 +3906,12 @@ pub enum BsIcon {
     BsTypeH2,
     #[cfg(feature = "BsTypeH3")]
     BsTypeH3,
+    #[cfg(feature = "BsTypeH4")]
+    BsTypeH4,
+    #[cfg(feature = "BsTypeH5")]
+    BsTypeH5,
+    #[cfg(feature = "BsTypeH6")]
+    BsTypeH6,
     #[cfg(feature = "BsTypeItalic")]
     BsTypeItalic,
     #[cfg(feature = "BsTypeStrikethrough")]
@@ -3796,6 +3988,8 @@ pub enum BsIcon {
     BsViewList,
     #[cfg(feature = "BsViewStacked")]
     BsViewStacked,
+    #[cfg(feature = "BsVignette")]
+    BsVignette,
     #[cfg(feature = "BsVimeo")]
     BsVimeo,
     #[cfg(feature = "BsVinyl")]
@@ -4787,6 +4981,36 @@ const BS_ALIPAY: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M2.541 0H13.5a2.551 2.551 0 0 1 2.54 2.563v8.297c-.006 0-.531-.046-2.978-.813-.412-.14-.916-.327-1.479-.536-.303-.113-.624-.232-.957-.353a12.98 12.98 0 0 0 1.325-3.373H8.822V4.649h3.831v-.634h-3.83V2.121H7.26c-.274 0-.274.273-.274.273v1.621H3.11v.634h3.875v1.136h-3.2v.634H9.99c-.227.789-.532 1.53-.894 2.202-2.013-.67-4.161-1.212-5.51-.878-.864.214-1.42.597-1.746.998-1.499 1.84-.424 4.633 2.741 4.633 1.872 0 3.675-1.053 5.072-2.787 2.08 1.008 6.37 2.738 6.387 2.745v.105A2.551 2.551 0 0 1 13.5 16H2.541A2.552 2.552 0 0 1 0 13.437V2.563A2.552 2.552 0 0 1 2.541 0Z" />
 <path d="M2.309 9.27c-1.22 1.073-.49 3.034 1.978 3.034 1.434 0 2.868-.925 3.994-2.406-1.602-.789-2.959-1.353-4.425-1.207-.397.04-1.14.217-1.547.58Z" />"###
 };
+#[cfg(feature = "BsAlphabet")]
+const BS_ALPHABET: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M2.204 11.078c.767 0 1.201-.356 1.406-.737h.059V11h1.216V7.519c0-1.314-.947-1.783-2.11-1.783C1.355 5.736.75 6.42.69 7.27h1.216c.064-.323.313-.552.84-.552.527 0 .864.249.864.771v.464H2.346C1.145 7.953.5 8.568.5 9.496c0 .977.693 1.582 1.704 1.582Zm.42-.947c-.44 0-.845-.235-.845-.718 0-.395.269-.684.84-.684h.991v.538c0 .503-.444.864-.986.864Zm5.593.937c1.216 0 1.948-.869 1.948-2.31v-.702c0-1.44-.727-2.305-1.929-2.305-.742 0-1.328.347-1.499.889h-.063V3.983h-1.29V11h1.27v-.791h.064c.21.532.776.86 1.499.86Zm-.43-1.025c-.66 0-1.113-.518-1.113-1.28V8.12c0-.825.42-1.343 1.098-1.343.684 0 1.075.518 1.075 1.416v.45c0 .888-.386 1.401-1.06 1.401Zm2.834-1.328c0 1.47.87 2.378 2.305 2.378 1.416 0 2.139-.777 2.158-1.763h-1.186c-.06.425-.313.732-.933.732-.66 0-1.05-.512-1.05-1.352v-.625c0-.81.371-1.328 1.045-1.328.635 0 .879.425.918.776h1.187c-.02-.986-.787-1.806-2.14-1.806-1.41 0-2.304.918-2.304 2.338v.65Z" />"###
+};
+#[cfg(feature = "BsAlphabetUppercase")]
+const BS_ALPHABET_UPPERCASE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M1.226 10.88H0l2.056-6.26h1.42l2.047 6.26h-1.29l-.48-1.61H1.707l-.48 1.61ZM2.76 5.818h-.054l-.75 2.532H3.51l-.75-2.532Zm3.217 5.062V4.62h2.56c1.09 0 1.808.582 1.808 1.54 0 .762-.444 1.22-1.05 1.372v.055c.736.074 1.365.587 1.365 1.528 0 1.119-.89 1.766-2.133 1.766h-2.55ZM7.18 5.55v1.675h.8c.812 0 1.171-.308 1.171-.853 0-.51-.328-.822-.898-.822H7.18Zm0 2.537V9.95h.903c.951 0 1.342-.312 1.342-.909 0-.591-.382-.954-1.095-.954H7.18Zm5.089-.711v.775c0 1.156.49 1.803 1.347 1.803.705 0 1.163-.454 1.212-1.096H16v.12C15.942 10.173 14.95 11 13.607 11c-1.648 0-2.573-1.073-2.573-2.849v-.78c0-1.775.934-2.871 2.573-2.871 1.347 0 2.34.849 2.393 2.087v.115h-1.172c-.05-.665-.516-1.156-1.212-1.156-.849 0-1.347.67-1.347 1.83Z" />"###
+};
 #[cfg(feature = "BsAlt")]
 const BS_ALT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -4801,6 +5025,22 @@ const BS_ALT: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M1 13.5a.5.5 0 0 0 .5.5h3.797a.5.5 0 0 0 .439-.26L11 3h3.5a.5.5 0 0 0 0-1h-3.797a.5.5 0 0 0-.439.26L5 13H1.5a.5.5 0 0 0-.5.5zm10 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5z" />"###
+};
+#[cfg(feature = "BsAmazon")]
+const BS_AMAZON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M10.813 11.968c.157.083.36.074.5-.05l.005.005a89.521 89.521 0 0 1 1.623-1.405c.173-.143.143-.372.006-.563l-.125-.17c-.345-.465-.673-.906-.673-1.791v-3.3l.001-.335c.008-1.265.014-2.421-.933-3.305C10.404.274 9.06 0 8.03 0 6.017 0 3.77.75 3.296 3.24c-.047.264.143.404.316.443l2.054.22c.19-.009.33-.196.366-.387.176-.857.896-1.271 1.703-1.271.435 0 .929.16 1.188.55.264.39.26.91.257 1.376v.432c-.199.022-.407.044-.621.065-1.113.114-2.397.246-3.36.67C3.873 5.91 2.94 7.08 2.94 8.798c0 2.2 1.387 3.298 3.168 3.298 1.506 0 2.328-.354 3.489-1.54l.167.246c.274.405.456.675 1.047 1.166ZM6.03 8.431C6.03 6.627 7.647 6.3 9.177 6.3v.57c.001.776.002 1.434-.396 2.133-.336.595-.87.961-1.465.961-.812 0-1.286-.619-1.286-1.533ZM.435 12.174c2.629 1.603 6.698 4.084 13.183.997.28-.116.475.078.199.431C13.538 13.96 11.312 16 7.57 16 3.832 16 .968 13.446.094 12.386c-.24-.275.036-.4.199-.299l.142.087Z" />
+<path d="M13.828 11.943c.567-.07 1.468-.027 1.645.204.135.176-.004.966-.233 1.533-.23.563-.572.961-.762 1.115-.191.154-.333.094-.23-.137.105-.23.684-1.663.455-1.963-.213-.278-1.177-.177-1.625-.13l-.09.009c-.095.008-.172.017-.233.024-.193.021-.245.027-.274-.032-.074-.209.779-.556 1.347-.623Z" />"###
 };
 #[cfg(feature = "BsAmd")]
 const BS_AMD: icondata_core::IconData = icondata_core::IconData {
@@ -5842,6 +6082,21 @@ const BS_ARROW_UP_SQUARE_FILL: icondata_core::IconData = icondata_core::IconData
     fill: Some("currentColor"),
     data: r###"<path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />"###
 };
+#[cfg(feature = "BsArrows")]
+const BS_ARROWS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M1.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L2.707 7.5h10.586l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L13.293 8.5H2.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2Z" />"###
+};
 #[cfg(feature = "BsArrowsAngleContract")]
 const BS_ARROWS_ANGLE_CONTRACT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -5887,6 +6142,21 @@ const BS_ARROWS_COLLAPSE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8Zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0Zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793Z" />"###
 };
+#[cfg(feature = "BsArrowsCollapseVertical")]
+const BS_ARROWS_COLLAPSE_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM0 8a.5.5 0 0 1 .5-.5h3.793L3.146 6.354a.5.5 0 1 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8.5H.5A.5.5 0 0 1 0 8Zm11.707.5 1.147 1.146a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2a.5.5 0 0 1 .708.708L11.707 7.5H15.5a.5.5 0 0 1 0 1h-3.793Z" />"###
+};
 #[cfg(feature = "BsArrowsExpand")]
 const BS_ARROWS_EXPAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -5901,6 +6171,21 @@ const BS_ARROWS_EXPAND: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8ZM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2ZM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10Z" />"###
+};
+#[cfg(feature = "BsArrowsExpandVertical")]
+const BS_ARROWS_EXPAND_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2ZM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8Z" />"###
 };
 #[cfg(feature = "BsArrowsFullscreen")]
 const BS_ARROWS_FULLSCREEN: icondata_core::IconData = icondata_core::IconData {
@@ -5931,6 +6216,21 @@ const BS_ARROWS_MOVE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z" />"###
+};
+#[cfg(feature = "BsArrowsVertical")]
+const BS_ARROWS_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8.354 14.854a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 13.293V2.707L6.354 3.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 2.707v10.586l1.146-1.147a.5.5 0 0 1 .708.708l-2 2Z" />"###
 };
 #[cfg(feature = "BsAspectRatio")]
 const BS_ASPECT_RATIO: icondata_core::IconData = icondata_core::IconData {
@@ -6039,6 +6339,135 @@ const BS_BACK: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z" />"###
+};
+#[cfg(feature = "BsBackpack")]
+const BS_BACKPACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+<path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0Zm1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z" />"###
+};
+#[cfg(feature = "BsBackpack2")]
+const BS_BACKPACK2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14Z" />
+<path fill-rule="evenodd" d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+<path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.497 2.497 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0ZM3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8v5.5Zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2v-3.691Zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z" />"###
+};
+#[cfg(feature = "BsBackpack2Fill")]
+const BS_BACKPACK2_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 13h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5v3Z" />
+<path d="M6 2v.341C3.67 3.165 2 5.388 2 8v1.191l-1.17.585A1.5 1.5 0 0 0 0 11.118V13.5A1.5 1.5 0 0 0 1.5 15h1c.456.607 1.182 1 2 1h7c.818 0 1.544-.393 2-1h1a1.5 1.5 0 0 0 1.5-1.5v-2.382a1.5 1.5 0 0 0-.83-1.342L14 9.191V8a6.002 6.002 0 0 0-4-5.659V2a2 2 0 1 0-4 0Zm2-1a1 1 0 0 1 1 1v.083a6.04 6.04 0 0 0-2 0V2a1 1 0 0 1 1-1Zm0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4ZM4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Z" />"###
+};
+#[cfg(feature = "BsBackpack3")]
+const BS_BACKPACK3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+<path d="M6 2.341V2a2 2 0 1 1 4 0v.341c.465.165.904.385 1.308.653l.416-1.247a1 1 0 0 1 1.748-.284l.77 1.027a1 1 0 0 1 .15.917l-.803 2.407C13.854 6.49 14 7.229 14 8v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8c0-.771.146-1.509.41-2.186l-.802-2.407a1 1 0 0 1 .15-.917l.77-1.027a1 1 0 0 1 1.748.284l.416 1.247A5.978 5.978 0 0 1 6 2.34ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 1 0-2 0Zm5.941 2.595.502-1.505-.77-1.027-.532 1.595c.297.284.566.598.8.937ZM3.86 3.658l-.532-1.595-.77 1.027.502 1.505c.234-.339.502-.653.8-.937ZM8 3a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z" />"###
+};
+#[cfg(feature = "BsBackpack3Fill")]
+const BS_BACKPACK3_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 10v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+<path d="M6 2v.341a5.978 5.978 0 0 0-1.308.653l-.416-1.247a1 1 0 0 0-1.749-.284l-.77 1.027a1 1 0 0 0-.149.917l.803 2.407A5.985 5.985 0 0 0 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8c0-.771-.146-1.509-.41-2.186l.801-2.407a1 1 0 0 0-.148-.917l-.77-1.027a1 1 0 0 0-1.75.284l-.415 1.247A5.976 5.976 0 0 0 10 2.34V2a2 2 0 1 0-4 0Zm1 0a1 1 0 0 1 2 0v.083a6.04 6.04 0 0 0-2 0V2Zm5.941 2.595a6.036 6.036 0 0 0-.8-.937l.531-1.595.77 1.027-.5 1.505ZM3.86 3.658a6.031 6.031 0 0 0-.8.937L2.557 3.09l.77-1.027.532 1.595Zm.18 3.772a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.142 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.142ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Z" />"###
+};
+#[cfg(feature = "BsBackpack4")]
+const BS_BACKPACK4: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+<path d="M8 0a2 2 0 0 0-2 2H3.5a2 2 0 0 0-2 2v1c0 .52.198.993.523 1.349A.5.5 0 0 0 2 6.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6.5a.5.5 0 0 0-.023-.151c.325-.356.523-.83.523-1.349V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2-2Zm0 1a1 1 0 0 0-1 1h2a1 1 0 0 0-1-1ZM3 14V6.937c.16.041.327.063.5.063h4v.5a.5.5 0 0 0 1 0V7h4c.173 0 .34-.022.5-.063V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm9.5-11a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h9Z" />"###
+};
+#[cfg(feature = "BsBackpack4Fill")]
+const BS_BACKPACK4_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 0a2 2 0 0 0-2 2H3.5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h4v.5a.5.5 0 0 0 1 0V7h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2-2Zm1 2a1 1 0 0 0-2 0h2Zm-4 9v2h6v-2h-1v.5a.5.5 0 0 1-1 0V11H5Z" />
+<path d="M14 7.599A2.986 2.986 0 0 1 12.5 8H9.415a1.5 1.5 0 0 1-2.83 0H3.5A2.986 2.986 0 0 1 2 7.599V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.599ZM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-3Z" />"###
+};
+#[cfg(feature = "BsBackpackFill")]
+const BS_BACKPACK_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3H5Z" />
+<path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6.002 6.002 0 0 0-4-5.659V2a2 2 0 1 0-4 0Zm2-1a1 1 0 0 1 1 1v.083a6.04 6.04 0 0 0-2 0V2a1 1 0 0 1 1-1Zm0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4ZM4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Z" />"###
 };
 #[cfg(feature = "BsBackspace")]
 const BS_BACKSPACE: icondata_core::IconData = icondata_core::IconData {
@@ -6726,6 +7155,36 @@ const BS_BALLOON_HEART_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z" />"###
 };
+#[cfg(feature = "BsBan")]
+const BS_BAN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M15 8a6.973 6.973 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8ZM2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Z" />"###
+};
+#[cfg(feature = "BsBanFill")]
+const BS_BAN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM2.71 12.584c.218.252.454.488.706.707l9.875-9.875a7.034 7.034 0 0 0-.707-.707l-9.875 9.875Z" />"###
+};
 #[cfg(feature = "BsBandaid")]
 const BS_BANDAID: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -7138,6 +7597,23 @@ const BS_BICYCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />"###
+};
+#[cfg(feature = "BsBing")]
+const BS_BING: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8.35 5.046a.615.615 0 0 0-.54.575c-.009.13-.006.14.289.899.67 1.727.833 2.142.86 2.2.067.142.16.276.277.395.089.092.148.141.247.208.176.117.262.15.944.351.664.197 1.026.327 1.338.482.405.201.688.43.866.7.128.195.242.544.291.896.02.137.02.44 0 .564-.041.27-.124.495-.252.684-.067.1-.044.084.055-.039.278-.346.562-.938.707-1.475a4.42 4.42 0 0 0-2.14-5.028 69.556 69.556 0 0 0-.888-.465 50.419 50.419 0 0 0-.53-.277l-.353-.184c-.16-.082-.266-.138-.345-.18-.368-.192-.523-.27-.568-.283a.93.93 0 0 0-.194-.03l-.063.007Z" />
+<path d="M9.152 11.493a2.623 2.623 0 0 0-.135.083 320.256 320.256 0 0 0-1.513.934 164.12 164.12 0 0 0-.8.496c-.012.01-.587.367-.876.543a1.91 1.91 0 0 1-.732.257c-.12.017-.349.017-.47 0a1.891 1.891 0 0 1-.884-.358 2.45 2.45 0 0 1-.365-.364 1.884 1.884 0 0 1-.34-.76 1.441 1.441 0 0 0-.027-.121c-.005-.006.004.092.022.22.018.132.057.324.098.489a4.096 4.096 0 0 0 2.487 2.796c.359.142.72.23 1.114.275.147.016.566.023.72.011a4.103 4.103 0 0 0 1.956-.661l.235-.149a36.314 36.314 0 0 0 .394-.248l.258-.163 1.164-.736c.51-.32.663-.433.9-.665.099-.097.248-.262.255-.283.002-.005.028-.046.059-.091a1.64 1.64 0 0 0 .25-.682c.02-.124.02-.427 0-.565a2.875 2.875 0 0 0-.213-.758c-.15-.314-.47-.6-.928-.83a1.986 1.986 0 0 0-.273-.12c-.006 0-.433.26-.948.58a1699.479 1699.479 0 0 0-1.113.687l-.295.183Z" />
+<path d="m3.004 12.184.03.129c.089.402.245.693.515.963a1.823 1.823 0 0 0 1.312.543c.361 0 .673-.09.994-.287l.472-.29.373-.23V5.334c0-1.537-.003-2.45-.008-2.521a1.817 1.817 0 0 0-.535-1.177c-.097-.096-.18-.16-.427-.33A1192.515 1192.515 0 0 1 4.183.24c-.239-.163-.258-.175-.33-.2a.631.631 0 0 0-.842.464c-.009.042-.01.603-.01 3.646l.003 8.035Z" />"###
 };
 #[cfg(feature = "BsBinoculars")]
 const BS_BINOCULARS: icondata_core::IconData = icondata_core::IconData {
@@ -8420,6 +8896,21 @@ const BS_BRIGHTNESS_LOW_FILL: icondata_core::IconData = icondata_core::IconData 
     fill: Some("currentColor"),
     data: r###"<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />"###
 };
+#[cfg(feature = "BsBrilliance")]
+const BS_BRILLIANCE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16ZM1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 0 0 7 3.5 3.5 0 1 1 0 7 7 7 0 0 1-7-7Z" />"###
+};
 #[cfg(feature = "BsBroadcast")]
 const BS_BROADCAST: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9100,6 +9591,67 @@ const BS_C_SQUARE_FILL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />"###
+};
+#[cfg(feature = "BsCake")]
+const BS_CAKE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z" />"###
+};
+#[cfg(feature = "BsCake2")]
+const BS_CAKE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683c-.149.034-.293.07-.432.107-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16c2.102 0 4.022-.227 5.432-.603.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12.418 12.418 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22.03 22.03 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a28.708 28.708 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802l-.598-.79Zm-.668 5.556L3 5.524v.967c.311.074.646.141 1 .201V5.315a21.05 21.05 0 0 1 2-.242v1.855c.325.024.659.042 1 .054V5.018a27.685 27.685 0 0 1 2 0v1.964c.341-.012.675-.03 1-.054V5.073c.72.054 1.393.137 2 .242v1.377c.354-.06.689-.127 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356 0 .006-.012.139-.356.356-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5c0-.006.012-.139.356-.356.319-.2.814-.4 1.47-.575ZM15 7.806v1.027l-.68.907a.938.938 0 0 1-1.17.276 1.938 1.938 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9c2.102 0 4.022-.227 5.432-.603.612-.163 1.149-.36 1.568-.591Zm0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.938.938 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426Z" />"###
+};
+#[cfg(feature = "BsCake2Fill")]
+const BS_CAKE2_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m2.899.804.595-.792.598.79A.747.747 0 0 1 4 1.806v4.886c-.354-.06-.689-.127-1-.201V1.813a.747.747 0 0 1-.1-1.01ZM13 1.806v4.685a15.19 15.19 0 0 1-1 .201v-4.88a.747.747 0 0 1-.1-1.007l.595-.792.598.79A.746.746 0 0 1 13 1.806Zm-3 0a.746.746 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v5.17c.341-.013.675-.031 1-.055V1.806Zm-3 0v5.176c-.341-.012-.675-.03-1-.054V1.813a.747.747 0 0 1-.1-1.01l.595-.79.598.789A.747.747 0 0 1 7 1.806Z" />
+<path d="M4.5 6.988V4.226a22.6 22.6 0 0 1 1-.114V7.16c0 .131.101.24.232.25l.231.017c.332.024.672.043 1.02.055l.258.01a.25.25 0 0 0 .26-.25V4.003a29.015 29.015 0 0 1 1 0V7.24a.25.25 0 0 0 .258.25l.259-.009c.347-.012.687-.03 1.019-.055l.231-.017a.25.25 0 0 0 .232-.25V4.112c.345.031.679.07 1 .114v2.762a.25.25 0 0 0 .292.246l.291-.049c.364-.061.71-.13 1.033-.208l.192-.046a.25.25 0 0 0 .192-.243V4.621c.672.184 1.251.409 1.677.678.415.261.823.655.823 1.2V13.5c0 .546-.408.94-.823 1.201-.44.278-1.043.51-1.745.696-1.41.376-3.33.603-5.432.603-2.102 0-4.022-.227-5.432-.603-.702-.187-1.305-.418-1.745-.696C.408 14.44 0 14.046 0 13.5v-7c0-.546.408-.94.823-1.201.426-.269 1.005-.494 1.677-.678v2.067c0 .116.08.216.192.243l.192.046c.323.077.669.147 1.033.208l.292.05a.25.25 0 0 0 .291-.247ZM1 8.82v1.659a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.938.938 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426V8.833l-.68.907a.938.938 0 0 1-1.17.276 1.938 1.938 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82Z" />"###
+};
+#[cfg(feature = "BsCakeFill")]
+const BS_CAKE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m7.399.804.595-.792.598.79A.747.747 0 0 1 8.5 1.806V4H11a2 2 0 0 1 2 2v3h1a2 2 0 0 1 2 2v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-4a2 2 0 0 1 2-2h1V6a2 2 0 0 1 2-2h2.5V1.813a.747.747 0 0 1-.101-1.01ZM12 6.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414v1c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56v-1Zm2.646 5.732a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793v1.34c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0 1.915 1.915 0 0 0 2.354.28v-1.34l-.354.354Z" />"###
 };
 #[cfg(feature = "BsCalculator")]
 const BS_CALCULATOR: icondata_core::IconData = icondata_core::IconData {
@@ -13701,6 +14253,37 @@ const BS_CONTROLLER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
 <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />"###
 };
+#[cfg(feature = "BsCookie")]
+const BS_COOKIE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm4.5.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-.5 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+<path d="M8 0a7.963 7.963 0 0 0-4.075 1.114c-.162.067-.31.162-.437.28A8 8 0 1 0 8 0Zm3.25 14.201a1.5 1.5 0 0 0-2.13.71A7.014 7.014 0 0 1 8 15a6.967 6.967 0 0 1-3.845-1.15 1.5 1.5 0 1 0-2.005-2.005A6.967 6.967 0 0 1 1 8c0-1.953.8-3.719 2.09-4.989a1.5 1.5 0 1 0 2.469-1.574A6.985 6.985 0 0 1 8 1c1.42 0 2.742.423 3.845 1.15a1.5 1.5 0 1 0 2.005 2.005A6.967 6.967 0 0 1 15 8c0 .596-.074 1.174-.214 1.727a1.5 1.5 0 1 0-1.025 2.25 7.033 7.033 0 0 1-2.51 2.224Z" />"###
+};
+#[cfg(feature = "BsCopy")]
+const BS_COPY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z" />"###
+};
 #[cfg(feature = "BsCpu")]
 const BS_CPU: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -13839,6 +14422,36 @@ const BS_CROP: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5zm2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5z" />"###
+};
+#[cfg(feature = "BsCrosshair")]
+const BS_CROSSHAIR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8.5.5a.5.5 0 0 0-1 0v.518A7.001 7.001 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7.001 7.001 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7.001 7.001 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7.001 7.001 0 0 0 8.5 1.018V.5Zm-6.48 7A6.001 6.001 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6.001 6.001 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6.002 6.002 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6.001 6.001 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1h-.48ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />"###
+};
+#[cfg(feature = "BsCrosshair2")]
+const BS_CROSSHAIR2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 0a.5.5 0 0 1 .5.5v.518A7.001 7.001 0 0 1 14.982 7.5h.518a.5.5 0 0 1 0 1h-.518A7.001 7.001 0 0 1 8.5 14.982v.518a.5.5 0 0 1-1 0v-.518A7.001 7.001 0 0 1 1.018 8.5H.5a.5.5 0 0 1 0-1h.518A7.001 7.001 0 0 1 7.5 1.018V.5A.5.5 0 0 1 8 0Zm-.5 2.02A6.001 6.001 0 0 0 2.02 7.5h1.005A5.002 5.002 0 0 1 7.5 3.025V2.02Zm1 1.005A5.002 5.002 0 0 1 12.975 7.5h1.005A6.001 6.001 0 0 0 8.5 2.02v1.005ZM12.975 8.5A5.002 5.002 0 0 1 8.5 12.975v1.005a6.002 6.002 0 0 0 5.48-5.48h-1.005ZM7.5 12.975A5.002 5.002 0 0 1 3.025 8.5H2.02a6.001 6.001 0 0 0 5.48 5.48v-1.005ZM10 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />"###
 };
 #[cfg(feature = "BsCup")]
 const BS_CUP: icondata_core::IconData = icondata_core::IconData {
@@ -15241,6 +15854,37 @@ const BS_DROPLET_HALF: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z" />
 <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z" />"###
 };
+#[cfg(feature = "BsDuffle")]
+const BS_DUFFLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 5.75c1.388 0 2.673.193 3.609.385a18.404 18.404 0 0 1 1.43.354l.112.034.002.001h.001a.5.5 0 0 1-.308.952l-.004-.002-.018-.005a17.416 17.416 0 0 0-1.417-.354A17.282 17.282 0 0 0 8 6.75a17.3 17.3 0 0 0-3.408.365 17.42 17.42 0 0 0-1.416.354l-.018.005-.003.001a.5.5 0 1 1-.308-.95A17.26 17.26 0 0 1 8 5.75Z" />
+<path d="M5.229 2.722c-.126.461-.19.945-.222 1.375-1.401.194-2.65.531-3.525 1.012C-.644 6.278.036 11.204.393 13.127a.954.954 0 0 0 .95.772h13.314a.954.954 0 0 0 .95-.772c.357-1.923 1.037-6.85-1.09-8.018-.873-.48-2.123-.818-3.524-1.012a7.361 7.361 0 0 0-.222-1.375c-.162-.593-.445-1.228-.971-1.622-1.115-.836-2.485-.836-3.6 0-.526.394-.81 1.03-.971 1.622ZM9.2 1.9c.26.195.466.57.606 1.085.088.322.142.667.173.998a23.307 23.307 0 0 0-3.958 0 6.06 6.06 0 0 1 .173-.998c.14-.515.346-.89.606-1.085.76-.57 1.64-.57 2.4 0ZM8 4.9c2.475 0 4.793.402 6.036 1.085.238.13.472.406.655.93.183.522.28 1.195.303 1.952.047 1.486-.189 3.088-.362 4.032H1.368c-.173-.944-.409-2.545-.362-4.032.024-.757.12-1.43.303-1.952.183-.524.417-.8.655-.93C3.207 5.302 5.525 4.9 8 4.9Z" />"###
+};
+#[cfg(feature = "BsDuffleFill")]
+const BS_DUFFLE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.007 4.097c.008-.097.016-.197.027-.298.05-.464.141-.979.313-1.45.169-.465.432-.933.853-1.249 1.115-.836 2.485-.836 3.6 0 .42.316.684.784.853 1.25.171.47.263.985.313 1.449.01.1.02.2.027.298 1.401.194 2.65.531 3.525 1.012 2.126 1.169 1.446 6.095 1.089 8.018a.954.954 0 0 1-.95.772H1.343a.954.954 0 0 1-.95-.772c-.357-1.923-1.037-6.85 1.09-8.018.873-.48 2.123-.818 3.524-1.012ZM4.05 5.633a21.876 21.876 0 0 0-1.565.352l-.091.026-.034.01a.5.5 0 0 0 .282.959l.005-.002.02-.005.08-.023a20.874 20.874 0 0 1 1.486-.334A20.942 20.942 0 0 1 8 6.25c1.439 0 2.781.183 3.767.367a20.854 20.854 0 0 1 1.567.356l.02.005.004.001a.5.5 0 0 0 .283-.959h-.003l-.006-.002-.025-.007a14.787 14.787 0 0 0-.43-.113 21.87 21.87 0 0 0-1.226-.265A21.939 21.939 0 0 0 8 5.25c-1.518 0-2.926.192-3.95.383ZM6.8 1.9c-.203.153-.377.42-.513.791a5.258 5.258 0 0 0-.265 1.292 34.54 34.54 0 0 1 1.374-.076c.866-.022 1.742.003 2.584.076a5.258 5.258 0 0 0-.266-1.292c-.135-.372-.309-.638-.513-.791-.76-.57-1.64-.57-2.4 0Z" />"###
+};
 #[cfg(feature = "BsEar")]
 const BS_EAR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15484,6 +16128,37 @@ const BS_EMOJI_ANGRY_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.053 4.276a.5.5 0 0 1 .67-.223l2 1a.5.5 0 0 1 .166.76c.071.206.111.44.111.687C7 7.328 6.552 8 6 8s-1-.672-1-1.5c0-.408.109-.778.285-1.049l-1.009-.504a.5.5 0 0 1-.223-.67zm.232 8.157a.5.5 0 0 1-.183-.683A4.498 4.498 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 1 1-.866.5A3.498 3.498 0 0 0 8 10.5a3.498 3.498 0 0 0-3.032 1.75.5.5 0 0 1-.683.183zM10 8c-.552 0-1-.672-1-1.5 0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5z" />"###
 };
+#[cfg(feature = "BsEmojiAstonished")]
+const BS_EMOJI_ASTONISHED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z" />
+<path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5Zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5ZM4.884 4.022a2 2 0 0 1 1.458-.048.5.5 0 0 0 .316-.948 2.996 2.996 0 0 0-2.167.077 3.091 3.091 0 0 0-.773.478c-.024.02-.047.042-.07.064l-.002.001a.5.5 0 0 0 .707.708l-.001.002.001-.002a1.558 1.558 0 0 1 .122-.1 2.09 2.09 0 0 1 .41-.232Zm6.232 0a1.997 1.997 0 0 0-1.458-.048.5.5 0 1 1-.316-.948 2.996 2.996 0 0 1 2.168.077 3.087 3.087 0 0 1 .773.478l.07.064v.001a.5.5 0 0 1-.706.708l.002.002-.002-.002a1.556 1.556 0 0 0-.122-.1 2.092 2.092 0 0 0-.41-.232ZM8 10c-.998 0-1.747.623-2.247 1.246-.383.478.08 1.06.687.98 1.04-.135 2.08-.135 3.12 0 .606.08 1.07-.502.687-.98C9.747 10.623 8.998 10 8 10Z" />"###
+};
+#[cfg(feature = "BsEmojiAstonishedFill")]
+const BS_EMOJI_ASTONISHED_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-4.884-3.978a2.092 2.092 0 0 1 .53.332.5.5 0 0 0 .708-.708h-.001v-.001a1.885 1.885 0 0 0-.237-.197 3.087 3.087 0 0 0-.606-.345 2.996 2.996 0 0 0-2.168-.077.5.5 0 1 0 .316.948 1.997 1.997 0 0 1 1.458.048Zm-4.774-.048a.5.5 0 0 0 .316-.948 2.996 2.996 0 0 0-2.167.077 3.091 3.091 0 0 0-.773.478c-.024.02-.047.042-.07.064l-.002.001a.5.5 0 1 0 .728.689 2.09 2.09 0 0 1 .51-.313 2 2 0 0 1 1.458-.048ZM7 6.5C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5Zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5Zm-5.247 4.746c-.383.478.08 1.06.687.98 1.04-.135 2.08-.135 3.12 0 .606.08 1.07-.502.687-.98C9.747 10.623 8.998 10 8 10c-.998 0-1.747.623-2.247 1.246Z" />"###
+};
 #[cfg(feature = "BsEmojiDizzy")]
 const BS_EMOJI_DIZZY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15576,6 +16251,68 @@ const BS_EMOJI_FROWN_FILL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm-2.715 5.933a.5.5 0 0 1-.183-.683A4.498 4.498 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.498 3.498 0 0 0 8 10.5a3.498 3.498 0 0 0-3.032 1.75.5.5 0 0 1-.683.183zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z" />"###
+};
+#[cfg(feature = "BsEmojiGrimace")]
+const BS_EMOJI_GRIMACE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M7 6.25c0 .69-.448 1.25-1 1.25s-1-.56-1-1.25S5.448 5 6 5s1 .56 1 1.25Zm3 1.25c.552 0 1-.56 1-1.25S10.552 5 10 5s-1 .56-1 1.25.448 1.25 1 1.25Zm2.98 3.25A1.5 1.5 0 0 1 11.5 12h-7a1.5 1.5 0 0 1-1.48-1.747v-.003A1.5 1.5 0 0 1 4.5 9h7a1.5 1.5 0 0 1 1.48 1.747v.003Zm-8.48.75h.25v-.75H3.531a1 1 0 0 0 .969.75Zm7 0a1 1 0 0 0 .969-.75H11.25v.75h.25Zm.969-1.25a1 1 0 0 0-.969-.75h-.25v.75h1.219ZM4.5 9.5a1 1 0 0 0-.969.75H4.75V9.5H4.5Zm1.75 2v-.75h-1v.75h1Zm.5 0h1v-.75h-1v.75Zm1.5 0h1v-.75h-1v.75Zm1.5 0h1v-.75h-1v.75Zm1-2h-1v.75h1V9.5Zm-1.5 0h-1v.75h1V9.5Zm-1.5 0h-1v.75h1V9.5Zm-1.5 0h-1v.75h1V9.5Z" />
+<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14Z" />"###
+};
+#[cfg(feature = "BsEmojiGrimaceFill")]
+const BS_EMOJI_GRIMACE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7 6.25C7 5.56 6.552 5 6 5s-1 .56-1 1.25.448 1.25 1 1.25 1-.56 1-1.25Zm3 1.25c.552 0 1-.56 1-1.25S10.552 5 10 5s-1 .56-1 1.25.448 1.25 1 1.25Zm1.5 4.5a1.5 1.5 0 0 0 1.48-1.25v-.003a1.512 1.512 0 0 0 0-.497A1.5 1.5 0 0 0 11.5 9h-7a1.5 1.5 0 0 0-1.48 1.25v.003a1.51 1.51 0 0 0 0 .497A1.5 1.5 0 0 0 4.5 12h7Zm-7.969-1.25a1 1 0 0 0 .969.75h.25v-.75H3.531Zm8.938 0a1 1 0 0 1-.969.75h-.25v-.75h1.219ZM11.5 9.5a1 1 0 0 1 .969.75H11.25V9.5h.25Zm-7.969.75A1 1 0 0 1 4.5 9.5h.25v.75H3.531ZM5.25 11.5h1v-.75h-1v.75Zm2.5 0h-1v-.75h1v.75Zm1.5 0h-1v-.75h1v.75Zm1.5 0h-1v-.75h1v.75Zm-1-2h1v.75h-1V9.5Zm-1.5 0h1v.75h-1V9.5Zm-1.5 0h1v.75h-1V9.5Zm-1.5 0h1v.75h-1V9.5Z" />"###
+};
+#[cfg(feature = "BsEmojiGrin")]
+const BS_EMOJI_GRIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M12.946 11.398A6.002 6.002 0 0 1 2.108 9.14c-.114-.595.426-1.068 1.028-.997C4.405 8.289 6.48 8.5 8 8.5s3.595-.21 4.864-.358c.602-.07 1.142.402 1.028.998a5.953 5.953 0 0 1-.946 2.258Zm-.078-2.25C11.588 9.295 9.539 9.5 8 9.5c-1.54 0-3.589-.205-4.868-.352.11.468.286.91.517 1.317A36.797 36.797 0 0 0 8 10.75a36.796 36.796 0 0 0 4.351-.285c.231-.407.407-.85.517-1.317Zm-1.36 2.416c-1.02.1-2.255.186-3.508.186-1.253 0-2.488-.086-3.507-.186A4.985 4.985 0 0 0 8 13a4.986 4.986 0 0 0 3.507-1.436ZM6.488 7c.114-.294.179-.636.179-1 0-1.105-.597-2-1.334-2C4.597 4 4 4.895 4 6c0 .364.065.706.178 1 .23-.598.662-1 1.155-1 .494 0 .925.402 1.155 1ZM12 6c0 .364-.065.706-.178 1-.23-.598-.662-1-1.155-1-.494 0-.925.402-1.155 1a2.793 2.793 0 0 1-.179-1c0-1.105.597-2 1.334-2C11.403 4 12 4.895 12 6Z" />
+<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1A7 7 0 1 1 8 1a7 7 0 0 1 0 14Z" />"###
+};
+#[cfg(feature = "BsEmojiGrinFill")]
+const BS_EMOJI_GRIN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16ZM6.488 7c-.23-.598-.661-1-1.155-1-.493 0-.924.402-1.155 1A2.794 2.794 0 0 1 4 6c0-1.105.597-2 1.333-2 .737 0 1.334.895 1.334 2 0 .364-.065.706-.179 1Zm5.334 0c-.23-.598-.662-1-1.155-1-.494 0-.925.402-1.155 1a2.793 2.793 0 0 1-.179-1c0-1.105.597-2 1.334-2C11.403 4 12 4.895 12 6c0 .364-.065.706-.178 1ZM2.696 8.756a.48.48 0 0 1 .382-.118C4.348 8.786 6.448 9 8 9c1.553 0 3.653-.214 4.922-.362a.48.48 0 0 1 .383.118.3.3 0 0 1 .096.29c-.09.47-.242.921-.445 1.342-.263.035-.576.075-.929.115A36.798 36.798 0 0 1 8 10.75c-1.475 0-2.934-.123-4.027-.247-.353-.04-.666-.08-.93-.115A5.457 5.457 0 0 1 2.6 9.045a.3.3 0 0 1 .097-.29ZM8 13.5a5.49 5.49 0 0 1-4.256-2.017l.116.014c1.115.126 2.615.253 4.14.253 1.525 0 3.025-.127 4.14-.253l.117-.014A5.49 5.49 0 0 1 8 13.5Z" />"###
 };
 #[cfg(feature = "BsEmojiHeartEyes")]
 const BS_EMOJI_HEART_EYES: icondata_core::IconData = icondata_core::IconData {
@@ -15793,6 +16530,68 @@ const BS_EMOJI_SUNGLASSES_FILL: icondata_core::IconData = icondata_core::IconDat
     fill: Some("currentColor"),
     data: r###"<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z" />"###
 };
+#[cfg(feature = "BsEmojiSurprise")]
+const BS_EMOJI_SURPRISE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z" />
+<path d="M7 5.5C7 6.328 6.552 7 6 7s-1-.672-1-1.5S5.448 4 6 4s1 .672 1 1.5Zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 4 10 4s1 .672 1 1.5ZM10 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />"###
+};
+#[cfg(feature = "BsEmojiSurpriseFill")]
+const BS_EMOJI_SURPRISE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7 5.5C7 4.672 6.552 4 6 4s-1 .672-1 1.5S5.448 7 6 7s1-.672 1-1.5Zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 7 10 7s1-.672 1-1.5ZM8 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />"###
+};
+#[cfg(feature = "BsEmojiTear")]
+const BS_EMOJI_TEAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z" />
+<path d="M6.831 11.43A3.1 3.1 0 0 1 8 11.196c.916 0 1.607.408 2.25.826.212.138.424-.069.282-.277-.564-.83-1.558-2.049-2.532-2.049-.53 0-1.066.361-1.536.824.083.179.162.36.232.535.045.115.092.241.135.373ZM6 11.333C6 12.253 5.328 13 4.5 13S3 12.254 3 11.333c0-.706.882-2.29 1.294-2.99a.238.238 0 0 1 .412 0c.412.7 1.294 2.284 1.294 2.99ZM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5Zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5Zm-1.5-3A.5.5 0 0 1 10 3c1.162 0 2.35.584 2.947 1.776a.5.5 0 1 1-.894.448C11.649 4.416 10.838 4 10 4a.5.5 0 0 1-.5-.5ZM7 3.5a.5.5 0 0 0-.5-.5c-1.162 0-2.35.584-2.947 1.776a.5.5 0 1 0 .894.448C4.851 4.416 5.662 4 6.5 4a.5.5 0 0 0 .5-.5Z" />"###
+};
+#[cfg(feature = "BsEmojiTearFill")]
+const BS_EMOJI_TEAR_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.5 3.5a.5.5 0 0 0 .5.5c.838 0 1.65.416 2.053 1.224a.5.5 0 1 0 .894-.448C12.351 3.584 11.162 3 10 3a.5.5 0 0 0-.5.5ZM7 6.5C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5ZM4.5 13c.828 0 1.5-.746 1.5-1.667 0-.706-.882-2.29-1.294-2.99a.238.238 0 0 0-.412 0C3.882 9.044 3 10.628 3 11.334 3 12.253 3.672 13 4.5 13ZM8 11.197c.916 0 1.607.408 2.25.826.212.138.424-.069.282-.277-.564-.83-1.558-2.049-2.532-2.049-.53 0-1.066.361-1.536.824.083.179.162.36.232.535.045.115.092.241.135.373A3.1 3.1 0 0 1 8 11.197ZM10 8c.552 0 1-.672 1-1.5S10.552 5 10 5s-1 .672-1 1.5S9.448 8 10 8ZM6.5 3c-1.162 0-2.35.584-2.947 1.776a.5.5 0 1 0 .894.448C4.851 4.416 5.662 4 6.5 4a.5.5 0 0 0 0-1Z" />"###
+};
 #[cfg(feature = "BsEmojiWink")]
 const BS_EMOJI_WINK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15838,6 +16637,70 @@ const BS_ENVELOPE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />"###
+};
+#[cfg(feature = "BsEnvelopeArrowDown")]
+const BS_ENVELOPE_ARROW_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99V4Zm1 7.105 4.708-2.897L1 5.383v5.722ZM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1Z" />
+<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708l-1.25 1.25Z" />"###
+};
+#[cfg(feature = "BsEnvelopeArrowDownFill")]
+const BS_ENVELOPE_ARROW_DOWN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697Zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" />
+<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708l-1.25 1.25Z" />"###
+};
+#[cfg(feature = "BsEnvelopeArrowUp")]
+const BS_ENVELOPE_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99V4Zm1 7.105 4.708-2.897L1 5.383v5.722ZM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1Z" />
+<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016Z" />"###
+};
+#[cfg(feature = "BsEnvelopeArrowUpFill")]
+const BS_ENVELOPE_ARROW_UP_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697Zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" />
+<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016Z" />"###
 };
 #[cfg(feature = "BsEnvelopeAt")]
 const BS_ENVELOPE_AT: icondata_core::IconData = icondata_core::IconData {
@@ -16585,6 +17448,22 @@ const BS_EXPLICIT_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M2.5 0A2.5 2.5 0 0 0 0 2.5v11A2.5 2.5 0 0 0 2.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 13.5 0h-11Zm4.326 10.88H10.5V12h-5V4.002h5v1.12H6.826V7.4h3.457v1.073H6.826v2.408Z" />"###
 };
+#[cfg(feature = "BsExposure")]
+const BS_EXPOSURE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8.5 4a.5.5 0 0 0-1 0v2h-2a.5.5 0 0 0 0 1h2v2a.5.5 0 0 0 1 0V7h2a.5.5 0 0 0 0-1h-2V4Zm-3 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Z" />
+<path fill-rule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Z" />"###
+};
 #[cfg(feature = "BsEye")]
 const BS_EYE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16804,6 +17683,36 @@ const BS_FAST_FORWARD_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z" />
 <path d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z" />"###
+};
+#[cfg(feature = "BsFeather")]
+const BS_FEATHER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.765 3.765 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1c-1.95 1.686-3.168 3.724-3.758 5.423-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88.017.04.035.082.056.122A68.362 68.362 0 0 0 .08 15.198a.528.528 0 0 0 .157.72.504.504 0 0 0 .705-.16 67.606 67.606 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.528.528 0 0 0 0-.739l-.729-.744 1.311.209a.504.504 0 0 0 .443-.15c.222-.23.444-.46.663-.684.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.524.524 0 0 0-.112-.172ZM3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196a.526.526 0 0 0-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.282 1.282 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a6.85 6.85 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524-1.581-.25Zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a7.97 7.97 0 0 1 1.564-.173Z" />"###
+};
+#[cfg(feature = "BsFeather2")]
+const BS_FEATHER2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M7.5 1.063v9.556L6 8.819V3a2 2 0 0 1 1.5-1.937ZM8 0a3 3 0 0 0-3 3v6a.5.5 0 0 0 .116.32L7.5 12.181V15.5a.5.5 0 0 0 1 0v-3.319l2.384-2.86A.5.5 0 0 0 11 9V3a3 3 0 0 0-3-3Zm.5 1.063A2 2 0 0 1 10 3v.293l-1.5 1.5v-3.73ZM10 4.707V8.82l-1.5 1.8V6.207l1.5-1.5Z" />"###
 };
 #[cfg(feature = "BsFile")]
 const BS_FILE: icondata_core::IconData = icondata_core::IconData {
@@ -19751,6 +20660,69 @@ const BS_FLAG_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />"###
 };
+#[cfg(feature = "BsFloppy")]
+const BS_FLOPPY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M11 2H9v3h2V2Z" />
+<path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0ZM1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5Zm3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4v4.5ZM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V15Z" />"###
+};
+#[cfg(feature = "BsFloppy2")]
+const BS_FLOPPY2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0ZM1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v3.5A1.5 1.5 0 0 1 11.5 6h-7A1.5 1.5 0 0 1 3 4.5V1H1.5a.5.5 0 0 0-.5.5Zm9.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-1Z" />"###
+};
+#[cfg(feature = "BsFloppy2Fill")]
+const BS_FLOPPY2_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M12 2h-2v3h2V2Z" />
+<path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0H1.5ZM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1H4ZM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1Z" />"###
+};
+#[cfg(feature = "BsFloppyFill")]
+const BS_FLOPPY_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5v-13Z" />
+<path d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V16Zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V0ZM9 1h2v4H9V1Z" />"###
+};
 #[cfg(feature = "BsFlower1")]
 const BS_FLOWER1: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20255,6 +21227,21 @@ const BS_GENDER_MALE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />"###
 };
+#[cfg(feature = "BsGenderNeuter")]
+const BS_GENDER_NEUTER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM3 5a5 5 0 1 1 5.5 4.975V15.5a.5.5 0 0 1-1 0V9.975A5 5 0 0 1 3 5Z" />"###
+};
 #[cfg(feature = "BsGenderTrans")]
 const BS_GENDER_TRANS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20390,6 +21377,21 @@ const BS_GITHUB: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />"###
+};
+#[cfg(feature = "BsGitlab")]
+const BS_GITLAB: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z" />"###
 };
 #[cfg(feature = "BsGlobe")]
 const BS_GLOBE: icondata_core::IconData = icondata_core::IconData {
@@ -21438,6 +22440,36 @@ const BS_HEXAGON_HALF: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M14 4.577v6.846L8 15V1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z" />"###
+};
+#[cfg(feature = "BsHighlighter")]
+const BS_HIGHLIGHTER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07.435-.414Zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254-2.905-2.906Zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065 2.85 2.85ZM5.293 13.5 2.5 10.707v1.586L3.707 13.5h1.586Z" />"###
+};
+#[cfg(feature = "BsHighlights")]
+const BS_HIGHLIGHTS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8 5v1H4.5a.502.502 0 0 0-.093.009A7.029 7.029 0 0 1 3.1 13H8Zm0-1v-1H1.674c.166.35.36.685.58 1H8Zm-6.71-2H8V9H1.07c.05.342.123.676.22 1ZM1 8h7V7H1.07c-.046.327-.07.66-.07 1Zm.29-2H8V5H1.674c-.153.32-.281.655-.384 1Zm.965-2H8V3H3.101c-.312.306-.596.64-.846 1Zm2.137-2H8V1c-1.32 0-2.554.365-3.608 1Z" />"###
 };
 #[cfg(feature = "BsHospital")]
 const BS_HOSPITAL: icondata_core::IconData = icondata_core::IconData {
@@ -23451,6 +24483,38 @@ const BS_LOCK_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />"###
 };
+#[cfg(feature = "BsLuggage")]
+const BS_LUGGAGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5h-3ZM5 5H3V2h2v3Z" />
+<path d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0v-5ZM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6h1ZM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5ZM6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5Zm7 5.5V9H8v6h5Zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6h.5Z" />"###
+};
+#[cfg(feature = "BsLuggageFill")]
+const BS_LUGGAGE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M2 1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V5h.5A1.5 1.5 0 0 1 8 6.5V7H7v-.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5H4v1H2.5v.25a.75.75 0 0 1-1.5 0v-.335A1.5 1.5 0 0 1 0 13.5v-7A1.5 1.5 0 0 1 1.5 5H2V1.5ZM3 5h2V2H3v3Z" />
+<path d="M2.5 7a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5a.5.5 0 0 1 .5-.5Zm10 1v-.5A1.5 1.5 0 0 0 11 6h-1a1.5 1.5 0 0 0-1.5 1.5V8H8v8h5V8h-.5ZM10 7h1a.5.5 0 0 1 .5.5V8h-2v-.5A.5.5 0 0 1 10 7ZM5 9.5A1.5 1.5 0 0 1 6.5 8H7v8h-.5A1.5 1.5 0 0 1 5 14.5v-5Zm9 6.5V8h.5A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5H14Z" />"###
+};
 #[cfg(feature = "BsLungs")]
 const BS_LUNGS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -23558,6 +24622,38 @@ const BS_MAILBOX2: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z" />
 <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z" />"###
 };
+#[cfg(feature = "BsMailbox2Flag")]
+const BS_MAILBOX2_FLAG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M10.5 8.5V3.707l.854-.853A.5.5 0 0 0 11.5 2.5v-2A.5.5 0 0 0 11 0H9.5a.5.5 0 0 0-.5.5v8h1.5Z" />
+<path d="M4 3h4v1H6.646A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3V3a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4Zm.585 4.157C4.836 7.264 5 7.334 5 7a1 1 0 0 0-2 0c0 .334.164.264.415.157C3.58 7.087 3.782 7 4 7c.218 0 .42.086.585.157Z" />"###
+};
+#[cfg(feature = "BsMailboxFlag")]
+const BS_MAILBOX_FLAG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M10.5 8.5V3.707l.854-.853A.5.5 0 0 0 11.5 2.5v-2A.5.5 0 0 0 11 0H9.5a.5.5 0 0 0-.5.5v8h1.5ZM5 7c0 .334-.164.264-.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0Z" />
+<path d="M4 3h4v1H6.646A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3V3a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4Zm0 1a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3Z" />"###
+};
 #[cfg(feature = "BsMap")]
 const BS_MAP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -23620,6 +24716,21 @@ const BS_MARKDOWN_FILL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11.5 1a.5.5 0 0 0-.5.5v3.793L9.854 8.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L12 9.293V5.5a.5.5 0 0 0-.5-.5zM3.56 7.01h.056l1.428 3.239h.774l1.42-3.24h.056V11h1.073V5.001h-1.2l-1.71 3.894h-.039l-1.71-3.894H2.5V11h1.06V7.01z" />"###
+};
+#[cfg(feature = "BsMarkerTip")]
+const BS_MARKER_TIP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-4.5 6.064-1.281-4.696A.5.5 0 0 0 9.736 9H6.264a.5.5 0 0 0-.483.368l-1.28 4.696A6.968 6.968 0 0 0 8 15c1.275 0 2.47-.34 3.5-.936Zm.873-.598a7 7 0 1 0-8.746 0l1.19-4.36a1.5 1.5 0 0 1 1.31-1.1l1.155-3.851c.213-.713 1.223-.713 1.436 0l1.156 3.851a1.5 1.5 0 0 1 1.31 1.1l1.189 4.36Z" />"###
 };
 #[cfg(feature = "BsMask")]
 const BS_MASK: icondata_core::IconData = icondata_core::IconData {
@@ -24428,6 +25539,22 @@ const BS_NODE_PLUS_FILL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M11 13a5 5 0 1 0-4.975-5.5H4A1.5 1.5 0 0 0 2.5 6h-1A1.5 1.5 0 0 0 0 7.5v1A1.5 1.5 0 0 0 1.5 10h1A1.5 1.5 0 0 0 4 8.5h2.025A5 5 0 0 0 11 13zm.5-7.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2a.5.5 0 0 1 1 0z" />"###
 };
+#[cfg(feature = "BsNoiseReduction")]
+const BS_NOISE_REDUCTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M13 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm.5-.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm-5 7a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1-1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1-1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1-1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1-1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-3 5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm.5-.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1-1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z" />
+<path fill-rule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1 8a7 7 0 0 1 12.83-3.875.5.5 0 1 0 .15.235c.131.214.251.437.359.667a.5.5 0 1 0 .359.932c.133.438.225.894.27 1.364a.5.5 0 1 0 .021.282 7.096 7.096 0 0 1-.091 1.592.5.5 0 1 0-.172.75 6.95 6.95 0 0 1-.418 1.091.5.5 0 0 0-.3.555 7.056 7.056 0 0 1-.296.454.499.499 0 0 0-.712.453c0 .111.036.214.098.297a6.99 6.99 0 0 1-.3.3.5.5 0 0 0-.75.614 7.056 7.056 0 0 1-.455.298.503.503 0 0 0-.555.3 6.95 6.95 0 0 1-1.092.417.5.5 0 1 0-.749.172 7.04 7.04 0 0 1-1.592.091.5.5 0 1 0-.282-.021 6.971 6.971 0 0 1-1.364-.27A.498.498 0 0 0 5.5 14a.5.5 0 0 0-.473.339 6.976 6.976 0 0 1-.668-.36A.499.499 0 0 0 5 13.5a.5.5 0 1 0-.875.33A6.993 6.993 0 0 1 1 8Z" />"###
+};
 #[cfg(feature = "BsNut")]
 const BS_NUT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -24474,6 +25601,38 @@ const BS_NVIDIA: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M1.635 7.146S3.08 5.012 5.97 4.791v-.774C2.77 4.273 0 6.983 0 6.983s1.57 4.536 5.97 4.952v-.824c-3.23-.406-4.335-3.965-4.335-3.965ZM5.97 9.475v.753c-2.44-.435-3.118-2.972-3.118-2.972S4.023 5.958 5.97 5.747v.828h-.004c-1.021-.123-1.82.83-1.82.83s.448 1.607 1.824 2.07ZM6 2l-.03 2.017A6.64 6.64 0 0 1 6.252 4c3.637-.123 6.007 2.983 6.007 2.983s-2.722 3.31-5.557 3.31c-.26 0-.504-.024-.732-.065v.883c.195.025.398.04.61.04 2.638 0 4.546-1.348 6.394-2.943.307.246 1.561.842 1.819 1.104-1.757 1.47-5.852 2.657-8.173 2.657a6.84 6.84 0 0 1-.65-.034V14H16l.03-12H6Zm-.03 3.747v-.956a6.4 6.4 0 0 1 .282-.015c2.616-.082 4.332 2.248 4.332 2.248S8.73 9.598 6.743 9.598c-.286 0-.542-.046-.773-.123v-2.9c1.018.123 1.223.572 1.835 1.593L9.167 7.02s-.994-1.304-2.67-1.304a4.9 4.9 0 0 0-.527.031Z" />"###
 };
+#[cfg(feature = "BsNvme")]
+const BS_NVME: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M1.5 4.5A.5.5 0 0 1 2 4h13.5a.5.5 0 0 1 .5.5V7a.5.5 0 0 1-.5.5.5.5 0 0 0 0 1 .5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5h-1A.5.5 0 0 1 0 11V7.5A.5.5 0 0 1 .5 7h1a.25.25 0 0 0 0-.5h-1A.5.5 0 0 1 0 6V5a.5.5 0 0 1 .5-.5h1Zm1 .5a.5.5 0 0 1-.5.5h-.5a1.25 1.25 0 1 1 0 2.5H1v2.5h1a.5.5 0 0 1 .5.5H15V9.415a1.5 1.5 0 0 1 0-2.83V5H2.5Z" />
+<path d="M4 6.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-3ZM5 7v2h1V7H5Zm3-.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-3ZM9 7v2h3V7H9Z" />"###
+};
+#[cfg(feature = "BsNvmeFill")]
+const BS_NVME_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6 7H5v2h1V7Zm6 0H9v2h3V7Z" />
+<path d="M2 4a.5.5 0 0 0-.5.5h-1A.5.5 0 0 0 0 5v1a.5.5 0 0 0 .5.5h1a.25.25 0 0 1 0 .5h-1a.5.5 0 0 0-.5.5V11a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5.5h13.5a.5.5 0 0 0 .5-.5V9a.5.5 0 0 0-.5-.5.5.5 0 0 1 0-1A.5.5 0 0 0 16 7V4.5a.5.5 0 0 0-.5-.5H2Zm2 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-3Zm4 0a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-3Z" />"###
+};
 #[cfg(feature = "BsOctagon")]
 const BS_OCTAGON: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -24518,6 +25677,22 @@ const BS_OCTAGON_HALF: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM8 15h2.9l4.1-4.1V5.1L10.9 1H8v14z" />"###
+};
+#[cfg(feature = "BsOpencollective")]
+const BS_OPENCOLLECTIVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-opacity=".4" d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732h.04Z" />
+<path d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.072 5.072 0 0 1-2.732.781H8Z" />"###
 };
 #[cfg(feature = "BsOpticalAudio")]
 const BS_OPTICAL_AUDIO: icondata_core::IconData = icondata_core::IconData {
@@ -24767,6 +25942,38 @@ const BS_PASS_FILL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M10 0a2 2 0 1 1-4 0H3.5A1.5 1.5 0 0 0 2 1.5v13A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 12.5 0H10ZM4.5 5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1Zm0 2h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1Z" />"###
+};
+#[cfg(feature = "BsPassport")]
+const BS_PASSPORT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM6 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm-.5 4a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Z" />
+<path d="M3.232 1.776A1.5 1.5 0 0 0 2 3.252v10.95c0 .445.191.838.49 1.11.367.422.908.688 1.51.688h8a2 2 0 0 0 2-2V4a2 2 0 0 0-1-1.732v-.47A1.5 1.5 0 0 0 11.232.321l-8 1.454ZM4 3h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />"###
+};
+#[cfg(feature = "BsPassportFill")]
+const BS_PASSPORT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+<path d="M2 3.252a1.5 1.5 0 0 1 1.232-1.476l8-1.454A1.5 1.5 0 0 1 13 1.797v.47A2 2 0 0 1 14 4v10a2 2 0 0 1-2 2H4a1.995 1.995 0 0 1-1.51-.688 1.493 1.493 0 0 1-.49-1.11V3.253ZM5 8a3 3 0 1 0 6 0 3 3 0 0 0-6 0Zm0 4.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5Z" />"###
 };
 #[cfg(feature = "BsPatchCheck")]
 const BS_PATCH_CHECK: icondata_core::IconData = icondata_core::IconData {
@@ -25107,6 +26314,40 @@ const BS_PCI_CARD: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5Z" />
 <path d="M3 12.5h3.5v1a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5v-1Zm4 0h4v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1Z" />"###
 };
+#[cfg(feature = "BsPciCardNetwork")]
+const BS_PCI_CARD_NETWORK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.5 9.5v-2h.214a.5.5 0 0 0 .5-.5v-.5h2.572V7a.5.5 0 0 0 .5.5h.214v2h-4Z" />
+<path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5Zm6.714 4a.5.5 0 0 0-.5.5v.5H6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.5-.5h-.214V6a.5.5 0 0 0-.5-.5H6.714Z" />
+<path d="M3 12.5h3.5v1a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5v-1Zm8 0H7v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Z" />"###
+};
+#[cfg(feature = "BsPciCardSound")]
+const BS_PCI_CARD_SOUND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M7.562 7.39 8 7.04v1.92l-.438-.35a.5.5 0 0 0-.312-.11H6.5v-1h.75a.5.5 0 0 0 .312-.11Z" />
+<path d="M.5 1a.5.5 0 0 0 0 1H1v12.5a.5.5 0 0 0 1 0V12h13.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5H2V1.5a.5.5 0 0 0-.5-.5h-1Zm11.619 3.881c.1.115.194.238.28.367.484.726.768 1.7.768 2.752 0 1.051-.284 2.026-.768 2.752-.086.13-.18.252-.28.367l-.71-.71c.055-.064.107-.135.158-.212.36-.54.6-1.315.6-2.197 0-.882-.24-1.657-.6-2.198a2.57 2.57 0 0 0-.157-.212l.709-.709Zm-1.375 4.863L10 9c.057 0 .17-.035.291-.217.12-.178.209-.454.209-.783 0-.33-.09-.605-.209-.783C10.17 7.035 10.057 7 10 7l.744-.744c.15.113.278.254.38.406.242.364.376.839.376 1.338 0 .5-.134.974-.377 1.338a1.653 1.653 0 0 1-.379.406ZM9 6v4a.5.5 0 0 1-.812.39L7.075 9.5H6a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h1.075l1.113-.89A.5.5 0 0 1 9 6Z" />
+<path d="M6.5 12.5H3v1a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 .5-.5v-1Zm.5 1v-1h4v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5Z" />"###
+};
 #[cfg(feature = "BsPeace")]
 const BS_PEACE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25333,6 +26574,22 @@ const BS_PERSON_ADD: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
 <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />"###
+};
+#[cfg(feature = "BsPersonArmsUp")]
+const BS_PERSON_ARMS_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+<path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.492 1.492 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.72.72 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.72.72 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z" />"###
 };
 #[cfg(feature = "BsPersonBadge")]
 const BS_PERSON_BADGE: icondata_core::IconData = icondata_core::IconData {
@@ -25772,6 +27029,22 @@ const BS_PERSON_PLUS_FILL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
 <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />"###
 };
+#[cfg(feature = "BsPersonRaisedHand")]
+const BS_PERSON_RAISED_HAND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207Z" />
+<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />"###
+};
 #[cfg(feature = "BsPersonRolodex")]
 const BS_PERSON_ROLODEX: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25818,6 +27091,36 @@ const BS_PERSON_SQUARE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />"###
+};
+#[cfg(feature = "BsPersonStanding")]
+const BS_PERSON_STANDING: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0Z" />"###
+};
+#[cfg(feature = "BsPersonStandingDress")]
+const BS_PERSON_STANDING_DRESS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-.5 12.25V12h1v3.25a.75.75 0 0 0 1.5 0V12h1l-1-5v-.215a.285.285 0 0 1 .56-.078l.793 2.777a.711.711 0 1 0 1.364-.405l-1.065-3.461A3 3 0 0 0 8.784 3.5H7.216a3 3 0 0 0-2.868 2.118L3.283 9.079a.711.711 0 1 0 1.365.405l.793-2.777a.285.285 0 0 1 .56.078V7l-1 5h1v3.25a.75.75 0 0 0 1.5 0Z" />"###
 };
 #[cfg(feature = "BsPersonUp")]
 const BS_PERSON_UP: icondata_core::IconData = icondata_core::IconData {
@@ -25913,6 +27216,37 @@ const BS_PERSON_VIDEO3: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z" />
 <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z" />"###
+};
+#[cfg(feature = "BsPersonWalking")]
+const BS_PERSON_WALKING: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.75 1.75 0 0 1-.088.395l-.318.906.213.242a.75.75 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z" />
+<path d="M6.25 11.745v-1.418l1.204 1.375.261.524a.75.75 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914l2.345-3.048Zm4.22-4.215-.494-.494.205-1.843a1.93 1.93 0 0 0 .006-.067l1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z" />"###
+};
+#[cfg(feature = "BsPersonWheelchair")]
+const BS_PERSON_WHEELCHAIR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.732 4.732 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.732 4.732 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79l1.903-2.854ZM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65l1.077 1.078Z" />"###
 };
 #[cfg(feature = "BsPersonWorkspace")]
 const BS_PERSON_WORKSPACE: icondata_core::IconData = icondata_core::IconData {
@@ -27108,6 +28442,21 @@ const BS_R_SQUARE_FILL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M6.835 5.092v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417H6.835Z" />
 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5V4.002Z" />"###
 };
+#[cfg(feature = "BsRadar")]
+const BS_RADAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847Z" />"###
+};
 #[cfg(feature = "BsRadioactive")]
 const BS_RADIOACTIVE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28043,6 +29392,70 @@ const BS_SEND: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />"###
 };
+#[cfg(feature = "BsSendArrowDown")]
+const BS_SEND_ARROW_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738-7.494 7.494 1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602l4.339 2.76Z" />
+<path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708l-1.25 1.25Z" />"###
+};
+#[cfg(feature = "BsSendArrowDownFill")]
+const BS_SEND_ARROW_DOWN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54L13.026 8.03A4.5 4.5 0 0 0 8 12.5c0 .5 0 1.5-.773.36l-1.59-2.498L.644 7.184l-.002-.001-.41-.261a.5.5 0 0 1 .083-.886l.452-.18.001-.001L15.314.035a.5.5 0 0 1 .54.111ZM6.637 10.07l7.494-7.494.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154l.215.338Z" />
+<path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708l-1.25 1.25Z" />"###
+};
+#[cfg(feature = "BsSendArrowUp")]
+const BS_SEND_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738-7.494 7.494 1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602l4.339 2.76Z" />
+<path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708l-1.25-1.25Z" />"###
+};
+#[cfg(feature = "BsSendArrowUpFill")]
+const BS_SEND_ARROW_UP_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54L13.026 8.03A4.5 4.5 0 0 0 8 12.5c0 .5 0 1.5-.773.36l-1.59-2.498L.644 7.184l-.002-.001-.41-.261a.5.5 0 0 1 .083-.886l.452-.18.001-.001L15.314.035a.5.5 0 0 1 .54.111ZM6.637 10.07l7.494-7.494.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154l.215.338Z" />
+<path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708l-1.25-1.25Z" />"###
+};
 #[cfg(feature = "BsSendCheck")]
 const BS_SEND_CHECK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28266,6 +29679,21 @@ const BS_SERVER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z" />
 <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z" />
 <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z" />"###
+};
+#[cfg(feature = "BsShadows")]
+const BS_SHADOWS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8 7a7 7 0 1 1 3.608-13H8a.5.5 0 0 0 0 1h4.899c.312.306.596.64.846 1H8a.5.5 0 0 0 0 1h6.326c.153.32.281.655.384 1H8a.5.5 0 0 0 0 1h6.93c.046.327.07.66.07 1H8a.5.5 0 0 0 0 1h6.93a6.953 6.953 0 0 1-.22 1H8a.5.5 0 0 0 0 1h6.326c-.166.35-.36.685-.58 1H8a.5.5 0 0 0 0 1h4.899a7.032 7.032 0 0 1-1.306 1.009A.503.503 0 0 0 11.5 14H8a.5.5 0 0 0 0 1Z" />"###
 };
 #[cfg(feature = "BsShare")]
 const BS_SHARE: icondata_core::IconData = icondata_core::IconData {
@@ -29369,6 +30797,36 @@ const BS_SIM_FILL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M5 4.5a.5.5 0 0 1 .5-.5h2v2H5V4.5zM8.5 6V4h2a.5.5 0 0 1 .5.5V6H8.5zM5 7h6v2H5V7zm3.5 3H11v1.5a.5.5 0 0 1-.5.5h-2v-2zm-1 0v2h-2a.5.5 0 0 1-.5-.5V10h2.5z" />
 <path d="M3.5 0A1.5 1.5 0 0 0 2 1.5v13A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5V3.414a1.5 1.5 0 0 0-.44-1.06L11.647.439A1.5 1.5 0 0 0 10.586 0H3.5zm2 3h5A1.5 1.5 0 0 1 12 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 4 11.5v-7A1.5 1.5 0 0 1 5.5 3z" />"###
 };
+#[cfg(feature = "BsSimSlash")]
+const BS_SIM_SLASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m11.646.44.897.896-.707.707-.897-.897A.5.5 0 0 0 10.586 1H3.5a.5.5 0 0 0-.5.5v9.379l-1 1V1.5A1.5 1.5 0 0 1 3.5 0h7.086a1.5 1.5 0 0 1 1.06.44ZM10.5 3c.117 0 .23.013.34.039L9.879 4H8.5v1.379L6.879 7H5v1.879l-1 1V4.5A1.5 1.5 0 0 1 5.5 3h5ZM12 6.121l-1 1V9H9.121L7.5 10.621V12H6.121l-.961.961c.11.026.223.039.34.039h5a1.5 1.5 0 0 0 1.5-1.5V6.121ZM3.5 15a.498.498 0 0 1-.288-.091l-.71.71c.265.237.615.381.998.381h9a1.5 1.5 0 0 0 1.5-1.5V4.121l-1 1V14.5a.5.5 0 0 1-.5.5h-9Zm2-11a.5.5 0 0 0-.5.5V6h2.5V4h-2Zm5.5 6v1.5a.5.5 0 0 1-.5.5h-2v-2H11Zm3.854-8.146a.5.5 0 0 0-.708-.708l-13 13a.5.5 0 0 0 .708.708l13-13Z" />"###
+};
+#[cfg(feature = "BsSimSlashFill")]
+const BS_SIM_SLASH_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="m11.646.44.897.896-1.703 1.703A1.506 1.506 0 0 0 10.5 3h-5A1.5 1.5 0 0 0 4 4.5v5.379l-2 2V1.5A1.5 1.5 0 0 1 3.5 0h7.086a1.5 1.5 0 0 1 1.06.44ZM8.5 5.378 9.879 4H8.5v1.379ZM5 8.879 6.879 7H5v1.879Zm6-1.758L9.121 9H11V7.121Zm-3.5 3.5L6.121 12H7.5v-1.379ZM5.5 13c-.117 0-.23-.013-.34-.039L2.502 15.62c.265.236.615.38.998.38h9a1.5 1.5 0 0 0 1.5-1.5V4.121l-2 2V11.5a1.5 1.5 0 0 1-1.5 1.5h-5ZM5 4.5a.5.5 0 0 1 .5-.5h2v2H5V4.5ZM8.5 10H11v1.5a.5.5 0 0 1-.5.5h-2v-2Zm6.354-8.146a.5.5 0 0 0-.708-.708l-13 13a.5.5 0 0 0 .708.708l13-13Z" />"###
+};
 #[cfg(feature = "BsSinaWeibo")]
 const BS_SINA_WEIBO: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -30204,6 +31662,22 @@ const BS_SOUNDWAVE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />"###
 };
+#[cfg(feature = "BsSourceforge")]
+const BS_SOURCEFORGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9.13 8.43c0-2.604-.929-3.79-1.42-4.24a.14.14 0 0 0-.232.123c.095 1.472-1.762 1.84-1.762 4.144v.013c0 1.404 1.065 2.55 2.376 2.55s2.377-1.146 2.377-2.55v-.013c0-.655-.246-1.282-.492-1.745-.055-.096-.191-.055-.178.027.451 1.99-.669 3.217-.669 1.69Z" />
+<path d="M6.303 13.923a.252.252 0 0 1-.164-.068L.061 7.789c-.081-.082-.081-.232 0-.327l6.42-6.407A.287.287 0 0 1 6.63 1h1.844c.109 0 .177.068.204.136a.22.22 0 0 1-.054.246L2.602 7.407a.304.304 0 0 0 0 .436l4.766 4.771c.082.082.082.232 0 .328l-.915.927a.287.287 0 0 1-.15.054Zm1.216 1.063a.22.22 0 0 1-.15-.382l6.036-6.025a.321.321 0 0 0 .096-.218.271.271 0 0 0-.096-.218l-4.78-4.771c-.082-.082-.082-.232 0-.327l.929-.927a.226.226 0 0 1 .163-.068c.069 0 .11.04.15.081l6.065 6.067c.04.04.068.095.068.163a.225.225 0 0 1-.068.164l-6.42 6.407A.226.226 0 0 1 9.35 15H7.52v-.014Z" />"###
+};
 #[cfg(feature = "BsSpeaker")]
 const BS_SPEAKER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -30713,6 +32187,21 @@ const BS_SUBSCRIPT: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="m3.266 12.496.96-2.853H7.76l.96 2.853H10L6.62 3H5.38L2 12.496h1.266Zm2.748-8.063 1.419 4.23h-2.88l1.426-4.23h.035Zm6.132 7.203v-.075c0-.332.234-.618.619-.618.354 0 .618.256.618.58 0 .362-.271.649-.52.898l-1.788 1.832V15h3.59v-.958h-1.923v-.045l.973-1.04c.415-.438.867-.845.867-1.547 0-.8-.701-1.41-1.787-1.41-1.23 0-1.795.8-1.795 1.576v.06h1.146Z" />"###
 };
+#[cfg(feature = "BsSubstack")]
+const BS_SUBSTACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208H1ZM15 0H1v1.89h14V0Z" />"###
+};
 #[cfg(feature = "BsSubtract")]
 const BS_SUBTRACT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -30847,6 +32336,97 @@ const BS_SUIT_SPADE_FILL: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 19.92 19.92 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a19.919 19.919 0 0 0 1.582-2.907z" />"###
+};
+#[cfg(feature = "BsSuitcase")]
+const BS_SUITCASE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5Zm2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5Zm2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5Z" />
+<path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5h-3ZM9 3H7V1h2v2Zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8Z" />"###
+};
+#[cfg(feature = "BsSuitcase2")]
+const BS_SUITCASE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5h-3ZM9 3H7V1h2v2Zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h8v6ZM5 4h6a1 1 0 0 1 1 1v1H4V5a1 1 0 0 1 1-1Z" />"###
+};
+#[cfg(feature = "BsSuitcase2Fill")]
+const BS_SUITCASE2_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.5 0a.5.5 0 0 0-.5.5V3H4.5A1.5 1.5 0 0 0 3 4.5v9a1.5 1.5 0 0 0 1.003 1.416A1 1 0 1 0 6 15h4a1 1 0 1 0 1.996-.084A1.5 1.5 0 0 0 13 13.5v-9A1.5 1.5 0 0 0 11.5 3H10V.5a.5.5 0 0 0-.5-.5h-3ZM9 3H7V1h2v2ZM4 7V6h8v1H4Z" />"###
+};
+#[cfg(feature = "BsSuitcaseFill")]
+const BS_SUITCASE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V3h1.5A1.5 1.5 0 0 1 13 4.5v9a1.5 1.5 0 0 1-1.004 1.416A1 1 0 1 1 10 15H6a1 1 0 1 1-1.997-.084A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3H6V.5ZM9 1H7v2h2V1ZM6 5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2.5 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2.5 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Z" />"###
+};
+#[cfg(feature = "BsSuitcaseLg")]
+const BS_SUITCASE_LG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2H5Zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1ZM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3H1.5ZM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5Zm-3 .5V3H4v10h8Z" />"###
+};
+#[cfg(feature = "BsSuitcaseLgFill")]
+const BS_SUITCASE_LG_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M7 0a2 2 0 0 0-2 2H1.5A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14H2a.5.5 0 0 0 1 0h10a.5.5 0 0 0 1 0h.5a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2H11a2 2 0 0 0-2-2H7ZM6 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1H6ZM3 13V3h1v10H3Zm9 0V3h1v10h-1Z" />"###
 };
 #[cfg(feature = "BsSun")]
 const BS_SUN: icondata_core::IconData = icondata_core::IconData {
@@ -31755,6 +33335,37 @@ const BS_THERMOMETER_SUN: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z" />
 <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z" />"###
 };
+#[cfg(feature = "BsThreads")]
+const BS_THREADS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161Z" />"###
+};
+#[cfg(feature = "BsThreadsFill")]
+const BS_THREADS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.81 9.204c0-.41.197-1.062 1.727-1.062.469 0 .758.034 1.146.121-.124 1.606-.91 1.818-1.674 1.818-.418 0-1.2-.218-1.2-.877Z" />
+<path d="M2.59 16h10.82A2.59 2.59 0 0 0 16 13.41V2.59A2.59 2.59 0 0 0 13.41 0H2.59A2.59 2.59 0 0 0 0 2.59v10.82A2.59 2.59 0 0 0 2.59 16ZM5.866 5.91c.567-.81 1.315-1.126 2.35-1.126.73 0 1.351.246 1.795.711.443.466.696 1.132.754 1.983.245.103.472.224.678.363.832.559 1.29 1.395 1.29 2.353 0 2.037-1.67 3.806-4.692 3.806-2.595 0-5.291-1.51-5.291-6.004C2.75 3.526 5.361 2 8.033 2c1.234 0 4.129.182 5.217 3.777l-1.02.264c-.842-2.56-2.607-2.968-4.224-2.968-2.675 0-4.187 1.628-4.187 5.093 0 3.107 1.69 4.757 4.222 4.757 2.083 0 3.636-1.082 3.636-2.667 0-1.079-.906-1.595-.953-1.595-.177.925-.651 2.482-2.733 2.482-1.213 0-2.26-.838-2.26-1.936 0-1.568 1.488-2.136 2.663-2.136.44 0 .97.03 1.247.086 0-.478-.404-1.296-1.426-1.296-.911 0-1.16.288-1.45.624l-.024.027c-.202-.135-.875-.601-.875-.601Z" />"###
+};
 #[cfg(feature = "BsThreeDots")]
 const BS_THREE_DOTS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32153,6 +33764,21 @@ const BS_TRANSLATE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
 <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />"###
 };
+#[cfg(feature = "BsTransparency")]
+const BS_TRANSPARENCY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M0 6.5a6.5 6.5 0 0 1 12.346-2.846 6.5 6.5 0 1 1-8.691 8.691A6.5 6.5 0 0 1 0 6.5Zm5.144 6.358a5.5 5.5 0 1 0 7.714-7.714 6.5 6.5 0 0 1-7.714 7.714Zm-.733-1.269c.363.15.746.261 1.144.33l-1.474-1.474c.069.398.18.78.33 1.144Zm2.614.386a5.47 5.47 0 0 0 1.173-.242L4.374 7.91a5.958 5.958 0 0 0-.296 1.118l2.947 2.947Zm2.157-.672c.297-.166.577-.36.838-.576L5.418 6.126a6.016 6.016 0 0 0-.587.826l4.35 4.351Zm1.545-1.284c.216-.26.41-.54.576-.837L6.953 4.83a5.97 5.97 0 0 0-.827.587l4.6 4.602Zm1.006-1.822c.121-.374.204-.766.242-1.172L9.028 4.078c-.386.063-.76.163-1.118.296l3.823 3.824Zm.186-2.642a5.463 5.463 0 0 0-.33-1.144 5.46 5.46 0 0 0-1.144-.33l1.474 1.474Z" />"###
+};
 #[cfg(feature = "BsTrash")]
 const BS_TRASH: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32517,6 +34143,21 @@ const BS_TWITTER: icondata_core::IconData = icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />"###
 };
+#[cfg(feature = "BsTwitterX")]
+const BS_TWITTER_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />"###
+};
 #[cfg(feature = "BsType")]
 const BS_TYPE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32560,7 +34201,7 @@ const BS_TYPE_H1: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M8.637 13V3.669H7.379V7.62H2.758V3.67H1.5V13h1.258V8.728h4.62V13h1.259zm5.329 0V3.669h-1.244L10.5 5.316v1.265l2.16-1.565h.062V13h1.244z" />"###
+    data: r###"<path d="M7.648 13V3H6.3v4.234H1.348V3H0v10h1.348V8.421H6.3V13h1.348ZM14 13V3h-1.333l-2.381 1.766V6.12L12.6 4.443h.066V13H14Z" />"###
 };
 #[cfg(feature = "BsTypeH2")]
 const BS_TYPE_H2: icondata_core::IconData = icondata_core::IconData {
@@ -32575,7 +34216,7 @@ const BS_TYPE_H2: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M7.638 13V3.669H6.38V7.62H1.759V3.67H.5V13h1.258V8.728h4.62V13h1.259zm3.022-6.733v-.048c0-.889.63-1.668 1.716-1.668.957 0 1.675.608 1.675 1.572 0 .855-.554 1.504-1.067 2.085l-3.513 3.999V13H15.5v-1.094h-4.245v-.075l2.481-2.844c.875-.998 1.586-1.784 1.586-2.953 0-1.463-1.155-2.556-2.919-2.556-1.941 0-2.966 1.326-2.966 2.74v.049h1.223z" />"###
+    data: r###"<path d="M7.495 13V3.201H6.174v4.15H1.32V3.2H0V13h1.32V8.513h4.854V13h1.32Zm3.174-7.071v-.05c0-.934.66-1.752 1.801-1.752 1.005 0 1.76.639 1.76 1.651 0 .898-.582 1.58-1.12 2.19l-3.69 4.2V13h6.331v-1.149h-4.458v-.079L13.9 8.786c.919-1.048 1.666-1.874 1.666-3.101C15.565 4.149 14.35 3 12.499 3 10.46 3 9.384 4.393 9.384 5.879v.05h1.285Z" />"###
 };
 #[cfg(feature = "BsTypeH3")]
 const BS_TYPE_H3: icondata_core::IconData = icondata_core::IconData {
@@ -32590,7 +34231,52 @@ const BS_TYPE_H3: icondata_core::IconData = icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M7.637 13V3.669H6.379V7.62H1.758V3.67H.5V13h1.258V8.728h4.62V13h1.259zm3.625-4.272h1.018c1.142 0 1.935.67 1.949 1.674.013 1.005-.78 1.737-2.01 1.73-1.08-.007-1.853-.588-1.935-1.32H9.108c.069 1.327 1.224 2.386 3.083 2.386 1.935 0 3.343-1.155 3.309-2.789-.027-1.51-1.251-2.16-2.037-2.249v-.068c.704-.123 1.764-.91 1.723-2.229-.035-1.353-1.176-2.4-2.954-2.385-1.873.006-2.857 1.162-2.898 2.358h1.196c.062-.69.711-1.299 1.696-1.299.998 0 1.695.622 1.695 1.525.007.922-.718 1.592-1.695 1.592h-.964v1.074z" />"###
+    data: r###"<path d="M11.07 8.4h1.049c1.174 0 1.99.69 2.004 1.724.014 1.034-.802 1.786-2.068 1.779-1.11-.007-1.905-.605-1.99-1.357h-1.21C8.926 11.91 10.116 13 12.028 13c1.99 0 3.439-1.188 3.404-2.87-.028-1.553-1.287-2.221-2.096-2.313v-.07c.724-.127 1.814-.935 1.772-2.293-.035-1.392-1.21-2.468-3.038-2.454-1.927.007-2.94 1.196-2.981 2.426h1.23c.064-.71.732-1.336 1.744-1.336 1.027 0 1.744.64 1.744 1.568.007.95-.738 1.639-1.744 1.639h-.991V8.4ZM7.495 13V3.201H6.174v4.15H1.32V3.2H0V13h1.32V8.513h4.854V13h1.32Z" />"###
+};
+#[cfg(feature = "BsTypeH4")]
+const BS_TYPE_H4: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M13.007 3H15v10h-1.29v-2.051H8.854v-1.18C10.1 7.513 11.586 5.256 13.007 3Zm-2.82 6.777h3.524v-5.62h-.074a95.078 95.078 0 0 0-3.45 5.554v.066ZM7.495 13V3.201H6.174v4.15H1.32V3.2H0V13h1.32V8.513h4.854V13h1.32Z" />"###
+};
+#[cfg(feature = "BsTypeH5")]
+const BS_TYPE_H5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9 10.516h1.264c.193.976 1.112 1.364 2.01 1.364 1.005 0 2.067-.782 2.067-2.247 0-1.292-.983-2.082-2.089-2.082-1.012 0-1.658.596-1.924 1.077h-1.12L9.646 3h5.535v1.141h-4.415L10.5 7.28h.072c.201-.316.883-.84 1.967-.84 1.709 0 3.13 1.177 3.13 3.158 0 2.025-1.407 3.403-3.475 3.403-1.809 0-3.1-1.048-3.194-2.484ZM7.495 13V3.201H6.174v4.15H1.32V3.2H0V13h1.32V8.512h4.854V13h1.32Z" />"###
+};
+#[cfg(feature = "BsTypeH6")]
+const BS_TYPE_H6: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M15.596 5.178H14.3c-.106-.444-.62-1.072-1.706-1.072-1.332 0-2.325 1.269-2.325 3.947h.07c.268-.67 1.043-1.445 2.445-1.445 1.494 0 3.017 1.064 3.017 3.073C15.8 11.795 14.37 13 12.48 13c-1.036 0-2.093-.36-2.77-1.452C9.276 10.836 9 9.808 9 8.37 9 4.656 10.494 3 12.636 3c1.812 0 2.883 1.113 2.96 2.178Zm-5.151 4.566c0 1.367.944 2.15 2.043 2.15 1.128 0 2.037-.684 2.037-2.136 0-1.41-1-2.065-2.03-2.065-1.19 0-2.05.853-2.05 2.051ZM7.495 13V3.201H6.174v4.15H1.32V3.2H0V13h1.32V8.513h4.854V13h1.32Z" />"###
 };
 #[cfg(feature = "BsTypeItalic")]
 const BS_TYPE_ITALIC: icondata_core::IconData = icondata_core::IconData {
@@ -33171,6 +34857,22 @@ const BS_VIEW_STACKED: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M3 0h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3zm0 8h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3z" />"###
+};
+#[cfg(feature = "BsVignette")]
+const BS_VIGNETTE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z" />
+<path d="M8.5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm0 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.683-6.281a.5.5 0 1 1-.866-.5.5.5 0 0 1 .866.5Zm-3.5 6.062a.5.5 0 1 1-.866-.5.5.5 0 0 1 .866.5Zm4.598-4.598a.5.5 0 1 1-.5-.866.5.5 0 0 1 .5.866Zm-6.062 3.5a.5.5 0 1 1-.5-.866.5.5 0 0 1 .5.866ZM11.5 8.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm-7 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm6.281 1.683a.5.5 0 1 1 .5-.866.5.5 0 0 1-.5.866Zm-6.062-3.5a.5.5 0 1 1 .5-.866.5.5 0 0 1-.5.866Zm4.598 4.598a.5.5 0 1 1 .866-.5.5.5 0 0 1-.866.5Zm-3.5-6.062a.5.5 0 1 1 .866-.5.5.5 0 0 1-.866.5Z" />"###
 };
 #[cfg(feature = "BsVimeo")]
 const BS_VIMEO: icondata_core::IconData = icondata_core::IconData {
@@ -34257,8 +35959,14 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsAlignTop => BS_ALIGN_TOP,
             #[cfg(feature = "BsAlipay")]
             BsIcon::BsAlipay => BS_ALIPAY,
+            #[cfg(feature = "BsAlphabet")]
+            BsIcon::BsAlphabet => BS_ALPHABET,
+            #[cfg(feature = "BsAlphabetUppercase")]
+            BsIcon::BsAlphabetUppercase => BS_ALPHABET_UPPERCASE,
             #[cfg(feature = "BsAlt")]
             BsIcon::BsAlt => BS_ALT,
+            #[cfg(feature = "BsAmazon")]
+            BsIcon::BsAmazon => BS_AMAZON,
             #[cfg(feature = "BsAmd")]
             BsIcon::BsAmd => BS_AMD,
             #[cfg(feature = "BsAndroid")]
@@ -34397,18 +36105,26 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsArrowUpSquare => BS_ARROW_UP_SQUARE,
             #[cfg(feature = "BsArrowUpSquareFill")]
             BsIcon::BsArrowUpSquareFill => BS_ARROW_UP_SQUARE_FILL,
+            #[cfg(feature = "BsArrows")]
+            BsIcon::BsArrows => BS_ARROWS,
             #[cfg(feature = "BsArrowsAngleContract")]
             BsIcon::BsArrowsAngleContract => BS_ARROWS_ANGLE_CONTRACT,
             #[cfg(feature = "BsArrowsAngleExpand")]
             BsIcon::BsArrowsAngleExpand => BS_ARROWS_ANGLE_EXPAND,
             #[cfg(feature = "BsArrowsCollapse")]
             BsIcon::BsArrowsCollapse => BS_ARROWS_COLLAPSE,
+            #[cfg(feature = "BsArrowsCollapseVertical")]
+            BsIcon::BsArrowsCollapseVertical => BS_ARROWS_COLLAPSE_VERTICAL,
             #[cfg(feature = "BsArrowsExpand")]
             BsIcon::BsArrowsExpand => BS_ARROWS_EXPAND,
+            #[cfg(feature = "BsArrowsExpandVertical")]
+            BsIcon::BsArrowsExpandVertical => BS_ARROWS_EXPAND_VERTICAL,
             #[cfg(feature = "BsArrowsFullscreen")]
             BsIcon::BsArrowsFullscreen => BS_ARROWS_FULLSCREEN,
             #[cfg(feature = "BsArrowsMove")]
             BsIcon::BsArrowsMove => BS_ARROWS_MOVE,
+            #[cfg(feature = "BsArrowsVertical")]
+            BsIcon::BsArrowsVertical => BS_ARROWS_VERTICAL,
             #[cfg(feature = "BsAspectRatio")]
             BsIcon::BsAspectRatio => BS_ASPECT_RATIO,
             #[cfg(feature = "BsAspectRatioFill")]
@@ -34423,6 +36139,22 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsAwardFill => BS_AWARD_FILL,
             #[cfg(feature = "BsBack")]
             BsIcon::BsBack => BS_BACK,
+            #[cfg(feature = "BsBackpack")]
+            BsIcon::BsBackpack => BS_BACKPACK,
+            #[cfg(feature = "BsBackpack2")]
+            BsIcon::BsBackpack2 => BS_BACKPACK2,
+            #[cfg(feature = "BsBackpack2Fill")]
+            BsIcon::BsBackpack2Fill => BS_BACKPACK2_FILL,
+            #[cfg(feature = "BsBackpack3")]
+            BsIcon::BsBackpack3 => BS_BACKPACK3,
+            #[cfg(feature = "BsBackpack3Fill")]
+            BsIcon::BsBackpack3Fill => BS_BACKPACK3_FILL,
+            #[cfg(feature = "BsBackpack4")]
+            BsIcon::BsBackpack4 => BS_BACKPACK4,
+            #[cfg(feature = "BsBackpack4Fill")]
+            BsIcon::BsBackpack4Fill => BS_BACKPACK4_FILL,
+            #[cfg(feature = "BsBackpackFill")]
+            BsIcon::BsBackpackFill => BS_BACKPACK_FILL,
             #[cfg(feature = "BsBackspace")]
             BsIcon::BsBackspace => BS_BACKSPACE,
             #[cfg(feature = "BsBackspaceFill")]
@@ -34511,6 +36243,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsBalloonHeart => BS_BALLOON_HEART,
             #[cfg(feature = "BsBalloonHeartFill")]
             BsIcon::BsBalloonHeartFill => BS_BALLOON_HEART_FILL,
+            #[cfg(feature = "BsBan")]
+            BsIcon::BsBan => BS_BAN,
+            #[cfg(feature = "BsBanFill")]
+            BsIcon::BsBanFill => BS_BAN_FILL,
             #[cfg(feature = "BsBandaid")]
             BsIcon::BsBandaid => BS_BANDAID,
             #[cfg(feature = "BsBandaidFill")]
@@ -34565,6 +36301,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsBezier2 => BS_BEZIER2,
             #[cfg(feature = "BsBicycle")]
             BsIcon::BsBicycle => BS_BICYCLE,
+            #[cfg(feature = "BsBing")]
+            BsIcon::BsBing => BS_BING,
             #[cfg(feature = "BsBinoculars")]
             BsIcon::BsBinoculars => BS_BINOCULARS,
             #[cfg(feature = "BsBinocularsFill")]
@@ -34731,6 +36469,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsBrightnessLow => BS_BRIGHTNESS_LOW,
             #[cfg(feature = "BsBrightnessLowFill")]
             BsIcon::BsBrightnessLowFill => BS_BRIGHTNESS_LOW_FILL,
+            #[cfg(feature = "BsBrilliance")]
+            BsIcon::BsBrilliance => BS_BRILLIANCE,
             #[cfg(feature = "BsBroadcast")]
             BsIcon::BsBroadcast => BS_BROADCAST,
             #[cfg(feature = "BsBroadcastPin")]
@@ -34817,6 +36557,14 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsCSquare => BS_C_SQUARE,
             #[cfg(feature = "BsCSquareFill")]
             BsIcon::BsCSquareFill => BS_C_SQUARE_FILL,
+            #[cfg(feature = "BsCake")]
+            BsIcon::BsCake => BS_CAKE,
+            #[cfg(feature = "BsCake2")]
+            BsIcon::BsCake2 => BS_CAKE2,
+            #[cfg(feature = "BsCake2Fill")]
+            BsIcon::BsCake2Fill => BS_CAKE2_FILL,
+            #[cfg(feature = "BsCakeFill")]
+            BsIcon::BsCakeFill => BS_CAKE_FILL,
             #[cfg(feature = "BsCalculator")]
             BsIcon::BsCalculator => BS_CALCULATOR,
             #[cfg(feature = "BsCalculatorFill")]
@@ -35409,6 +37157,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsConeStriped => BS_CONE_STRIPED,
             #[cfg(feature = "BsController")]
             BsIcon::BsController => BS_CONTROLLER,
+            #[cfg(feature = "BsCookie")]
+            BsIcon::BsCookie => BS_COOKIE,
+            #[cfg(feature = "BsCopy")]
+            BsIcon::BsCopy => BS_COPY,
             #[cfg(feature = "BsCpu")]
             BsIcon::BsCpu => BS_CPU,
             #[cfg(feature = "BsCpuFill")]
@@ -35427,6 +37179,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsCreditCardFill => BS_CREDIT_CARD_FILL,
             #[cfg(feature = "BsCrop")]
             BsIcon::BsCrop => BS_CROP,
+            #[cfg(feature = "BsCrosshair")]
+            BsIcon::BsCrosshair => BS_CROSSHAIR,
+            #[cfg(feature = "BsCrosshair2")]
+            BsIcon::BsCrosshair2 => BS_CROSSHAIR2,
             #[cfg(feature = "BsCup")]
             BsIcon::BsCup => BS_CUP,
             #[cfg(feature = "BsCupFill")]
@@ -35607,6 +37363,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsDropletFill => BS_DROPLET_FILL,
             #[cfg(feature = "BsDropletHalf")]
             BsIcon::BsDropletHalf => BS_DROPLET_HALF,
+            #[cfg(feature = "BsDuffle")]
+            BsIcon::BsDuffle => BS_DUFFLE,
+            #[cfg(feature = "BsDuffleFill")]
+            BsIcon::BsDuffleFill => BS_DUFFLE_FILL,
             #[cfg(feature = "BsEar")]
             BsIcon::BsEar => BS_EAR,
             #[cfg(feature = "BsEarFill")]
@@ -35639,6 +37399,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsEmojiAngry => BS_EMOJI_ANGRY,
             #[cfg(feature = "BsEmojiAngryFill")]
             BsIcon::BsEmojiAngryFill => BS_EMOJI_ANGRY_FILL,
+            #[cfg(feature = "BsEmojiAstonished")]
+            BsIcon::BsEmojiAstonished => BS_EMOJI_ASTONISHED,
+            #[cfg(feature = "BsEmojiAstonishedFill")]
+            BsIcon::BsEmojiAstonishedFill => BS_EMOJI_ASTONISHED_FILL,
             #[cfg(feature = "BsEmojiDizzy")]
             BsIcon::BsEmojiDizzy => BS_EMOJI_DIZZY,
             #[cfg(feature = "BsEmojiDizzyFill")]
@@ -35651,6 +37415,14 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsEmojiFrown => BS_EMOJI_FROWN,
             #[cfg(feature = "BsEmojiFrownFill")]
             BsIcon::BsEmojiFrownFill => BS_EMOJI_FROWN_FILL,
+            #[cfg(feature = "BsEmojiGrimace")]
+            BsIcon::BsEmojiGrimace => BS_EMOJI_GRIMACE,
+            #[cfg(feature = "BsEmojiGrimaceFill")]
+            BsIcon::BsEmojiGrimaceFill => BS_EMOJI_GRIMACE_FILL,
+            #[cfg(feature = "BsEmojiGrin")]
+            BsIcon::BsEmojiGrin => BS_EMOJI_GRIN,
+            #[cfg(feature = "BsEmojiGrinFill")]
+            BsIcon::BsEmojiGrinFill => BS_EMOJI_GRIN_FILL,
             #[cfg(feature = "BsEmojiHeartEyes")]
             BsIcon::BsEmojiHeartEyes => BS_EMOJI_HEART_EYES,
             #[cfg(feature = "BsEmojiHeartEyesFill")]
@@ -35679,12 +37451,28 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsEmojiSunglasses => BS_EMOJI_SUNGLASSES,
             #[cfg(feature = "BsEmojiSunglassesFill")]
             BsIcon::BsEmojiSunglassesFill => BS_EMOJI_SUNGLASSES_FILL,
+            #[cfg(feature = "BsEmojiSurprise")]
+            BsIcon::BsEmojiSurprise => BS_EMOJI_SURPRISE,
+            #[cfg(feature = "BsEmojiSurpriseFill")]
+            BsIcon::BsEmojiSurpriseFill => BS_EMOJI_SURPRISE_FILL,
+            #[cfg(feature = "BsEmojiTear")]
+            BsIcon::BsEmojiTear => BS_EMOJI_TEAR,
+            #[cfg(feature = "BsEmojiTearFill")]
+            BsIcon::BsEmojiTearFill => BS_EMOJI_TEAR_FILL,
             #[cfg(feature = "BsEmojiWink")]
             BsIcon::BsEmojiWink => BS_EMOJI_WINK,
             #[cfg(feature = "BsEmojiWinkFill")]
             BsIcon::BsEmojiWinkFill => BS_EMOJI_WINK_FILL,
             #[cfg(feature = "BsEnvelope")]
             BsIcon::BsEnvelope => BS_ENVELOPE,
+            #[cfg(feature = "BsEnvelopeArrowDown")]
+            BsIcon::BsEnvelopeArrowDown => BS_ENVELOPE_ARROW_DOWN,
+            #[cfg(feature = "BsEnvelopeArrowDownFill")]
+            BsIcon::BsEnvelopeArrowDownFill => BS_ENVELOPE_ARROW_DOWN_FILL,
+            #[cfg(feature = "BsEnvelopeArrowUp")]
+            BsIcon::BsEnvelopeArrowUp => BS_ENVELOPE_ARROW_UP,
+            #[cfg(feature = "BsEnvelopeArrowUpFill")]
+            BsIcon::BsEnvelopeArrowUpFill => BS_ENVELOPE_ARROW_UP_FILL,
             #[cfg(feature = "BsEnvelopeAt")]
             BsIcon::BsEnvelopeAt => BS_ENVELOPE_AT,
             #[cfg(feature = "BsEnvelopeAtFill")]
@@ -35781,6 +37569,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsExplicit => BS_EXPLICIT,
             #[cfg(feature = "BsExplicitFill")]
             BsIcon::BsExplicitFill => BS_EXPLICIT_FILL,
+            #[cfg(feature = "BsExposure")]
+            BsIcon::BsExposure => BS_EXPOSURE,
             #[cfg(feature = "BsEye")]
             BsIcon::BsEye => BS_EYE,
             #[cfg(feature = "BsEyeFill")]
@@ -35809,6 +37599,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsFastForwardCircleFill => BS_FAST_FORWARD_CIRCLE_FILL,
             #[cfg(feature = "BsFastForwardFill")]
             BsIcon::BsFastForwardFill => BS_FAST_FORWARD_FILL,
+            #[cfg(feature = "BsFeather")]
+            BsIcon::BsFeather => BS_FEATHER,
+            #[cfg(feature = "BsFeather2")]
+            BsIcon::BsFeather2 => BS_FEATHER2,
             #[cfg(feature = "BsFile")]
             BsIcon::BsFile => BS_FILE,
             #[cfg(feature = "BsFileArrowDown")]
@@ -36191,6 +37985,14 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsFlag => BS_FLAG,
             #[cfg(feature = "BsFlagFill")]
             BsIcon::BsFlagFill => BS_FLAG_FILL,
+            #[cfg(feature = "BsFloppy")]
+            BsIcon::BsFloppy => BS_FLOPPY,
+            #[cfg(feature = "BsFloppy2")]
+            BsIcon::BsFloppy2 => BS_FLOPPY2,
+            #[cfg(feature = "BsFloppy2Fill")]
+            BsIcon::BsFloppy2Fill => BS_FLOPPY2_FILL,
+            #[cfg(feature = "BsFloppyFill")]
+            BsIcon::BsFloppyFill => BS_FLOPPY_FILL,
             #[cfg(feature = "BsFlower1")]
             BsIcon::BsFlower1 => BS_FLOWER1,
             #[cfg(feature = "BsFlower2")]
@@ -36257,6 +38059,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsGenderFemale => BS_GENDER_FEMALE,
             #[cfg(feature = "BsGenderMale")]
             BsIcon::BsGenderMale => BS_GENDER_MALE,
+            #[cfg(feature = "BsGenderNeuter")]
+            BsIcon::BsGenderNeuter => BS_GENDER_NEUTER,
             #[cfg(feature = "BsGenderTrans")]
             BsIcon::BsGenderTrans => BS_GENDER_TRANS,
             #[cfg(feature = "BsGeo")]
@@ -36275,6 +38079,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsGit => BS_GIT,
             #[cfg(feature = "BsGithub")]
             BsIcon::BsGithub => BS_GITHUB,
+            #[cfg(feature = "BsGitlab")]
+            BsIcon::BsGitlab => BS_GITLAB,
             #[cfg(feature = "BsGlobe")]
             BsIcon::BsGlobe => BS_GLOBE,
             #[cfg(feature = "BsGlobe2")]
@@ -36413,6 +38219,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsHexagonFill => BS_HEXAGON_FILL,
             #[cfg(feature = "BsHexagonHalf")]
             BsIcon::BsHexagonHalf => BS_HEXAGON_HALF,
+            #[cfg(feature = "BsHighlighter")]
+            BsIcon::BsHighlighter => BS_HIGHLIGHTER,
+            #[cfg(feature = "BsHighlights")]
+            BsIcon::BsHighlights => BS_HIGHLIGHTS,
             #[cfg(feature = "BsHospital")]
             BsIcon::BsHospital => BS_HOSPITAL,
             #[cfg(feature = "BsHospitalFill")]
@@ -36669,6 +38479,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsLock => BS_LOCK,
             #[cfg(feature = "BsLockFill")]
             BsIcon::BsLockFill => BS_LOCK_FILL,
+            #[cfg(feature = "BsLuggage")]
+            BsIcon::BsLuggage => BS_LUGGAGE,
+            #[cfg(feature = "BsLuggageFill")]
+            BsIcon::BsLuggageFill => BS_LUGGAGE_FILL,
             #[cfg(feature = "BsLungs")]
             BsIcon::BsLungs => BS_LUNGS,
             #[cfg(feature = "BsLungsFill")]
@@ -36683,6 +38497,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsMailbox => BS_MAILBOX,
             #[cfg(feature = "BsMailbox2")]
             BsIcon::BsMailbox2 => BS_MAILBOX2,
+            #[cfg(feature = "BsMailbox2Flag")]
+            BsIcon::BsMailbox2Flag => BS_MAILBOX2_FLAG,
+            #[cfg(feature = "BsMailboxFlag")]
+            BsIcon::BsMailboxFlag => BS_MAILBOX_FLAG,
             #[cfg(feature = "BsMap")]
             BsIcon::BsMap => BS_MAP,
             #[cfg(feature = "BsMapFill")]
@@ -36691,6 +38509,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsMarkdown => BS_MARKDOWN,
             #[cfg(feature = "BsMarkdownFill")]
             BsIcon::BsMarkdownFill => BS_MARKDOWN_FILL,
+            #[cfg(feature = "BsMarkerTip")]
+            BsIcon::BsMarkerTip => BS_MARKER_TIP,
             #[cfg(feature = "BsMask")]
             BsIcon::BsMask => BS_MASK,
             #[cfg(feature = "BsMastodon")]
@@ -36795,18 +38615,26 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsNodePlus => BS_NODE_PLUS,
             #[cfg(feature = "BsNodePlusFill")]
             BsIcon::BsNodePlusFill => BS_NODE_PLUS_FILL,
+            #[cfg(feature = "BsNoiseReduction")]
+            BsIcon::BsNoiseReduction => BS_NOISE_REDUCTION,
             #[cfg(feature = "BsNut")]
             BsIcon::BsNut => BS_NUT,
             #[cfg(feature = "BsNutFill")]
             BsIcon::BsNutFill => BS_NUT_FILL,
             #[cfg(feature = "BsNvidia")]
             BsIcon::BsNvidia => BS_NVIDIA,
+            #[cfg(feature = "BsNvme")]
+            BsIcon::BsNvme => BS_NVME,
+            #[cfg(feature = "BsNvmeFill")]
+            BsIcon::BsNvmeFill => BS_NVME_FILL,
             #[cfg(feature = "BsOctagon")]
             BsIcon::BsOctagon => BS_OCTAGON,
             #[cfg(feature = "BsOctagonFill")]
             BsIcon::BsOctagonFill => BS_OCTAGON_FILL,
             #[cfg(feature = "BsOctagonHalf")]
             BsIcon::BsOctagonHalf => BS_OCTAGON_HALF,
+            #[cfg(feature = "BsOpencollective")]
+            BsIcon::BsOpencollective => BS_OPENCOLLECTIVE,
             #[cfg(feature = "BsOpticalAudio")]
             BsIcon::BsOpticalAudio => BS_OPTICAL_AUDIO,
             #[cfg(feature = "BsOpticalAudioFill")]
@@ -36839,6 +38667,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsPass => BS_PASS,
             #[cfg(feature = "BsPassFill")]
             BsIcon::BsPassFill => BS_PASS_FILL,
+            #[cfg(feature = "BsPassport")]
+            BsIcon::BsPassport => BS_PASSPORT,
+            #[cfg(feature = "BsPassportFill")]
+            BsIcon::BsPassportFill => BS_PASSPORT_FILL,
             #[cfg(feature = "BsPatchCheck")]
             BsIcon::BsPatchCheck => BS_PATCH_CHECK,
             #[cfg(feature = "BsPatchCheckFill")]
@@ -36883,6 +38715,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsPcHorizontal => BS_PC_HORIZONTAL,
             #[cfg(feature = "BsPciCard")]
             BsIcon::BsPciCard => BS_PCI_CARD,
+            #[cfg(feature = "BsPciCardNetwork")]
+            BsIcon::BsPciCardNetwork => BS_PCI_CARD_NETWORK,
+            #[cfg(feature = "BsPciCardSound")]
+            BsIcon::BsPciCardSound => BS_PCI_CARD_SOUND,
             #[cfg(feature = "BsPeace")]
             BsIcon::BsPeace => BS_PEACE,
             #[cfg(feature = "BsPeaceFill")]
@@ -36913,6 +38749,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsPerson => BS_PERSON,
             #[cfg(feature = "BsPersonAdd")]
             BsIcon::BsPersonAdd => BS_PERSON_ADD,
+            #[cfg(feature = "BsPersonArmsUp")]
+            BsIcon::BsPersonArmsUp => BS_PERSON_ARMS_UP,
             #[cfg(feature = "BsPersonBadge")]
             BsIcon::BsPersonBadge => BS_PERSON_BADGE,
             #[cfg(feature = "BsPersonBadgeFill")]
@@ -36969,12 +38807,18 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsPersonPlus => BS_PERSON_PLUS,
             #[cfg(feature = "BsPersonPlusFill")]
             BsIcon::BsPersonPlusFill => BS_PERSON_PLUS_FILL,
+            #[cfg(feature = "BsPersonRaisedHand")]
+            BsIcon::BsPersonRaisedHand => BS_PERSON_RAISED_HAND,
             #[cfg(feature = "BsPersonRolodex")]
             BsIcon::BsPersonRolodex => BS_PERSON_ROLODEX,
             #[cfg(feature = "BsPersonSlash")]
             BsIcon::BsPersonSlash => BS_PERSON_SLASH,
             #[cfg(feature = "BsPersonSquare")]
             BsIcon::BsPersonSquare => BS_PERSON_SQUARE,
+            #[cfg(feature = "BsPersonStanding")]
+            BsIcon::BsPersonStanding => BS_PERSON_STANDING,
+            #[cfg(feature = "BsPersonStandingDress")]
+            BsIcon::BsPersonStandingDress => BS_PERSON_STANDING_DRESS,
             #[cfg(feature = "BsPersonUp")]
             BsIcon::BsPersonUp => BS_PERSON_UP,
             #[cfg(feature = "BsPersonVcard")]
@@ -36987,6 +38831,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsPersonVideo2 => BS_PERSON_VIDEO2,
             #[cfg(feature = "BsPersonVideo3")]
             BsIcon::BsPersonVideo3 => BS_PERSON_VIDEO3,
+            #[cfg(feature = "BsPersonWalking")]
+            BsIcon::BsPersonWalking => BS_PERSON_WALKING,
+            #[cfg(feature = "BsPersonWheelchair")]
+            BsIcon::BsPersonWheelchair => BS_PERSON_WHEELCHAIR,
             #[cfg(feature = "BsPersonWorkspace")]
             BsIcon::BsPersonWorkspace => BS_PERSON_WORKSPACE,
             #[cfg(feature = "BsPersonX")]
@@ -37141,6 +38989,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsRSquare => BS_R_SQUARE,
             #[cfg(feature = "BsRSquareFill")]
             BsIcon::BsRSquareFill => BS_R_SQUARE_FILL,
+            #[cfg(feature = "BsRadar")]
+            BsIcon::BsRadar => BS_RADAR,
             #[cfg(feature = "BsRadioactive")]
             BsIcon::BsRadioactive => BS_RADIOACTIVE,
             #[cfg(feature = "BsRainbow")]
@@ -37261,6 +39111,14 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsSegmentedNav => BS_SEGMENTED_NAV,
             #[cfg(feature = "BsSend")]
             BsIcon::BsSend => BS_SEND,
+            #[cfg(feature = "BsSendArrowDown")]
+            BsIcon::BsSendArrowDown => BS_SEND_ARROW_DOWN,
+            #[cfg(feature = "BsSendArrowDownFill")]
+            BsIcon::BsSendArrowDownFill => BS_SEND_ARROW_DOWN_FILL,
+            #[cfg(feature = "BsSendArrowUp")]
+            BsIcon::BsSendArrowUp => BS_SEND_ARROW_UP,
+            #[cfg(feature = "BsSendArrowUpFill")]
+            BsIcon::BsSendArrowUpFill => BS_SEND_ARROW_UP_FILL,
             #[cfg(feature = "BsSendCheck")]
             BsIcon::BsSendCheck => BS_SEND_CHECK,
             #[cfg(feature = "BsSendCheckFill")]
@@ -37289,6 +39147,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsSendXFill => BS_SEND_X_FILL,
             #[cfg(feature = "BsServer")]
             BsIcon::BsServer => BS_SERVER,
+            #[cfg(feature = "BsShadows")]
+            BsIcon::BsShadows => BS_SHADOWS,
             #[cfg(feature = "BsShare")]
             BsIcon::BsShare => BS_SHARE,
             #[cfg(feature = "BsShareFill")]
@@ -37431,6 +39291,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsSim => BS_SIM,
             #[cfg(feature = "BsSimFill")]
             BsIcon::BsSimFill => BS_SIM_FILL,
+            #[cfg(feature = "BsSimSlash")]
+            BsIcon::BsSimSlash => BS_SIM_SLASH,
+            #[cfg(feature = "BsSimSlashFill")]
+            BsIcon::BsSimSlashFill => BS_SIM_SLASH_FILL,
             #[cfg(feature = "BsSinaWeibo")]
             BsIcon::BsSinaWeibo => BS_SINA_WEIBO,
             #[cfg(feature = "BsSkipBackward")]
@@ -37539,6 +39403,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsSortUpAlt => BS_SORT_UP_ALT,
             #[cfg(feature = "BsSoundwave")]
             BsIcon::BsSoundwave => BS_SOUNDWAVE,
+            #[cfg(feature = "BsSourceforge")]
+            BsIcon::BsSourceforge => BS_SOURCEFORGE,
             #[cfg(feature = "BsSpeaker")]
             BsIcon::BsSpeaker => BS_SPEAKER,
             #[cfg(feature = "BsSpeakerFill")]
@@ -37605,6 +39471,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsStripe => BS_STRIPE,
             #[cfg(feature = "BsSubscript")]
             BsIcon::BsSubscript => BS_SUBSCRIPT,
+            #[cfg(feature = "BsSubstack")]
+            BsIcon::BsSubstack => BS_SUBSTACK,
             #[cfg(feature = "BsSubtract")]
             BsIcon::BsSubtract => BS_SUBTRACT,
             #[cfg(feature = "BsSuitClub")]
@@ -37623,6 +39491,18 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsSuitSpade => BS_SUIT_SPADE,
             #[cfg(feature = "BsSuitSpadeFill")]
             BsIcon::BsSuitSpadeFill => BS_SUIT_SPADE_FILL,
+            #[cfg(feature = "BsSuitcase")]
+            BsIcon::BsSuitcase => BS_SUITCASE,
+            #[cfg(feature = "BsSuitcase2")]
+            BsIcon::BsSuitcase2 => BS_SUITCASE2,
+            #[cfg(feature = "BsSuitcase2Fill")]
+            BsIcon::BsSuitcase2Fill => BS_SUITCASE2_FILL,
+            #[cfg(feature = "BsSuitcaseFill")]
+            BsIcon::BsSuitcaseFill => BS_SUITCASE_FILL,
+            #[cfg(feature = "BsSuitcaseLg")]
+            BsIcon::BsSuitcaseLg => BS_SUITCASE_LG,
+            #[cfg(feature = "BsSuitcaseLgFill")]
+            BsIcon::BsSuitcaseLgFill => BS_SUITCASE_LG_FILL,
             #[cfg(feature = "BsSun")]
             BsIcon::BsSun => BS_SUN,
             #[cfg(feature = "BsSunFill")]
@@ -37741,6 +39621,10 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsThermometerSnow => BS_THERMOMETER_SNOW,
             #[cfg(feature = "BsThermometerSun")]
             BsIcon::BsThermometerSun => BS_THERMOMETER_SUN,
+            #[cfg(feature = "BsThreads")]
+            BsIcon::BsThreads => BS_THREADS,
+            #[cfg(feature = "BsThreadsFill")]
+            BsIcon::BsThreadsFill => BS_THREADS_FILL,
             #[cfg(feature = "BsThreeDots")]
             BsIcon::BsThreeDots => BS_THREE_DOTS,
             #[cfg(feature = "BsThreeDotsVertical")]
@@ -37793,6 +39677,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsTrainLightrailFrontFill => BS_TRAIN_LIGHTRAIL_FRONT_FILL,
             #[cfg(feature = "BsTranslate")]
             BsIcon::BsTranslate => BS_TRANSLATE,
+            #[cfg(feature = "BsTransparency")]
+            BsIcon::BsTransparency => BS_TRANSPARENCY,
             #[cfg(feature = "BsTrash")]
             BsIcon::BsTrash => BS_TRASH,
             #[cfg(feature = "BsTrash2")]
@@ -37841,6 +39727,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsTwitch => BS_TWITCH,
             #[cfg(feature = "BsTwitter")]
             BsIcon::BsTwitter => BS_TWITTER,
+            #[cfg(feature = "BsTwitterX")]
+            BsIcon::BsTwitterX => BS_TWITTER_X,
             #[cfg(feature = "BsType")]
             BsIcon::BsType => BS_TYPE,
             #[cfg(feature = "BsTypeBold")]
@@ -37851,6 +39739,12 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsTypeH2 => BS_TYPE_H2,
             #[cfg(feature = "BsTypeH3")]
             BsIcon::BsTypeH3 => BS_TYPE_H3,
+            #[cfg(feature = "BsTypeH4")]
+            BsIcon::BsTypeH4 => BS_TYPE_H4,
+            #[cfg(feature = "BsTypeH5")]
+            BsIcon::BsTypeH5 => BS_TYPE_H5,
+            #[cfg(feature = "BsTypeH6")]
+            BsIcon::BsTypeH6 => BS_TYPE_H6,
             #[cfg(feature = "BsTypeItalic")]
             BsIcon::BsTypeItalic => BS_TYPE_ITALIC,
             #[cfg(feature = "BsTypeStrikethrough")]
@@ -37927,6 +39821,8 @@ impl From<BsIcon> for icondata_core::IconData {
             BsIcon::BsViewList => BS_VIEW_LIST,
             #[cfg(feature = "BsViewStacked")]
             BsIcon::BsViewStacked => BS_VIEW_STACKED,
+            #[cfg(feature = "BsVignette")]
+            BsIcon::BsVignette => BS_VIGNETTE,
             #[cfg(feature = "BsVimeo")]
             BsIcon::BsVimeo => BS_VIMEO,
             #[cfg(feature = "BsVinyl")]

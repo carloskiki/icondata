@@ -18,6 +18,8 @@ pub enum LuIcon {
     LuAccessibility,
     #[cfg(feature = "LuActivity")]
     LuActivity,
+    #[cfg(feature = "LuActivitySquare")]
+    LuActivitySquare,
     #[cfg(feature = "LuAirVent")]
     LuAirVent,
     #[cfg(feature = "LuAirplay")]
@@ -92,66 +94,150 @@ pub enum LuIcon {
     LuAlignVerticalSpaceAround,
     #[cfg(feature = "LuAlignVerticalSpaceBetween")]
     LuAlignVerticalSpaceBetween,
+    #[cfg(feature = "LuAmpersand")]
+    LuAmpersand,
+    #[cfg(feature = "LuAmpersands")]
+    LuAmpersands,
     #[cfg(feature = "LuAnchor")]
     LuAnchor,
     #[cfg(feature = "LuAngry")]
     LuAngry,
     #[cfg(feature = "LuAnnoyed")]
     LuAnnoyed,
+    #[cfg(feature = "LuAntenna")]
+    LuAntenna,
     #[cfg(feature = "LuAperture")]
     LuAperture,
+    #[cfg(feature = "LuAppWindow")]
+    LuAppWindow,
     #[cfg(feature = "LuApple")]
     LuApple,
     #[cfg(feature = "LuArchive")]
     LuArchive,
     #[cfg(feature = "LuArchiveRestore")]
     LuArchiveRestore,
+    #[cfg(feature = "LuAreaChart")]
+    LuAreaChart,
     #[cfg(feature = "LuArmchair")]
     LuArmchair,
     #[cfg(feature = "LuArrowBigDown")]
     LuArrowBigDown,
+    #[cfg(feature = "LuArrowBigDownDash")]
+    LuArrowBigDownDash,
     #[cfg(feature = "LuArrowBigLeft")]
     LuArrowBigLeft,
+    #[cfg(feature = "LuArrowBigLeftDash")]
+    LuArrowBigLeftDash,
     #[cfg(feature = "LuArrowBigRight")]
     LuArrowBigRight,
+    #[cfg(feature = "LuArrowBigRightDash")]
+    LuArrowBigRightDash,
     #[cfg(feature = "LuArrowBigUp")]
     LuArrowBigUp,
+    #[cfg(feature = "LuArrowBigUpDash")]
+    LuArrowBigUpDash,
     #[cfg(feature = "LuArrowDown")]
     LuArrowDown,
+    #[cfg(feature = "LuArrowDown01")]
+    LuArrowDown01,
+    #[cfg(feature = "LuArrowDown10")]
+    LuArrowDown10,
+    #[cfg(feature = "LuArrowDownAZ")]
+    LuArrowDownAZ,
     #[cfg(feature = "LuArrowDownCircle")]
     LuArrowDownCircle,
+    #[cfg(feature = "LuArrowDownFromLine")]
+    LuArrowDownFromLine,
     #[cfg(feature = "LuArrowDownLeft")]
     LuArrowDownLeft,
     #[cfg(feature = "LuArrowDownLeftFromCircle")]
     LuArrowDownLeftFromCircle,
+    #[cfg(feature = "LuArrowDownLeftSquare")]
+    LuArrowDownLeftSquare,
+    #[cfg(feature = "LuArrowDownNarrowWide")]
+    LuArrowDownNarrowWide,
     #[cfg(feature = "LuArrowDownRight")]
     LuArrowDownRight,
     #[cfg(feature = "LuArrowDownRightFromCircle")]
     LuArrowDownRightFromCircle,
+    #[cfg(feature = "LuArrowDownRightSquare")]
+    LuArrowDownRightSquare,
+    #[cfg(feature = "LuArrowDownSquare")]
+    LuArrowDownSquare,
+    #[cfg(feature = "LuArrowDownToDot")]
+    LuArrowDownToDot,
+    #[cfg(feature = "LuArrowDownToLine")]
+    LuArrowDownToLine,
+    #[cfg(feature = "LuArrowDownUp")]
+    LuArrowDownUp,
+    #[cfg(feature = "LuArrowDownWideNarrow")]
+    LuArrowDownWideNarrow,
+    #[cfg(feature = "LuArrowDownZA")]
+    LuArrowDownZA,
     #[cfg(feature = "LuArrowLeft")]
     LuArrowLeft,
     #[cfg(feature = "LuArrowLeftCircle")]
     LuArrowLeftCircle,
+    #[cfg(feature = "LuArrowLeftFromLine")]
+    LuArrowLeftFromLine,
     #[cfg(feature = "LuArrowLeftRight")]
     LuArrowLeftRight,
+    #[cfg(feature = "LuArrowLeftSquare")]
+    LuArrowLeftSquare,
+    #[cfg(feature = "LuArrowLeftToLine")]
+    LuArrowLeftToLine,
     #[cfg(feature = "LuArrowRight")]
     LuArrowRight,
     #[cfg(feature = "LuArrowRightCircle")]
     LuArrowRightCircle,
+    #[cfg(feature = "LuArrowRightFromLine")]
+    LuArrowRightFromLine,
+    #[cfg(feature = "LuArrowRightLeft")]
+    LuArrowRightLeft,
+    #[cfg(feature = "LuArrowRightSquare")]
+    LuArrowRightSquare,
+    #[cfg(feature = "LuArrowRightToLine")]
+    LuArrowRightToLine,
     #[cfg(feature = "LuArrowUp")]
     LuArrowUp,
+    #[cfg(feature = "LuArrowUp01")]
+    LuArrowUp01,
+    #[cfg(feature = "LuArrowUp10")]
+    LuArrowUp10,
+    #[cfg(feature = "LuArrowUpAZ")]
+    LuArrowUpAZ,
     #[cfg(feature = "LuArrowUpCircle")]
     LuArrowUpCircle,
     #[cfg(feature = "LuArrowUpDown")]
     LuArrowUpDown,
+    #[cfg(feature = "LuArrowUpFromDot")]
+    LuArrowUpFromDot,
+    #[cfg(feature = "LuArrowUpFromLine")]
+    LuArrowUpFromLine,
     #[cfg(feature = "LuArrowUpLeft")]
     LuArrowUpLeft,
     #[cfg(feature = "LuArrowUpLeftFromCircle")]
     LuArrowUpLeftFromCircle,
+    #[cfg(feature = "LuArrowUpLeftSquare")]
+    LuArrowUpLeftSquare,
+    #[cfg(feature = "LuArrowUpNarrowWide")]
+    LuArrowUpNarrowWide,
     #[cfg(feature = "LuArrowUpRight")]
     LuArrowUpRight,
     #[cfg(feature = "LuArrowUpRightFromCircle")]
     LuArrowUpRightFromCircle,
+    #[cfg(feature = "LuArrowUpRightSquare")]
+    LuArrowUpRightSquare,
+    #[cfg(feature = "LuArrowUpSquare")]
+    LuArrowUpSquare,
+    #[cfg(feature = "LuArrowUpToLine")]
+    LuArrowUpToLine,
+    #[cfg(feature = "LuArrowUpWideNarrow")]
+    LuArrowUpWideNarrow,
+    #[cfg(feature = "LuArrowUpZA")]
+    LuArrowUpZA,
+    #[cfg(feature = "LuArrowsUpFromLine")]
+    LuArrowsUpFromLine,
     #[cfg(feature = "LuAsterisk")]
     LuAsterisk,
     #[cfg(feature = "LuAtSign")]
@@ -168,6 +254,26 @@ pub enum LuIcon {
     LuBaby,
     #[cfg(feature = "LuBackpack")]
     LuBackpack,
+    #[cfg(feature = "LuBadge")]
+    LuBadge,
+    #[cfg(feature = "LuBadgeAlert")]
+    LuBadgeAlert,
+    #[cfg(feature = "LuBadgeCheck")]
+    LuBadgeCheck,
+    #[cfg(feature = "LuBadgeDollarSign")]
+    LuBadgeDollarSign,
+    #[cfg(feature = "LuBadgeHelp")]
+    LuBadgeHelp,
+    #[cfg(feature = "LuBadgeInfo")]
+    LuBadgeInfo,
+    #[cfg(feature = "LuBadgeMinus")]
+    LuBadgeMinus,
+    #[cfg(feature = "LuBadgePercent")]
+    LuBadgePercent,
+    #[cfg(feature = "LuBadgePlus")]
+    LuBadgePlus,
+    #[cfg(feature = "LuBadgeX")]
+    LuBadgeX,
     #[cfg(feature = "LuBaggageClaim")]
     LuBaggageClaim,
     #[cfg(feature = "LuBan")]
@@ -184,8 +290,12 @@ pub enum LuIcon {
     LuBarChart3,
     #[cfg(feature = "LuBarChart4")]
     LuBarChart4,
+    #[cfg(feature = "LuBarChartBig")]
+    LuBarChartBig,
     #[cfg(feature = "LuBarChartHorizontal")]
     LuBarChartHorizontal,
+    #[cfg(feature = "LuBarChartHorizontalBig")]
+    LuBarChartHorizontalBig,
     #[cfg(feature = "LuBaseline")]
     LuBaseline,
     #[cfg(feature = "LuBath")]
@@ -220,6 +330,8 @@ pub enum LuIcon {
     LuBeer,
     #[cfg(feature = "LuBell")]
     LuBell,
+    #[cfg(feature = "LuBellDot")]
+    LuBellDot,
     #[cfg(feature = "LuBellMinus")]
     LuBellMinus,
     #[cfg(feature = "LuBellOff")]
@@ -232,12 +344,16 @@ pub enum LuIcon {
     LuBike,
     #[cfg(feature = "LuBinary")]
     LuBinary,
+    #[cfg(feature = "LuBiohazard")]
+    LuBiohazard,
     #[cfg(feature = "LuBird")]
     LuBird,
     #[cfg(feature = "LuBitcoin")]
     LuBitcoin,
     #[cfg(feature = "LuBlinds")]
     LuBlinds,
+    #[cfg(feature = "LuBlocks")]
+    LuBlocks,
     #[cfg(feature = "LuBluetooth")]
     LuBluetooth,
     #[cfg(feature = "LuBluetoothConnected")]
@@ -276,6 +392,8 @@ pub enum LuIcon {
     LuBookTemplate,
     #[cfg(feature = "LuBookUp")]
     LuBookUp,
+    #[cfg(feature = "LuBookUp2")]
+    LuBookUp2,
     #[cfg(feature = "LuBookX")]
     LuBookX,
     #[cfg(feature = "LuBookmark")]
@@ -284,6 +402,8 @@ pub enum LuIcon {
     LuBookmarkMinus,
     #[cfg(feature = "LuBookmarkPlus")]
     LuBookmarkPlus,
+    #[cfg(feature = "LuBoomBox")]
+    LuBoomBox,
     #[cfg(feature = "LuBot")]
     LuBot,
     #[cfg(feature = "LuBox")]
@@ -292,6 +412,10 @@ pub enum LuIcon {
     LuBoxSelect,
     #[cfg(feature = "LuBoxes")]
     LuBoxes,
+    #[cfg(feature = "LuBraces")]
+    LuBraces,
+    #[cfg(feature = "LuBrackets")]
+    LuBrackets,
     #[cfg(feature = "LuBrain")]
     LuBrain,
     #[cfg(feature = "LuBrainCircuit")]
@@ -300,6 +424,8 @@ pub enum LuIcon {
     LuBrainCog,
     #[cfg(feature = "LuBriefcase")]
     LuBriefcase,
+    #[cfg(feature = "LuBringToFront")]
+    LuBringToFront,
     #[cfg(feature = "LuBrush")]
     LuBrush,
     #[cfg(feature = "LuBug")]
@@ -310,8 +436,16 @@ pub enum LuIcon {
     LuBuilding2,
     #[cfg(feature = "LuBus")]
     LuBus,
+    #[cfg(feature = "LuBusFront")]
+    LuBusFront,
+    #[cfg(feature = "LuCable")]
+    LuCable,
+    #[cfg(feature = "LuCableCar")]
+    LuCableCar,
     #[cfg(feature = "LuCake")]
     LuCake,
+    #[cfg(feature = "LuCakeSlice")]
+    LuCakeSlice,
     #[cfg(feature = "LuCalculator")]
     LuCalculator,
     #[cfg(feature = "LuCalendar")]
@@ -344,12 +478,20 @@ pub enum LuIcon {
     LuCamera,
     #[cfg(feature = "LuCameraOff")]
     LuCameraOff,
+    #[cfg(feature = "LuCandlestickChart")]
+    LuCandlestickChart,
     #[cfg(feature = "LuCandy")]
     LuCandy,
+    #[cfg(feature = "LuCandyCane")]
+    LuCandyCane,
     #[cfg(feature = "LuCandyOff")]
     LuCandyOff,
     #[cfg(feature = "LuCar")]
     LuCar,
+    #[cfg(feature = "LuCarFront")]
+    LuCarFront,
+    #[cfg(feature = "LuCarTaxiFront")]
+    LuCarTaxiFront,
     #[cfg(feature = "LuCarrot")]
     LuCarrot,
     #[cfg(feature = "LuCaseLower")]
@@ -358,6 +500,8 @@ pub enum LuIcon {
     LuCaseSensitive,
     #[cfg(feature = "LuCaseUpper")]
     LuCaseUpper,
+    #[cfg(feature = "LuCassetteTape")]
+    LuCassetteTape,
     #[cfg(feature = "LuCast")]
     LuCast,
     #[cfg(feature = "LuCastle")]
@@ -380,6 +524,8 @@ pub enum LuIcon {
     LuCherry,
     #[cfg(feature = "LuChevronDown")]
     LuChevronDown,
+    #[cfg(feature = "LuChevronDownCircle")]
+    LuChevronDownCircle,
     #[cfg(feature = "LuChevronDownSquare")]
     LuChevronDownSquare,
     #[cfg(feature = "LuChevronFirst")]
@@ -388,14 +534,20 @@ pub enum LuIcon {
     LuChevronLast,
     #[cfg(feature = "LuChevronLeft")]
     LuChevronLeft,
+    #[cfg(feature = "LuChevronLeftCircle")]
+    LuChevronLeftCircle,
     #[cfg(feature = "LuChevronLeftSquare")]
     LuChevronLeftSquare,
     #[cfg(feature = "LuChevronRight")]
     LuChevronRight,
+    #[cfg(feature = "LuChevronRightCircle")]
+    LuChevronRightCircle,
     #[cfg(feature = "LuChevronRightSquare")]
     LuChevronRightSquare,
     #[cfg(feature = "LuChevronUp")]
     LuChevronUp,
+    #[cfg(feature = "LuChevronUpCircle")]
+    LuChevronUpCircle,
     #[cfg(feature = "LuChevronUpSquare")]
     LuChevronUpSquare,
     #[cfg(feature = "LuChevronsDown")]
@@ -424,8 +576,14 @@ pub enum LuIcon {
     LuCigaretteOff,
     #[cfg(feature = "LuCircle")]
     LuCircle,
+    #[cfg(feature = "LuCircleDashed")]
+    LuCircleDashed,
+    #[cfg(feature = "LuCircleDollarSign")]
+    LuCircleDollarSign,
     #[cfg(feature = "LuCircleDot")]
     LuCircleDot,
+    #[cfg(feature = "LuCircleDotDashed")]
+    LuCircleDotDashed,
     #[cfg(feature = "LuCircleEllipsis")]
     LuCircleEllipsis,
     #[cfg(feature = "LuCircleEqual")]
@@ -518,6 +676,8 @@ pub enum LuIcon {
     LuCloudy,
     #[cfg(feature = "LuClover")]
     LuClover,
+    #[cfg(feature = "LuClub")]
+    LuClub,
     #[cfg(feature = "LuCode")]
     LuCode,
     #[cfg(feature = "LuCode2")]
@@ -534,18 +694,26 @@ pub enum LuIcon {
     LuCoins,
     #[cfg(feature = "LuColumns")]
     LuColumns,
+    #[cfg(feature = "LuCombine")]
+    LuCombine,
     #[cfg(feature = "LuCommand")]
     LuCommand,
     #[cfg(feature = "LuCompass")]
     LuCompass,
     #[cfg(feature = "LuComponent")]
     LuComponent,
+    #[cfg(feature = "LuComputer")]
+    LuComputer,
     #[cfg(feature = "LuConciergeBell")]
     LuConciergeBell,
     #[cfg(feature = "LuConstruction")]
     LuConstruction,
     #[cfg(feature = "LuContact")]
     LuContact,
+    #[cfg(feature = "LuContact2")]
+    LuContact2,
+    #[cfg(feature = "LuContainer")]
+    LuContainer,
     #[cfg(feature = "LuContrast")]
     LuContrast,
     #[cfg(feature = "LuCookie")]
@@ -600,8 +768,6 @@ pub enum LuIcon {
     LuCrown,
     #[cfg(feature = "LuCupSoda")]
     LuCupSoda,
-    #[cfg(feature = "LuCurlyBraces")]
-    LuCurlyBraces,
     #[cfg(feature = "LuCurrency")]
     LuCurrency,
     #[cfg(feature = "LuDatabase")]
@@ -610,6 +776,8 @@ pub enum LuIcon {
     LuDatabaseBackup,
     #[cfg(feature = "LuDelete")]
     LuDelete,
+    #[cfg(feature = "LuDessert")]
+    LuDessert,
     #[cfg(feature = "LuDiamond")]
     LuDiamond,
     #[cfg(feature = "LuDice1")]
@@ -632,6 +800,8 @@ pub enum LuIcon {
     LuDisc,
     #[cfg(feature = "LuDisc2")]
     LuDisc2,
+    #[cfg(feature = "LuDisc3")]
+    LuDisc3,
     #[cfg(feature = "LuDivide")]
     LuDivide,
     #[cfg(feature = "LuDivideCircle")]
@@ -646,10 +816,14 @@ pub enum LuIcon {
     LuDog,
     #[cfg(feature = "LuDollarSign")]
     LuDollarSign,
+    #[cfg(feature = "LuDonut")]
+    LuDonut,
     #[cfg(feature = "LuDoorClosed")]
     LuDoorClosed,
     #[cfg(feature = "LuDoorOpen")]
     LuDoorOpen,
+    #[cfg(feature = "LuDot")]
+    LuDot,
     #[cfg(feature = "LuDownload")]
     LuDownload,
     #[cfg(feature = "LuDownloadCloud")]
@@ -668,12 +842,6 @@ pub enum LuIcon {
     LuEar,
     #[cfg(feature = "LuEarOff")]
     LuEarOff,
-    #[cfg(feature = "LuEdit")]
-    LuEdit,
-    #[cfg(feature = "LuEdit2")]
-    LuEdit2,
-    #[cfg(feature = "LuEdit3")]
-    LuEdit3,
     #[cfg(feature = "LuEgg")]
     LuEgg,
     #[cfg(feature = "LuEggFried")]
@@ -706,6 +874,8 @@ pub enum LuIcon {
     LuFastForward,
     #[cfg(feature = "LuFeather")]
     LuFeather,
+    #[cfg(feature = "LuFerrisWheel")]
+    LuFerrisWheel,
     #[cfg(feature = "LuFigma")]
     LuFigma,
     #[cfg(feature = "LuFile")]
@@ -736,6 +906,8 @@ pub enum LuIcon {
     LuFileClock,
     #[cfg(feature = "LuFileCode")]
     LuFileCode,
+    #[cfg(feature = "LuFileCode2")]
+    LuFileCode2,
     #[cfg(feature = "LuFileCog")]
     LuFileCog,
     #[cfg(feature = "LuFileCog2")]
@@ -792,6 +964,8 @@ pub enum LuIcon {
     LuFileSignature,
     #[cfg(feature = "LuFileSpreadsheet")]
     LuFileSpreadsheet,
+    #[cfg(feature = "LuFileStack")]
+    LuFileStack,
     #[cfg(feature = "LuFileSymlink")]
     LuFileSymlink,
     #[cfg(feature = "LuFileTerminal")]
@@ -832,6 +1006,8 @@ pub enum LuIcon {
     LuFish,
     #[cfg(feature = "LuFishOff")]
     LuFishOff,
+    #[cfg(feature = "LuFishSymbol")]
+    LuFishSymbol,
     #[cfg(feature = "LuFlag")]
     LuFlag,
     #[cfg(feature = "LuFlagOff")]
@@ -866,6 +1042,10 @@ pub enum LuIcon {
     LuFlower2,
     #[cfg(feature = "LuFocus")]
     LuFocus,
+    #[cfg(feature = "LuFoldHorizontal")]
+    LuFoldHorizontal,
+    #[cfg(feature = "LuFoldVertical")]
+    LuFoldVertical,
     #[cfg(feature = "LuFolder")]
     LuFolder,
     #[cfg(feature = "LuFolderArchive")]
@@ -880,6 +1060,8 @@ pub enum LuIcon {
     LuFolderCog,
     #[cfg(feature = "LuFolderCog2")]
     LuFolderCog2,
+    #[cfg(feature = "LuFolderDot")]
+    LuFolderDot,
     #[cfg(feature = "LuFolderDown")]
     LuFolderDown,
     #[cfg(feature = "LuFolderEdit")]
@@ -892,6 +1074,8 @@ pub enum LuIcon {
     LuFolderHeart,
     #[cfg(feature = "LuFolderInput")]
     LuFolderInput,
+    #[cfg(feature = "LuFolderKanban")]
+    LuFolderKanban,
     #[cfg(feature = "LuFolderKey")]
     LuFolderKey,
     #[cfg(feature = "LuFolderLock")]
@@ -900,16 +1084,22 @@ pub enum LuIcon {
     LuFolderMinus,
     #[cfg(feature = "LuFolderOpen")]
     LuFolderOpen,
+    #[cfg(feature = "LuFolderOpenDot")]
+    LuFolderOpenDot,
     #[cfg(feature = "LuFolderOutput")]
     LuFolderOutput,
     #[cfg(feature = "LuFolderPlus")]
     LuFolderPlus,
+    #[cfg(feature = "LuFolderRoot")]
+    LuFolderRoot,
     #[cfg(feature = "LuFolderSearch")]
     LuFolderSearch,
     #[cfg(feature = "LuFolderSearch2")]
     LuFolderSearch2,
     #[cfg(feature = "LuFolderSymlink")]
     LuFolderSymlink,
+    #[cfg(feature = "LuFolderSync")]
+    LuFolderSync,
     #[cfg(feature = "LuFolderTree")]
     LuFolderTree,
     #[cfg(feature = "LuFolderUp")]
@@ -936,12 +1126,28 @@ pub enum LuIcon {
     LuFuel,
     #[cfg(feature = "LuFunctionSquare")]
     LuFunctionSquare,
+    #[cfg(feature = "LuGalleryHorizontal")]
+    LuGalleryHorizontal,
+    #[cfg(feature = "LuGalleryHorizontalEnd")]
+    LuGalleryHorizontalEnd,
+    #[cfg(feature = "LuGalleryThumbnails")]
+    LuGalleryThumbnails,
+    #[cfg(feature = "LuGalleryVertical")]
+    LuGalleryVertical,
+    #[cfg(feature = "LuGalleryVerticalEnd")]
+    LuGalleryVerticalEnd,
     #[cfg(feature = "LuGamepad")]
     LuGamepad,
     #[cfg(feature = "LuGamepad2")]
     LuGamepad2,
+    #[cfg(feature = "LuGanttChart")]
+    LuGanttChart,
+    #[cfg(feature = "LuGanttChartSquare")]
+    LuGanttChartSquare,
     #[cfg(feature = "LuGauge")]
     LuGauge,
+    #[cfg(feature = "LuGaugeCircle")]
+    LuGaugeCircle,
     #[cfg(feature = "LuGavel")]
     LuGavel,
     #[cfg(feature = "LuGem")]
@@ -980,20 +1186,26 @@ pub enum LuIcon {
     LuGlobe,
     #[cfg(feature = "LuGlobe2")]
     LuGlobe2,
+    #[cfg(feature = "LuGoal")]
+    LuGoal,
     #[cfg(feature = "LuGrab")]
     LuGrab,
     #[cfg(feature = "LuGraduationCap")]
     LuGraduationCap,
     #[cfg(feature = "LuGrape")]
     LuGrape,
-    #[cfg(feature = "LuGrid")]
-    LuGrid,
+    #[cfg(feature = "LuGrid2x2")]
+    LuGrid2x2,
+    #[cfg(feature = "LuGrid3x3")]
+    LuGrid3x3,
     #[cfg(feature = "LuGrip")]
     LuGrip,
     #[cfg(feature = "LuGripHorizontal")]
     LuGripHorizontal,
     #[cfg(feature = "LuGripVertical")]
     LuGripVertical,
+    #[cfg(feature = "LuGroup")]
+    LuGroup,
     #[cfg(feature = "LuHammer")]
     LuHammer,
     #[cfg(feature = "LuHand")]
@@ -1002,12 +1214,18 @@ pub enum LuIcon {
     LuHandMetal,
     #[cfg(feature = "LuHardDrive")]
     LuHardDrive,
+    #[cfg(feature = "LuHardDriveDownload")]
+    LuHardDriveDownload,
+    #[cfg(feature = "LuHardDriveUpload")]
+    LuHardDriveUpload,
     #[cfg(feature = "LuHardHat")]
     LuHardHat,
     #[cfg(feature = "LuHash")]
     LuHash,
     #[cfg(feature = "LuHaze")]
     LuHaze,
+    #[cfg(feature = "LuHdmiPort")]
+    LuHdmiPort,
     #[cfg(feature = "LuHeading")]
     LuHeading,
     #[cfg(feature = "LuHeading1")]
@@ -1084,12 +1302,26 @@ pub enum LuIcon {
     LuInstagram,
     #[cfg(feature = "LuItalic")]
     LuItalic,
+    #[cfg(feature = "LuIterationCcw")]
+    LuIterationCcw,
+    #[cfg(feature = "LuIterationCw")]
+    LuIterationCw,
     #[cfg(feature = "LuJapaneseYen")]
     LuJapaneseYen,
     #[cfg(feature = "LuJoystick")]
     LuJoystick,
+    #[cfg(feature = "LuKanban")]
+    LuKanban,
+    #[cfg(feature = "LuKanbanSquare")]
+    LuKanbanSquare,
+    #[cfg(feature = "LuKanbanSquareDashed")]
+    LuKanbanSquareDashed,
     #[cfg(feature = "LuKey")]
     LuKey,
+    #[cfg(feature = "LuKeyRound")]
+    LuKeyRound,
+    #[cfg(feature = "LuKeySquare")]
+    LuKeySquare,
     #[cfg(feature = "LuKeyboard")]
     LuKeyboard,
     #[cfg(feature = "LuLamp")]
@@ -1128,14 +1360,22 @@ pub enum LuIcon {
     LuLayoutGrid,
     #[cfg(feature = "LuLayoutList")]
     LuLayoutList,
+    #[cfg(feature = "LuLayoutPanelLeft")]
+    LuLayoutPanelLeft,
+    #[cfg(feature = "LuLayoutPanelTop")]
+    LuLayoutPanelTop,
     #[cfg(feature = "LuLayoutTemplate")]
     LuLayoutTemplate,
     #[cfg(feature = "LuLeaf")]
     LuLeaf,
+    #[cfg(feature = "LuLeafyGreen")]
+    LuLeafyGreen,
     #[cfg(feature = "LuLibrary")]
     LuLibrary,
     #[cfg(feature = "LuLifeBuoy")]
     LuLifeBuoy,
+    #[cfg(feature = "LuLigature")]
+    LuLigature,
     #[cfg(feature = "LuLightbulb")]
     LuLightbulb,
     #[cfg(feature = "LuLightbulbOff")]
@@ -1156,6 +1396,8 @@ pub enum LuIcon {
     LuListChecks,
     #[cfg(feature = "LuListEnd")]
     LuListEnd,
+    #[cfg(feature = "LuListFilter")]
+    LuListFilter,
     #[cfg(feature = "LuListMinus")]
     LuListMinus,
     #[cfg(feature = "LuListMusic")]
@@ -1164,8 +1406,12 @@ pub enum LuIcon {
     LuListOrdered,
     #[cfg(feature = "LuListPlus")]
     LuListPlus,
+    #[cfg(feature = "LuListRestart")]
+    LuListRestart,
     #[cfg(feature = "LuListStart")]
     LuListStart,
+    #[cfg(feature = "LuListTodo")]
+    LuListTodo,
     #[cfg(feature = "LuListTree")]
     LuListTree,
     #[cfg(feature = "LuListVideo")]
@@ -1188,8 +1434,12 @@ pub enum LuIcon {
     LuLogIn,
     #[cfg(feature = "LuLogOut")]
     LuLogOut,
+    #[cfg(feature = "LuLollipop")]
+    LuLollipop,
     #[cfg(feature = "LuLuggage")]
     LuLuggage,
+    #[cfg(feature = "LuMSquare")]
+    LuMSquare,
     #[cfg(feature = "LuMagnet")]
     LuMagnet,
     #[cfg(feature = "LuMail")]
@@ -1234,8 +1484,14 @@ pub enum LuIcon {
     LuMegaphoneOff,
     #[cfg(feature = "LuMeh")]
     LuMeh,
+    #[cfg(feature = "LuMemoryStick")]
+    LuMemoryStick,
     #[cfg(feature = "LuMenu")]
     LuMenu,
+    #[cfg(feature = "LuMenuSquare")]
+    LuMenuSquare,
+    #[cfg(feature = "LuMerge")]
+    LuMerge,
     #[cfg(feature = "LuMessageCircle")]
     LuMessageCircle,
     #[cfg(feature = "LuMessageSquare")]
@@ -1274,14 +1530,32 @@ pub enum LuIcon {
     LuMinusSquare,
     #[cfg(feature = "LuMonitor")]
     LuMonitor,
+    #[cfg(feature = "LuMonitorCheck")]
+    LuMonitorCheck,
+    #[cfg(feature = "LuMonitorDot")]
+    LuMonitorDot,
+    #[cfg(feature = "LuMonitorDown")]
+    LuMonitorDown,
     #[cfg(feature = "LuMonitorOff")]
     LuMonitorOff,
+    #[cfg(feature = "LuMonitorPause")]
+    LuMonitorPause,
+    #[cfg(feature = "LuMonitorPlay")]
+    LuMonitorPlay,
     #[cfg(feature = "LuMonitorSmartphone")]
     LuMonitorSmartphone,
     #[cfg(feature = "LuMonitorSpeaker")]
     LuMonitorSpeaker,
+    #[cfg(feature = "LuMonitorStop")]
+    LuMonitorStop,
+    #[cfg(feature = "LuMonitorUp")]
+    LuMonitorUp,
+    #[cfg(feature = "LuMonitorX")]
+    LuMonitorX,
     #[cfg(feature = "LuMoon")]
     LuMoon,
+    #[cfg(feature = "LuMoonStar")]
+    LuMoonStar,
     #[cfg(feature = "LuMoreHorizontal")]
     LuMoreHorizontal,
     #[cfg(feature = "LuMoreVertical")]
@@ -1306,8 +1580,24 @@ pub enum LuIcon {
     LuMoveDiagonal,
     #[cfg(feature = "LuMoveDiagonal2")]
     LuMoveDiagonal2,
+    #[cfg(feature = "LuMoveDown")]
+    LuMoveDown,
+    #[cfg(feature = "LuMoveDownLeft")]
+    LuMoveDownLeft,
+    #[cfg(feature = "LuMoveDownRight")]
+    LuMoveDownRight,
     #[cfg(feature = "LuMoveHorizontal")]
     LuMoveHorizontal,
+    #[cfg(feature = "LuMoveLeft")]
+    LuMoveLeft,
+    #[cfg(feature = "LuMoveRight")]
+    LuMoveRight,
+    #[cfg(feature = "LuMoveUp")]
+    LuMoveUp,
+    #[cfg(feature = "LuMoveUpLeft")]
+    LuMoveUpLeft,
+    #[cfg(feature = "LuMoveUpRight")]
+    LuMoveUpRight,
     #[cfg(feature = "LuMoveVertical")]
     LuMoveVertical,
     #[cfg(feature = "LuMusic")]
@@ -1370,12 +1660,48 @@ pub enum LuIcon {
     LuPalette,
     #[cfg(feature = "LuPalmtree")]
     LuPalmtree,
+    #[cfg(feature = "LuPanelBottom")]
+    LuPanelBottom,
+    #[cfg(feature = "LuPanelBottomClose")]
+    LuPanelBottomClose,
+    #[cfg(feature = "LuPanelBottomInactive")]
+    LuPanelBottomInactive,
+    #[cfg(feature = "LuPanelBottomOpen")]
+    LuPanelBottomOpen,
+    #[cfg(feature = "LuPanelLeft")]
+    LuPanelLeft,
+    #[cfg(feature = "LuPanelLeftClose")]
+    LuPanelLeftClose,
+    #[cfg(feature = "LuPanelLeftInactive")]
+    LuPanelLeftInactive,
+    #[cfg(feature = "LuPanelLeftOpen")]
+    LuPanelLeftOpen,
+    #[cfg(feature = "LuPanelRight")]
+    LuPanelRight,
+    #[cfg(feature = "LuPanelRightClose")]
+    LuPanelRightClose,
+    #[cfg(feature = "LuPanelRightInactive")]
+    LuPanelRightInactive,
+    #[cfg(feature = "LuPanelRightOpen")]
+    LuPanelRightOpen,
+    #[cfg(feature = "LuPanelTop")]
+    LuPanelTop,
+    #[cfg(feature = "LuPanelTopClose")]
+    LuPanelTopClose,
+    #[cfg(feature = "LuPanelTopInactive")]
+    LuPanelTopInactive,
+    #[cfg(feature = "LuPanelTopOpen")]
+    LuPanelTopOpen,
     #[cfg(feature = "LuPaperclip")]
     LuPaperclip,
+    #[cfg(feature = "LuParentheses")]
+    LuParentheses,
     #[cfg(feature = "LuParkingCircle")]
     LuParkingCircle,
     #[cfg(feature = "LuParkingCircleOff")]
     LuParkingCircleOff,
+    #[cfg(feature = "LuParkingMeter")]
+    LuParkingMeter,
     #[cfg(feature = "LuParkingSquare")]
     LuParkingSquare,
     #[cfg(feature = "LuParkingSquareOff")]
@@ -1388,10 +1714,24 @@ pub enum LuIcon {
     LuPauseCircle,
     #[cfg(feature = "LuPauseOctagon")]
     LuPauseOctagon,
+    #[cfg(feature = "LuPawPrint")]
+    LuPawPrint,
+    #[cfg(feature = "LuPcCase")]
+    LuPcCase,
+    #[cfg(feature = "LuPen")]
+    LuPen,
+    #[cfg(feature = "LuPenLine")]
+    LuPenLine,
+    #[cfg(feature = "LuPenSquare")]
+    LuPenSquare,
     #[cfg(feature = "LuPenTool")]
     LuPenTool,
     #[cfg(feature = "LuPencil")]
     LuPencil,
+    #[cfg(feature = "LuPencilLine")]
+    LuPencilLine,
+    #[cfg(feature = "LuPencilRuler")]
+    LuPencilRuler,
     #[cfg(feature = "LuPercent")]
     LuPercent,
     #[cfg(feature = "LuPersonStanding")]
@@ -1410,6 +1750,10 @@ pub enum LuIcon {
     LuPhoneOff,
     #[cfg(feature = "LuPhoneOutgoing")]
     LuPhoneOutgoing,
+    #[cfg(feature = "LuPi")]
+    LuPi,
+    #[cfg(feature = "LuPiSquare")]
+    LuPiSquare,
     #[cfg(feature = "LuPictureInPicture")]
     LuPictureInPicture,
     #[cfg(feature = "LuPictureInPicture2")]
@@ -1420,6 +1764,8 @@ pub enum LuIcon {
     LuPiggyBank,
     #[cfg(feature = "LuPilcrow")]
     LuPilcrow,
+    #[cfg(feature = "LuPilcrowSquare")]
+    LuPilcrowSquare,
     #[cfg(feature = "LuPill")]
     LuPill,
     #[cfg(feature = "LuPin")]
@@ -1440,12 +1786,16 @@ pub enum LuIcon {
     LuPlay,
     #[cfg(feature = "LuPlayCircle")]
     LuPlayCircle,
+    #[cfg(feature = "LuPlaySquare")]
+    LuPlaySquare,
     #[cfg(feature = "LuPlug")]
     LuPlug,
     #[cfg(feature = "LuPlug2")]
     LuPlug2,
     #[cfg(feature = "LuPlugZap")]
     LuPlugZap,
+    #[cfg(feature = "LuPlugZap2")]
+    LuPlugZap2,
     #[cfg(feature = "LuPlus")]
     LuPlus,
     #[cfg(feature = "LuPlusCircle")]
@@ -1454,32 +1804,54 @@ pub enum LuIcon {
     LuPlusSquare,
     #[cfg(feature = "LuPocket")]
     LuPocket,
+    #[cfg(feature = "LuPocketKnife")]
+    LuPocketKnife,
     #[cfg(feature = "LuPodcast")]
     LuPodcast,
     #[cfg(feature = "LuPointer")]
     LuPointer,
+    #[cfg(feature = "LuPopcorn")]
+    LuPopcorn,
+    #[cfg(feature = "LuPopsicle")]
+    LuPopsicle,
     #[cfg(feature = "LuPoundSterling")]
     LuPoundSterling,
     #[cfg(feature = "LuPower")]
     LuPower,
     #[cfg(feature = "LuPowerOff")]
     LuPowerOff,
+    #[cfg(feature = "LuPresentation")]
+    LuPresentation,
     #[cfg(feature = "LuPrinter")]
     LuPrinter,
+    #[cfg(feature = "LuProjector")]
+    LuProjector,
     #[cfg(feature = "LuPuzzle")]
     LuPuzzle,
     #[cfg(feature = "LuQrCode")]
     LuQrCode,
     #[cfg(feature = "LuQuote")]
     LuQuote,
+    #[cfg(feature = "LuRabbit")]
+    LuRabbit,
+    #[cfg(feature = "LuRadar")]
+    LuRadar,
+    #[cfg(feature = "LuRadiation")]
+    LuRadiation,
     #[cfg(feature = "LuRadio")]
     LuRadio,
     #[cfg(feature = "LuRadioReceiver")]
     LuRadioReceiver,
     #[cfg(feature = "LuRadioTower")]
     LuRadioTower,
+    #[cfg(feature = "LuRailSymbol")]
+    LuRailSymbol,
+    #[cfg(feature = "LuRainbow")]
+    LuRainbow,
     #[cfg(feature = "LuRat")]
     LuRat,
+    #[cfg(feature = "LuRatio")]
+    LuRatio,
     #[cfg(feature = "LuReceipt")]
     LuReceipt,
     #[cfg(feature = "LuRectangleHorizontal")]
@@ -1492,10 +1864,16 @@ pub enum LuIcon {
     LuRedo,
     #[cfg(feature = "LuRedo2")]
     LuRedo2,
+    #[cfg(feature = "LuRedoDot")]
+    LuRedoDot,
     #[cfg(feature = "LuRefreshCcw")]
     LuRefreshCcw,
+    #[cfg(feature = "LuRefreshCcwDot")]
+    LuRefreshCcwDot,
     #[cfg(feature = "LuRefreshCw")]
     LuRefreshCw,
+    #[cfg(feature = "LuRefreshCwOff")]
+    LuRefreshCwOff,
     #[cfg(feature = "LuRefrigerator")]
     LuRefrigerator,
     #[cfg(feature = "LuRegex")]
@@ -1506,6 +1884,8 @@ pub enum LuIcon {
     LuRepeat,
     #[cfg(feature = "LuRepeat1")]
     LuRepeat1,
+    #[cfg(feature = "LuRepeat2")]
+    LuRepeat2,
     #[cfg(feature = "LuReplace")]
     LuReplace,
     #[cfg(feature = "LuReplaceAll")]
@@ -1520,6 +1900,8 @@ pub enum LuIcon {
     LuRocket,
     #[cfg(feature = "LuRockingChair")]
     LuRockingChair,
+    #[cfg(feature = "LuRollerCoaster")]
+    LuRollerCoaster,
     #[cfg(feature = "LuRotate3d")]
     LuRotate3d,
     #[cfg(feature = "LuRotateCcw")]
@@ -1528,6 +1910,8 @@ pub enum LuIcon {
     LuRotateCw,
     #[cfg(feature = "LuRouter")]
     LuRouter,
+    #[cfg(feature = "LuRows")]
+    LuRows,
     #[cfg(feature = "LuRss")]
     LuRss,
     #[cfg(feature = "LuRuler")]
@@ -1540,6 +1924,10 @@ pub enum LuIcon {
     LuSalad,
     #[cfg(feature = "LuSandwich")]
     LuSandwich,
+    #[cfg(feature = "LuSatellite")]
+    LuSatellite,
+    #[cfg(feature = "LuSatelliteDish")]
+    LuSatelliteDish,
     #[cfg(feature = "LuSave")]
     LuSave,
     #[cfg(feature = "LuSaveAll")]
@@ -1556,22 +1944,44 @@ pub enum LuIcon {
     LuScanFace,
     #[cfg(feature = "LuScanLine")]
     LuScanLine,
+    #[cfg(feature = "LuScatterChart")]
+    LuScatterChart,
     #[cfg(feature = "LuSchool")]
     LuSchool,
     #[cfg(feature = "LuSchool2")]
     LuSchool2,
     #[cfg(feature = "LuScissors")]
     LuScissors,
+    #[cfg(feature = "LuScissorsLineDashed")]
+    LuScissorsLineDashed,
+    #[cfg(feature = "LuScissorsSquare")]
+    LuScissorsSquare,
+    #[cfg(feature = "LuScissorsSquareDashedBottom")]
+    LuScissorsSquareDashedBottom,
     #[cfg(feature = "LuScreenShare")]
     LuScreenShare,
     #[cfg(feature = "LuScreenShareOff")]
     LuScreenShareOff,
     #[cfg(feature = "LuScroll")]
     LuScroll,
+    #[cfg(feature = "LuScrollText")]
+    LuScrollText,
     #[cfg(feature = "LuSearch")]
     LuSearch,
+    #[cfg(feature = "LuSearchCheck")]
+    LuSearchCheck,
+    #[cfg(feature = "LuSearchCode")]
+    LuSearchCode,
+    #[cfg(feature = "LuSearchSlash")]
+    LuSearchSlash,
+    #[cfg(feature = "LuSearchX")]
+    LuSearchX,
     #[cfg(feature = "LuSend")]
     LuSend,
+    #[cfg(feature = "LuSendHorizonal")]
+    LuSendHorizonal,
+    #[cfg(feature = "LuSendToBack")]
+    LuSendToBack,
     #[cfg(feature = "LuSeparatorHorizontal")]
     LuSeparatorHorizontal,
     #[cfg(feature = "LuSeparatorVertical")]
@@ -1588,12 +1998,16 @@ pub enum LuIcon {
     LuSettings,
     #[cfg(feature = "LuSettings2")]
     LuSettings2,
+    #[cfg(feature = "LuShapes")]
+    LuShapes,
     #[cfg(feature = "LuShare")]
     LuShare,
     #[cfg(feature = "LuShare2")]
     LuShare2,
     #[cfg(feature = "LuSheet")]
     LuSheet,
+    #[cfg(feature = "LuShell")]
+    LuShell,
     #[cfg(feature = "LuShield")]
     LuShield,
     #[cfg(feature = "LuShieldAlert")]
@@ -1608,10 +2022,14 @@ pub enum LuIcon {
     LuShieldQuestion,
     #[cfg(feature = "LuShip")]
     LuShip,
+    #[cfg(feature = "LuShipWheel")]
+    LuShipWheel,
     #[cfg(feature = "LuShirt")]
     LuShirt,
     #[cfg(feature = "LuShoppingBag")]
     LuShoppingBag,
+    #[cfg(feature = "LuShoppingBasket")]
+    LuShoppingBasket,
     #[cfg(feature = "LuShoppingCart")]
     LuShoppingCart,
     #[cfg(feature = "LuShovel")]
@@ -1624,14 +2042,10 @@ pub enum LuIcon {
     LuShrub,
     #[cfg(feature = "LuShuffle")]
     LuShuffle,
-    #[cfg(feature = "LuSidebar")]
-    LuSidebar,
-    #[cfg(feature = "LuSidebarClose")]
-    LuSidebarClose,
-    #[cfg(feature = "LuSidebarOpen")]
-    LuSidebarOpen,
     #[cfg(feature = "LuSigma")]
     LuSigma,
+    #[cfg(feature = "LuSigmaSquare")]
+    LuSigmaSquare,
     #[cfg(feature = "LuSignal")]
     LuSignal,
     #[cfg(feature = "LuSignalHigh")]
@@ -1668,30 +2082,60 @@ pub enum LuIcon {
     LuSmile,
     #[cfg(feature = "LuSmilePlus")]
     LuSmilePlus,
+    #[cfg(feature = "LuSnail")]
+    LuSnail,
     #[cfg(feature = "LuSnowflake")]
     LuSnowflake,
     #[cfg(feature = "LuSofa")]
     LuSofa,
-    #[cfg(feature = "LuSortAsc")]
-    LuSortAsc,
-    #[cfg(feature = "LuSortDesc")]
-    LuSortDesc,
     #[cfg(feature = "LuSoup")]
     LuSoup,
     #[cfg(feature = "LuSpace")]
     LuSpace,
+    #[cfg(feature = "LuSpade")]
+    LuSpade,
+    #[cfg(feature = "LuSparkle")]
+    LuSparkle,
+    #[cfg(feature = "LuSparkles")]
+    LuSparkles,
     #[cfg(feature = "LuSpeaker")]
     LuSpeaker,
+    #[cfg(feature = "LuSpellCheck")]
+    LuSpellCheck,
+    #[cfg(feature = "LuSpellCheck2")]
+    LuSpellCheck2,
     #[cfg(feature = "LuSpline")]
     LuSpline,
+    #[cfg(feature = "LuSplit")]
+    LuSplit,
     #[cfg(feature = "LuSplitSquareHorizontal")]
     LuSplitSquareHorizontal,
     #[cfg(feature = "LuSplitSquareVertical")]
     LuSplitSquareVertical,
+    #[cfg(feature = "LuSprayCan")]
+    LuSprayCan,
     #[cfg(feature = "LuSprout")]
     LuSprout,
     #[cfg(feature = "LuSquare")]
     LuSquare,
+    #[cfg(feature = "LuSquareAsterisk")]
+    LuSquareAsterisk,
+    #[cfg(feature = "LuSquareCode")]
+    LuSquareCode,
+    #[cfg(feature = "LuSquareDashedBottom")]
+    LuSquareDashedBottom,
+    #[cfg(feature = "LuSquareDashedBottomCode")]
+    LuSquareDashedBottomCode,
+    #[cfg(feature = "LuSquareDot")]
+    LuSquareDot,
+    #[cfg(feature = "LuSquareEqual")]
+    LuSquareEqual,
+    #[cfg(feature = "LuSquareSlash")]
+    LuSquareSlash,
+    #[cfg(feature = "LuSquareStack")]
+    LuSquareStack,
+    #[cfg(feature = "LuSquirrel")]
+    LuSquirrel,
     #[cfg(feature = "LuStamp")]
     LuStamp,
     #[cfg(feature = "LuStar")]
@@ -1754,6 +2198,8 @@ pub enum LuIcon {
     LuTable,
     #[cfg(feature = "LuTable2")]
     LuTable2,
+    #[cfg(feature = "LuTableProperties")]
+    LuTableProperties,
     #[cfg(feature = "LuTablet")]
     LuTablet,
     #[cfg(feature = "LuTablets")]
@@ -1762,6 +2208,16 @@ pub enum LuIcon {
     LuTag,
     #[cfg(feature = "LuTags")]
     LuTags,
+    #[cfg(feature = "LuTally1")]
+    LuTally1,
+    #[cfg(feature = "LuTally2")]
+    LuTally2,
+    #[cfg(feature = "LuTally3")]
+    LuTally3,
+    #[cfg(feature = "LuTally4")]
+    LuTally4,
+    #[cfg(feature = "LuTally5")]
+    LuTally5,
     #[cfg(feature = "LuTarget")]
     LuTarget,
     #[cfg(feature = "LuTent")]
@@ -1782,8 +2238,10 @@ pub enum LuIcon {
     LuTextCursor,
     #[cfg(feature = "LuTextCursorInput")]
     LuTextCursorInput,
-    #[cfg(feature = "LuTextSelection")]
-    LuTextSelection,
+    #[cfg(feature = "LuTextQuote")]
+    LuTextQuote,
+    #[cfg(feature = "LuTextSelect")]
+    LuTextSelect,
     #[cfg(feature = "LuThermometer")]
     LuThermometer,
     #[cfg(feature = "LuThermometerSnowflake")]
@@ -1808,12 +2266,26 @@ pub enum LuIcon {
     LuToggleRight,
     #[cfg(feature = "LuTornado")]
     LuTornado,
+    #[cfg(feature = "LuTouchpad")]
+    LuTouchpad,
+    #[cfg(feature = "LuTouchpadOff")]
+    LuTouchpadOff,
     #[cfg(feature = "LuTowerControl")]
     LuTowerControl,
     #[cfg(feature = "LuToyBrick")]
     LuToyBrick,
-    #[cfg(feature = "LuTrain")]
-    LuTrain,
+    #[cfg(feature = "LuTractor")]
+    LuTractor,
+    #[cfg(feature = "LuTrafficCone")]
+    LuTrafficCone,
+    #[cfg(feature = "LuTrainFront")]
+    LuTrainFront,
+    #[cfg(feature = "LuTrainFrontTunnel")]
+    LuTrainFrontTunnel,
+    #[cfg(feature = "LuTrainTrack")]
+    LuTrainTrack,
+    #[cfg(feature = "LuTramFront")]
+    LuTramFront,
     #[cfg(feature = "LuTrash")]
     LuTrash,
     #[cfg(feature = "LuTrash2")]
@@ -1832,10 +2304,14 @@ pub enum LuIcon {
     LuTrendingUp,
     #[cfg(feature = "LuTriangle")]
     LuTriangle,
+    #[cfg(feature = "LuTriangleRight")]
+    LuTriangleRight,
     #[cfg(feature = "LuTrophy")]
     LuTrophy,
     #[cfg(feature = "LuTruck")]
     LuTruck,
+    #[cfg(feature = "LuTurtle")]
+    LuTurtle,
     #[cfg(feature = "LuTv")]
     LuTv,
     #[cfg(feature = "LuTv2")]
@@ -1854,12 +2330,22 @@ pub enum LuIcon {
     LuUndo,
     #[cfg(feature = "LuUndo2")]
     LuUndo2,
+    #[cfg(feature = "LuUndoDot")]
+    LuUndoDot,
+    #[cfg(feature = "LuUnfoldHorizontal")]
+    LuUnfoldHorizontal,
+    #[cfg(feature = "LuUnfoldVertical")]
+    LuUnfoldVertical,
+    #[cfg(feature = "LuUngroup")]
+    LuUngroup,
     #[cfg(feature = "LuUnlink")]
     LuUnlink,
     #[cfg(feature = "LuUnlink2")]
     LuUnlink2,
     #[cfg(feature = "LuUnlock")]
     LuUnlock,
+    #[cfg(feature = "LuUnplug")]
+    LuUnplug,
     #[cfg(feature = "LuUpload")]
     LuUpload,
     #[cfg(feature = "LuUploadCloud")]
@@ -1868,30 +2354,52 @@ pub enum LuIcon {
     LuUsb,
     #[cfg(feature = "LuUser")]
     LuUser,
+    #[cfg(feature = "LuUser2")]
+    LuUser2,
     #[cfg(feature = "LuUserCheck")]
     LuUserCheck,
+    #[cfg(feature = "LuUserCheck2")]
+    LuUserCheck2,
+    #[cfg(feature = "LuUserCircle")]
+    LuUserCircle,
+    #[cfg(feature = "LuUserCircle2")]
+    LuUserCircle2,
     #[cfg(feature = "LuUserCog")]
     LuUserCog,
+    #[cfg(feature = "LuUserCog2")]
+    LuUserCog2,
     #[cfg(feature = "LuUserMinus")]
     LuUserMinus,
+    #[cfg(feature = "LuUserMinus2")]
+    LuUserMinus2,
     #[cfg(feature = "LuUserPlus")]
     LuUserPlus,
+    #[cfg(feature = "LuUserPlus2")]
+    LuUserPlus2,
+    #[cfg(feature = "LuUserSquare")]
+    LuUserSquare,
+    #[cfg(feature = "LuUserSquare2")]
+    LuUserSquare2,
     #[cfg(feature = "LuUserX")]
     LuUserX,
+    #[cfg(feature = "LuUserX2")]
+    LuUserX2,
     #[cfg(feature = "LuUsers")]
     LuUsers,
+    #[cfg(feature = "LuUsers2")]
+    LuUsers2,
     #[cfg(feature = "LuUtensils")]
     LuUtensils,
     #[cfg(feature = "LuUtensilsCrossed")]
     LuUtensilsCrossed,
     #[cfg(feature = "LuUtilityPole")]
     LuUtilityPole,
+    #[cfg(feature = "LuVariable")]
+    LuVariable,
     #[cfg(feature = "LuVegan")]
     LuVegan,
     #[cfg(feature = "LuVenetianMask")]
     LuVenetianMask,
-    #[cfg(feature = "LuVerified")]
-    LuVerified,
     #[cfg(feature = "LuVibrate")]
     LuVibrate,
     #[cfg(feature = "LuVibrateOff")]
@@ -1900,6 +2408,8 @@ pub enum LuIcon {
     LuVideo,
     #[cfg(feature = "LuVideoOff")]
     LuVideoOff,
+    #[cfg(feature = "LuVideotape")]
+    LuVideotape,
     #[cfg(feature = "LuView")]
     LuView,
     #[cfg(feature = "LuVoicemail")]
@@ -1916,6 +2426,12 @@ pub enum LuIcon {
     LuVote,
     #[cfg(feature = "LuWallet")]
     LuWallet,
+    #[cfg(feature = "LuWallet2")]
+    LuWallet2,
+    #[cfg(feature = "LuWalletCards")]
+    LuWalletCards,
+    #[cfg(feature = "LuWallpaper")]
+    LuWallpaper,
     #[cfg(feature = "LuWand")]
     LuWand,
     #[cfg(feature = "LuWand2")]
@@ -1946,6 +2462,8 @@ pub enum LuIcon {
     LuWine,
     #[cfg(feature = "LuWineOff")]
     LuWineOff,
+    #[cfg(feature = "LuWorkflow")]
+    LuWorkflow,
     #[cfg(feature = "LuWrapText")]
     LuWrapText,
     #[cfg(feature = "LuWrench")]
@@ -2002,7 +2520,23 @@ const LU_ACTIVITY: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />"###
+    data: r###"<path d="M22 12h-4l-3 9L9 3l-3 9H2" />"###
+};
+#[cfg(feature = "LuActivitySquare")]
+const LU_ACTIVITY_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M17 12h-2l-2 5-2-10-2 5H7" />"###
 };
 #[cfg(feature = "LuAirVent")]
 const LU_AIR_VENT: icondata_core::IconData = icondata_core::IconData {
@@ -2203,8 +2737,8 @@ const LU_ALERT_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
-<line x1="12" x2="12" y1="9" y2="13" />
-<line x1="12" x2="12.01" y1="17" y2="17" />"###
+<path d="M12 9v4" />
+<path d="M12 17h.01" />"###
 };
 #[cfg(feature = "LuAlignCenter")]
 const LU_ALIGN_CENTER: icondata_core::IconData = icondata_core::IconData {
@@ -2664,6 +3198,38 @@ const LU_ALIGN_VERTICAL_SPACE_BETWEEN: icondata_core::IconData = icondata_core::
 <path d="M2 21h20" />
 <path d="M2 3h20" />"###
 };
+#[cfg(feature = "LuAmpersand")]
+const LU_AMPERSAND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17.5 12c0 4.4-3.6 8-8 8A4.5 4.5 0 0 1 5 15.5c0-6 8-4 8-8.5a3 3 0 1 0-6 0c0 3 2.5 8.5 12 13" />
+<path d="M16 12h3" />"###
+};
+#[cfg(feature = "LuAmpersands")]
+const LU_AMPERSANDS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10 17c-5-3-7-7-7-9a2 2 0 0 1 4 0c0 2.5-5 2.5-5 6 0 1.7 1.3 3 3 3 2.8 0 5-2.2 5-5" />
+<path d="M22 17c-5-3-7-7-7-9a2 2 0 0 1 4 0c0 2.5-5 2.5-5 6 0 1.7 1.3 3 3 3 2.8 0 5-2.2 5-5" />"###
+};
 #[cfg(feature = "LuAnchor")]
 const LU_ANCHOR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -2719,6 +3285,26 @@ const LU_ANNOYED: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 9h2" />
 <path d="M14 9h2" />"###
 };
+#[cfg(feature = "LuAntenna")]
+const LU_ANTENNA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 12 7 2" />
+<path d="m7 12 5-10" />
+<path d="m12 12 5-10" />
+<path d="m17 12 5-10" />
+<path d="M4.5 7h15" />
+<path d="M12 16v6" />"###
+};
 #[cfg(feature = "LuAperture")]
 const LU_APERTURE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -2739,6 +3325,24 @@ const LU_APERTURE: icondata_core::IconData = icondata_core::IconData {
 <line x1="9.69" x2="3.95" y1="16" y2="6.06" />
 <line x1="14.31" x2="2.83" y1="16" y2="16" />
 <line x1="16.62" x2="10.88" y1="12" y2="21.94" />"###
+};
+#[cfg(feature = "LuAppWindow")]
+const LU_APP_WINDOW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect x="2" y="4" width="20" height="16" rx="2" />
+<path d="M10 4v4" />
+<path d="M2 8h20" />
+<path d="M6 4v4" />"###
 };
 #[cfg(feature = "LuApple")]
 const LU_APPLE: icondata_core::IconData = icondata_core::IconData {
@@ -2792,6 +3396,22 @@ const LU_ARCHIVE_RESTORE: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 9v9a2 2 0 0 0 2 2h2" />
 <path d="M20 9v9a2 2 0 0 1-2 2h-2" />"###
 };
+#[cfg(feature = "LuAreaChart")]
+const LU_AREA_CHART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 3v18h18" />
+<path d="M7 12v5h12V8l-5 5-4-4Z" />"###
+};
 #[cfg(feature = "LuArmchair")]
 const LU_ARMCHAIR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -2823,7 +3443,23 @@ const LU_ARROW_BIG_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M9 3h6v11h4l-7 7-7-7h4z" />"###
+    data: r###"<path d="M15 6v6h4l-7 7-7-7h4V6h6z" />"###
+};
+#[cfg(feature = "LuArrowBigDownDash")]
+const LU_ARROW_BIG_DOWN_DASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M15 5H9" />
+<path d="M15 9v3h4l-7 7-7-7h4V9h6z" />"###
 };
 #[cfg(feature = "LuArrowBigLeft")]
 const LU_ARROW_BIG_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -2838,7 +3474,23 @@ const LU_ARROW_BIG_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m3 12 7-7v4h11v6H10v4z" />"###
+    data: r###"<path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />"###
+};
+#[cfg(feature = "LuArrowBigLeftDash")]
+const LU_ARROW_BIG_LEFT_DASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M19 15V9" />
+<path d="M15 15h-3v4l-7-7 7-7v4h3v6z" />"###
 };
 #[cfg(feature = "LuArrowBigRight")]
 const LU_ARROW_BIG_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -2853,7 +3505,23 @@ const LU_ARROW_BIG_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m21 12-7-7v4H3v6h11v4z" />"###
+    data: r###"<path d="M6 9h6V5l7 7-7 7v-4H6V9z" />"###
+};
+#[cfg(feature = "LuArrowBigRightDash")]
+const LU_ARROW_BIG_RIGHT_DASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 9v6" />
+<path d="M9 9h3V5l7 7-7 7v-4H9V9z" />"###
 };
 #[cfg(feature = "LuArrowBigUp")]
 const LU_ARROW_BIG_UP: icondata_core::IconData = icondata_core::IconData {
@@ -2868,7 +3536,23 @@ const LU_ARROW_BIG_UP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M9 21V10H5l7-7 7 7h-4v11z" />"###
+    data: r###"<path d="M9 18v-6H5l7-7 7 7h-4v6H9z" />"###
+};
+#[cfg(feature = "LuArrowBigUpDash")]
+const LU_ARROW_BIG_UP_DASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M9 19h6" />
+<path d="M9 15v-3H5l7-7 7 7h-4v3H9z" />"###
 };
 #[cfg(feature = "LuArrowDown")]
 const LU_ARROW_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -2883,8 +3567,65 @@ const LU_ARROW_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="12" x2="12" y1="5" y2="19" />
-<polyline points="19 12 12 19 5 12" />"###
+    data: r###"<path d="M12 5v14" />
+<path d="m19 12-7 7-7-7" />"###
+};
+#[cfg(feature = "LuArrowDown01")]
+const LU_ARROW_DOWN01: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<rect x="15" y="4" width="4" height="6" ry="2" />
+<path d="M17 20v-6h-2" />
+<path d="M15 20h4" />"###
+};
+#[cfg(feature = "LuArrowDown10")]
+const LU_ARROW_DOWN10: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<path d="M17 10V4h-2" />
+<path d="M15 10h4" />
+<rect x="15" y="14" width="4" height="6" ry="2" />"###
+};
+#[cfg(feature = "LuArrowDownAZ")]
+const LU_ARROW_DOWN_AZ: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<path d="M20 8h-5" />
+<path d="M15 10V6.5a2.5 2.5 0 0 1 5 0V10" />
+<path d="M15 14h5l-5 6h5" />"###
 };
 #[cfg(feature = "LuArrowDownCircle")]
 const LU_ARROW_DOWN_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -2900,8 +3641,25 @@ const LU_ARROW_DOWN_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<polyline points="8 12 12 16 16 12" />
-<line x1="12" x2="12" y1="8" y2="16" />"###
+<path d="M12 8v8" />
+<path d="m8 12 4 4 4-4" />"###
+};
+#[cfg(feature = "LuArrowDownFromLine")]
+const LU_ARROW_DOWN_FROM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M19 3H5" />
+<path d="M12 21V7" />
+<path d="m6 15 6 6 6-6" />"###
 };
 #[cfg(feature = "LuArrowDownLeft")]
 const LU_ARROW_DOWN_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -2916,8 +3674,8 @@ const LU_ARROW_DOWN_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="17" x2="7" y1="7" y2="17" />
-<polyline points="17 17 7 17 7 7" />"###
+    data: r###"<path d="M17 7 7 17" />
+<path d="M17 17H7V7" />"###
 };
 #[cfg(feature = "LuArrowDownLeftFromCircle")]
 const LU_ARROW_DOWN_LEFT_FROM_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -2932,9 +3690,45 @@ const LU_ARROW_DOWN_LEFT_FROM_CIRCLE: icondata_core::IconData = icondata_core::I
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="8,22 2,22 2,16 " />
-<line x1="2" y1="22" x2="12" y2="12" />
-<path d="M2,12C2,6.5,6.5,2,12,2s10,4.5,10,10s-4.5,10-10,10" />"###
+    data: r###"<path d="M2 12a10 10 0 1 1 10 10" />
+<path d="m2 22 10-10" />
+<path d="M8 22H2v-6" />"###
+};
+#[cfg(feature = "LuArrowDownLeftSquare")]
+const LU_ARROW_DOWN_LEFT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m16 8-8 8" />
+<path d="M16 16H8V8" />"###
+};
+#[cfg(feature = "LuArrowDownNarrowWide")]
+const LU_ARROW_DOWN_NARROW_WIDE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<path d="M11 4h4" />
+<path d="M11 8h7" />
+<path d="M11 12h10" />"###
 };
 #[cfg(feature = "LuArrowDownRight")]
 const LU_ARROW_DOWN_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -2949,8 +3743,8 @@ const LU_ARROW_DOWN_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="7" x2="17" y1="7" y2="17" />
-<polyline points="17 7 17 17 7 17" />"###
+    data: r###"<path d="m7 7 10 10" />
+<path d="M17 7v10H7" />"###
 };
 #[cfg(feature = "LuArrowDownRightFromCircle")]
 const LU_ARROW_DOWN_RIGHT_FROM_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -2965,9 +3759,133 @@ const LU_ARROW_DOWN_RIGHT_FROM_CIRCLE: icondata_core::IconData = icondata_core::
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="22,16 22,22 16,22 " />
-<line x1="22" y1="22" x2="12" y2="12" />
-<path d="M12,22C6.5,22,2,17.5,2,12S6.5,2,12,2s10,4.5,10,10" />"###
+    data: r###"<path d="M12 22a10 10 0 1 1 10-10" />
+<path d="M22 22 12 12" />
+<path d="M22 16v6h-6" />"###
+};
+#[cfg(feature = "LuArrowDownRightSquare")]
+const LU_ARROW_DOWN_RIGHT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m8 8 8 8" />
+<path d="M16 8v8H8" />"###
+};
+#[cfg(feature = "LuArrowDownSquare")]
+const LU_ARROW_DOWN_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M12 8v8" />
+<path d="m8 12 4 4 4-4" />"###
+};
+#[cfg(feature = "LuArrowDownToDot")]
+const LU_ARROW_DOWN_TO_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 2v14" />
+<path d="m19 9-7 7-7-7" />
+<circle cx="12" cy="21" r="1" />"###
+};
+#[cfg(feature = "LuArrowDownToLine")]
+const LU_ARROW_DOWN_TO_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 17V3" />
+<path d="m6 11 6 6 6-6" />
+<path d="M19 21H5" />"###
+};
+#[cfg(feature = "LuArrowDownUp")]
+const LU_ARROW_DOWN_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<path d="m21 8-4-4-4 4" />
+<path d="M17 4v16" />"###
+};
+#[cfg(feature = "LuArrowDownWideNarrow")]
+const LU_ARROW_DOWN_WIDE_NARROW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 20V4" />
+<path d="M11 4h10" />
+<path d="M11 8h7" />
+<path d="M11 12h4" />"###
+};
+#[cfg(feature = "LuArrowDownZA")]
+const LU_ARROW_DOWN_ZA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 16 4 4 4-4" />
+<path d="M7 4v16" />
+<path d="M15 4h5l-5 6h5" />
+<path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20" />
+<path d="M20 18h-5" />"###
 };
 #[cfg(feature = "LuArrowLeft")]
 const LU_ARROW_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -2982,8 +3900,8 @@ const LU_ARROW_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="19" x2="5" y1="12" y2="12" />
-<polyline points="12 19 5 12 12 5" />"###
+    data: r###"<path d="m12 19-7-7 7-7" />
+<path d="M19 12H5" />"###
 };
 #[cfg(feature = "LuArrowLeftCircle")]
 const LU_ARROW_LEFT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -2999,8 +3917,25 @@ const LU_ARROW_LEFT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<polyline points="12 8 8 12 12 16" />
-<line x1="16" x2="8" y1="12" y2="12" />"###
+<path d="M16 12H8" />
+<path d="m12 8-4 4 4 4" />"###
+};
+#[cfg(feature = "LuArrowLeftFromLine")]
+const LU_ARROW_LEFT_FROM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m9 6-6 6 6 6" />
+<path d="M3 12h14" />
+<path d="M21 19V5" />"###
 };
 #[cfg(feature = "LuArrowLeftRight")]
 const LU_ARROW_LEFT_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -3015,10 +3950,44 @@ const LU_ARROW_LEFT_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="17 11 21 7 17 3" />
-<line x1="21" x2="9" y1="7" y2="7" />
-<polyline points="7 21 3 17 7 13" />
-<line x1="15" x2="3" y1="17" y2="17" />"###
+    data: r###"<path d="M8 3 4 7l4 4" />
+<path d="M4 7h16" />
+<path d="m16 21 4-4-4-4" />
+<path d="M20 17H4" />"###
+};
+#[cfg(feature = "LuArrowLeftSquare")]
+const LU_ARROW_LEFT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m12 8-4 4 4 4" />
+<path d="M16 12H8" />"###
+};
+#[cfg(feature = "LuArrowLeftToLine")]
+const LU_ARROW_LEFT_TO_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 19V5" />
+<path d="m13 6-6 6 6 6" />
+<path d="M7 12h14" />"###
 };
 #[cfg(feature = "LuArrowRight")]
 const LU_ARROW_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -3033,8 +4002,8 @@ const LU_ARROW_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="5" x2="19" y1="12" y2="12" />
-<polyline points="12 5 19 12 12 19" />"###
+    data: r###"<path d="M5 12h14" />
+<path d="m12 5 7 7-7 7" />"###
 };
 #[cfg(feature = "LuArrowRightCircle")]
 const LU_ARROW_RIGHT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -3050,8 +4019,77 @@ const LU_ARROW_RIGHT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<polyline points="12 16 16 12 12 8" />
-<line x1="8" x2="16" y1="12" y2="12" />"###
+<path d="M8 12h8" />
+<path d="m12 16 4-4-4-4" />"###
+};
+#[cfg(feature = "LuArrowRightFromLine")]
+const LU_ARROW_RIGHT_FROM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 5v14" />
+<path d="M21 12H7" />
+<path d="m15 18 6-6-6-6" />"###
+};
+#[cfg(feature = "LuArrowRightLeft")]
+const LU_ARROW_RIGHT_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m16 3 4 4-4 4" />
+<path d="M20 7H4" />
+<path d="m8 21-4-4 4-4" />
+<path d="M4 17h16" />"###
+};
+#[cfg(feature = "LuArrowRightSquare")]
+const LU_ARROW_RIGHT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 12h8" />
+<path d="m12 16 4-4-4-4" />"###
+};
+#[cfg(feature = "LuArrowRightToLine")]
+const LU_ARROW_RIGHT_TO_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17 12H3" />
+<path d="m11 18 6-6-6-6" />
+<path d="M21 5v14" />"###
 };
 #[cfg(feature = "LuArrowUp")]
 const LU_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
@@ -3066,8 +4104,65 @@ const LU_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="12" x2="12" y1="19" y2="5" />
-<polyline points="5 12 12 5 19 12" />"###
+    data: r###"<path d="m5 12 7-7 7 7" />
+<path d="M12 19V5" />"###
+};
+#[cfg(feature = "LuArrowUp01")]
+const LU_ARROW_UP01: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<rect x="15" y="4" width="4" height="6" ry="2" />
+<path d="M17 20v-6h-2" />
+<path d="M15 20h4" />"###
+};
+#[cfg(feature = "LuArrowUp10")]
+const LU_ARROW_UP10: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<path d="M17 10V4h-2" />
+<path d="M15 10h4" />
+<rect x="15" y="14" width="4" height="6" ry="2" />"###
+};
+#[cfg(feature = "LuArrowUpAZ")]
+const LU_ARROW_UP_AZ: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<path d="M20 8h-5" />
+<path d="M15 10V6.5a2.5 2.5 0 0 1 5 0V10" />
+<path d="M15 14h5l-5 6h5" />"###
 };
 #[cfg(feature = "LuArrowUpCircle")]
 const LU_ARROW_UP_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -3083,8 +4178,8 @@ const LU_ARROW_UP_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<polyline points="16 12 12 8 8 12" />
-<line x1="12" x2="12" y1="16" y2="8" />"###
+<path d="m16 12-4-4-4 4" />
+<path d="M12 16V8" />"###
 };
 #[cfg(feature = "LuArrowUpDown")]
 const LU_ARROW_UP_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -3099,10 +4194,44 @@ const LU_ARROW_UP_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="11 17 7 21 3 17" />
-<line x1="7" x2="7" y1="21" y2="9" />
-<polyline points="21 7 17 3 13 7" />
-<line x1="17" x2="17" y1="15" y2="3" />"###
+    data: r###"<path d="m21 16-4 4-4-4" />
+<path d="M17 20V4" />
+<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />"###
+};
+#[cfg(feature = "LuArrowUpFromDot")]
+const LU_ARROW_UP_FROM_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m5 9 7-7 7 7" />
+<path d="M12 16V2" />
+<circle cx="12" cy="21" r="1" />"###
+};
+#[cfg(feature = "LuArrowUpFromLine")]
+const LU_ARROW_UP_FROM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m18 9-6-6-6 6" />
+<path d="M12 3v14" />
+<path d="M5 21h14" />"###
 };
 #[cfg(feature = "LuArrowUpLeft")]
 const LU_ARROW_UP_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -3117,8 +4246,8 @@ const LU_ARROW_UP_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="17" x2="7" y1="17" y2="7" />
-<polyline points="7 17 7 7 17 7" />"###
+    data: r###"<path d="M7 17V7h10" />
+<path d="M17 17 7 7" />"###
 };
 #[cfg(feature = "LuArrowUpLeftFromCircle")]
 const LU_ARROW_UP_LEFT_FROM_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -3133,9 +4262,45 @@ const LU_ARROW_UP_LEFT_FROM_CIRCLE: icondata_core::IconData = icondata_core::Ico
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12" />
-<polyline points="2,8 2,2 8,2 " />
-<line x1="2" y1="2" x2="12" y2="12" />"###
+    data: r###"<path d="M2 8V2h6" />
+<path d="m2 2 10 10" />
+<path d="M12 2A10 10 0 1 1 2 12" />"###
+};
+#[cfg(feature = "LuArrowUpLeftSquare")]
+const LU_ARROW_UP_LEFT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 16V8h8" />
+<path d="M16 16 8 8" />"###
+};
+#[cfg(feature = "LuArrowUpNarrowWide")]
+const LU_ARROW_UP_NARROW_WIDE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<path d="M11 12h4" />
+<path d="M11 16h7" />
+<path d="M11 20h10" />"###
 };
 #[cfg(feature = "LuArrowUpRight")]
 const LU_ARROW_UP_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -3150,8 +4315,8 @@ const LU_ARROW_UP_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="7" x2="17" y1="17" y2="7" />
-<polyline points="7 7 17 7 17 17" />"###
+    data: r###"<path d="M7 7h10v10" />
+<path d="M7 17 17 7" />"###
 };
 #[cfg(feature = "LuArrowUpRightFromCircle")]
 const LU_ARROW_UP_RIGHT_FROM_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -3166,9 +4331,117 @@ const LU_ARROW_UP_RIGHT_FROM_CIRCLE: icondata_core::IconData = icondata_core::Ic
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="16,2 22,2 22,8 " />
-<line x1="22" y1="2" x2="12" y2="12" />
-<path d="M22,12c0,5.5-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2" />"###
+    data: r###"<path d="M22 12A10 10 0 1 1 12 2" />
+<path d="M22 2 12 12" />
+<path d="M16 2h6v6" />"###
+};
+#[cfg(feature = "LuArrowUpRightSquare")]
+const LU_ARROW_UP_RIGHT_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 8h8v8" />
+<path d="m8 16 8-8" />"###
+};
+#[cfg(feature = "LuArrowUpSquare")]
+const LU_ARROW_UP_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m16 12-4-4-4 4" />
+<path d="M12 16V8" />"###
+};
+#[cfg(feature = "LuArrowUpToLine")]
+const LU_ARROW_UP_TO_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 3h14" />
+<path d="m18 13-6-6-6 6" />
+<path d="M12 7v14" />"###
+};
+#[cfg(feature = "LuArrowUpWideNarrow")]
+const LU_ARROW_UP_WIDE_NARROW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<path d="M11 12h10" />
+<path d="M11 16h7" />
+<path d="M11 20h4" />"###
+};
+#[cfg(feature = "LuArrowUpZA")]
+const LU_ARROW_UP_ZA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 8 4-4 4 4" />
+<path d="M7 4v16" />
+<path d="M15 4h5l-5 6h5" />
+<path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20" />
+<path d="M20 18h-5" />"###
+};
+#[cfg(feature = "LuArrowsUpFromLine")]
+const LU_ARROWS_UP_FROM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m4 6 3-3 3 3" />
+<path d="M7 17V3" />
+<path d="m14 6 3-3 3 3" />
+<path d="M17 17V3" />
+<path d="M4 21h16" />"###
 };
 #[cfg(feature = "LuAsterisk")]
 const LU_ASTERISK: icondata_core::IconData = icondata_core::IconData {
@@ -3201,7 +4474,7 @@ const LU_AT_SIGN: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="4" />
-<path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94" />"###
+<path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />"###
 };
 #[cfg(feature = "LuAtom")]
 const LU_ATOM: icondata_core::IconData = icondata_core::IconData {
@@ -3305,6 +4578,173 @@ const LU_BACKPACK: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 10h8" />
 <path d="M8 18h8" />"###
 };
+#[cfg(feature = "LuBadge")]
+const LU_BADGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />"###
+};
+#[cfg(feature = "LuBadgeAlert")]
+const LU_BADGE_ALERT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<line x1="12" x2="12" y1="8" y2="12" />
+<line x1="12" x2="12.01" y1="16" y2="16" />"###
+};
+#[cfg(feature = "LuBadgeCheck")]
+const LU_BADGE_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<path d="m9 12 2 2 4-4" />"###
+};
+#[cfg(feature = "LuBadgeDollarSign")]
+const LU_BADGE_DOLLAR_SIGN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+<path d="M12 18V6" />"###
+};
+#[cfg(feature = "LuBadgeHelp")]
+const LU_BADGE_HELP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+<line x1="12" x2="12.01" y1="17" y2="17" />"###
+};
+#[cfg(feature = "LuBadgeInfo")]
+const LU_BADGE_INFO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<line x1="12" x2="12" y1="16" y2="12" />
+<line x1="12" x2="12.01" y1="8" y2="8" />"###
+};
+#[cfg(feature = "LuBadgeMinus")]
+const LU_BADGE_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<line x1="8" x2="16" y1="12" y2="12" />"###
+};
+#[cfg(feature = "LuBadgePercent")]
+const LU_BADGE_PERCENT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<path d="m15 9-6 6" />
+<path d="M9 9h.01" />
+<path d="M15 15h.01" />"###
+};
+#[cfg(feature = "LuBadgePlus")]
+const LU_BADGE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<line x1="12" x2="12" y1="8" y2="16" />
+<line x1="8" x2="16" y1="12" y2="12" />"###
+};
+#[cfg(feature = "LuBadgeX")]
+const LU_BADGE_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+<line x1="15" x2="9" y1="9" y2="15" />
+<line x1="9" x2="15" y1="9" y2="15" />"###
+};
 #[cfg(feature = "LuBaggageClaim")]
 const LU_BAGGAGE_CLAIM: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -3338,7 +4778,7 @@ const LU_BAN: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<line x1="4.93" x2="19.07" y1="4.93" y2="19.07" />"###
+<path d="m4.9 4.9 14.2 14.2" />"###
 };
 #[cfg(feature = "LuBanana")]
 const LU_BANANA: icondata_core::IconData = icondata_core::IconData {
@@ -3443,6 +4883,23 @@ const LU_BAR_CHART4: icondata_core::IconData = icondata_core::IconData {
 <path d="M18 17V5" />
 <path d="M8 17v-3" />"###
 };
+#[cfg(feature = "LuBarChartBig")]
+const LU_BAR_CHART_BIG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 3v18h18" />
+<rect width="4" height="7" x="7" y="10" rx="1" />
+<rect width="4" height="12" x="15" y="5" rx="1" />"###
+};
 #[cfg(feature = "LuBarChartHorizontal")]
 const LU_BAR_CHART_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -3460,6 +4917,23 @@ const LU_BAR_CHART_HORIZONTAL: icondata_core::IconData = icondata_core::IconData
 <path d="M7 16h8" />
 <path d="M7 11h12" />
 <path d="M7 6h3" />"###
+};
+#[cfg(feature = "LuBarChartHorizontalBig")]
+const LU_BAR_CHART_HORIZONTAL_BIG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 3v18h18" />
+<rect width="12" height="4" x="7" y="5" rx="1" />
+<rect width="7" height="4" x="7" y="13" rx="1" />"###
 };
 #[cfg(feature = "LuBaseline")]
 const LU_BASELINE: icondata_core::IconData = icondata_core::IconData {
@@ -3757,8 +5231,25 @@ const LU_BELL: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-<path d="M13.73 21a2 2 0 0 1-3.46 0" />"###
+    data: r###"<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />"###
+};
+#[cfg(feature = "LuBellDot")]
+const LU_BELL_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M19.4 14.9C20.2 16.4 21 17 21 17H3s3-2 3-9c0-3.3 2.7-6 6-6 .7 0 1.3.1 1.9.3" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+<circle cx="18" cy="8" r="3" />"###
 };
 #[cfg(feature = "LuBellMinus")]
 const LU_BELL_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -3773,9 +5264,9 @@ const LU_BELL_MINUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M13.73 21a2 2 0 0 1-3.46 0" />
-<path d="M21 5h-6" />
-<path d="M18.021 9C18.29 15.193 21 17 21 17H3s3-2 3-9a6 6 0 0 1 7-5.916" />"###
+    data: r###"<path d="M18.4 12c.8 3.8 2.6 5 2.6 5H3s3-2 3-9c0-3.3 2.7-6 6-6 1.8 0 3.4.8 4.5 2" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+<path d="M15 8h6" />"###
 };
 #[cfg(feature = "LuBellOff")]
 const LU_BELL_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -3790,10 +5281,9 @@ const LU_BELL_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M13.73 21a2 2 0 0 1-3.46 0" />
-<path d="M18.63 13A17.888 17.888 0 0 1 18 8" />
-<path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14" />
-<path d="M18 8a6 6 0 0 0-9.33-5" />
+    data: r###"<path d="M8.7 3A6 6 0 0 1 18 8a21.3 21.3 0 0 0 .6 5" />
+<path d="M17 17H3s3-2 3-9a4.67 4.67 0 0 1 .3-1.7" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
 <path d="m2 2 20 20" />"###
 };
 #[cfg(feature = "LuBellPlus")]
@@ -3809,10 +5299,10 @@ const LU_BELL_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M18.387 12C19.198 15.799 21 17 21 17H3s3-2 3-9a6 6 0 0 1 7-5.916" />
-<path d="M13.73 21a2 2 0 0 1-3.46 0" />
-<path d="M18 2v6" />
-<path d="M21 5h-6" />"###
+    data: r###"<path d="M19.3 14.8C20.1 16.4 21 17 21 17H3s3-2 3-9c0-3.3 2.7-6 6-6 1 0 1.9.2 2.8.7" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+<path d="M15 8h6" />
+<path d="M18 5v6" />"###
 };
 #[cfg(feature = "LuBellRing")]
 const LU_BELL_RING: icondata_core::IconData = icondata_core::IconData {
@@ -3827,10 +5317,10 @@ const LU_BELL_RING: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-<path d="M13.73 21a2 2 0 0 1-3.46 0" />
-<path d="M2 8c0-2.2.7-4.3 2-6" />
-<path d="M22 8a10 10 0 0 0-2-6" />"###
+    data: r###"<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+<path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+<path d="M4 2C2.8 3.7 2 5.7 2 8" />
+<path d="M22 8c0-2.3-.8-4.3-2-6" />"###
 };
 #[cfg(feature = "LuBike")]
 const LU_BIKE: icondata_core::IconData = icondata_core::IconData {
@@ -3863,12 +5353,36 @@ const LU_BINARY: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M6 20h4" />
+    data: r###"<rect x="14" y="14" width="4" height="6" rx="2" />
+<rect x="6" y="4" width="4" height="6" rx="2" />
+<path d="M6 20h4" />
 <path d="M14 10h4" />
 <path d="M6 14h2v6" />
-<path d="M14 4h2v6" />
-<rect width="4" height="6" x="6" y="4" />
-<rect width="4" height="6" x="14" y="14" />"###
+<path d="M14 4h2v6" />"###
+};
+#[cfg(feature = "LuBiohazard")]
+const LU_BIOHAZARD: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="11.9" r="2" />
+<path d="M6.7 3.4c-.9 2.5 0 5.2 2.2 6.7C6.5 9 3.7 9.6 2 11.6" />
+<path d="m8.9 10.1 1.4.8" />
+<path d="M17.3 3.4c.9 2.5 0 5.2-2.2 6.7 2.4-1.2 5.2-.6 6.9 1.5" />
+<path d="m15.1 10.1-1.4.8" />
+<path d="M16.7 20.8c-2.6-.4-4.6-2.6-4.7-5.3-.2 2.6-2.1 4.8-4.7 5.2" />
+<path d="M12 13.9v1.6" />
+<path d="M13.5 5.4c-1-.2-2-.2-3 0" />
+<path d="M17 16.4c.7-.7 1.2-1.6 1.5-2.5" />
+<path d="M5.5 13.9c.3.9.8 1.8 1.5 2.5" />"###
 };
 #[cfg(feature = "LuBird")]
 const LU_BIRD: icondata_core::IconData = icondata_core::IconData {
@@ -3925,6 +5439,22 @@ const LU_BLINDS: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 15h12" />
 <path d="M4 3v14" />
 <circle cx="4" cy="19" r="2" />"###
+};
+#[cfg(feature = "LuBlocks")]
+const LU_BLOCKS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="7" height="7" x="14" y="3" rx="1" />
+<path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3" />"###
 };
 #[cfg(feature = "LuBluetooth")]
 const LU_BLUETOOTH: icondata_core::IconData = icondata_core::IconData {
@@ -4053,8 +5583,7 @@ const LU_BOOK: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />"###
 };
 #[cfg(feature = "LuBookCopy")]
 const LU_BOOK_COPY: icondata_core::IconData = icondata_core::IconData {
@@ -4069,10 +5598,9 @@ const LU_BOOK_COPY: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M2,16V4c0-1.1,0.9-2,2-2h11" />
-<path d="M5,14H4c-1.1,0-2,0.9-2,2s0.9,2,2,2h1" />
-<path d="M22,18H11c-1.1,0-2,0.9-2,2l0,0" />
-<path d="M11,6h11v16H11c-1.1,0-2-0.9-2-2V8C9,6.9,9.9,6,11,6z" />"###
+    data: r###"<path d="M2 16V4a2 2 0 0 1 2-2h11" />
+<path d="M5 14H4a2 2 0 1 0 0 4h1" />
+<path d="M22 18H11a2 2 0 1 0 0 4h11V6H11a2 2 0 0 0-2 2v12" />"###
 };
 #[cfg(feature = "LuBookDown")]
 const LU_BOOK_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -4087,8 +5615,7 @@ const LU_BOOK_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
 <path d="M12 13V7" />
 <path d="m9 10 3 3 3-3" />"###
 };
@@ -4105,11 +5632,11 @@ const LU_BOOK_KEY: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M20,2l-4.5,4.5" />
-<path d="M19,3l1,1" />
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H14" />
+<path d="M20 8v14H6.5a2.5 2.5 0 0 1 0-5H20" />
 <circle cx="14" cy="8" r="2" />
-<path d="M4,19.5C4,18.1,5.1,17,6.5,17H20" />
-<path d="M20,8v14H6.5C5.1,22,4,20.9,4,19.5v-15C4,3.1,5.1,2,6.5,2H14" />"###
+<path d="m20 2-4.5 4.5" />
+<path d="m19 3 1 1" />"###
 };
 #[cfg(feature = "LuBookLock")]
 const LU_BOOK_LOCK: icondata_core::IconData = icondata_core::IconData {
@@ -4124,10 +5651,10 @@ const LU_BOOK_LOCK: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4,19.5C4,18.1,5.1,17,6.5,17H20" />
-<path d="M18,6V4c0-1.1-0.9-2-2-2s-2,0.9-2,2v2" />
-<path d="M20,15v7H6.5C5.1,22,4,20.9,4,19.5v-15C4,3.1,5.1,2,6.5,2H10" />
-<path d="M13,6h6c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1h-6c-0.6,0-1-0.4-1-1V7C12,6.4,12.4,6,13,6z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H10" />
+<path d="M20 15v7H6.5a2.5 2.5 0 0 1 0-5H20" />
+<rect width="8" height="5" x="12" y="6" rx="1" />
+<path d="M18 6V4a2 2 0 1 0-4 0v2" />"###
 };
 #[cfg(feature = "LuBookMarked")]
 const LU_BOOK_MARKED: icondata_core::IconData = icondata_core::IconData {
@@ -4142,9 +5669,8 @@ const LU_BOOK_MARKED: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="10,2 10,10 13,7 16,10 16,2" />
-<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<polyline points="10 2 10 10 13 7 16 10 16 2" />"###
 };
 #[cfg(feature = "LuBookMinus")]
 const LU_BOOK_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -4159,9 +5685,8 @@ const LU_BOOK_MINUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="9" y1="10" x2="15" y2="10" />
-<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<path d="M9 10h6" />"###
 };
 #[cfg(feature = "LuBookOpen")]
 const LU_BOOK_OPEN: icondata_core::IconData = icondata_core::IconData {
@@ -4209,10 +5734,9 @@ const LU_BOOK_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="12" y1="7" x2="12" y2="13" />
-<line x1="9" y1="10" x2="15" y2="10" />
-<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<path d="M9 10h6" />
+<path d="M12 7v6" />"###
 };
 #[cfg(feature = "LuBookTemplate")]
 const LU_BOOK_TEMPLATE: icondata_core::IconData = icondata_core::IconData {
@@ -4227,17 +5751,17 @@ const LU_BOOK_TEMPLATE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M20,22h-2" />
-<path d="M20,15v2l-2,0" />
-<path d="M4,19.5V15" />
-<path d="M20,8v3" />
-<path d="M18,2h2v2" />
-<path d="M4,11V9" />
-<path d="M12,2h2" />
-<path d="M12,22h2" />
-<path d="M12,17h2" />
-<path d="M8,22H6.5C5.1,22,4,20.9,4,19.5S5.1,17,6.5,17H8" />
-<path d="M4,5V4.5C4,3.1,5.1,2,6.5,2H8" />"###
+    data: r###"<path d="M20 22h-2" />
+<path d="M20 15v2h-2" />
+<path d="M4 19.5V15" />
+<path d="M20 8v3" />
+<path d="M18 2h2v2" />
+<path d="M4 11V9" />
+<path d="M12 2h2" />
+<path d="M12 22h2" />
+<path d="M12 17h2" />
+<path d="M8 22H6.5a2.5 2.5 0 0 1 0-5H8" />
+<path d="M4 5v-.5A2.5 2.5 0 0 1 6.5 2H8" />"###
 };
 #[cfg(feature = "LuBookUp")]
 const LU_BOOK_UP: icondata_core::IconData = icondata_core::IconData {
@@ -4252,10 +5776,28 @@ const LU_BOOK_UP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
-<path d="M12,13V7" />
-<path d="M9,10l3-3l3,3" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<path d="M12 13V7" />
+<path d="m9 10 3-3 3 3" />"###
+};
+#[cfg(feature = "LuBookUp2")]
+const LU_BOOK_UP2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2" />
+<path d="M18 2h2v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<path d="M12 13V7" />
+<path d="m9 10 3-3 3 3" />
+<path d="m9 5 3-3 3 3" />"###
 };
 #[cfg(feature = "LuBookX")]
 const LU_BOOK_X: icondata_core::IconData = icondata_core::IconData {
@@ -4270,10 +5812,9 @@ const LU_BOOK_X: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M9.5,7l5,5" />
-<path d="M14.5,7l-5,5" />
-<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />"###
+    data: r###"<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+<path d="m14.5 7-5 5" />
+<path d="m9.5 7 5 5" />"###
 };
 #[cfg(feature = "LuBookmark")]
 const LU_BOOKMARK: icondata_core::IconData = icondata_core::IconData {
@@ -4322,6 +5863,27 @@ const LU_BOOKMARK_PLUS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
 <line x1="12" x2="12" y1="7" y2="13" />
 <line x1="15" x2="9" y1="10" y2="10" />"###
+};
+#[cfg(feature = "LuBoomBox")]
+const LU_BOOM_BOX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 9V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+<path d="M8 8v1" />
+<path d="M12 8v1" />
+<path d="M16 8v1" />
+<rect width="20" height="12" x="2" y="9" rx="2" />
+<circle cx="8" cy="15" r="2" />
+<circle cx="16" cy="15" r="2" />"###
 };
 #[cfg(feature = "LuBot")]
 const LU_BOT: icondata_core::IconData = icondata_core::IconData {
@@ -4411,6 +5973,38 @@ const LU_BOXES: icondata_core::IconData = icondata_core::IconData {
 <path d="m12 8 4.74-2.85" />
 <path d="M12 13.5V8" />"###
 };
+#[cfg(feature = "LuBraces")]
+const LU_BRACES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" />
+<path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" />"###
+};
+#[cfg(feature = "LuBrackets")]
+const LU_BRACKETS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M16 3h3v18h-3" />
+<path d="M8 21H5V3h3" />"###
+};
 #[cfg(feature = "LuBrain")]
 const LU_BRAIN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -4487,6 +6081,23 @@ const LU_BRIEFCASE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />"###
+};
+#[cfg(feature = "LuBringToFront")]
+const LU_BRING_TO_FRONT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect x="8" y="8" width="8" height="8" rx="2" />
+<path d="M4 10a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2" />
+<path d="M14 20a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2" />"###
 };
 #[cfg(feature = "LuBrush")]
 const LU_BRUSH: icondata_core::IconData = icondata_core::IconData {
@@ -4586,10 +6197,79 @@ const LU_BUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M19 17h2l.64-2.54c.24-.959.24-1.962 0-2.92l-1.07-4.27A3 3 0 0 0 17.66 5H4a2 2 0 0 0-2 2v10h2" />
-<path d="M14 17H9" />
-<circle cx="6.5" cy="17.5" r="2.5" />
-<circle cx="16.5" cy="17.5" r="2.5" />"###
+    data: r###"<path d="M8 6v6" />
+<path d="M15 6v6" />
+<path d="M2 12h19.6" />
+<path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" />
+<circle cx="7" cy="18" r="2" />
+<path d="M9 18h5" />
+<circle cx="16" cy="18" r="2" />"###
+};
+#[cfg(feature = "LuBusFront")]
+const LU_BUS_FRONT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 6 2 7" />
+<path d="M10 6h4" />
+<path d="m22 7-2-1" />
+<rect width="16" height="16" x="4" y="3" rx="2" />
+<path d="M4 11h16" />
+<path d="M8 15h.01" />
+<path d="M16 15h.01" />
+<path d="M6 19v2" />
+<path d="M18 21v-2" />"###
+};
+#[cfg(feature = "LuCable")]
+const LU_CABLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 9a2 2 0 0 1-2-2V5h6v2a2 2 0 0 1-2 2Z" />
+<path d="M3 5V3" />
+<path d="M7 5V3" />
+<path d="M19 15V6.5a3.5 3.5 0 0 0-7 0v11a3.5 3.5 0 0 1-7 0V9" />
+<path d="M17 21v-2" />
+<path d="M21 21v-2" />
+<path d="M22 19h-6v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2Z" />"###
+};
+#[cfg(feature = "LuCableCar")]
+const LU_CABLE_CAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10 3h.01" />
+<path d="M14 2h.01" />
+<path d="m2 9 20-5" />
+<path d="M12 12V6.5" />
+<rect width="16" height="10" x="4" y="12" rx="3" />
+<path d="M9 12v5" />
+<path d="M15 12v5" />
+<path d="M4 17h16" />"###
 };
 #[cfg(feature = "LuCake")]
 const LU_CAKE: icondata_core::IconData = icondata_core::IconData {
@@ -4613,6 +6293,24 @@ const LU_CAKE: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 4h.01" />
 <path d="M12 4h.01" />
 <path d="M17 4h.01" />"###
+};
+#[cfg(feature = "LuCakeSlice")]
+const LU_CAKE_SLICE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="9" cy="7" r="2" />
+<path d="M7.2 7.9 3 11v9c0 .6.4 1 1 1h16c.6 0 1-.4 1-1v-9c0-2-3-6-7-8l-3.6 2.6" />
+<path d="M16 13H3" />
+<path d="M16 17H3" />"###
 };
 #[cfg(feature = "LuCalculator")]
 const LU_CALCULATOR: icondata_core::IconData = icondata_core::IconData {
@@ -4932,6 +6630,27 @@ const LU_CAMERA_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.5 4h5L17 7h3a2 2 0 0 1 2 2v7.5" />
 <path d="M14.121 15.121A3 3 0 1 1 9.88 10.88" />"###
 };
+#[cfg(feature = "LuCandlestickChart")]
+const LU_CANDLESTICK_CHART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M9 5v4" />
+<rect width="4" height="6" x="7" y="9" rx="1" />
+<path d="M9 15v2" />
+<path d="M17 3v2" />
+<rect width="4" height="8" x="15" y="5" rx="1" />
+<path d="M17 13v3" />
+<path d="M3 3v18h18" />"###
+};
 #[cfg(feature = "LuCandy")]
 const LU_CANDY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -4950,6 +6669,25 @@ const LU_CANDY: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 7.5v10" />
 <path d="m16 7 1-5 1.37.68A3 3 0 0 0 19.7 3H21v1.3c0 .46.1.92.32 1.33L22 7l-5 1" />
 <path d="m8 17-1 5-1.37-.68A3 3 0 0 0 4.3 21H3v-1.3a3 3 0 0 0-.32-1.33L2 17l5-1" />"###
+};
+#[cfg(feature = "LuCandyCane")]
+const LU_CANDY_CANE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2Z" />
+<path d="M17.75 7 15 2.1" />
+<path d="M10.9 4.8 13 9" />
+<path d="m7.9 9.7 2 4.4" />
+<path d="M4.9 14.7 7 18.9" />"###
 };
 #[cfg(feature = "LuCandyOff")]
 const LU_CANDY_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -4986,9 +6724,51 @@ const LU_CAR: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2" />
-<circle cx="6.5" cy="16.5" r="2.5" />
-<circle cx="16.5" cy="16.5" r="2.5" />"###
+    data: r###"<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+<circle cx="7" cy="17" r="2" />
+<path d="M9 17h6" />
+<circle cx="17" cy="17" r="2" />"###
+};
+#[cfg(feature = "LuCarFront")]
+const LU_CAR_FRONT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8" />
+<path d="M7 14h.01" />
+<path d="M17 14h.01" />
+<rect width="18" height="8" x="3" y="10" rx="2" />
+<path d="M5 18v2" />
+<path d="M19 18v2" />"###
+};
+#[cfg(feature = "LuCarTaxiFront")]
+const LU_CAR_TAXI_FRONT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10 2h4" />
+<path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8" />
+<path d="M7 14h.01" />
+<path d="M17 14h.01" />
+<rect width="18" height="8" x="3" y="10" rx="2" />
+<path d="M5 18v2" />
+<path d="M19 18v2" />"###
 };
 #[cfg(feature = "LuCarrot")]
 const LU_CARROT: icondata_core::IconData = icondata_core::IconData {
@@ -5020,10 +6800,10 @@ const LU_CASE_LOWER: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<circle cx="17" cy="12" r="3" />
-<line x1="14" x2="14" y1="7" y2="15" />
-<circle cx="7" cy="12" r="3" />
-<line x1="10" x2="10" y1="9" y2="15" />"###
+    data: r###"<circle cx="7" cy="12" r="3" />
+<path d="M10 9v6" />
+<circle cx="17" cy="12" r="3" />
+<path d="M14 7v8" />"###
 };
 #[cfg(feature = "LuCaseSensitive")]
 const LU_CASE_SENSITIVE: icondata_core::IconData = icondata_core::IconData {
@@ -5038,10 +6818,10 @@ const LU_CASE_SENSITIVE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="3,15 7,7 11,15" />
-<line x1="4" x2="10" y1="13" y2="13" />
+    data: r###"<path d="m3 15 4-8 4 8" />
+<path d="M4 13h6" />
 <circle cx="18" cy="12" r="3" />
-<line x1="21" x2="21" y1="9" y2="15" />"###
+<path d="M21 9v6" />"###
 };
 #[cfg(feature = "LuCaseUpper")]
 const LU_CASE_UPPER: icondata_core::IconData = icondata_core::IconData {
@@ -5056,10 +6836,28 @@ const LU_CASE_UPPER: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="3,15 7,7 11,15" />
-<line x1="4" x2="10" y1="13" y2="13" />
-<path d="M15 7h4c1.1 0 2 .9 2 2s-.9 2-2 2h-4V7z" />
-<path d="M15 11h4.5c1.1 0 2 .9 2 2s-.9 2-2 2H15v-4z" />"###
+    data: r###"<path d="m3 15 4-8 4 8" />
+<path d="M4 13h6" />
+<path d="M15 11h4.5a2 2 0 0 1 0 4H15V7h4a2 2 0 0 1 0 4" />"###
+};
+#[cfg(feature = "LuCassetteTape")]
+const LU_CASSETTE_TAPE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="20" height="16" x="2" y="4" rx="2" />
+<circle cx="8" cy="10" r="2" />
+<path d="M8 12h8" />
+<circle cx="16" cy="10" r="2" />
+<path d="m6 20 .7-2.9A1.4 1.4 0 0 1 8.1 16h7.8a1.4 1.4 0 0 1 1.4 1l.7 3" />"###
 };
 #[cfg(feature = "LuCast")]
 const LU_CAST: icondata_core::IconData = icondata_core::IconData {
@@ -5246,7 +7044,23 @@ const LU_CHEVRON_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="6 9 12 15 18 9" />"###
+    data: r###"<path d="m6 9 6 6 6-6" />"###
+};
+#[cfg(feature = "LuChevronDownCircle")]
+const LU_CHEVRON_DOWN_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="m16 10-4 4-4-4" />"###
 };
 #[cfg(feature = "LuChevronDownSquare")]
 const LU_CHEVRON_DOWN_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -5261,8 +7075,8 @@ const LU_CHEVRON_DOWN_SQUARE: icondata_core::IconData = icondata_core::IconData 
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<polyline points="16,10 12,14 8,10" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m16 10-4 4-4-4" />"###
 };
 #[cfg(feature = "LuChevronFirst")]
 const LU_CHEVRON_FIRST: icondata_core::IconData = icondata_core::IconData {
@@ -5277,7 +7091,7 @@ const LU_CHEVRON_FIRST: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="17 18 11 12 17 6" />
+    data: r###"<path d="m17 18-6-6 6-6" />
 <path d="M7 6v12" />"###
 };
 #[cfg(feature = "LuChevronLast")]
@@ -5293,7 +7107,7 @@ const LU_CHEVRON_LAST: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="7 18 13 12 7 6" />
+    data: r###"<path d="m7 18 6-6-6-6" />
 <path d="M17 6v12" />"###
 };
 #[cfg(feature = "LuChevronLeft")]
@@ -5309,7 +7123,23 @@ const LU_CHEVRON_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="15 18 9 12 15 6" />"###
+    data: r###"<path d="m15 18-6-6 6-6" />"###
+};
+#[cfg(feature = "LuChevronLeftCircle")]
+const LU_CHEVRON_LEFT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="m14 16-4-4 4-4" />"###
 };
 #[cfg(feature = "LuChevronLeftSquare")]
 const LU_CHEVRON_LEFT_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -5324,8 +7154,8 @@ const LU_CHEVRON_LEFT_SQUARE: icondata_core::IconData = icondata_core::IconData 
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<polyline points="14,16 10,12 14,8" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m14 16-4-4 4-4" />"###
 };
 #[cfg(feature = "LuChevronRight")]
 const LU_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -5340,7 +7170,23 @@ const LU_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="9 18 15 12 9 6" />"###
+    data: r###"<path d="m9 18 6-6-6-6" />"###
+};
+#[cfg(feature = "LuChevronRightCircle")]
+const LU_CHEVRON_RIGHT_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="m10 8 4 4-4 4" />"###
 };
 #[cfg(feature = "LuChevronRightSquare")]
 const LU_CHEVRON_RIGHT_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -5355,8 +7201,8 @@ const LU_CHEVRON_RIGHT_SQUARE: icondata_core::IconData = icondata_core::IconData
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<polyline points="10,8 14,12 10,16" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m10 8 4 4-4 4" />"###
 };
 #[cfg(feature = "LuChevronUp")]
 const LU_CHEVRON_UP: icondata_core::IconData = icondata_core::IconData {
@@ -5371,7 +7217,23 @@ const LU_CHEVRON_UP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="18 15 12 9 6 15" />"###
+    data: r###"<path d="m18 15-6-6-6 6" />"###
+};
+#[cfg(feature = "LuChevronUpCircle")]
+const LU_CHEVRON_UP_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="m8 14 4-4 4 4" />"###
 };
 #[cfg(feature = "LuChevronUpSquare")]
 const LU_CHEVRON_UP_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -5386,8 +7248,8 @@ const LU_CHEVRON_UP_SQUARE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<polyline points="8,14 12,10 16,14" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m8 14 4-4 4 4" />"###
 };
 #[cfg(feature = "LuChevronsDown")]
 const LU_CHEVRONS_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -5402,8 +7264,8 @@ const LU_CHEVRONS_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="7 13 12 18 17 13" />
-<polyline points="7 6 12 11 17 6" />"###
+    data: r###"<path d="m7 6 5 5 5-5" />
+<path d="m7 13 5 5 5-5" />"###
 };
 #[cfg(feature = "LuChevronsDownUp")]
 const LU_CHEVRONS_DOWN_UP: icondata_core::IconData = icondata_core::IconData {
@@ -5434,8 +7296,8 @@ const LU_CHEVRONS_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="11 17 6 12 11 7" />
-<polyline points="18 17 13 12 18 7" />"###
+    data: r###"<path d="m11 17-5-5 5-5" />
+<path d="m18 17-5-5 5-5" />"###
 };
 #[cfg(feature = "LuChevronsLeftRight")]
 const LU_CHEVRONS_LEFT_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -5466,8 +7328,8 @@ const LU_CHEVRONS_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="13 17 18 12 13 7" />
-<polyline points="6 17 11 12 6 7" />"###
+    data: r###"<path d="m6 17 5-5-5-5" />
+<path d="m13 17 5-5-5-5" />"###
 };
 #[cfg(feature = "LuChevronsRightLeft")]
 const LU_CHEVRONS_RIGHT_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -5498,8 +7360,8 @@ const LU_CHEVRONS_UP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="17 11 12 6 7 11" />
-<polyline points="17 18 12 13 7 18" />"###
+    data: r###"<path d="m17 11-5-5-5 5" />
+<path d="m17 18-5-5-5 5" />"###
 };
 #[cfg(feature = "LuChevronsUpDown")]
 const LU_CHEVRONS_UP_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -5610,6 +7472,45 @@ const LU_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />"###
 };
+#[cfg(feature = "LuCircleDashed")]
+const LU_CIRCLE_DASHED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0" />
+<path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7" />
+<path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8" />
+<path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69" />
+<path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0" />
+<path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7" />
+<path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8" />
+<path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69" />"###
+};
+#[cfg(feature = "LuCircleDollarSign")]
+const LU_CIRCLE_DOLLAR_SIGN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+<path d="M12 18V6" />"###
+};
 #[cfg(feature = "LuCircleDot")]
 const LU_CIRCLE_DOT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -5624,6 +7525,29 @@ const LU_CIRCLE_DOT: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
+<circle cx="12" cy="12" r="1" />"###
+};
+#[cfg(feature = "LuCircleDotDashed")]
+const LU_CIRCLE_DOT_DASHED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0" />
+<path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7" />
+<path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8" />
+<path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69" />
+<path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0" />
+<path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7" />
+<path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8" />
+<path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69" />
 <circle cx="12" cy="12" r="1" />"###
 };
 #[cfg(feature = "LuCircleEllipsis")]
@@ -5675,8 +7599,8 @@ const LU_CIRCLE_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="m2 2 20 20" />
-<path d="M8.4 2.7c1.2-.4 2.4-.7 3.7-.7 5.5 0 10 4.5 10 10 0 1.3-.2 2.5-.7 3.6" />
-<path d="M19.1 19.1C17.3 20.9 14.8 22 12 22 6.5 22 2 17.5 2 12c0-2.7 1.2-5.2 3-7" />"###
+<path d="M8.35 2.69A10 10 0 0 1 21.3 15.65" />
+<path d="M19.08 19.08A10 10 0 1 1 4.92 4.92" />"###
 };
 #[cfg(feature = "LuCircleSlash")]
 const LU_CIRCLE_SLASH: icondata_core::IconData = icondata_core::IconData {
@@ -6263,8 +8187,8 @@ const LU_CLOUD_MOON: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z" />
-<path d="M10.083 9A6.002 6.002 0 0 1 16 4a4.243 4.243 0 0 0 6 6c0 2.22-1.206 4.16-3 5.197" />"###
+    data: r###"<path d="M13 16a3 3 0 1 1 0 6H7a5 5 0 1 1 4.9-6Z" />
+<path d="M10.1 9A6 6 0 0 1 16 4a4.24 4.24 0 0 0 6 6 6 6 0 0 1-3 5.197" />"###
 };
 #[cfg(feature = "LuCloudMoonRain")]
 const LU_CLOUD_MOON_RAIN: icondata_core::IconData = icondata_core::IconData {
@@ -6435,6 +8359,22 @@ const LU_CLOVER: icondata_core::IconData = icondata_core::IconData {
 <path d="M7.8 20.2a2.7 2.7 0 0 0 3.81 0l.4-.38.4.4a2.7 2.7 0 0 0 3.82 0c1.06-1.06 1.12-2.85-.21-4.21l-4-4-4 4c-1.33 1.36-1.27 3.15-.2 4.2z" />
 <path d="m7 17-5 5" />"###
 };
+#[cfg(feature = "LuClub")]
+const LU_CLUB: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z" />
+<path d="M12 17.66L12 22" />"###
+};
 #[cfg(feature = "LuCode")]
 const LU_CODE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -6588,6 +8528,26 @@ const LU_COLUMNS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
 <line x1="12" x2="12" y1="3" y2="21" />"###
 };
+#[cfg(feature = "LuCombine")]
+const LU_COMBINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="8" height="8" x="2" y="2" rx="2" />
+<path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
+<path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
+<path d="M10 18H5c-1.7 0-3-1.3-3-3v-1" />
+<polyline points="7 21 10 18 7 15" />
+<rect width="8" height="8" x="14" y="14" rx="2" />"###
+};
 #[cfg(feature = "LuCommand")]
 const LU_COMMAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -6636,6 +8596,24 @@ const LU_COMPONENT: icondata_core::IconData = icondata_core::IconData {
 <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z" />
 <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z" />
 <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z" />"###
+};
+#[cfg(feature = "LuComputer")]
+const LU_COMPUTER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="14" height="8" x="5" y="2" rx="2" />
+<rect width="20" height="8" x="2" y="14" rx="2" />
+<path d="M6 18h2" />
+<path d="M12 18h6" />"###
 };
 #[cfg(feature = "LuConciergeBell")]
 const LU_CONCIERGE_BELL: icondata_core::IconData = icondata_core::IconData {
@@ -6695,6 +8673,44 @@ const LU_CONTACT: icondata_core::IconData = icondata_core::IconData {
 <circle cx="12" cy="10" r="2" />
 <line x1="8" x2="8" y1="2" y2="4" />
 <line x1="16" x2="16" y1="2" y2="4" />"###
+};
+#[cfg(feature = "LuContact2")]
+const LU_CONTACT2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M16 18a4 4 0 0 0-8 0" />
+<circle cx="12" cy="11" r="3" />
+<rect width="18" height="18" x="3" y="4" rx="2" />
+<line x1="8" x2="8" y1="2" y2="4" />
+<line x1="16" x2="16" y1="2" y2="4" />"###
+};
+#[cfg(feature = "LuContainer")]
+const LU_CONTAINER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" />
+<path d="M10 21.9V14L2.1 9.1" />
+<path d="m10 14 11.9-6.9" />
+<path d="M14 19.8v-8.1" />
+<path d="M18 17.5V9.4" />"###
 };
 #[cfg(feature = "LuContrast")]
 const LU_CONTRAST: icondata_core::IconData = icondata_core::IconData {
@@ -7154,22 +9170,6 @@ const LU_CUP_SODA: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" />
 <path d="m12 8 1-6h2" />"###
 };
-#[cfg(feature = "LuCurlyBraces")]
-const LU_CURLY_BRACES: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" />
-<path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" />"###
-};
 #[cfg(feature = "LuCurrency")]
 const LU_CURRENCY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -7220,11 +9220,11 @@ const LU_DATABASE_BACKUP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<ellipse cx="12" cy="5" rx="9" ry="3" />
-<path d="M3 12c0 1.18 2.03 2.2 5 2.7" />
-<path d="M21 5v4.5" />
-<path d="m12 16 1.27-1.35a4.75 4.75 0 1 1 .41 5.74" />
-<path d="M12 12v4h4" />
-<path d="M3 5v14c0 1.43 2.97 2.63 7 2.93" />"###
+<path d="M3 5v14c0 1.4 3 2.7 7 3" />
+<path d="M3 12c0 1.2 2 2.5 5 3" />
+<path d="M21 5v4" />
+<path d="M13 20a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L12 16" />
+<path d="M12 12v4h4" />"###
 };
 #[cfg(feature = "LuDelete")]
 const LU_DELETE: icondata_core::IconData = icondata_core::IconData {
@@ -7243,6 +9243,23 @@ const LU_DELETE: icondata_core::IconData = icondata_core::IconData {
 <line x1="18" x2="12" y1="9" y2="15" />
 <line x1="12" x2="18" y1="9" y2="15" />"###
 };
+#[cfg(feature = "LuDessert")]
+const LU_DESSERT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="4" r="2" />
+<path d="M10.2 3.2C5.5 4 2 8.1 2 13a2 2 0 0 0 4 0v-1a2 2 0 0 1 4 0v4a2 2 0 0 0 4 0v-4a2 2 0 0 1 4 0v1a2 2 0 0 0 4 0c0-4.9-3.5-9-8.2-9.8" />
+<path d="M3.2 14.8a9 9 0 0 0 17.6 0" />"###
+};
 #[cfg(feature = "LuDiamond")]
 const LU_DIAMOND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -7256,7 +9273,7 @@ const LU_DIAMOND: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="15.56" height="15.56" x="12" y="1" rx="2.41" transform="rotate(45 12 1)" />"###
+    data: r###"<path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z" />"###
 };
 #[cfg(feature = "LuDice1")]
 const LU_DICE1: icondata_core::IconData = icondata_core::IconData {
@@ -7435,9 +9452,27 @@ const LU_DISC2: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<circle cx="12" cy="12" r="4" />
-<circle cx="12" cy="12" r="10" />
-<line x1="12" y1="12" x2="12" y2="12.01" />"###
+    data: r###"<circle cx="12" cy="12" r="10" />
+<circle cx="12" cy="12" r="4" />
+<path d="M12 12h.01" />"###
+};
+#[cfg(feature = "LuDisc3")]
+const LU_DISC3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<path d="M6 12c0-1.7.7-3.2 1.8-4.2" />
+<circle cx="12" cy="12" r="2" />
+<path d="M18 12c0 1.7-.7 3.2-1.8 4.2" />"###
 };
 #[cfg(feature = "LuDivide")]
 const LU_DIVIDE: icondata_core::IconData = icondata_core::IconData {
@@ -7578,6 +9613,22 @@ const LU_DOLLAR_SIGN: icondata_core::IconData = icondata_core::IconData {
     data: r###"<line x1="12" x2="12" y1="2" y2="22" />
 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />"###
 };
+#[cfg(feature = "LuDonut")]
+const LU_DONUT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M20.5 10a2.5 2.5 0 0 1-2.4-3H18a2.95 2.95 0 0 1-2.6-4.4 10 10 0 1 0 6.3 7.1c-.3.2-.8.3-1.2.3" />
+<circle cx="12" cy="12" r="3" />"###
+};
 #[cfg(feature = "LuDoorClosed")]
 const LU_DOOR_CLOSED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -7613,6 +9664,21 @@ const LU_DOOR_OPEN: icondata_core::IconData = icondata_core::IconData {
 <path d="M13 20h9" />
 <path d="M10 12v.01" />
 <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" />"###
+};
+#[cfg(feature = "LuDot")]
+const LU_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12.1" cy="12.1" r="1" />"###
 };
 #[cfg(feature = "LuDownload")]
 const LU_DOWNLOAD: icondata_core::IconData = icondata_core::IconData {
@@ -7768,53 +9834,6 @@ const LU_EAR_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8.8 3.15A6.5 6.5 0 0 1 19 8.5c0 1.63-.44 2.81-1.09 3.76" />
 <path d="M12.5 6A2.5 2.5 0 0 1 15 8.5M10 13a2 2 0 0 0 1.82-1.18" />
 <line x1="2" x2="22" y1="2" y2="22" />"###
-};
-#[cfg(feature = "LuEdit")]
-const LU_EDIT: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-<path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />"###
-};
-#[cfg(feature = "LuEdit2")]
-const LU_EDIT2: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" />"###
-};
-#[cfg(feature = "LuEdit3")]
-const LU_EDIT3: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M12 20h9" />
-<path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />"###
 };
 #[cfg(feature = "LuEgg")]
 const LU_EGG: icondata_core::IconData = icondata_core::IconData {
@@ -8081,6 +10100,29 @@ const LU_FEATHER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
 <line x1="16" x2="2" y1="8" y2="22" />
 <line x1="17.5" x2="9" y1="15" y2="15" />"###
+};
+#[cfg(feature = "LuFerrisWheel")]
+const LU_FERRIS_WHEEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="2" />
+<path d="M12 2v4" />
+<path d="m6.8 15-3.5 2" />
+<path d="m20.7 7-3.5 2" />
+<path d="M6.8 9 3.3 7" />
+<path d="m20.7 17-3.5-2" />
+<path d="m9 22 3-8 3 8" />
+<path d="M8 22h8" />
+<path d="M18 18.7a9 9 0 1 0-12 0" />"###
 };
 #[cfg(feature = "LuFigma")]
 const LU_FIGMA: icondata_core::IconData = icondata_core::IconData {
@@ -8351,6 +10393,24 @@ const LU_FILE_CODE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
+    data: r###"<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+<polyline points="14 2 14 8 20 8" />
+<path d="m10 13-2 2 2 2" />
+<path d="m14 17 2-2-2-2" />"###
+};
+#[cfg(feature = "LuFileCode2")]
+const LU_FILE_CODE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
     data: r###"<path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4" />
 <polyline points="14 2 14 8 20 8" />
 <path d="m9 18 3-3-3-3" />
@@ -8435,10 +10495,10 @@ const LU_FILE_DIGIT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4" />
-<polyline points="14 2 14 8 20 8" />
+    data: r###"<rect width="4" height="6" x="2" y="12" rx="2" />
+<path d="M14 2v6h6" />
+<path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4" />
 <path d="M10 12h2v6" />
-<rect width="4" height="6" x="2" y="12" />
 <path d="M10 18h4" />"###
 };
 #[cfg(feature = "LuFileDown")]
@@ -8870,6 +10930,24 @@ const LU_FILE_SPREADSHEET: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 13h2" />
 <path d="M14 17h2" />"###
 };
+#[cfg(feature = "LuFileStack")]
+const LU_FILE_STACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M16 2v5h5" />
+<path d="M21 6v6.5c0 .8-.7 1.5-1.5 1.5h-7c-.8 0-1.5-.7-1.5-1.5v-9c0-.8.7-1.5 1.5-1.5H17l4 4z" />
+<path d="M7 8v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H15" />
+<path d="M3 12v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H11" />"###
+};
 #[cfg(feature = "LuFileSymlink")]
 const LU_FILE_SYMLINK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9237,6 +11315,21 @@ const LU_FISH_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33m7.48-4.372A9.77 9.77 0 0 1 16 6.07m0 11.86a9.77 9.77 0 0 1-1.728-3.618" />
 <path d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98M8.53 3h5.27a2 2 0 0 1 1.98 1.67l.23 1.4M2 2l20 20" />"###
 };
+#[cfg(feature = "LuFishSymbol")]
+const LU_FISH_SYMBOL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 16s9-15 20-4C11 23 2 8 2 8" />"###
+};
 #[cfg(feature = "LuFlag")]
 const LU_FLAG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9545,6 +11638,50 @@ const LU_FOCUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
 <path d="M7 21H5a2 2 0 0 1-2-2v-2" />"###
 };
+#[cfg(feature = "LuFoldHorizontal")]
+const LU_FOLD_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 12h6" />
+<path d="M22 12h-6" />
+<path d="M12 2v2" />
+<path d="M12 8v2" />
+<path d="M12 14v2" />
+<path d="M12 20v2" />
+<path d="m19 9-3 3 3 3" />
+<path d="m5 15 3-3-3-3" />"###
+};
+#[cfg(feature = "LuFoldVertical")]
+const LU_FOLD_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 22v-6" />
+<path d="M12 8V2" />
+<path d="M4 12H2" />
+<path d="M10 12H8" />
+<path d="M16 12h-2" />
+<path d="M22 12h-2" />
+<path d="m15 19-3-3-3 3" />
+<path d="m15 5-3 3-3-3" />"###
+};
 #[cfg(feature = "LuFolder")]
 const LU_FOLDER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9673,6 +11810,22 @@ const LU_FOLDER_COG2: icondata_core::IconData = icondata_core::IconData {
 <path d="m14.6 14.5-.87-.5" />
 <path d="m10.27 12-.87-.5" />"###
 };
+#[cfg(feature = "LuFolderDot")]
+const LU_FOLDER_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+<circle cx="12" cy="13" r="1" />"###
+};
 #[cfg(feature = "LuFolderDown")]
 const LU_FOLDER_DOWN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9720,9 +11873,9 @@ const LU_FOLDER_GIT: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
-<circle class="st0" cx="12" cy="13" r="2" />
-<line class="st0" x1="6" y1="13" x2="10" y2="13" />
-<line class="st0" x1="14" y1="13" x2="18" y2="13" />"###
+<circle cx="12" cy="13" r="2" />
+<path d="M14 13h3" />
+<path d="M7 13h3" />"###
 };
 #[cfg(feature = "LuFolderGit2")]
 const LU_FOLDER_GIT2: icondata_core::IconData = icondata_core::IconData {
@@ -9737,10 +11890,10 @@ const LU_FOLDER_GIT2: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M22 13V8a1.974 1.974 0 0 0-2-2h-7.9c-.3 0-.7-.1-.9-.2-.3-.2-.5-.4-.7-.7l-.9-1.2c-.2-.3-.4-.5-.7-.7-.3-.1-.6-.2-1-.2H4a1.974 1.974 0 0 0-2 2v13c0 1.1.9 2 2 2h5" />
-<circle cx="20" cy="19" r="2" />
-<circle cx="13" cy="12." r="2" />
-<path d="M18 19c-2.8 0-5-2.2-5-5v8" />"###
+    data: r###"<path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5" />
+<circle cx="13" cy="12" r="2" />
+<path d="M18 19c-2.8 0-5-2.2-5-5v8" />
+<circle cx="20" cy="19" r="2" />"###
 };
 #[cfg(feature = "LuFolderHeart")]
 const LU_FOLDER_HEART: icondata_core::IconData = icondata_core::IconData {
@@ -9774,6 +11927,24 @@ const LU_FOLDER_INPUT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M2 9V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1" />
 <path d="M2 13h10" />
 <path d="m9 16 3-3-3-3" />"###
+};
+#[cfg(feature = "LuFolderKanban")]
+const LU_FOLDER_KANBAN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+<path d="M8 10v4" />
+<path d="M12 10v2" />
+<path d="M16 10v6" />"###
 };
 #[cfg(feature = "LuFolderKey")]
 const LU_FOLDER_KEY: icondata_core::IconData = icondata_core::IconData {
@@ -9841,6 +12012,22 @@ const LU_FOLDER_OPEN: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2" />"###
 };
+#[cfg(feature = "LuFolderOpenDot")]
+const LU_FOLDER_OPEN_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2" />
+<circle cx="14" cy="15" r="1" />"###
+};
 #[cfg(feature = "LuFolderOutput")]
 const LU_FOLDER_OUTPUT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9874,6 +12061,23 @@ const LU_FOLDER_PLUS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
 <line x1="12" x2="12" y1="10" y2="16" />
 <line x1="9" x2="15" y1="13" y2="13" />"###
+};
+#[cfg(feature = "LuFolderRoot")]
+const LU_FOLDER_ROOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+<circle cx="12" cy="13" r="2" />
+<path d="M12 15v5" />"###
 };
 #[cfg(feature = "LuFolderSearch")]
 const LU_FOLDER_SEARCH: icondata_core::IconData = icondata_core::IconData {
@@ -9925,6 +12129,25 @@ const LU_FOLDER_SYMLINK: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M2 9V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2" />
 <path d="m8 16 3-3-3-3" />
 <path d="M2 16v-1a2 2 0 0 1 2-2h6" />"###
+};
+#[cfg(feature = "LuFolderSync")]
+const LU_FOLDER_SYNC: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v1" />
+<path d="M12 10v4h4" />
+<path d="m12 14 1.5-1.5c.9-.9 2.2-1.5 3.5-1.5s2.6.6 3.5 1.5c.4.4.8 1 1 1.5" />
+<path d="M22 22v-4h-4" />
+<path d="m22 18-1.5 1.5c-.9.9-2.1 1.5-3.5 1.5s-2.6-.6-3.5-1.5c-.4-.4-.8-1-1-1.5" />"###
 };
 #[cfg(feature = "LuFolderTree")]
 const LU_FOLDER_TREE: icondata_core::IconData = icondata_core::IconData {
@@ -10150,6 +12373,93 @@ const LU_FUNCTION_SQUARE: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 17c2 0 2.8-1 2.8-2.8V10c0-2 1-3.3 3.2-3" />
 <path d="M9 11.2h5.7" />"###
 };
+#[cfg(feature = "LuGalleryHorizontal")]
+const LU_GALLERY_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 3v18" />
+<rect width="12" height="18" x="6" y="3" rx="2" />
+<path d="M22 3v18" />"###
+};
+#[cfg(feature = "LuGalleryHorizontalEnd")]
+const LU_GALLERY_HORIZONTAL_END: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 7v10" />
+<path d="M6 5v14" />
+<rect width="12" height="18" x="10" y="3" rx="2" />"###
+};
+#[cfg(feature = "LuGalleryThumbnails")]
+const LU_GALLERY_THUMBNAILS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="14" x="3" y="3" rx="2" />
+<path d="M4 21h1" />
+<path d="M9 21h1" />
+<path d="M14 21h1" />
+<path d="M19 21h1" />"###
+};
+#[cfg(feature = "LuGalleryVertical")]
+const LU_GALLERY_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 2h18" />
+<rect width="18" height="12" x="3" y="6" rx="2" />
+<path d="M3 22h18" />"###
+};
+#[cfg(feature = "LuGalleryVerticalEnd")]
+const LU_GALLERY_VERTICAL_END: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M7 2h10" />
+<path d="M5 6h14" />
+<rect width="18" height="12" x="3" y="10" rx="2" />"###
+};
 #[cfg(feature = "LuGamepad")]
 const LU_GAMEPAD: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10188,6 +12498,41 @@ const LU_GAMEPAD2: icondata_core::IconData = icondata_core::IconData {
 <line x1="18" x2="18.01" y1="10" y2="10" />
 <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />"###
 };
+#[cfg(feature = "LuGanttChart")]
+const LU_GANTT_CHART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 6h10" />
+<path d="M6 12h9" />
+<path d="M11 18h7" />"###
+};
+#[cfg(feature = "LuGanttChartSquare")]
+const LU_GANTT_CHART_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M9 8h7" />
+<path d="M8 12h6" />
+<path d="M11 16h5" />"###
+};
 #[cfg(feature = "LuGauge")]
 const LU_GAUGE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10201,8 +12546,25 @@ const LU_GAUGE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m12 15 3.5-3.5" />
-<path d="M20.3 18c.4-1 .7-2.2.7-3.4C21 9.8 17 6 12 6s-9 3.8-9 8.6c0 1.2.3 2.4.7 3.4" />"###
+    data: r###"<path d="m12 14 4-4" />
+<path d="M3.34 19a10 10 0 1 1 17.32 0" />"###
+};
+#[cfg(feature = "LuGaugeCircle")]
+const LU_GAUGE_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M15.6 2.7a10 10 0 1 0 5.7 5.7" />
+<circle cx="12" cy="12" r="2" />
+<path d="M13.4 10.6 19 5" />"###
 };
 #[cfg(feature = "LuGavel")]
 const LU_GAVEL: icondata_core::IconData = icondata_core::IconData {
@@ -10236,9 +12598,8 @@ const LU_GEM: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polygon points="6 3 18 3 22 9 12 22 2 9" />
-<path d="m12 22 4-13-3-6" />
-<path d="M12 22 8 9l3-6" />
+    data: r###"<path d="M6 3h12l4 6-10 13L2 9Z" />
+<path d="M11 3 8 9l4 13 4-13-3-6" />
 <path d="M2 9h20" />"###
 };
 #[cfg(feature = "LuGhost")]
@@ -10544,6 +12905,23 @@ const LU_GLOBE2: icondata_core::IconData = icondata_core::IconData {
 <path d="M11 21.95V18a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
 <circle cx="12" cy="12" r="10" />"###
 };
+#[cfg(feature = "LuGoal")]
+const LU_GOAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 13V2l8 4-8 4" />
+<path d="M20.55 10.23A9 9 0 1 1 8 4.94" />
+<path d="M8 10a5 5 0 1 0 8.9 2.02" />"###
+};
 #[cfg(feature = "LuGrab")]
 const LU_GRAB: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10602,8 +12980,8 @@ const LU_GRAPE: icondata_core::IconData = icondata_core::IconData {
 <circle cx="10.8" cy="17.44" r="3" />
 <circle cx="5" cy="19" r="3" />"###
 };
-#[cfg(feature = "LuGrid")]
-const LU_GRID: icondata_core::IconData = icondata_core::IconData {
+#[cfg(feature = "LuGrid2x2")]
+const LU_GRID2X2: icondata_core::IconData = icondata_core::IconData {
     style: None,
     x: None,
     y: None,
@@ -10615,11 +12993,28 @@ const LU_GRID: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="3" x2="21" y1="9" y2="9" />
-<line x1="3" x2="21" y1="15" y2="15" />
-<line x1="9" x2="9" y1="3" y2="21" />
-<line x1="15" x2="15" y1="3" y2="21" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M3 12h18" />
+<path d="M12 3v18" />"###
+};
+#[cfg(feature = "LuGrid3x3")]
+const LU_GRID3X3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M3 9h18" />
+<path d="M3 15h18" />
+<path d="M9 3v18" />
+<path d="M15 3v18" />"###
 };
 #[cfg(feature = "LuGrip")]
 const LU_GRIP: icondata_core::IconData = icondata_core::IconData {
@@ -10683,6 +13078,26 @@ const LU_GRIP_VERTICAL: icondata_core::IconData = icondata_core::IconData {
 <circle cx="15" cy="12" r="1" />
 <circle cx="15" cy="5" r="1" />
 <circle cx="15" cy="19" r="1" />"###
+};
+#[cfg(feature = "LuGroup")]
+const LU_GROUP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 7V5c0-1.1.9-2 2-2h2" />
+<path d="M17 3h2c1.1 0 2 .9 2 2v2" />
+<path d="M21 17v2c0 1.1-.9 2-2 2h-2" />
+<path d="M7 21H5c-1.1 0-2-.9-2-2v-2" />
+<rect width="7" height="5" x="7" y="7" rx="1" />
+<rect width="7" height="5" x="10" y="12" rx="1" />"###
 };
 #[cfg(feature = "LuHammer")]
 const LU_HAMMER: icondata_core::IconData = icondata_core::IconData {
@@ -10755,6 +13170,44 @@ const LU_HARD_DRIVE: icondata_core::IconData = icondata_core::IconData {
 <line x1="6" x2="6.01" y1="16" y2="16" />
 <line x1="10" x2="10.01" y1="16" y2="16" />"###
 };
+#[cfg(feature = "LuHardDriveDownload")]
+const LU_HARD_DRIVE_DOWNLOAD: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 2v8" />
+<path d="m16 6-4 4-4-4" />
+<rect width="20" height="8" x="2" y="14" rx="2" />
+<path d="M6 18h.01" />
+<path d="M10 18h.01" />"###
+};
+#[cfg(feature = "LuHardDriveUpload")]
+const LU_HARD_DRIVE_UPLOAD: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m16 6-4-4-4 4" />
+<path d="M12 2v8" />
+<rect width="20" height="8" x="2" y="14" rx="2" />
+<path d="M6 18h.01" />
+<path d="M10 18h.01" />"###
+};
 #[cfg(feature = "LuHardHat")]
 const LU_HARD_HAT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10812,6 +13265,22 @@ const LU_HAZE: icondata_core::IconData = icondata_core::IconData {
 <path d="M22 21H2" />
 <path d="M16 13a4 4 0 0 0-8 0" />
 <path d="M12 5V2.5" />"###
+};
+#[cfg(feature = "LuHdmiPort")]
+const LU_HDMI_PORT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M22 9a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h1l2 2h12l2-2h1a1 1 0 0 0 1-1Z" />
+<path d="M7.5 12h9" />"###
 };
 #[cfg(feature = "LuHeading")]
 const LU_HEADING: icondata_core::IconData = icondata_core::IconData {
@@ -11054,7 +13523,7 @@ const LU_HELP_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-<line x1="12" x2="12.01" y1="17" y2="17" />"###
+<path d="M12 17h.01" />"###
 };
 #[cfg(feature = "LuHelpingHand")]
 const LU_HELPING_HAND: icondata_core::IconData = icondata_core::IconData {
@@ -11116,8 +13585,8 @@ const LU_HISTORY: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M3 3v5h5" />
-<path d="M3.05 13A9 9 0 1 0 6 5.3L3 8" />
+    data: r###"<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+<path d="M3 3v5h5" />
 <path d="M12 7v5l4 2" />"###
 };
 #[cfg(feature = "LuHome")]
@@ -11428,8 +13897,8 @@ const LU_INFO: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<line x1="12" x2="12" y1="16" y2="12" />
-<line x1="12" x2="12.01" y1="8" y2="8" />"###
+<path d="M12 16v-4" />
+<path d="M12 8h.01" />"###
 };
 #[cfg(feature = "LuInspect")]
 const LU_INSPECT: icondata_core::IconData = icondata_core::IconData {
@@ -11481,6 +13950,38 @@ const LU_ITALIC: icondata_core::IconData = icondata_core::IconData {
 <line x1="14" x2="5" y1="20" y2="20" />
 <line x1="15" x2="9" y1="4" y2="20" />"###
 };
+#[cfg(feature = "LuIterationCcw")]
+const LU_ITERATION_CCW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8h8" />
+<polyline points="16 14 20 18 16 22" />"###
+};
+#[cfg(feature = "LuIterationCw")]
+const LU_ITERATION_CW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4" />
+<polyline points="8 22 4 18 8 14" />"###
+};
 #[cfg(feature = "LuJapaneseYen")]
 const LU_JAPANESE_YEN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -11516,6 +14017,70 @@ const LU_JOYSTICK: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 15V9" />
 <circle cx="12" cy="6" r="3" />"###
 };
+#[cfg(feature = "LuKanban")]
+const LU_KANBAN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M6 5v11" />
+<path d="M12 5v6" />
+<path d="M18 5v14" />"###
+};
+#[cfg(feature = "LuKanbanSquare")]
+const LU_KANBAN_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 7v7" />
+<path d="M12 7v4" />
+<path d="M16 7v9" />"###
+};
+#[cfg(feature = "LuKanbanSquareDashed")]
+const LU_KANBAN_SQUARE_DASHED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 7v7" />
+<path d="M12 7v4" />
+<path d="M16 7v9" />
+<path d="M5 3a2 2 0 0 0-2 2" />
+<path d="M9 3h1" />
+<path d="M14 3h1" />
+<path d="M19 3a2 2 0 0 1 2 2" />
+<path d="M21 9v1" />
+<path d="M21 14v1" />
+<path d="M21 19a2 2 0 0 1-2 2" />
+<path d="M14 21h1" />
+<path d="M9 21h1" />
+<path d="M5 21a2 2 0 0 1-2-2" />
+<path d="M3 14v1" />
+<path d="M3 9v1" />"###
+};
 #[cfg(feature = "LuKey")]
 const LU_KEY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -11532,6 +14097,39 @@ const LU_KEY: icondata_core::IconData = icondata_core::IconData {
     data: r###"<circle cx="7.5" cy="15.5" r="5.5" />
 <path d="m21 2-9.6 9.6" />
 <path d="m15.5 7.5 3 3L22 7l-3-3" />"###
+};
+#[cfg(feature = "LuKeyRound")]
+const LU_KEY_ROUND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z" />
+<circle cx="16.5" cy="7.5" r=".5" />"###
+};
+#[cfg(feature = "LuKeySquare")]
+const LU_KEY_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12.4 2.7c.9-.9 2.5-.9 3.4 0l5.5 5.5c.9.9.9 2.5 0 3.4l-3.7 3.7c-.9.9-2.5.9-3.4 0L8.7 9.8c-.9-.9-.9-2.5 0-3.4Z" />
+<path d="m14 7 3 3" />
+<path d="M9.4 10.6 2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4" />"###
 };
 #[cfg(feature = "LuKeyboard")]
 const LU_KEYBOARD: icondata_core::IconData = icondata_core::IconData {
@@ -11831,10 +14429,10 @@ const LU_LAYOUT_DASHBOARD: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="7" height="9" x="3" y="3" />
-<rect width="7" height="5" x="14" y="3" />
-<rect width="7" height="9" x="14" y="12" />
-<rect width="7" height="5" x="3" y="16" />"###
+    data: r###"<rect width="7" height="9" x="3" y="3" rx="1" />
+<rect width="7" height="5" x="14" y="3" rx="1" />
+<rect width="7" height="9" x="14" y="12" rx="1" />
+<rect width="7" height="5" x="3" y="16" rx="1" />"###
 };
 #[cfg(feature = "LuLayoutGrid")]
 const LU_LAYOUT_GRID: icondata_core::IconData = icondata_core::IconData {
@@ -11849,10 +14447,10 @@ const LU_LAYOUT_GRID: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="7" height="7" x="3" y="3" />
-<rect width="7" height="7" x="14" y="3" />
-<rect width="7" height="7" x="14" y="14" />
-<rect width="7" height="7" x="3" y="14" />"###
+    data: r###"<rect width="7" height="7" x="3" y="3" rx="1" />
+<rect width="7" height="7" x="14" y="3" rx="1" />
+<rect width="7" height="7" x="14" y="14" rx="1" />
+<rect width="7" height="7" x="3" y="14" rx="1" />"###
 };
 #[cfg(feature = "LuLayoutList")]
 const LU_LAYOUT_LIST: icondata_core::IconData = icondata_core::IconData {
@@ -11867,12 +14465,46 @@ const LU_LAYOUT_LIST: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="7" height="7" x="3" y="14" />
-<rect width="7" height="7" x="3" y="3" />
-<line x1="14" x2="21" y1="4" y2="4" />
-<line x1="14" x2="21" y1="9" y2="9" />
-<line x1="14" x2="21" y1="15" y2="15" />
-<line x1="14" x2="21" y1="20" y2="20" />"###
+    data: r###"<rect width="7" height="7" x="3" y="3" rx="1" />
+<rect width="7" height="7" x="3" y="14" rx="1" />
+<path d="M14 4h7" />
+<path d="M14 9h7" />
+<path d="M14 15h7" />
+<path d="M14 20h7" />"###
+};
+#[cfg(feature = "LuLayoutPanelLeft")]
+const LU_LAYOUT_PANEL_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="7" height="18" x="3" y="3" rx="1" />
+<rect width="7" height="7" x="14" y="3" rx="1" />
+<rect width="7" height="7" x="14" y="14" rx="1" />"###
+};
+#[cfg(feature = "LuLayoutPanelTop")]
+const LU_LAYOUT_PANEL_TOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="7" x="3" y="3" rx="1" />
+<rect width="7" height="7" x="3" y="14" rx="1" />
+<rect width="7" height="7" x="14" y="14" rx="1" />"###
 };
 #[cfg(feature = "LuLayoutTemplate")]
 const LU_LAYOUT_TEMPLATE: icondata_core::IconData = icondata_core::IconData {
@@ -11887,9 +14519,9 @@ const LU_LAYOUT_TEMPLATE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 3H3v7h18V3z" />
-<path d="M21 14h-5v7h5v-7z" />
-<path d="M12 14H3v7h9v-7z" />"###
+    data: r###"<rect width="18" height="7" x="3" y="3" rx="1" />
+<rect width="9" height="7" x="3" y="14" rx="1" />
+<rect width="5" height="7" x="16" y="14" rx="1" />"###
 };
 #[cfg(feature = "LuLeaf")]
 const LU_LEAF: icondata_core::IconData = icondata_core::IconData {
@@ -11906,6 +14538,22 @@ const LU_LEAF: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />"###
+};
+#[cfg(feature = "LuLeafyGreen")]
+const LU_LEAFY_GREEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 22c1.25-.987 2.27-1.975 3.9-2.2a5.56 5.56 0 0 1 3.8 1.5 4 4 0 0 0 6.187-2.353 3.5 3.5 0 0 0 3.69-5.116A3.5 3.5 0 0 0 20.95 8 3.5 3.5 0 1 0 16 3.05a3.5 3.5 0 0 0-5.831 1.373 3.5 3.5 0 0 0-5.116 3.69 4 4 0 0 0-2.348 6.155C3.499 15.42 4.409 16.712 4.2 18.1 3.926 19.743 3.014 20.732 2 22" />
+<path d="M2 22 17 7" />"###
 };
 #[cfg(feature = "LuLibrary")]
 const LU_LIBRARY: icondata_core::IconData = icondata_core::IconData {
@@ -11939,12 +14587,30 @@ const LU_LIFE_BUOY: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<circle cx="12" cy="12" r="4" />
-<line x1="4.93" x2="9.17" y1="4.93" y2="9.17" />
-<line x1="14.83" x2="19.07" y1="14.83" y2="19.07" />
-<line x1="14.83" x2="19.07" y1="9.17" y2="4.93" />
-<line x1="14.83" x2="18.36" y1="9.17" y2="5.64" />
-<line x1="4.93" x2="9.17" y1="19.07" y2="14.83" />"###
+<path d="m4.93 4.93 4.24 4.24" />
+<path d="m14.83 9.17 4.24-4.24" />
+<path d="m14.83 14.83 4.24 4.24" />
+<path d="m9.17 14.83-4.24 4.24" />
+<circle cx="12" cy="12" r="4" />"###
+};
+#[cfg(feature = "LuLigature")]
+const LU_LIGATURE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 20V8c0-2.2 1.8-4 4-4 1.5 0 2.8.8 3.5 2" />
+<path d="M6 12h4" />
+<path d="M14 12h2v8" />
+<path d="M6 20h4" />
+<path d="M14 20h4" />"###
 };
 #[cfg(feature = "LuLightbulb")]
 const LU_LIGHTBULB: icondata_core::IconData = icondata_core::IconData {
@@ -11959,9 +14625,9 @@ const LU_LIGHTBULB: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="9" x2="15" y1="18" y2="18" />
-<line x1="10" x2="14" y1="22" y2="22" />
-<path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14" />"###
+    data: r###"<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+<path d="M9 18h6" />
+<path d="M10 22h4" />"###
 };
 #[cfg(feature = "LuLightbulbOff")]
 const LU_LIGHTBULB_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -11976,11 +14642,11 @@ const LU_LIGHTBULB_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M9 18h6" />
-<path d="M10 22h4" />
+    data: r###"<path d="M16.8 11.2c.8-.9 1.2-2 1.2-3.2a6 6 0 0 0-9.3-5" />
 <path d="m2 2 20 20" />
-<path d="M9 2.804A6 6 0 0 1 18 8a4.65 4.65 0 0 1-1.03 3" />
-<path d="M8.91 14a4.61 4.61 0 0 0-1.41-2.5C6.23 10.23 6 9 6 8a6 6 0 0 1 .084-1" />"###
+<path d="M6.3 6.3a4.67 4.67 0 0 0 1.2 5.2c.7.7 1.3 1.5 1.5 2.5" />
+<path d="M9 18h6" />
+<path d="M10 22h4" />"###
 };
 #[cfg(feature = "LuLineChart")]
 const LU_LINE_CHART: icondata_core::IconData = icondata_core::IconData {
@@ -12099,12 +14765,11 @@ const LU_LIST_CHECKS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="10" x2="21" y1="6" y2="6" />
-<line x1="10" x2="21" y1="12" y2="12" />
-<line x1="10" x2="21" y1="18" y2="18" />
-<polyline points="3 6 4 7 6 5" />
-<polyline points="3 12 4 13 6 11" />
-<polyline points="3 18 4 19 6 17" />"###
+    data: r###"<path d="m3 17 2 2 4-4" />
+<path d="m3 7 2 2 4-4" />
+<path d="M13 6h8" />
+<path d="M13 12h8" />
+<path d="M13 18h8" />"###
 };
 #[cfg(feature = "LuListEnd")]
 const LU_LIST_END: icondata_core::IconData = icondata_core::IconData {
@@ -12122,8 +14787,25 @@ const LU_LIST_END: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M16 12H3" />
 <path d="M16 6H3" />
 <path d="M10 18H3" />
-<path d="M21 6v10a2 2 0 0 1-2 2h-4" />
+<path d="M21 6v10a2 2 0 0 1-2 2h-5" />
 <path d="m16 16-2 2 2 2" />"###
+};
+#[cfg(feature = "LuListFilter")]
+const LU_LIST_FILTER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 6h18" />
+<path d="M7 12h10" />
+<path d="M10 18h4" />"###
 };
 #[cfg(feature = "LuListMinus")]
 const LU_LIST_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -12201,6 +14883,25 @@ const LU_LIST_PLUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M18 9v6" />
 <path d="M21 12h-6" />"###
 };
+#[cfg(feature = "LuListRestart")]
+const LU_LIST_RESTART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M21 6H3" />
+<path d="M7 12H3" />
+<path d="M7 18H3" />
+<path d="M12 18a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L11 14" />
+<path d="M11 10v4h4" />"###
+};
 #[cfg(feature = "LuListStart")]
 const LU_LIST_START: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -12219,6 +14920,25 @@ const LU_LIST_START: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 6H3" />
 <path d="M21 18V8a2 2 0 0 0-2-2h-5" />
 <path d="m16 8-2-2 2-2" />"###
+};
+#[cfg(feature = "LuListTodo")]
+const LU_LIST_TODO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect x="3" y="5" width="6" height="6" rx="1" />
+<path d="m3 17 2 2 4-4" />
+<path d="M13 6h8" />
+<path d="M13 12h8" />
+<path d="M13 18h8" />"###
 };
 #[cfg(feature = "LuListTree")]
 const LU_LIST_TREE: icondata_core::IconData = icondata_core::IconData {
@@ -12423,6 +15143,23 @@ const LU_LOG_OUT: icondata_core::IconData = icondata_core::IconData {
 <polyline points="16 17 21 12 16 7" />
 <line x1="21" x2="9" y1="12" y2="12" />"###
 };
+#[cfg(feature = "LuLollipop")]
+const LU_LOLLIPOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="11" cy="11" r="8" />
+<path d="m21 21-4.3-4.3" />
+<path d="M11 11a2 2 0 0 0 4 0 4 4 0 0 0-8 0 6 6 0 0 0 12 0" />"###
+};
 #[cfg(feature = "LuLuggage")]
 const LU_LUGGAGE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -12441,6 +15178,22 @@ const LU_LUGGAGE: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 20h4" />
 <circle cx="16" cy="20" r="2" />
 <circle cx="8" cy="20" r="2" />"###
+};
+#[cfg(feature = "LuMSquare")]
+const LU_M_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 16V8l4 4 4-4v8" />"###
 };
 #[cfg(feature = "LuMagnet")]
 const LU_MAGNET: icondata_core::IconData = icondata_core::IconData {
@@ -12828,6 +15581,29 @@ const LU_MEH: icondata_core::IconData = icondata_core::IconData {
 <line x1="9" x2="9.01" y1="9" y2="9" />
 <line x1="15" x2="15.01" y1="9" y2="9" />"###
 };
+#[cfg(feature = "LuMemoryStick")]
+const LU_MEMORY_STICK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M6 19v-3" />
+<path d="M10 19v-3" />
+<path d="M14 19v-3" />
+<path d="M18 19v-3" />
+<path d="M8 11V9" />
+<path d="M16 11V9" />
+<path d="M12 11V9" />
+<path d="M2 15h20" />
+<path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.1a2 2 0 0 0 0 3.837V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5.1a2 2 0 0 0 0-3.837Z" />"###
+};
 #[cfg(feature = "LuMenu")]
 const LU_MENU: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -12844,6 +15620,41 @@ const LU_MENU: icondata_core::IconData = icondata_core::IconData {
     data: r###"<line x1="4" x2="20" y1="12" y2="12" />
 <line x1="4" x2="20" y1="6" y2="6" />
 <line x1="4" x2="20" y1="18" y2="18" />"###
+};
+#[cfg(feature = "LuMenuSquare")]
+const LU_MENU_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M7 8h10" />
+<path d="M7 12h10" />
+<path d="M7 16h10" />"###
+};
+#[cfg(feature = "LuMerge")]
+const LU_MERGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m8 6 4-4 4 4" />
+<path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22" />
+<path d="m20 22-5-5" />"###
 };
 #[cfg(feature = "LuMessageCircle")]
 const LU_MESSAGE_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -13000,8 +15811,8 @@ const LU_MICROSCOPE: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 22h18" />
 <path d="M14 22a7 7 0 1 0 0-14h-1" />
 <path d="M9 14h2" />
-<path d="M8 6h4" />
-<path d="M13 10V6.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2.5a.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V10c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2Z" />"###
+<path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
+<path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />"###
 };
 #[cfg(feature = "LuMicrowave")]
 const LU_MICROWAVE: icondata_core::IconData = icondata_core::IconData {
@@ -13123,7 +15934,7 @@ const LU_MINUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="5" x2="19" y1="12" y2="12" />"###
+    data: r###"<path d="M5 12h14" />"###
 };
 #[cfg(feature = "LuMinusCircle")]
 const LU_MINUS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -13139,7 +15950,7 @@ const LU_MINUS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<line x1="8" x2="16" y1="12" y2="12" />"###
+<path d="M8 12h8" />"###
 };
 #[cfg(feature = "LuMinusSquare")]
 const LU_MINUS_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -13154,8 +15965,8 @@ const LU_MINUS_SQUARE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="8" x2="16" y1="12" y2="12" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 12h8" />"###
 };
 #[cfg(feature = "LuMonitor")]
 const LU_MONITOR: icondata_core::IconData = icondata_core::IconData {
@@ -13170,9 +15981,64 @@ const LU_MONITOR: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="20" height="14" x="2" y="3" rx="2" ry="2" />
+    data: r###"<rect width="20" height="14" x="2" y="3" rx="2" />
 <line x1="8" x2="16" y1="21" y2="21" />
 <line x1="12" x2="12" y1="17" y2="21" />"###
+};
+#[cfg(feature = "LuMonitorCheck")]
+const LU_MONITOR_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m9 10 2 2 4-4" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
+#[cfg(feature = "LuMonitorDot")]
+const LU_MONITOR_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="19" cy="6" r="3" />
+<path d="M22 12v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
+#[cfg(feature = "LuMonitorDown")]
+const LU_MONITOR_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 13V7" />
+<path d="m15 10-3 3-3-3" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
 };
 #[cfg(feature = "LuMonitorOff")]
 const LU_MONITOR_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -13192,6 +16058,43 @@ const LU_MONITOR_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 21h8" />
 <path d="M12 17v4" />
 <path d="m2 2 20 20" />"###
+};
+#[cfg(feature = "LuMonitorPause")]
+const LU_MONITOR_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10 13V7" />
+<path d="M14 13V7" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
+#[cfg(feature = "LuMonitorPlay")]
+const LU_MONITOR_PLAY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m10 7 5 3-5 3Z" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
 };
 #[cfg(feature = "LuMonitorSmartphone")]
 const LU_MONITOR_SMARTPHONE: icondata_core::IconData = icondata_core::IconData {
@@ -13230,6 +16133,62 @@ const LU_MONITOR_SPEAKER: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 6H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4" />
 <circle cx="17" cy="15" r="1" />"###
 };
+#[cfg(feature = "LuMonitorStop")]
+const LU_MONITOR_STOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect x="9" y="7" width="6" height="6" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
+#[cfg(feature = "LuMonitorUp")]
+const LU_MONITOR_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m9 10 3-3 3 3" />
+<path d="M12 13V7" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
+#[cfg(feature = "LuMonitorX")]
+const LU_MONITOR_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m14.5 12.5-5-5" />
+<path d="m9.5 12.5 5-5" />
+<rect width="20" height="14" x="2" y="3" rx="2" />
+<path d="M12 17v4" />
+<path d="M8 21h8" />"###
+};
 #[cfg(feature = "LuMoon")]
 const LU_MOON: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -13243,7 +16202,24 @@ const LU_MOON: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12 3a6.364 6.364 0 0 0 9 9 9 9 0 1 1-9-9Z" />"###
+    data: r###"<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />"###
+};
+#[cfg(feature = "LuMoonStar")]
+const LU_MOON_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+<path d="M19 3v4" />
+<path d="M21 5h-4" />"###
 };
 #[cfg(feature = "LuMoreHorizontal")]
 const LU_MORE_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
@@ -13323,8 +16299,8 @@ const LU_MOUSE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="12" height="18" x="6" y="3" rx="6" />
-<path d="M12 7v4" />"###
+    data: r###"<rect x="5" y="2" width="14" height="20" rx="7" />
+<path d="M12 6v4" />"###
 };
 #[cfg(feature = "LuMousePointer")]
 const LU_MOUSE_POINTER: icondata_core::IconData = icondata_core::IconData {
@@ -13446,6 +16422,54 @@ const LU_MOVE_DIAGONAL2: icondata_core::IconData = icondata_core::IconData {
 <polyline points="19 13 19 19 13 19" />
 <line x1="5" x2="19" y1="5" y2="19" />"###
 };
+#[cfg(feature = "LuMoveDown")]
+const LU_MOVE_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 18L12 22L16 18" />
+<path d="M12 2V22" />"###
+};
+#[cfg(feature = "LuMoveDownLeft")]
+const LU_MOVE_DOWN_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M11 19H5V13" />
+<path d="M19 5L5 19" />"###
+};
+#[cfg(feature = "LuMoveDownRight")]
+const LU_MOVE_DOWN_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M19 13V19H13" />
+<path d="M5 5L19 19" />"###
+};
 #[cfg(feature = "LuMoveHorizontal")]
 const LU_MOVE_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -13462,6 +16486,86 @@ const LU_MOVE_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<polyline points="18 8 22 12 18 16" />
 <polyline points="6 8 2 12 6 16" />
 <line x1="2" x2="22" y1="12" y2="12" />"###
+};
+#[cfg(feature = "LuMoveLeft")]
+const LU_MOVE_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M6 8L2 12L6 16" />
+<path d="M2 12H22" />"###
+};
+#[cfg(feature = "LuMoveRight")]
+const LU_MOVE_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18 8L22 12L18 16" />
+<path d="M2 12H22" />"###
+};
+#[cfg(feature = "LuMoveUp")]
+const LU_MOVE_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 6L12 2L16 6" />
+<path d="M12 2V22" />"###
+};
+#[cfg(feature = "LuMoveUpLeft")]
+const LU_MOVE_UP_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 11V5H11" />
+<path d="M5 5L19 19" />"###
+};
+#[cfg(feature = "LuMoveUpRight")]
+const LU_MOVE_UP_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M13 5H19V11" />
+<path d="M19 5L5 19" />"###
 };
 #[cfg(feature = "LuMoveVertical")]
 const LU_MOVE_VERTICAL: icondata_core::IconData = icondata_core::IconData {
@@ -13624,10 +16728,10 @@ const LU_NETWORK: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="6" height="6" x="9" y="2" />
-<rect width="6" height="6" x="16" y="16" />
-<rect width="6" height="6" x="2" y="16" />
-<path d="M5 16v-4h14v4" />
+    data: r###"<rect x="16" y="16" width="6" height="6" rx="1" />
+<rect x="2" y="16" width="6" height="6" rx="1" />
+<rect x="9" y="2" width="6" height="6" rx="1" />
+<path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" />
 <path d="M12 12V8" />"###
 };
 #[cfg(feature = "LuNewspaper")]
@@ -13747,10 +16851,10 @@ const LU_ORBIT: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="3" />
-<circle cx="18" cy="6" r="2" />
-<circle cx="6" cy="18" r="2" />
-<path d="M12 20a8 8 0 0 0 6.82-12.17" />
-<path d="M12 4a8 8 0 0 0-6.82 12.17" />"###
+<circle cx="19" cy="5" r="2" />
+<circle cx="5" cy="19" r="2" />
+<path d="M10.4 21.9a10 10 0 0 0 9.941-15.416" />
+<path d="M13.5 2.1a10 10 0 0 0-9.841 15.416" />"###
 };
 #[cfg(feature = "LuOutdent")]
 const LU_OUTDENT: icondata_core::IconData = icondata_core::IconData {
@@ -14010,6 +17114,282 @@ const LU_PALMTREE: icondata_core::IconData = icondata_core::IconData {
 <path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35z" />
 <path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14" />"###
 };
+#[cfg(feature = "LuPanelBottom")]
+const LU_PANEL_BOTTOM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="15" y2="15" />"###
+};
+#[cfg(feature = "LuPanelBottomClose")]
+const LU_PANEL_BOTTOM_CLOSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="15" y2="15" />
+<path d="m15 8-3 3-3-3" />"###
+};
+#[cfg(feature = "LuPanelBottomInactive")]
+const LU_PANEL_BOTTOM_INACTIVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M14 15h1" />
+<path d="M19 15h2" />
+<path d="M3 15h2" />
+<path d="M9 15h1" />"###
+};
+#[cfg(feature = "LuPanelBottomOpen")]
+const LU_PANEL_BOTTOM_OPEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="15" y2="15" />
+<path d="m9 10 3-3 3 3" />"###
+};
+#[cfg(feature = "LuPanelLeft")]
+const LU_PANEL_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="9" x2="9" y1="3" y2="21" />"###
+};
+#[cfg(feature = "LuPanelLeftClose")]
+const LU_PANEL_LEFT_CLOSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<path d="M9 3v18" />
+<path d="m16 15-3-3 3-3" />"###
+};
+#[cfg(feature = "LuPanelLeftInactive")]
+const LU_PANEL_LEFT_INACTIVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M9 14v1" />
+<path d="M9 19v2" />
+<path d="M9 3v2" />
+<path d="M9 9v1" />"###
+};
+#[cfg(feature = "LuPanelLeftOpen")]
+const LU_PANEL_LEFT_OPEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<path d="M9 3v18" />
+<path d="m14 9 3 3-3 3" />"###
+};
+#[cfg(feature = "LuPanelRight")]
+const LU_PANEL_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="15" x2="15" y1="3" y2="21" />"###
+};
+#[cfg(feature = "LuPanelRightClose")]
+const LU_PANEL_RIGHT_CLOSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="15" x2="15" y1="3" y2="21" />
+<path d="m8 9 3 3-3 3" />"###
+};
+#[cfg(feature = "LuPanelRightInactive")]
+const LU_PANEL_RIGHT_INACTIVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M15 14v1" />
+<path d="M15 19v2" />
+<path d="M15 3v2" />
+<path d="M15 9v1" />"###
+};
+#[cfg(feature = "LuPanelRightOpen")]
+const LU_PANEL_RIGHT_OPEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="15" x2="15" y1="3" y2="21" />
+<path d="m10 15-3-3 3-3" />"###
+};
+#[cfg(feature = "LuPanelTop")]
+const LU_PANEL_TOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="9" y2="9" />"###
+};
+#[cfg(feature = "LuPanelTopClose")]
+const LU_PANEL_TOP_CLOSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="9" y2="9" />
+<path d="m9 16 3-3 3 3" />"###
+};
+#[cfg(feature = "LuPanelTopInactive")]
+const LU_PANEL_TOP_INACTIVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M14 9h1" />
+<path d="M19 9h2" />
+<path d="M3 9h2" />
+<path d="M9 9h1" />"###
+};
+#[cfg(feature = "LuPanelTopOpen")]
+const LU_PANEL_TOP_OPEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="9" y2="9" />
+<path d="m15 14-3 3-3-3" />"###
+};
 #[cfg(feature = "LuPaperclip")]
 const LU_PAPERCLIP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14024,6 +17404,22 @@ const LU_PAPERCLIP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48" />"###
+};
+#[cfg(feature = "LuParentheses")]
+const LU_PARENTHESES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 21s-4-3-4-9 4-9 4-9" />
+<path d="M16 3s4 3 4 9-4 9-4 9" />"###
 };
 #[cfg(feature = "LuParkingCircle")]
 const LU_PARKING_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -14059,6 +17455,25 @@ const LU_PARKING_CIRCLE_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M13 13a3 3 0 1 0 0-6H9v2" />
 <path d="M9 17v-2.34" />"###
 };
+#[cfg(feature = "LuParkingMeter")]
+const LU_PARKING_METER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M9 9a3 3 0 1 1 6 0" />
+<path d="M12 12v3" />
+<path d="M11 15h2" />
+<path d="M19 9a7 7 0 1 0-13.6 2.3C6.4 14.4 8 19 8 19h8s1.6-4.6 2.6-7.7c.3-.8.4-1.5.4-2.3" />
+<path d="M12 19v3" />"###
+};
 #[cfg(feature = "LuParkingSquare")]
 const LU_PARKING_SQUARE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14088,11 +17503,11 @@ const LU_PARKING_SQUARE_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M3.59 3.59A2 2 0 0 1 5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-.59 1.41" />
-<path d="M3 8.66V19c0 1.1.9 2 2 2h10.34" />
+    data: r###"<path d="M3.6 3.6A2 2 0 0 1 5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-.59 1.41" />
+<path d="M3 8.7V19a2 2 0 0 0 2 2h10.3" />
 <path d="m2 2 20 20" />
 <path d="M13 13a3 3 0 1 0 0-6H9v2" />
-<path d="M9 17v-2.34" />"###
+<path d="M9 17v-2.3" />"###
 };
 #[cfg(feature = "LuPartyPopper")]
 const LU_PARTY_POPPER: icondata_core::IconData = icondata_core::IconData {
@@ -14167,6 +17582,89 @@ const LU_PAUSE_OCTAGON: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 15V9" />
 <path d="M7.714 2h8.572L22 7.714v8.572L16.286 22H7.714L2 16.286V7.714L7.714 2z" />"###
 };
+#[cfg(feature = "LuPawPrint")]
+const LU_PAW_PRINT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="11" cy="4" r="2" />
+<circle cx="18" cy="8" r="2" />
+<circle cx="20" cy="16" r="2" />
+<path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />"###
+};
+#[cfg(feature = "LuPcCase")]
+const LU_PC_CASE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="14" height="20" x="5" y="2" rx="2" />
+<path d="M15 14h.01" />
+<path d="M9 6h6" />
+<path d="M9 10h6" />"###
+};
+#[cfg(feature = "LuPen")]
+const LU_PEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />"###
+};
+#[cfg(feature = "LuPenLine")]
+const LU_PEN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 20h9" />
+<path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />"###
+};
+#[cfg(feature = "LuPenSquare")]
+const LU_PEN_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+<path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z" />"###
+};
 #[cfg(feature = "LuPenTool")]
 const LU_PEN_TOOL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14198,8 +17696,45 @@ const LU_PENCIL: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="18" x2="22" y1="2" y2="6" />
-<path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z" />"###
+    data: r###"<path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+<path d="m15 5 4 4" />"###
+};
+#[cfg(feature = "LuPencilLine")]
+const LU_PENCIL_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 20h9" />
+<path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+<path d="m15 5 3 3" />"###
+};
+#[cfg(feature = "LuPencilRuler")]
+const LU_PENCIL_RULER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m15 5 4 4" />
+<path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
+<path d="m8 6 2-2" />
+<path d="m2 22 5.5-1.5L21.17 6.83a2.82 2.82 0 0 0-4-4L3.5 16.5Z" />
+<path d="m18 16 2-2" />
+<path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />"###
 };
 #[cfg(feature = "LuPercent")]
 const LU_PERCENT: icondata_core::IconData = icondata_core::IconData {
@@ -14352,6 +17887,41 @@ const LU_PHONE_OUTGOING: icondata_core::IconData = icondata_core::IconData {
 <line x1="16" x2="22" y1="8" y2="2" />
 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />"###
 };
+#[cfg(feature = "LuPi")]
+const LU_PI: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<line x1="9" x2="9" y1="4" y2="20" />
+<path d="M4 7c0-1.7 1.3-3 3-3h13" />
+<path d="M18 20c-1.7 0-3-1.3-3-3V4" />"###
+};
+#[cfg(feature = "LuPiSquare")]
+const LU_PI_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M7 7h10" />
+<path d="M10 7v10" />
+<path d="M16 17a2 2 0 0 1-2-2V7" />"###
+};
 #[cfg(feature = "LuPictureInPicture")]
 const LU_PICTURE_IN_PICTURE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14433,6 +18003,24 @@ const LU_PILCROW: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M13 4v16" />
 <path d="M17 4v16" />
 <path d="M19 4H9.5a4.5 4.5 0 0 0 0 9H13" />"###
+};
+#[cfg(feature = "LuPilcrowSquare")]
+const LU_PILCROW_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M12 12H9.5a2.5 2.5 0 0 1 0-5H17" />
+<path d="M12 7v10" />
+<path d="M16 7v10" />"###
 };
 #[cfg(feature = "LuPill")]
 const LU_PILL: icondata_core::IconData = icondata_core::IconData {
@@ -14598,6 +18186,22 @@ const LU_PLAY_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<circle cx="12" cy="12" r="10" />
 <polygon points="10 8 16 12 10 16 10 8" />"###
 };
+#[cfg(feature = "LuPlaySquare")]
+const LU_PLAY_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m9 8 6 4-6 4Z" />"###
+};
 #[cfg(feature = "LuPlug")]
 const LU_PLUG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14612,9 +18216,9 @@ const LU_PLUG: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="M12 22v-5" />
-<path d="M9 7V2" />
-<path d="M15 7V2" />
-<path d="M6 13V8h12v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4Z" />"###
+<path d="M9 8V2" />
+<path d="M15 8V2" />
+<path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" />"###
 };
 #[cfg(feature = "LuPlug2")]
 const LU_PLUG2: icondata_core::IconData = icondata_core::IconData {
@@ -14648,12 +18252,30 @@ const LU_PLUG_ZAP: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
+    data: r###"<path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" />
+<path d="m2 22 3-3" />
+<path d="M7.5 13.5 10 11" />
+<path d="M10.5 16.5 13 14" />
+<path d="m18 3-4 4h6l-4 4" />"###
+};
+#[cfg(feature = "LuPlugZap2")]
+const LU_PLUG_ZAP2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
     data: r###"<path d="m13 2-2 2.5h3L12 7" />
-<path d="M12 22v-3" />
-<path d="M10 13v-2.5" />
-<path d="M10 12.5v-2" />
-<path d="M14 12.5v-2" />
-<path d="M16 15a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2z" />"###
+<path d="M10 14v-3" />
+<path d="M14 14v-3" />
+<path d="M11 19c-1.7 0-3-1.3-3-3v-2h8v2c0 1.7-1.3 3-3 3Z" />
+<path d="M12 22v-3" />"###
 };
 #[cfg(feature = "LuPlus")]
 const LU_PLUS: icondata_core::IconData = icondata_core::IconData {
@@ -14668,8 +18290,8 @@ const LU_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="12" x2="12" y1="5" y2="19" />
-<line x1="5" x2="19" y1="12" y2="12" />"###
+    data: r###"<path d="M5 12h14" />
+<path d="M12 5v14" />"###
 };
 #[cfg(feature = "LuPlusCircle")]
 const LU_PLUS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -14685,8 +18307,8 @@ const LU_PLUS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<line x1="12" x2="12" y1="8" y2="16" />
-<line x1="8" x2="16" y1="12" y2="12" />"###
+<path d="M8 12h8" />
+<path d="M12 8v8" />"###
 };
 #[cfg(feature = "LuPlusSquare")]
 const LU_PLUS_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -14701,9 +18323,9 @@ const LU_PLUS_SQUARE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="12" x2="12" y1="8" y2="16" />
-<line x1="8" x2="16" y1="12" y2="12" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M8 12h8" />
+<path d="M12 8v8" />"###
 };
 #[cfg(feature = "LuPocket")]
 const LU_POCKET: icondata_core::IconData = icondata_core::IconData {
@@ -14720,6 +18342,25 @@ const LU_POCKET: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z" />
 <polyline points="8 10 12 14 16 10" />"###
+};
+#[cfg(feature = "LuPocketKnife")]
+const LU_POCKET_KNIFE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 2v1c0 1 2 1 2 2S3 6 3 7s2 1 2 2-2 1-2 2 2 1 2 2" />
+<path d="M18 6h.01" />
+<path d="M6 18h.01" />
+<path d="M20.83 8.83a4 4 0 0 0-5.66-5.66l-12 12a4 4 0 1 0 5.66 5.66Z" />
+<path d="M18 11.66V22a4 4 0 0 0 4-4V6" />"###
 };
 #[cfg(feature = "LuPodcast")]
 const LU_PODCAST: icondata_core::IconData = icondata_core::IconData {
@@ -14757,6 +18398,40 @@ const LU_POINTER: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 10V9a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v1" />
 <path d="M10 9.5V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v10" />
 <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />"###
+};
+#[cfg(feature = "LuPopcorn")]
+const LU_POPCORN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18 8a2 2 0 0 0 0-4 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0-4 0 2 2 0 0 0 0 4" />
+<path d="M10 22 9 8" />
+<path d="m14 22 1-14" />
+<path d="M20 8c.5 0 .9.4.8 1l-2.6 12c-.1.5-.7 1-1.2 1H7c-.6 0-1.1-.4-1.2-1L3.2 9c-.1-.6.3-1 .8-1Z" />"###
+};
+#[cfg(feature = "LuPopsicle")]
+const LU_POPSICLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18.6 14.4c.8-.8.8-2 0-2.8l-8.1-8.1a4.95 4.95 0 1 0-7.1 7.1l8.1 8.1c.9.7 2.1.7 2.9-.1Z" />
+<path d="m22 22-5.5-5.5" />"###
 };
 #[cfg(feature = "LuPoundSterling")]
 const LU_POUND_STERLING: icondata_core::IconData = icondata_core::IconData {
@@ -14810,6 +18485,23 @@ const LU_POWER_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 2v4" />
 <path d="m2 2 20 20" />"###
 };
+#[cfg(feature = "LuPresentation")]
+const LU_PRESENTATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 3h20" />
+<path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+<path d="m7 21 5-5 5 5" />"###
+};
 #[cfg(feature = "LuPrinter")]
 const LU_PRINTER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14826,6 +18518,26 @@ const LU_PRINTER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<polyline points="6 9 6 2 18 2 18 9" />
 <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
 <rect width="12" height="8" x="6" y="14" />"###
+};
+#[cfg(feature = "LuProjector")]
+const LU_PROJECTOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 7 3 5" />
+<path d="M9 6V3" />
+<path d="m13 7 2-2" />
+<circle cx="9" cy="13" r="3" />
+<path d="M11.83 12H20a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.17" />
+<path d="M16 16h2" />"###
 };
 #[cfg(feature = "LuPuzzle")]
 const LU_PUZZLE: icondata_core::IconData = icondata_core::IconData {
@@ -14883,6 +18595,65 @@ const LU_QUOTE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
 <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />"###
+};
+#[cfg(feature = "LuRabbit")]
+const LU_RABBIT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M20 8.54V4a2 2 0 1 0-4 0v3" />
+<path d="M18 21h-8a4 4 0 0 1-4-4 7 7 0 0 1 7-7h.2L9.6 6.4a1.93 1.93 0 1 1 2.8-2.8L15.8 7h.2c3.3 0 6 2.7 6 6v1a2 2 0 0 1-2 2h-1c-1.7 0-3 1.3-3 3" />
+<path d="M7.61 12.53a3 3 0 1 0-1.6 4.3" />
+<path d="M13 16a3 3 0 0 1 2.24 5" />
+<path d="M18 12h.01" />"###
+};
+#[cfg(feature = "LuRadar")]
+const LU_RADAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" />
+<path d="M4 6h.01" />
+<path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" />
+<path d="M16.24 7.76A6 6 0 1 0 8.23 16.67" />
+<path d="M12 18h.01" />
+<path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" />
+<circle cx="12" cy="12" r="2" />
+<path d="m13.41 10.59 5.66-5.66" />"###
+};
+#[cfg(feature = "LuRadiation")]
+const LU_RADIATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 12h0" />
+<path d="M7.5 4.2c-.3-.5-.9-.7-1.3-.4C3.9 5.5 2.3 8.1 2 11c-.1.5.4 1 1 1h5c0-1.5.8-2.8 2-3.4-1.1-1.9-2-3.5-2.5-4.4z" />
+<path d="M21 12c.6 0 1-.4 1-1-.3-2.9-1.8-5.5-4.1-7.1-.4-.3-1.1-.2-1.3.3-.6.9-1.5 2.5-2.6 4.3 1.2.7 2 2 2 3.5h5z" />
+<path d="M7.5 19.8c-.3.5-.1 1.1.4 1.3 2.6 1.2 5.6 1.2 8.2 0 .5-.2.7-.8.4-1.3-.5-.9-1.4-2.5-2.5-4.3-1.2.7-2.8.7-4 0-1.1 1.8-2 3.4-2.5 4.3z" />"###
 };
 #[cfg(feature = "LuRadio")]
 const LU_RADIO: icondata_core::IconData = icondata_core::IconData {
@@ -14942,6 +18713,40 @@ const LU_RADIO_TOWER: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.5 18h5" />
 <path d="m8 22 4-11 4 11" />"###
 };
+#[cfg(feature = "LuRailSymbol")]
+const LU_RAIL_SYMBOL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 15h14" />
+<path d="M5 9h14" />
+<path d="m14 20-5-5 6-6-5-5" />"###
+};
+#[cfg(feature = "LuRainbow")]
+const LU_RAINBOW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M22 17a10 10 0 0 0-20 0" />
+<path d="M6 17a6 6 0 0 1 12 0" />
+<path d="M10 17a2 2 0 0 1 4 0" />"###
+};
 #[cfg(feature = "LuRat")]
 const LU_RAT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -14955,11 +18760,27 @@ const LU_RAT: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M14 16.5v-.77a2.73 2.73 0 0 1 3.27-2.68l3.02.6a1.4 1.4 0 0 0 1.5-2.08l-1.63-2.8a3 3 0 1 0-3.35-4.82" />
-<path d="M16 9h-.01" />
-<path d="M17 5.12V5a3 3 0 1 0-5.24 2h-1A6.77 6.77 0 0 0 4 13.77C4 16.1 5.9 18 8.23 18H9" />
-<path d="M13 22H4a2 2 0 1 1 0-4h12" />
-<path d="M13.67 18c.21-.44.33-.94.33-1.45A3.65 3.65 0 0 0 10.26 13" />"###
+    data: r###"<path d="M17 5c0-1.7-1.3-3-3-3s-3 1.3-3 3c0 .8.3 1.5.8 2H11c-3.9 0-7 3.1-7 7v0c0 2.2 1.8 4 4 4" />
+<path d="M16.8 3.9c.3-.3.6-.5 1-.7 1.5-.6 3.3.1 3.9 1.6.6 1.5-.1 3.3-1.6 3.9l1.6 2.8c.2.3.2.7.2 1-.2.8-.9 1.2-1.7 1.1 0 0-1.6-.3-2.7-.6H17c-1.7 0-3 1.3-3 3" />
+<path d="M13.2 18a3 3 0 0 0-2.2-5" />
+<path d="M13 22H4a2 2 0 0 1 0-4h12" />
+<path d="M16 9h.01" />"###
+};
+#[cfg(feature = "LuRatio")]
+const LU_RATIO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="12" height="20" x="6" y="2" rx="2" />
+<rect width="20" height="12" x="2" y="6" rx="2" />"###
 };
 #[cfg(feature = "LuReceipt")]
 const LU_RECEIPT: icondata_core::IconData = icondata_core::IconData {
@@ -15060,8 +18881,43 @@ const LU_REDO2: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="m15 14 5-5-5-5" />
 <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5v0A5.5 5.5 0 0 0 9.5 20H13" />"###
 };
+#[cfg(feature = "LuRedoDot")]
+const LU_REDO_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="17" r="1" />
+<path d="M21 7v6h-6" />
+<path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7" />"###
+};
 #[cfg(feature = "LuRefreshCcw")]
 const LU_REFRESH_CCW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+<path d="M3 3v5h5" />
+<path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+<path d="M16 16h5v5" />"###
+};
+#[cfg(feature = "LuRefreshCcwDot")]
+const LU_REFRESH_CCW_DOT: icondata_core::IconData = icondata_core::IconData {
     style: None,
     x: None,
     y: None,
@@ -15076,7 +18932,8 @@ const LU_REFRESH_CCW: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M3 2v6h6" />
 <path d="M21 12A9 9 0 0 0 6 5.3L3 8" />
 <path d="M21 22v-6h-6" />
-<path d="M3 12a9 9 0 0 0 15 6.7l3-2.7" />"###
+<path d="M3 12a9 9 0 0 0 15 6.7l3-2.7" />
+<circle cx="12" cy="12" r="1" />"###
 };
 #[cfg(feature = "LuRefreshCw")]
 const LU_REFRESH_CW: icondata_core::IconData = icondata_core::IconData {
@@ -15091,10 +18948,31 @@ const LU_REFRESH_CW: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 2v6h-6" />
-<path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
-<path d="M3 22v-6h6" />
-<path d="M21 12a9 9 0 0 1-15 6.7L3 16" />"###
+    data: r###"<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+<path d="M21 3v5h-5" />
+<path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+<path d="M8 16H3v5" />"###
+};
+#[cfg(feature = "LuRefreshCwOff")]
+const LU_REFRESH_CW_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M21 8L18.74 5.74A9.75 9.75 0 0 0 12 3C11 3 10.03 3.16 9.13 3.47" />
+<path d="M8 16H3v5" />
+<path d="M3 12C3 9.51 4 7.26 5.64 5.64" />
+<path d="m3 16 2.26 2.26A9.75 9.75 0 0 0 12 21c2.49 0 4.74-1 6.36-2.64" />
+<path d="M21 12c0 1-.16 1.97-.47 2.87" />
+<path d="M21 3v5h-5" />
+<path d="M22 22 2 2" />"###
 };
 #[cfg(feature = "LuRefrigerator")]
 const LU_REFRIGERATOR: icondata_core::IconData = icondata_core::IconData {
@@ -15187,6 +19065,24 @@ const LU_REPEAT1: icondata_core::IconData = icondata_core::IconData {
 <path d="M21 13v1a4 4 0 0 1-4 4H3" />
 <path d="M11 10h1v4" />"###
 };
+#[cfg(feature = "LuRepeat2")]
+const LU_REPEAT2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m2 9 3-3 3 3" />
+<path d="M13 18H7a2 2 0 0 1-2-2V6" />
+<path d="m22 15-3 3-3-3" />
+<path d="M11 6h6a2 2 0 0 1 2 2v10" />"###
+};
 #[cfg(feature = "LuReplace")]
 const LU_REPLACE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15200,13 +19096,13 @@ const LU_REPLACE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect x="2" y="14" width="8" height="8" rx="2" />
+    data: r###"<path d="M14 4c0-1.1.9-2 2-2" />
+<path d="M20 2c1.1 0 2 .9 2 2" />
+<path d="M22 8c0 1.1-.9 2-2 2" />
+<path d="M16 10c-1.1 0-2-.9-2-2" />
 <path d="m3 7 3 3 3-3" />
-<path d="M6 10V5a2.95 2.95 0 0 1 3-3h1" />
-<path d="M22 8a2 2 0 0 1-2 2" />
-<path d="M20 2a2 2 0 0 1 2 2" />
-<path d="M14 4a2 2 0 0 1 2-2" />
-<path d="M16 10a2 2 0 0 1-2-2" />"###
+<path d="M6 10V5c0-1.7 1.3-3 3-3h1" />
+<rect width="8" height="8" x="2" y="14" rx="2" />"###
 };
 #[cfg(feature = "LuReplaceAll")]
 const LU_REPLACE_ALL: icondata_core::IconData = icondata_core::IconData {
@@ -15221,15 +19117,15 @@ const LU_REPLACE_ALL: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect x="2" y="14" width="8" height="8" rx="2" />
+    data: r###"<path d="M14 4c0-1.1.9-2 2-2" />
+<path d="M20 2c1.1 0 2 .9 2 2" />
+<path d="M22 8c0 1.1-.9 2-2 2" />
+<path d="M16 10c-1.1 0-2-.9-2-2" />
 <path d="m3 7 3 3 3-3" />
-<path d="M6 10V5a2.95 2.95 0 0 1 3-3h1" />
-<path d="M22 8a2 2 0 0 1-2 2" />
-<path d="M20 2a2 2 0 0 1 2 2" />
-<path d="M14 4a2 2 0 0 1 2-2" />
-<path d="M16 10a2 2 0 0 1-2-2" />
-<path d="M14 14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />
-<path d="M20 14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2" />"###
+<path d="M6 10V5c0-1.7 1.3-3 3-3h1" />
+<rect width="8" height="8" x="2" y="14" rx="2" />
+<path d="M14 14c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />
+<path d="M20 14c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2" />"###
 };
 #[cfg(feature = "LuReply")]
 const LU_REPLY: icondata_core::IconData = icondata_core::IconData {
@@ -15316,6 +19212,27 @@ const LU_ROCKING_CHAIR: icondata_core::IconData = icondata_core::IconData {
 <line x1="15" x2="18.5" y1="12.5" y2="20" />
 <path d="M2.75 18a13 13 0 0 0 18.5 0" />"###
 };
+#[cfg(feature = "LuRollerCoaster")]
+const LU_ROLLER_COASTER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M6 19V5" />
+<path d="M10 19V6.8" />
+<path d="M14 19v-7.8" />
+<path d="M18 5v4" />
+<path d="M18 19v-6" />
+<path d="M22 19V9" />
+<path d="M2 19V9a4 4 0 0 1 4-4c2 0 4 1.33 6 4s4 4 6 4a4 4 0 1 0-3-6.65" />"###
+};
 #[cfg(feature = "LuRotate3d")]
 const LU_ROTATE3D: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15346,8 +19263,8 @@ const LU_ROTATE_CCW: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M3 2v6h6" />
-<path d="M3 13a9 9 0 1 0 3-7.7L3 8" />"###
+    data: r###"<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+<path d="M3 3v5h5" />"###
 };
 #[cfg(feature = "LuRotateCw")]
 const LU_ROTATE_CW: icondata_core::IconData = icondata_core::IconData {
@@ -15362,8 +19279,8 @@ const LU_ROTATE_CW: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 2v6h-6" />
-<path d="M21 13a9 9 0 1 1-3-7.7L21 8" />"###
+    data: r###"<path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+<path d="M21 3v5h-5" />"###
 };
 #[cfg(feature = "LuRouter")]
 const LU_ROUTER: icondata_core::IconData = icondata_core::IconData {
@@ -15384,6 +19301,22 @@ const LU_ROUTER: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 10v4" />
 <path d="M17.84 7.17a4 4 0 0 0-5.66 0" />
 <path d="M20.66 4.34a8 8 0 0 0-11.31 0" />"###
+};
+#[cfg(feature = "LuRows")]
+const LU_ROWS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+<line x1="3" x2="21" y1="12" y2="12" />"###
 };
 #[cfg(feature = "LuRss")]
 const LU_RSS: icondata_core::IconData = icondata_core::IconData {
@@ -15415,11 +19348,11 @@ const LU_RULER: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21.3 8.7 8.7 21.3c-1 1-2.5 1-3.4 0l-2.6-2.6c-1-1-1-2.5 0-3.4L15.3 2.7c1-1 2.5-1 3.4 0l2.6 2.6c1 1 1 2.5 0 3.4Z" />
-<path d="m7.5 10.5 2 2" />
-<path d="m10.5 7.5 2 2" />
-<path d="m13.5 4.5 2 2" />
-<path d="m4.5 13.5 2 2" />"###
+    data: r###"<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+<path d="m14.5 12.5 2-2" />
+<path d="m11.5 9.5 2-2" />
+<path d="m8.5 6.5 2-2" />
+<path d="m17.5 15.5 2-2" />"###
 };
 #[cfg(feature = "LuRussianRuble")]
 const LU_RUSSIAN_RUBLE: icondata_core::IconData = icondata_core::IconData {
@@ -15494,6 +19427,43 @@ const LU_SANDWICH: icondata_core::IconData = icondata_core::IconData {
 <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z" />
 <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z" />"###
 };
+#[cfg(feature = "LuSatellite")]
+const LU_SATELLITE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M13 7 9 3 5 7l4 4" />
+<path d="m17 11 4 4-4 4-4-4" />
+<path d="m8 12 4 4 6-6-4-4Z" />
+<path d="m16 8 3-3" />
+<path d="M9 21a6 6 0 0 0-6-6" />"###
+};
+#[cfg(feature = "LuSatelliteDish")]
+const LU_SATELLITE_DISH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 10a7.31 7.31 0 0 0 10 10Z" />
+<path d="m9 15 3-3" />
+<path d="M17 13a6 6 0 0 0-6-6" />
+<path d="M21 13A10 10 0 0 0 11 3" />"###
+};
 #[cfg(feature = "LuSave")]
 const LU_SAVE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15561,10 +19531,10 @@ const LU_SCALE3D: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M5 7v12h12" />
-<path d="m5 19 6-6" />
-<rect width="4" height="4" x="3" y="3" rx="1" />
-<rect width="4" height="4" x="17" y="17" rx="1" />"###
+    data: r###"<circle cx="19" cy="19" r="2" />
+<circle cx="5" cy="5" r="2" />
+<path d="M5 7v12h12" />
+<path d="m5 19 6-6" />"###
 };
 #[cfg(feature = "LuScaling")]
 const LU_SCALING: icondata_core::IconData = icondata_core::IconData {
@@ -15642,6 +19612,26 @@ const LU_SCAN_LINE: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
 <line x1="7" x2="17" y1="12" y2="12" />"###
 };
+#[cfg(feature = "LuScatterChart")]
+const LU_SCATTER_CHART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="7.5" cy="7.5" r=".5" />
+<circle cx="18.5" cy="5.5" r=".5" />
+<circle cx="11.5" cy="11.5" r=".5" />
+<circle cx="7.5" cy="16.5" r=".5" />
+<circle cx="17.5" cy="14.5" r=".5" />
+<path d="M3 3v18h18" />"###
+};
 #[cfg(feature = "LuSchool")]
 const LU_SCHOOL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15697,10 +19687,73 @@ const LU_SCISSORS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="6" cy="6" r="3" />
+<path d="M8.12 8.12 12 12" />
+<path d="M20 4 8.12 15.88" />
 <circle cx="6" cy="18" r="3" />
-<line x1="20" x2="8.12" y1="4" y2="15.88" />
-<line x1="14.47" x2="20" y1="14.48" y2="20" />
-<line x1="8.12" x2="12" y1="8.12" y2="12" />"###
+<path d="M14.8 14.8 20 20" />"###
+};
+#[cfg(feature = "LuScissorsLineDashed")]
+const LU_SCISSORS_LINE_DASHED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5.42 9.42 8 12" />
+<circle cx="4" cy="8" r="2" />
+<path d="m14 6-8.58 8.58" />
+<circle cx="4" cy="16" r="2" />
+<path d="M10.8 14.8 14 18" />
+<path d="M16 12h-2" />
+<path d="M22 12h-2" />"###
+};
+#[cfg(feature = "LuScissorsSquare")]
+const LU_SCISSORS_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="20" height="20" x="2" y="2" rx="2" />
+<circle cx="8" cy="8" r="2" />
+<path d="M9.414 9.414 12 12" />
+<path d="M14.8 14.8 18 18" />
+<circle cx="8" cy="16" r="2" />
+<path d="m18 6-8.586 8.586" />"###
+};
+#[cfg(feature = "LuScissorsSquareDashedBottom")]
+const LU_SCISSORS_SQUARE_DASHED_BOTTOM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2" />
+<path d="M10 22H8" />
+<path d="M16 22h-2" />
+<circle cx="8" cy="8" r="2" />
+<path d="M9.414 9.414 12 12" />
+<path d="M14.8 14.8 18 18" />
+<circle cx="8" cy="16" r="2" />
+<path d="m18 6-8.586 8.586" />"###
 };
 #[cfg(feature = "LuScreenShare")]
 const LU_SCREEN_SHARE: icondata_core::IconData = icondata_core::IconData {
@@ -15753,10 +19806,26 @@ const LU_SCROLL: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M10 17v2a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3h3" />
-<path d="M22 17v2a2 2 0 0 1-2 2H8" />
+    data: r###"<path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4" />
+<path d="M19 17V5a2 2 0 0 0-2-2H4" />"###
+};
+#[cfg(feature = "LuScrollText")]
+const LU_SCROLL_TEXT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4" />
 <path d="M19 17V5a2 2 0 0 0-2-2H4" />
-<path d="M22 17H10" />"###
+<path d="M15 8h-5" />
+<path d="M15 12h-5" />"###
 };
 #[cfg(feature = "LuSearch")]
 const LU_SEARCH: icondata_core::IconData = icondata_core::IconData {
@@ -15772,7 +19841,77 @@ const LU_SEARCH: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="11" cy="11" r="8" />
-<line x1="21" x2="16.65" y1="21" y2="16.65" />"###
+<path d="m21 21-4.3-4.3" />"###
+};
+#[cfg(feature = "LuSearchCheck")]
+const LU_SEARCH_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m8 11 2 2 4-4" />
+<circle cx="11" cy="11" r="8" />
+<path d="m21 21-4.3-4.3" />"###
+};
+#[cfg(feature = "LuSearchCode")]
+const LU_SEARCH_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m9 9-2 2 2 2" />
+<path d="m13 13 2-2-2-2" />
+<circle cx="11" cy="11" r="8" />
+<path d="m21 21-4.3-4.3" />"###
+};
+#[cfg(feature = "LuSearchSlash")]
+const LU_SEARCH_SLASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m13.5 8.5-5 5" />
+<circle cx="11" cy="11" r="8" />
+<path d="m21 21-4.3-4.3" />"###
+};
+#[cfg(feature = "LuSearchX")]
+const LU_SEARCH_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m13.5 8.5-5 5" />
+<path d="m8.5 8.5 5 5" />
+<circle cx="11" cy="11" r="8" />
+<path d="m21 21-4.3-4.3" />"###
 };
 #[cfg(feature = "LuSend")]
 const LU_SEND: icondata_core::IconData = icondata_core::IconData {
@@ -15787,8 +19926,42 @@ const LU_SEND: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="22" x2="11" y1="2" y2="13" />
-<polygon points="22 2 15 22 11 13 2 9 22 2" />"###
+    data: r###"<path d="m22 2-7 20-4-9-9-4Z" />
+<path d="M22 2 11 13" />"###
+};
+#[cfg(feature = "LuSendHorizonal")]
+const LU_SEND_HORIZONAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m3 3 3 9-3 9 19-9Z" />
+<path d="M6 12h16" />"###
+};
+#[cfg(feature = "LuSendToBack")]
+const LU_SEND_TO_BACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect x="14" y="14" width="8" height="8" rx="2" />
+<rect x="2" y="2" width="8" height="8" rx="2" />
+<path d="M7 14v1a2 2 0 0 0 2 2h1" />
+<path d="M14 7h1a2 2 0 0 1 2 2v1" />"###
 };
 #[cfg(feature = "LuSeparatorHorizontal")]
 const LU_SEPARATOR_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
@@ -15942,6 +20115,23 @@ const LU_SETTINGS2: icondata_core::IconData = icondata_core::IconData {
 <circle cx="17" cy="17" r="3" />
 <circle cx="7" cy="7" r="3" />"###
 };
+#[cfg(feature = "LuShapes")]
+const LU_SHAPES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" />
+<rect x="3" y="14" width="7" height="7" rx="1" />
+<circle cx="17.5" cy="17.5" r="3.5" />"###
+};
 #[cfg(feature = "LuShare")]
 const LU_SHARE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15996,6 +20186,21 @@ const LU_SHEET: icondata_core::IconData = icondata_core::IconData {
 <line x1="3" x2="21" y1="15" y2="15" />
 <line x1="9" x2="9" y1="9" y2="21" />
 <line x1="15" x2="15" y1="9" y2="21" />"###
+};
+#[cfg(feature = "LuShell")]
+const LU_SHELL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 11a2 2 0 1 1-4 0 4 4 0 0 1 8 0 6 6 0 0 1-12 0 8 8 0 0 1 16 0 10 10 0 1 1-20 0 11.93 11.93 0 0 1 2.42-7.22 2 2 0 1 1 3.16 2.44" />"###
 };
 #[cfg(feature = "LuShield")]
 const LU_SHIELD: icondata_core::IconData = icondata_core::IconData {
@@ -16115,6 +20320,30 @@ const LU_SHIP: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 10v4" />
 <path d="M12 2v3" />"###
 };
+#[cfg(feature = "LuShipWheel")]
+const LU_SHIP_WHEEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="8" />
+<path d="M12 2v7.5" />
+<path d="m19 5-5.23 5.23" />
+<path d="M22 12h-7.5" />
+<path d="m19 19-5.23-5.23" />
+<path d="M12 14.5V22" />
+<path d="M10.23 13.77 5 19" />
+<path d="M9.5 12H2" />
+<path d="M10.23 10.23 5 5" />
+<circle cx="12" cy="12" r="2.5" />"###
+};
 #[cfg(feature = "LuShirt")]
 const LU_SHIRT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16143,9 +20372,30 @@ const LU_SHOPPING_BAG: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-<line x1="3" x2="21" y1="6" y2="6" />
+    data: r###"<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+<path d="M3 6h18" />
 <path d="M16 10a4 4 0 0 1-8 0" />"###
+};
+#[cfg(feature = "LuShoppingBasket")]
+const LU_SHOPPING_BASKET: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m5 11 4-7" />
+<path d="m19 11-4-7" />
+<path d="M2 11h20" />
+<path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8c.9 0 1.8-.7 2-1.6l1.7-7.4" />
+<path d="m9 11 1 9" />
+<path d="M4.5 15.5h15" />
+<path d="m15 11-1 9" />"###
 };
 #[cfg(feature = "LuShoppingCart")]
 const LU_SHOPPING_CART: icondata_core::IconData = icondata_core::IconData {
@@ -16253,61 +20503,11 @@ const LU_SHUFFLE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="16 3 21 3 21 8" />
-<line x1="4" x2="21" y1="20" y2="3" />
-<polyline points="21 16 21 21 16 21" />
-<line x1="15" x2="21" y1="15" y2="21" />
-<line x1="4" x2="9" y1="4" y2="9" />"###
-};
-#[cfg(feature = "LuSidebar")]
-const LU_SIDEBAR: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="9" x2="9" y1="3" y2="21" />"###
-};
-#[cfg(feature = "LuSidebarClose")]
-const LU_SIDEBAR_CLOSE: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<path d="M9 3v18" />
-<path d="m16 15-3-3 3-3" />"###
-};
-#[cfg(feature = "LuSidebarOpen")]
-const LU_SIDEBAR_OPEN: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<path d="M9 3v18" />
-<path d="m14 9 3 3-3 3" />"###
+    data: r###"<path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22" />
+<path d="m18 2 4 4-4 4" />
+<path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2" />
+<path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8" />
+<path d="m18 14 4 4-4 4" />"###
 };
 #[cfg(feature = "LuSigma")]
 const LU_SIGMA: icondata_core::IconData = icondata_core::IconData {
@@ -16323,6 +20523,22 @@ const LU_SIGMA: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="M18 7V4H6l6 8-6 8h12v-3" />"###
+};
+#[cfg(feature = "LuSigmaSquare")]
+const LU_SIGMA_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M16 8.9V7H8l4 5-4 5h8v-1.9" />"###
 };
 #[cfg(feature = "LuSignal")]
 const LU_SIGNAL: icondata_core::IconData = icondata_core::IconData {
@@ -16654,6 +20870,25 @@ const LU_SMILE_PLUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 5h6" />
 <path d="M19 2v6" />"###
 };
+#[cfg(feature = "LuSnail")]
+const LU_SNAIL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0" />
+<circle cx="10" cy="13" r="8" />
+<path d="M2 21h12c4.4 0 8-3.6 8-8V7a2 2 0 1 0-4 0v6" />
+<path d="M18 3 19.1 5.2" />
+<path d="M22 3 20.9 5.2" />"###
+};
 #[cfg(feature = "LuSnowflake")]
 const LU_SNOWFLAKE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16693,44 +20928,6 @@ const LU_SOFA: icondata_core::IconData = icondata_core::IconData {
 <path d="M20 18v2" />
 <path d="M12 4v9" />"###
 };
-#[cfg(feature = "LuSortAsc")]
-const LU_SORT_ASC: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M11 11h4" />
-<path d="M11 15h7" />
-<path d="M11 19h10" />
-<path d="M9 7 6 4 3 7" />
-<path d="M6 6v14" />"###
-};
-#[cfg(feature = "LuSortDesc")]
-const LU_SORT_DESC: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M11 5h10" />
-<path d="M11 9h7" />
-<path d="M11 13h4" />
-<path d="m3 17 3 3 3-3" />
-<path d="M6 18V4" />"###
-};
 #[cfg(feature = "LuSoup")]
 const LU_SOUP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16764,7 +20961,57 @@ const LU_SPACE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="22,17 22,19 2,19 2,17" />"###
+    data: r###"<path d="M22 17v1c0 .5-.5 1-1 1H3c-.5 0-1-.5-1-1v-1" />"###
+};
+#[cfg(feature = "LuSpade")]
+const LU_SPADE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 9c-1.5 1.5-3 3.2-3 5.5A5.5 5.5 0 0 0 7.5 20c1.8 0 3-.5 4.5-2 1.5 1.5 2.7 2 4.5 2a5.5 5.5 0 0 0 5.5-5.5c0-2.3-1.5-4-3-5.5l-7-7-7 7Z" />
+<path d="M12 18v4" />"###
+};
+#[cfg(feature = "LuSparkle")]
+const LU_SPARKLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z" />"###
+};
+#[cfg(feature = "LuSparkles")]
+const LU_SPARKLES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+<path d="M5 3v4" />
+<path d="M19 17v4" />
+<path d="M3 5h4" />
+<path d="M17 19h4" />"###
 };
 #[cfg(feature = "LuSpeaker")]
 const LU_SPEAKER: icondata_core::IconData = icondata_core::IconData {
@@ -16783,6 +21030,40 @@ const LU_SPEAKER: icondata_core::IconData = icondata_core::IconData {
 <circle cx="12" cy="14" r="4" />
 <line x1="12" x2="12.01" y1="6" y2="6" />"###
 };
+#[cfg(feature = "LuSpellCheck")]
+const LU_SPELL_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m6 16 6-12 6 12" />
+<path d="M8 12h8" />
+<path d="m16 20 2 2 4-4" />"###
+};
+#[cfg(feature = "LuSpellCheck2")]
+const LU_SPELL_CHECK2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m6 16 6-12 6 12" />
+<path d="M8 12h8" />
+<path d="M4 21c1.1 0 1.1-1 2.3-1s1.1 1 2.3 1c1.1 0 1.1-1 2.3-1 1.1 0 1.1 1 2.3 1 1.1 0 1.1-1 2.3-1 1.1 0 1.1 1 2.3 1 1.1 0 1.1-1 2.3-1" />"###
+};
 #[cfg(feature = "LuSpline")]
 const LU_SPLINE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16796,9 +21077,27 @@ const LU_SPLINE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 6V4c0-.6-.4-1-1-1h-2a1 1 0 0 0-1 1v2c0 .6.4 1 1 1h2c.6 0 1-.4 1-1Z" />
-<path d="M7 20v-2c0-.6-.4-1-1-1H4a1 1 0 0 0-1 1v2c0 .6.4 1 1 1h2c.6 0 1-.4 1-1Z" />
+    data: r###"<circle cx="19" cy="5" r="2" />
+<circle cx="5" cy="19" r="2" />
 <path d="M5 17A12 12 0 0 1 17 5" />"###
+};
+#[cfg(feature = "LuSplit")]
+const LU_SPLIT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M16 3h5v5" />
+<path d="M8 3H3v5" />
+<path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3" />
+<path d="m15 9 6-6" />"###
 };
 #[cfg(feature = "LuSplitSquareHorizontal")]
 const LU_SPLIT_SQUARE_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
@@ -16834,6 +21133,30 @@ const LU_SPLIT_SQUARE_VERTICAL: icondata_core::IconData = icondata_core::IconDat
 <path d="M19 16v3c0 1-1 2-2 2H7c-1 0-2-1-2-2v-3" />
 <line x1="4" x2="20" y1="12" y2="12" />"###
 };
+#[cfg(feature = "LuSprayCan")]
+const LU_SPRAY_CAN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 3h.01" />
+<path d="M7 5h.01" />
+<path d="M11 7h.01" />
+<path d="M3 7h.01" />
+<path d="M7 9h.01" />
+<path d="M3 11h.01" />
+<rect width="4" height="4" x="15" y="5" />
+<path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2" />
+<path d="m13 14 8-2" />
+<path d="m13 19 8-2" />"###
+};
 #[cfg(feature = "LuSprout")]
 const LU_SPROUT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16865,7 +21188,162 @@ const LU_SQUARE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />"###
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />"###
+};
+#[cfg(feature = "LuSquareAsterisk")]
+const LU_SQUARE_ASTERISK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M12 8v8" />
+<path d="m8.5 14 7-4" />
+<path d="m8.5 10 7 4" />"###
+};
+#[cfg(feature = "LuSquareCode")]
+const LU_SQUARE_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="m10 10-2 2 2 2" />
+<path d="m14 14 2-2-2-2" />"###
+};
+#[cfg(feature = "LuSquareDashedBottom")]
+const LU_SQUARE_DASHED_BOTTOM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2" />
+<path d="M9 21h1" />
+<path d="M14 21h1" />"###
+};
+#[cfg(feature = "LuSquareDashedBottomCode")]
+const LU_SQUARE_DASHED_BOTTOM_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m10 10-2 2 2 2" />
+<path d="m14 14 2-2-2-2" />
+<path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2" />
+<path d="M9 21h1" />
+<path d="M14 21h1" />"###
+};
+#[cfg(feature = "LuSquareDot")]
+const LU_SQUARE_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<circle cx="12" cy="12" r="1" />"###
+};
+#[cfg(feature = "LuSquareEqual")]
+const LU_SQUARE_EQUAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M7 10h10" />
+<path d="M7 14h10" />"###
+};
+#[cfg(feature = "LuSquareSlash")]
+const LU_SQUARE_SLASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<line x1="9" x2="15" y1="15" y2="9" />"###
+};
+#[cfg(feature = "LuSquareStack")]
+const LU_SQUARE_STACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2" />
+<path d="M10 16c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2" />
+<rect width="8" height="8" x="14" y="14" rx="2" />"###
+};
+#[cfg(feature = "LuSquirrel")]
+const LU_SQUIRREL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18 6a4 4 0 0 0-4 4 7 7 0 0 0-7 7c0-5 4-5 4-10.5a4.5 4.5 0 1 0-9 0 2.5 2.5 0 0 0 5 0C7 10 3 11 3 17c0 2.8 2.2 5 5 5h10" />
+<path d="M16 20c0-1.7 1.3-3 3-3h1a2 2 0 0 0 2-2v-2a4 4 0 0 0-4-4V4" />
+<path d="M15.2 22a3 3 0 0 0-2.2-5" />
+<path d="M18 13h.01" />"###
 };
 #[cfg(feature = "LuStamp")]
 const LU_STAMP: icondata_core::IconData = icondata_core::IconData {
@@ -17171,7 +21649,7 @@ const LU_SUN_DIM: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+    data: r###"<circle cx="12" cy="12" r="4" />
 <path d="M12 4h.01" />
 <path d="M20 12h.01" />
 <path d="M12 20h.01" />
@@ -17194,7 +21672,7 @@ const LU_SUN_MEDIUM: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+    data: r###"<circle cx="12" cy="12" r="4" />
 <path d="M12 3v1" />
 <path d="M12 20v1" />
 <path d="M3 12h1" />
@@ -17217,8 +21695,8 @@ const LU_SUN_MOON: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-<path d="M12 8a2.828 2.828 0 1 0 4 4" />
+    data: r###"<circle cx="12" cy="12" r="4" />
+<path d="M12 8a2 2 0 1 0 4 4" />
 <path d="M12 2v2" />
 <path d="M12 20v2" />
 <path d="m4.93 4.93 1.41 1.41" />
@@ -17423,10 +21901,10 @@ const LU_TABLE: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="3" x2="21" y1="9" y2="9" />
-<line x1="3" x2="21" y1="15" y2="15" />
-<line x1="12" x2="12" y1="3" y2="21" />"###
+    data: r###"<path d="M12 3v18" />
+<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M3 9h18" />
+<path d="M3 15h18" />"###
 };
 #[cfg(feature = "LuTable2")]
 const LU_TABLE2: icondata_core::IconData = icondata_core::IconData {
@@ -17442,6 +21920,24 @@ const LU_TABLE2: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />"###
+};
+#[cfg(feature = "LuTableProperties")]
+const LU_TABLE_PROPERTIES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M15 3v18" />
+<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M21 9H3" />
+<path d="M21 15H3" />"###
 };
 #[cfg(feature = "LuTablet")]
 const LU_TABLET: icondata_core::IconData = icondata_core::IconData {
@@ -17509,6 +22005,91 @@ const LU_TAGS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M9 5H2v7l6.29 6.29c.94.94 2.48.94 3.42 0l3.58-3.58c.94-.94.94-2.48 0-3.42L9 5Z" />
 <path d="M6 9.01V9" />
 <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />"###
+};
+#[cfg(feature = "LuTally1")]
+const LU_TALLY1: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4v16" />"###
+};
+#[cfg(feature = "LuTally2")]
+const LU_TALLY2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4v16" />
+<path d="M9 4v16" />"###
+};
+#[cfg(feature = "LuTally3")]
+const LU_TALLY3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4v16" />
+<path d="M9 4v16" />
+<path d="M14 4v16" />"###
+};
+#[cfg(feature = "LuTally4")]
+const LU_TALLY4: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4v16" />
+<path d="M9 4v16" />
+<path d="M14 4v16" />
+<path d="M19 4v16" />"###
+};
+#[cfg(feature = "LuTally5")]
+const LU_TALLY5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4v16" />
+<path d="M9 4v16" />
+<path d="M14 4v16" />
+<path d="M19 4v16" />
+<path d="M22 6 2 18" />"###
 };
 #[cfg(feature = "LuTarget")]
 const LU_TARGET: icondata_core::IconData = icondata_core::IconData {
@@ -17686,8 +22267,26 @@ const LU_TEXT_CURSOR_INPUT: icondata_core::IconData = icondata_core::IconData {
 <path d="M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7" />
 <path d="M9 7v10" />"###
 };
-#[cfg(feature = "LuTextSelection")]
-const LU_TEXT_SELECTION: icondata_core::IconData = icondata_core::IconData {
+#[cfg(feature = "LuTextQuote")]
+const LU_TEXT_QUOTE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17 6H3" />
+<path d="M21 12H8" />
+<path d="M21 18H8" />
+<path d="M3 12v6" />"###
+};
+#[cfg(feature = "LuTextSelect")]
+const LU_TEXT_SELECT: icondata_core::IconData = icondata_core::IconData {
     style: None,
     x: None,
     y: None,
@@ -17815,7 +22414,7 @@ const LU_TICKET: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M3 7v2a3 3 0 1 1 0 6v2c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z" />
+    data: r###"<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
 <path d="M13 5v2" />
 <path d="M13 17v2" />
 <path d="M13 11v2" />"###
@@ -17925,6 +22524,43 @@ const LU_TORNADO: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 16h-6" />
 <path d="M11 20H9" />"###
 };
+#[cfg(feature = "LuTouchpad")]
+const LU_TOUCHPAD: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="20" height="16" x="2" y="4" rx="2" />
+<path d="M2 14h20" />
+<path d="M12 20v-6" />"###
+};
+#[cfg(feature = "LuTouchpadOff")]
+const LU_TOUCHPAD_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16" />
+<path d="M2 14h12" />
+<path d="M22 14h-2" />
+<path d="M12 20v-6" />
+<path d="m2 2 20 20" />
+<path d="M22 16V6a2 2 0 0 0-2-2H10" />"###
+};
 #[cfg(feature = "LuTowerControl")]
 const LU_TOWER_CONTROL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -17963,8 +22599,111 @@ const LU_TOY_BRICK: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 8V5c0-.6-.4-1-1-1H6a1 1 0 0 0-1 1v3" />
 <path d="M19 8V5c0-.6-.4-1-1-1h-3a1 1 0 0 0-1 1v3" />"###
 };
-#[cfg(feature = "LuTrain")]
-const LU_TRAIN: icondata_core::IconData = icondata_core::IconData {
+#[cfg(feature = "LuTractor")]
+const LU_TRACTOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M3 4h9l1 7" />
+<path d="M4 11V4" />
+<path d="M8 10V4" />
+<path d="M18 5c-.6 0-1 .4-1 1v5.6" />
+<path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1" />
+<circle cx="7" cy="15" r=".5" />
+<circle cx="7" cy="15" r="5" />
+<path d="M16 18h-5" />
+<circle cx="18" cy="18" r="2" />"###
+};
+#[cfg(feature = "LuTrafficCone")]
+const LU_TRAFFIC_CONE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M9.3 6.2a4.55 4.55 0 0 0 5.4 0" />
+<path d="M7.9 10.7c.9.8 2.4 1.3 4.1 1.3s3.2-.5 4.1-1.3" />
+<path d="M13.9 3.5a1.93 1.93 0 0 0-3.8-.1l-3 10c-.1.2-.1.4-.1.6 0 1.7 2.2 3 5 3s5-1.3 5-3c0-.2 0-.4-.1-.5Z" />
+<path d="m7.5 12.2-4.7 2.7c-.5.3-.8.7-.8 1.1s.3.8.8 1.1l7.6 4.5c.9.5 2.1.5 3 0l7.6-4.5c.7-.3 1-.7 1-1.1s-.3-.8-.8-1.1l-4.7-2.8" />"###
+};
+#[cfg(feature = "LuTrainFront")]
+const LU_TRAIN_FRONT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 3.1V7a4 4 0 0 0 8 0V3.1" />
+<path d="m9 15-1-1" />
+<path d="m15 15 1-1" />
+<path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z" />
+<path d="m8 19-2 3" />
+<path d="m16 19 2 3" />"###
+};
+#[cfg(feature = "LuTrainFrontTunnel")]
+const LU_TRAIN_FRONT_TUNNEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 22V12a10 10 0 1 1 20 0v10" />
+<path d="M15 6.8v1.4a3 2.8 0 1 1-6 0V6.8" />
+<path d="M10 15h.01" />
+<path d="M14 15h.01" />
+<path d="M10 19a4 4 0 0 1-4-4v-3a6 6 0 1 1 12 0v3a4 4 0 0 1-4 4Z" />
+<path d="m9 19-2 3" />
+<path d="m15 19 2 3" />"###
+};
+#[cfg(feature = "LuTrainTrack")]
+const LU_TRAIN_TRACK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M2 17 17 2" />
+<path d="m2 14 8 8" />
+<path d="m5 11 8 8" />
+<path d="m8 8 8 8" />
+<path d="m11 5 8 8" />
+<path d="m14 2 8 8" />
+<path d="M7 22 22 7" />"###
+};
+#[cfg(feature = "LuTramFront")]
+const LU_TRAM_FRONT: icondata_core::IconData = icondata_core::IconData {
     style: None,
     x: None,
     y: None,
@@ -18134,6 +22873,21 @@ const LU_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />"###
 };
+#[cfg(feature = "LuTriangleRight")]
+const LU_TRIANGLE_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M22 18a2 2 0 0 1-2 2H3c-1.1 0-1.3-.6-.4-1.3L20.4 4.3c.9-.7 1.6-.4 1.6.7Z" />"###
+};
 #[cfg(feature = "LuTrophy")]
 const LU_TROPHY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18167,11 +22921,29 @@ const LU_TRUCK: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M10 17h4V5H2v12h3" />
-<path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5" />
-<path d="M14 17h1" />
-<circle cx="7.5" cy="17.5" r="2.5" />
-<circle cx="17.5" cy="17.5" r="2.5" />"###
+    data: r###"<path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11" />
+<path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2" />
+<circle cx="7" cy="18" r="2" />
+<path d="M15 18H9" />
+<circle cx="17" cy="18" r="2" />"###
+};
+#[cfg(feature = "LuTurtle")]
+const LU_TURTLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m12 10 2 4v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3a8 8 0 1 0-16 0v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3l2-4h4Z" />
+<path d="M4.82 7.9 8 10" />
+<path d="M15.18 7.9 12 10" />
+<path d="M16.93 10H20a2 2 0 0 1 0 4H2" />"###
 };
 #[cfg(feature = "LuTv")]
 const LU_TV: icondata_core::IconData = icondata_core::IconData {
@@ -18265,9 +23037,9 @@ const LU_UMBRELLA: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M22 12a9.92 9.92 0 0 0-3.24-6.41 10.12 10.12 0 0 0-13.52 0A9.92 9.92 0 0 0 2 12Z" />
+    data: r###"<path d="M22 12a10.06 10.06 1 0 0-20 0Z" />
 <path d="M12 12v8a2 2 0 0 0 4 0" />
-<line x1="12" x2="12" y1="2" y2="3" />"###
+<path d="M12 2v1" />"###
 };
 #[cfg(feature = "LuUnderline")]
 const LU_UNDERLINE: icondata_core::IconData = icondata_core::IconData {
@@ -18316,6 +23088,83 @@ const LU_UNDO2: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M9 14 4 9l5-5" />
 <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />"###
+};
+#[cfg(feature = "LuUndoDot")]
+const LU_UNDO_DOT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="17" r="1" />
+<path d="M3 7v6h6" />
+<path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13" />"###
+};
+#[cfg(feature = "LuUnfoldHorizontal")]
+const LU_UNFOLD_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M16 12h6" />
+<path d="M8 12H2" />
+<path d="M12 2v2" />
+<path d="M12 8v2" />
+<path d="M12 14v2" />
+<path d="M12 20v2" />
+<path d="m19 15 3-3-3-3" />
+<path d="m5 9-3 3 3 3" />"###
+};
+#[cfg(feature = "LuUnfoldVertical")]
+const LU_UNFOLD_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 22v-6" />
+<path d="M12 8V2" />
+<path d="M4 12H2" />
+<path d="M10 12H8" />
+<path d="M16 12h-2" />
+<path d="M22 12h-2" />
+<path d="m15 19-3 3-3-3" />
+<path d="m15 5-3-3-3 3" />"###
+};
+#[cfg(feature = "LuUngroup")]
+const LU_UNGROUP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="8" height="6" x="5" y="4" rx="1" />
+<rect width="8" height="6" x="11" y="14" rx="1" />"###
 };
 #[cfg(feature = "LuUnlink")]
 const LU_UNLINK: icondata_core::IconData = icondata_core::IconData {
@@ -18367,6 +23216,26 @@ const LU_UNLOCK: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
 <path d="M7 11V7a5 5 0 0 1 9.9-1" />"###
+};
+#[cfg(feature = "LuUnplug")]
+const LU_UNPLUG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m19 5 3-3" />
+<path d="m2 22 3-3" />
+<path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" />
+<path d="M7.5 13.5 10 11" />
+<path d="M10.5 16.5 13 14" />
+<path d="m12 6 6 6 2.3-2.3a2.4 2.4 0 0 0 0-3.4l-2.6-2.6a2.4 2.4 0 0 0-3.4 0Z" />"###
 };
 #[cfg(feature = "LuUpload")]
 const LU_UPLOAD: icondata_core::IconData = icondata_core::IconData {
@@ -18439,6 +23308,22 @@ const LU_USER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
 <circle cx="12" cy="7" r="4" />"###
 };
+#[cfg(feature = "LuUser2")]
+const LU_USER2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="8" r="5" />
+<path d="M20 21a8 8 0 1 0-16 0" />"###
+};
 #[cfg(feature = "LuUserCheck")]
 const LU_USER_CHECK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18456,6 +23341,57 @@ const LU_USER_CHECK: icondata_core::IconData = icondata_core::IconData {
 <circle cx="9" cy="7" r="4" />
 <polyline points="16 11 18 13 22 9" />"###
 };
+#[cfg(feature = "LuUserCheck2")]
+const LU_USER_CHECK2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
+<polyline points="16 11 18 13 22 9" />"###
+};
+#[cfg(feature = "LuUserCircle")]
+const LU_USER_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="12" cy="12" r="10" />
+<circle cx="12" cy="10" r="3" />
+<path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />"###
+};
+#[cfg(feature = "LuUserCircle2")]
+const LU_USER_CIRCLE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18 20a6 6 0 0 0-12 0" />
+<circle cx="12" cy="10" r="4" />
+<circle cx="12" cy="12" r="10" />"###
+};
 #[cfg(feature = "LuUserCog")]
 const LU_USER_COG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18471,6 +23407,29 @@ const LU_USER_COG: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
 <circle cx="9" cy="7" r="4" />
+<circle cx="19" cy="11" r="2" />
+<path d="M19 8v1" />
+<path d="M19 13v1" />
+<path d="m21.6 9.5-.87.5" />
+<path d="m17.27 12-.87.5" />
+<path d="m21.6 12.5-.87-.5" />
+<path d="m17.27 10-.87-.5" />"###
+};
+#[cfg(feature = "LuUserCog2")]
+const LU_USER_COG2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
 <circle cx="19" cy="11" r="2" />
 <path d="M19 8v1" />
 <path d="M19 13v1" />
@@ -18496,6 +23455,23 @@ const LU_USER_MINUS: icondata_core::IconData = icondata_core::IconData {
 <circle cx="9" cy="7" r="4" />
 <line x1="22" x2="16" y1="11" y2="11" />"###
 };
+#[cfg(feature = "LuUserMinus2")]
+const LU_USER_MINUS2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
+<line x1="22" x2="16" y1="11" y2="11" />"###
+};
 #[cfg(feature = "LuUserPlus")]
 const LU_USER_PLUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18514,6 +23490,58 @@ const LU_USER_PLUS: icondata_core::IconData = icondata_core::IconData {
 <line x1="19" x2="19" y1="8" y2="14" />
 <line x1="22" x2="16" y1="11" y2="11" />"###
 };
+#[cfg(feature = "LuUserPlus2")]
+const LU_USER_PLUS2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
+<line x1="19" x2="19" y1="8" y2="14" />
+<line x1="22" x2="16" y1="11" y2="11" />"###
+};
+#[cfg(feature = "LuUserSquare")]
+const LU_USER_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<circle cx="12" cy="10" r="3" />
+<path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />"###
+};
+#[cfg(feature = "LuUserSquare2")]
+const LU_USER_SQUARE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M18 21a6 6 0 0 0-12 0" />
+<circle cx="12" cy="11" r="4" />
+<rect width="18" height="18" x="3" y="3" rx="2" />"###
+};
 #[cfg(feature = "LuUserX")]
 const LU_USER_X: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18529,6 +23557,24 @@ const LU_USER_X: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
 <circle cx="9" cy="7" r="4" />
+<line x1="17" x2="22" y1="8" y2="13" />
+<line x1="22" x2="17" y1="8" y2="13" />"###
+};
+#[cfg(feature = "LuUserX2")]
+const LU_USER_X2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
 <line x1="17" x2="22" y1="8" y2="13" />
 <line x1="22" x2="17" y1="8" y2="13" />"###
 };
@@ -18549,6 +23595,23 @@ const LU_USERS: icondata_core::IconData = icondata_core::IconData {
 <circle cx="9" cy="7" r="4" />
 <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
 <path d="M16 3.13a4 4 0 0 1 0 7.75" />"###
+};
+#[cfg(feature = "LuUsers2")]
+const LU_USERS2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 19a6 6 0 0 0-12 0" />
+<circle cx="8" cy="9" r="4" />
+<path d="M22 19a6 6 0 0 0-6-6 4 4 0 1 0 0-8" />"###
 };
 #[cfg(feature = "LuUtensils")]
 const LU_UTENSILS: icondata_core::IconData = icondata_core::IconData {
@@ -18606,6 +23669,24 @@ const LU_UTILITY_POLE: icondata_core::IconData = icondata_core::IconData {
 <path d="M21 3v2" />
 <path d="m19 5-7 7-7-7" />"###
 };
+#[cfg(feature = "LuVariable")]
+const LU_VARIABLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M8 21s-4-3-4-9 4-9 4-9" />
+<path d="M16 3s4 3 4 9-4 9-4 9" />
+<line x1="15" x2="9" y1="9" y2="15" />
+<line x1="9" x2="15" y1="9" y2="15" />"###
+};
 #[cfg(feature = "LuVegan")]
 const LU_VEGAN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18639,22 +23720,6 @@ const LU_VENETIAN_MASK: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M2 12a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V7h-5a8 8 0 0 0-5 2 8 8 0 0 0-5-2H2Z" />
 <path d="M6 11c1.5 0 3 .5 3 2-2 0-3 0-3-2Z" />
 <path d="M18 11c-1.5 0-3 .5-3 2 2 0 3 0 3-2Z" />"###
-};
-#[cfg(feature = "LuVerified")]
-const LU_VERIFIED: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path d="M12 3c-1.2 0-2.4.6-3 1.7A3.6 3.6 0 0 0 4.6 9c-1 .6-1.7 1.8-1.7 3s.7 2.4 1.7 3c-.3 1.2 0 2.5 1 3.4.8.8 2.1 1.2 3.3 1 .6 1 1.8 1.6 3 1.6s2.4-.6 3-1.7c1.2.3 2.5 0 3.4-1 .8-.8 1.2-2 1-3.3 1-.6 1.6-1.8 1.6-3s-.6-2.4-1.7-3c.3-1.2 0-2.5-1-3.4a3.7 3.7 0 0 0-3.3-1c-.6-1-1.8-1.6-3-1.6Z" />
-<path d="m9 12 2 2 4-4" />"###
 };
 #[cfg(feature = "LuVibrate")]
 const LU_VIBRATE: icondata_core::IconData = icondata_core::IconData {
@@ -18724,6 +23789,25 @@ const LU_VIDEO_OFF: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M10.66 6H14a2 2 0 0 1 2 2v2.34l1 1L22 8v8" />
 <path d="M16 16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2l10 10Z" />
 <line x1="2" x2="22" y1="2" y2="22" />"###
+};
+#[cfg(feature = "LuVideotape")]
+const LU_VIDEOTAPE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="20" height="16" x="2" y="4" rx="2" />
+<path d="M2 8h20" />
+<circle cx="8" cy="14" r="2" />
+<path d="M8 12h8" />
+<circle cx="16" cy="14" r="2" />"###
 };
 #[cfg(feature = "LuView")]
 const LU_VIEW: icondata_core::IconData = icondata_core::IconData {
@@ -18855,9 +23939,60 @@ const LU_WALLET: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
-<path d="M4 6v12c0 1.1.9 2 2 2h14v-4" />
-<path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z" />"###
+    data: r###"<path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+<path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+<path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />"###
+};
+#[cfg(feature = "LuWallet2")]
+const LU_WALLET2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M17 14h.01" />
+<path d="M7 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14" />"###
+};
+#[cfg(feature = "LuWalletCards")]
+const LU_WALLET_CARDS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="18" height="18" x="3" y="3" rx="2" />
+<path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+<path d="M3 11h3c.8 0 1.6.3 2.1.9l1.1.9c1.6 1.6 4.1 1.6 5.7 0l1.1-.9c.5-.5 1.3-.9 2.1-.9H21" />"###
+};
+#[cfg(feature = "LuWallpaper")]
+const LU_WALLPAPER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<circle cx="8" cy="9" r="2" />
+<path d="m9 17 6.1-6.1a2 2 0 0 1 2.81.01L22 15V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2" />
+<path d="M8 21h8" />
+<path d="M12 17v4" />"###
 };
 #[cfg(feature = "LuWand")]
 const LU_WAND: icondata_core::IconData = icondata_core::IconData {
@@ -19051,11 +24186,11 @@ const LU_WHOLE_WORD: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<circle cx="17" cy="12" r="3" />
-<line x1="14" x2="14" y1="7" y2="15" />
-<circle cx="7" cy="12" r="3" />
-<line x1="10" x2="10" y1="9" y2="15" />
-<polyline points="22,17 22,19 2,19 2,17" />"###
+    data: r###"<circle cx="7" cy="12" r="3" />
+<path d="M10 9v6" />
+<circle cx="17" cy="12" r="3" />
+<path d="M14 7v8" />
+<path d="M22 17v1c0 .5-.5 1-1 1H3c-.5 0-1-.5-1-1v-1" />"###
 };
 #[cfg(feature = "LuWifi")]
 const LU_WIFI: icondata_core::IconData = icondata_core::IconData {
@@ -19150,6 +24285,23 @@ const LU_WINE_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M7.307 7.307A12.33 12.33 0 0 0 7 10a5 5 0 0 0 7.391 4.391M8.638 2.981C8.75 2.668 8.872 2.34 9 2h6c1.5 4 2 6 2 8 0 .407-.05.809-.145 1.198" />
 <line x1="2" x2="22" y1="2" y2="22" />"###
 };
+#[cfg(feature = "LuWorkflow")]
+const LU_WORKFLOW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<rect width="8" height="8" x="3" y="3" rx="2" />
+<path d="M7 11v4a2 2 0 0 0 2 2h4" />
+<rect width="8" height="8" x="13" y="13" rx="2" />"###
+};
 #[cfg(feature = "LuWrapText")]
 const LU_WRAP_TEXT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -19196,8 +24348,8 @@ const LU_X: icondata_core::IconData = icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="18" x2="6" y1="6" y2="18" />
-<line x1="6" x2="18" y1="6" y2="18" />"###
+    data: r###"<path d="M18 6 6 18" />
+<path d="m6 6 12 12" />"###
 };
 #[cfg(feature = "LuXCircle")]
 const LU_X_CIRCLE: icondata_core::IconData = icondata_core::IconData {
@@ -19213,8 +24365,8 @@ const LU_X_CIRCLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<circle cx="12" cy="12" r="10" />
-<line x1="15" x2="9" y1="9" y2="15" />
-<line x1="9" x2="15" y1="9" y2="15" />"###
+<path d="m15 9-6 6" />
+<path d="m9 9 6 6" />"###
 };
 #[cfg(feature = "LuXOctagon")]
 const LU_X_OCTAGON: icondata_core::IconData = icondata_core::IconData {
@@ -19230,8 +24382,8 @@ const LU_X_OCTAGON: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2" />
-<line x1="15" x2="9" y1="9" y2="15" />
-<line x1="9" x2="15" y1="9" y2="15" />"###
+<path d="m15 9-6 6" />
+<path d="m9 9 6 6" />"###
 };
 #[cfg(feature = "LuXSquare")]
 const LU_X_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -19247,8 +24399,8 @@ const LU_X_SQUARE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-<line x1="9" x2="15" y1="9" y2="15" />
-<line x1="15" x2="9" y1="9" y2="15" />"###
+<path d="m15 9-6 6" />
+<path d="m9 9 6 6" />"###
 };
 #[cfg(feature = "LuYoutube")]
 const LU_YOUTUBE: icondata_core::IconData = icondata_core::IconData {
@@ -19342,6 +24494,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuAccessibility => LU_ACCESSIBILITY,
             #[cfg(feature = "LuActivity")]
             LuIcon::LuActivity => LU_ACTIVITY,
+            #[cfg(feature = "LuActivitySquare")]
+            LuIcon::LuActivitySquare => LU_ACTIVITY_SQUARE,
             #[cfg(feature = "LuAirVent")]
             LuIcon::LuAirVent => LU_AIR_VENT,
             #[cfg(feature = "LuAirplay")]
@@ -19416,66 +24570,150 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuAlignVerticalSpaceAround => LU_ALIGN_VERTICAL_SPACE_AROUND,
             #[cfg(feature = "LuAlignVerticalSpaceBetween")]
             LuIcon::LuAlignVerticalSpaceBetween => LU_ALIGN_VERTICAL_SPACE_BETWEEN,
+            #[cfg(feature = "LuAmpersand")]
+            LuIcon::LuAmpersand => LU_AMPERSAND,
+            #[cfg(feature = "LuAmpersands")]
+            LuIcon::LuAmpersands => LU_AMPERSANDS,
             #[cfg(feature = "LuAnchor")]
             LuIcon::LuAnchor => LU_ANCHOR,
             #[cfg(feature = "LuAngry")]
             LuIcon::LuAngry => LU_ANGRY,
             #[cfg(feature = "LuAnnoyed")]
             LuIcon::LuAnnoyed => LU_ANNOYED,
+            #[cfg(feature = "LuAntenna")]
+            LuIcon::LuAntenna => LU_ANTENNA,
             #[cfg(feature = "LuAperture")]
             LuIcon::LuAperture => LU_APERTURE,
+            #[cfg(feature = "LuAppWindow")]
+            LuIcon::LuAppWindow => LU_APP_WINDOW,
             #[cfg(feature = "LuApple")]
             LuIcon::LuApple => LU_APPLE,
             #[cfg(feature = "LuArchive")]
             LuIcon::LuArchive => LU_ARCHIVE,
             #[cfg(feature = "LuArchiveRestore")]
             LuIcon::LuArchiveRestore => LU_ARCHIVE_RESTORE,
+            #[cfg(feature = "LuAreaChart")]
+            LuIcon::LuAreaChart => LU_AREA_CHART,
             #[cfg(feature = "LuArmchair")]
             LuIcon::LuArmchair => LU_ARMCHAIR,
             #[cfg(feature = "LuArrowBigDown")]
             LuIcon::LuArrowBigDown => LU_ARROW_BIG_DOWN,
+            #[cfg(feature = "LuArrowBigDownDash")]
+            LuIcon::LuArrowBigDownDash => LU_ARROW_BIG_DOWN_DASH,
             #[cfg(feature = "LuArrowBigLeft")]
             LuIcon::LuArrowBigLeft => LU_ARROW_BIG_LEFT,
+            #[cfg(feature = "LuArrowBigLeftDash")]
+            LuIcon::LuArrowBigLeftDash => LU_ARROW_BIG_LEFT_DASH,
             #[cfg(feature = "LuArrowBigRight")]
             LuIcon::LuArrowBigRight => LU_ARROW_BIG_RIGHT,
+            #[cfg(feature = "LuArrowBigRightDash")]
+            LuIcon::LuArrowBigRightDash => LU_ARROW_BIG_RIGHT_DASH,
             #[cfg(feature = "LuArrowBigUp")]
             LuIcon::LuArrowBigUp => LU_ARROW_BIG_UP,
+            #[cfg(feature = "LuArrowBigUpDash")]
+            LuIcon::LuArrowBigUpDash => LU_ARROW_BIG_UP_DASH,
             #[cfg(feature = "LuArrowDown")]
             LuIcon::LuArrowDown => LU_ARROW_DOWN,
+            #[cfg(feature = "LuArrowDown01")]
+            LuIcon::LuArrowDown01 => LU_ARROW_DOWN01,
+            #[cfg(feature = "LuArrowDown10")]
+            LuIcon::LuArrowDown10 => LU_ARROW_DOWN10,
+            #[cfg(feature = "LuArrowDownAZ")]
+            LuIcon::LuArrowDownAZ => LU_ARROW_DOWN_AZ,
             #[cfg(feature = "LuArrowDownCircle")]
             LuIcon::LuArrowDownCircle => LU_ARROW_DOWN_CIRCLE,
+            #[cfg(feature = "LuArrowDownFromLine")]
+            LuIcon::LuArrowDownFromLine => LU_ARROW_DOWN_FROM_LINE,
             #[cfg(feature = "LuArrowDownLeft")]
             LuIcon::LuArrowDownLeft => LU_ARROW_DOWN_LEFT,
             #[cfg(feature = "LuArrowDownLeftFromCircle")]
             LuIcon::LuArrowDownLeftFromCircle => LU_ARROW_DOWN_LEFT_FROM_CIRCLE,
+            #[cfg(feature = "LuArrowDownLeftSquare")]
+            LuIcon::LuArrowDownLeftSquare => LU_ARROW_DOWN_LEFT_SQUARE,
+            #[cfg(feature = "LuArrowDownNarrowWide")]
+            LuIcon::LuArrowDownNarrowWide => LU_ARROW_DOWN_NARROW_WIDE,
             #[cfg(feature = "LuArrowDownRight")]
             LuIcon::LuArrowDownRight => LU_ARROW_DOWN_RIGHT,
             #[cfg(feature = "LuArrowDownRightFromCircle")]
             LuIcon::LuArrowDownRightFromCircle => LU_ARROW_DOWN_RIGHT_FROM_CIRCLE,
+            #[cfg(feature = "LuArrowDownRightSquare")]
+            LuIcon::LuArrowDownRightSquare => LU_ARROW_DOWN_RIGHT_SQUARE,
+            #[cfg(feature = "LuArrowDownSquare")]
+            LuIcon::LuArrowDownSquare => LU_ARROW_DOWN_SQUARE,
+            #[cfg(feature = "LuArrowDownToDot")]
+            LuIcon::LuArrowDownToDot => LU_ARROW_DOWN_TO_DOT,
+            #[cfg(feature = "LuArrowDownToLine")]
+            LuIcon::LuArrowDownToLine => LU_ARROW_DOWN_TO_LINE,
+            #[cfg(feature = "LuArrowDownUp")]
+            LuIcon::LuArrowDownUp => LU_ARROW_DOWN_UP,
+            #[cfg(feature = "LuArrowDownWideNarrow")]
+            LuIcon::LuArrowDownWideNarrow => LU_ARROW_DOWN_WIDE_NARROW,
+            #[cfg(feature = "LuArrowDownZA")]
+            LuIcon::LuArrowDownZA => LU_ARROW_DOWN_ZA,
             #[cfg(feature = "LuArrowLeft")]
             LuIcon::LuArrowLeft => LU_ARROW_LEFT,
             #[cfg(feature = "LuArrowLeftCircle")]
             LuIcon::LuArrowLeftCircle => LU_ARROW_LEFT_CIRCLE,
+            #[cfg(feature = "LuArrowLeftFromLine")]
+            LuIcon::LuArrowLeftFromLine => LU_ARROW_LEFT_FROM_LINE,
             #[cfg(feature = "LuArrowLeftRight")]
             LuIcon::LuArrowLeftRight => LU_ARROW_LEFT_RIGHT,
+            #[cfg(feature = "LuArrowLeftSquare")]
+            LuIcon::LuArrowLeftSquare => LU_ARROW_LEFT_SQUARE,
+            #[cfg(feature = "LuArrowLeftToLine")]
+            LuIcon::LuArrowLeftToLine => LU_ARROW_LEFT_TO_LINE,
             #[cfg(feature = "LuArrowRight")]
             LuIcon::LuArrowRight => LU_ARROW_RIGHT,
             #[cfg(feature = "LuArrowRightCircle")]
             LuIcon::LuArrowRightCircle => LU_ARROW_RIGHT_CIRCLE,
+            #[cfg(feature = "LuArrowRightFromLine")]
+            LuIcon::LuArrowRightFromLine => LU_ARROW_RIGHT_FROM_LINE,
+            #[cfg(feature = "LuArrowRightLeft")]
+            LuIcon::LuArrowRightLeft => LU_ARROW_RIGHT_LEFT,
+            #[cfg(feature = "LuArrowRightSquare")]
+            LuIcon::LuArrowRightSquare => LU_ARROW_RIGHT_SQUARE,
+            #[cfg(feature = "LuArrowRightToLine")]
+            LuIcon::LuArrowRightToLine => LU_ARROW_RIGHT_TO_LINE,
             #[cfg(feature = "LuArrowUp")]
             LuIcon::LuArrowUp => LU_ARROW_UP,
+            #[cfg(feature = "LuArrowUp01")]
+            LuIcon::LuArrowUp01 => LU_ARROW_UP01,
+            #[cfg(feature = "LuArrowUp10")]
+            LuIcon::LuArrowUp10 => LU_ARROW_UP10,
+            #[cfg(feature = "LuArrowUpAZ")]
+            LuIcon::LuArrowUpAZ => LU_ARROW_UP_AZ,
             #[cfg(feature = "LuArrowUpCircle")]
             LuIcon::LuArrowUpCircle => LU_ARROW_UP_CIRCLE,
             #[cfg(feature = "LuArrowUpDown")]
             LuIcon::LuArrowUpDown => LU_ARROW_UP_DOWN,
+            #[cfg(feature = "LuArrowUpFromDot")]
+            LuIcon::LuArrowUpFromDot => LU_ARROW_UP_FROM_DOT,
+            #[cfg(feature = "LuArrowUpFromLine")]
+            LuIcon::LuArrowUpFromLine => LU_ARROW_UP_FROM_LINE,
             #[cfg(feature = "LuArrowUpLeft")]
             LuIcon::LuArrowUpLeft => LU_ARROW_UP_LEFT,
             #[cfg(feature = "LuArrowUpLeftFromCircle")]
             LuIcon::LuArrowUpLeftFromCircle => LU_ARROW_UP_LEFT_FROM_CIRCLE,
+            #[cfg(feature = "LuArrowUpLeftSquare")]
+            LuIcon::LuArrowUpLeftSquare => LU_ARROW_UP_LEFT_SQUARE,
+            #[cfg(feature = "LuArrowUpNarrowWide")]
+            LuIcon::LuArrowUpNarrowWide => LU_ARROW_UP_NARROW_WIDE,
             #[cfg(feature = "LuArrowUpRight")]
             LuIcon::LuArrowUpRight => LU_ARROW_UP_RIGHT,
             #[cfg(feature = "LuArrowUpRightFromCircle")]
             LuIcon::LuArrowUpRightFromCircle => LU_ARROW_UP_RIGHT_FROM_CIRCLE,
+            #[cfg(feature = "LuArrowUpRightSquare")]
+            LuIcon::LuArrowUpRightSquare => LU_ARROW_UP_RIGHT_SQUARE,
+            #[cfg(feature = "LuArrowUpSquare")]
+            LuIcon::LuArrowUpSquare => LU_ARROW_UP_SQUARE,
+            #[cfg(feature = "LuArrowUpToLine")]
+            LuIcon::LuArrowUpToLine => LU_ARROW_UP_TO_LINE,
+            #[cfg(feature = "LuArrowUpWideNarrow")]
+            LuIcon::LuArrowUpWideNarrow => LU_ARROW_UP_WIDE_NARROW,
+            #[cfg(feature = "LuArrowUpZA")]
+            LuIcon::LuArrowUpZA => LU_ARROW_UP_ZA,
+            #[cfg(feature = "LuArrowsUpFromLine")]
+            LuIcon::LuArrowsUpFromLine => LU_ARROWS_UP_FROM_LINE,
             #[cfg(feature = "LuAsterisk")]
             LuIcon::LuAsterisk => LU_ASTERISK,
             #[cfg(feature = "LuAtSign")]
@@ -19492,6 +24730,26 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBaby => LU_BABY,
             #[cfg(feature = "LuBackpack")]
             LuIcon::LuBackpack => LU_BACKPACK,
+            #[cfg(feature = "LuBadge")]
+            LuIcon::LuBadge => LU_BADGE,
+            #[cfg(feature = "LuBadgeAlert")]
+            LuIcon::LuBadgeAlert => LU_BADGE_ALERT,
+            #[cfg(feature = "LuBadgeCheck")]
+            LuIcon::LuBadgeCheck => LU_BADGE_CHECK,
+            #[cfg(feature = "LuBadgeDollarSign")]
+            LuIcon::LuBadgeDollarSign => LU_BADGE_DOLLAR_SIGN,
+            #[cfg(feature = "LuBadgeHelp")]
+            LuIcon::LuBadgeHelp => LU_BADGE_HELP,
+            #[cfg(feature = "LuBadgeInfo")]
+            LuIcon::LuBadgeInfo => LU_BADGE_INFO,
+            #[cfg(feature = "LuBadgeMinus")]
+            LuIcon::LuBadgeMinus => LU_BADGE_MINUS,
+            #[cfg(feature = "LuBadgePercent")]
+            LuIcon::LuBadgePercent => LU_BADGE_PERCENT,
+            #[cfg(feature = "LuBadgePlus")]
+            LuIcon::LuBadgePlus => LU_BADGE_PLUS,
+            #[cfg(feature = "LuBadgeX")]
+            LuIcon::LuBadgeX => LU_BADGE_X,
             #[cfg(feature = "LuBaggageClaim")]
             LuIcon::LuBaggageClaim => LU_BAGGAGE_CLAIM,
             #[cfg(feature = "LuBan")]
@@ -19508,8 +24766,12 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBarChart3 => LU_BAR_CHART3,
             #[cfg(feature = "LuBarChart4")]
             LuIcon::LuBarChart4 => LU_BAR_CHART4,
+            #[cfg(feature = "LuBarChartBig")]
+            LuIcon::LuBarChartBig => LU_BAR_CHART_BIG,
             #[cfg(feature = "LuBarChartHorizontal")]
             LuIcon::LuBarChartHorizontal => LU_BAR_CHART_HORIZONTAL,
+            #[cfg(feature = "LuBarChartHorizontalBig")]
+            LuIcon::LuBarChartHorizontalBig => LU_BAR_CHART_HORIZONTAL_BIG,
             #[cfg(feature = "LuBaseline")]
             LuIcon::LuBaseline => LU_BASELINE,
             #[cfg(feature = "LuBath")]
@@ -19544,6 +24806,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBeer => LU_BEER,
             #[cfg(feature = "LuBell")]
             LuIcon::LuBell => LU_BELL,
+            #[cfg(feature = "LuBellDot")]
+            LuIcon::LuBellDot => LU_BELL_DOT,
             #[cfg(feature = "LuBellMinus")]
             LuIcon::LuBellMinus => LU_BELL_MINUS,
             #[cfg(feature = "LuBellOff")]
@@ -19556,12 +24820,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBike => LU_BIKE,
             #[cfg(feature = "LuBinary")]
             LuIcon::LuBinary => LU_BINARY,
+            #[cfg(feature = "LuBiohazard")]
+            LuIcon::LuBiohazard => LU_BIOHAZARD,
             #[cfg(feature = "LuBird")]
             LuIcon::LuBird => LU_BIRD,
             #[cfg(feature = "LuBitcoin")]
             LuIcon::LuBitcoin => LU_BITCOIN,
             #[cfg(feature = "LuBlinds")]
             LuIcon::LuBlinds => LU_BLINDS,
+            #[cfg(feature = "LuBlocks")]
+            LuIcon::LuBlocks => LU_BLOCKS,
             #[cfg(feature = "LuBluetooth")]
             LuIcon::LuBluetooth => LU_BLUETOOTH,
             #[cfg(feature = "LuBluetoothConnected")]
@@ -19600,6 +24868,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBookTemplate => LU_BOOK_TEMPLATE,
             #[cfg(feature = "LuBookUp")]
             LuIcon::LuBookUp => LU_BOOK_UP,
+            #[cfg(feature = "LuBookUp2")]
+            LuIcon::LuBookUp2 => LU_BOOK_UP2,
             #[cfg(feature = "LuBookX")]
             LuIcon::LuBookX => LU_BOOK_X,
             #[cfg(feature = "LuBookmark")]
@@ -19608,6 +24878,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBookmarkMinus => LU_BOOKMARK_MINUS,
             #[cfg(feature = "LuBookmarkPlus")]
             LuIcon::LuBookmarkPlus => LU_BOOKMARK_PLUS,
+            #[cfg(feature = "LuBoomBox")]
+            LuIcon::LuBoomBox => LU_BOOM_BOX,
             #[cfg(feature = "LuBot")]
             LuIcon::LuBot => LU_BOT,
             #[cfg(feature = "LuBox")]
@@ -19616,6 +24888,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBoxSelect => LU_BOX_SELECT,
             #[cfg(feature = "LuBoxes")]
             LuIcon::LuBoxes => LU_BOXES,
+            #[cfg(feature = "LuBraces")]
+            LuIcon::LuBraces => LU_BRACES,
+            #[cfg(feature = "LuBrackets")]
+            LuIcon::LuBrackets => LU_BRACKETS,
             #[cfg(feature = "LuBrain")]
             LuIcon::LuBrain => LU_BRAIN,
             #[cfg(feature = "LuBrainCircuit")]
@@ -19624,6 +24900,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBrainCog => LU_BRAIN_COG,
             #[cfg(feature = "LuBriefcase")]
             LuIcon::LuBriefcase => LU_BRIEFCASE,
+            #[cfg(feature = "LuBringToFront")]
+            LuIcon::LuBringToFront => LU_BRING_TO_FRONT,
             #[cfg(feature = "LuBrush")]
             LuIcon::LuBrush => LU_BRUSH,
             #[cfg(feature = "LuBug")]
@@ -19634,8 +24912,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuBuilding2 => LU_BUILDING2,
             #[cfg(feature = "LuBus")]
             LuIcon::LuBus => LU_BUS,
+            #[cfg(feature = "LuBusFront")]
+            LuIcon::LuBusFront => LU_BUS_FRONT,
+            #[cfg(feature = "LuCable")]
+            LuIcon::LuCable => LU_CABLE,
+            #[cfg(feature = "LuCableCar")]
+            LuIcon::LuCableCar => LU_CABLE_CAR,
             #[cfg(feature = "LuCake")]
             LuIcon::LuCake => LU_CAKE,
+            #[cfg(feature = "LuCakeSlice")]
+            LuIcon::LuCakeSlice => LU_CAKE_SLICE,
             #[cfg(feature = "LuCalculator")]
             LuIcon::LuCalculator => LU_CALCULATOR,
             #[cfg(feature = "LuCalendar")]
@@ -19668,12 +24954,20 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCamera => LU_CAMERA,
             #[cfg(feature = "LuCameraOff")]
             LuIcon::LuCameraOff => LU_CAMERA_OFF,
+            #[cfg(feature = "LuCandlestickChart")]
+            LuIcon::LuCandlestickChart => LU_CANDLESTICK_CHART,
             #[cfg(feature = "LuCandy")]
             LuIcon::LuCandy => LU_CANDY,
+            #[cfg(feature = "LuCandyCane")]
+            LuIcon::LuCandyCane => LU_CANDY_CANE,
             #[cfg(feature = "LuCandyOff")]
             LuIcon::LuCandyOff => LU_CANDY_OFF,
             #[cfg(feature = "LuCar")]
             LuIcon::LuCar => LU_CAR,
+            #[cfg(feature = "LuCarFront")]
+            LuIcon::LuCarFront => LU_CAR_FRONT,
+            #[cfg(feature = "LuCarTaxiFront")]
+            LuIcon::LuCarTaxiFront => LU_CAR_TAXI_FRONT,
             #[cfg(feature = "LuCarrot")]
             LuIcon::LuCarrot => LU_CARROT,
             #[cfg(feature = "LuCaseLower")]
@@ -19682,6 +24976,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCaseSensitive => LU_CASE_SENSITIVE,
             #[cfg(feature = "LuCaseUpper")]
             LuIcon::LuCaseUpper => LU_CASE_UPPER,
+            #[cfg(feature = "LuCassetteTape")]
+            LuIcon::LuCassetteTape => LU_CASSETTE_TAPE,
             #[cfg(feature = "LuCast")]
             LuIcon::LuCast => LU_CAST,
             #[cfg(feature = "LuCastle")]
@@ -19704,6 +25000,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCherry => LU_CHERRY,
             #[cfg(feature = "LuChevronDown")]
             LuIcon::LuChevronDown => LU_CHEVRON_DOWN,
+            #[cfg(feature = "LuChevronDownCircle")]
+            LuIcon::LuChevronDownCircle => LU_CHEVRON_DOWN_CIRCLE,
             #[cfg(feature = "LuChevronDownSquare")]
             LuIcon::LuChevronDownSquare => LU_CHEVRON_DOWN_SQUARE,
             #[cfg(feature = "LuChevronFirst")]
@@ -19712,14 +25010,20 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuChevronLast => LU_CHEVRON_LAST,
             #[cfg(feature = "LuChevronLeft")]
             LuIcon::LuChevronLeft => LU_CHEVRON_LEFT,
+            #[cfg(feature = "LuChevronLeftCircle")]
+            LuIcon::LuChevronLeftCircle => LU_CHEVRON_LEFT_CIRCLE,
             #[cfg(feature = "LuChevronLeftSquare")]
             LuIcon::LuChevronLeftSquare => LU_CHEVRON_LEFT_SQUARE,
             #[cfg(feature = "LuChevronRight")]
             LuIcon::LuChevronRight => LU_CHEVRON_RIGHT,
+            #[cfg(feature = "LuChevronRightCircle")]
+            LuIcon::LuChevronRightCircle => LU_CHEVRON_RIGHT_CIRCLE,
             #[cfg(feature = "LuChevronRightSquare")]
             LuIcon::LuChevronRightSquare => LU_CHEVRON_RIGHT_SQUARE,
             #[cfg(feature = "LuChevronUp")]
             LuIcon::LuChevronUp => LU_CHEVRON_UP,
+            #[cfg(feature = "LuChevronUpCircle")]
+            LuIcon::LuChevronUpCircle => LU_CHEVRON_UP_CIRCLE,
             #[cfg(feature = "LuChevronUpSquare")]
             LuIcon::LuChevronUpSquare => LU_CHEVRON_UP_SQUARE,
             #[cfg(feature = "LuChevronsDown")]
@@ -19748,8 +25052,14 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCigaretteOff => LU_CIGARETTE_OFF,
             #[cfg(feature = "LuCircle")]
             LuIcon::LuCircle => LU_CIRCLE,
+            #[cfg(feature = "LuCircleDashed")]
+            LuIcon::LuCircleDashed => LU_CIRCLE_DASHED,
+            #[cfg(feature = "LuCircleDollarSign")]
+            LuIcon::LuCircleDollarSign => LU_CIRCLE_DOLLAR_SIGN,
             #[cfg(feature = "LuCircleDot")]
             LuIcon::LuCircleDot => LU_CIRCLE_DOT,
+            #[cfg(feature = "LuCircleDotDashed")]
+            LuIcon::LuCircleDotDashed => LU_CIRCLE_DOT_DASHED,
             #[cfg(feature = "LuCircleEllipsis")]
             LuIcon::LuCircleEllipsis => LU_CIRCLE_ELLIPSIS,
             #[cfg(feature = "LuCircleEqual")]
@@ -19842,6 +25152,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCloudy => LU_CLOUDY,
             #[cfg(feature = "LuClover")]
             LuIcon::LuClover => LU_CLOVER,
+            #[cfg(feature = "LuClub")]
+            LuIcon::LuClub => LU_CLUB,
             #[cfg(feature = "LuCode")]
             LuIcon::LuCode => LU_CODE,
             #[cfg(feature = "LuCode2")]
@@ -19858,18 +25170,26 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCoins => LU_COINS,
             #[cfg(feature = "LuColumns")]
             LuIcon::LuColumns => LU_COLUMNS,
+            #[cfg(feature = "LuCombine")]
+            LuIcon::LuCombine => LU_COMBINE,
             #[cfg(feature = "LuCommand")]
             LuIcon::LuCommand => LU_COMMAND,
             #[cfg(feature = "LuCompass")]
             LuIcon::LuCompass => LU_COMPASS,
             #[cfg(feature = "LuComponent")]
             LuIcon::LuComponent => LU_COMPONENT,
+            #[cfg(feature = "LuComputer")]
+            LuIcon::LuComputer => LU_COMPUTER,
             #[cfg(feature = "LuConciergeBell")]
             LuIcon::LuConciergeBell => LU_CONCIERGE_BELL,
             #[cfg(feature = "LuConstruction")]
             LuIcon::LuConstruction => LU_CONSTRUCTION,
             #[cfg(feature = "LuContact")]
             LuIcon::LuContact => LU_CONTACT,
+            #[cfg(feature = "LuContact2")]
+            LuIcon::LuContact2 => LU_CONTACT2,
+            #[cfg(feature = "LuContainer")]
+            LuIcon::LuContainer => LU_CONTAINER,
             #[cfg(feature = "LuContrast")]
             LuIcon::LuContrast => LU_CONTRAST,
             #[cfg(feature = "LuCookie")]
@@ -19924,8 +25244,6 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuCrown => LU_CROWN,
             #[cfg(feature = "LuCupSoda")]
             LuIcon::LuCupSoda => LU_CUP_SODA,
-            #[cfg(feature = "LuCurlyBraces")]
-            LuIcon::LuCurlyBraces => LU_CURLY_BRACES,
             #[cfg(feature = "LuCurrency")]
             LuIcon::LuCurrency => LU_CURRENCY,
             #[cfg(feature = "LuDatabase")]
@@ -19934,6 +25252,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuDatabaseBackup => LU_DATABASE_BACKUP,
             #[cfg(feature = "LuDelete")]
             LuIcon::LuDelete => LU_DELETE,
+            #[cfg(feature = "LuDessert")]
+            LuIcon::LuDessert => LU_DESSERT,
             #[cfg(feature = "LuDiamond")]
             LuIcon::LuDiamond => LU_DIAMOND,
             #[cfg(feature = "LuDice1")]
@@ -19956,6 +25276,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuDisc => LU_DISC,
             #[cfg(feature = "LuDisc2")]
             LuIcon::LuDisc2 => LU_DISC2,
+            #[cfg(feature = "LuDisc3")]
+            LuIcon::LuDisc3 => LU_DISC3,
             #[cfg(feature = "LuDivide")]
             LuIcon::LuDivide => LU_DIVIDE,
             #[cfg(feature = "LuDivideCircle")]
@@ -19970,10 +25292,14 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuDog => LU_DOG,
             #[cfg(feature = "LuDollarSign")]
             LuIcon::LuDollarSign => LU_DOLLAR_SIGN,
+            #[cfg(feature = "LuDonut")]
+            LuIcon::LuDonut => LU_DONUT,
             #[cfg(feature = "LuDoorClosed")]
             LuIcon::LuDoorClosed => LU_DOOR_CLOSED,
             #[cfg(feature = "LuDoorOpen")]
             LuIcon::LuDoorOpen => LU_DOOR_OPEN,
+            #[cfg(feature = "LuDot")]
+            LuIcon::LuDot => LU_DOT,
             #[cfg(feature = "LuDownload")]
             LuIcon::LuDownload => LU_DOWNLOAD,
             #[cfg(feature = "LuDownloadCloud")]
@@ -19992,12 +25318,6 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuEar => LU_EAR,
             #[cfg(feature = "LuEarOff")]
             LuIcon::LuEarOff => LU_EAR_OFF,
-            #[cfg(feature = "LuEdit")]
-            LuIcon::LuEdit => LU_EDIT,
-            #[cfg(feature = "LuEdit2")]
-            LuIcon::LuEdit2 => LU_EDIT2,
-            #[cfg(feature = "LuEdit3")]
-            LuIcon::LuEdit3 => LU_EDIT3,
             #[cfg(feature = "LuEgg")]
             LuIcon::LuEgg => LU_EGG,
             #[cfg(feature = "LuEggFried")]
@@ -20030,6 +25350,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFastForward => LU_FAST_FORWARD,
             #[cfg(feature = "LuFeather")]
             LuIcon::LuFeather => LU_FEATHER,
+            #[cfg(feature = "LuFerrisWheel")]
+            LuIcon::LuFerrisWheel => LU_FERRIS_WHEEL,
             #[cfg(feature = "LuFigma")]
             LuIcon::LuFigma => LU_FIGMA,
             #[cfg(feature = "LuFile")]
@@ -20060,6 +25382,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFileClock => LU_FILE_CLOCK,
             #[cfg(feature = "LuFileCode")]
             LuIcon::LuFileCode => LU_FILE_CODE,
+            #[cfg(feature = "LuFileCode2")]
+            LuIcon::LuFileCode2 => LU_FILE_CODE2,
             #[cfg(feature = "LuFileCog")]
             LuIcon::LuFileCog => LU_FILE_COG,
             #[cfg(feature = "LuFileCog2")]
@@ -20116,6 +25440,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFileSignature => LU_FILE_SIGNATURE,
             #[cfg(feature = "LuFileSpreadsheet")]
             LuIcon::LuFileSpreadsheet => LU_FILE_SPREADSHEET,
+            #[cfg(feature = "LuFileStack")]
+            LuIcon::LuFileStack => LU_FILE_STACK,
             #[cfg(feature = "LuFileSymlink")]
             LuIcon::LuFileSymlink => LU_FILE_SYMLINK,
             #[cfg(feature = "LuFileTerminal")]
@@ -20156,6 +25482,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFish => LU_FISH,
             #[cfg(feature = "LuFishOff")]
             LuIcon::LuFishOff => LU_FISH_OFF,
+            #[cfg(feature = "LuFishSymbol")]
+            LuIcon::LuFishSymbol => LU_FISH_SYMBOL,
             #[cfg(feature = "LuFlag")]
             LuIcon::LuFlag => LU_FLAG,
             #[cfg(feature = "LuFlagOff")]
@@ -20190,6 +25518,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFlower2 => LU_FLOWER2,
             #[cfg(feature = "LuFocus")]
             LuIcon::LuFocus => LU_FOCUS,
+            #[cfg(feature = "LuFoldHorizontal")]
+            LuIcon::LuFoldHorizontal => LU_FOLD_HORIZONTAL,
+            #[cfg(feature = "LuFoldVertical")]
+            LuIcon::LuFoldVertical => LU_FOLD_VERTICAL,
             #[cfg(feature = "LuFolder")]
             LuIcon::LuFolder => LU_FOLDER,
             #[cfg(feature = "LuFolderArchive")]
@@ -20204,6 +25536,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFolderCog => LU_FOLDER_COG,
             #[cfg(feature = "LuFolderCog2")]
             LuIcon::LuFolderCog2 => LU_FOLDER_COG2,
+            #[cfg(feature = "LuFolderDot")]
+            LuIcon::LuFolderDot => LU_FOLDER_DOT,
             #[cfg(feature = "LuFolderDown")]
             LuIcon::LuFolderDown => LU_FOLDER_DOWN,
             #[cfg(feature = "LuFolderEdit")]
@@ -20216,6 +25550,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFolderHeart => LU_FOLDER_HEART,
             #[cfg(feature = "LuFolderInput")]
             LuIcon::LuFolderInput => LU_FOLDER_INPUT,
+            #[cfg(feature = "LuFolderKanban")]
+            LuIcon::LuFolderKanban => LU_FOLDER_KANBAN,
             #[cfg(feature = "LuFolderKey")]
             LuIcon::LuFolderKey => LU_FOLDER_KEY,
             #[cfg(feature = "LuFolderLock")]
@@ -20224,16 +25560,22 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFolderMinus => LU_FOLDER_MINUS,
             #[cfg(feature = "LuFolderOpen")]
             LuIcon::LuFolderOpen => LU_FOLDER_OPEN,
+            #[cfg(feature = "LuFolderOpenDot")]
+            LuIcon::LuFolderOpenDot => LU_FOLDER_OPEN_DOT,
             #[cfg(feature = "LuFolderOutput")]
             LuIcon::LuFolderOutput => LU_FOLDER_OUTPUT,
             #[cfg(feature = "LuFolderPlus")]
             LuIcon::LuFolderPlus => LU_FOLDER_PLUS,
+            #[cfg(feature = "LuFolderRoot")]
+            LuIcon::LuFolderRoot => LU_FOLDER_ROOT,
             #[cfg(feature = "LuFolderSearch")]
             LuIcon::LuFolderSearch => LU_FOLDER_SEARCH,
             #[cfg(feature = "LuFolderSearch2")]
             LuIcon::LuFolderSearch2 => LU_FOLDER_SEARCH2,
             #[cfg(feature = "LuFolderSymlink")]
             LuIcon::LuFolderSymlink => LU_FOLDER_SYMLINK,
+            #[cfg(feature = "LuFolderSync")]
+            LuIcon::LuFolderSync => LU_FOLDER_SYNC,
             #[cfg(feature = "LuFolderTree")]
             LuIcon::LuFolderTree => LU_FOLDER_TREE,
             #[cfg(feature = "LuFolderUp")]
@@ -20260,12 +25602,28 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuFuel => LU_FUEL,
             #[cfg(feature = "LuFunctionSquare")]
             LuIcon::LuFunctionSquare => LU_FUNCTION_SQUARE,
+            #[cfg(feature = "LuGalleryHorizontal")]
+            LuIcon::LuGalleryHorizontal => LU_GALLERY_HORIZONTAL,
+            #[cfg(feature = "LuGalleryHorizontalEnd")]
+            LuIcon::LuGalleryHorizontalEnd => LU_GALLERY_HORIZONTAL_END,
+            #[cfg(feature = "LuGalleryThumbnails")]
+            LuIcon::LuGalleryThumbnails => LU_GALLERY_THUMBNAILS,
+            #[cfg(feature = "LuGalleryVertical")]
+            LuIcon::LuGalleryVertical => LU_GALLERY_VERTICAL,
+            #[cfg(feature = "LuGalleryVerticalEnd")]
+            LuIcon::LuGalleryVerticalEnd => LU_GALLERY_VERTICAL_END,
             #[cfg(feature = "LuGamepad")]
             LuIcon::LuGamepad => LU_GAMEPAD,
             #[cfg(feature = "LuGamepad2")]
             LuIcon::LuGamepad2 => LU_GAMEPAD2,
+            #[cfg(feature = "LuGanttChart")]
+            LuIcon::LuGanttChart => LU_GANTT_CHART,
+            #[cfg(feature = "LuGanttChartSquare")]
+            LuIcon::LuGanttChartSquare => LU_GANTT_CHART_SQUARE,
             #[cfg(feature = "LuGauge")]
             LuIcon::LuGauge => LU_GAUGE,
+            #[cfg(feature = "LuGaugeCircle")]
+            LuIcon::LuGaugeCircle => LU_GAUGE_CIRCLE,
             #[cfg(feature = "LuGavel")]
             LuIcon::LuGavel => LU_GAVEL,
             #[cfg(feature = "LuGem")]
@@ -20304,20 +25662,26 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuGlobe => LU_GLOBE,
             #[cfg(feature = "LuGlobe2")]
             LuIcon::LuGlobe2 => LU_GLOBE2,
+            #[cfg(feature = "LuGoal")]
+            LuIcon::LuGoal => LU_GOAL,
             #[cfg(feature = "LuGrab")]
             LuIcon::LuGrab => LU_GRAB,
             #[cfg(feature = "LuGraduationCap")]
             LuIcon::LuGraduationCap => LU_GRADUATION_CAP,
             #[cfg(feature = "LuGrape")]
             LuIcon::LuGrape => LU_GRAPE,
-            #[cfg(feature = "LuGrid")]
-            LuIcon::LuGrid => LU_GRID,
+            #[cfg(feature = "LuGrid2x2")]
+            LuIcon::LuGrid2x2 => LU_GRID2X2,
+            #[cfg(feature = "LuGrid3x3")]
+            LuIcon::LuGrid3x3 => LU_GRID3X3,
             #[cfg(feature = "LuGrip")]
             LuIcon::LuGrip => LU_GRIP,
             #[cfg(feature = "LuGripHorizontal")]
             LuIcon::LuGripHorizontal => LU_GRIP_HORIZONTAL,
             #[cfg(feature = "LuGripVertical")]
             LuIcon::LuGripVertical => LU_GRIP_VERTICAL,
+            #[cfg(feature = "LuGroup")]
+            LuIcon::LuGroup => LU_GROUP,
             #[cfg(feature = "LuHammer")]
             LuIcon::LuHammer => LU_HAMMER,
             #[cfg(feature = "LuHand")]
@@ -20326,12 +25690,18 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuHandMetal => LU_HAND_METAL,
             #[cfg(feature = "LuHardDrive")]
             LuIcon::LuHardDrive => LU_HARD_DRIVE,
+            #[cfg(feature = "LuHardDriveDownload")]
+            LuIcon::LuHardDriveDownload => LU_HARD_DRIVE_DOWNLOAD,
+            #[cfg(feature = "LuHardDriveUpload")]
+            LuIcon::LuHardDriveUpload => LU_HARD_DRIVE_UPLOAD,
             #[cfg(feature = "LuHardHat")]
             LuIcon::LuHardHat => LU_HARD_HAT,
             #[cfg(feature = "LuHash")]
             LuIcon::LuHash => LU_HASH,
             #[cfg(feature = "LuHaze")]
             LuIcon::LuHaze => LU_HAZE,
+            #[cfg(feature = "LuHdmiPort")]
+            LuIcon::LuHdmiPort => LU_HDMI_PORT,
             #[cfg(feature = "LuHeading")]
             LuIcon::LuHeading => LU_HEADING,
             #[cfg(feature = "LuHeading1")]
@@ -20408,12 +25778,26 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuInstagram => LU_INSTAGRAM,
             #[cfg(feature = "LuItalic")]
             LuIcon::LuItalic => LU_ITALIC,
+            #[cfg(feature = "LuIterationCcw")]
+            LuIcon::LuIterationCcw => LU_ITERATION_CCW,
+            #[cfg(feature = "LuIterationCw")]
+            LuIcon::LuIterationCw => LU_ITERATION_CW,
             #[cfg(feature = "LuJapaneseYen")]
             LuIcon::LuJapaneseYen => LU_JAPANESE_YEN,
             #[cfg(feature = "LuJoystick")]
             LuIcon::LuJoystick => LU_JOYSTICK,
+            #[cfg(feature = "LuKanban")]
+            LuIcon::LuKanban => LU_KANBAN,
+            #[cfg(feature = "LuKanbanSquare")]
+            LuIcon::LuKanbanSquare => LU_KANBAN_SQUARE,
+            #[cfg(feature = "LuKanbanSquareDashed")]
+            LuIcon::LuKanbanSquareDashed => LU_KANBAN_SQUARE_DASHED,
             #[cfg(feature = "LuKey")]
             LuIcon::LuKey => LU_KEY,
+            #[cfg(feature = "LuKeyRound")]
+            LuIcon::LuKeyRound => LU_KEY_ROUND,
+            #[cfg(feature = "LuKeySquare")]
+            LuIcon::LuKeySquare => LU_KEY_SQUARE,
             #[cfg(feature = "LuKeyboard")]
             LuIcon::LuKeyboard => LU_KEYBOARD,
             #[cfg(feature = "LuLamp")]
@@ -20452,14 +25836,22 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuLayoutGrid => LU_LAYOUT_GRID,
             #[cfg(feature = "LuLayoutList")]
             LuIcon::LuLayoutList => LU_LAYOUT_LIST,
+            #[cfg(feature = "LuLayoutPanelLeft")]
+            LuIcon::LuLayoutPanelLeft => LU_LAYOUT_PANEL_LEFT,
+            #[cfg(feature = "LuLayoutPanelTop")]
+            LuIcon::LuLayoutPanelTop => LU_LAYOUT_PANEL_TOP,
             #[cfg(feature = "LuLayoutTemplate")]
             LuIcon::LuLayoutTemplate => LU_LAYOUT_TEMPLATE,
             #[cfg(feature = "LuLeaf")]
             LuIcon::LuLeaf => LU_LEAF,
+            #[cfg(feature = "LuLeafyGreen")]
+            LuIcon::LuLeafyGreen => LU_LEAFY_GREEN,
             #[cfg(feature = "LuLibrary")]
             LuIcon::LuLibrary => LU_LIBRARY,
             #[cfg(feature = "LuLifeBuoy")]
             LuIcon::LuLifeBuoy => LU_LIFE_BUOY,
+            #[cfg(feature = "LuLigature")]
+            LuIcon::LuLigature => LU_LIGATURE,
             #[cfg(feature = "LuLightbulb")]
             LuIcon::LuLightbulb => LU_LIGHTBULB,
             #[cfg(feature = "LuLightbulbOff")]
@@ -20480,6 +25872,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuListChecks => LU_LIST_CHECKS,
             #[cfg(feature = "LuListEnd")]
             LuIcon::LuListEnd => LU_LIST_END,
+            #[cfg(feature = "LuListFilter")]
+            LuIcon::LuListFilter => LU_LIST_FILTER,
             #[cfg(feature = "LuListMinus")]
             LuIcon::LuListMinus => LU_LIST_MINUS,
             #[cfg(feature = "LuListMusic")]
@@ -20488,8 +25882,12 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuListOrdered => LU_LIST_ORDERED,
             #[cfg(feature = "LuListPlus")]
             LuIcon::LuListPlus => LU_LIST_PLUS,
+            #[cfg(feature = "LuListRestart")]
+            LuIcon::LuListRestart => LU_LIST_RESTART,
             #[cfg(feature = "LuListStart")]
             LuIcon::LuListStart => LU_LIST_START,
+            #[cfg(feature = "LuListTodo")]
+            LuIcon::LuListTodo => LU_LIST_TODO,
             #[cfg(feature = "LuListTree")]
             LuIcon::LuListTree => LU_LIST_TREE,
             #[cfg(feature = "LuListVideo")]
@@ -20512,8 +25910,12 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuLogIn => LU_LOG_IN,
             #[cfg(feature = "LuLogOut")]
             LuIcon::LuLogOut => LU_LOG_OUT,
+            #[cfg(feature = "LuLollipop")]
+            LuIcon::LuLollipop => LU_LOLLIPOP,
             #[cfg(feature = "LuLuggage")]
             LuIcon::LuLuggage => LU_LUGGAGE,
+            #[cfg(feature = "LuMSquare")]
+            LuIcon::LuMSquare => LU_M_SQUARE,
             #[cfg(feature = "LuMagnet")]
             LuIcon::LuMagnet => LU_MAGNET,
             #[cfg(feature = "LuMail")]
@@ -20558,8 +25960,14 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuMegaphoneOff => LU_MEGAPHONE_OFF,
             #[cfg(feature = "LuMeh")]
             LuIcon::LuMeh => LU_MEH,
+            #[cfg(feature = "LuMemoryStick")]
+            LuIcon::LuMemoryStick => LU_MEMORY_STICK,
             #[cfg(feature = "LuMenu")]
             LuIcon::LuMenu => LU_MENU,
+            #[cfg(feature = "LuMenuSquare")]
+            LuIcon::LuMenuSquare => LU_MENU_SQUARE,
+            #[cfg(feature = "LuMerge")]
+            LuIcon::LuMerge => LU_MERGE,
             #[cfg(feature = "LuMessageCircle")]
             LuIcon::LuMessageCircle => LU_MESSAGE_CIRCLE,
             #[cfg(feature = "LuMessageSquare")]
@@ -20598,14 +26006,32 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuMinusSquare => LU_MINUS_SQUARE,
             #[cfg(feature = "LuMonitor")]
             LuIcon::LuMonitor => LU_MONITOR,
+            #[cfg(feature = "LuMonitorCheck")]
+            LuIcon::LuMonitorCheck => LU_MONITOR_CHECK,
+            #[cfg(feature = "LuMonitorDot")]
+            LuIcon::LuMonitorDot => LU_MONITOR_DOT,
+            #[cfg(feature = "LuMonitorDown")]
+            LuIcon::LuMonitorDown => LU_MONITOR_DOWN,
             #[cfg(feature = "LuMonitorOff")]
             LuIcon::LuMonitorOff => LU_MONITOR_OFF,
+            #[cfg(feature = "LuMonitorPause")]
+            LuIcon::LuMonitorPause => LU_MONITOR_PAUSE,
+            #[cfg(feature = "LuMonitorPlay")]
+            LuIcon::LuMonitorPlay => LU_MONITOR_PLAY,
             #[cfg(feature = "LuMonitorSmartphone")]
             LuIcon::LuMonitorSmartphone => LU_MONITOR_SMARTPHONE,
             #[cfg(feature = "LuMonitorSpeaker")]
             LuIcon::LuMonitorSpeaker => LU_MONITOR_SPEAKER,
+            #[cfg(feature = "LuMonitorStop")]
+            LuIcon::LuMonitorStop => LU_MONITOR_STOP,
+            #[cfg(feature = "LuMonitorUp")]
+            LuIcon::LuMonitorUp => LU_MONITOR_UP,
+            #[cfg(feature = "LuMonitorX")]
+            LuIcon::LuMonitorX => LU_MONITOR_X,
             #[cfg(feature = "LuMoon")]
             LuIcon::LuMoon => LU_MOON,
+            #[cfg(feature = "LuMoonStar")]
+            LuIcon::LuMoonStar => LU_MOON_STAR,
             #[cfg(feature = "LuMoreHorizontal")]
             LuIcon::LuMoreHorizontal => LU_MORE_HORIZONTAL,
             #[cfg(feature = "LuMoreVertical")]
@@ -20630,8 +26056,24 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuMoveDiagonal => LU_MOVE_DIAGONAL,
             #[cfg(feature = "LuMoveDiagonal2")]
             LuIcon::LuMoveDiagonal2 => LU_MOVE_DIAGONAL2,
+            #[cfg(feature = "LuMoveDown")]
+            LuIcon::LuMoveDown => LU_MOVE_DOWN,
+            #[cfg(feature = "LuMoveDownLeft")]
+            LuIcon::LuMoveDownLeft => LU_MOVE_DOWN_LEFT,
+            #[cfg(feature = "LuMoveDownRight")]
+            LuIcon::LuMoveDownRight => LU_MOVE_DOWN_RIGHT,
             #[cfg(feature = "LuMoveHorizontal")]
             LuIcon::LuMoveHorizontal => LU_MOVE_HORIZONTAL,
+            #[cfg(feature = "LuMoveLeft")]
+            LuIcon::LuMoveLeft => LU_MOVE_LEFT,
+            #[cfg(feature = "LuMoveRight")]
+            LuIcon::LuMoveRight => LU_MOVE_RIGHT,
+            #[cfg(feature = "LuMoveUp")]
+            LuIcon::LuMoveUp => LU_MOVE_UP,
+            #[cfg(feature = "LuMoveUpLeft")]
+            LuIcon::LuMoveUpLeft => LU_MOVE_UP_LEFT,
+            #[cfg(feature = "LuMoveUpRight")]
+            LuIcon::LuMoveUpRight => LU_MOVE_UP_RIGHT,
             #[cfg(feature = "LuMoveVertical")]
             LuIcon::LuMoveVertical => LU_MOVE_VERTICAL,
             #[cfg(feature = "LuMusic")]
@@ -20694,12 +26136,48 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPalette => LU_PALETTE,
             #[cfg(feature = "LuPalmtree")]
             LuIcon::LuPalmtree => LU_PALMTREE,
+            #[cfg(feature = "LuPanelBottom")]
+            LuIcon::LuPanelBottom => LU_PANEL_BOTTOM,
+            #[cfg(feature = "LuPanelBottomClose")]
+            LuIcon::LuPanelBottomClose => LU_PANEL_BOTTOM_CLOSE,
+            #[cfg(feature = "LuPanelBottomInactive")]
+            LuIcon::LuPanelBottomInactive => LU_PANEL_BOTTOM_INACTIVE,
+            #[cfg(feature = "LuPanelBottomOpen")]
+            LuIcon::LuPanelBottomOpen => LU_PANEL_BOTTOM_OPEN,
+            #[cfg(feature = "LuPanelLeft")]
+            LuIcon::LuPanelLeft => LU_PANEL_LEFT,
+            #[cfg(feature = "LuPanelLeftClose")]
+            LuIcon::LuPanelLeftClose => LU_PANEL_LEFT_CLOSE,
+            #[cfg(feature = "LuPanelLeftInactive")]
+            LuIcon::LuPanelLeftInactive => LU_PANEL_LEFT_INACTIVE,
+            #[cfg(feature = "LuPanelLeftOpen")]
+            LuIcon::LuPanelLeftOpen => LU_PANEL_LEFT_OPEN,
+            #[cfg(feature = "LuPanelRight")]
+            LuIcon::LuPanelRight => LU_PANEL_RIGHT,
+            #[cfg(feature = "LuPanelRightClose")]
+            LuIcon::LuPanelRightClose => LU_PANEL_RIGHT_CLOSE,
+            #[cfg(feature = "LuPanelRightInactive")]
+            LuIcon::LuPanelRightInactive => LU_PANEL_RIGHT_INACTIVE,
+            #[cfg(feature = "LuPanelRightOpen")]
+            LuIcon::LuPanelRightOpen => LU_PANEL_RIGHT_OPEN,
+            #[cfg(feature = "LuPanelTop")]
+            LuIcon::LuPanelTop => LU_PANEL_TOP,
+            #[cfg(feature = "LuPanelTopClose")]
+            LuIcon::LuPanelTopClose => LU_PANEL_TOP_CLOSE,
+            #[cfg(feature = "LuPanelTopInactive")]
+            LuIcon::LuPanelTopInactive => LU_PANEL_TOP_INACTIVE,
+            #[cfg(feature = "LuPanelTopOpen")]
+            LuIcon::LuPanelTopOpen => LU_PANEL_TOP_OPEN,
             #[cfg(feature = "LuPaperclip")]
             LuIcon::LuPaperclip => LU_PAPERCLIP,
+            #[cfg(feature = "LuParentheses")]
+            LuIcon::LuParentheses => LU_PARENTHESES,
             #[cfg(feature = "LuParkingCircle")]
             LuIcon::LuParkingCircle => LU_PARKING_CIRCLE,
             #[cfg(feature = "LuParkingCircleOff")]
             LuIcon::LuParkingCircleOff => LU_PARKING_CIRCLE_OFF,
+            #[cfg(feature = "LuParkingMeter")]
+            LuIcon::LuParkingMeter => LU_PARKING_METER,
             #[cfg(feature = "LuParkingSquare")]
             LuIcon::LuParkingSquare => LU_PARKING_SQUARE,
             #[cfg(feature = "LuParkingSquareOff")]
@@ -20712,10 +26190,24 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPauseCircle => LU_PAUSE_CIRCLE,
             #[cfg(feature = "LuPauseOctagon")]
             LuIcon::LuPauseOctagon => LU_PAUSE_OCTAGON,
+            #[cfg(feature = "LuPawPrint")]
+            LuIcon::LuPawPrint => LU_PAW_PRINT,
+            #[cfg(feature = "LuPcCase")]
+            LuIcon::LuPcCase => LU_PC_CASE,
+            #[cfg(feature = "LuPen")]
+            LuIcon::LuPen => LU_PEN,
+            #[cfg(feature = "LuPenLine")]
+            LuIcon::LuPenLine => LU_PEN_LINE,
+            #[cfg(feature = "LuPenSquare")]
+            LuIcon::LuPenSquare => LU_PEN_SQUARE,
             #[cfg(feature = "LuPenTool")]
             LuIcon::LuPenTool => LU_PEN_TOOL,
             #[cfg(feature = "LuPencil")]
             LuIcon::LuPencil => LU_PENCIL,
+            #[cfg(feature = "LuPencilLine")]
+            LuIcon::LuPencilLine => LU_PENCIL_LINE,
+            #[cfg(feature = "LuPencilRuler")]
+            LuIcon::LuPencilRuler => LU_PENCIL_RULER,
             #[cfg(feature = "LuPercent")]
             LuIcon::LuPercent => LU_PERCENT,
             #[cfg(feature = "LuPersonStanding")]
@@ -20734,6 +26226,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPhoneOff => LU_PHONE_OFF,
             #[cfg(feature = "LuPhoneOutgoing")]
             LuIcon::LuPhoneOutgoing => LU_PHONE_OUTGOING,
+            #[cfg(feature = "LuPi")]
+            LuIcon::LuPi => LU_PI,
+            #[cfg(feature = "LuPiSquare")]
+            LuIcon::LuPiSquare => LU_PI_SQUARE,
             #[cfg(feature = "LuPictureInPicture")]
             LuIcon::LuPictureInPicture => LU_PICTURE_IN_PICTURE,
             #[cfg(feature = "LuPictureInPicture2")]
@@ -20744,6 +26240,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPiggyBank => LU_PIGGY_BANK,
             #[cfg(feature = "LuPilcrow")]
             LuIcon::LuPilcrow => LU_PILCROW,
+            #[cfg(feature = "LuPilcrowSquare")]
+            LuIcon::LuPilcrowSquare => LU_PILCROW_SQUARE,
             #[cfg(feature = "LuPill")]
             LuIcon::LuPill => LU_PILL,
             #[cfg(feature = "LuPin")]
@@ -20764,12 +26262,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPlay => LU_PLAY,
             #[cfg(feature = "LuPlayCircle")]
             LuIcon::LuPlayCircle => LU_PLAY_CIRCLE,
+            #[cfg(feature = "LuPlaySquare")]
+            LuIcon::LuPlaySquare => LU_PLAY_SQUARE,
             #[cfg(feature = "LuPlug")]
             LuIcon::LuPlug => LU_PLUG,
             #[cfg(feature = "LuPlug2")]
             LuIcon::LuPlug2 => LU_PLUG2,
             #[cfg(feature = "LuPlugZap")]
             LuIcon::LuPlugZap => LU_PLUG_ZAP,
+            #[cfg(feature = "LuPlugZap2")]
+            LuIcon::LuPlugZap2 => LU_PLUG_ZAP2,
             #[cfg(feature = "LuPlus")]
             LuIcon::LuPlus => LU_PLUS,
             #[cfg(feature = "LuPlusCircle")]
@@ -20778,32 +26280,54 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuPlusSquare => LU_PLUS_SQUARE,
             #[cfg(feature = "LuPocket")]
             LuIcon::LuPocket => LU_POCKET,
+            #[cfg(feature = "LuPocketKnife")]
+            LuIcon::LuPocketKnife => LU_POCKET_KNIFE,
             #[cfg(feature = "LuPodcast")]
             LuIcon::LuPodcast => LU_PODCAST,
             #[cfg(feature = "LuPointer")]
             LuIcon::LuPointer => LU_POINTER,
+            #[cfg(feature = "LuPopcorn")]
+            LuIcon::LuPopcorn => LU_POPCORN,
+            #[cfg(feature = "LuPopsicle")]
+            LuIcon::LuPopsicle => LU_POPSICLE,
             #[cfg(feature = "LuPoundSterling")]
             LuIcon::LuPoundSterling => LU_POUND_STERLING,
             #[cfg(feature = "LuPower")]
             LuIcon::LuPower => LU_POWER,
             #[cfg(feature = "LuPowerOff")]
             LuIcon::LuPowerOff => LU_POWER_OFF,
+            #[cfg(feature = "LuPresentation")]
+            LuIcon::LuPresentation => LU_PRESENTATION,
             #[cfg(feature = "LuPrinter")]
             LuIcon::LuPrinter => LU_PRINTER,
+            #[cfg(feature = "LuProjector")]
+            LuIcon::LuProjector => LU_PROJECTOR,
             #[cfg(feature = "LuPuzzle")]
             LuIcon::LuPuzzle => LU_PUZZLE,
             #[cfg(feature = "LuQrCode")]
             LuIcon::LuQrCode => LU_QR_CODE,
             #[cfg(feature = "LuQuote")]
             LuIcon::LuQuote => LU_QUOTE,
+            #[cfg(feature = "LuRabbit")]
+            LuIcon::LuRabbit => LU_RABBIT,
+            #[cfg(feature = "LuRadar")]
+            LuIcon::LuRadar => LU_RADAR,
+            #[cfg(feature = "LuRadiation")]
+            LuIcon::LuRadiation => LU_RADIATION,
             #[cfg(feature = "LuRadio")]
             LuIcon::LuRadio => LU_RADIO,
             #[cfg(feature = "LuRadioReceiver")]
             LuIcon::LuRadioReceiver => LU_RADIO_RECEIVER,
             #[cfg(feature = "LuRadioTower")]
             LuIcon::LuRadioTower => LU_RADIO_TOWER,
+            #[cfg(feature = "LuRailSymbol")]
+            LuIcon::LuRailSymbol => LU_RAIL_SYMBOL,
+            #[cfg(feature = "LuRainbow")]
+            LuIcon::LuRainbow => LU_RAINBOW,
             #[cfg(feature = "LuRat")]
             LuIcon::LuRat => LU_RAT,
+            #[cfg(feature = "LuRatio")]
+            LuIcon::LuRatio => LU_RATIO,
             #[cfg(feature = "LuReceipt")]
             LuIcon::LuReceipt => LU_RECEIPT,
             #[cfg(feature = "LuRectangleHorizontal")]
@@ -20816,10 +26340,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuRedo => LU_REDO,
             #[cfg(feature = "LuRedo2")]
             LuIcon::LuRedo2 => LU_REDO2,
+            #[cfg(feature = "LuRedoDot")]
+            LuIcon::LuRedoDot => LU_REDO_DOT,
             #[cfg(feature = "LuRefreshCcw")]
             LuIcon::LuRefreshCcw => LU_REFRESH_CCW,
+            #[cfg(feature = "LuRefreshCcwDot")]
+            LuIcon::LuRefreshCcwDot => LU_REFRESH_CCW_DOT,
             #[cfg(feature = "LuRefreshCw")]
             LuIcon::LuRefreshCw => LU_REFRESH_CW,
+            #[cfg(feature = "LuRefreshCwOff")]
+            LuIcon::LuRefreshCwOff => LU_REFRESH_CW_OFF,
             #[cfg(feature = "LuRefrigerator")]
             LuIcon::LuRefrigerator => LU_REFRIGERATOR,
             #[cfg(feature = "LuRegex")]
@@ -20830,6 +26360,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuRepeat => LU_REPEAT,
             #[cfg(feature = "LuRepeat1")]
             LuIcon::LuRepeat1 => LU_REPEAT1,
+            #[cfg(feature = "LuRepeat2")]
+            LuIcon::LuRepeat2 => LU_REPEAT2,
             #[cfg(feature = "LuReplace")]
             LuIcon::LuReplace => LU_REPLACE,
             #[cfg(feature = "LuReplaceAll")]
@@ -20844,6 +26376,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuRocket => LU_ROCKET,
             #[cfg(feature = "LuRockingChair")]
             LuIcon::LuRockingChair => LU_ROCKING_CHAIR,
+            #[cfg(feature = "LuRollerCoaster")]
+            LuIcon::LuRollerCoaster => LU_ROLLER_COASTER,
             #[cfg(feature = "LuRotate3d")]
             LuIcon::LuRotate3d => LU_ROTATE3D,
             #[cfg(feature = "LuRotateCcw")]
@@ -20852,6 +26386,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuRotateCw => LU_ROTATE_CW,
             #[cfg(feature = "LuRouter")]
             LuIcon::LuRouter => LU_ROUTER,
+            #[cfg(feature = "LuRows")]
+            LuIcon::LuRows => LU_ROWS,
             #[cfg(feature = "LuRss")]
             LuIcon::LuRss => LU_RSS,
             #[cfg(feature = "LuRuler")]
@@ -20864,6 +26400,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuSalad => LU_SALAD,
             #[cfg(feature = "LuSandwich")]
             LuIcon::LuSandwich => LU_SANDWICH,
+            #[cfg(feature = "LuSatellite")]
+            LuIcon::LuSatellite => LU_SATELLITE,
+            #[cfg(feature = "LuSatelliteDish")]
+            LuIcon::LuSatelliteDish => LU_SATELLITE_DISH,
             #[cfg(feature = "LuSave")]
             LuIcon::LuSave => LU_SAVE,
             #[cfg(feature = "LuSaveAll")]
@@ -20880,22 +26420,44 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuScanFace => LU_SCAN_FACE,
             #[cfg(feature = "LuScanLine")]
             LuIcon::LuScanLine => LU_SCAN_LINE,
+            #[cfg(feature = "LuScatterChart")]
+            LuIcon::LuScatterChart => LU_SCATTER_CHART,
             #[cfg(feature = "LuSchool")]
             LuIcon::LuSchool => LU_SCHOOL,
             #[cfg(feature = "LuSchool2")]
             LuIcon::LuSchool2 => LU_SCHOOL2,
             #[cfg(feature = "LuScissors")]
             LuIcon::LuScissors => LU_SCISSORS,
+            #[cfg(feature = "LuScissorsLineDashed")]
+            LuIcon::LuScissorsLineDashed => LU_SCISSORS_LINE_DASHED,
+            #[cfg(feature = "LuScissorsSquare")]
+            LuIcon::LuScissorsSquare => LU_SCISSORS_SQUARE,
+            #[cfg(feature = "LuScissorsSquareDashedBottom")]
+            LuIcon::LuScissorsSquareDashedBottom => LU_SCISSORS_SQUARE_DASHED_BOTTOM,
             #[cfg(feature = "LuScreenShare")]
             LuIcon::LuScreenShare => LU_SCREEN_SHARE,
             #[cfg(feature = "LuScreenShareOff")]
             LuIcon::LuScreenShareOff => LU_SCREEN_SHARE_OFF,
             #[cfg(feature = "LuScroll")]
             LuIcon::LuScroll => LU_SCROLL,
+            #[cfg(feature = "LuScrollText")]
+            LuIcon::LuScrollText => LU_SCROLL_TEXT,
             #[cfg(feature = "LuSearch")]
             LuIcon::LuSearch => LU_SEARCH,
+            #[cfg(feature = "LuSearchCheck")]
+            LuIcon::LuSearchCheck => LU_SEARCH_CHECK,
+            #[cfg(feature = "LuSearchCode")]
+            LuIcon::LuSearchCode => LU_SEARCH_CODE,
+            #[cfg(feature = "LuSearchSlash")]
+            LuIcon::LuSearchSlash => LU_SEARCH_SLASH,
+            #[cfg(feature = "LuSearchX")]
+            LuIcon::LuSearchX => LU_SEARCH_X,
             #[cfg(feature = "LuSend")]
             LuIcon::LuSend => LU_SEND,
+            #[cfg(feature = "LuSendHorizonal")]
+            LuIcon::LuSendHorizonal => LU_SEND_HORIZONAL,
+            #[cfg(feature = "LuSendToBack")]
+            LuIcon::LuSendToBack => LU_SEND_TO_BACK,
             #[cfg(feature = "LuSeparatorHorizontal")]
             LuIcon::LuSeparatorHorizontal => LU_SEPARATOR_HORIZONTAL,
             #[cfg(feature = "LuSeparatorVertical")]
@@ -20912,12 +26474,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuSettings => LU_SETTINGS,
             #[cfg(feature = "LuSettings2")]
             LuIcon::LuSettings2 => LU_SETTINGS2,
+            #[cfg(feature = "LuShapes")]
+            LuIcon::LuShapes => LU_SHAPES,
             #[cfg(feature = "LuShare")]
             LuIcon::LuShare => LU_SHARE,
             #[cfg(feature = "LuShare2")]
             LuIcon::LuShare2 => LU_SHARE2,
             #[cfg(feature = "LuSheet")]
             LuIcon::LuSheet => LU_SHEET,
+            #[cfg(feature = "LuShell")]
+            LuIcon::LuShell => LU_SHELL,
             #[cfg(feature = "LuShield")]
             LuIcon::LuShield => LU_SHIELD,
             #[cfg(feature = "LuShieldAlert")]
@@ -20932,10 +26498,14 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuShieldQuestion => LU_SHIELD_QUESTION,
             #[cfg(feature = "LuShip")]
             LuIcon::LuShip => LU_SHIP,
+            #[cfg(feature = "LuShipWheel")]
+            LuIcon::LuShipWheel => LU_SHIP_WHEEL,
             #[cfg(feature = "LuShirt")]
             LuIcon::LuShirt => LU_SHIRT,
             #[cfg(feature = "LuShoppingBag")]
             LuIcon::LuShoppingBag => LU_SHOPPING_BAG,
+            #[cfg(feature = "LuShoppingBasket")]
+            LuIcon::LuShoppingBasket => LU_SHOPPING_BASKET,
             #[cfg(feature = "LuShoppingCart")]
             LuIcon::LuShoppingCart => LU_SHOPPING_CART,
             #[cfg(feature = "LuShovel")]
@@ -20948,14 +26518,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuShrub => LU_SHRUB,
             #[cfg(feature = "LuShuffle")]
             LuIcon::LuShuffle => LU_SHUFFLE,
-            #[cfg(feature = "LuSidebar")]
-            LuIcon::LuSidebar => LU_SIDEBAR,
-            #[cfg(feature = "LuSidebarClose")]
-            LuIcon::LuSidebarClose => LU_SIDEBAR_CLOSE,
-            #[cfg(feature = "LuSidebarOpen")]
-            LuIcon::LuSidebarOpen => LU_SIDEBAR_OPEN,
             #[cfg(feature = "LuSigma")]
             LuIcon::LuSigma => LU_SIGMA,
+            #[cfg(feature = "LuSigmaSquare")]
+            LuIcon::LuSigmaSquare => LU_SIGMA_SQUARE,
             #[cfg(feature = "LuSignal")]
             LuIcon::LuSignal => LU_SIGNAL,
             #[cfg(feature = "LuSignalHigh")]
@@ -20992,30 +26558,60 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuSmile => LU_SMILE,
             #[cfg(feature = "LuSmilePlus")]
             LuIcon::LuSmilePlus => LU_SMILE_PLUS,
+            #[cfg(feature = "LuSnail")]
+            LuIcon::LuSnail => LU_SNAIL,
             #[cfg(feature = "LuSnowflake")]
             LuIcon::LuSnowflake => LU_SNOWFLAKE,
             #[cfg(feature = "LuSofa")]
             LuIcon::LuSofa => LU_SOFA,
-            #[cfg(feature = "LuSortAsc")]
-            LuIcon::LuSortAsc => LU_SORT_ASC,
-            #[cfg(feature = "LuSortDesc")]
-            LuIcon::LuSortDesc => LU_SORT_DESC,
             #[cfg(feature = "LuSoup")]
             LuIcon::LuSoup => LU_SOUP,
             #[cfg(feature = "LuSpace")]
             LuIcon::LuSpace => LU_SPACE,
+            #[cfg(feature = "LuSpade")]
+            LuIcon::LuSpade => LU_SPADE,
+            #[cfg(feature = "LuSparkle")]
+            LuIcon::LuSparkle => LU_SPARKLE,
+            #[cfg(feature = "LuSparkles")]
+            LuIcon::LuSparkles => LU_SPARKLES,
             #[cfg(feature = "LuSpeaker")]
             LuIcon::LuSpeaker => LU_SPEAKER,
+            #[cfg(feature = "LuSpellCheck")]
+            LuIcon::LuSpellCheck => LU_SPELL_CHECK,
+            #[cfg(feature = "LuSpellCheck2")]
+            LuIcon::LuSpellCheck2 => LU_SPELL_CHECK2,
             #[cfg(feature = "LuSpline")]
             LuIcon::LuSpline => LU_SPLINE,
+            #[cfg(feature = "LuSplit")]
+            LuIcon::LuSplit => LU_SPLIT,
             #[cfg(feature = "LuSplitSquareHorizontal")]
             LuIcon::LuSplitSquareHorizontal => LU_SPLIT_SQUARE_HORIZONTAL,
             #[cfg(feature = "LuSplitSquareVertical")]
             LuIcon::LuSplitSquareVertical => LU_SPLIT_SQUARE_VERTICAL,
+            #[cfg(feature = "LuSprayCan")]
+            LuIcon::LuSprayCan => LU_SPRAY_CAN,
             #[cfg(feature = "LuSprout")]
             LuIcon::LuSprout => LU_SPROUT,
             #[cfg(feature = "LuSquare")]
             LuIcon::LuSquare => LU_SQUARE,
+            #[cfg(feature = "LuSquareAsterisk")]
+            LuIcon::LuSquareAsterisk => LU_SQUARE_ASTERISK,
+            #[cfg(feature = "LuSquareCode")]
+            LuIcon::LuSquareCode => LU_SQUARE_CODE,
+            #[cfg(feature = "LuSquareDashedBottom")]
+            LuIcon::LuSquareDashedBottom => LU_SQUARE_DASHED_BOTTOM,
+            #[cfg(feature = "LuSquareDashedBottomCode")]
+            LuIcon::LuSquareDashedBottomCode => LU_SQUARE_DASHED_BOTTOM_CODE,
+            #[cfg(feature = "LuSquareDot")]
+            LuIcon::LuSquareDot => LU_SQUARE_DOT,
+            #[cfg(feature = "LuSquareEqual")]
+            LuIcon::LuSquareEqual => LU_SQUARE_EQUAL,
+            #[cfg(feature = "LuSquareSlash")]
+            LuIcon::LuSquareSlash => LU_SQUARE_SLASH,
+            #[cfg(feature = "LuSquareStack")]
+            LuIcon::LuSquareStack => LU_SQUARE_STACK,
+            #[cfg(feature = "LuSquirrel")]
+            LuIcon::LuSquirrel => LU_SQUIRREL,
             #[cfg(feature = "LuStamp")]
             LuIcon::LuStamp => LU_STAMP,
             #[cfg(feature = "LuStar")]
@@ -21078,6 +26674,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuTable => LU_TABLE,
             #[cfg(feature = "LuTable2")]
             LuIcon::LuTable2 => LU_TABLE2,
+            #[cfg(feature = "LuTableProperties")]
+            LuIcon::LuTableProperties => LU_TABLE_PROPERTIES,
             #[cfg(feature = "LuTablet")]
             LuIcon::LuTablet => LU_TABLET,
             #[cfg(feature = "LuTablets")]
@@ -21086,6 +26684,16 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuTag => LU_TAG,
             #[cfg(feature = "LuTags")]
             LuIcon::LuTags => LU_TAGS,
+            #[cfg(feature = "LuTally1")]
+            LuIcon::LuTally1 => LU_TALLY1,
+            #[cfg(feature = "LuTally2")]
+            LuIcon::LuTally2 => LU_TALLY2,
+            #[cfg(feature = "LuTally3")]
+            LuIcon::LuTally3 => LU_TALLY3,
+            #[cfg(feature = "LuTally4")]
+            LuIcon::LuTally4 => LU_TALLY4,
+            #[cfg(feature = "LuTally5")]
+            LuIcon::LuTally5 => LU_TALLY5,
             #[cfg(feature = "LuTarget")]
             LuIcon::LuTarget => LU_TARGET,
             #[cfg(feature = "LuTent")]
@@ -21106,8 +26714,10 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuTextCursor => LU_TEXT_CURSOR,
             #[cfg(feature = "LuTextCursorInput")]
             LuIcon::LuTextCursorInput => LU_TEXT_CURSOR_INPUT,
-            #[cfg(feature = "LuTextSelection")]
-            LuIcon::LuTextSelection => LU_TEXT_SELECTION,
+            #[cfg(feature = "LuTextQuote")]
+            LuIcon::LuTextQuote => LU_TEXT_QUOTE,
+            #[cfg(feature = "LuTextSelect")]
+            LuIcon::LuTextSelect => LU_TEXT_SELECT,
             #[cfg(feature = "LuThermometer")]
             LuIcon::LuThermometer => LU_THERMOMETER,
             #[cfg(feature = "LuThermometerSnowflake")]
@@ -21132,12 +26742,26 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuToggleRight => LU_TOGGLE_RIGHT,
             #[cfg(feature = "LuTornado")]
             LuIcon::LuTornado => LU_TORNADO,
+            #[cfg(feature = "LuTouchpad")]
+            LuIcon::LuTouchpad => LU_TOUCHPAD,
+            #[cfg(feature = "LuTouchpadOff")]
+            LuIcon::LuTouchpadOff => LU_TOUCHPAD_OFF,
             #[cfg(feature = "LuTowerControl")]
             LuIcon::LuTowerControl => LU_TOWER_CONTROL,
             #[cfg(feature = "LuToyBrick")]
             LuIcon::LuToyBrick => LU_TOY_BRICK,
-            #[cfg(feature = "LuTrain")]
-            LuIcon::LuTrain => LU_TRAIN,
+            #[cfg(feature = "LuTractor")]
+            LuIcon::LuTractor => LU_TRACTOR,
+            #[cfg(feature = "LuTrafficCone")]
+            LuIcon::LuTrafficCone => LU_TRAFFIC_CONE,
+            #[cfg(feature = "LuTrainFront")]
+            LuIcon::LuTrainFront => LU_TRAIN_FRONT,
+            #[cfg(feature = "LuTrainFrontTunnel")]
+            LuIcon::LuTrainFrontTunnel => LU_TRAIN_FRONT_TUNNEL,
+            #[cfg(feature = "LuTrainTrack")]
+            LuIcon::LuTrainTrack => LU_TRAIN_TRACK,
+            #[cfg(feature = "LuTramFront")]
+            LuIcon::LuTramFront => LU_TRAM_FRONT,
             #[cfg(feature = "LuTrash")]
             LuIcon::LuTrash => LU_TRASH,
             #[cfg(feature = "LuTrash2")]
@@ -21156,10 +26780,14 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuTrendingUp => LU_TRENDING_UP,
             #[cfg(feature = "LuTriangle")]
             LuIcon::LuTriangle => LU_TRIANGLE,
+            #[cfg(feature = "LuTriangleRight")]
+            LuIcon::LuTriangleRight => LU_TRIANGLE_RIGHT,
             #[cfg(feature = "LuTrophy")]
             LuIcon::LuTrophy => LU_TROPHY,
             #[cfg(feature = "LuTruck")]
             LuIcon::LuTruck => LU_TRUCK,
+            #[cfg(feature = "LuTurtle")]
+            LuIcon::LuTurtle => LU_TURTLE,
             #[cfg(feature = "LuTv")]
             LuIcon::LuTv => LU_TV,
             #[cfg(feature = "LuTv2")]
@@ -21178,12 +26806,22 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuUndo => LU_UNDO,
             #[cfg(feature = "LuUndo2")]
             LuIcon::LuUndo2 => LU_UNDO2,
+            #[cfg(feature = "LuUndoDot")]
+            LuIcon::LuUndoDot => LU_UNDO_DOT,
+            #[cfg(feature = "LuUnfoldHorizontal")]
+            LuIcon::LuUnfoldHorizontal => LU_UNFOLD_HORIZONTAL,
+            #[cfg(feature = "LuUnfoldVertical")]
+            LuIcon::LuUnfoldVertical => LU_UNFOLD_VERTICAL,
+            #[cfg(feature = "LuUngroup")]
+            LuIcon::LuUngroup => LU_UNGROUP,
             #[cfg(feature = "LuUnlink")]
             LuIcon::LuUnlink => LU_UNLINK,
             #[cfg(feature = "LuUnlink2")]
             LuIcon::LuUnlink2 => LU_UNLINK2,
             #[cfg(feature = "LuUnlock")]
             LuIcon::LuUnlock => LU_UNLOCK,
+            #[cfg(feature = "LuUnplug")]
+            LuIcon::LuUnplug => LU_UNPLUG,
             #[cfg(feature = "LuUpload")]
             LuIcon::LuUpload => LU_UPLOAD,
             #[cfg(feature = "LuUploadCloud")]
@@ -21192,30 +26830,52 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuUsb => LU_USB,
             #[cfg(feature = "LuUser")]
             LuIcon::LuUser => LU_USER,
+            #[cfg(feature = "LuUser2")]
+            LuIcon::LuUser2 => LU_USER2,
             #[cfg(feature = "LuUserCheck")]
             LuIcon::LuUserCheck => LU_USER_CHECK,
+            #[cfg(feature = "LuUserCheck2")]
+            LuIcon::LuUserCheck2 => LU_USER_CHECK2,
+            #[cfg(feature = "LuUserCircle")]
+            LuIcon::LuUserCircle => LU_USER_CIRCLE,
+            #[cfg(feature = "LuUserCircle2")]
+            LuIcon::LuUserCircle2 => LU_USER_CIRCLE2,
             #[cfg(feature = "LuUserCog")]
             LuIcon::LuUserCog => LU_USER_COG,
+            #[cfg(feature = "LuUserCog2")]
+            LuIcon::LuUserCog2 => LU_USER_COG2,
             #[cfg(feature = "LuUserMinus")]
             LuIcon::LuUserMinus => LU_USER_MINUS,
+            #[cfg(feature = "LuUserMinus2")]
+            LuIcon::LuUserMinus2 => LU_USER_MINUS2,
             #[cfg(feature = "LuUserPlus")]
             LuIcon::LuUserPlus => LU_USER_PLUS,
+            #[cfg(feature = "LuUserPlus2")]
+            LuIcon::LuUserPlus2 => LU_USER_PLUS2,
+            #[cfg(feature = "LuUserSquare")]
+            LuIcon::LuUserSquare => LU_USER_SQUARE,
+            #[cfg(feature = "LuUserSquare2")]
+            LuIcon::LuUserSquare2 => LU_USER_SQUARE2,
             #[cfg(feature = "LuUserX")]
             LuIcon::LuUserX => LU_USER_X,
+            #[cfg(feature = "LuUserX2")]
+            LuIcon::LuUserX2 => LU_USER_X2,
             #[cfg(feature = "LuUsers")]
             LuIcon::LuUsers => LU_USERS,
+            #[cfg(feature = "LuUsers2")]
+            LuIcon::LuUsers2 => LU_USERS2,
             #[cfg(feature = "LuUtensils")]
             LuIcon::LuUtensils => LU_UTENSILS,
             #[cfg(feature = "LuUtensilsCrossed")]
             LuIcon::LuUtensilsCrossed => LU_UTENSILS_CROSSED,
             #[cfg(feature = "LuUtilityPole")]
             LuIcon::LuUtilityPole => LU_UTILITY_POLE,
+            #[cfg(feature = "LuVariable")]
+            LuIcon::LuVariable => LU_VARIABLE,
             #[cfg(feature = "LuVegan")]
             LuIcon::LuVegan => LU_VEGAN,
             #[cfg(feature = "LuVenetianMask")]
             LuIcon::LuVenetianMask => LU_VENETIAN_MASK,
-            #[cfg(feature = "LuVerified")]
-            LuIcon::LuVerified => LU_VERIFIED,
             #[cfg(feature = "LuVibrate")]
             LuIcon::LuVibrate => LU_VIBRATE,
             #[cfg(feature = "LuVibrateOff")]
@@ -21224,6 +26884,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuVideo => LU_VIDEO,
             #[cfg(feature = "LuVideoOff")]
             LuIcon::LuVideoOff => LU_VIDEO_OFF,
+            #[cfg(feature = "LuVideotape")]
+            LuIcon::LuVideotape => LU_VIDEOTAPE,
             #[cfg(feature = "LuView")]
             LuIcon::LuView => LU_VIEW,
             #[cfg(feature = "LuVoicemail")]
@@ -21240,6 +26902,12 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuVote => LU_VOTE,
             #[cfg(feature = "LuWallet")]
             LuIcon::LuWallet => LU_WALLET,
+            #[cfg(feature = "LuWallet2")]
+            LuIcon::LuWallet2 => LU_WALLET2,
+            #[cfg(feature = "LuWalletCards")]
+            LuIcon::LuWalletCards => LU_WALLET_CARDS,
+            #[cfg(feature = "LuWallpaper")]
+            LuIcon::LuWallpaper => LU_WALLPAPER,
             #[cfg(feature = "LuWand")]
             LuIcon::LuWand => LU_WAND,
             #[cfg(feature = "LuWand2")]
@@ -21270,6 +26938,8 @@ impl From<LuIcon> for icondata_core::IconData {
             LuIcon::LuWine => LU_WINE,
             #[cfg(feature = "LuWineOff")]
             LuIcon::LuWineOff => LU_WINE_OFF,
+            #[cfg(feature = "LuWorkflow")]
+            LuIcon::LuWorkflow => LU_WORKFLOW,
             #[cfg(feature = "LuWrapText")]
             LuIcon::LuWrapText => LU_WRAP_TEXT,
             #[cfg(feature = "LuWrench")]

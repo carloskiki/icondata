@@ -137,7 +137,7 @@ async fn main() -> Result<()> {
     let num_libs = Packages::get()?.len();
     let end = time::OffsetDateTime::now_utc();
     info!(
-        took = format!("{}s", (end - start).whole_milliseconds()),
+        took = format!("{}ms", (end - start).whole_milliseconds()),
         num_libs, "Build successful!"
     );
 

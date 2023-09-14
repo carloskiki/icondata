@@ -152,6 +152,10 @@ pub enum RiIcon {
     RiAppsSystemFill,
     #[cfg(feature = "RiAppsSystemLine")]
     RiAppsSystemLine,
+    #[cfg(feature = "RiArchive2BusinessFill")]
+    RiArchive2BusinessFill,
+    #[cfg(feature = "RiArchive2BusinessLine")]
+    RiArchive2BusinessLine,
     #[cfg(feature = "RiArchiveBusinessFill")]
     RiArchiveBusinessFill,
     #[cfg(feature = "RiArchiveBusinessLine")]
@@ -412,6 +416,10 @@ pub enum RiIcon {
     RiBearSmileUserFacesFill,
     #[cfg(feature = "RiBearSmileUserFacesLine")]
     RiBearSmileUserFacesLine,
+    #[cfg(feature = "RiBeerMapFill")]
+    RiBeerMapFill,
+    #[cfg(feature = "RiBeerMapLine")]
+    RiBeerMapLine,
     #[cfg(feature = "RiBehanceLogosFill")]
     RiBehanceLogosFill,
     #[cfg(feature = "RiBehanceLogosLine")]
@@ -874,6 +882,10 @@ pub enum RiIcon {
     RiChromeLogosFill,
     #[cfg(feature = "RiChromeLogosLine")]
     RiChromeLogosLine,
+    #[cfg(feature = "RiCircleDesignFill")]
+    RiCircleDesignFill,
+    #[cfg(feature = "RiCircleDesignLine")]
+    RiCircleDesignLine,
     #[cfg(feature = "RiClapperboardMediaFill")]
     RiClapperboardMediaFill,
     #[cfg(feature = "RiClapperboardMediaLine")]
@@ -1172,6 +1184,14 @@ pub enum RiIcon {
     RiCrossOthersFill,
     #[cfg(feature = "RiCrossOthersLine")]
     RiCrossOthersLine,
+    #[cfg(feature = "RiCrosshair2DesignFill")]
+    RiCrosshair2DesignFill,
+    #[cfg(feature = "RiCrosshair2DesignLine")]
+    RiCrosshair2DesignLine,
+    #[cfg(feature = "RiCrosshairDesignFill")]
+    RiCrosshairDesignFill,
+    #[cfg(feature = "RiCrosshairDesignLine")]
+    RiCrosshairDesignLine,
     #[cfg(feature = "RiCss3DevelopmentFill")]
     RiCss3DevelopmentFill,
     #[cfg(feature = "RiCss3DevelopmentLine")]
@@ -1386,6 +1406,8 @@ pub enum RiIcon {
     RiDropboxLogosFill,
     #[cfg(feature = "RiDropboxLogosLine")]
     RiDropboxLogosLine,
+    #[cfg(feature = "RiDropdownListEditor")]
+    RiDropdownListEditor,
     #[cfg(feature = "RiDualSim1DeviceFill")]
     RiDualSim1DeviceFill,
     #[cfg(feature = "RiDualSim1DeviceLine")]
@@ -1608,6 +1630,10 @@ pub enum RiIcon {
     RiFileChartDocumentFill,
     #[cfg(feature = "RiFileChartDocumentLine")]
     RiFileChartDocumentLine,
+    #[cfg(feature = "RiFileCloseDocumentFill")]
+    RiFileCloseDocumentFill,
+    #[cfg(feature = "RiFileCloseDocumentLine")]
+    RiFileCloseDocumentLine,
     #[cfg(feature = "RiFileCloudDocumentFill")]
     RiFileCloudDocumentFill,
     #[cfg(feature = "RiFileCloudDocumentLine")]
@@ -1664,6 +1690,10 @@ pub enum RiIcon {
     RiFileHwpDocumentFill,
     #[cfg(feature = "RiFileHwpDocumentLine")]
     RiFileHwpDocumentLine,
+    #[cfg(feature = "RiFileImageDocumentFill")]
+    RiFileImageDocumentFill,
+    #[cfg(feature = "RiFileImageDocumentLine")]
+    RiFileImageDocumentLine,
     #[cfg(feature = "RiFileInfoDocumentFill")]
     RiFileInfoDocumentFill,
     #[cfg(feature = "RiFileInfoDocumentLine")]
@@ -1700,6 +1730,10 @@ pub enum RiIcon {
     RiFilePaperDocumentFill,
     #[cfg(feature = "RiFilePaperDocumentLine")]
     RiFilePaperDocumentLine,
+    #[cfg(feature = "RiFilePdf2DocumentFill")]
+    RiFilePdf2DocumentFill,
+    #[cfg(feature = "RiFilePdf2DocumentLine")]
+    RiFilePdf2DocumentLine,
     #[cfg(feature = "RiFilePdfDocumentFill")]
     RiFilePdfDocumentFill,
     #[cfg(feature = "RiFilePdfDocumentLine")]
@@ -1756,6 +1790,10 @@ pub enum RiIcon {
     RiFileUserDocumentFill,
     #[cfg(feature = "RiFileUserDocumentLine")]
     RiFileUserDocumentLine,
+    #[cfg(feature = "RiFileVideoDocumentFill")]
+    RiFileVideoDocumentFill,
+    #[cfg(feature = "RiFileVideoDocumentLine")]
+    RiFileVideoDocumentLine,
     #[cfg(feature = "RiFileWarningDocumentFill")]
     RiFileWarningDocumentFill,
     #[cfg(feature = "RiFileWarningDocumentLine")]
@@ -1918,6 +1956,10 @@ pub enum RiIcon {
     RiFolderHistoryDocumentFill,
     #[cfg(feature = "RiFolderHistoryDocumentLine")]
     RiFolderHistoryDocumentLine,
+    #[cfg(feature = "RiFolderImageDocumentFill")]
+    RiFolderImageDocumentFill,
+    #[cfg(feature = "RiFolderImageDocumentLine")]
+    RiFolderImageDocumentLine,
     #[cfg(feature = "RiFolderInfoDocumentFill")]
     RiFolderInfoDocumentFill,
     #[cfg(feature = "RiFolderInfoDocumentLine")]
@@ -1978,6 +2020,10 @@ pub enum RiIcon {
     RiFolderUserDocumentFill,
     #[cfg(feature = "RiFolderUserDocumentLine")]
     RiFolderUserDocumentLine,
+    #[cfg(feature = "RiFolderVideoDocumentFill")]
+    RiFolderVideoDocumentFill,
+    #[cfg(feature = "RiFolderVideoDocumentLine")]
+    RiFolderVideoDocumentLine,
     #[cfg(feature = "RiFolderWarningDocumentFill")]
     RiFolderWarningDocumentFill,
     #[cfg(feature = "RiFolderWarningDocumentLine")]
@@ -2304,6 +2350,10 @@ pub enum RiIcon {
     RiHeavyShowersWeatherFill,
     #[cfg(feature = "RiHeavyShowersWeatherLine")]
     RiHeavyShowersWeatherLine,
+    #[cfg(feature = "RiHexagonDesignFill")]
+    RiHexagonDesignFill,
+    #[cfg(feature = "RiHexagonDesignLine")]
+    RiHexagonDesignLine,
     #[cfg(feature = "RiHistorySystemFill")]
     RiHistorySystemFill,
     #[cfg(feature = "RiHistorySystemLine")]
@@ -2424,6 +2474,10 @@ pub enum RiIcon {
     RiImageMediaFill,
     #[cfg(feature = "RiImageMediaLine")]
     RiImageMediaLine,
+    #[cfg(feature = "RiInbox2BusinessFill")]
+    RiInbox2BusinessFill,
+    #[cfg(feature = "RiInbox2BusinessLine")]
+    RiInbox2BusinessLine,
     #[cfg(feature = "RiInboxArchiveBusinessFill")]
     RiInboxArchiveBusinessFill,
     #[cfg(feature = "RiInboxArchiveBusinessLine")]
@@ -2448,6 +2502,10 @@ pub enum RiIcon {
     RiIndeterminateCircleSystemFill,
     #[cfg(feature = "RiIndeterminateCircleSystemLine")]
     RiIndeterminateCircleSystemLine,
+    #[cfg(feature = "RiInfinityOthersFill")]
+    RiInfinityOthersFill,
+    #[cfg(feature = "RiInfinityOthersLine")]
+    RiInfinityOthersLine,
     #[cfg(feature = "RiInformationSystemFill")]
     RiInformationSystemFill,
     #[cfg(feature = "RiInformationSystemLine")]
@@ -2942,6 +3000,10 @@ pub enum RiIcon {
     RiMenuFoldSystemFill,
     #[cfg(feature = "RiMenuFoldSystemLine")]
     RiMenuFoldSystemLine,
+    #[cfg(feature = "RiMenuSearchSystemFill")]
+    RiMenuSearchSystemFill,
+    #[cfg(feature = "RiMenuSearchSystemLine")]
+    RiMenuSearchSystemLine,
     #[cfg(feature = "RiMenuSystemFill")]
     RiMenuSystemFill,
     #[cfg(feature = "RiMenuSystemLine")]
@@ -3182,6 +3244,10 @@ pub enum RiIcon {
     RiNurseHealthMedicalFill,
     #[cfg(feature = "RiNurseHealthMedicalLine")]
     RiNurseHealthMedicalLine,
+    #[cfg(feature = "RiOctagonDesignFill")]
+    RiOctagonDesignFill,
+    #[cfg(feature = "RiOctagonDesignLine")]
+    RiOctagonDesignLine,
     #[cfg(feature = "RiOilMapFill")]
     RiOilMapFill,
     #[cfg(feature = "RiOilMapLine")]
@@ -3320,6 +3386,10 @@ pub enum RiIcon {
     RiPencilRulerDesignFill,
     #[cfg(feature = "RiPencilRulerDesignLine")]
     RiPencilRulerDesignLine,
+    #[cfg(feature = "RiPentagonDesignFill")]
+    RiPentagonDesignFill,
+    #[cfg(feature = "RiPentagonDesignLine")]
+    RiPentagonDesignLine,
     #[cfg(feature = "RiPercentFinanceFill")]
     RiPercentFinanceFill,
     #[cfg(feature = "RiPercentFinanceLine")]
@@ -3574,6 +3644,10 @@ pub enum RiIcon {
     RiRecordMailBusinessFill,
     #[cfg(feature = "RiRecordMailBusinessLine")]
     RiRecordMailBusinessLine,
+    #[cfg(feature = "RiRectangleDesignFill")]
+    RiRectangleDesignFill,
+    #[cfg(feature = "RiRectangleDesignLine")]
+    RiRectangleDesignLine,
     #[cfg(feature = "RiRecycleOthersFill")]
     RiRecycleOthersFill,
     #[cfg(feature = "RiRecycleOthersLine")]
@@ -3678,6 +3752,10 @@ pub enum RiIcon {
     RiRewindMiniMediaFill,
     #[cfg(feature = "RiRewindMiniMediaLine")]
     RiRewindMiniMediaLine,
+    #[cfg(feature = "RiRfidDeviceFill")]
+    RiRfidDeviceFill,
+    #[cfg(feature = "RiRfidDeviceLine")]
+    RiRfidDeviceLine,
     #[cfg(feature = "RiRhythmMediaFill")]
     RiRhythmMediaFill,
     #[cfg(feature = "RiRhythmMediaLine")]
@@ -3694,6 +3772,10 @@ pub enum RiIcon {
     RiRoadsterMapFill,
     #[cfg(feature = "RiRoadsterMapLine")]
     RiRoadsterMapLine,
+    #[cfg(feature = "RiRobot2UserFacesFill")]
+    RiRobot2UserFacesFill,
+    #[cfg(feature = "RiRobot2UserFacesLine")]
+    RiRobot2UserFacesLine,
     #[cfg(feature = "RiRobotUserFacesFill")]
     RiRobotUserFacesFill,
     #[cfg(feature = "RiRobotUserFacesLine")]
@@ -3890,6 +3972,10 @@ pub enum RiIcon {
     RiSettingsSystemFill,
     #[cfg(feature = "RiSettingsSystemLine")]
     RiSettingsSystemLine,
+    #[cfg(feature = "RiShakeHandsBusinessFill")]
+    RiShakeHandsBusinessFill,
+    #[cfg(feature = "RiShakeHandsBusinessLine")]
+    RiShakeHandsBusinessLine,
     #[cfg(feature = "RiShape2DesignFill")]
     RiShape2DesignFill,
     #[cfg(feature = "RiShape2DesignLine")]
@@ -3898,6 +3984,10 @@ pub enum RiIcon {
     RiShapeDesignFill,
     #[cfg(feature = "RiShapeDesignLine")]
     RiShapeDesignLine,
+    #[cfg(feature = "RiShapesDesignFill")]
+    RiShapesDesignFill,
+    #[cfg(feature = "RiShapesDesignLine")]
+    RiShapesDesignLine,
     #[cfg(feature = "RiShareBoxSystemFill")]
     RiShareBoxSystemFill,
     #[cfg(feature = "RiShareBoxSystemLine")]
@@ -4108,6 +4198,8 @@ pub enum RiIcon {
     RiSlackLogosFill,
     #[cfg(feature = "RiSlackLogosLine")]
     RiSlackLogosLine,
+    #[cfg(feature = "RiSlashCommands2Editor")]
+    RiSlashCommands2Editor,
     #[cfg(feature = "RiSlashCommandsEditor")]
     RiSlashCommandsEditor,
     #[cfg(feature = "RiSliceDesignFill")]
@@ -4228,6 +4320,10 @@ pub enum RiIcon {
     RiSpyUserFacesFill,
     #[cfg(feature = "RiSpyUserFacesLine")]
     RiSpyUserFacesLine,
+    #[cfg(feature = "RiSquareDesignFill")]
+    RiSquareDesignFill,
+    #[cfg(feature = "RiSquareDesignLine")]
+    RiSquareDesignLine,
     #[cfg(feature = "RiStackBusinessFill")]
     RiStackBusinessFill,
     #[cfg(feature = "RiStackBusinessLine")]
@@ -4356,6 +4452,10 @@ pub enum RiIcon {
     RiSunWeatherFill,
     #[cfg(feature = "RiSunWeatherLine")]
     RiSunWeatherLine,
+    #[cfg(feature = "RiSupabaseLogosFill")]
+    RiSupabaseLogosFill,
+    #[cfg(feature = "RiSupabaseLogosLine")]
+    RiSupabaseLogosLine,
     #[cfg(feature = "RiSuperscript2Editor")]
     RiSuperscript2Editor,
     #[cfg(feature = "RiSuperscriptEditor")]
@@ -4462,6 +4562,10 @@ pub enum RiIcon {
     RiTempHotWeatherFill,
     #[cfg(feature = "RiTempHotWeatherLine")]
     RiTempHotWeatherLine,
+    #[cfg(feature = "RiTentBuildingsFill")]
+    RiTentBuildingsFill,
+    #[cfg(feature = "RiTentBuildingsLine")]
+    RiTentBuildingsLine,
     #[cfg(feature = "RiTerminalBoxDevelopmentFill")]
     RiTerminalBoxDevelopmentFill,
     #[cfg(feature = "RiTerminalBoxDevelopmentLine")]
@@ -4492,6 +4596,10 @@ pub enum RiIcon {
     RiThermometerHealthMedicalFill,
     #[cfg(feature = "RiThermometerHealthMedicalLine")]
     RiThermometerHealthMedicalLine,
+    #[cfg(feature = "RiThreadsLogosFill")]
+    RiThreadsLogosFill,
+    #[cfg(feature = "RiThreadsLogosLine")]
+    RiThreadsLogosLine,
     #[cfg(feature = "RiThumbDownSystemFill")]
     RiThumbDownSystemFill,
     #[cfg(feature = "RiThumbDownSystemLine")]
@@ -4580,10 +4688,18 @@ pub enum RiIcon {
     RiTreasureMapMapFill,
     #[cfg(feature = "RiTreasureMapMapLine")]
     RiTreasureMapMapLine,
+    #[cfg(feature = "RiTreeOthersFill")]
+    RiTreeOthersFill,
+    #[cfg(feature = "RiTreeOthersLine")]
+    RiTreeOthersLine,
     #[cfg(feature = "RiTrelloLogosFill")]
     RiTrelloLogosFill,
     #[cfg(feature = "RiTrelloLogosLine")]
     RiTrelloLogosLine,
+    #[cfg(feature = "RiTriangleDesignFill")]
+    RiTriangleDesignFill,
+    #[cfg(feature = "RiTriangleDesignLine")]
+    RiTriangleDesignLine,
     #[cfg(feature = "RiTrophyFinanceFill")]
     RiTrophyFinanceFill,
     #[cfg(feature = "RiTrophyFinanceLine")]
@@ -4612,6 +4728,10 @@ pub enum RiIcon {
     RiTwitterLogosFill,
     #[cfg(feature = "RiTwitterLogosLine")]
     RiTwitterLogosLine,
+    #[cfg(feature = "RiTwitterXLogosFill")]
+    RiTwitterXLogosFill,
+    #[cfg(feature = "RiTwitterXLogosLine")]
+    RiTwitterXLogosLine,
     #[cfg(feature = "RiTyphoonWeatherFill")]
     RiTyphoonWeatherFill,
     #[cfg(feature = "RiTyphoonWeatherLine")]
@@ -4690,6 +4810,10 @@ pub enum RiIcon {
     RiUserFollowUserFacesFill,
     #[cfg(feature = "RiUserFollowUserFacesLine")]
     RiUserFollowUserFacesLine,
+    #[cfg(feature = "RiUserForbidUserFacesFill")]
+    RiUserForbidUserFacesFill,
+    #[cfg(feature = "RiUserForbidUserFacesLine")]
+    RiUserForbidUserFacesLine,
     #[cfg(feature = "RiUserHeartUserFacesFill")]
     RiUserHeartUserFacesFill,
     #[cfg(feature = "RiUserHeartUserFacesLine")]
@@ -4742,6 +4866,10 @@ pub enum RiIcon {
     RiUserVoiceUserFacesFill,
     #[cfg(feature = "RiUserVoiceUserFacesLine")]
     RiUserVoiceUserFacesLine,
+    #[cfg(feature = "RiVerifiedBadgeBusinessFill")]
+    RiVerifiedBadgeBusinessFill,
+    #[cfg(feature = "RiVerifiedBadgeBusinessLine")]
+    RiVerifiedBadgeBusinessLine,
     #[cfg(feature = "RiVideoAddMediaFill")]
     RiVideoAddMediaFill,
     #[cfg(feature = "RiVideoAddMediaLine")]
@@ -4850,6 +4978,10 @@ pub enum RiIcon {
     RiWaterFlashFinanceFill,
     #[cfg(feature = "RiWaterFlashFinanceLine")]
     RiWaterFlashFinanceLine,
+    #[cfg(feature = "RiWaterPercentWeatherFill")]
+    RiWaterPercentWeatherFill,
+    #[cfg(feature = "RiWaterPercentWeatherLine")]
+    RiWaterPercentWeatherLine,
     #[cfg(feature = "RiWebcamMediaFill")]
     RiWebcamMediaFill,
     #[cfg(feature = "RiWebcamMediaLine")]
@@ -4932,6 +5064,10 @@ pub enum RiIcon {
     RiYoutubeLogosFill,
     #[cfg(feature = "RiYoutubeLogosLine")]
     RiYoutubeLogosLine,
+    #[cfg(feature = "RiYuqueLogosFill")]
+    RiYuqueLogosFill,
+    #[cfg(feature = "RiYuqueLogosLine")]
+    RiYuqueLogosLine,
     #[cfg(feature = "RiZcoolLogosFill")]
     RiZcoolLogosFill,
     #[cfg(feature = "RiZcoolLogosLine")]
@@ -5988,6 +6124,36 @@ const RI_APPS_SYSTEM_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M6.75 2.5C9.09721 2.5 11 4.40279 11 6.75V11H6.75C4.40279 11 2.5 9.09721 2.5 6.75C2.5 4.40279 4.40279 2.5 6.75 2.5ZM9 9V6.75C9 5.50736 7.99264 4.5 6.75 4.5C5.50736 4.5 4.5 5.50736 4.5 6.75C4.5 7.99264 5.50736 9 6.75 9H9ZM6.75 13H11V17.25C11 19.5972 9.09721 21.5 6.75 21.5C4.40279 21.5 2.5 19.5972 2.5 17.25C2.5 14.9028 4.40279 13 6.75 13ZM6.75 15C5.50736 15 4.5 16.0074 4.5 17.25C4.5 18.4926 5.50736 19.5 6.75 19.5C7.99264 19.5 9 18.4926 9 17.25V15H6.75ZM17.25 2.5C19.5972 2.5 21.5 4.40279 21.5 6.75C21.5 9.09721 19.5972 11 17.25 11H13V6.75C13 4.40279 14.9028 2.5 17.25 2.5ZM17.25 9C18.4926 9 19.5 7.99264 19.5 6.75C19.5 5.50736 18.4926 4.5 17.25 4.5C16.0074 4.5 15 5.50736 15 6.75V9H17.25ZM13 13H17.25C19.5972 13 21.5 14.9028 21.5 17.25C21.5 19.5972 19.5972 21.5 17.25 21.5C14.9028 21.5 13 19.5972 13 17.25V13ZM15 15V17.25C15 18.4926 16.0074 19.5 17.25 19.5C18.4926 19.5 19.5 18.4926 19.5 17.25C19.5 16.0074 18.4926 15 17.25 15H15Z" />"###
+};
+#[cfg(feature = "RiArchive2BusinessFill")]
+const RI_ARCHIVE2_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M22 20V7L20 3H4L2 7.00353V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20ZM5.23582 5H18.7638L19.7638 7H4.23682L5.23582 5ZM9 11H15V13H9V11Z" />"###
+};
+#[cfg(feature = "RiArchive2BusinessLine")]
+const RI_ARCHIVE2_BUSINESS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M22 20V7L20 3H4L2 7.00353V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20ZM4 9H20V19H4V9ZM5.236 5H18.764L19.764 7H4.237L5.236 5ZM15 11H9V13H15V11Z" />"###
 };
 #[cfg(feature = "RiArchiveBusinessFill")]
 const RI_ARCHIVE_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -7938,6 +8104,36 @@ const RI_BEAR_SMILE_USER_FACES_LINE: icondata_core::IconData = icondata_core::Ic
     stroke: None,
     fill: None,
     data: r###"<path d="M12 17C14.2091 17 16 15.2091 16 13H14C14 14.1046 13.1046 15 12 15 10.8954 15 10 14.1046 10 13H8C8 15.2091 9.79086 17 12 17ZM6.5 2C4.01472 2 2 4.01472 2 6.5 2 7.85729 2.60121 9.07332 3.54934 9.89751 3.19384 10.8656 3 11.911 3 13 3 17.9706 7.02944 22 12 22 16.9706 22 21 17.9706 21 13 21 11.911 20.8062 10.8656 20.4507 9.89751 21.3988 9.07332 22 7.85729 22 6.5 22 4.01472 19.9853 2 17.5 2 15.8737 2 14.4505 2.8624 13.6601 4.15297 13.1215 4.05246 12.5665 4 12 4 11.4335 4 10.8785 4.05246 10.3399 4.15297 9.5495 2.8624 8.12635 2 6.5 2ZM4 6.5C4 5.11929 5.11929 4 6.5 4 7.58033 4 8.50304 4.68577 8.8517 5.64896L9.1696 6.52718 10.0675 6.26991C10.6801 6.09435 11.3282 6 12 6 12.6718 6 13.3199 6.09435 13.9325 6.26991L14.8304 6.52718 15.1483 5.64896C15.497 4.68577 16.4197 4 17.5 4 18.8807 4 20 5.11929 20 6.5 20 7.43301 19.4894 8.24804 18.7275 8.67859L17.9141 9.13832 18.3176 9.98107C18.7547 10.8939 19 11.9169 19 13 19 16.866 15.866 20 12 20 8.13401 20 5 16.866 5 13 5 11.9169 5.24529 10.8939 5.6824 9.98107L6.08595 9.13832 5.27248 8.6786C4.51064 8.24805 4 7.43301 4 6.5Z" />"###
+};
+#[cfg(feature = "RiBeerMapFill")]
+const RI_BEER_MAP_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M9 3C10.1046 3 11 3.89543 11 5C11 5.11469 10.9904 5.22639 10.9723 5.33454L12.9447 5.66546C12.9812 5.4484 13 5.22602 13 5C13 4.7625 12.9793 4.52984 12.9396 4.30371C13.2472 4.11088 13.6103 4 14 4C15.1046 4 16 4.89543 16 6C16 6.36443 15.903 6.70571 15.7327 7H5C4.44772 7 4 6.55228 4 6C4 5.44772 4.44772 5 5 5C5.20008 5 5.38362 5.05773 5.53851 5.15709C5.81193 5.33249 6.15353 5.36415 6.45453 5.24199C6.75554 5.11982 6.97845 4.85905 7.05229 4.5427C7.25876 3.65813 8.05374 3 9 3ZM10.5164 1.29745C10.0489 1.10575 9.53693 1 9 1C7.50087 1 6.19573 1.82409 5.51068 3.04344C5.34453 3.01488 5.17387 3 5 3C3.34315 3 2 4.34315 2 6C2 6.8885 2.38625 7.68679 3 8.23611V20C3 21.1046 3.89543 22 5 22H15C16.1046 22 17 21.1046 17 20H19C20.1046 20 21 19.1046 21 18V11C21 9.89543 20.1046 9 19 9H17V8.64575C17.6215 7.94132 18 7.01438 18 6C18 3.79086 16.2091 2 14 2C13.3143 2 12.6684 2.17301 12.1042 2.47716C11.6851 1.96201 11.1402 1.5532 10.5164 1.29745ZM17 18V11H19V18H17ZM7 11H9V18H7V11ZM11 11H13V18H11V11Z" />"###
+};
+#[cfg(feature = "RiBeerMapLine")]
+const RI_BEER_MAP_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M9 3C10.1046 3 11 3.89543 11 5C11 5.11469 10.9904 5.22639 10.9723 5.33454L12.9447 5.66546C12.9812 5.4484 13 5.22602 13 5C13 4.7625 12.9793 4.52984 12.9396 4.30371C13.2472 4.11088 13.6103 4 14 4C15.1046 4 16 4.89543 16 6C16 6.36443 15.903 6.70571 15.7327 7H5C4.44772 7 4 6.55228 4 6C4 5.44772 4.44772 5 5 5C5.20008 5 5.38362 5.05773 5.53851 5.15709C5.81193 5.33249 6.15353 5.36415 6.45453 5.24199C6.75554 5.11982 6.97845 4.85905 7.05229 4.5427C7.25876 3.65813 8.05374 3 9 3ZM10.5164 1.29745C10.0489 1.10575 9.53693 1 9 1C7.50087 1 6.19573 1.82409 5.51068 3.04344C5.34453 3.01488 5.17387 3 5 3C3.34315 3 2 4.34315 2 6C2 6.8885 2.38625 7.68679 3 8.23611V20C3 21.1046 3.89543 22 5 22H15C16.1046 22 17 21.1046 17 20H19C20.1046 20 21 19.1046 21 18V11C21 9.89543 20.1046 9 19 9H17V8.64575C17.6215 7.94132 18 7.01438 18 6C18 3.79086 16.2091 2 14 2C13.3143 2 12.6684 2.17301 12.1042 2.47716C11.6851 1.96201 11.1402 1.5532 10.5164 1.29745ZM17 11H19V18H17V11ZM15 9V10V19V20H5V9H15ZM7 11V18H9V11H7ZM13 11V18H11V11H13Z" />"###
 };
 #[cfg(feature = "RiBehanceLogosFill")]
 const RI_BEHANCE_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -11404,6 +11600,36 @@ const RI_CHROME_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M10.3645 19.8327L12.2941 16.4905C12.1969 16.4968 12.0988 16.5 12 16.5C10.3037 16.5 8.82656 15.5614 8.0597 14.1752L4.79459 8.51986C4.28545 9.57206 4 10.7527 4 12C4 15.8578 6.73064 19.0778 10.3645 19.8327ZM12.5897 19.9786C16.7326 19.6767 20 16.2199 20 12C20 11.1269 19.8601 10.2865 19.6016 9.5H15.7422C16.2209 10.215 16.5 11.0749 16.5 12C16.5 12.8477 16.2656 13.6406 15.8581 14.3175L12.5897 19.9786ZM14.1434 13.2875L14.1651 13.25C14.3782 12.8824 14.5 12.4554 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 12.4383 9.6128 12.8503 9.81094 13.2084L9.83494 13.25C10.2669 13.9973 11.0747 14.5 12 14.5C12.9098 14.5 13.7061 14.014 14.1434 13.2875ZM6.03522 6.66871L7.9635 10.0086C8.69821 8.52222 10.2297 7.5 12 7.5H18.6153C17.1753 5.38723 14.7497 4 12 4C9.62968 4 7.50014 5.03086 6.03522 6.66871ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z" />"###
 };
+#[cfg(feature = "RiCircleDesignFill")]
+const RI_CIRCLE_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />"###
+};
+#[cfg(feature = "RiCircleDesignLine")]
+const RI_CIRCLE_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" />"###
+};
 #[cfg(feature = "RiClapperboardMediaFill")]
 const RI_CLAPPERBOARD_MEDIA_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -13639,6 +13865,66 @@ const RI_CROSS_OTHERS_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M9 2H15V7H20V13H15V22H9V13H4V7H9V2ZM11 4V9H6V11H11V20H13V11H18V9H13V4H11Z" />"###
 };
+#[cfg(feature = "RiCrosshair2DesignFill")]
+const RI_CROSSHAIR2_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11 5.07089C7.93431 5.5094 5.5094 7.93431 5.07089 11H7V13H5.07089C5.5094 16.0657 7.93431 18.4906 11 18.9291V17H13V18.9291C16.0657 18.4906 18.4906 16.0657 18.9291 13H17V11H18.9291C18.4906 7.93431 16.0657 5.5094 13 5.07089V7H11V5.07089ZM3.05493 11C3.51608 6.82838 6.82838 3.51608 11 3.05493V1H13V3.05493C17.1716 3.51608 20.4839 6.82838 20.9451 11H23V13H20.9451C20.4839 17.1716 17.1716 20.4839 13 20.9451V23H11V20.9451C6.82838 20.4839 3.51608 17.1716 3.05493 13H1V11H3.05493ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" />"###
+};
+#[cfg(feature = "RiCrosshair2DesignLine")]
+const RI_CROSSHAIR2_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11 5.07089C7.93431 5.5094 5.5094 7.93431 5.07089 11H7V13H5.07089C5.5094 16.0657 7.93431 18.4906 11 18.9291V17H13V18.9291C16.0657 18.4906 18.4906 16.0657 18.9291 13H17V11H18.9291C18.4906 7.93431 16.0657 5.5094 13 5.07089V7H11V5.07089ZM3.05493 11C3.51608 6.82838 6.82838 3.51608 11 3.05493V1H13V3.05493C17.1716 3.51608 20.4839 6.82838 20.9451 11H23V13H20.9451C20.4839 17.1716 17.1716 20.4839 13 20.9451V23H11V20.9451C6.82838 20.4839 3.51608 17.1716 3.05493 13H1V11H3.05493ZM14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" />"###
+};
+#[cfg(feature = "RiCrosshairDesignFill")]
+const RI_CROSSHAIR_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M19.9381 13C19.4869 16.6187 16.6187 19.4869 13 19.9381V17H11V19.9381C7.38128 19.4869 4.51314 16.6187 4.06189 13H7V11H4.06189C4.51314 7.38128 7.38128 4.51314 11 4.06189V7H13V4.06189C16.6187 4.51314 19.4869 7.38128 19.9381 11H17V13H19.9381ZM2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" />"###
+};
+#[cfg(feature = "RiCrosshairDesignLine")]
+const RI_CROSSHAIR_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M13 19.9381C16.6187 19.4869 19.4869 16.6187 19.9381 13H17V11H19.9381C19.4869 7.38128 16.6187 4.51314 13 4.06189V7H11V4.06189C7.38128 4.51314 4.51314 7.38128 4.06189 11H7V13H4.06189C4.51314 16.6187 7.38128 19.4869 11 19.9381V17H13V19.9381ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14Z" />"###
+};
 #[cfg(feature = "RiCss3DevelopmentFill")]
 const RI_CSS3_DEVELOPMENT_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15243,6 +15529,21 @@ const RI_DROPBOX_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M8.65039 17.2605L12.0422 19.4213L15.434 17.2605L17.2942 18.4454L12.0422 21.7914L6.79021 18.4454L8.65039 17.2605ZM7.77356 8.97982L10.1669 7.42713L7.74124 5.85326L5.28562 7.36964L7.77356 8.97982ZM9.61315 10.1704L12.0045 11.7181L14.3953 10.1707L12.0042 8.61922L9.61315 10.1704ZM13.845 12.9092L16.2689 14.478L18.7187 12.9759L16.2335 11.3634L13.845 12.9092ZM12.0042 6.23516L16.2413 3.48633L22.4656 7.32996L18.073 10.1728L22.4669 13.0237L16.2401 16.8416L12.0045 14.1004L7.76898 16.8416L1.54004 13.0238L5.93528 10.1724L1.54332 7.32996L7.7677 3.48633L12.0042 6.23516ZM13.8415 7.42724L16.2349 8.98015L18.7233 7.36963L16.2677 5.85324L13.8415 7.42724ZM10.164 12.9092L7.77487 11.363L5.2889 12.9758L7.73997 14.478L10.164 12.9092Z" />"###
+};
+#[cfg(feature = "RiDropdownListEditor")]
+const RI_DROPDOWN_LIST_EDITOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 5V19H13V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V9H20V5H4ZM19.7071 11.2929L19 10.5858L18.2929 11.2929L15.2929 14.2929L16.7071 15.7071L19 13.4142L21.2929 15.7071L22.7071 14.2929L19.7071 11.2929ZM16.7071 17.2929L19 19.5858L21.2929 17.2929L22.7071 18.7071L19.7071 21.7071L19 22.4142L18.2929 21.7071L15.2929 18.7071L16.7071 17.2929Z" />"###
 };
 #[cfg(feature = "RiDualSim1DeviceFill")]
 const RI_DUAL_SIM1_DEVICE_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -16909,6 +17210,36 @@ const RI_FILE_CHART_DOCUMENT_LINE: icondata_core::IconData = icondata_core::Icon
     fill: None,
     data: r###"<path d="M11 7H13V17H11V7ZM15 11H17V17H15V11ZM7 13H9V17H7V13ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z" />"###
 };
+#[cfg(feature = "RiFileCloseDocumentFill")]
+const RI_FILE_CLOSE_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18 13C19.0928 13 20.1174 13.2922 20.9999 13.8026L20.9998 7L16 2H3.9985C3.44749 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H12.8027C12.2922 21.1175 12 20.0929 12 19C12 15.6863 14.6863 13 18 13ZM21.5356 21.1212L19.4143 18.9999L21.5356 16.8786L20.1214 15.4644L18.0001 17.5857L15.8788 15.4644L14.4646 16.8786L16.5859 18.9999L14.4646 21.1212L15.8788 22.5354L18.0001 20.4141L20.1214 22.5354L21.5356 21.1212Z" />"###
+};
+#[cfg(feature = "RiFileCloseDocumentLine")]
+const RI_FILE_CLOSE_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 22V20H5V4H15V8H19V13H20.9998V7L16 2H3.9985C3.44749 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H12ZM21.5356 21.1212L19.4143 18.9999L21.5356 16.8786L20.1214 15.4644L18.0001 17.5857L15.8788 15.4644L14.4646 16.8786L16.5859 18.9999L14.4646 21.1212L15.8788 22.5354L18.0001 20.4141L20.1214 22.5354L21.5356 21.1212Z" />"###
+};
 #[cfg(feature = "RiFileCloudDocumentFill")]
 const RI_FILE_CLOUD_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -17329,6 +17660,36 @@ const RI_FILE_HWP_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconDa
     fill: None,
     data: r###"<path d="M16 2L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44749 2 3.9985 2H16ZM16 8.66667H8V7.33333L11.333 7.333L11.3333 6H12.6667L12.666 7.333H14.999L15 4H5V20H19V8L16 7.999V8.66667ZM9.33333 14.6667L9.333 16.666L16 16.6667V18H8V14.6667H9.33333ZM12 14.3333C12.5523 14.3333 13 14.781 13 15.3333C13 15.8856 12.5523 16.3333 12 16.3333C11.4477 16.3333 11 15.8856 11 15.3333C11 14.781 11.4477 14.3333 12 14.3333ZM12 9C13.3807 9 14.5 10.1193 14.5 11.5C14.5 12.8807 13.3807 14 12 14C10.6193 14 9.5 12.8807 9.5 11.5C9.5 10.1193 10.6193 9 12 9ZM12 10.3333C11.3557 10.3333 10.8333 10.8557 10.8333 11.5C10.8333 12.1443 11.3557 12.6667 12 12.6667C12.6443 12.6667 13.1667 12.1443 13.1667 11.5C13.1667 10.8557 12.6443 10.3333 12 10.3333Z" />"###
 };
+#[cfg(feature = "RiFileImageDocumentFill")]
+const RI_FILE_IMAGE_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M21 7L16 2H3.9934C3.44495 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H20.0066C20.5551 22 21 21.556 21 21.0082V7ZM11 9.5C11 10.3284 10.3284 11 9.5 11C8.67157 11 8 10.3284 8 9.5C8 8.67157 8.67157 8 9.5 8C10.3284 8 11 8.67157 11 9.5ZM17.5 17H8L13.5 10L17.5 17Z" />"###
+};
+#[cfg(feature = "RiFileImageDocumentLine")]
+const RI_FILE_IMAGE_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M15 8V4H5V20H19V8H15ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918ZM11 9.5C11 10.3284 10.3284 11 9.5 11C8.67157 11 8 10.3284 8 9.5C8 8.67157 8.67157 8 9.5 8C10.3284 8 11 8.67157 11 9.5ZM17.5 17L13.5 10L8 17H17.5Z" />"###
+};
 #[cfg(feature = "RiFileInfoDocumentFill")]
 const RI_FILE_INFO_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -17598,6 +17959,36 @@ const RI_FILE_PAPER_DOCUMENT_LINE: icondata_core::IconData = icondata_core::Icon
     stroke: None,
     fill: None,
     data: r###"<path d="M17 17V19C17 19.5523 17.4477 20 18 20C18.5523 20 19 19.5523 19 19V4H5V15H3V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V19C21 20.6569 19.6569 22 18 22H4C2.34315 22 1 20.6569 1 19V17H17Z" />"###
+};
+#[cfg(feature = "RiFilePdf2DocumentFill")]
+const RI_FILE_PDF2_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3.9985 2C3.44749 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H20.0066C20.5551 22 21 21.5489 21 20.9925L20.9997 7L16 2H3.9985ZM10.5 7.5H12.5C12.5 9.98994 14.6436 12.6604 17.3162 13.5513L16.8586 15.49C13.7234 15.0421 10.4821 16.3804 7.5547 18.3321L6.3753 16.7191C7.46149 15.8502 8.50293 14.3757 9.27499 12.6534C10.0443 10.9373 10.5 9.07749 10.5 7.5ZM11.1 13.4716C11.3673 12.8752 11.6043 12.2563 11.8037 11.6285C12.2754 12.3531 12.8553 13.0182 13.5102 13.5953C12.5284 13.7711 11.5666 14.0596 10.6353 14.4276C10.8 14.1143 10.9551 13.7948 11.1 13.4716Z" />"###
+};
+#[cfg(feature = "RiFilePdf2DocumentLine")]
+const RI_FILE_PDF2_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M5 4H15V8H19V20H5V4ZM3.9985 2C3.44749 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H20.0066C20.5551 22 21 21.5489 21 20.9925L20.9997 7L16 2H3.9985ZM10.4999 7.5C10.4999 9.07749 10.0442 10.9373 9.27493 12.6534C8.50287 14.3757 7.46143 15.8502 6.37524 16.7191L7.55464 18.3321C10.4821 16.3804 13.7233 15.0421 16.8585 15.49L17.3162 13.5513C14.6435 12.6604 12.4999 9.98994 12.4999 7.5H10.4999ZM11.0999 13.4716C11.3673 12.8752 11.6042 12.2563 11.8037 11.6285C12.2753 12.3531 12.8553 13.0182 13.5101 13.5953C12.5283 13.7711 11.5665 14.0596 10.6352 14.4276C10.7999 14.1143 10.9551 13.7948 11.0999 13.4716Z" />"###
 };
 #[cfg(feature = "RiFilePdfDocumentFill")]
 const RI_FILE_PDF_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -18018,6 +18409,36 @@ const RI_FILE_USER_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconD
     stroke: None,
     fill: None,
     data: r###"<path d="M15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5ZM7.52746 17C7.77619 14.75 9.68372 13 12 13C14.3163 13 16.2238 14.75 16.4725 17H7.52746Z" />"###
+};
+#[cfg(feature = "RiFileVideoDocumentFill")]
+const RI_FILE_VIDEO_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z" />"###
+};
+#[cfg(feature = "RiFileVideoDocumentLine")]
+const RI_FILE_VIDEO_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M15 4V8H19V20H5V4H15ZM3.9985 2C3.44749 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H20.0066C20.5551 22 21 21.5489 21 20.9925L20.9997 7L16 2H3.9985ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z" />"###
 };
 #[cfg(feature = "RiFileWarningDocumentFill")]
 const RI_FILE_WARNING_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -19234,6 +19655,36 @@ const RI_FOLDER_HISTORY_DOCUMENT_LINE: icondata_core::IconData = icondata_core::
     fill: None,
     data: r###"<path d="M10.4142 3L12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142ZM9.58579 5H4V19H20V7H11.5858L9.58579 5ZM13 9V13H16V15H11V9H13Z" />"###
 };
+#[cfg(feature = "RiFolderImageDocumentFill")]
+const RI_FOLDER_IMAGE_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5ZM10 10.5C10 9.67157 9.32843 9 8.5 9C7.67157 9 7 9.67157 7 10.5C7 11.3284 7.67157 12 8.5 12C9.32843 12 10 11.3284 10 10.5ZM18 17L14 11L7 17H18Z" />"###
+};
+#[cfg(feature = "RiFolderImageDocumentLine")]
+const RI_FOLDER_IMAGE_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 5V19H20V7H11.5858L9.58579 5H4ZM12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5ZM10 10.5C10 11.3284 9.32843 12 8.5 12C7.67157 12 7 11.3284 7 10.5C7 9.67157 7.67157 9 8.5 9C9.32843 9 10 9.67157 10 10.5ZM18 17L14 11L7 17H18Z" />"###
+};
 #[cfg(feature = "RiFolderInfoDocumentFill")]
 const RI_FOLDER_INFO_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -19683,6 +20134,36 @@ const RI_FOLDER_USER_DOCUMENT_LINE: icondata_core::IconData = icondata_core::Ico
     stroke: None,
     fill: None,
     data: r###"<path d="M12.4142 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H10.4142L12.4142 5ZM4 5V19H20V7H11.5858L9.58579 5H4ZM8 18C8 15.7909 9.79086 14 12 14C14.2091 14 16 15.7909 16 18H8ZM12 13C10.6193 13 9.5 11.8807 9.5 10.5C9.5 9.11929 10.6193 8 12 8C13.3807 8 14.5 9.11929 14.5 10.5C14.5 11.8807 13.3807 13 12 13Z" />"###
+};
+#[cfg(feature = "RiFolderVideoDocumentFill")]
+const RI_FOLDER_VIDEO_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M21 5H12.4142L10.4142 3H3C2.44772 3 2 3.44772 2 4V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V6C22 5.44772 21.5523 5 21 5ZM15.0008 12.667C15.1846 12.7895 15.2343 13.0379 15.1117 13.2217C15.0824 13.2656 15.0447 13.3033 15.0008 13.3326L10.1219 16.5852C9.9381 16.7078 9.6897 16.6581 9.5672 16.4743C9.5234 16.4086 9.5 16.3314 9.5 16.2524V9.74717C9.5 9.52625 9.6791 9.34717 9.9 9.34717C9.979 9.34717 10.0562 9.37054 10.1219 9.41435L15.0008 12.667Z" />"###
+};
+#[cfg(feature = "RiFolderVideoDocumentLine")]
+const RI_FOLDER_VIDEO_DOCUMENT_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 19V5H9.58579L11.5858 7H20V19H4ZM21 5H12.4142L10.4142 3H3C2.44772 3 2 3.44772 2 4V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V6C22 5.44772 21.5523 5 21 5ZM15.0008 12.667L10.1219 9.41435C10.0562 9.37054 9.979 9.34717 9.9 9.34717C9.6791 9.34717 9.5 9.52625 9.5 9.74717V16.2524C9.5 16.3314 9.5234 16.4086 9.5672 16.4743C9.6897 16.6581 9.9381 16.7078 10.1219 16.5852L15.0008 13.3326C15.0447 13.3033 15.0824 13.2656 15.1117 13.2217C15.2343 13.0379 15.1846 12.7895 15.0008 12.667Z" />"###
 };
 #[cfg(feature = "RiFolderWarningDocumentFill")]
 const RI_FOLDER_WARNING_DOCUMENT_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -22129,6 +22610,36 @@ const RI_HEAVY_SHOWERS_WEATHER_LINE: icondata_core::IconData = icondata_core::Ic
     fill: None,
     data: r###"<path d="M5 16.9297C2.60879 15.5465 1 12.9611 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.0176 21.3085 17.14 19 17.793V15.6632C20.1825 15.1015 21 13.8962 21 12.5C21 10.567 19.433 9 17.5 9C16.5205 9 15.6351 9.40232 14.9998 10.0507C14.9999 10.0338 15 10.0169 15 10C15 6.68629 12.3137 4 9 4C5.68629 4 3 6.68629 3 10C3 11.777 3.7725 13.3736 5 14.4722V16.9297ZM7 14H9V20H7V14ZM15 14H17V20H15V14ZM11 17H13V23H11V17Z" />"###
 };
+#[cfg(feature = "RiHexagonDesignFill")]
+const RI_HEXAGON_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M17.5 2.5L23 12L17.5 21.5H6.5L1 12L6.5 2.5H17.5Z" />"###
+};
+#[cfg(feature = "RiHexagonDesignLine")]
+const RI_HEXAGON_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M17.5 2.5L23 12L17.5 21.5H6.5L1 12L6.5 2.5H17.5ZM16.3469 4.5H7.65311L3.311 12L7.65311 19.5H16.3469L20.689 12L16.3469 4.5Z" />"###
+};
 #[cfg(feature = "RiHistorySystemFill")]
 const RI_HISTORY_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -23029,6 +23540,36 @@ const RI_IMAGE_MEDIA_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M2.9918 21C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918ZM20 15V5H4V19L14 9L20 15ZM20 17.8284L14 11.8284L6.82843 19H20V17.8284ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z" />"###
 };
+#[cfg(feature = "RiInbox2BusinessFill")]
+const RI_INBOX2_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M5 3C4.5313 3 4.12549 3.32553 4.02381 3.78307L2.02381 12.7831C2.00799 12.8543 2 12.927 2 13V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V13C22 12.927 21.992 12.8543 21.9762 12.7831L19.9762 3.78307C19.8745 3.32553 19.4687 3 19 3H5ZM19.7534 12H15C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12H4.24662L5.80217 5H18.1978L19.7534 12Z" />"###
+};
+#[cfg(feature = "RiInbox2BusinessLine")]
+const RI_INBOX2_BUSINESS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4.02381 3.78307C4.12549 3.32553 4.5313 3 5 3H19C19.4687 3 19.8745 3.32553 19.9762 3.78307L21.9762 12.7831C21.992 12.8543 22 12.927 22 13V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V13C2 12.927 2.00799 12.8543 2.02381 12.7831L4.02381 3.78307ZM5.80217 5L4.24662 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H19.7534L18.1978 5H5.80217ZM16.584 14C15.8124 15.7659 14.0503 17 12 17C9.94968 17 8.1876 15.7659 7.41604 14H4V19H20V14H16.584Z" />"###
+};
 #[cfg(feature = "RiInboxArchiveBusinessFill")]
 const RI_INBOX_ARCHIVE_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -23208,6 +23749,36 @@ const RI_INDETERMINATE_CIRCLE_SYSTEM_LINE: icondata_core::IconData = icondata_co
     stroke: None,
     fill: None,
     data: r###"<path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11H17V13H7V11Z" />"###
+};
+#[cfg(feature = "RiInfinityOthersFill")]
+const RI_INFINITY_OTHERS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 12C3 13.933 4.567 15.5 6.5 15.5C7.7035 15.5 8.51959 15.0662 9.19914 14.3866C9.82141 13.7644 10.3213 12.9468 10.8546 12C10.3213 11.0532 9.82141 10.2356 9.19914 9.61336C8.51959 8.9338 7.7035 8.5 6.5 8.5C4.567 8.5 3 10.067 3 12ZM6.5 17.5C3.46243 17.5 1 15.0376 1 12C1 8.96243 3.46243 6.5 6.5 6.5C8.2965 6.5 9.60541 7.1912 10.6134 8.19914C11.1486 8.7344 11.5999 9.36157 12 10.0017C12.4001 9.36157 12.8514 8.7344 13.3866 8.19914C14.3946 7.1912 15.7035 6.5 17.5 6.5C20.5376 6.5 23 8.96243 23 12C23 15.0376 20.5376 17.5 17.5 17.5C15.7035 17.5 14.3946 16.8088 13.3866 15.8009C12.8514 15.2656 12.4001 14.6384 12 13.9983C11.5999 14.6384 11.1486 15.2656 10.6134 15.8009C9.60541 16.8088 8.2965 17.5 6.5 17.5ZM13.1454 12C13.6787 12.9468 14.1786 13.7644 14.8009 14.3866C15.4804 15.0662 16.2965 15.5 17.5 15.5C19.433 15.5 21 13.933 21 12C21 10.067 19.433 8.5 17.5 8.5C16.2965 8.5 15.4804 8.9338 14.8009 9.61336C14.1786 10.2356 13.6787 11.0532 13.1454 12Z" />"###
+};
+#[cfg(feature = "RiInfinityOthersLine")]
+const RI_INFINITY_OTHERS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 12C3 10.067 4.567 8.5 6.5 8.5C7.7035 8.5 8.51959 8.9338 9.19914 9.61336C9.9255 10.3397 10.4851 11.3322 11.1258 12.4856L11.1595 12.5462C11.7605 13.6283 12.4431 14.8573 13.3866 15.8009C14.3946 16.8088 15.7035 17.5 17.5 17.5C20.5376 17.5 23 15.0376 23 12C23 8.96243 20.5376 6.5 17.5 6.5C15.8394 6.5 14.3508 7.2359 13.3423 8.39937C13.7887 9.05406 14.1574 9.70577 14.464 10.2574C15.0681 9.20718 16.2014 8.5 17.5 8.5C19.433 8.5 21 10.067 21 12C21 13.933 19.433 15.5 17.5 15.5C16.2965 15.5 15.4804 15.0662 14.8009 14.3866C14.0745 13.6603 13.5149 12.6678 12.8742 11.5144L12.8405 11.4538C12.2395 10.3717 11.5569 9.14265 10.6134 8.19914C9.60541 7.1912 8.2965 6.5 6.5 6.5C3.46243 6.5 1 8.96243 1 12C1 15.0376 3.46243 17.5 6.5 17.5C8.16056 17.5 9.64923 16.7641 10.6577 15.6006C10.2113 14.9459 9.84262 14.2942 9.53605 13.7426C8.93194 14.7928 7.79856 15.5 6.5 15.5C4.567 15.5 3 13.933 3 12Z" />"###
 };
 #[cfg(feature = "RiInformationSystemFill")]
 const RI_INFORMATION_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -26914,6 +27485,36 @@ const RI_MENU_FOLD_SYSTEM_LINE: icondata_core::IconData = icondata_core::IconDat
     fill: None,
     data: r###"<path d="M21 17.9995V19.9995H3V17.9995H21ZM6.59619 3.90332L8.01041 5.31753L4.82843 8.49951L8.01041 11.6815L6.59619 13.0957L2 8.49951L6.59619 3.90332ZM21 10.9995V12.9995H12V10.9995H21ZM21 3.99951V5.99951H12V3.99951H21Z" />"###
 };
+#[cfg(feature = "RiMenuSearchSystemFill")]
+const RI_MENU_SEARCH_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18.6175 13.0317C17.7315 13.6424 16.6575 14 15.5 14C12.4624 14 10 11.5376 10 8.5C10 5.46243 12.4624 3 15.5 3C18.5376 3 21 5.46243 21 8.5C21 9.6575 20.6424 10.7315 20.0317 11.6175L22.7071 14.2929L21.2929 15.7071L18.6175 13.0317ZM3 4H8V6H3V4ZM3 11H8V13H3V11ZM3 18H21V20H3V18Z" />"###
+};
+#[cfg(feature = "RiMenuSearchSystemLine")]
+const RI_MENU_SEARCH_SYSTEM_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M15.5 5C13.567 5 12 6.567 12 8.5C12 10.433 13.567 12 15.5 12C17.433 12 19 10.433 19 8.5C19 6.567 17.433 5 15.5 5ZM10 8.5C10 5.46243 12.4624 3 15.5 3C18.5376 3 21 5.46243 21 8.5C21 9.6575 20.6424 10.7315 20.0317 11.6175L22.7071 14.2929L21.2929 15.7071L18.6175 13.0317C17.7315 13.6424 16.6575 14 15.5 14C12.4624 14 10 11.5376 10 8.5ZM3 4H8V6H3V4ZM3 11H8V13H3V11ZM21 18V20H3V18H21Z" />"###
+};
 #[cfg(feature = "RiMenuSystemFill")]
 const RI_MENU_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28714,6 +29315,36 @@ const RI_NURSE_HEALTH_MEDICAL_LINE: icondata_core::IconData = icondata_core::Ico
     fill: None,
     data: r###"<path d="M12.0006 15C16.0802 15 19.4466 18.0537 19.9387 22H4.0625C4.55458 18.0537 7.92098 15 12.0006 15ZM10.1875 17.2795C8.75387 17.734 7.54637 18.7133 6.80201 20L12.0006 20L10.1875 17.2795ZM13.8141 17.2797L12.0006 20L17.1992 20C16.4549 18.7135 15.2476 17.7342 13.8141 17.2797ZM18.0006 2V8C18.0006 11.3137 15.3143 14 12.0006 14C8.6869 14 6.00061 11.3137 6.00061 8V2H18.0006ZM8.00061 8C8.00061 10.2091 9.79147 12 12.0006 12C14.2098 12 16.0006 10.2091 16.0006 8H8.00061ZM16.0006 4H8.00061L8.0005 6H16.0005L16.0006 4Z" />"###
 };
+#[cfg(feature = "RiOctagonDesignFill")]
+const RI_OCTAGON_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M15.936 2.50098L21.501 8.06595V15.936L15.936 21.501H8.06595L2.50098 15.936V8.06595L8.06595 2.50098H15.936Z" />"###
+};
+#[cfg(feature = "RiOctagonDesignLine")]
+const RI_OCTAGON_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M15.936 2.50098L21.501 8.06595V15.936L15.936 21.501H8.06595L2.50098 15.936V8.06595L8.06595 2.50098H15.936ZM15.1076 4.50098H8.89437L4.50098 8.89437V15.1076L8.89437 19.501H15.1076L19.501 15.1076V8.89437L15.1076 4.50098Z" />"###
+};
 #[cfg(feature = "RiOilMapFill")]
 const RI_OIL_MAP_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -29748,6 +30379,36 @@ const RI_PENCIL_RULER_DESIGN_LINE: icondata_core::IconData = icondata_core::Icon
     stroke: None,
     fill: None,
     data: r###"<path d="M5 8V20H9V8H5ZM3 7L7 2L11 7V22H3V7ZM19 16V14H16V12H19V10H17V8H19V6H15V20H19V18H17V16H19ZM14 4H20C20.5523 4 21 4.44772 21 5V21C21 21.5523 20.5523 22 20 22H14C13.4477 22 13 21.5523 13 21V5C13 4.44772 13.4477 4 14 4Z" />"###
+};
+#[cfg(feature = "RiPentagonDesignFill")]
+const RI_PENTAGON_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.9999 0.700195L22.7468 8.5083L18.6418 21.1421H5.35789L1.25293 8.5083L11.9999 0.700195Z" />"###
+};
+#[cfg(feature = "RiPentagonDesignLine")]
+const RI_PENTAGON_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.9999 3.03068L20.5304 9.22846L17.272 19.2567H6.72772L3.46935 9.22846L11.9999 3.03068ZM22.7468 8.5083L11.9999 0.700195L1.25293 8.5083L5.35789 21.1421H18.6418L22.7468 8.5083Z" />"###
 };
 #[cfg(feature = "RiPercentFinanceFill")]
 const RI_PERCENT_FINANCE_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -31654,6 +32315,36 @@ const RI_RECORD_MAIL_BUSINESS_LINE: icondata_core::IconData = icondata_core::Ico
     fill: None,
     data: r###"<path d="M14.2572 15C13.4718 14.0491 13 12.8296 13 11.5C13 8.46243 15.4624 6 18.5 6C21.5376 6 24 8.46243 24 11.5C24 14.5376 21.5376 17 18.5 17H5.5C2.46243 17 0 14.5376 0 11.5C0 8.46243 2.46243 6 5.5 6C8.53757 6 11 8.46243 11 11.5C11 12.8296 10.5282 14.0491 9.74284 15H14.2572ZM5.5 15C7.433 15 9 13.433 9 11.5C9 9.567 7.433 8 5.5 8C3.567 8 2 9.567 2 11.5C2 13.433 3.567 15 5.5 15ZM18.5 15C20.433 15 22 13.433 22 11.5C22 9.567 20.433 8 18.5 8C16.567 8 15 9.567 15 11.5C15 13.433 16.567 15 18.5 15Z" />"###
 };
+#[cfg(feature = "RiRectangleDesignFill")]
+const RI_RECTANGLE_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 4H21C21.5523 4 22 4.44772 22 5V19C22 19.5523 21.5523 20 21 20H3C2.44772 20 2 19.5523 2 19V5C2 4.44772 2.44772 4 3 4Z" />"###
+};
+#[cfg(feature = "RiRectangleDesignLine")]
+const RI_RECTANGLE_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 4H21C21.5523 4 22 4.44772 22 5V19C22 19.5523 21.5523 20 21 20H3C2.44772 20 2 19.5523 2 19V5C2 4.44772 2.44772 4 3 4ZM4 6V18H20V6H4Z" />"###
+};
 #[cfg(feature = "RiRecycleOthersFill")]
 const RI_RECYCLE_OTHERS_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32434,6 +33125,36 @@ const RI_REWIND_MINI_MEDIA_LINE: icondata_core::IconData = icondata_core::IconDa
     fill: None,
     data: r###"<path d="M9.0002 9.85972L5.96831 11.9999L9.0002 14.14V9.85972ZM10.9087 17.3233C10.7494 17.5489 10.4375 17.6027 10.2119 17.4434L3.07889 12.4084C3.03228 12.3755 2.99164 12.3348 2.95874 12.2882C2.7995 12.0626 2.85329 11.7506 3.07889 11.5914L10.2119 6.55636C10.2962 6.49681 10.3969 6.46484 10.5002 6.46484C10.7763 6.46484 11.0002 6.6887 11.0002 6.96484V17.0349C11.0002 17.1382 10.9682 17.2389 10.9087 17.3233ZM18.0002 14.14V9.85972L14.9683 11.9999L18.0002 14.14ZM12.0789 12.4084C12.0323 12.3755 11.9916 12.3348 11.9587 12.2882C11.7995 12.0626 11.8533 11.7506 12.0789 11.5914L19.2119 6.55636C19.2962 6.49681 19.3969 6.46484 19.5002 6.46484C19.7763 6.46484 20.0002 6.6887 20.0002 6.96484V17.0349C20.0002 17.1382 19.9682 17.2389 19.9087 17.3233C19.7494 17.5489 19.4375 17.6027 19.2119 17.4434L12.0789 12.4084Z" />"###
 };
+#[cfg(feature = "RiRfidDeviceFill")]
+const RI_RFID_DEVICE_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18.364 18.3638C21.8787 14.8491 21.8787 9.15061 18.364 5.63589L19.7782 4.22168C24.0739 8.51745 24.0739 15.4823 19.7782 19.778L18.364 18.3638ZM5.63604 5.63589C2.12132 9.15061 2.12132 14.8491 5.63604 18.3638L4.22183 19.778C-0.0739417 15.4823 -0.0739417 8.51745 4.22183 4.22168L5.63604 5.63589ZM15.5355 15.5353C17.4882 13.5827 17.4882 10.4168 15.5355 8.4642L16.9497 7.04999C19.6834 9.78366 19.6834 14.2158 16.9497 16.9495L15.5355 15.5353ZM8.46447 8.4642C6.51184 10.4168 6.51184 13.5827 8.46447 15.5353L7.05025 16.9495C4.31658 14.2158 4.31658 9.78366 7.05025 7.04999L8.46447 8.4642ZM12 13.9998C13.1046 13.9998 14 13.1044 14 11.9998C14 10.8952 13.1046 9.99981 12 9.99981C10.8954 9.99981 10 10.8952 10 11.9998C10 13.1044 10.8954 13.9998 12 13.9998Z" />"###
+};
+#[cfg(feature = "RiRfidDeviceLine")]
+const RI_RFID_DEVICE_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18.364 18.3638C21.8787 14.8491 21.8787 9.15061 18.364 5.63589L19.7782 4.22168C24.0739 8.51745 24.0739 15.4823 19.7782 19.778L18.364 18.3638ZM5.63604 5.63589C2.12132 9.15061 2.12132 14.8491 5.63604 18.3638L4.22183 19.778C-0.0739417 15.4823 -0.0739417 8.51745 4.22183 4.22168L5.63604 5.63589ZM15.5355 15.5353C17.4882 13.5827 17.4882 10.4168 15.5355 8.4642L16.9497 7.04999C19.6834 9.78366 19.6834 14.2158 16.9497 16.9495L15.5355 15.5353ZM8.46447 8.4642C6.51184 10.4168 6.51184 13.5827 8.46447 15.5353L7.05025 16.9495C4.31658 14.2158 4.31658 9.78366 7.05025 7.04999L8.46447 8.4642ZM12 13.9998C13.1046 13.9998 14 13.1044 14 11.9998C14 10.8952 13.1046 9.99981 12 9.99981C10.8954 9.99981 10 10.8952 10 11.9998C10 13.1044 10.8954 13.9998 12 13.9998Z" />"###
+};
 #[cfg(feature = "RiRhythmMediaFill")]
 const RI_RHYTHM_MEDIA_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32553,6 +33274,36 @@ const RI_ROADSTER_MAP_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M19 20H5V21C5 21.5523 4.55228 22 4 22H3C2.44772 22 2 21.5523 2 21V13.5L0.757464 13.1894C0.312297 13.0781 0 12.6781 0 12.2192V11.5C0 11.2239 0.223858 11 0.5 11H2L4.4805 5.21216C4.79566 4.47679 5.51874 4 6.31879 4H17.6812C18.4813 4 19.2043 4.47679 19.5195 5.21216L22 11H23.5C23.7761 11 24 11.2239 24 11.5V12.2192C24 12.6781 23.6877 13.0781 23.2425 13.1894L22 13.5V21C22 21.5523 21.5523 22 21 22H20C19.4477 22 19 21.5523 19 21V20ZM20 18V13H4V18H20ZM5.47703 11H18.523C18.6502 11 18.7762 10.9757 18.8944 10.9285C19.4071 10.7234 19.6566 10.1414 19.4514 9.62861L18 6H6L4.54856 9.62861C4.50131 9.74673 4.47703 9.87278 4.47703 10C4.47703 10.5523 4.92475 11 5.47703 11ZM5 14C7.31672 14 8.87868 14.7548 9.68588 16.2643L9.68582 16.2643C9.81602 16.5078 9.72418 16.8107 9.4807 16.9409C9.40818 16.9797 9.3272 17 9.24496 17H6C5.44772 17 5 16.5523 5 16V14ZM19 14V16C19 16.5523 18.5523 17 18 17H14.755C14.6728 17 14.5918 16.9797 14.5193 16.9409C14.2758 16.8107 14.184 16.5078 14.3142 16.2643L14.3141 16.2643C15.1213 14.7548 16.6833 14 19 14Z" />"###
+};
+#[cfg(feature = "RiRobot2UserFacesFill")]
+const RI_ROBOT2_USER_FACES_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM0 10H2V16H0V10ZM24 10H22V16H24V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5C15.8284 14.5 16.5 13.8284 16.5 13Z" />"###
+};
+#[cfg(feature = "RiRobot2UserFacesLine")]
+const RI_ROBOT2_USER_FACES_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M13.5 2C13.5 2.44425 13.3069 2.84339 13 3.11805V5H18C19.6569 5 21 6.34315 21 8V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V8C3 6.34315 4.34315 5 6 5H11V3.11805C10.6931 2.84339 10.5 2.44425 10.5 2C10.5 1.17157 11.1716 0.5 12 0.5C12.8284 0.5 13.5 1.17157 13.5 2ZM6 7C5.44772 7 5 7.44772 5 8V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V8C19 7.44772 18.5523 7 18 7H13H11H6ZM2 10H0V16H2V10ZM22 10H24V16H22V10ZM9 14.5C9.82843 14.5 10.5 13.8284 10.5 13C10.5 12.1716 9.82843 11.5 9 11.5C8.17157 11.5 7.5 12.1716 7.5 13C7.5 13.8284 8.17157 14.5 9 14.5ZM15 14.5C15.8284 14.5 16.5 13.8284 16.5 13C16.5 12.1716 15.8284 11.5 15 11.5C14.1716 11.5 13.5 12.1716 13.5 13C13.5 13.8284 14.1716 14.5 15 14.5Z" />"###
 };
 #[cfg(feature = "RiRobotUserFacesFill")]
 const RI_ROBOT_USER_FACES_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -33842,7 +34593,7 @@ const RI_SERVICE_BUSINESS_LINE: icondata_core::IconData = icondata_core::IconDat
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M3.16113 4.46875C5.58508 2.0448 9.44716 1.9355 12.0008 4.14085C14.5528 1.9355 18.4149 2.0448 20.8388 4.46875C23.2584 6.88836 23.3716 10.741 21.1785 13.2947L13.4142 21.0858C12.6686 21.8313 11.4809 21.8652 10.6952 21.1874L10.5858 21.0858L2.82141 13.2947C0.628282 10.741 0.741522 6.88836 3.16113 4.46875ZM4.57534 5.88296C2.86819 7.59011 2.81942 10.3276 4.42902 12.0937L4.57534 12.2469L12 19.6715L17.3026 14.3675L13.7677 10.8327L12.7071 11.8934C11.5355 13.0649 9.636 13.0649 8.46443 11.8934C7.29286 10.7218 7.29286 8.8223 8.46443 7.65073L10.5656 5.54823C8.85292 4.17713 6.37076 4.23993 4.7286 5.73663L4.57534 5.88296ZM13.0606 8.71139C13.4511 8.32086 14.0843 8.32086 14.4748 8.71139L18.7168 12.9533L19.4246 12.2469C21.1819 10.4896 21.1819 7.64032 19.4246 5.88296C17.7174 4.17581 14.9799 4.12704 13.2139 5.73663L13.0606 5.88296L9.87864 9.06494C9.51601 9.42757 9.49011 9.99942 9.80094 10.3919L9.87864 10.4792C10.2413 10.8418 10.8131 10.8677 11.2056 10.5569L11.2929 10.4792L13.0606 8.71139Z" />"###
+    data: r###"<path d="M3.16113 4.46924C5.58508 2.04529 9.44716 1.93599 12.0008 4.14133C14.5528 1.93599 18.4149 2.04529 20.8388 4.46924C23.2584 6.88884 23.3716 10.7414 21.1785 13.2952L13.4142 21.0862C12.6686 21.8318 11.4809 21.8657 10.6952 21.1879L10.5858 21.0862L2.82141 13.2952C0.628282 10.7414 0.741522 6.88884 3.16113 4.46924ZM4.57534 5.88345C2.86819 7.5906 2.81942 10.3281 4.42902 12.0942L4.57534 12.2474L12 19.672L17.3026 14.368L13.7677 10.8332L12.7071 11.8939C11.5355 13.0654 9.636 13.0654 8.46443 11.8939C7.29286 10.7223 7.29286 8.82279 8.46443 7.65122L10.5656 5.54872C8.85292 4.17762 6.37076 4.24042 4.7286 5.73712L4.57534 5.88345ZM13.0606 8.71188C13.4511 8.32135 14.0843 8.32135 14.4748 8.71188L18.7168 12.9538L19.4246 12.2474C21.1819 10.4901 21.1819 7.64081 19.4246 5.88345C17.7174 4.1763 14.9799 4.12752 13.2139 5.73712L13.0606 5.88345L9.87864 9.06543C9.51601 9.42806 9.49011 9.99991 9.80094 10.3924L9.87864 10.4796C10.2413 10.8423 10.8131 10.8682 11.2056 10.5573L11.2929 10.4796L13.0606 8.71188Z" />"###
 };
 #[cfg(feature = "RiSettings2SystemFill")]
 const RI_SETTINGS2_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -34024,6 +34775,36 @@ const RI_SETTINGS_SYSTEM_LINE: icondata_core::IconData = icondata_core::IconData
     fill: None,
     data: r###"<path d="M12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5L12 1ZM12 3.311L4.5 7.65311V16.3469L12 20.689L19.5 16.3469V7.65311L12 3.311ZM12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" />"###
 };
+#[cfg(feature = "RiShakeHandsBusinessFill")]
+const RI_SHAKE_HANDS_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M19.2914 5.99994H20.0002C20.5525 5.99994 21.0002 6.44766 21.0002 6.99994V13.9999C21.0002 14.5522 20.5525 14.9999 20.0002 14.9999H18.0002L13.8319 9.16427C13.3345 8.46797 12.4493 8.16522 11.6297 8.41109L9.14444 9.15668C8.43971 9.3681 7.6758 9.17551 7.15553 8.65524L6.86277 8.36247C6.41655 7.91626 6.49011 7.17336 7.01517 6.82332L12.4162 3.22262C13.0752 2.78333 13.9312 2.77422 14.5994 3.1994L18.7546 5.8436C18.915 5.94571 19.1013 5.99994 19.2914 5.99994ZM5.02708 14.2947L3.41132 15.7085C2.93991 16.1209 2.95945 16.8603 3.45201 17.2474L8.59277 21.2865C9.07284 21.6637 9.77592 21.5264 10.0788 20.9963L10.7827 19.7645C11.2127 19.012 11.1091 18.0682 10.5261 17.4269L7.82397 14.4545C7.09091 13.6481 5.84722 13.5771 5.02708 14.2947ZM7.04557 5H3C2.44772 5 2 5.44772 2 6V13.5158C2 13.9242 2.12475 14.3173 2.35019 14.6464C2.3741 14.6238 2.39856 14.6015 2.42357 14.5796L4.03933 13.1658C5.47457 11.91 7.65103 12.0343 8.93388 13.4455L11.6361 16.4179C12.6563 17.5401 12.8376 19.1918 12.0851 20.5087L11.4308 21.6538C11.9937 21.8671 12.635 21.819 13.169 21.4986L17.5782 18.8531C18.0786 18.5528 18.2166 17.8896 17.8776 17.4146L12.6109 10.0361C12.4865 9.86205 12.2652 9.78636 12.0603 9.84783L9.57505 10.5934C8.34176 10.9634 7.00492 10.6264 6.09446 9.7159L5.80169 9.42313C4.68615 8.30759 4.87005 6.45035 6.18271 5.57524L7.04557 5Z" />"###
+};
+#[cfg(feature = "RiShakeHandsBusinessLine")]
+const RI_SHAKE_HANDS_BUSINESS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.8611 2.39057C12.8495 1.73163 14.1336 1.71797 15.1358 2.35573L19.291 4.99994H20.9998C21.5521 4.99994 21.9998 5.44766 21.9998 5.99994V14.9999C21.9998 15.5522 21.5521 15.9999 20.9998 15.9999H19.4801C19.5396 16.9472 19.0933 17.9102 18.1955 18.4489L13.1021 21.505C12.4591 21.8907 11.6609 21.8817 11.0314 21.4974C10.3311 22.1167 9.2531 22.1849 8.47104 21.5704L3.33028 17.5312C2.56387 16.9291 2.37006 15.9003 2.76579 15.0847C2.28248 14.7057 2 14.1254 2 13.5109V6C2 5.44772 2.44772 5 3 5H7.94693L11.8611 2.39057ZM4.17264 13.6452L4.86467 13.0397C6.09488 11.9632 7.96042 12.0698 9.06001 13.2794L11.7622 16.2518C12.6317 17.2083 12.7903 18.6135 12.1579 19.739L17.1665 16.7339C17.4479 16.5651 17.5497 16.2276 17.4448 15.9433L13.0177 9.74551C12.769 9.39736 12.3264 9.24598 11.9166 9.36892L9.43135 10.1145C8.37425 10.4316 7.22838 10.1427 6.44799 9.36235L6.15522 9.06958C5.58721 8.50157 5.44032 7.69318 5.67935 7H4V13.5109L4.17264 13.6452ZM14.0621 4.04306C13.728 3.83047 13.3 3.83502 12.9705 4.05467L7.56943 7.65537L7.8622 7.94814C8.12233 8.20827 8.50429 8.30456 8.85666 8.19885L11.3419 7.45327C12.5713 7.08445 13.8992 7.53859 14.6452 8.58303L18.5144 13.9999H19.9998V6.99994H19.291C18.9106 6.99994 18.5381 6.89148 18.2172 6.68727L14.0621 4.04306ZM6.18168 14.5448L4.56593 15.9586L9.70669 19.9978L10.4106 18.7659C10.6256 18.3897 10.5738 17.9178 10.2823 17.5971L7.58013 14.6247C7.2136 14.2215 6.59175 14.186 6.18168 14.5448Z" />"###
+};
 #[cfg(feature = "RiShape2DesignFill")]
 const RI_SHAPE2_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -34083,6 +34864,36 @@ const RI_SHAPE_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M7.82929 20C7.41746 21.1652 6.30622 22 5 22C3.34315 22 2 20.6569 2 19C2 17.6938 2.83481 16.5825 4 16.1707V7.82929C2.83481 7.41746 2 6.30622 2 5C2 3.34315 3.34315 2 5 2C6.30622 2 7.41746 2.83481 7.82929 4H16.1707C16.5825 2.83481 17.6938 2 19 2C20.6569 2 22 3.34315 22 5C22 6.30622 21.1652 7.41746 20 7.82929V16.1707C21.1652 16.5825 22 17.6938 22 19C22 20.6569 20.6569 22 19 22C17.6938 22 16.5825 21.1652 16.1707 20H7.82929ZM7.82929 18H16.1707C16.472 17.1476 17.1476 16.472 18 16.1707V7.82929C17.1476 7.52801 16.472 6.85241 16.1707 6H7.82929C7.52801 6.85241 6.85241 7.52801 6 7.82929V16.1707C6.85241 16.472 7.52801 17.1476 7.82929 18ZM5 6C5.55228 6 6 5.55228 6 5C6 4.44772 5.55228 4 5 4C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6ZM19 6C19.5523 6 20 5.55228 20 5C20 4.44772 19.5523 4 19 4C18.4477 4 18 4.44772 18 5C18 5.55228 18.4477 6 19 6ZM19 20C19.5523 20 20 19.5523 20 19C20 18.4477 19.5523 18 19 18C18.4477 18 18 18.4477 18 19C18 19.5523 18.4477 20 19 20ZM5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" />"###
+};
+#[cfg(feature = "RiShapesDesignFill")]
+const RI_SHAPES_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.9998 1L18 11H6L11.9998 1ZM13 13.5H21V21.5H13V13.5ZM6.75 22C9.37335 22 11.5 19.8734 11.5 17.25C11.5 14.6266 9.37335 12.5 6.75 12.5C4.12665 12.5 2 14.6266 2 17.25C2 19.8734 4.12665 22 6.75 22Z" />"###
+};
+#[cfg(feature = "RiShapesDesignLine")]
+const RI_SHAPES_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.9998 1L6 11H18L11.9998 1ZM11.9998 4.8873L14.4676 9H9.53232L11.9998 4.8873ZM6.75 20C5.23122 20 4 18.7688 4 17.25C4 15.7312 5.23122 14.5 6.75 14.5C8.26878 14.5 9.5 15.7312 9.5 17.25C9.5 18.7688 8.26878 20 6.75 20ZM6.75 22C9.37335 22 11.5 19.8734 11.5 17.25C11.5 14.6266 9.37335 12.5 6.75 12.5C4.12665 12.5 2 14.6266 2 17.25C2 19.8734 4.12665 22 6.75 22ZM15 15.5V19.5H19V15.5H15ZM13 21.5V13.5H21V21.5H13Z" />"###
 };
 #[cfg(feature = "RiShareBoxSystemFill")]
 const RI_SHARE_BOX_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -35659,6 +36470,21 @@ const RI_SLACK_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M14.501 3C15.3294 3 16.001 3.67157 16.001 4.5V9.5C16.001 10.3284 15.3294 11 14.501 11C13.6725 11 13.001 10.3284 13.001 9.5V4.5C13.001 3.67157 13.6725 3 14.501 3ZM4.50098 13H6.00098V14.5C6.00098 15.3284 5.3294 16 4.50098 16C3.67255 16 3.00098 15.3284 3.00098 14.5C3.00098 13.6716 3.67255 13 4.50098 13ZM13.001 18H14.501C15.3294 18 16.001 18.6716 16.001 19.5C16.001 20.3284 15.3294 21 14.501 21C13.6725 21 13.001 20.3284 13.001 19.5V18ZM14.501 13H19.501C20.3294 13 21.001 13.6716 21.001 14.5C21.001 15.3284 20.3294 16 19.501 16H14.501C13.6725 16 13.001 15.3284 13.001 14.5C13.001 13.6716 13.6725 13 14.501 13ZM19.501 8C20.3294 8 21.001 8.67157 21.001 9.5C21.001 10.3284 20.3294 11 19.501 11H18.001V9.5C18.001 8.67157 18.6725 8 19.501 8ZM4.50098 8H9.50098C10.3294 8 11.001 8.67157 11.001 9.5C11.001 10.3284 10.3294 11 9.50098 11H4.50098C3.67255 11 3.00098 10.3284 3.00098 9.5C3.00098 8.67157 3.67255 8 4.50098 8ZM9.50098 3C10.3294 3 11.001 3.67157 11.001 4.5V6H9.50098C8.67255 6 8.00098 5.32843 8.00098 4.5C8.00098 3.67157 8.67255 3 9.50098 3ZM9.50098 13C10.3294 13 11.001 13.6716 11.001 14.5V19.5C11.001 20.3284 10.3294 21 9.50098 21C8.67255 21 8.00098 20.3284 8.00098 19.5V14.5C8.00098 13.6716 8.67255 13 9.50098 13Z" />"###
 };
+#[cfg(feature = "RiSlashCommands2Editor")]
+const RI_SLASH_COMMANDS2_EDITOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M5 2C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5ZM4 5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5ZM9.72318 18L16.5803 6H14.2768L7.41968 18H9.72318Z" />"###
+};
 #[cfg(feature = "RiSlashCommandsEditor")]
 const RI_SLASH_COMMANDS_EDITOR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -36558,6 +37384,36 @@ const RI_SPY_USER_FACES_LINE: icondata_core::IconData = icondata_core::IconData 
     stroke: None,
     fill: None,
     data: r###"<path d="M17 13C19.2091 13 21 14.7909 21 17C21 19.2091 19.2091 21 17 21C14.7909 21 13 19.2091 13 17H11C11 19.2091 9.20914 21 7 21C4.79086 21 3 19.2091 3 17C3 14.7909 4.79086 13 7 13C8.48052 13 9.77317 13.8043 10.4648 14.9999H13.5352C14.2268 13.8043 15.5195 13 17 13ZM7 15C5.89543 15 5 15.8954 5 17C5 18.1046 5.89543 19 7 19C8.10457 19 9 18.1046 9 17C9 15.8954 8.10457 15 7 15ZM17 15C15.8954 15 15 15.8954 15 17C15 18.1046 15.8954 19 17 19C18.1046 19 19 18.1046 19 17C19 15.8954 18.1046 15 17 15ZM16 3C18.2091 3 20 4.79086 20 7V10H22V12H2V10H4V7C4 4.79086 5.79086 3 8 3H16ZM16 5H8C6.94564 5 6 5.95 6 7V10H18V7C18 5.94564 17.05 5 16 5Z" />"###
+};
+#[cfg(feature = "RiSquareDesignFill")]
+const RI_SQUARE_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z" />"###
+};
+#[cfg(feature = "RiSquareDesignLine")]
+const RI_SQUARE_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3ZM5 5V19H19V5H5Z" />"###
 };
 #[cfg(feature = "RiStackBusinessFill")]
 const RI_STACK_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -37519,6 +38375,36 @@ const RI_SUN_WEATHER_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" />"###
 };
+#[cfg(feature = "RiSupabaseLogosFill")]
+const RI_SUPABASE_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3.08378 15.2505C1.42044 15.2505 0.483971 13.3382 1.5038 12.0242L10.2099 0.806805C10.794 0.0542043 11.9999 0.467253 11.9999 1.41993V8.75048H20.9159C22.5793 8.75048 23.5157 10.6627 22.4959 11.9767L13.7898 23.1941C13.2057 23.9467 11.9999 23.5337 11.9999 22.581V15.2505H3.08378Z" />"###
+};
+#[cfg(feature = "RiSupabaseLogosLine")]
+const RI_SUPABASE_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M10.9997 2.5982V13.9693H3.90013C3.23055 13.9693 2.83063 13.1844 3.25654 12.6325L10.9997 2.5982ZM12.9997 8.03049V2.33284C12.9997 0.521392 10.7034 -0.291556 9.58194 1.16173L1.67316 11.4107C0.246185 13.2599 1.54768 15.9693 3.90013 15.9693H10.9997V21.6669C10.9997 23.4784 13.296 24.2913 14.4175 22.8381L22.3262 12.5891C23.7532 10.7399 22.4517 8.03049 20.0993 8.03049H12.9997ZM12.9997 10.0305H20.0993C20.7688 10.0305 21.1688 10.8153 20.7429 11.3673L12.9997 21.4016V10.0305Z" />"###
+};
 #[cfg(feature = "RiSuperscript2Editor")]
 const RI_SUPERSCRIPT2_EDITOR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -38314,6 +39200,36 @@ const RI_TEMP_HOT_WEATHER_LINE: icondata_core::IconData = icondata_core::IconDat
     fill: None,
     data: r###"<path d="M8 5C8 2.79086 9.79086 1 12 1C14.2091 1 16 2.79086 16 5V10.2547C17.8135 11.5196 19 13.6213 19 16C19 19.866 15.866 23 12 23C8.13401 23 5 19.866 5 16C5 13.6213 6.18652 11.5196 8 10.2547V5ZM9.1442 11.8951C7.80943 12.8261 7 14.3432 7 16C7 18.7614 9.23858 21 12 21C14.7614 21 17 18.7614 17 16C17 14.3432 16.1906 12.8261 14.8558 11.8951L14 11.2981V5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5V11.2981L9.1442 11.8951ZM11 12.126V5H13V12.126C14.7252 12.5701 16 14.1362 16 16C16 18.2091 14.2091 20 12 20C9.79086 20 8 18.2091 8 16C8 14.1362 9.27477 12.5701 11 12.126ZM12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z" />"###
 };
+#[cfg(feature = "RiTentBuildingsFill")]
+const RI_TENT_BUILDINGS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.8659 3.00017L22.1034 19H23V21H1V19H1.89638L11.1339 3.00017C11.41 2.52187 12.0216 2.358 12.4999 2.63414C12.6519 2.72191 12.7782 2.84815 12.8659 3.00017ZM12 12.9248L8.65869 19H15.3414L12 12.9248Z" />"###
+};
+#[cfg(feature = "RiTentBuildingsLine")]
+const RI_TENT_BUILDINGS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M22.1034 19L12.8659 3.00017C12.7782 2.84815 12.6519 2.72191 12.4999 2.63414C12.0216 2.358 11.41 2.52187 11.1339 3.00017L1.89638 19H1V21C8.33333 21 15.6667 21 23 21V19H22.1034ZM7.59991 19.0002H4.20568L11.9999 5.50017L19.7941 19.0002H16.4001L12 11L7.59991 19.0002ZM12 15.1501L14.1175 19H9.88254L12 15.1501Z" />"###
+};
 #[cfg(feature = "RiTerminalBoxDevelopmentFill")]
 const RI_TERMINAL_BOX_DEVELOPMENT_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -38538,6 +39454,36 @@ const RI_THERMOMETER_HEALTH_MEDICAL_LINE: icondata_core::IconData = icondata_cor
     stroke: None,
     fill: None,
     data: r###"<path d="M20.5565 3.44355C22.1186 5.00564 22.1186 7.5383 20.5565 9.1004L12.3563 17.3006C11.714 17.9429 10.8723 18.3474 9.96957 18.4477L6.59094 18.822L4.29304 21.1212C3.90252 21.5117 3.26936 21.5117 2.87883 21.1212C2.48831 20.7307 2.48831 20.0975 2.87883 19.707L5.17694 17.408L5.55231 14.0305C5.65261 13.1277 6.05716 12.286 6.69942 11.6438L14.8996 3.44355C16.4617 1.88145 18.9944 1.88145 20.5565 3.44355ZM16.3139 4.85776L8.11363 13.058C7.7925 13.3791 7.59023 13.8 7.54008 14.2513L7.264 16.736L9.74871 16.46C10.2001 16.4098 10.6209 16.2075 10.9421 15.8864L11.3639 15.464L9.9499 14.0501L11.3641 12.6359L12.7779 14.05L14.1919 12.636L12.7783 11.2217L14.1925 9.80751L15.6069 11.222L17.0209 9.80697L15.6068 8.39329L17.021 6.97908L18.4349 8.39297L19.1423 7.68619C19.9233 6.90514 19.9233 5.63881 19.1423 4.85776C18.3612 4.07671 17.0949 4.07671 16.3139 4.85776Z" />"###
+};
+#[cfg(feature = "RiThreadsLogosFill")]
+const RI_THREADS_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M16.7051 11.1081C16.543 8.12137 14.911 6.41148 12.1708 6.39398C10.5193 6.3838 9.13771 7.08389 8.29233 8.36664L9.79941 9.40046C10.4334 8.43852 11.4342 8.24015 12.1593 8.24685C13.0616 8.2526 13.7425 8.51494 14.1832 9.02653C14.5038 9.39899 14.7183 9.91367 14.8245 10.5632C14.0246 10.4273 13.1594 10.3855 12.2345 10.4385C9.62919 10.5886 7.95426 12.1081 8.06675 14.2194C8.12384 15.2904 8.65739 16.2118 9.56906 16.8137C10.3399 17.3225 11.3326 17.5713 12.3644 17.515C13.727 17.4403 14.7959 16.9205 15.5416 15.9699C16.1079 15.248 16.4661 14.3125 16.6243 13.1338C17.2737 13.5257 17.7549 14.0414 18.0207 14.6613C18.4726 15.7151 18.499 17.4469 17.086 18.8587C15.848 20.0955 14.3598 20.6306 12.1108 20.6471C9.61601 20.6286 7.72924 19.8285 6.50253 18.269C5.35381 16.8088 4.76014 14.6996 4.73799 12C4.76014 9.30038 5.35381 7.19117 6.50253 5.73092C7.72924 4.17147 9.61597 3.37141 12.1107 3.35287C14.6236 3.37155 16.5433 4.17547 17.8169 5.74244C18.4415 6.51086 18.9123 7.47721 19.2227 8.60394L20.9888 8.13274C20.6125 6.74587 20.0205 5.55078 19.2148 4.55966C17.582 2.55073 15.1816 1.52134 12.1046 1.5C9.03385 1.52127 6.6725 2.55457 5.08614 4.57117C3.67451 6.3657 2.94634 8.87742 2.92188 12.0074C2.94634 15.1373 3.67451 17.6343 5.08614 19.4289C6.6725 21.4454 9.04616 22.4788 12.1169 22.5C14.847 22.4811 16.7713 21.7663 18.3566 20.1825C20.4307 18.1103 20.3682 15.513 19.6846 13.9185C19.1595 12.6943 18.1141 11.7129 16.7051 11.1081ZM12.2669 15.6648C11.125 15.7291 9.93869 15.2166 9.88019 14.1188C9.83684 13.3048 10.4595 12.3966 12.3369 12.2884C13.2594 12.2352 14.1138 12.2976 14.8701 12.463C14.6538 15.1648 13.3848 15.6035 12.2669 15.6648Z" />"###
+};
+#[cfg(feature = "RiThreadsLogosLine")]
+const RI_THREADS_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.1835 1.41016L12.1822 1.41016C9.09012 1.43158 6.70036 2.47326 5.09369 4.51569C3.66581 6.33087 2.93472 8.86436 2.91016 12.0068V12.0082C2.93472 15.1508 3.66586 17.6696 5.09369 19.4847C6.70043 21.5271 9.10257 22.5688 12.1946 22.5902H12.1958C14.944 22.5711 16.8929 21.8504 18.4985 20.2463C20.6034 18.1434 20.5408 15.5048 19.8456 13.8832C19.3163 12.6493 18.2709 11.6618 16.8701 11.0477C16.6891 8.06345 15.0097 6.32178 12.2496 6.30415C10.6191 6.29409 9.14792 7.02378 8.24685 8.39104L9.90238 9.5267C10.4353 8.71818 11.2789 8.32815 12.2371 8.33701C13.6244 8.34586 14.5362 9.11128 14.7921 10.4541C14.02 10.3333 13.1902 10.2982 12.3076 10.3488C9.66843 10.5008 7.9399 12.061 8.05516 14.2244C8.17571 16.4862 10.367 17.7186 12.4476 17.605C14.9399 17.4684 16.4209 15.6292 16.7722 13.2836C17.3493 13.6575 17.7751 14.1344 18.0163 14.6969C18.4559 15.7222 18.4838 17.4132 17.1006 18.7952C15.8838 20.0108 14.4211 20.5407 12.1891 20.5572C9.71428 20.5388 7.85698 19.746 6.65154 18.2136C5.51973 16.7748 4.92843 14.6882 4.90627 12.0002C4.92843 9.31211 5.51973 7.22549 6.65154 5.78673C7.85698 4.25433 9.71424 3.46156 12.189 3.44303C14.6819 3.4617 16.5728 4.25837 17.8254 5.79937C18.5162 6.64934 18.949 7.66539 19.2379 8.71407L21.1776 8.19656C20.8148 6.85917 20.2414 5.58371 19.363 4.50305C17.7098 2.46918 15.2816 1.43166 12.1835 1.41016ZM12.4204 12.3782C13.3044 12.3272 14.1239 12.3834 14.8521 12.5345C14.7114 14.1116 14.0589 15.4806 12.3401 15.575C11.2282 15.6376 10.1031 15.1413 10.0484 14.114C10.0077 13.3503 10.5726 12.4847 12.4204 12.3782Z" />"###
 };
 #[cfg(feature = "RiThumbDownSystemFill")]
 const RI_THUMB_DOWN_SYSTEM_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -39199,6 +40145,36 @@ const RI_TREASURE_MAP_MAP_LINE: icondata_core::IconData = icondata_core::IconDat
     fill: None,
     data: r###"<path d="M14.9352 7.20369L8.93524 4.20369L4 6.31879V18.9669L9.06476 16.7963L15.0648 19.7963L20 17.6812V5.03308L14.9352 7.20369ZM2 5L9 2L15 5L21.303 2.2987C21.5569 2.18992 21.8508 2.30749 21.9596 2.56131C21.9862 2.62355 22 2.69056 22 2.75827V19L15 22L9 19L2.69696 21.7013C2.44314 21.8101 2.14921 21.6925 2.04043 21.4387C2.01375 21.3765 2 21.3094 2 21.2417V5ZM6 11H8V13H6V11ZM10 11H12V13H10V11ZM15.9981 10.9374L17.2355 9.7L18.2962 10.7607L17.0588 11.9981L18.2962 13.2355L17.2355 14.2962L15.9981 13.0588L14.7607 14.2962L13.7 13.2355L14.9374 11.9981L13.7 10.7607L14.7607 9.7L15.9981 10.9374Z" />"###
 };
+#[cfg(feature = "RiTreeOthersFill")]
+const RI_TREE_OTHERS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18 7C18 7.2624 17.9832 7.52086 17.9505 7.77437C19.7712 8.80457 21 10.7588 21 13C21 16.3137 18.3137 19 15 19C14.2987 19 13.6256 18.8797 13 18.6586V22H11V18.4003C10.2499 18.7837 9.40022 19 8.5 19C5.46243 19 3 16.5376 3 13.5C3 12.0474 3.56312 10.7263 4.48297 9.74318C4.87725 10.8232 5.49744 11.7944 6.28576 12.5989L7.71424 11.1991C6.99071 10.4607 6.45705 9.53767 6.1906 8.50688C6.06607 8.02541 6 7.5204 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7Z" />"###
+};
+#[cfg(feature = "RiTreeOthersLine")]
+const RI_TREE_OTHERS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 7.26214 17.9831 7.5207 17.9504 7.77457C19.77 8.80413 21 10.7575 21 13C21 16.3137 18.3137 19 15 19H13V22H11V19H8.5C5.46243 19 3 16.5376 3 13.5C3 11.2863 4.30712 9.37966 6.19098 8.50704C6.06635 8.02551 6 7.52039 6 7ZM7.00964 10.3319C5.82176 10.8918 5 12.1008 5 13.5C5 15.433 6.567 17 8.5 17H15C17.2091 17 19 15.2091 19 13C19 11.3056 17.9461 9.85488 16.4544 9.27234L15.6129 8.94372C15.7907 8.30337 16 7.67183 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 8.30783 8.6266 9.46903 9.60019 10.2005L8.39884 11.7995C7.85767 11.3929 7.38716 10.8963 7.00964 10.3319Z" />"###
+};
 #[cfg(feature = "RiTrelloLogosFill")]
 const RI_TRELLO_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -39228,6 +40204,36 @@ const RI_TRELLO_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M5.00098 5V19H19.001V5H5.00098ZM5.00098 3H19.001C20.1055 3 21.001 3.89543 21.001 5V19C21.001 20.1046 20.1055 21 19.001 21H5.00098C3.89641 21 3.00098 20.1046 3.00098 19V5C3.00098 3.89543 3.89641 3 5.00098 3ZM8.00098 7H10.001C10.5533 7 11.001 7.44772 11.001 8V16C11.001 16.5523 10.5533 17 10.001 17H8.00098C7.44869 17 7.00098 16.5523 7.00098 16V8C7.00098 7.44772 7.44869 7 8.00098 7ZM14.001 7H16.001C16.5533 7 17.001 7.44772 17.001 8V12C17.001 12.5523 16.5533 13 16.001 13H14.001C13.4487 13 13.001 12.5523 13.001 12V8C13.001 7.44772 13.4487 7 14.001 7Z" />"###
+};
+#[cfg(feature = "RiTriangleDesignFill")]
+const RI_TRIANGLE_DESIGN_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.8659 3.00017L22.3922 19.5002C22.6684 19.9785 22.5045 20.5901 22.0262 20.8662C21.8742 20.954 21.7017 21.0002 21.5262 21.0002H2.47363C1.92135 21.0002 1.47363 20.5525 1.47363 20.0002C1.47363 19.8246 1.51984 19.6522 1.60761 19.5002L11.1339 3.00017C11.41 2.52187 12.0216 2.358 12.4999 2.63414C12.6519 2.72191 12.7782 2.84815 12.8659 3.00017Z" />"###
+};
+#[cfg(feature = "RiTriangleDesignLine")]
+const RI_TRIANGLE_DESIGN_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.8659 3.00017L22.3922 19.5002C22.6684 19.9785 22.5045 20.5901 22.0262 20.8662C21.8742 20.954 21.7017 21.0002 21.5262 21.0002H2.47363C1.92135 21.0002 1.47363 20.5525 1.47363 20.0002C1.47363 19.8246 1.51984 19.6522 1.60761 19.5002L11.1339 3.00017C11.41 2.52187 12.0216 2.358 12.4999 2.63414C12.6519 2.72191 12.7782 2.84815 12.8659 3.00017ZM4.20568 19.0002H19.7941L11.9999 5.50017L4.20568 19.0002Z" />"###
 };
 #[cfg(feature = "RiTrophyFinanceFill")]
 const RI_TROPHY_FINANCE_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -39438,6 +40444,36 @@ const RI_TWITTER_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M15.3499 5.5498C13.7681 5.5498 12.4786 6.81785 12.4504 8.39633L12.4223 9.97138C12.4164 10.3027 12.143 10.5665 11.8117 10.5606C11.7881 10.5602 11.7646 10.5584 11.7413 10.5552L10.1805 10.3423C8.12699 10.0623 6.15883 9.11711 4.27072 7.54387C3.67275 10.8535 4.84 13.147 7.65342 14.9157L9.40041 16.014C9.68095 16.1904 9.7654 16.5608 9.58903 16.8413C9.54861 16.9056 9.49636 16.9616 9.43504 17.0064L7.84338 18.1693C8.78973 18.2288 9.68938 18.1873 10.435 18.0385C15.1526 17.097 18.2897 13.5468 18.2897 7.69084C18.2897 7.21275 17.2774 5.5498 15.3499 5.5498ZM10.4507 8.36066C10.4983 5.69559 12.6735 3.5498 15.3499 3.5498C16.7132 3.5498 17.9465 4.10658 18.8348 5.00515C19.5462 4.9998 20.1514 5.17966 21.5035 4.35943C21.1693 5.9998 21.0034 6.71177 20.2897 7.69084C20.2897 15.3324 15.5926 19.0487 10.8264 19.9998C7.5587 20.6519 2.80646 19.5812 1.44531 18.1584C2.13874 18.1051 4.95928 17.8018 6.58895 16.6089C5.20994 15.6984 -0.278631 12.4679 3.32772 3.78617C5.02119 5.76283 6.73797 7.10831 8.47807 7.82262C9.63548 8.29774 9.91978 8.28825 10.4507 8.36066Z" />"###
+};
+#[cfg(feature = "RiTwitterXLogosFill")]
+const RI_TWITTER_X_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z" />"###
+};
+#[cfg(feature = "RiTwitterXLogosLine")]
+const RI_TWITTER_X_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z" />"###
 };
 #[cfg(feature = "RiTyphoonWeatherFill")]
 const RI_TYPHOON_WEATHER_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -40024,6 +41060,36 @@ const RI_USER_FOLLOW_USER_FACES_LINE: icondata_core::IconData = icondata_core::I
     fill: None,
     data: r###"<path d="M14 14.252V16.3414C13.3744 16.1203 12.7013 16 12 16C8.68629 16 6 18.6863 6 22H4C4 17.5817 7.58172 14 12 14C12.6906 14 13.3608 14.0875 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.7929 19.9142L21.3284 16.3787L22.7426 17.7929L17.7929 22.7426L14.2574 19.2071L15.6716 17.7929L17.7929 19.9142Z" />"###
 };
+#[cfg(feature = "RiUserForbidUserFacesFill")]
+const RI_USER_FORBID_USER_FACES_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13ZM15 18C15 16.3431 16.3431 15 18 15C18.4631 15 18.9018 15.105 19.2934 15.2924L15.2924 19.2934C15.105 18.9018 15 18.4631 15 18ZM16.7066 20.7076L20.7076 16.7066C20.895 17.0982 21 17.5369 21 18C21 19.6569 19.6569 21 18 21C17.5369 21 17.0982 20.895 16.7066 20.7076ZM18 13C15.2386 13 13 15.2386 13 18C13 20.7614 15.2386 23 18 23C20.7614 23 23 20.7614 23 18C23 15.2386 20.7614 13 18 13ZM12 14C12.0843 14 12.1683 14.0013 12.252 14.0039C11.4628 15.137 11 16.5145 11 18C11 19.4872 11.4638 20.8662 12.2547 22H4C4 17.5817 7.58172 14 12 14Z" />"###
+};
+#[cfg(feature = "RiUserForbidUserFacesLine")]
+const RI_USER_FORBID_USER_FACES_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7ZM12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1ZM15 18C15 16.3431 16.3431 15 18 15C18.4631 15 18.9018 15.105 19.2934 15.2924L15.2924 19.2934C15.105 18.9018 15 18.4631 15 18ZM16.7066 20.7076L20.7076 16.7066C20.895 17.0982 21 17.5369 21 18C21 19.6569 19.6569 21 18 21C17.5369 21 17.0982 20.895 16.7066 20.7076ZM18 13C15.2386 13 13 15.2386 13 18C13 20.7614 15.2386 23 18 23C20.7614 23 23 20.7614 23 18C23 15.2386 20.7614 13 18 13ZM12 14C12.0843 14 12.1683 14.0013 12.252 14.0039C11.8236 14.6189 11.4914 15.3059 11.2772 16.0431C8.30431 16.4 6 18.9309 6 22H4C4 17.5817 7.58172 14 12 14Z" />"###
+};
 #[cfg(feature = "RiUserHeartUserFacesFill")]
 const RI_USER_HEART_USER_FACES_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -40413,6 +41479,36 @@ const RI_USER_VOICE_USER_FACES_LINE: icondata_core::IconData = icondata_core::Ic
     stroke: None,
     fill: None,
     data: r###"<path d="M1 22.0001C1 17.5819 4.58172 14.0001 9 14.0001C13.4183 14.0001 17 17.5819 17 22.0001H15C15 18.6864 12.3137 16.0001 9 16.0001C5.68629 16.0001 3 18.6864 3 22.0001H1ZM9 13.0001C5.685 13.0001 3 10.3151 3 7.00014C3 3.68514 5.685 1.00014 9 1.00014C12.315 1.00014 15 3.68514 15 7.00014C15 10.3151 12.315 13.0001 9 13.0001ZM9 11.0001C11.21 11.0001 13 9.21014 13 7.00014C13 4.79014 11.21 3.00014 9 3.00014C6.79 3.00014 5 4.79014 5 7.00014C5 9.21014 6.79 11.0001 9 11.0001ZM21.5476 0.783691C22.4773 2.65664 23 4.76735 23 7.00014C23 9.23293 22.4773 11.3436 21.5476 13.2166L19.9027 12.0203C20.6071 10.493 21 8.79243 21 7.00014C21 5.20785 20.6071 3.50733 19.9027 1.98002L21.5476 0.783691ZM18.2463 3.18464C18.732 4.36038 19 5.64897 19 7.00014C19 8.35131 18.732 9.6399 18.2463 10.8156L16.5694 9.59607C16.8485 8.78206 17 7.90879 17 7.00014C17 6.09149 16.8485 5.21821 16.5694 4.4042L18.2463 3.18464Z" />"###
+};
+#[cfg(feature = "RiVerifiedBadgeBusinessFill")]
+const RI_VERIFIED_BADGE_BUSINESS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z" />"###
+};
+#[cfg(feature = "RiVerifiedBadgeBusinessLine")]
+const RI_VERIFIED_BADGE_BUSINESS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71403 11.8922 2.71403 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM8.19258 4.50299C8.416 4.06569 8.92388 3.85532 9.39107 4.00656L11.0761 4.55201C11.6767 4.74644 12.3233 4.74644 12.9239 4.55201L14.609 4.00656C15.0761 3.85532 15.584 4.06569 15.8074 4.50298L16.6132 6.08016C16.9004 6.64234 17.3577 7.09958 17.9199 7.3868L19.497 8.19258C19.9343 8.416 20.1447 8.92388 19.9935 9.39107L19.448 11.0761C19.2536 11.6767 19.2536 12.3233 19.448 12.9239L19.9935 14.609C20.1447 15.0761 19.9343 15.584 19.497 15.8074L17.9199 16.6132C17.3577 16.9004 16.9004 17.3577 16.6132 17.9199L15.8074 19.497C15.584 19.9343 15.0761 20.1447 14.609 19.9935L12.9239 19.448C12.3233 19.2536 11.6767 19.2536 11.0761 19.448L9.39107 19.9935C8.92388 20.1447 8.416 19.9343 8.19258 19.497L7.3868 17.9199C7.09958 17.3577 6.64234 16.9004 6.08016 16.6132L4.50299 15.8074C4.06569 15.584 3.85532 15.0761 4.00656 14.609L4.55201 12.9239C4.74644 12.3233 4.74644 11.6767 4.55201 11.0761L4.00656 9.39107C3.85532 8.92388 4.06569 8.416 4.50299 8.19258L6.08016 7.3868C6.64234 7.09958 7.09958 6.64234 7.3868 6.08016L8.19258 4.50299ZM6.7596 11.7574L11.0022 16L18.0733 8.92897L16.6591 7.51476L11.0022 13.1716L8.17382 10.3431L6.7596 11.7574Z" />"###
 };
 #[cfg(feature = "RiVideoAddMediaFill")]
 const RI_VIDEO_ADD_MEDIA_FILL: icondata_core::IconData = icondata_core::IconData {
@@ -41224,6 +42320,36 @@ const RI_WATER_FLASH_FINANCE_LINE: icondata_core::IconData = icondata_core::Icon
     fill: None,
     data: r###"<path d="M12.0049 3.10333L7.05514 8.05308C4.32147 10.7867 4.32147 15.2189 7.05514 17.9526C9.78881 20.6862 14.221 20.6862 16.9546 17.9526C19.6883 15.2189 19.6883 10.7867 16.9546 8.05308L12.0049 3.10333ZM12.0049 0.274902L18.3688 6.63886C21.8836 10.1536 21.8836 15.8521 18.3688 19.3668C14.8541 22.8815 9.15564 22.8815 5.64092 19.3668C2.1262 15.8521 2.1262 10.1536 5.64092 6.63886L12.0049 0.274902ZM13.0049 11.0028H15.5049L11.0049 17.5028V13.0028H8.50488L13.0049 6.50282V11.0028Z" />"###
 };
+#[cfg(feature = "RiWaterPercentWeatherFill")]
+const RI_WATER_PERCENT_WEATHER_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 0.269043L5.63604 6.633C2.12132 10.1477 2.12132 15.8462 5.63604 19.3609C9.15076 22.8756 14.8492 22.8756 18.364 19.3609C21.8787 15.8462 21.8787 10.1477 18.364 6.633L12 0.269043ZM16.2427 10.1714L9.17161 17.2425L7.7574 15.8282L14.8285 8.75718L16.2427 10.1714ZM8.11095 9.11073C8.69674 8.52494 9.64648 8.52494 10.2323 9.11073C10.8181 9.69652 10.8181 10.6463 10.2323 11.232C9.64648 11.8178 8.69674 11.8178 8.11095 11.232C7.52516 10.6463 7.52516 9.69652 8.11095 9.11073ZM15.8891 16.8889C15.3033 17.4747 14.3536 17.4747 13.7678 16.8889C13.182 16.3031 13.182 15.3534 13.7678 14.7676C14.3536 14.1818 15.3033 14.1818 15.8891 14.7676C16.4749 15.3534 16.4749 16.3031 15.8891 16.8889Z" />"###
+};
+#[cfg(feature = "RiWaterPercentWeatherLine")]
+const RI_WATER_PERCENT_WEATHER_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M7.05025 8.04673L12 3.09698L16.9497 8.04673C19.6834 10.7804 19.6834 15.2126 16.9497 17.9462C14.2161 20.6799 9.78392 20.6799 7.05025 17.9462C4.31658 15.2126 4.31658 10.7804 7.05025 8.04673ZM18.364 6.63252L12 0.268555L5.63604 6.63252C2.12132 10.1472 2.12132 15.8457 5.63604 19.3604C9.15076 22.8752 14.8492 22.8752 18.364 19.3604C21.8787 15.8457 21.8787 10.1472 18.364 6.63252ZM16.2427 10.1714L14.8285 8.75718L7.7574 15.8282L9.17161 17.2425L16.2427 10.1714ZM8.11095 11.232C8.69674 11.8178 9.64648 11.8178 10.2323 11.232C10.8181 10.6463 10.8181 9.69652 10.2323 9.11073C9.64648 8.52494 8.69674 8.52494 8.11095 9.11073C7.52516 9.69652 7.52516 10.6463 8.11095 11.232ZM15.8891 16.8889C15.3033 17.4747 14.3536 17.4747 13.7678 16.8889C13.182 16.3031 13.182 15.3534 13.7678 14.7676C14.3536 14.1818 15.3033 14.1818 15.8891 14.7676C16.4749 15.3534 16.4749 16.3031 15.8891 16.8889Z" />"###
+};
 #[cfg(feature = "RiWebcamMediaFill")]
 const RI_WEBCAM_MEDIA_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -41839,6 +42965,36 @@ const RI_YOUTUBE_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M19.6069 6.99482C19.5307 6.69695 19.3152 6.47221 19.0684 6.40288C18.6299 6.28062 16.501 6 12.001 6C7.50098 6 5.37252 6.28073 4.93225 6.40323C4.68776 6.47123 4.4723 6.69593 4.3951 6.99482C4.2863 7.41923 4.00098 9.19595 4.00098 12C4.00098 14.804 4.2863 16.5808 4.3954 17.0064C4.47126 17.3031 4.68676 17.5278 4.93251 17.5968C5.37252 17.7193 7.50098 18 12.001 18C16.501 18 18.6299 17.7194 19.0697 17.5968C19.3142 17.5288 19.5297 17.3041 19.6069 17.0052C19.7157 16.5808 20.001 14.8 20.001 12C20.001 9.2 19.7157 7.41923 19.6069 6.99482ZM21.5442 6.49818C22.001 8.28 22.001 12 22.001 12C22.001 12 22.001 15.72 21.5442 17.5018C21.2897 18.4873 20.547 19.2618 19.6056 19.5236C17.8971 20 12.001 20 12.001 20C12.001 20 6.10837 20 4.39637 19.5236C3.45146 19.2582 2.70879 18.4836 2.45774 17.5018C2.00098 15.72 2.00098 12 2.00098 12C2.00098 12 2.00098 8.28 2.45774 6.49818C2.71227 5.51273 3.45495 4.73818 4.39637 4.47636C6.10837 4 12.001 4 12.001 4C12.001 4 17.8971 4 19.6056 4.47636C20.5505 4.74182 21.2932 5.51636 21.5442 6.49818ZM10.001 15.5V8.5L16.001 12L10.001 15.5Z" />"###
 };
+#[cfg(feature = "RiYuqueLogosFill")]
+const RI_YUQUE_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M17.2809 2.95549C20.2499 3.1584 21.0363 5.29655 21.1199 5.5524L22.4167 5.64758C22.5466 5.64758 22.5858 5.82844 22.471 5.88421C21.148 6.60011 20.7438 8.05479 20.9814 9.00236C21.071 9.35974 21.2346 9.69179 21.3932 10.0224C21.6998 10.6637 22.0441 11.4403 22.1003 13.0033C22.2168 16.2423 19.5895 19.1778 16.3115 19.5956C17.4813 18.4088 18.1256 17.1518 18.4313 16.2207C19.0373 14.375 18.9393 12.9046 18.4857 11.781C18.0385 10.6732 17.2806 9.98965 16.7036 9.63988C15.021 8.62006 13.4846 8.54938 12.2604 8.878C12.7253 8.28379 13.1361 7.6768 13.4596 7.01357C14.0436 5.36416 13.3581 4.1657 12.7563 3.49525C12.5642 3.24941 12.695 2.83984 13.0607 2.83984C14.4703 2.83984 15.8737 2.8604 17.2809 2.95549ZM3.31872 19.1067C5.24275 16.9048 8.0315 13.7133 10.4814 10.9564C11.04 10.3277 13.2499 8.61858 16.2285 10.424C17.1068 10.9564 18.6589 12.589 17.5605 15.9349C16.7576 18.3804 13.1532 23.7301 1.80115 21.7784C1.5741 21.7394 1.29 21.4242 1.58312 21.0905C1.99794 20.6183 2.59759 19.932 3.31872 19.1067Z" />"###
+};
+#[cfg(feature = "RiYuqueLogosLine")]
+const RI_YUQUE_LOGOS_LINE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: None,
+    height: None,
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.5054 3.04345C11.669 2.7592 11.972 2.58398 12.3 2.58398C13.8467 2.58398 15.3904 2.63257 16.9367 2.73706C19.4462 2.90856 20.6379 4.32828 21.1168 5.1681C21.7132 5.25986 22.5053 5.2559 22.6883 5.9744C22.8288 6.52612 22.4713 6.80767 22.1338 7.12258C21.6507 7.57334 21.0015 8.29871 21.1799 9.01039C21.2355 9.23211 21.3389 9.4477 21.4959 9.77535L21.4975 9.77882C21.8163 10.4456 22.1819 11.2885 22.2397 12.8936C22.3958 17.2341 18.644 19.79 14.9881 19.9726C12.5773 21.7886 8.6429 22.9983 2.43068 21.9303C2.0357 21.8624 1.6727 21.5954 1.48562 21.2218C1.38225 21.0153 1.32573 20.7614 1.36515 20.4861C1.40453 20.2111 1.53081 19.9751 1.69602 19.787C4.92443 16.1115 8.33058 12.5405 11.3498 8.68888C11.8761 8.01761 12.3106 7.4091 12.5009 7.04098C12.8087 6.12171 12.4912 5.59669 11.8748 4.57756C11.5926 4.11094 11.1855 3.59953 11.5054 3.04345ZM13.4938 8.88684C14.3682 8.89195 15.3448 9.13531 16.3787 9.76193C18.5029 11.0495 18.7134 13.7579 18.004 15.9188C17.84 16.4184 17.5722 17.0169 17.1676 17.6452C19.1038 16.8487 20.4867 15.1615 20.4075 12.9595C20.3615 11.6795 20.0913 11.0879 19.8441 10.5708C19.8346 10.551 19.8248 10.5307 19.8147 10.5098C19.6818 10.2334 19.5038 9.86372 19.4017 9.45634C19.1309 8.37645 19.577 7.41735 20.0157 6.77895C19.8359 6.66703 19.6969 6.49411 19.6287 6.28558C19.6287 6.28558 19.629 6.28643 19.6281 6.28432C19.6159 6.25304 19.4495 5.85304 19.0499 5.46762C18.6421 5.07435 17.9553 4.64434 16.8127 4.56619C15.85 4.50115 14.8873 4.45833 13.9231 4.43597C14.3747 5.31477 14.6813 6.37727 14.2117 7.7035C14.0609 8.12933 13.7525 8.52294 13.4938 8.88684ZM12.6619 10.8314C11.9432 11.0338 11.4483 11.4609 11.2837 11.6462C8.56713 14.7033 5.40256 18.3354 3.70758 20.2731C9.15721 21.0209 12.3092 19.7826 14.0856 18.3519C15.3813 17.3084 16.0109 16.1123 16.2621 15.3469C16.6965 14.0239 16.7989 12.1605 15.4284 11.3297C14.2752 10.6308 13.3405 10.6402 12.6619 10.8314Z" />"###
+};
 #[cfg(feature = "RiZcoolLogosFill")]
 const RI_ZCOOL_LOGOS_FILL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -42131,6 +43287,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiAppsSystemFill => RI_APPS_SYSTEM_FILL,
             #[cfg(feature = "RiAppsSystemLine")]
             RiIcon::RiAppsSystemLine => RI_APPS_SYSTEM_LINE,
+            #[cfg(feature = "RiArchive2BusinessFill")]
+            RiIcon::RiArchive2BusinessFill => RI_ARCHIVE2_BUSINESS_FILL,
+            #[cfg(feature = "RiArchive2BusinessLine")]
+            RiIcon::RiArchive2BusinessLine => RI_ARCHIVE2_BUSINESS_LINE,
             #[cfg(feature = "RiArchiveBusinessFill")]
             RiIcon::RiArchiveBusinessFill => RI_ARCHIVE_BUSINESS_FILL,
             #[cfg(feature = "RiArchiveBusinessLine")]
@@ -42391,6 +43551,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiBearSmileUserFacesFill => RI_BEAR_SMILE_USER_FACES_FILL,
             #[cfg(feature = "RiBearSmileUserFacesLine")]
             RiIcon::RiBearSmileUserFacesLine => RI_BEAR_SMILE_USER_FACES_LINE,
+            #[cfg(feature = "RiBeerMapFill")]
+            RiIcon::RiBeerMapFill => RI_BEER_MAP_FILL,
+            #[cfg(feature = "RiBeerMapLine")]
+            RiIcon::RiBeerMapLine => RI_BEER_MAP_LINE,
             #[cfg(feature = "RiBehanceLogosFill")]
             RiIcon::RiBehanceLogosFill => RI_BEHANCE_LOGOS_FILL,
             #[cfg(feature = "RiBehanceLogosLine")]
@@ -42853,6 +44017,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiChromeLogosFill => RI_CHROME_LOGOS_FILL,
             #[cfg(feature = "RiChromeLogosLine")]
             RiIcon::RiChromeLogosLine => RI_CHROME_LOGOS_LINE,
+            #[cfg(feature = "RiCircleDesignFill")]
+            RiIcon::RiCircleDesignFill => RI_CIRCLE_DESIGN_FILL,
+            #[cfg(feature = "RiCircleDesignLine")]
+            RiIcon::RiCircleDesignLine => RI_CIRCLE_DESIGN_LINE,
             #[cfg(feature = "RiClapperboardMediaFill")]
             RiIcon::RiClapperboardMediaFill => RI_CLAPPERBOARD_MEDIA_FILL,
             #[cfg(feature = "RiClapperboardMediaLine")]
@@ -43151,6 +44319,14 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiCrossOthersFill => RI_CROSS_OTHERS_FILL,
             #[cfg(feature = "RiCrossOthersLine")]
             RiIcon::RiCrossOthersLine => RI_CROSS_OTHERS_LINE,
+            #[cfg(feature = "RiCrosshair2DesignFill")]
+            RiIcon::RiCrosshair2DesignFill => RI_CROSSHAIR2_DESIGN_FILL,
+            #[cfg(feature = "RiCrosshair2DesignLine")]
+            RiIcon::RiCrosshair2DesignLine => RI_CROSSHAIR2_DESIGN_LINE,
+            #[cfg(feature = "RiCrosshairDesignFill")]
+            RiIcon::RiCrosshairDesignFill => RI_CROSSHAIR_DESIGN_FILL,
+            #[cfg(feature = "RiCrosshairDesignLine")]
+            RiIcon::RiCrosshairDesignLine => RI_CROSSHAIR_DESIGN_LINE,
             #[cfg(feature = "RiCss3DevelopmentFill")]
             RiIcon::RiCss3DevelopmentFill => RI_CSS3_DEVELOPMENT_FILL,
             #[cfg(feature = "RiCss3DevelopmentLine")]
@@ -43365,6 +44541,8 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiDropboxLogosFill => RI_DROPBOX_LOGOS_FILL,
             #[cfg(feature = "RiDropboxLogosLine")]
             RiIcon::RiDropboxLogosLine => RI_DROPBOX_LOGOS_LINE,
+            #[cfg(feature = "RiDropdownListEditor")]
+            RiIcon::RiDropdownListEditor => RI_DROPDOWN_LIST_EDITOR,
             #[cfg(feature = "RiDualSim1DeviceFill")]
             RiIcon::RiDualSim1DeviceFill => RI_DUAL_SIM1_DEVICE_FILL,
             #[cfg(feature = "RiDualSim1DeviceLine")]
@@ -43587,6 +44765,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFileChartDocumentFill => RI_FILE_CHART_DOCUMENT_FILL,
             #[cfg(feature = "RiFileChartDocumentLine")]
             RiIcon::RiFileChartDocumentLine => RI_FILE_CHART_DOCUMENT_LINE,
+            #[cfg(feature = "RiFileCloseDocumentFill")]
+            RiIcon::RiFileCloseDocumentFill => RI_FILE_CLOSE_DOCUMENT_FILL,
+            #[cfg(feature = "RiFileCloseDocumentLine")]
+            RiIcon::RiFileCloseDocumentLine => RI_FILE_CLOSE_DOCUMENT_LINE,
             #[cfg(feature = "RiFileCloudDocumentFill")]
             RiIcon::RiFileCloudDocumentFill => RI_FILE_CLOUD_DOCUMENT_FILL,
             #[cfg(feature = "RiFileCloudDocumentLine")]
@@ -43643,6 +44825,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFileHwpDocumentFill => RI_FILE_HWP_DOCUMENT_FILL,
             #[cfg(feature = "RiFileHwpDocumentLine")]
             RiIcon::RiFileHwpDocumentLine => RI_FILE_HWP_DOCUMENT_LINE,
+            #[cfg(feature = "RiFileImageDocumentFill")]
+            RiIcon::RiFileImageDocumentFill => RI_FILE_IMAGE_DOCUMENT_FILL,
+            #[cfg(feature = "RiFileImageDocumentLine")]
+            RiIcon::RiFileImageDocumentLine => RI_FILE_IMAGE_DOCUMENT_LINE,
             #[cfg(feature = "RiFileInfoDocumentFill")]
             RiIcon::RiFileInfoDocumentFill => RI_FILE_INFO_DOCUMENT_FILL,
             #[cfg(feature = "RiFileInfoDocumentLine")]
@@ -43679,6 +44865,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFilePaperDocumentFill => RI_FILE_PAPER_DOCUMENT_FILL,
             #[cfg(feature = "RiFilePaperDocumentLine")]
             RiIcon::RiFilePaperDocumentLine => RI_FILE_PAPER_DOCUMENT_LINE,
+            #[cfg(feature = "RiFilePdf2DocumentFill")]
+            RiIcon::RiFilePdf2DocumentFill => RI_FILE_PDF2_DOCUMENT_FILL,
+            #[cfg(feature = "RiFilePdf2DocumentLine")]
+            RiIcon::RiFilePdf2DocumentLine => RI_FILE_PDF2_DOCUMENT_LINE,
             #[cfg(feature = "RiFilePdfDocumentFill")]
             RiIcon::RiFilePdfDocumentFill => RI_FILE_PDF_DOCUMENT_FILL,
             #[cfg(feature = "RiFilePdfDocumentLine")]
@@ -43735,6 +44925,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFileUserDocumentFill => RI_FILE_USER_DOCUMENT_FILL,
             #[cfg(feature = "RiFileUserDocumentLine")]
             RiIcon::RiFileUserDocumentLine => RI_FILE_USER_DOCUMENT_LINE,
+            #[cfg(feature = "RiFileVideoDocumentFill")]
+            RiIcon::RiFileVideoDocumentFill => RI_FILE_VIDEO_DOCUMENT_FILL,
+            #[cfg(feature = "RiFileVideoDocumentLine")]
+            RiIcon::RiFileVideoDocumentLine => RI_FILE_VIDEO_DOCUMENT_LINE,
             #[cfg(feature = "RiFileWarningDocumentFill")]
             RiIcon::RiFileWarningDocumentFill => RI_FILE_WARNING_DOCUMENT_FILL,
             #[cfg(feature = "RiFileWarningDocumentLine")]
@@ -43897,6 +45091,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFolderHistoryDocumentFill => RI_FOLDER_HISTORY_DOCUMENT_FILL,
             #[cfg(feature = "RiFolderHistoryDocumentLine")]
             RiIcon::RiFolderHistoryDocumentLine => RI_FOLDER_HISTORY_DOCUMENT_LINE,
+            #[cfg(feature = "RiFolderImageDocumentFill")]
+            RiIcon::RiFolderImageDocumentFill => RI_FOLDER_IMAGE_DOCUMENT_FILL,
+            #[cfg(feature = "RiFolderImageDocumentLine")]
+            RiIcon::RiFolderImageDocumentLine => RI_FOLDER_IMAGE_DOCUMENT_LINE,
             #[cfg(feature = "RiFolderInfoDocumentFill")]
             RiIcon::RiFolderInfoDocumentFill => RI_FOLDER_INFO_DOCUMENT_FILL,
             #[cfg(feature = "RiFolderInfoDocumentLine")]
@@ -43957,6 +45155,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiFolderUserDocumentFill => RI_FOLDER_USER_DOCUMENT_FILL,
             #[cfg(feature = "RiFolderUserDocumentLine")]
             RiIcon::RiFolderUserDocumentLine => RI_FOLDER_USER_DOCUMENT_LINE,
+            #[cfg(feature = "RiFolderVideoDocumentFill")]
+            RiIcon::RiFolderVideoDocumentFill => RI_FOLDER_VIDEO_DOCUMENT_FILL,
+            #[cfg(feature = "RiFolderVideoDocumentLine")]
+            RiIcon::RiFolderVideoDocumentLine => RI_FOLDER_VIDEO_DOCUMENT_LINE,
             #[cfg(feature = "RiFolderWarningDocumentFill")]
             RiIcon::RiFolderWarningDocumentFill => RI_FOLDER_WARNING_DOCUMENT_FILL,
             #[cfg(feature = "RiFolderWarningDocumentLine")]
@@ -44283,6 +45485,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiHeavyShowersWeatherFill => RI_HEAVY_SHOWERS_WEATHER_FILL,
             #[cfg(feature = "RiHeavyShowersWeatherLine")]
             RiIcon::RiHeavyShowersWeatherLine => RI_HEAVY_SHOWERS_WEATHER_LINE,
+            #[cfg(feature = "RiHexagonDesignFill")]
+            RiIcon::RiHexagonDesignFill => RI_HEXAGON_DESIGN_FILL,
+            #[cfg(feature = "RiHexagonDesignLine")]
+            RiIcon::RiHexagonDesignLine => RI_HEXAGON_DESIGN_LINE,
             #[cfg(feature = "RiHistorySystemFill")]
             RiIcon::RiHistorySystemFill => RI_HISTORY_SYSTEM_FILL,
             #[cfg(feature = "RiHistorySystemLine")]
@@ -44403,6 +45609,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiImageMediaFill => RI_IMAGE_MEDIA_FILL,
             #[cfg(feature = "RiImageMediaLine")]
             RiIcon::RiImageMediaLine => RI_IMAGE_MEDIA_LINE,
+            #[cfg(feature = "RiInbox2BusinessFill")]
+            RiIcon::RiInbox2BusinessFill => RI_INBOX2_BUSINESS_FILL,
+            #[cfg(feature = "RiInbox2BusinessLine")]
+            RiIcon::RiInbox2BusinessLine => RI_INBOX2_BUSINESS_LINE,
             #[cfg(feature = "RiInboxArchiveBusinessFill")]
             RiIcon::RiInboxArchiveBusinessFill => RI_INBOX_ARCHIVE_BUSINESS_FILL,
             #[cfg(feature = "RiInboxArchiveBusinessLine")]
@@ -44427,6 +45637,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiIndeterminateCircleSystemFill => RI_INDETERMINATE_CIRCLE_SYSTEM_FILL,
             #[cfg(feature = "RiIndeterminateCircleSystemLine")]
             RiIcon::RiIndeterminateCircleSystemLine => RI_INDETERMINATE_CIRCLE_SYSTEM_LINE,
+            #[cfg(feature = "RiInfinityOthersFill")]
+            RiIcon::RiInfinityOthersFill => RI_INFINITY_OTHERS_FILL,
+            #[cfg(feature = "RiInfinityOthersLine")]
+            RiIcon::RiInfinityOthersLine => RI_INFINITY_OTHERS_LINE,
             #[cfg(feature = "RiInformationSystemFill")]
             RiIcon::RiInformationSystemFill => RI_INFORMATION_SYSTEM_FILL,
             #[cfg(feature = "RiInformationSystemLine")]
@@ -44921,6 +46135,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiMenuFoldSystemFill => RI_MENU_FOLD_SYSTEM_FILL,
             #[cfg(feature = "RiMenuFoldSystemLine")]
             RiIcon::RiMenuFoldSystemLine => RI_MENU_FOLD_SYSTEM_LINE,
+            #[cfg(feature = "RiMenuSearchSystemFill")]
+            RiIcon::RiMenuSearchSystemFill => RI_MENU_SEARCH_SYSTEM_FILL,
+            #[cfg(feature = "RiMenuSearchSystemLine")]
+            RiIcon::RiMenuSearchSystemLine => RI_MENU_SEARCH_SYSTEM_LINE,
             #[cfg(feature = "RiMenuSystemFill")]
             RiIcon::RiMenuSystemFill => RI_MENU_SYSTEM_FILL,
             #[cfg(feature = "RiMenuSystemLine")]
@@ -45161,6 +46379,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiNurseHealthMedicalFill => RI_NURSE_HEALTH_MEDICAL_FILL,
             #[cfg(feature = "RiNurseHealthMedicalLine")]
             RiIcon::RiNurseHealthMedicalLine => RI_NURSE_HEALTH_MEDICAL_LINE,
+            #[cfg(feature = "RiOctagonDesignFill")]
+            RiIcon::RiOctagonDesignFill => RI_OCTAGON_DESIGN_FILL,
+            #[cfg(feature = "RiOctagonDesignLine")]
+            RiIcon::RiOctagonDesignLine => RI_OCTAGON_DESIGN_LINE,
             #[cfg(feature = "RiOilMapFill")]
             RiIcon::RiOilMapFill => RI_OIL_MAP_FILL,
             #[cfg(feature = "RiOilMapLine")]
@@ -45299,6 +46521,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiPencilRulerDesignFill => RI_PENCIL_RULER_DESIGN_FILL,
             #[cfg(feature = "RiPencilRulerDesignLine")]
             RiIcon::RiPencilRulerDesignLine => RI_PENCIL_RULER_DESIGN_LINE,
+            #[cfg(feature = "RiPentagonDesignFill")]
+            RiIcon::RiPentagonDesignFill => RI_PENTAGON_DESIGN_FILL,
+            #[cfg(feature = "RiPentagonDesignLine")]
+            RiIcon::RiPentagonDesignLine => RI_PENTAGON_DESIGN_LINE,
             #[cfg(feature = "RiPercentFinanceFill")]
             RiIcon::RiPercentFinanceFill => RI_PERCENT_FINANCE_FILL,
             #[cfg(feature = "RiPercentFinanceLine")]
@@ -45553,6 +46779,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiRecordMailBusinessFill => RI_RECORD_MAIL_BUSINESS_FILL,
             #[cfg(feature = "RiRecordMailBusinessLine")]
             RiIcon::RiRecordMailBusinessLine => RI_RECORD_MAIL_BUSINESS_LINE,
+            #[cfg(feature = "RiRectangleDesignFill")]
+            RiIcon::RiRectangleDesignFill => RI_RECTANGLE_DESIGN_FILL,
+            #[cfg(feature = "RiRectangleDesignLine")]
+            RiIcon::RiRectangleDesignLine => RI_RECTANGLE_DESIGN_LINE,
             #[cfg(feature = "RiRecycleOthersFill")]
             RiIcon::RiRecycleOthersFill => RI_RECYCLE_OTHERS_FILL,
             #[cfg(feature = "RiRecycleOthersLine")]
@@ -45657,6 +46887,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiRewindMiniMediaFill => RI_REWIND_MINI_MEDIA_FILL,
             #[cfg(feature = "RiRewindMiniMediaLine")]
             RiIcon::RiRewindMiniMediaLine => RI_REWIND_MINI_MEDIA_LINE,
+            #[cfg(feature = "RiRfidDeviceFill")]
+            RiIcon::RiRfidDeviceFill => RI_RFID_DEVICE_FILL,
+            #[cfg(feature = "RiRfidDeviceLine")]
+            RiIcon::RiRfidDeviceLine => RI_RFID_DEVICE_LINE,
             #[cfg(feature = "RiRhythmMediaFill")]
             RiIcon::RiRhythmMediaFill => RI_RHYTHM_MEDIA_FILL,
             #[cfg(feature = "RiRhythmMediaLine")]
@@ -45673,6 +46907,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiRoadsterMapFill => RI_ROADSTER_MAP_FILL,
             #[cfg(feature = "RiRoadsterMapLine")]
             RiIcon::RiRoadsterMapLine => RI_ROADSTER_MAP_LINE,
+            #[cfg(feature = "RiRobot2UserFacesFill")]
+            RiIcon::RiRobot2UserFacesFill => RI_ROBOT2_USER_FACES_FILL,
+            #[cfg(feature = "RiRobot2UserFacesLine")]
+            RiIcon::RiRobot2UserFacesLine => RI_ROBOT2_USER_FACES_LINE,
             #[cfg(feature = "RiRobotUserFacesFill")]
             RiIcon::RiRobotUserFacesFill => RI_ROBOT_USER_FACES_FILL,
             #[cfg(feature = "RiRobotUserFacesLine")]
@@ -45869,6 +47107,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiSettingsSystemFill => RI_SETTINGS_SYSTEM_FILL,
             #[cfg(feature = "RiSettingsSystemLine")]
             RiIcon::RiSettingsSystemLine => RI_SETTINGS_SYSTEM_LINE,
+            #[cfg(feature = "RiShakeHandsBusinessFill")]
+            RiIcon::RiShakeHandsBusinessFill => RI_SHAKE_HANDS_BUSINESS_FILL,
+            #[cfg(feature = "RiShakeHandsBusinessLine")]
+            RiIcon::RiShakeHandsBusinessLine => RI_SHAKE_HANDS_BUSINESS_LINE,
             #[cfg(feature = "RiShape2DesignFill")]
             RiIcon::RiShape2DesignFill => RI_SHAPE2_DESIGN_FILL,
             #[cfg(feature = "RiShape2DesignLine")]
@@ -45877,6 +47119,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiShapeDesignFill => RI_SHAPE_DESIGN_FILL,
             #[cfg(feature = "RiShapeDesignLine")]
             RiIcon::RiShapeDesignLine => RI_SHAPE_DESIGN_LINE,
+            #[cfg(feature = "RiShapesDesignFill")]
+            RiIcon::RiShapesDesignFill => RI_SHAPES_DESIGN_FILL,
+            #[cfg(feature = "RiShapesDesignLine")]
+            RiIcon::RiShapesDesignLine => RI_SHAPES_DESIGN_LINE,
             #[cfg(feature = "RiShareBoxSystemFill")]
             RiIcon::RiShareBoxSystemFill => RI_SHARE_BOX_SYSTEM_FILL,
             #[cfg(feature = "RiShareBoxSystemLine")]
@@ -46087,6 +47333,8 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiSlackLogosFill => RI_SLACK_LOGOS_FILL,
             #[cfg(feature = "RiSlackLogosLine")]
             RiIcon::RiSlackLogosLine => RI_SLACK_LOGOS_LINE,
+            #[cfg(feature = "RiSlashCommands2Editor")]
+            RiIcon::RiSlashCommands2Editor => RI_SLASH_COMMANDS2_EDITOR,
             #[cfg(feature = "RiSlashCommandsEditor")]
             RiIcon::RiSlashCommandsEditor => RI_SLASH_COMMANDS_EDITOR,
             #[cfg(feature = "RiSliceDesignFill")]
@@ -46207,6 +47455,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiSpyUserFacesFill => RI_SPY_USER_FACES_FILL,
             #[cfg(feature = "RiSpyUserFacesLine")]
             RiIcon::RiSpyUserFacesLine => RI_SPY_USER_FACES_LINE,
+            #[cfg(feature = "RiSquareDesignFill")]
+            RiIcon::RiSquareDesignFill => RI_SQUARE_DESIGN_FILL,
+            #[cfg(feature = "RiSquareDesignLine")]
+            RiIcon::RiSquareDesignLine => RI_SQUARE_DESIGN_LINE,
             #[cfg(feature = "RiStackBusinessFill")]
             RiIcon::RiStackBusinessFill => RI_STACK_BUSINESS_FILL,
             #[cfg(feature = "RiStackBusinessLine")]
@@ -46335,6 +47587,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiSunWeatherFill => RI_SUN_WEATHER_FILL,
             #[cfg(feature = "RiSunWeatherLine")]
             RiIcon::RiSunWeatherLine => RI_SUN_WEATHER_LINE,
+            #[cfg(feature = "RiSupabaseLogosFill")]
+            RiIcon::RiSupabaseLogosFill => RI_SUPABASE_LOGOS_FILL,
+            #[cfg(feature = "RiSupabaseLogosLine")]
+            RiIcon::RiSupabaseLogosLine => RI_SUPABASE_LOGOS_LINE,
             #[cfg(feature = "RiSuperscript2Editor")]
             RiIcon::RiSuperscript2Editor => RI_SUPERSCRIPT2_EDITOR,
             #[cfg(feature = "RiSuperscriptEditor")]
@@ -46441,6 +47697,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiTempHotWeatherFill => RI_TEMP_HOT_WEATHER_FILL,
             #[cfg(feature = "RiTempHotWeatherLine")]
             RiIcon::RiTempHotWeatherLine => RI_TEMP_HOT_WEATHER_LINE,
+            #[cfg(feature = "RiTentBuildingsFill")]
+            RiIcon::RiTentBuildingsFill => RI_TENT_BUILDINGS_FILL,
+            #[cfg(feature = "RiTentBuildingsLine")]
+            RiIcon::RiTentBuildingsLine => RI_TENT_BUILDINGS_LINE,
             #[cfg(feature = "RiTerminalBoxDevelopmentFill")]
             RiIcon::RiTerminalBoxDevelopmentFill => RI_TERMINAL_BOX_DEVELOPMENT_FILL,
             #[cfg(feature = "RiTerminalBoxDevelopmentLine")]
@@ -46471,6 +47731,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiThermometerHealthMedicalFill => RI_THERMOMETER_HEALTH_MEDICAL_FILL,
             #[cfg(feature = "RiThermometerHealthMedicalLine")]
             RiIcon::RiThermometerHealthMedicalLine => RI_THERMOMETER_HEALTH_MEDICAL_LINE,
+            #[cfg(feature = "RiThreadsLogosFill")]
+            RiIcon::RiThreadsLogosFill => RI_THREADS_LOGOS_FILL,
+            #[cfg(feature = "RiThreadsLogosLine")]
+            RiIcon::RiThreadsLogosLine => RI_THREADS_LOGOS_LINE,
             #[cfg(feature = "RiThumbDownSystemFill")]
             RiIcon::RiThumbDownSystemFill => RI_THUMB_DOWN_SYSTEM_FILL,
             #[cfg(feature = "RiThumbDownSystemLine")]
@@ -46559,10 +47823,18 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiTreasureMapMapFill => RI_TREASURE_MAP_MAP_FILL,
             #[cfg(feature = "RiTreasureMapMapLine")]
             RiIcon::RiTreasureMapMapLine => RI_TREASURE_MAP_MAP_LINE,
+            #[cfg(feature = "RiTreeOthersFill")]
+            RiIcon::RiTreeOthersFill => RI_TREE_OTHERS_FILL,
+            #[cfg(feature = "RiTreeOthersLine")]
+            RiIcon::RiTreeOthersLine => RI_TREE_OTHERS_LINE,
             #[cfg(feature = "RiTrelloLogosFill")]
             RiIcon::RiTrelloLogosFill => RI_TRELLO_LOGOS_FILL,
             #[cfg(feature = "RiTrelloLogosLine")]
             RiIcon::RiTrelloLogosLine => RI_TRELLO_LOGOS_LINE,
+            #[cfg(feature = "RiTriangleDesignFill")]
+            RiIcon::RiTriangleDesignFill => RI_TRIANGLE_DESIGN_FILL,
+            #[cfg(feature = "RiTriangleDesignLine")]
+            RiIcon::RiTriangleDesignLine => RI_TRIANGLE_DESIGN_LINE,
             #[cfg(feature = "RiTrophyFinanceFill")]
             RiIcon::RiTrophyFinanceFill => RI_TROPHY_FINANCE_FILL,
             #[cfg(feature = "RiTrophyFinanceLine")]
@@ -46591,6 +47863,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiTwitterLogosFill => RI_TWITTER_LOGOS_FILL,
             #[cfg(feature = "RiTwitterLogosLine")]
             RiIcon::RiTwitterLogosLine => RI_TWITTER_LOGOS_LINE,
+            #[cfg(feature = "RiTwitterXLogosFill")]
+            RiIcon::RiTwitterXLogosFill => RI_TWITTER_X_LOGOS_FILL,
+            #[cfg(feature = "RiTwitterXLogosLine")]
+            RiIcon::RiTwitterXLogosLine => RI_TWITTER_X_LOGOS_LINE,
             #[cfg(feature = "RiTyphoonWeatherFill")]
             RiIcon::RiTyphoonWeatherFill => RI_TYPHOON_WEATHER_FILL,
             #[cfg(feature = "RiTyphoonWeatherLine")]
@@ -46669,6 +47945,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiUserFollowUserFacesFill => RI_USER_FOLLOW_USER_FACES_FILL,
             #[cfg(feature = "RiUserFollowUserFacesLine")]
             RiIcon::RiUserFollowUserFacesLine => RI_USER_FOLLOW_USER_FACES_LINE,
+            #[cfg(feature = "RiUserForbidUserFacesFill")]
+            RiIcon::RiUserForbidUserFacesFill => RI_USER_FORBID_USER_FACES_FILL,
+            #[cfg(feature = "RiUserForbidUserFacesLine")]
+            RiIcon::RiUserForbidUserFacesLine => RI_USER_FORBID_USER_FACES_LINE,
             #[cfg(feature = "RiUserHeartUserFacesFill")]
             RiIcon::RiUserHeartUserFacesFill => RI_USER_HEART_USER_FACES_FILL,
             #[cfg(feature = "RiUserHeartUserFacesLine")]
@@ -46721,6 +48001,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiUserVoiceUserFacesFill => RI_USER_VOICE_USER_FACES_FILL,
             #[cfg(feature = "RiUserVoiceUserFacesLine")]
             RiIcon::RiUserVoiceUserFacesLine => RI_USER_VOICE_USER_FACES_LINE,
+            #[cfg(feature = "RiVerifiedBadgeBusinessFill")]
+            RiIcon::RiVerifiedBadgeBusinessFill => RI_VERIFIED_BADGE_BUSINESS_FILL,
+            #[cfg(feature = "RiVerifiedBadgeBusinessLine")]
+            RiIcon::RiVerifiedBadgeBusinessLine => RI_VERIFIED_BADGE_BUSINESS_LINE,
             #[cfg(feature = "RiVideoAddMediaFill")]
             RiIcon::RiVideoAddMediaFill => RI_VIDEO_ADD_MEDIA_FILL,
             #[cfg(feature = "RiVideoAddMediaLine")]
@@ -46829,6 +48113,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiWaterFlashFinanceFill => RI_WATER_FLASH_FINANCE_FILL,
             #[cfg(feature = "RiWaterFlashFinanceLine")]
             RiIcon::RiWaterFlashFinanceLine => RI_WATER_FLASH_FINANCE_LINE,
+            #[cfg(feature = "RiWaterPercentWeatherFill")]
+            RiIcon::RiWaterPercentWeatherFill => RI_WATER_PERCENT_WEATHER_FILL,
+            #[cfg(feature = "RiWaterPercentWeatherLine")]
+            RiIcon::RiWaterPercentWeatherLine => RI_WATER_PERCENT_WEATHER_LINE,
             #[cfg(feature = "RiWebcamMediaFill")]
             RiIcon::RiWebcamMediaFill => RI_WEBCAM_MEDIA_FILL,
             #[cfg(feature = "RiWebcamMediaLine")]
@@ -46911,6 +48199,10 @@ impl From<RiIcon> for icondata_core::IconData {
             RiIcon::RiYoutubeLogosFill => RI_YOUTUBE_LOGOS_FILL,
             #[cfg(feature = "RiYoutubeLogosLine")]
             RiIcon::RiYoutubeLogosLine => RI_YOUTUBE_LOGOS_LINE,
+            #[cfg(feature = "RiYuqueLogosFill")]
+            RiIcon::RiYuqueLogosFill => RI_YUQUE_LOGOS_FILL,
+            #[cfg(feature = "RiYuqueLogosLine")]
+            RiIcon::RiYuqueLogosLine => RI_YUQUE_LOGOS_LINE,
             #[cfg(feature = "RiZcoolLogosFill")]
             RiIcon::RiZcoolLogosFill => RI_ZCOOL_LOGOS_FILL,
             #[cfg(feature = "RiZcoolLogosLine")]

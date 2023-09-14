@@ -100,7 +100,7 @@ pub(crate) fn clone(
 pub(crate) fn clone_without_checkout(git_url: &str, target_dir: &PathBuf) -> Result<(), Error> {
     let clone_output = {
         let mut cmd = Command::new("git");
-        cmd.args(["clone", "--depth", "1", "--no-checkout", git_url]);
+        cmd.args(["clone", "--no-checkout", "--single-branch", git_url]);
         cmd.arg(target_dir);
         debug!(
             ?cmd,

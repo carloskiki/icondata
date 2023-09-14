@@ -16,6 +16,8 @@
 pub enum TbIcon {
     #[cfg(feature = "Tb123")]
     Tb123,
+    #[cfg(feature = "Tb12Hours")]
+    Tb12Hours,
     #[cfg(feature = "Tb24Hours")]
     Tb24Hours,
     #[cfg(feature = "Tb2fa")]
@@ -134,6 +136,8 @@ pub enum TbIcon {
     TbAirConditioning,
     #[cfg(feature = "TbAirConditioningDisabled")]
     TbAirConditioningDisabled,
+    #[cfg(feature = "TbAirTrafficControl")]
+    TbAirTrafficControl,
     #[cfg(feature = "TbAlarm")]
     TbAlarm,
     #[cfg(feature = "TbAlarmFilled")]
@@ -160,16 +164,22 @@ pub enum TbIcon {
     TbAlertCircle,
     #[cfg(feature = "TbAlertCircleFilled")]
     TbAlertCircleFilled,
+    #[cfg(feature = "TbAlertCircleOff")]
+    TbAlertCircleOff,
     #[cfg(feature = "TbAlertHexagon")]
     TbAlertHexagon,
     #[cfg(feature = "TbAlertHexagonFilled")]
     TbAlertHexagonFilled,
+    #[cfg(feature = "TbAlertHexagonOff")]
+    TbAlertHexagonOff,
     #[cfg(feature = "TbAlertOctagon")]
     TbAlertOctagon,
     #[cfg(feature = "TbAlertOctagonFilled")]
     TbAlertOctagonFilled,
     #[cfg(feature = "TbAlertSmall")]
     TbAlertSmall,
+    #[cfg(feature = "TbAlertSmallOff")]
+    TbAlertSmallOff,
     #[cfg(feature = "TbAlertSquare")]
     TbAlertSquare,
     #[cfg(feature = "TbAlertSquareFilled")]
@@ -178,10 +188,14 @@ pub enum TbIcon {
     TbAlertSquareRounded,
     #[cfg(feature = "TbAlertSquareRoundedFilled")]
     TbAlertSquareRoundedFilled,
+    #[cfg(feature = "TbAlertSquareRoundedOff")]
+    TbAlertSquareRoundedOff,
     #[cfg(feature = "TbAlertTriangle")]
     TbAlertTriangle,
     #[cfg(feature = "TbAlertTriangleFilled")]
     TbAlertTriangleFilled,
+    #[cfg(feature = "TbAlertTriangleOff")]
+    TbAlertTriangleOff,
     #[cfg(feature = "TbAlien")]
     TbAlien,
     #[cfg(feature = "TbAlienFilled")]
@@ -198,10 +212,16 @@ pub enum TbIcon {
     TbAlignBoxBottomRight,
     #[cfg(feature = "TbAlignBoxBottomRightFilled")]
     TbAlignBoxBottomRightFilled,
+    #[cfg(feature = "TbAlignBoxCenterBottom")]
+    TbAlignBoxCenterBottom,
     #[cfg(feature = "TbAlignBoxCenterMiddle")]
     TbAlignBoxCenterMiddle,
     #[cfg(feature = "TbAlignBoxCenterMiddleFilled")]
     TbAlignBoxCenterMiddleFilled,
+    #[cfg(feature = "TbAlignBoxCenterStretch")]
+    TbAlignBoxCenterStretch,
+    #[cfg(feature = "TbAlignBoxCenterTop")]
+    TbAlignBoxCenterTop,
     #[cfg(feature = "TbAlignBoxLeftBottom")]
     TbAlignBoxLeftBottom,
     #[cfg(feature = "TbAlignBoxLeftBottomFilled")]
@@ -210,6 +230,8 @@ pub enum TbIcon {
     TbAlignBoxLeftMiddle,
     #[cfg(feature = "TbAlignBoxLeftMiddleFilled")]
     TbAlignBoxLeftMiddleFilled,
+    #[cfg(feature = "TbAlignBoxLeftStretch")]
+    TbAlignBoxLeftStretch,
     #[cfg(feature = "TbAlignBoxLeftTop")]
     TbAlignBoxLeftTop,
     #[cfg(feature = "TbAlignBoxLeftTopFilled")]
@@ -222,6 +244,8 @@ pub enum TbIcon {
     TbAlignBoxRightMiddle,
     #[cfg(feature = "TbAlignBoxRightMiddleFilled")]
     TbAlignBoxRightMiddleFilled,
+    #[cfg(feature = "TbAlignBoxRightStretch")]
+    TbAlignBoxRightStretch,
     #[cfg(feature = "TbAlignBoxRightTop")]
     TbAlignBoxRightTop,
     #[cfg(feature = "TbAlignBoxRightTopFilled")]
@@ -254,6 +278,8 @@ pub enum TbIcon {
     TbAlphabetGreek,
     #[cfg(feature = "TbAlphabetLatin")]
     TbAlphabetLatin,
+    #[cfg(feature = "TbAlt")]
+    TbAlt,
     #[cfg(feature = "TbAmbulance")]
     TbAmbulance,
     #[cfg(feature = "TbAmpersand")]
@@ -312,8 +338,12 @@ pub enum TbIcon {
     TbAppsFilled,
     #[cfg(feature = "TbAppsOff")]
     TbAppsOff,
+    #[cfg(feature = "TbArcheryArrow")]
+    TbArcheryArrow,
     #[cfg(feature = "TbArchive")]
     TbArchive,
+    #[cfg(feature = "TbArchiveFilled")]
+    TbArchiveFilled,
     #[cfg(feature = "TbArchiveOff")]
     TbArchiveOff,
     #[cfg(feature = "TbArmchair")]
@@ -362,6 +392,8 @@ pub enum TbIcon {
     TbArrowBadgeUp,
     #[cfg(feature = "TbArrowBadgeUpFilled")]
     TbArrowBadgeUpFilled,
+    #[cfg(feature = "TbArrowBarBoth")]
+    TbArrowBarBoth,
     #[cfg(feature = "TbArrowBarDown")]
     TbArrowBarDown,
     #[cfg(feature = "TbArrowBarLeft")]
@@ -436,6 +468,8 @@ pub enum TbIcon {
     TbArrowBigUpLinesFilled,
     #[cfg(feature = "TbArrowBounce")]
     TbArrowBounce,
+    #[cfg(feature = "TbArrowCapsule")]
+    TbArrowCapsule,
     #[cfg(feature = "TbArrowCurveLeft")]
     TbArrowCurveLeft,
     #[cfg(feature = "TbArrowCurveRight")]
@@ -682,6 +716,8 @@ pub enum TbIcon {
     TbArrowsVertical,
     #[cfg(feature = "TbArtboard")]
     TbArtboard,
+    #[cfg(feature = "TbArtboardFilled")]
+    TbArtboardFilled,
     #[cfg(feature = "TbArtboardOff")]
     TbArtboardOff,
     #[cfg(feature = "TbArticle")]
@@ -746,6 +782,8 @@ pub enum TbIcon {
     TbBackpack,
     #[cfg(feature = "TbBackpackOff")]
     TbBackpackOff,
+    #[cfg(feature = "TbBackslash")]
+    TbBackslash,
     #[cfg(feature = "TbBackspace")]
     TbBackspace,
     #[cfg(feature = "TbBackspaceFilled")]
@@ -808,10 +846,14 @@ pub enum TbIcon {
     TbBallVolleyball,
     #[cfg(feature = "TbBalloon")]
     TbBalloon,
+    #[cfg(feature = "TbBalloonFilled")]
+    TbBalloonFilled,
     #[cfg(feature = "TbBalloonOff")]
     TbBalloonOff,
     #[cfg(feature = "TbBallpen")]
     TbBallpen,
+    #[cfg(feature = "TbBallpenFilled")]
+    TbBallpenFilled,
     #[cfg(feature = "TbBallpenOff")]
     TbBallpenOff,
     #[cfg(feature = "TbBan")]
@@ -848,10 +890,50 @@ pub enum TbIcon {
     TbBaselineDensitySmall,
     #[cfg(feature = "TbBasket")]
     TbBasket,
+    #[cfg(feature = "TbBasketBolt")]
+    TbBasketBolt,
+    #[cfg(feature = "TbBasketCancel")]
+    TbBasketCancel,
+    #[cfg(feature = "TbBasketCheck")]
+    TbBasketCheck,
+    #[cfg(feature = "TbBasketCode")]
+    TbBasketCode,
+    #[cfg(feature = "TbBasketCog")]
+    TbBasketCog,
+    #[cfg(feature = "TbBasketDiscount")]
+    TbBasketDiscount,
+    #[cfg(feature = "TbBasketDollar")]
+    TbBasketDollar,
+    #[cfg(feature = "TbBasketDown")]
+    TbBasketDown,
+    #[cfg(feature = "TbBasketExclamation")]
+    TbBasketExclamation,
     #[cfg(feature = "TbBasketFilled")]
     TbBasketFilled,
+    #[cfg(feature = "TbBasketHeart")]
+    TbBasketHeart,
+    #[cfg(feature = "TbBasketMinus")]
+    TbBasketMinus,
     #[cfg(feature = "TbBasketOff")]
     TbBasketOff,
+    #[cfg(feature = "TbBasketPause")]
+    TbBasketPause,
+    #[cfg(feature = "TbBasketPin")]
+    TbBasketPin,
+    #[cfg(feature = "TbBasketPlus")]
+    TbBasketPlus,
+    #[cfg(feature = "TbBasketQuestion")]
+    TbBasketQuestion,
+    #[cfg(feature = "TbBasketSearch")]
+    TbBasketSearch,
+    #[cfg(feature = "TbBasketShare")]
+    TbBasketShare,
+    #[cfg(feature = "TbBasketStar")]
+    TbBasketStar,
+    #[cfg(feature = "TbBasketUp")]
+    TbBasketUp,
+    #[cfg(feature = "TbBasketX")]
+    TbBasketX,
     #[cfg(feature = "TbBat")]
     TbBat,
     #[cfg(feature = "TbBath")]
@@ -1028,6 +1110,8 @@ pub enum TbIcon {
     TbBoltOff,
     #[cfg(feature = "TbBomb")]
     TbBomb,
+    #[cfg(feature = "TbBombFilled")]
+    TbBombFilled,
     #[cfg(feature = "TbBone")]
     TbBone,
     #[cfg(feature = "TbBoneOff")]
@@ -1042,6 +1126,8 @@ pub enum TbIcon {
     TbBook2,
     #[cfg(feature = "TbBookDownload")]
     TbBookDownload,
+    #[cfg(feature = "TbBookFilled")]
+    TbBookFilled,
     #[cfg(feature = "TbBookOff")]
     TbBookOff,
     #[cfg(feature = "TbBookUpload")]
@@ -1050,6 +1136,8 @@ pub enum TbIcon {
     TbBookmark,
     #[cfg(feature = "TbBookmarkEdit")]
     TbBookmarkEdit,
+    #[cfg(feature = "TbBookmarkFilled")]
+    TbBookmarkFilled,
     #[cfg(feature = "TbBookmarkMinus")]
     TbBookmarkMinus,
     #[cfg(feature = "TbBookmarkOff")]
@@ -1060,6 +1148,8 @@ pub enum TbIcon {
     TbBookmarkQuestion,
     #[cfg(feature = "TbBookmarks")]
     TbBookmarks,
+    #[cfg(feature = "TbBookmarksFilled")]
+    TbBookmarksFilled,
     #[cfg(feature = "TbBookmarksOff")]
     TbBookmarksOff,
     #[cfg(feature = "TbBooks")]
@@ -1098,34 +1188,58 @@ pub enum TbIcon {
     TbBorderVertical,
     #[cfg(feature = "TbBottle")]
     TbBottle,
+    #[cfg(feature = "TbBottleFilled")]
+    TbBottleFilled,
     #[cfg(feature = "TbBottleOff")]
     TbBottleOff,
     #[cfg(feature = "TbBounceLeft")]
     TbBounceLeft,
+    #[cfg(feature = "TbBounceLeftFilled")]
+    TbBounceLeftFilled,
     #[cfg(feature = "TbBounceRight")]
     TbBounceRight,
+    #[cfg(feature = "TbBounceRightFilled")]
+    TbBounceRightFilled,
     #[cfg(feature = "TbBow")]
     TbBow,
     #[cfg(feature = "TbBowl")]
     TbBowl,
+    #[cfg(feature = "TbBowlFilled")]
+    TbBowlFilled,
     #[cfg(feature = "TbBox")]
     TbBox,
     #[cfg(feature = "TbBoxAlignBottom")]
     TbBoxAlignBottom,
+    #[cfg(feature = "TbBoxAlignBottomFilled")]
+    TbBoxAlignBottomFilled,
     #[cfg(feature = "TbBoxAlignBottomLeft")]
     TbBoxAlignBottomLeft,
+    #[cfg(feature = "TbBoxAlignBottomLeftFilled")]
+    TbBoxAlignBottomLeftFilled,
     #[cfg(feature = "TbBoxAlignBottomRight")]
     TbBoxAlignBottomRight,
+    #[cfg(feature = "TbBoxAlignBottomRightFilled")]
+    TbBoxAlignBottomRightFilled,
     #[cfg(feature = "TbBoxAlignLeft")]
     TbBoxAlignLeft,
+    #[cfg(feature = "TbBoxAlignLeftFilled")]
+    TbBoxAlignLeftFilled,
     #[cfg(feature = "TbBoxAlignRight")]
     TbBoxAlignRight,
+    #[cfg(feature = "TbBoxAlignRightFilled")]
+    TbBoxAlignRightFilled,
     #[cfg(feature = "TbBoxAlignTop")]
     TbBoxAlignTop,
+    #[cfg(feature = "TbBoxAlignTopFilled")]
+    TbBoxAlignTopFilled,
     #[cfg(feature = "TbBoxAlignTopLeft")]
     TbBoxAlignTopLeft,
+    #[cfg(feature = "TbBoxAlignTopLeftFilled")]
+    TbBoxAlignTopLeftFilled,
     #[cfg(feature = "TbBoxAlignTopRight")]
     TbBoxAlignTopRight,
+    #[cfg(feature = "TbBoxAlignTopRightFilled")]
+    TbBoxAlignTopRightFilled,
     #[cfg(feature = "TbBoxMargin")]
     TbBoxMargin,
     #[cfg(feature = "TbBoxModel")]
@@ -1212,6 +1326,8 @@ pub enum TbIcon {
     TbBrandAndroid,
     #[cfg(feature = "TbBrandAngular")]
     TbBrandAngular,
+    #[cfg(feature = "TbBrandAnsible")]
+    TbBrandAnsible,
     #[cfg(feature = "TbBrandAo3")]
     TbBrandAo3,
     #[cfg(feature = "TbBrandAppgallery")]
@@ -1282,6 +1398,8 @@ pub enum TbIcon {
     TbBrandCashapp,
     #[cfg(feature = "TbBrandChrome")]
     TbBrandChrome,
+    #[cfg(feature = "TbBrandCinema4d")]
+    TbBrandCinema4d,
     #[cfg(feature = "TbBrandCitymapper")]
     TbBrandCitymapper,
     #[cfg(feature = "TbBrandCloudflare")]
@@ -1306,6 +1424,8 @@ pub enum TbIcon {
     TbBrandCouchsurfing,
     #[cfg(feature = "TbBrandCpp")]
     TbBrandCpp,
+    #[cfg(feature = "TbBrandCraft")]
+    TbBrandCraft,
     #[cfg(feature = "TbBrandCrunchbase")]
     TbBrandCrunchbase,
     #[cfg(feature = "TbBrandCss3")]
@@ -1320,6 +1440,8 @@ pub enum TbIcon {
     TbBrandCypress,
     #[cfg(feature = "TbBrandD3")]
     TbBrandD3,
+    #[cfg(feature = "TbBrandDatabricks")]
+    TbBrandDatabricks,
     #[cfg(feature = "TbBrandDaysCounter")]
     TbBrandDaysCounter,
     #[cfg(feature = "TbBrandDcos")]
@@ -1336,6 +1458,8 @@ pub enum TbIcon {
     TbBrandDenodo,
     #[cfg(feature = "TbBrandDeviantart")]
     TbBrandDeviantart,
+    #[cfg(feature = "TbBrandDigg")]
+    TbBrandDigg,
     #[cfg(feature = "TbBrandDingtalk")]
     TbBrandDingtalk,
     #[cfg(feature = "TbBrandDiscord")]
@@ -1368,6 +1492,8 @@ pub enum TbIcon {
     TbBrandEdge,
     #[cfg(feature = "TbBrandElastic")]
     TbBrandElastic,
+    #[cfg(feature = "TbBrandElectronicArts")]
+    TbBrandElectronicArts,
     #[cfg(feature = "TbBrandEmber")]
     TbBrandEmber,
     #[cfg(feature = "TbBrandEnvato")]
@@ -1380,8 +1506,12 @@ pub enum TbIcon {
     TbBrandFacebook,
     #[cfg(feature = "TbBrandFacebookFilled")]
     TbBrandFacebookFilled,
+    #[cfg(feature = "TbBrandFeedly")]
+    TbBrandFeedly,
     #[cfg(feature = "TbBrandFigma")]
     TbBrandFigma,
+    #[cfg(feature = "TbBrandFilezilla")]
+    TbBrandFilezilla,
     #[cfg(feature = "TbBrandFinder")]
     TbBrandFinder,
     #[cfg(feature = "TbBrandFirebase")]
@@ -1480,6 +1610,8 @@ pub enum TbIcon {
     TbBrandJavascript,
     #[cfg(feature = "TbBrandJuejin")]
     TbBrandJuejin,
+    #[cfg(feature = "TbBrandKbin")]
+    TbBrandKbin,
     #[cfg(feature = "TbBrandKick")]
     TbBrandKick,
     #[cfg(feature = "TbBrandKickstarter")]
@@ -1518,12 +1650,16 @@ pub enum TbIcon {
     TbBrandMcdonalds,
     #[cfg(feature = "TbBrandMedium")]
     TbBrandMedium,
+    #[cfg(feature = "TbBrandMeetup")]
+    TbBrandMeetup,
     #[cfg(feature = "TbBrandMercedes")]
     TbBrandMercedes,
     #[cfg(feature = "TbBrandMessenger")]
     TbBrandMessenger,
     #[cfg(feature = "TbBrandMeta")]
     TbBrandMeta,
+    #[cfg(feature = "TbBrandMinecraft")]
+    TbBrandMinecraft,
     #[cfg(feature = "TbBrandMiniprogram")]
     TbBrandMiniprogram,
     #[cfg(feature = "TbBrandMixpanel")]
@@ -1552,6 +1688,8 @@ pub enum TbIcon {
     TbBrandNextcloud,
     #[cfg(feature = "TbBrandNextjs")]
     TbBrandNextjs,
+    #[cfg(feature = "TbBrandNodejs")]
+    TbBrandNodejs,
     #[cfg(feature = "TbBrandNordVpn")]
     TbBrandNordVpn,
     #[cfg(feature = "TbBrandNotion")]
@@ -1582,6 +1720,8 @@ pub enum TbIcon {
     TbBrandOpera,
     #[cfg(feature = "TbBrandPagekit")]
     TbBrandPagekit,
+    #[cfg(feature = "TbBrandParsinta")]
+    TbBrandParsinta,
     #[cfg(feature = "TbBrandPatreon")]
     TbBrandPatreon,
     #[cfg(feature = "TbBrandPaypal")]
@@ -1636,6 +1776,8 @@ pub enum TbIcon {
     TbBrandRedux,
     #[cfg(feature = "TbBrandRevolut")]
     TbBrandRevolut,
+    #[cfg(feature = "TbBrandRumble")]
+    TbBrandRumble,
     #[cfg(feature = "TbBrandRust")]
     TbBrandRust,
     #[cfg(feature = "TbBrandSafari")]
@@ -1672,6 +1814,8 @@ pub enum TbIcon {
     TbBrandSoundcloud,
     #[cfg(feature = "TbBrandSpacehey")]
     TbBrandSpacehey,
+    #[cfg(feature = "TbBrandSpeedtest")]
+    TbBrandSpeedtest,
     #[cfg(feature = "TbBrandSpotify")]
     TbBrandSpotify,
     #[cfg(feature = "TbBrandStackoverflow")]
@@ -1714,6 +1858,8 @@ pub enum TbIcon {
     TbBrandTailwind,
     #[cfg(feature = "TbBrandTaobao")]
     TbBrandTaobao,
+    #[cfg(feature = "TbBrandTeams")]
+    TbBrandTeams,
     #[cfg(feature = "TbBrandTed")]
     TbBrandTed,
     #[cfg(feature = "TbBrandTelegram")]
@@ -1722,14 +1868,16 @@ pub enum TbIcon {
     TbBrandTerraform,
     #[cfg(feature = "TbBrandTether")]
     TbBrandTether,
+    #[cfg(feature = "TbBrandThreads")]
+    TbBrandThreads,
     #[cfg(feature = "TbBrandThreejs")]
     TbBrandThreejs,
     #[cfg(feature = "TbBrandTidal")]
     TbBrandTidal,
-    #[cfg(feature = "TbBrandTiktoFilled")]
-    TbBrandTiktoFilled,
     #[cfg(feature = "TbBrandTiktok")]
     TbBrandTiktok,
+    #[cfg(feature = "TbBrandTiktokFilled")]
+    TbBrandTiktokFilled,
     #[cfg(feature = "TbBrandTinder")]
     TbBrandTinder,
     #[cfg(feature = "TbBrandTopbuzz")]
@@ -1782,6 +1930,8 @@ pub enum TbIcon {
     TbBrandVivaldi,
     #[cfg(feature = "TbBrandVk")]
     TbBrandVk,
+    #[cfg(feature = "TbBrandVlc")]
+    TbBrandVlc,
     #[cfg(feature = "TbBrandVolkswagen")]
     TbBrandVolkswagen,
     #[cfg(feature = "TbBrandVsco")]
@@ -1802,6 +1952,8 @@ pub enum TbIcon {
     TbBrandWeibo,
     #[cfg(feature = "TbBrandWhatsapp")]
     TbBrandWhatsapp,
+    #[cfg(feature = "TbBrandWikipedia")]
+    TbBrandWikipedia,
     #[cfg(feature = "TbBrandWindows")]
     TbBrandWindows,
     #[cfg(feature = "TbBrandWindy")]
@@ -1812,18 +1964,30 @@ pub enum TbIcon {
     TbBrandWix,
     #[cfg(feature = "TbBrandWordpress")]
     TbBrandWordpress,
+    #[cfg(feature = "TbBrandX")]
+    TbBrandX,
+    #[cfg(feature = "TbBrandXFilled")]
+    TbBrandXFilled,
+    #[cfg(feature = "TbBrandXamarin")]
+    TbBrandXamarin,
     #[cfg(feature = "TbBrandXbox")]
     TbBrandXbox,
+    #[cfg(feature = "TbBrandXdeep")]
+    TbBrandXdeep,
     #[cfg(feature = "TbBrandXing")]
     TbBrandXing,
     #[cfg(feature = "TbBrandYahoo")]
     TbBrandYahoo,
+    #[cfg(feature = "TbBrandYandex")]
+    TbBrandYandex,
     #[cfg(feature = "TbBrandYatse")]
     TbBrandYatse,
     #[cfg(feature = "TbBrandYcombinator")]
     TbBrandYcombinator,
     #[cfg(feature = "TbBrandYoutube")]
     TbBrandYoutube,
+    #[cfg(feature = "TbBrandYoutubeFilled")]
+    TbBrandYoutubeFilled,
     #[cfg(feature = "TbBrandYoutubeKids")]
     TbBrandYoutubeKids,
     #[cfg(feature = "TbBrandZalando")]
@@ -1846,6 +2010,8 @@ pub enum TbIcon {
     TbBreadOff,
     #[cfg(feature = "TbBriefcase")]
     TbBriefcase,
+    #[cfg(feature = "TbBriefcase2")]
+    TbBriefcase2,
     #[cfg(feature = "TbBriefcaseOff")]
     TbBriefcaseOff,
     #[cfg(feature = "TbBrightness")]
@@ -1854,12 +2020,16 @@ pub enum TbIcon {
     TbBrightness2,
     #[cfg(feature = "TbBrightnessDown")]
     TbBrightnessDown,
+    #[cfg(feature = "TbBrightnessDownFilled")]
+    TbBrightnessDownFilled,
     #[cfg(feature = "TbBrightnessHalf")]
     TbBrightnessHalf,
     #[cfg(feature = "TbBrightnessOff")]
     TbBrightnessOff,
     #[cfg(feature = "TbBrightnessUp")]
     TbBrightnessUp,
+    #[cfg(feature = "TbBrightnessUpFilled")]
+    TbBrightnessUpFilled,
     #[cfg(feature = "TbBroadcast")]
     TbBroadcast,
     #[cfg(feature = "TbBroadcastOff")]
@@ -1962,6 +2132,8 @@ pub enum TbIcon {
     TbButterfly,
     #[cfg(feature = "TbCactus")]
     TbCactus,
+    #[cfg(feature = "TbCactusFilled")]
+    TbCactusFilled,
     #[cfg(feature = "TbCactusOff")]
     TbCactusOff,
     #[cfg(feature = "TbCake")]
@@ -1970,6 +2142,8 @@ pub enum TbIcon {
     TbCakeOff,
     #[cfg(feature = "TbCalculator")]
     TbCalculator,
+    #[cfg(feature = "TbCalculatorFilled")]
+    TbCalculatorFilled,
     #[cfg(feature = "TbCalculatorOff")]
     TbCalculatorOff,
     #[cfg(feature = "TbCalendar")]
@@ -1994,6 +2168,8 @@ pub enum TbIcon {
     TbCalendarEvent,
     #[cfg(feature = "TbCalendarExclamation")]
     TbCalendarExclamation,
+    #[cfg(feature = "TbCalendarFilled")]
+    TbCalendarFilled,
     #[cfg(feature = "TbCalendarHeart")]
     TbCalendarHeart,
     #[cfg(feature = "TbCalendarMinus")]
@@ -2008,6 +2184,8 @@ pub enum TbIcon {
     TbCalendarPlus,
     #[cfg(feature = "TbCalendarQuestion")]
     TbCalendarQuestion,
+    #[cfg(feature = "TbCalendarRepeat")]
+    TbCalendarRepeat,
     #[cfg(feature = "TbCalendarSearch")]
     TbCalendarSearch,
     #[cfg(feature = "TbCalendarShare")]
@@ -2074,8 +2252,12 @@ pub enum TbIcon {
     TbCamper,
     #[cfg(feature = "TbCampfire")]
     TbCampfire,
+    #[cfg(feature = "TbCampfireFilled")]
+    TbCampfireFilled,
     #[cfg(feature = "TbCandle")]
     TbCandle,
+    #[cfg(feature = "TbCandleFilled")]
+    TbCandleFilled,
     #[cfg(feature = "TbCandy")]
     TbCandy,
     #[cfg(feature = "TbCandyOff")]
@@ -2084,8 +2266,18 @@ pub enum TbIcon {
     TbCane,
     #[cfg(feature = "TbCannabis")]
     TbCannabis,
+    #[cfg(feature = "TbCapsule")]
+    TbCapsule,
+    #[cfg(feature = "TbCapsuleFilled")]
+    TbCapsuleFilled,
+    #[cfg(feature = "TbCapsuleHorizontal")]
+    TbCapsuleHorizontal,
+    #[cfg(feature = "TbCapsuleHorizontalFilled")]
+    TbCapsuleHorizontalFilled,
     #[cfg(feature = "TbCapture")]
     TbCapture,
+    #[cfg(feature = "TbCaptureFilled")]
+    TbCaptureFilled,
     #[cfg(feature = "TbCaptureOff")]
     TbCaptureOff,
     #[cfg(feature = "TbCar")]
@@ -2094,6 +2286,8 @@ pub enum TbIcon {
     TbCarCrane,
     #[cfg(feature = "TbCarCrash")]
     TbCarCrash,
+    #[cfg(feature = "TbCarGarage")]
+    TbCarGarage,
     #[cfg(feature = "TbCarOff")]
     TbCarOff,
     #[cfg(feature = "TbCarTurbine")]
@@ -2106,18 +2300,36 @@ pub enum TbIcon {
     TbCardboardsOff,
     #[cfg(feature = "TbCards")]
     TbCards,
+    #[cfg(feature = "TbCardsFilled")]
+    TbCardsFilled,
     #[cfg(feature = "TbCaretDown")]
     TbCaretDown,
+    #[cfg(feature = "TbCaretDownFilled")]
+    TbCaretDownFilled,
     #[cfg(feature = "TbCaretLeft")]
     TbCaretLeft,
+    #[cfg(feature = "TbCaretLeftFilled")]
+    TbCaretLeftFilled,
+    #[cfg(feature = "TbCaretLeftRight")]
+    TbCaretLeftRight,
     #[cfg(feature = "TbCaretRight")]
     TbCaretRight,
+    #[cfg(feature = "TbCaretRightFilled")]
+    TbCaretRightFilled,
     #[cfg(feature = "TbCaretUp")]
     TbCaretUp,
+    #[cfg(feature = "TbCaretUpDown")]
+    TbCaretUpDown,
+    #[cfg(feature = "TbCaretUpFilled")]
+    TbCaretUpFilled,
     #[cfg(feature = "TbCarouselHorizontal")]
     TbCarouselHorizontal,
+    #[cfg(feature = "TbCarouselHorizontalFilled")]
+    TbCarouselHorizontalFilled,
     #[cfg(feature = "TbCarouselVertical")]
     TbCarouselVertical,
+    #[cfg(feature = "TbCarouselVerticalFilled")]
+    TbCarouselVerticalFilled,
     #[cfg(feature = "TbCarrot")]
     TbCarrot,
     #[cfg(feature = "TbCarrotOff")]
@@ -2140,6 +2352,8 @@ pub enum TbIcon {
     TbCategory,
     #[cfg(feature = "TbCategory2")]
     TbCategory2,
+    #[cfg(feature = "TbCategoryFilled")]
+    TbCategoryFilled,
     #[cfg(feature = "TbCe")]
     TbCe,
     #[cfg(feature = "TbCeOff")]
@@ -2292,6 +2506,14 @@ pub enum TbIcon {
     TbChessRook,
     #[cfg(feature = "TbChessRookFilled")]
     TbChessRookFilled,
+    #[cfg(feature = "TbChevronCompactDown")]
+    TbChevronCompactDown,
+    #[cfg(feature = "TbChevronCompactLeft")]
+    TbChevronCompactLeft,
+    #[cfg(feature = "TbChevronCompactRight")]
+    TbChevronCompactRight,
+    #[cfg(feature = "TbChevronCompactUp")]
+    TbChevronCompactUp,
     #[cfg(feature = "TbChevronDown")]
     TbChevronDown,
     #[cfg(feature = "TbChevronDownLeft")]
@@ -2300,8 +2522,12 @@ pub enum TbIcon {
     TbChevronDownRight,
     #[cfg(feature = "TbChevronLeft")]
     TbChevronLeft,
+    #[cfg(feature = "TbChevronLeftPipe")]
+    TbChevronLeftPipe,
     #[cfg(feature = "TbChevronRight")]
     TbChevronRight,
+    #[cfg(feature = "TbChevronRightPipe")]
+    TbChevronRightPipe,
     #[cfg(feature = "TbChevronUp")]
     TbChevronUp,
     #[cfg(feature = "TbChevronUpLeft")]
@@ -2414,6 +2640,28 @@ pub enum TbIcon {
     TbCircleChevronsUp,
     #[cfg(feature = "TbCircleDashed")]
     TbCircleDashed,
+    #[cfg(feature = "TbCircleDashedNumber0")]
+    TbCircleDashedNumber0,
+    #[cfg(feature = "TbCircleDashedNumber1")]
+    TbCircleDashedNumber1,
+    #[cfg(feature = "TbCircleDashedNumber2")]
+    TbCircleDashedNumber2,
+    #[cfg(feature = "TbCircleDashedNumber3")]
+    TbCircleDashedNumber3,
+    #[cfg(feature = "TbCircleDashedNumber4")]
+    TbCircleDashedNumber4,
+    #[cfg(feature = "TbCircleDashedNumber5")]
+    TbCircleDashedNumber5,
+    #[cfg(feature = "TbCircleDashedNumber6")]
+    TbCircleDashedNumber6,
+    #[cfg(feature = "TbCircleDashedNumber7")]
+    TbCircleDashedNumber7,
+    #[cfg(feature = "TbCircleDashedNumber8")]
+    TbCircleDashedNumber8,
+    #[cfg(feature = "TbCircleDashedNumber9")]
+    TbCircleDashedNumber9,
+    #[cfg(feature = "TbCircleDashedX")]
+    TbCircleDashedX,
     #[cfg(feature = "TbCircleDot")]
     TbCircleDot,
     #[cfg(feature = "TbCircleDotFilled")]
@@ -2596,8 +2844,12 @@ pub enum TbIcon {
     TbClipboardX,
     #[cfg(feature = "TbClock")]
     TbClock,
+    #[cfg(feature = "TbClock12")]
+    TbClock12,
     #[cfg(feature = "TbClock2")]
     TbClock2,
+    #[cfg(feature = "TbClock24")]
+    TbClock24,
     #[cfg(feature = "TbClockBolt")]
     TbClockBolt,
     #[cfg(feature = "TbClockCancel")]
@@ -2714,6 +2966,8 @@ pub enum TbIcon {
     TbCloudLockOpen,
     #[cfg(feature = "TbCloudMinus")]
     TbCloudMinus,
+    #[cfg(feature = "TbCloudNetwork")]
+    TbCloudNetwork,
     #[cfg(feature = "TbCloudOff")]
     TbCloudOff,
     #[cfg(feature = "TbCloudPause")]
@@ -2806,6 +3060,8 @@ pub enum TbIcon {
     TbColumnInsertLeft,
     #[cfg(feature = "TbColumnInsertRight")]
     TbColumnInsertRight,
+    #[cfg(feature = "TbColumnRemove")]
+    TbColumnRemove,
     #[cfg(feature = "TbColumns")]
     TbColumns,
     #[cfg(feature = "TbColumns1")]
@@ -2836,6 +3092,8 @@ pub enum TbIcon {
     TbCone2,
     #[cfg(feature = "TbConeOff")]
     TbConeOff,
+    #[cfg(feature = "TbConePlus")]
+    TbConePlus,
     #[cfg(feature = "TbConfetti")]
     TbConfetti,
     #[cfg(feature = "TbConfettiOff")]
@@ -2962,6 +3220,12 @@ pub enum TbIcon {
     TbCrystalBall,
     #[cfg(feature = "TbCsv")]
     TbCsv,
+    #[cfg(feature = "TbCube")]
+    TbCube,
+    #[cfg(feature = "TbCubeOff")]
+    TbCubeOff,
+    #[cfg(feature = "TbCubePlus")]
+    TbCubePlus,
     #[cfg(feature = "TbCubeSend")]
     TbCubeSend,
     #[cfg(feature = "TbCubeUnfolded")]
@@ -3018,6 +3282,8 @@ pub enum TbIcon {
     TbCurrencyEuro,
     #[cfg(feature = "TbCurrencyEuroOff")]
     TbCurrencyEuroOff,
+    #[cfg(feature = "TbCurrencyFlorin")]
+    TbCurrencyFlorin,
     #[cfg(feature = "TbCurrencyForint")]
     TbCurrencyForint,
     #[cfg(feature = "TbCurrencyFrank")]
@@ -3116,6 +3382,10 @@ pub enum TbIcon {
     TbCut,
     #[cfg(feature = "TbCylinder")]
     TbCylinder,
+    #[cfg(feature = "TbCylinderOff")]
+    TbCylinderOff,
+    #[cfg(feature = "TbCylinderPlus")]
+    TbCylinderPlus,
     #[cfg(feature = "TbDashboard")]
     TbDashboard,
     #[cfg(feature = "TbDashboardOff")]
@@ -3174,6 +3444,8 @@ pub enum TbIcon {
     TbDeviceAirpods,
     #[cfg(feature = "TbDeviceAirpodsCase")]
     TbDeviceAirpodsCase,
+    #[cfg(feature = "TbDeviceAirtag")]
+    TbDeviceAirtag,
     #[cfg(feature = "TbDeviceAnalytics")]
     TbDeviceAnalytics,
     #[cfg(feature = "TbDeviceAudioTape")]
@@ -3234,6 +3506,8 @@ pub enum TbIcon {
     TbDeviceDesktopX,
     #[cfg(feature = "TbDeviceFloppy")]
     TbDeviceFloppy,
+    #[cfg(feature = "TbDeviceGamePad")]
+    TbDeviceGamePad,
     #[cfg(feature = "TbDeviceGamepad")]
     TbDeviceGamepad,
     #[cfg(feature = "TbDeviceGamepad2")]
@@ -3430,6 +3704,8 @@ pub enum TbIcon {
     TbDeviceNintendo,
     #[cfg(feature = "TbDeviceNintendoOff")]
     TbDeviceNintendoOff,
+    #[cfg(feature = "TbDeviceProjector")]
+    TbDeviceProjector,
     #[cfg(feature = "TbDeviceRemote")]
     TbDeviceRemote,
     #[cfg(feature = "TbDeviceSdCard")]
@@ -3496,6 +3772,10 @@ pub enum TbIcon {
     TbDeviceTvOff,
     #[cfg(feature = "TbDeviceTvOld")]
     TbDeviceTvOld,
+    #[cfg(feature = "TbDeviceUsb")]
+    TbDeviceUsb,
+    #[cfg(feature = "TbDeviceVisionPro")]
+    TbDeviceVisionPro,
     #[cfg(feature = "TbDeviceWatch")]
     TbDeviceWatch,
     #[cfg(feature = "TbDeviceWatchBolt")]
@@ -3590,6 +3870,12 @@ pub enum TbIcon {
     TbDevicesUp,
     #[cfg(feature = "TbDevicesX")]
     TbDevicesX,
+    #[cfg(feature = "TbDiabolo")]
+    TbDiabolo,
+    #[cfg(feature = "TbDiaboloOff")]
+    TbDiaboloOff,
+    #[cfg(feature = "TbDiaboloPlus")]
+    TbDiaboloPlus,
     #[cfg(feature = "TbDialpad")]
     TbDialpad,
     #[cfg(feature = "TbDialpadFilled")]
@@ -3740,12 +4026,12 @@ pub enum TbIcon {
     TbDropletExclamation,
     #[cfg(feature = "TbDropletFilled")]
     TbDropletFilled,
-    #[cfg(feature = "TbDropletFilled2")]
-    TbDropletFilled2,
     #[cfg(feature = "TbDropletHalf")]
     TbDropletHalf,
     #[cfg(feature = "TbDropletHalf2")]
     TbDropletHalf2,
+    #[cfg(feature = "TbDropletHalf2Filled")]
+    TbDropletHalf2Filled,
     #[cfg(feature = "TbDropletHalfFilled")]
     TbDropletHalfFilled,
     #[cfg(feature = "TbDropletHeart")]
@@ -3772,6 +4058,8 @@ pub enum TbIcon {
     TbDropletUp,
     #[cfg(feature = "TbDropletX")]
     TbDropletX,
+    #[cfg(feature = "TbDroplets")]
+    TbDroplets,
     #[cfg(feature = "TbDualScreen")]
     TbDualScreen,
     #[cfg(feature = "TbEPassport")]
@@ -3842,6 +4130,12 @@ pub enum TbIcon {
     TbError404,
     #[cfg(feature = "TbError404Off")]
     TbError404Off,
+    #[cfg(feature = "TbEscalator")]
+    TbEscalator,
+    #[cfg(feature = "TbEscalatorDown")]
+    TbEscalatorDown,
+    #[cfg(feature = "TbEscalatorUp")]
+    TbEscalatorUp,
     #[cfg(feature = "TbExchange")]
     TbExchange,
     #[cfg(feature = "TbExchangeOff")]
@@ -3876,12 +4170,24 @@ pub enum TbIcon {
     TbExternalLinkOff,
     #[cfg(feature = "TbEye")]
     TbEye,
+    #[cfg(feature = "TbEyeBolt")]
+    TbEyeBolt,
+    #[cfg(feature = "TbEyeCancel")]
+    TbEyeCancel,
     #[cfg(feature = "TbEyeCheck")]
     TbEyeCheck,
     #[cfg(feature = "TbEyeClosed")]
     TbEyeClosed,
+    #[cfg(feature = "TbEyeCode")]
+    TbEyeCode,
     #[cfg(feature = "TbEyeCog")]
     TbEyeCog,
+    #[cfg(feature = "TbEyeDiscount")]
+    TbEyeDiscount,
+    #[cfg(feature = "TbEyeDollar")]
+    TbEyeDollar,
+    #[cfg(feature = "TbEyeDown")]
+    TbEyeDown,
     #[cfg(feature = "TbEyeEdit")]
     TbEyeEdit,
     #[cfg(feature = "TbEyeExclamation")]
@@ -3890,10 +4196,28 @@ pub enum TbIcon {
     TbEyeFilled,
     #[cfg(feature = "TbEyeHeart")]
     TbEyeHeart,
+    #[cfg(feature = "TbEyeMinus")]
+    TbEyeMinus,
     #[cfg(feature = "TbEyeOff")]
     TbEyeOff,
+    #[cfg(feature = "TbEyePause")]
+    TbEyePause,
+    #[cfg(feature = "TbEyePin")]
+    TbEyePin,
+    #[cfg(feature = "TbEyePlus")]
+    TbEyePlus,
+    #[cfg(feature = "TbEyeQuestion")]
+    TbEyeQuestion,
+    #[cfg(feature = "TbEyeSearch")]
+    TbEyeSearch,
+    #[cfg(feature = "TbEyeShare")]
+    TbEyeShare,
+    #[cfg(feature = "TbEyeStar")]
+    TbEyeStar,
     #[cfg(feature = "TbEyeTable")]
     TbEyeTable,
+    #[cfg(feature = "TbEyeUp")]
+    TbEyeUp,
     #[cfg(feature = "TbEyeX")]
     TbEyeX,
     #[cfg(feature = "TbEyeglass")]
@@ -4036,6 +4360,52 @@ pub enum TbIcon {
     TbFileTextAi,
     #[cfg(feature = "TbFileTime")]
     TbFileTime,
+    #[cfg(feature = "TbFileTypeBmp")]
+    TbFileTypeBmp,
+    #[cfg(feature = "TbFileTypeCss")]
+    TbFileTypeCss,
+    #[cfg(feature = "TbFileTypeCsv")]
+    TbFileTypeCsv,
+    #[cfg(feature = "TbFileTypeDoc")]
+    TbFileTypeDoc,
+    #[cfg(feature = "TbFileTypeDocx")]
+    TbFileTypeDocx,
+    #[cfg(feature = "TbFileTypeHtml")]
+    TbFileTypeHtml,
+    #[cfg(feature = "TbFileTypeJpg")]
+    TbFileTypeJpg,
+    #[cfg(feature = "TbFileTypeJs")]
+    TbFileTypeJs,
+    #[cfg(feature = "TbFileTypeJsx")]
+    TbFileTypeJsx,
+    #[cfg(feature = "TbFileTypePdf")]
+    TbFileTypePdf,
+    #[cfg(feature = "TbFileTypePhp")]
+    TbFileTypePhp,
+    #[cfg(feature = "TbFileTypePng")]
+    TbFileTypePng,
+    #[cfg(feature = "TbFileTypePpt")]
+    TbFileTypePpt,
+    #[cfg(feature = "TbFileTypeRs")]
+    TbFileTypeRs,
+    #[cfg(feature = "TbFileTypeSql")]
+    TbFileTypeSql,
+    #[cfg(feature = "TbFileTypeSvg")]
+    TbFileTypeSvg,
+    #[cfg(feature = "TbFileTypeTs")]
+    TbFileTypeTs,
+    #[cfg(feature = "TbFileTypeTsx")]
+    TbFileTypeTsx,
+    #[cfg(feature = "TbFileTypeTxt")]
+    TbFileTypeTxt,
+    #[cfg(feature = "TbFileTypeVue")]
+    TbFileTypeVue,
+    #[cfg(feature = "TbFileTypeXls")]
+    TbFileTypeXls,
+    #[cfg(feature = "TbFileTypeXml")]
+    TbFileTypeXml,
+    #[cfg(feature = "TbFileTypeZip")]
+    TbFileTypeZip,
     #[cfg(feature = "TbFileTypography")]
     TbFileTypography,
     #[cfg(feature = "TbFileUnknown")]
@@ -4056,20 +4426,50 @@ pub enum TbIcon {
     TbFilesOff,
     #[cfg(feature = "TbFilter")]
     TbFilter,
+    #[cfg(feature = "TbFilterBolt")]
+    TbFilterBolt,
+    #[cfg(feature = "TbFilterCancel")]
+    TbFilterCancel,
+    #[cfg(feature = "TbFilterCheck")]
+    TbFilterCheck,
+    #[cfg(feature = "TbFilterCode")]
+    TbFilterCode,
     #[cfg(feature = "TbFilterCog")]
     TbFilterCog,
+    #[cfg(feature = "TbFilterDiscount")]
+    TbFilterDiscount,
     #[cfg(feature = "TbFilterDollar")]
     TbFilterDollar,
+    #[cfg(feature = "TbFilterDown")]
+    TbFilterDown,
     #[cfg(feature = "TbFilterEdit")]
     TbFilterEdit,
+    #[cfg(feature = "TbFilterExclamation")]
+    TbFilterExclamation,
+    #[cfg(feature = "TbFilterFilled")]
+    TbFilterFilled,
+    #[cfg(feature = "TbFilterHeart")]
+    TbFilterHeart,
     #[cfg(feature = "TbFilterMinus")]
     TbFilterMinus,
     #[cfg(feature = "TbFilterOff")]
     TbFilterOff,
+    #[cfg(feature = "TbFilterPause")]
+    TbFilterPause,
+    #[cfg(feature = "TbFilterPin")]
+    TbFilterPin,
     #[cfg(feature = "TbFilterPlus")]
     TbFilterPlus,
+    #[cfg(feature = "TbFilterQuestion")]
+    TbFilterQuestion,
+    #[cfg(feature = "TbFilterSearch")]
+    TbFilterSearch,
+    #[cfg(feature = "TbFilterShare")]
+    TbFilterShare,
     #[cfg(feature = "TbFilterStar")]
     TbFilterStar,
+    #[cfg(feature = "TbFilterUp")]
+    TbFilterUp,
     #[cfg(feature = "TbFilterX")]
     TbFilterX,
     #[cfg(feature = "TbFilters")]
@@ -4078,6 +4478,8 @@ pub enum TbIcon {
     TbFingerprint,
     #[cfg(feature = "TbFingerprintOff")]
     TbFingerprintOff,
+    #[cfg(feature = "TbFireExtinguisher")]
+    TbFireExtinguisher,
     #[cfg(feature = "TbFireHydrant")]
     TbFireHydrant,
     #[cfg(feature = "TbFireHydrantOff")]
@@ -4112,10 +4514,50 @@ pub enum TbIcon {
     TbFlag3,
     #[cfg(feature = "TbFlag3Filled")]
     TbFlag3Filled,
+    #[cfg(feature = "TbFlagBolt")]
+    TbFlagBolt,
+    #[cfg(feature = "TbFlagCancel")]
+    TbFlagCancel,
+    #[cfg(feature = "TbFlagCheck")]
+    TbFlagCheck,
+    #[cfg(feature = "TbFlagCode")]
+    TbFlagCode,
+    #[cfg(feature = "TbFlagCog")]
+    TbFlagCog,
+    #[cfg(feature = "TbFlagDiscount")]
+    TbFlagDiscount,
+    #[cfg(feature = "TbFlagDollar")]
+    TbFlagDollar,
+    #[cfg(feature = "TbFlagDown")]
+    TbFlagDown,
+    #[cfg(feature = "TbFlagExclamation")]
+    TbFlagExclamation,
     #[cfg(feature = "TbFlagFilled")]
     TbFlagFilled,
+    #[cfg(feature = "TbFlagHeart")]
+    TbFlagHeart,
+    #[cfg(feature = "TbFlagMinus")]
+    TbFlagMinus,
     #[cfg(feature = "TbFlagOff")]
     TbFlagOff,
+    #[cfg(feature = "TbFlagPause")]
+    TbFlagPause,
+    #[cfg(feature = "TbFlagPin")]
+    TbFlagPin,
+    #[cfg(feature = "TbFlagPlus")]
+    TbFlagPlus,
+    #[cfg(feature = "TbFlagQuestion")]
+    TbFlagQuestion,
+    #[cfg(feature = "TbFlagSearch")]
+    TbFlagSearch,
+    #[cfg(feature = "TbFlagShare")]
+    TbFlagShare,
+    #[cfg(feature = "TbFlagStar")]
+    TbFlagStar,
+    #[cfg(feature = "TbFlagUp")]
+    TbFlagUp,
+    #[cfg(feature = "TbFlagX")]
+    TbFlagX,
     #[cfg(feature = "TbFlame")]
     TbFlame,
     #[cfg(feature = "TbFlameOff")]
@@ -4188,6 +4630,8 @@ pub enum TbIcon {
     TbFolderMinus,
     #[cfg(feature = "TbFolderOff")]
     TbFolderOff,
+    #[cfg(feature = "TbFolderOpen")]
+    TbFolderOpen,
     #[cfg(feature = "TbFolderPause")]
     TbFolderPause,
     #[cfg(feature = "TbFolderPin")]
@@ -4216,12 +4660,18 @@ pub enum TbIcon {
     TbForbid,
     #[cfg(feature = "TbForbid2")]
     TbForbid2,
+    #[cfg(feature = "TbForbid2Filled")]
+    TbForbid2Filled,
+    #[cfg(feature = "TbForbidFilled")]
+    TbForbidFilled,
     #[cfg(feature = "TbForklift")]
     TbForklift,
     #[cfg(feature = "TbForms")]
     TbForms,
     #[cfg(feature = "TbFountain")]
     TbFountain,
+    #[cfg(feature = "TbFountainFilled")]
+    TbFountainFilled,
     #[cfg(feature = "TbFountainOff")]
     TbFountainOff,
     #[cfg(feature = "TbFrame")]
@@ -4244,8 +4694,16 @@ pub enum TbIcon {
     TbFriends,
     #[cfg(feature = "TbFriendsOff")]
     TbFriendsOff,
+    #[cfg(feature = "TbFrustum")]
+    TbFrustum,
+    #[cfg(feature = "TbFrustumOff")]
+    TbFrustumOff,
+    #[cfg(feature = "TbFrustumPlus")]
+    TbFrustumPlus,
     #[cfg(feature = "TbFunction")]
     TbFunction,
+    #[cfg(feature = "TbFunctionFilled")]
+    TbFunctionFilled,
     #[cfg(feature = "TbFunctionOff")]
     TbFunctionOff,
     #[cfg(feature = "TbGardenCart")]
@@ -4258,6 +4716,8 @@ pub enum TbIcon {
     TbGasStationOff,
     #[cfg(feature = "TbGauge")]
     TbGauge,
+    #[cfg(feature = "TbGaugeFilled")]
+    TbGaugeFilled,
     #[cfg(feature = "TbGaugeOff")]
     TbGaugeOff,
     #[cfg(feature = "TbGavel")]
@@ -4306,6 +4766,8 @@ pub enum TbIcon {
     TbGhost2,
     #[cfg(feature = "TbGhost2Filled")]
     TbGhost2Filled,
+    #[cfg(feature = "TbGhost3")]
+    TbGhost3,
     #[cfg(feature = "TbGhostFilled")]
     TbGhostFilled,
     #[cfg(feature = "TbGhostOff")]
@@ -4316,6 +4778,8 @@ pub enum TbIcon {
     TbGift,
     #[cfg(feature = "TbGiftCard")]
     TbGiftCard,
+    #[cfg(feature = "TbGiftCardFilled")]
+    TbGiftCardFilled,
     #[cfg(feature = "TbGiftOff")]
     TbGiftOff,
     #[cfg(feature = "TbGitBranch")]
@@ -4344,10 +4808,14 @@ pub enum TbIcon {
     TbGlass,
     #[cfg(feature = "TbGlassFull")]
     TbGlassFull,
+    #[cfg(feature = "TbGlassFullFilled")]
+    TbGlassFullFilled,
     #[cfg(feature = "TbGlassOff")]
     TbGlassOff,
     #[cfg(feature = "TbGlobe")]
     TbGlobe,
+    #[cfg(feature = "TbGlobeFilled")]
+    TbGlobeFilled,
     #[cfg(feature = "TbGlobeOff")]
     TbGlobeOff,
     #[cfg(feature = "TbGoGame")]
@@ -4446,6 +4914,10 @@ pub enum TbIcon {
     TbHash,
     #[cfg(feature = "TbHaze")]
     TbHaze,
+    #[cfg(feature = "TbHazeMoon")]
+    TbHazeMoon,
+    #[cfg(feature = "TbHdr")]
+    TbHdr,
     #[cfg(feature = "TbHeading")]
     TbHeading,
     #[cfg(feature = "TbHeadingOff")]
@@ -4464,8 +4936,26 @@ pub enum TbIcon {
     TbHealthRecognition,
     #[cfg(feature = "TbHeart")]
     TbHeart,
+    #[cfg(feature = "TbHeartBolt")]
+    TbHeartBolt,
     #[cfg(feature = "TbHeartBroken")]
     TbHeartBroken,
+    #[cfg(feature = "TbHeartCancel")]
+    TbHeartCancel,
+    #[cfg(feature = "TbHeartCheck")]
+    TbHeartCheck,
+    #[cfg(feature = "TbHeartCode")]
+    TbHeartCode,
+    #[cfg(feature = "TbHeartCog")]
+    TbHeartCog,
+    #[cfg(feature = "TbHeartDiscount")]
+    TbHeartDiscount,
+    #[cfg(feature = "TbHeartDollar")]
+    TbHeartDollar,
+    #[cfg(feature = "TbHeartDown")]
+    TbHeartDown,
+    #[cfg(feature = "TbHeartExclamation")]
+    TbHeartExclamation,
     #[cfg(feature = "TbHeartFilled")]
     TbHeartFilled,
     #[cfg(feature = "TbHeartHandshake")]
@@ -4474,10 +4964,26 @@ pub enum TbIcon {
     TbHeartMinus,
     #[cfg(feature = "TbHeartOff")]
     TbHeartOff,
+    #[cfg(feature = "TbHeartPause")]
+    TbHeartPause,
+    #[cfg(feature = "TbHeartPin")]
+    TbHeartPin,
     #[cfg(feature = "TbHeartPlus")]
     TbHeartPlus,
+    #[cfg(feature = "TbHeartQuestion")]
+    TbHeartQuestion,
     #[cfg(feature = "TbHeartRateMonitor")]
     TbHeartRateMonitor,
+    #[cfg(feature = "TbHeartSearch")]
+    TbHeartSearch,
+    #[cfg(feature = "TbHeartShare")]
+    TbHeartShare,
+    #[cfg(feature = "TbHeartStar")]
+    TbHeartStar,
+    #[cfg(feature = "TbHeartUp")]
+    TbHeartUp,
+    #[cfg(feature = "TbHeartX")]
+    TbHeartX,
     #[cfg(feature = "TbHeartbeat")]
     TbHeartbeat,
     #[cfg(feature = "TbHearts")]
@@ -4522,6 +5028,12 @@ pub enum TbIcon {
     TbHelpTriangle,
     #[cfg(feature = "TbHelpTriangleFilled")]
     TbHelpTriangleFilled,
+    #[cfg(feature = "TbHemisphere")]
+    TbHemisphere,
+    #[cfg(feature = "TbHemisphereOff")]
+    TbHemisphereOff,
+    #[cfg(feature = "TbHemispherePlus")]
+    TbHemispherePlus,
     #[cfg(feature = "TbHexagon")]
     TbHexagon,
     #[cfg(feature = "TbHexagon0Filled")]
@@ -4622,6 +5134,20 @@ pub enum TbIcon {
     TbHexagonNumber9,
     #[cfg(feature = "TbHexagonOff")]
     TbHexagonOff,
+    #[cfg(feature = "TbHexagonPlus")]
+    TbHexagonPlus,
+    #[cfg(feature = "TbHexagonalPrism")]
+    TbHexagonalPrism,
+    #[cfg(feature = "TbHexagonalPrismOff")]
+    TbHexagonalPrismOff,
+    #[cfg(feature = "TbHexagonalPrismPlus")]
+    TbHexagonalPrismPlus,
+    #[cfg(feature = "TbHexagonalPyramid")]
+    TbHexagonalPyramid,
+    #[cfg(feature = "TbHexagonalPyramidOff")]
+    TbHexagonalPyramidOff,
+    #[cfg(feature = "TbHexagonalPyramidPlus")]
+    TbHexagonalPyramidPlus,
     #[cfg(feature = "TbHexagons")]
     TbHexagons,
     #[cfg(feature = "TbHexagonsOff")]
@@ -4704,6 +5230,8 @@ pub enum TbIcon {
     TbHomeUp,
     #[cfg(feature = "TbHomeX")]
     TbHomeX,
+    #[cfg(feature = "TbHorse")]
+    TbHorse,
     #[cfg(feature = "TbHorseToy")]
     TbHorseToy,
     #[cfg(feature = "TbHotelService")]
@@ -4834,8 +5362,16 @@ pub enum TbIcon {
     TbInnerShadowTopRight,
     #[cfg(feature = "TbInnerShadowTopRightFilled")]
     TbInnerShadowTopRightFilled,
+    #[cfg(feature = "TbInputAi")]
+    TbInputAi,
+    #[cfg(feature = "TbInputCheck")]
+    TbInputCheck,
     #[cfg(feature = "TbInputSearch")]
     TbInputSearch,
+    #[cfg(feature = "TbInputX")]
+    TbInputX,
+    #[cfg(feature = "TbIroning")]
+    TbIroning,
     #[cfg(feature = "TbIroning1")]
     TbIroning1,
     #[cfg(feature = "TbIroning2")]
@@ -4848,6 +5384,12 @@ pub enum TbIcon {
     TbIroningSteam,
     #[cfg(feature = "TbIroningSteamOff")]
     TbIroningSteamOff,
+    #[cfg(feature = "TbIrregularPolyhedron")]
+    TbIrregularPolyhedron,
+    #[cfg(feature = "TbIrregularPolyhedronOff")]
+    TbIrregularPolyhedronOff,
+    #[cfg(feature = "TbIrregularPolyhedronPlus")]
+    TbIrregularPolyhedronPlus,
     #[cfg(feature = "TbItalic")]
     TbItalic,
     #[cfg(feature = "TbJacket")]
@@ -4886,16 +5428,28 @@ pub enum TbIcon {
     TbKeyframe,
     #[cfg(feature = "TbKeyframeAlignCenter")]
     TbKeyframeAlignCenter,
+    #[cfg(feature = "TbKeyframeAlignCenterFilled")]
+    TbKeyframeAlignCenterFilled,
     #[cfg(feature = "TbKeyframeAlignHorizontal")]
     TbKeyframeAlignHorizontal,
+    #[cfg(feature = "TbKeyframeAlignHorizontalFilled")]
+    TbKeyframeAlignHorizontalFilled,
     #[cfg(feature = "TbKeyframeAlignVertical")]
     TbKeyframeAlignVertical,
+    #[cfg(feature = "TbKeyframeAlignVerticalFilled")]
+    TbKeyframeAlignVerticalFilled,
+    #[cfg(feature = "TbKeyframeFilled")]
+    TbKeyframeFilled,
     #[cfg(feature = "TbKeyframes")]
     TbKeyframes,
+    #[cfg(feature = "TbKeyframesFilled")]
+    TbKeyframesFilled,
     #[cfg(feature = "TbLadder")]
     TbLadder,
     #[cfg(feature = "TbLadderOff")]
     TbLadderOff,
+    #[cfg(feature = "TbLadle")]
+    TbLadle,
     #[cfg(feature = "TbLambda")]
     TbLambda,
     #[cfg(feature = "TbLamp")]
@@ -4904,6 +5458,8 @@ pub enum TbIcon {
     TbLamp2,
     #[cfg(feature = "TbLampOff")]
     TbLampOff,
+    #[cfg(feature = "TbLane")]
+    TbLane,
     #[cfg(feature = "TbLanguage")]
     TbLanguage,
     #[cfg(feature = "TbLanguageHiragana")]
@@ -4956,8 +5512,14 @@ pub enum TbIcon {
     TbLayoutBottombar,
     #[cfg(feature = "TbLayoutBottombarCollapse")]
     TbLayoutBottombarCollapse,
+    #[cfg(feature = "TbLayoutBottombarCollapseFilled")]
+    TbLayoutBottombarCollapseFilled,
     #[cfg(feature = "TbLayoutBottombarExpand")]
     TbLayoutBottombarExpand,
+    #[cfg(feature = "TbLayoutBottombarExpandFilled")]
+    TbLayoutBottombarExpandFilled,
+    #[cfg(feature = "TbLayoutBottombarFilled")]
+    TbLayoutBottombarFilled,
     #[cfg(feature = "TbLayoutCards")]
     TbLayoutCards,
     #[cfg(feature = "TbLayoutCollage")]
@@ -4974,6 +5536,8 @@ pub enum TbIcon {
     TbLayoutGrid,
     #[cfg(feature = "TbLayoutGridAdd")]
     TbLayoutGridAdd,
+    #[cfg(feature = "TbLayoutGridRemove")]
+    TbLayoutGridRemove,
     #[cfg(feature = "TbLayoutKanban")]
     TbLayoutKanban,
     #[cfg(feature = "TbLayoutList")]
@@ -4982,8 +5546,14 @@ pub enum TbIcon {
     TbLayoutNavbar,
     #[cfg(feature = "TbLayoutNavbarCollapse")]
     TbLayoutNavbarCollapse,
+    #[cfg(feature = "TbLayoutNavbarCollapseFilled")]
+    TbLayoutNavbarCollapseFilled,
     #[cfg(feature = "TbLayoutNavbarExpand")]
     TbLayoutNavbarExpand,
+    #[cfg(feature = "TbLayoutNavbarExpandFilled")]
+    TbLayoutNavbarExpandFilled,
+    #[cfg(feature = "TbLayoutNavbarFilled")]
+    TbLayoutNavbarFilled,
     #[cfg(feature = "TbLayoutOff")]
     TbLayoutOff,
     #[cfg(feature = "TbLayoutRows")]
@@ -4992,14 +5562,22 @@ pub enum TbIcon {
     TbLayoutSidebar,
     #[cfg(feature = "TbLayoutSidebarLeftCollapse")]
     TbLayoutSidebarLeftCollapse,
+    #[cfg(feature = "TbLayoutSidebarLeftCollapseFilled")]
+    TbLayoutSidebarLeftCollapseFilled,
     #[cfg(feature = "TbLayoutSidebarLeftExpand")]
     TbLayoutSidebarLeftExpand,
+    #[cfg(feature = "TbLayoutSidebarLeftExpandFilled")]
+    TbLayoutSidebarLeftExpandFilled,
     #[cfg(feature = "TbLayoutSidebarRight")]
     TbLayoutSidebarRight,
     #[cfg(feature = "TbLayoutSidebarRightCollapse")]
     TbLayoutSidebarRightCollapse,
+    #[cfg(feature = "TbLayoutSidebarRightCollapseFilled")]
+    TbLayoutSidebarRightCollapseFilled,
     #[cfg(feature = "TbLayoutSidebarRightExpand")]
     TbLayoutSidebarRightExpand,
+    #[cfg(feature = "TbLayoutSidebarRightExpandFilled")]
+    TbLayoutSidebarRightExpandFilled,
     #[cfg(feature = "TbLeaf")]
     TbLeaf,
     #[cfg(feature = "TbLeafOff")]
@@ -5102,10 +5680,14 @@ pub enum TbIcon {
     TbListCheck,
     #[cfg(feature = "TbListDetails")]
     TbListDetails,
+    #[cfg(feature = "TbListLetters")]
+    TbListLetters,
     #[cfg(feature = "TbListNumbers")]
     TbListNumbers,
     #[cfg(feature = "TbListSearch")]
     TbListSearch,
+    #[cfg(feature = "TbListTree")]
+    TbListTree,
     #[cfg(feature = "TbLivePhoto")]
     TbLivePhoto,
     #[cfg(feature = "TbLivePhotoOff")]
@@ -5124,12 +5706,52 @@ pub enum TbIcon {
     TbLoaderQuarter,
     #[cfg(feature = "TbLocation")]
     TbLocation,
+    #[cfg(feature = "TbLocationBolt")]
+    TbLocationBolt,
     #[cfg(feature = "TbLocationBroken")]
     TbLocationBroken,
+    #[cfg(feature = "TbLocationCancel")]
+    TbLocationCancel,
+    #[cfg(feature = "TbLocationCheck")]
+    TbLocationCheck,
+    #[cfg(feature = "TbLocationCode")]
+    TbLocationCode,
+    #[cfg(feature = "TbLocationCog")]
+    TbLocationCog,
+    #[cfg(feature = "TbLocationDiscount")]
+    TbLocationDiscount,
+    #[cfg(feature = "TbLocationDollar")]
+    TbLocationDollar,
+    #[cfg(feature = "TbLocationDown")]
+    TbLocationDown,
+    #[cfg(feature = "TbLocationExclamation")]
+    TbLocationExclamation,
     #[cfg(feature = "TbLocationFilled")]
     TbLocationFilled,
+    #[cfg(feature = "TbLocationHeart")]
+    TbLocationHeart,
+    #[cfg(feature = "TbLocationMinus")]
+    TbLocationMinus,
     #[cfg(feature = "TbLocationOff")]
     TbLocationOff,
+    #[cfg(feature = "TbLocationPause")]
+    TbLocationPause,
+    #[cfg(feature = "TbLocationPin")]
+    TbLocationPin,
+    #[cfg(feature = "TbLocationPlus")]
+    TbLocationPlus,
+    #[cfg(feature = "TbLocationQuestion")]
+    TbLocationQuestion,
+    #[cfg(feature = "TbLocationSearch")]
+    TbLocationSearch,
+    #[cfg(feature = "TbLocationShare")]
+    TbLocationShare,
+    #[cfg(feature = "TbLocationStar")]
+    TbLocationStar,
+    #[cfg(feature = "TbLocationUp")]
+    TbLocationUp,
+    #[cfg(feature = "TbLocationX")]
+    TbLocationX,
     #[cfg(feature = "TbLock")]
     TbLock,
     #[cfg(feature = "TbLockAccess")]
@@ -5204,8 +5826,12 @@ pub enum TbIcon {
     TbLogicXor,
     #[cfg(feature = "TbLogin")]
     TbLogin,
+    #[cfg(feature = "TbLogin2")]
+    TbLogin2,
     #[cfg(feature = "TbLogout")]
     TbLogout,
+    #[cfg(feature = "TbLogout2")]
+    TbLogout2,
     #[cfg(feature = "TbLollipop")]
     TbLollipop,
     #[cfg(feature = "TbLollipopOff")]
@@ -5292,10 +5918,40 @@ pub enum TbIcon {
     TbMap,
     #[cfg(feature = "TbMap2")]
     TbMap2,
+    #[cfg(feature = "TbMapBolt")]
+    TbMapBolt,
+    #[cfg(feature = "TbMapCancel")]
+    TbMapCancel,
+    #[cfg(feature = "TbMapCheck")]
+    TbMapCheck,
+    #[cfg(feature = "TbMapCode")]
+    TbMapCode,
+    #[cfg(feature = "TbMapCog")]
+    TbMapCog,
+    #[cfg(feature = "TbMapDiscount")]
+    TbMapDiscount,
+    #[cfg(feature = "TbMapDollar")]
+    TbMapDollar,
+    #[cfg(feature = "TbMapDown")]
+    TbMapDown,
+    #[cfg(feature = "TbMapEast")]
+    TbMapEast,
+    #[cfg(feature = "TbMapExclamation")]
+    TbMapExclamation,
+    #[cfg(feature = "TbMapHeart")]
+    TbMapHeart,
+    #[cfg(feature = "TbMapMinus")]
+    TbMapMinus,
+    #[cfg(feature = "TbMapNorth")]
+    TbMapNorth,
     #[cfg(feature = "TbMapOff")]
     TbMapOff,
+    #[cfg(feature = "TbMapPause")]
+    TbMapPause,
     #[cfg(feature = "TbMapPin")]
     TbMapPin,
+    #[cfg(feature = "TbMapPin2")]
+    TbMapPin2,
     #[cfg(feature = "TbMapPinBolt")]
     TbMapPinBolt,
     #[cfg(feature = "TbMapPinCancel")]
@@ -5340,8 +5996,26 @@ pub enum TbIcon {
     TbMapPinX,
     #[cfg(feature = "TbMapPins")]
     TbMapPins,
+    #[cfg(feature = "TbMapPlus")]
+    TbMapPlus,
+    #[cfg(feature = "TbMapQuestion")]
+    TbMapQuestion,
+    #[cfg(feature = "TbMapRoute")]
+    TbMapRoute,
     #[cfg(feature = "TbMapSearch")]
     TbMapSearch,
+    #[cfg(feature = "TbMapShare")]
+    TbMapShare,
+    #[cfg(feature = "TbMapSouth")]
+    TbMapSouth,
+    #[cfg(feature = "TbMapStar")]
+    TbMapStar,
+    #[cfg(feature = "TbMapUp")]
+    TbMapUp,
+    #[cfg(feature = "TbMapWest")]
+    TbMapWest,
+    #[cfg(feature = "TbMapX")]
+    TbMapX,
     #[cfg(feature = "TbMarkdown")]
     TbMarkdown,
     #[cfg(feature = "TbMarkdownOff")]
@@ -5442,6 +6116,8 @@ pub enum TbIcon {
     TbMedal2,
     #[cfg(feature = "TbMedicalCross")]
     TbMedicalCross,
+    #[cfg(feature = "TbMedicalCrossCircle")]
+    TbMedicalCrossCircle,
     #[cfg(feature = "TbMedicalCrossFilled")]
     TbMedicalCrossFilled,
     #[cfg(feature = "TbMedicalCrossOff")]
@@ -5450,12 +6126,16 @@ pub enum TbIcon {
     TbMedicineSyrup,
     #[cfg(feature = "TbMeeple")]
     TbMeeple,
+    #[cfg(feature = "TbMelon")]
+    TbMelon,
     #[cfg(feature = "TbMenorah")]
     TbMenorah,
     #[cfg(feature = "TbMenu")]
     TbMenu,
     #[cfg(feature = "TbMenu2")]
     TbMenu2,
+    #[cfg(feature = "TbMenuDeep")]
+    TbMenuDeep,
     #[cfg(feature = "TbMenuOrder")]
     TbMenuOrder,
     #[cfg(feature = "TbMessage")]
@@ -5606,6 +6286,12 @@ pub enum TbIcon {
     TbMeteor,
     #[cfg(feature = "TbMeteorOff")]
     TbMeteorOff,
+    #[cfg(feature = "TbMichelinBibGourmand")]
+    TbMichelinBibGourmand,
+    #[cfg(feature = "TbMichelinStar")]
+    TbMichelinStar,
+    #[cfg(feature = "TbMichelinStarGreen")]
+    TbMichelinStarGreen,
     #[cfg(feature = "TbMickey")]
     TbMickey,
     #[cfg(feature = "TbMickeyFilled")]
@@ -5782,6 +6468,8 @@ pub enum TbIcon {
     TbMouse,
     #[cfg(feature = "TbMouse2")]
     TbMouse2,
+    #[cfg(feature = "TbMouseFilled")]
+    TbMouseFilled,
     #[cfg(feature = "TbMouseOff")]
     TbMouseOff,
     #[cfg(feature = "TbMoustache")]
@@ -5810,14 +6498,96 @@ pub enum TbIcon {
     TbMushroomOff,
     #[cfg(feature = "TbMusic")]
     TbMusic,
+    #[cfg(feature = "TbMusicBolt")]
+    TbMusicBolt,
+    #[cfg(feature = "TbMusicCancel")]
+    TbMusicCancel,
+    #[cfg(feature = "TbMusicCheck")]
+    TbMusicCheck,
+    #[cfg(feature = "TbMusicCode")]
+    TbMusicCode,
+    #[cfg(feature = "TbMusicCog")]
+    TbMusicCog,
+    #[cfg(feature = "TbMusicDiscount")]
+    TbMusicDiscount,
+    #[cfg(feature = "TbMusicDollar")]
+    TbMusicDollar,
+    #[cfg(feature = "TbMusicDown")]
+    TbMusicDown,
+    #[cfg(feature = "TbMusicExclamation")]
+    TbMusicExclamation,
+    #[cfg(feature = "TbMusicHeart")]
+    TbMusicHeart,
+    #[cfg(feature = "TbMusicMinus")]
+    TbMusicMinus,
     #[cfg(feature = "TbMusicOff")]
     TbMusicOff,
+    #[cfg(feature = "TbMusicPause")]
+    TbMusicPause,
+    #[cfg(feature = "TbMusicPin")]
+    TbMusicPin,
+    #[cfg(feature = "TbMusicPlus")]
+    TbMusicPlus,
+    #[cfg(feature = "TbMusicQuestion")]
+    TbMusicQuestion,
+    #[cfg(feature = "TbMusicSearch")]
+    TbMusicSearch,
+    #[cfg(feature = "TbMusicShare")]
+    TbMusicShare,
+    #[cfg(feature = "TbMusicStar")]
+    TbMusicStar,
+    #[cfg(feature = "TbMusicUp")]
+    TbMusicUp,
+    #[cfg(feature = "TbMusicX")]
+    TbMusicX,
     #[cfg(feature = "TbNavigation")]
     TbNavigation,
+    #[cfg(feature = "TbNavigationBolt")]
+    TbNavigationBolt,
+    #[cfg(feature = "TbNavigationCancel")]
+    TbNavigationCancel,
+    #[cfg(feature = "TbNavigationCheck")]
+    TbNavigationCheck,
+    #[cfg(feature = "TbNavigationCode")]
+    TbNavigationCode,
+    #[cfg(feature = "TbNavigationCog")]
+    TbNavigationCog,
+    #[cfg(feature = "TbNavigationDiscount")]
+    TbNavigationDiscount,
+    #[cfg(feature = "TbNavigationDollar")]
+    TbNavigationDollar,
+    #[cfg(feature = "TbNavigationDown")]
+    TbNavigationDown,
+    #[cfg(feature = "TbNavigationExclamation")]
+    TbNavigationExclamation,
     #[cfg(feature = "TbNavigationFilled")]
     TbNavigationFilled,
+    #[cfg(feature = "TbNavigationHeart")]
+    TbNavigationHeart,
+    #[cfg(feature = "TbNavigationMinus")]
+    TbNavigationMinus,
+    #[cfg(feature = "TbNavigationNorth")]
+    TbNavigationNorth,
     #[cfg(feature = "TbNavigationOff")]
     TbNavigationOff,
+    #[cfg(feature = "TbNavigationPause")]
+    TbNavigationPause,
+    #[cfg(feature = "TbNavigationPin")]
+    TbNavigationPin,
+    #[cfg(feature = "TbNavigationPlus")]
+    TbNavigationPlus,
+    #[cfg(feature = "TbNavigationQuestion")]
+    TbNavigationQuestion,
+    #[cfg(feature = "TbNavigationSearch")]
+    TbNavigationSearch,
+    #[cfg(feature = "TbNavigationShare")]
+    TbNavigationShare,
+    #[cfg(feature = "TbNavigationStar")]
+    TbNavigationStar,
+    #[cfg(feature = "TbNavigationUp")]
+    TbNavigationUp,
+    #[cfg(feature = "TbNavigationX")]
+    TbNavigationX,
     #[cfg(feature = "TbNeedle")]
     TbNeedle,
     #[cfg(feature = "TbNeedleThread")]
@@ -5886,12 +6656,20 @@ pub enum TbIcon {
     TbNumbers,
     #[cfg(feature = "TbNurse")]
     TbNurse,
+    #[cfg(feature = "TbNut")]
+    TbNut,
     #[cfg(feature = "TbOctagon")]
     TbOctagon,
     #[cfg(feature = "TbOctagonFilled")]
     TbOctagonFilled,
     #[cfg(feature = "TbOctagonOff")]
     TbOctagonOff,
+    #[cfg(feature = "TbOctahedron")]
+    TbOctahedron,
+    #[cfg(feature = "TbOctahedronOff")]
+    TbOctahedronOff,
+    #[cfg(feature = "TbOctahedronPlus")]
+    TbOctahedronPlus,
     #[cfg(feature = "TbOld")]
     TbOld,
     #[cfg(feature = "TbOlympics")]
@@ -5968,6 +6746,12 @@ pub enum TbIcon {
     TbParkingOff,
     #[cfg(feature = "TbPassword")]
     TbPassword,
+    #[cfg(feature = "TbPasswordFingerprint")]
+    TbPasswordFingerprint,
+    #[cfg(feature = "TbPasswordMobilePhone")]
+    TbPasswordMobilePhone,
+    #[cfg(feature = "TbPasswordUser")]
+    TbPasswordUser,
     #[cfg(feature = "TbPaw")]
     TbPaw,
     #[cfg(feature = "TbPawFilled")]
@@ -5980,12 +6764,48 @@ pub enum TbIcon {
     TbPeace,
     #[cfg(feature = "TbPencil")]
     TbPencil,
+    #[cfg(feature = "TbPencilBolt")]
+    TbPencilBolt,
+    #[cfg(feature = "TbPencilCancel")]
+    TbPencilCancel,
+    #[cfg(feature = "TbPencilCheck")]
+    TbPencilCheck,
+    #[cfg(feature = "TbPencilCode")]
+    TbPencilCode,
+    #[cfg(feature = "TbPencilCog")]
+    TbPencilCog,
+    #[cfg(feature = "TbPencilDiscount")]
+    TbPencilDiscount,
+    #[cfg(feature = "TbPencilDollar")]
+    TbPencilDollar,
+    #[cfg(feature = "TbPencilDown")]
+    TbPencilDown,
+    #[cfg(feature = "TbPencilExclamation")]
+    TbPencilExclamation,
+    #[cfg(feature = "TbPencilHeart")]
+    TbPencilHeart,
     #[cfg(feature = "TbPencilMinus")]
     TbPencilMinus,
     #[cfg(feature = "TbPencilOff")]
     TbPencilOff,
+    #[cfg(feature = "TbPencilPause")]
+    TbPencilPause,
+    #[cfg(feature = "TbPencilPin")]
+    TbPencilPin,
     #[cfg(feature = "TbPencilPlus")]
     TbPencilPlus,
+    #[cfg(feature = "TbPencilQuestion")]
+    TbPencilQuestion,
+    #[cfg(feature = "TbPencilSearch")]
+    TbPencilSearch,
+    #[cfg(feature = "TbPencilShare")]
+    TbPencilShare,
+    #[cfg(feature = "TbPencilStar")]
+    TbPencilStar,
+    #[cfg(feature = "TbPencilUp")]
+    TbPencilUp,
+    #[cfg(feature = "TbPencilX")]
+    TbPencilX,
     #[cfg(feature = "TbPennant")]
     TbPennant,
     #[cfg(feature = "TbPennant2")]
@@ -6000,8 +6820,32 @@ pub enum TbIcon {
     TbPentagon,
     #[cfg(feature = "TbPentagonFilled")]
     TbPentagonFilled,
+    #[cfg(feature = "TbPentagonNumber0")]
+    TbPentagonNumber0,
+    #[cfg(feature = "TbPentagonNumber1")]
+    TbPentagonNumber1,
+    #[cfg(feature = "TbPentagonNumber2")]
+    TbPentagonNumber2,
+    #[cfg(feature = "TbPentagonNumber3")]
+    TbPentagonNumber3,
+    #[cfg(feature = "TbPentagonNumber4")]
+    TbPentagonNumber4,
+    #[cfg(feature = "TbPentagonNumber5")]
+    TbPentagonNumber5,
+    #[cfg(feature = "TbPentagonNumber6")]
+    TbPentagonNumber6,
+    #[cfg(feature = "TbPentagonNumber7")]
+    TbPentagonNumber7,
+    #[cfg(feature = "TbPentagonNumber8")]
+    TbPentagonNumber8,
+    #[cfg(feature = "TbPentagonNumber9")]
+    TbPentagonNumber9,
     #[cfg(feature = "TbPentagonOff")]
     TbPentagonOff,
+    #[cfg(feature = "TbPentagonPlus")]
+    TbPentagonPlus,
+    #[cfg(feature = "TbPentagonX")]
+    TbPentagonX,
     #[cfg(feature = "TbPentagram")]
     TbPentagram,
     #[cfg(feature = "TbPepper")]
@@ -6048,6 +6892,12 @@ pub enum TbIcon {
     TbPhotoCancel,
     #[cfg(feature = "TbPhotoCheck")]
     TbPhotoCheck,
+    #[cfg(feature = "TbPhotoCircle")]
+    TbPhotoCircle,
+    #[cfg(feature = "TbPhotoCircleMinus")]
+    TbPhotoCircleMinus,
+    #[cfg(feature = "TbPhotoCirclePlus")]
+    TbPhotoCirclePlus,
     #[cfg(feature = "TbPhotoCode")]
     TbPhotoCode,
     #[cfg(feature = "TbPhotoCog")]
@@ -6064,12 +6914,16 @@ pub enum TbIcon {
     TbPhotoFilled,
     #[cfg(feature = "TbPhotoHeart")]
     TbPhotoHeart,
+    #[cfg(feature = "TbPhotoHexagon")]
+    TbPhotoHexagon,
     #[cfg(feature = "TbPhotoMinus")]
     TbPhotoMinus,
     #[cfg(feature = "TbPhotoOff")]
     TbPhotoOff,
     #[cfg(feature = "TbPhotoPause")]
     TbPhotoPause,
+    #[cfg(feature = "TbPhotoPentagon")]
+    TbPhotoPentagon,
     #[cfg(feature = "TbPhotoPin")]
     TbPhotoPin,
     #[cfg(feature = "TbPhotoPlus")]
@@ -6088,6 +6942,8 @@ pub enum TbIcon {
     TbPhotoShare,
     #[cfg(feature = "TbPhotoShield")]
     TbPhotoShield,
+    #[cfg(feature = "TbPhotoSquareRounded")]
+    TbPhotoSquareRounded,
     #[cfg(feature = "TbPhotoStar")]
     TbPhotoStar,
     #[cfg(feature = "TbPhotoUp")]
@@ -6096,6 +6952,10 @@ pub enum TbIcon {
     TbPhotoX,
     #[cfg(feature = "TbPhysotherapist")]
     TbPhysotherapist,
+    #[cfg(feature = "TbPiano")]
+    TbPiano,
+    #[cfg(feature = "TbPick")]
+    TbPick,
     #[cfg(feature = "TbPictureInPicture")]
     TbPictureInPicture,
     #[cfg(feature = "TbPictureInPictureOff")]
@@ -6270,6 +7130,8 @@ pub enum TbIcon {
     TbPointerDown,
     #[cfg(feature = "TbPointerExclamation")]
     TbPointerExclamation,
+    #[cfg(feature = "TbPointerFilled")]
+    TbPointerFilled,
     #[cfg(feature = "TbPointerHeart")]
     TbPointerHeart,
     #[cfg(feature = "TbPointerMinus")]
@@ -6332,6 +7194,12 @@ pub enum TbIcon {
     TbPrinter,
     #[cfg(feature = "TbPrinterOff")]
     TbPrinterOff,
+    #[cfg(feature = "TbPrism")]
+    TbPrism,
+    #[cfg(feature = "TbPrismOff")]
+    TbPrismOff,
+    #[cfg(feature = "TbPrismPlus")]
+    TbPrismPlus,
     #[cfg(feature = "TbPrison")]
     TbPrison,
     #[cfg(feature = "TbProgress")]
@@ -6368,6 +7236,8 @@ pub enum TbIcon {
     TbPyramid,
     #[cfg(feature = "TbPyramidOff")]
     TbPyramidOff,
+    #[cfg(feature = "TbPyramidPlus")]
+    TbPyramidPlus,
     #[cfg(feature = "TbQrcode")]
     TbQrcode,
     #[cfg(feature = "TbQrcodeOff")]
@@ -6378,6 +7248,8 @@ pub enum TbIcon {
     TbQuote,
     #[cfg(feature = "TbQuoteOff")]
     TbQuoteOff,
+    #[cfg(feature = "TbQuotes")]
+    TbQuotes,
     #[cfg(feature = "TbRadar")]
     TbRadar,
     #[cfg(feature = "TbRadar2")]
@@ -6440,10 +7312,20 @@ pub enum TbIcon {
     TbRectangle,
     #[cfg(feature = "TbRectangleFilled")]
     TbRectangleFilled,
+    #[cfg(feature = "TbRectangleRoundedBottom")]
+    TbRectangleRoundedBottom,
+    #[cfg(feature = "TbRectangleRoundedTop")]
+    TbRectangleRoundedTop,
     #[cfg(feature = "TbRectangleVertical")]
     TbRectangleVertical,
     #[cfg(feature = "TbRectangleVerticalFilled")]
     TbRectangleVerticalFilled,
+    #[cfg(feature = "TbRectangularPrism")]
+    TbRectangularPrism,
+    #[cfg(feature = "TbRectangularPrismOff")]
+    TbRectangularPrismOff,
+    #[cfg(feature = "TbRectangularPrismPlus")]
+    TbRectangularPrismPlus,
     #[cfg(feature = "TbRecycle")]
     TbRecycle,
     #[cfg(feature = "TbRecycleOff")]
@@ -6470,6 +7352,8 @@ pub enum TbIcon {
     TbRelationOneToOne,
     #[cfg(feature = "TbReload")]
     TbReload,
+    #[cfg(feature = "TbReorder")]
+    TbReorder,
     #[cfg(feature = "TbRepeat")]
     TbRepeat,
     #[cfg(feature = "TbRepeatOff")]
@@ -6498,6 +7382,40 @@ pub enum TbIcon {
     TbReservedLine,
     #[cfg(feature = "TbResize")]
     TbResize,
+    #[cfg(feature = "TbRestore")]
+    TbRestore,
+    #[cfg(feature = "TbRewindBackward10")]
+    TbRewindBackward10,
+    #[cfg(feature = "TbRewindBackward15")]
+    TbRewindBackward15,
+    #[cfg(feature = "TbRewindBackward20")]
+    TbRewindBackward20,
+    #[cfg(feature = "TbRewindBackward30")]
+    TbRewindBackward30,
+    #[cfg(feature = "TbRewindBackward40")]
+    TbRewindBackward40,
+    #[cfg(feature = "TbRewindBackward5")]
+    TbRewindBackward5,
+    #[cfg(feature = "TbRewindBackward50")]
+    TbRewindBackward50,
+    #[cfg(feature = "TbRewindBackward60")]
+    TbRewindBackward60,
+    #[cfg(feature = "TbRewindForward10")]
+    TbRewindForward10,
+    #[cfg(feature = "TbRewindForward15")]
+    TbRewindForward15,
+    #[cfg(feature = "TbRewindForward20")]
+    TbRewindForward20,
+    #[cfg(feature = "TbRewindForward30")]
+    TbRewindForward30,
+    #[cfg(feature = "TbRewindForward40")]
+    TbRewindForward40,
+    #[cfg(feature = "TbRewindForward5")]
+    TbRewindForward5,
+    #[cfg(feature = "TbRewindForward50")]
+    TbRewindForward50,
+    #[cfg(feature = "TbRewindForward60")]
+    TbRewindForward60,
     #[cfg(feature = "TbRibbonHealth")]
     TbRibbonHealth,
     #[cfg(feature = "TbRings")]
@@ -6578,6 +7496,8 @@ pub enum TbIcon {
     TbRowInsertBottom,
     #[cfg(feature = "TbRowInsertTop")]
     TbRowInsertTop,
+    #[cfg(feature = "TbRowRemove")]
+    TbRowRemove,
     #[cfg(feature = "TbRss")]
     TbRss,
     #[cfg(feature = "TbRubberStamp")]
@@ -6868,14 +7788,68 @@ pub enum TbIcon {
     TbShoeOff,
     #[cfg(feature = "TbShoppingBag")]
     TbShoppingBag,
+    #[cfg(feature = "TbShoppingBagCheck")]
+    TbShoppingBagCheck,
+    #[cfg(feature = "TbShoppingBagDiscount")]
+    TbShoppingBagDiscount,
+    #[cfg(feature = "TbShoppingBagEdit")]
+    TbShoppingBagEdit,
+    #[cfg(feature = "TbShoppingBagExclamation")]
+    TbShoppingBagExclamation,
+    #[cfg(feature = "TbShoppingBagMinus")]
+    TbShoppingBagMinus,
+    #[cfg(feature = "TbShoppingBagPlus")]
+    TbShoppingBagPlus,
+    #[cfg(feature = "TbShoppingBagSearch")]
+    TbShoppingBagSearch,
+    #[cfg(feature = "TbShoppingBagX")]
+    TbShoppingBagX,
     #[cfg(feature = "TbShoppingCart")]
     TbShoppingCart,
+    #[cfg(feature = "TbShoppingCartBolt")]
+    TbShoppingCartBolt,
+    #[cfg(feature = "TbShoppingCartCancel")]
+    TbShoppingCartCancel,
+    #[cfg(feature = "TbShoppingCartCheck")]
+    TbShoppingCartCheck,
+    #[cfg(feature = "TbShoppingCartCode")]
+    TbShoppingCartCode,
+    #[cfg(feature = "TbShoppingCartCog")]
+    TbShoppingCartCog,
+    #[cfg(feature = "TbShoppingCartCopy")]
+    TbShoppingCartCopy,
     #[cfg(feature = "TbShoppingCartDiscount")]
     TbShoppingCartDiscount,
+    #[cfg(feature = "TbShoppingCartDollar")]
+    TbShoppingCartDollar,
+    #[cfg(feature = "TbShoppingCartDown")]
+    TbShoppingCartDown,
+    #[cfg(feature = "TbShoppingCartExclamation")]
+    TbShoppingCartExclamation,
+    #[cfg(feature = "TbShoppingCartFilled")]
+    TbShoppingCartFilled,
+    #[cfg(feature = "TbShoppingCartHeart")]
+    TbShoppingCartHeart,
+    #[cfg(feature = "TbShoppingCartMinus")]
+    TbShoppingCartMinus,
     #[cfg(feature = "TbShoppingCartOff")]
     TbShoppingCartOff,
+    #[cfg(feature = "TbShoppingCartPause")]
+    TbShoppingCartPause,
+    #[cfg(feature = "TbShoppingCartPin")]
+    TbShoppingCartPin,
     #[cfg(feature = "TbShoppingCartPlus")]
     TbShoppingCartPlus,
+    #[cfg(feature = "TbShoppingCartQuestion")]
+    TbShoppingCartQuestion,
+    #[cfg(feature = "TbShoppingCartSearch")]
+    TbShoppingCartSearch,
+    #[cfg(feature = "TbShoppingCartShare")]
+    TbShoppingCartShare,
+    #[cfg(feature = "TbShoppingCartStar")]
+    TbShoppingCartStar,
+    #[cfg(feature = "TbShoppingCartUp")]
+    TbShoppingCartUp,
     #[cfg(feature = "TbShoppingCartX")]
     TbShoppingCartX,
     #[cfg(feature = "TbShovel")]
@@ -6924,6 +7898,8 @@ pub enum TbIcon {
     TbSkateboard,
     #[cfg(feature = "TbSkateboardOff")]
     TbSkateboardOff,
+    #[cfg(feature = "TbSkateboarding")]
+    TbSkateboarding,
     #[cfg(feature = "TbSkull")]
     TbSkull,
     #[cfg(feature = "TbSlash")]
@@ -7016,6 +7992,12 @@ pub enum TbIcon {
     TbSpeakerphone,
     #[cfg(feature = "TbSpeedboat")]
     TbSpeedboat,
+    #[cfg(feature = "TbSphere")]
+    TbSphere,
+    #[cfg(feature = "TbSphereOff")]
+    TbSphereOff,
+    #[cfg(feature = "TbSpherePlus")]
+    TbSpherePlus,
     #[cfg(feature = "TbSpider")]
     TbSpider,
     #[cfg(feature = "TbSpiral")]
@@ -7056,36 +8038,64 @@ pub enum TbIcon {
     TbSquare9Filled,
     #[cfg(feature = "TbSquareArrowDown")]
     TbSquareArrowDown,
+    #[cfg(feature = "TbSquareArrowDownFilled")]
+    TbSquareArrowDownFilled,
     #[cfg(feature = "TbSquareArrowLeft")]
     TbSquareArrowLeft,
+    #[cfg(feature = "TbSquareArrowLeftFilled")]
+    TbSquareArrowLeftFilled,
     #[cfg(feature = "TbSquareArrowRight")]
     TbSquareArrowRight,
+    #[cfg(feature = "TbSquareArrowRightFilled")]
+    TbSquareArrowRightFilled,
     #[cfg(feature = "TbSquareArrowUp")]
     TbSquareArrowUp,
+    #[cfg(feature = "TbSquareArrowUpFilled")]
+    TbSquareArrowUpFilled,
     #[cfg(feature = "TbSquareAsterisk")]
     TbSquareAsterisk,
+    #[cfg(feature = "TbSquareAsteriskFilled")]
+    TbSquareAsteriskFilled,
     #[cfg(feature = "TbSquareCheck")]
     TbSquareCheck,
     #[cfg(feature = "TbSquareCheckFilled")]
     TbSquareCheckFilled,
     #[cfg(feature = "TbSquareChevronDown")]
     TbSquareChevronDown,
+    #[cfg(feature = "TbSquareChevronDownFilled")]
+    TbSquareChevronDownFilled,
     #[cfg(feature = "TbSquareChevronLeft")]
     TbSquareChevronLeft,
+    #[cfg(feature = "TbSquareChevronLeftFilled")]
+    TbSquareChevronLeftFilled,
     #[cfg(feature = "TbSquareChevronRight")]
     TbSquareChevronRight,
+    #[cfg(feature = "TbSquareChevronRightFilled")]
+    TbSquareChevronRightFilled,
     #[cfg(feature = "TbSquareChevronUp")]
     TbSquareChevronUp,
+    #[cfg(feature = "TbSquareChevronUpFilled")]
+    TbSquareChevronUpFilled,
     #[cfg(feature = "TbSquareChevronsDown")]
     TbSquareChevronsDown,
+    #[cfg(feature = "TbSquareChevronsDownFilled")]
+    TbSquareChevronsDownFilled,
     #[cfg(feature = "TbSquareChevronsLeft")]
     TbSquareChevronsLeft,
+    #[cfg(feature = "TbSquareChevronsLeftFilled")]
+    TbSquareChevronsLeftFilled,
     #[cfg(feature = "TbSquareChevronsRight")]
     TbSquareChevronsRight,
+    #[cfg(feature = "TbSquareChevronsRightFilled")]
+    TbSquareChevronsRightFilled,
     #[cfg(feature = "TbSquareChevronsUp")]
     TbSquareChevronsUp,
+    #[cfg(feature = "TbSquareChevronsUpFilled")]
+    TbSquareChevronsUpFilled,
     #[cfg(feature = "TbSquareDot")]
     TbSquareDot,
+    #[cfg(feature = "TbSquareDotFilled")]
+    TbSquareDotFilled,
     #[cfg(feature = "TbSquareF0")]
     TbSquareF0,
     #[cfg(feature = "TbSquareF0Filled")]
@@ -7126,6 +8136,8 @@ pub enum TbIcon {
     TbSquareF9,
     #[cfg(feature = "TbSquareF9Filled")]
     TbSquareF9Filled,
+    #[cfg(feature = "TbSquareFilled")]
+    TbSquareFilled,
     #[cfg(feature = "TbSquareForbid")]
     TbSquareForbid,
     #[cfg(feature = "TbSquareForbid2")]
@@ -7188,6 +8200,8 @@ pub enum TbIcon {
     TbSquareLetterZ,
     #[cfg(feature = "TbSquareMinus")]
     TbSquareMinus,
+    #[cfg(feature = "TbSquareMinusFilled")]
+    TbSquareMinusFilled,
     #[cfg(feature = "TbSquareNumber0")]
     TbSquareNumber0,
     #[cfg(feature = "TbSquareNumber1")]
@@ -7336,6 +8350,8 @@ pub enum TbIcon {
     TbSquareRoundedLetterZ,
     #[cfg(feature = "TbSquareRoundedMinus")]
     TbSquareRoundedMinus,
+    #[cfg(feature = "TbSquareRoundedMinusFilled")]
+    TbSquareRoundedMinusFilled,
     #[cfg(feature = "TbSquareRoundedNumber0")]
     TbSquareRoundedNumber0,
     #[cfg(feature = "TbSquareRoundedNumber0Filled")]
@@ -7390,6 +8406,8 @@ pub enum TbIcon {
     TbSquareToggleHorizontal,
     #[cfg(feature = "TbSquareX")]
     TbSquareX,
+    #[cfg(feature = "TbSquareXFilled")]
+    TbSquareXFilled,
     #[cfg(feature = "TbSquaresDiagonal")]
     TbSquaresDiagonal,
     #[cfg(feature = "TbSquaresFilled")]
@@ -7516,6 +8534,8 @@ pub enum TbIcon {
     TbTable,
     #[cfg(feature = "TbTableAlias")]
     TbTableAlias,
+    #[cfg(feature = "TbTableColumn")]
+    TbTableColumn,
     #[cfg(feature = "TbTableDown")]
     TbTableDown,
     #[cfg(feature = "TbTableExport")]
@@ -7534,6 +8554,8 @@ pub enum TbIcon {
     TbTableOptions,
     #[cfg(feature = "TbTablePlus")]
     TbTablePlus,
+    #[cfg(feature = "TbTableRow")]
+    TbTableRow,
     #[cfg(feature = "TbTableShare")]
     TbTableShare,
     #[cfg(feature = "TbTableShortcut")]
@@ -7662,6 +8684,24 @@ pub enum TbIcon {
     TbTiltShift,
     #[cfg(feature = "TbTiltShiftOff")]
     TbTiltShiftOff,
+    #[cfg(feature = "TbTimeDuration0")]
+    TbTimeDuration0,
+    #[cfg(feature = "TbTimeDuration10")]
+    TbTimeDuration10,
+    #[cfg(feature = "TbTimeDuration15")]
+    TbTimeDuration15,
+    #[cfg(feature = "TbTimeDuration30")]
+    TbTimeDuration30,
+    #[cfg(feature = "TbTimeDuration45")]
+    TbTimeDuration45,
+    #[cfg(feature = "TbTimeDuration5")]
+    TbTimeDuration5,
+    #[cfg(feature = "TbTimeDuration60")]
+    TbTimeDuration60,
+    #[cfg(feature = "TbTimeDuration90")]
+    TbTimeDuration90,
+    #[cfg(feature = "TbTimeDurationOff")]
+    TbTimeDurationOff,
     #[cfg(feature = "TbTimeline")]
     TbTimeline,
     #[cfg(feature = "TbTimelineEvent")]
@@ -7756,10 +8796,14 @@ pub enum TbIcon {
     TbTrafficLightsOff,
     #[cfg(feature = "TbTrain")]
     TbTrain,
+    #[cfg(feature = "TbTransfer")]
+    TbTransfer,
     #[cfg(feature = "TbTransferIn")]
     TbTransferIn,
     #[cfg(feature = "TbTransferOut")]
     TbTransferOut,
+    #[cfg(feature = "TbTransferVertical")]
+    TbTransferVertical,
     #[cfg(feature = "TbTransform")]
     TbTransform,
     #[cfg(feature = "TbTransformFilled")]
@@ -7814,6 +8858,8 @@ pub enum TbIcon {
     TbTriangleOff,
     #[cfg(feature = "TbTriangleSquareCircle")]
     TbTriangleSquareCircle,
+    #[cfg(feature = "TbTriangleSquareCircleFilled")]
+    TbTriangleSquareCircleFilled,
     #[cfg(feature = "TbTriangles")]
     TbTriangles,
     #[cfg(feature = "TbTrident")]
@@ -7888,12 +8934,16 @@ pub enum TbIcon {
     TbUserExclamation,
     #[cfg(feature = "TbUserHeart")]
     TbUserHeart,
+    #[cfg(feature = "TbUserHexagon")]
+    TbUserHexagon,
     #[cfg(feature = "TbUserMinus")]
     TbUserMinus,
     #[cfg(feature = "TbUserOff")]
     TbUserOff,
     #[cfg(feature = "TbUserPause")]
     TbUserPause,
+    #[cfg(feature = "TbUserPentagon")]
+    TbUserPentagon,
     #[cfg(feature = "TbUserPin")]
     TbUserPin,
     #[cfg(feature = "TbUserPlus")]
@@ -7906,6 +8956,10 @@ pub enum TbIcon {
     TbUserShare,
     #[cfg(feature = "TbUserShield")]
     TbUserShield,
+    #[cfg(feature = "TbUserSquare")]
+    TbUserSquare,
+    #[cfg(feature = "TbUserSquareRounded")]
+    TbUserSquareRounded,
     #[cfg(feature = "TbUserStar")]
     TbUserStar,
     #[cfg(feature = "TbUserUp")]
@@ -8014,6 +9068,8 @@ pub enum TbIcon {
     TbVolume3,
     #[cfg(feature = "TbVolumeOff")]
     TbVolumeOff,
+    #[cfg(feature = "TbVs")]
+    TbVs,
     #[cfg(feature = "TbWalk")]
     TbWalk,
     #[cfg(feature = "TbWall")]
@@ -8048,6 +9104,8 @@ pub enum TbIcon {
     TbWashDryDip,
     #[cfg(feature = "TbWashDryF")]
     TbWashDryF,
+    #[cfg(feature = "TbWashDryFlat")]
+    TbWashDryFlat,
     #[cfg(feature = "TbWashDryHang")]
     TbWashDryHang,
     #[cfg(feature = "TbWashDryOff")]
@@ -8062,8 +9120,12 @@ pub enum TbIcon {
     TbWashDryclean,
     #[cfg(feature = "TbWashDrycleanOff")]
     TbWashDrycleanOff,
+    #[cfg(feature = "TbWashEco")]
+    TbWashEco,
     #[cfg(feature = "TbWashGentle")]
     TbWashGentle,
+    #[cfg(feature = "TbWashHand")]
+    TbWashHand,
     #[cfg(feature = "TbWashMachine")]
     TbWashMachine,
     #[cfg(feature = "TbWashOff")]
@@ -8100,6 +9162,8 @@ pub enum TbIcon {
     TbWebhookOff,
     #[cfg(feature = "TbWeight")]
     TbWeight,
+    #[cfg(feature = "TbWheel")]
+    TbWheel,
     #[cfg(feature = "TbWheelchair")]
     TbWheelchair,
     #[cfg(feature = "TbWheelchairOff")]
@@ -8218,6 +9282,8 @@ pub enum TbIcon {
     TbXboxY,
     #[cfg(feature = "TbXd")]
     TbXd,
+    #[cfg(feature = "TbXxx")]
+    TbXxx,
     #[cfg(feature = "TbYinYang")]
     TbYinYang,
     #[cfg(feature = "TbYinYangFilled")]
@@ -8314,6 +9380,25 @@ const TB123: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />
 <path d="M17 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5" />"###
 };
+#[cfg(feature = "Tb12Hours")]
+const TB12_HOURS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+<path d="M4 13c.468 3.6 3.384 6.546 7 7" />
+<path d="M18 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+<path d="M15 21v-6" />"###
+};
 #[cfg(feature = "Tb24Hours")]
 const TB24_HOURS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -8328,11 +9413,12 @@ const TB24_HOURS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
-<path d="M4 13a8.094 8.094 0 0 0 3 5.24" />
-<path d="M11 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-<path d="M17 15v2a1 1 0 0 0 1 1h1" />
-<path d="M20 15v6" />"###
+<path d="M4 13c.325 2.532 1.881 4.781 4 6" />
+<path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
+<path d="M4 5v4h4" />
+<path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+<path d="M18 15v2a1 1 0 0 0 1 1h1" />
+<path d="M21 15v6" />"###
 };
 #[cfg(feature = "Tb2fa")]
 const TB2FA: icondata_core::IconData = icondata_core::IconData {
@@ -9608,6 +10694,26 @@ const TB_AIR_CONDITIONING_DISABLED: icondata_core::IconData = icondata_core::Ico
 <path d="M3 8m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
 <path d="M7 16v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3" />"###
 };
+#[cfg(feature = "TbAirTrafficControl")]
+const TB_AIR_TRAFFIC_CONTROL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 3h2" />
+<path d="M12 3v3" />
+<path d="M5.998 6h12.004a2 2 0 0 1 1.916 2.575l-1.8 6a2 2 0 0 1 -1.916 1.425h-8.404a2 2 0 0 1 -1.916 -1.425l-1.8 -6a2 2 0 0 1 1.916 -2.575z" />
+<path d="M8.5 6l1.5 10v5" />
+<path d="M15.5 6l-1.5 10v5" />"###
+};
 #[cfg(feature = "TbAlarm")]
 const TB_ALARM: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9846,6 +10952,25 @@ const TB_ALERT_CIRCLE_FILLED: icondata_core::IconData = icondata_core::IconData 
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbAlertCircleOff")]
+const TB_ALERT_CIRCLE_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.644 5.629a9 9 0 1 0 12.715 12.741m1.693 -2.349a9 9 0 0 0 -12.087 -12.068" />
+<path d="M12 7v1" />
+<path d="M12 16h.01" />
+<path d="M3 3l18 18" />"###
+};
 #[cfg(feature = "TbAlertHexagon")]
 const TB_ALERT_HEXAGON: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -9879,6 +11004,26 @@ const TB_ALERT_HEXAGON_FILLED: icondata_core::IconData = icondata_core::IconData
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10.425 1.414a3.33 3.33 0 0 1 3.026 -.097l.19 .097l6.775 3.995l.096 .063l.092 .077l.107 .075a3.224 3.224 0 0 1 1.266 2.188l.018 .202l.005 .204v7.284c0 1.106 -.57 2.129 -1.454 2.693l-.17 .1l-6.803 4.302c-.918 .504 -2.019 .535 -3.004 .068l-.196 -.1l-6.695 -4.237a3.225 3.225 0 0 1 -1.671 -2.619l-.007 -.207v-7.285c0 -1.106 .57 -2.128 1.476 -2.705l6.95 -4.098zm1.585 13.586l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbAlertHexagonOff")]
+const TB_ALERT_HEXAGON_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.36 18.387l-5.268 3.333a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l1.317 -.777m2.535 -1.493l2.898 -1.709a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .414 -.116 .812 -.326 1.155" />
+<path d="M12 7v1" />
+<path d="M12 8v.01" />
+<path d="M3 3l18 18" />
+<path d="M12 16h.01" />"###
 };
 #[cfg(feature = "TbAlertOctagon")]
 const TB_ALERT_OCTAGON: icondata_core::IconData = icondata_core::IconData {
@@ -9930,6 +11075,24 @@ const TB_ALERT_SMALL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 8v4" />
 <path d="M12 16h.01" />"###
+};
+#[cfg(feature = "TbAlertSmallOff")]
+const TB_ALERT_SMALL_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 16h.01" />
+<path d="M12 7v1" />
+<path d="M3 3l18 18" />"###
 };
 #[cfg(feature = "TbAlertSquare")]
 const TB_ALERT_SQUARE: icondata_core::IconData = icondata_core::IconData {
@@ -9999,6 +11162,25 @@ const TB_ALERT_SQUARE_ROUNDED_FILLED: icondata_core::IconData = icondata_core::I
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 2l.642 .005l.616 .017l.299 .013l.579 .034l.553 .046c4.687 .455 6.65 2.333 7.166 6.906l.03 .29l.046 .553l.041 .727l.006 .15l.017 .617l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.455 4.687 -2.333 6.65 -6.906 7.166l-.29 .03l-.553 .046l-.727 .041l-.15 .006l-.617 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.687 -.455 -6.65 -2.333 -7.166 -6.906l-.03 -.29l-.046 -.553l-.041 -.727l-.006 -.15l-.017 -.617l-.004 -.318v-.648l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.455 -4.687 2.333 -6.65 6.906 -7.166l.29 -.03l.553 -.046l.727 -.041l.15 -.006l.617 -.017c.21 -.003 .424 -.005 .642 -.005zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbAlertSquareRoundedOff")]
+const TB_ALERT_SQUARE_ROUNDED_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.201 19.199c-1.35 1.35 -3.6 1.801 -7.201 1.801c-7.2 0 -9 -1.8 -9 -9c0 -3.598 .45 -5.847 1.797 -7.197m2.626 -1.376c1.204 -.307 2.709 -.427 4.577 -.427c7.2 0 9 1.8 9 9c0 1.865 -.12 3.367 -.425 4.57" />
+<path d="M12 7v1" />
+<path d="M12 16h.01" />
+<path d="M3 3l18 18" />"###
+};
 #[cfg(feature = "TbAlertTriangle")]
 const TB_ALERT_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10013,9 +11195,9 @@ const TB_ALERT_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" />
 <path d="M12 9v4" />
-<path d="M12 17h.01" />"###
+<path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+<path d="M12 16h.01" />"###
 };
 #[cfg(feature = "TbAlertTriangleFilled")]
 const TB_ALERT_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -10031,7 +11213,26 @@ const TB_ALERT_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconDat
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11.94 2a2.99 2.99 0 0 1 2.45 1.279l.108 .164l8.431 14.074a2.989 2.989 0 0 1 -2.366 4.474l-.2 .009h-16.856a2.99 2.99 0 0 1 -2.648 -4.308l.101 -.189l8.425 -14.065a2.989 2.989 0 0 1 2.555 -1.438zm.07 14l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
+<path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbAlertTriangleOff")]
+const TB_ALERT_TRIANGLE_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21.998 17.997a1.913 1.913 0 0 0 -.255 -.872l-8.106 -13.534a1.914 1.914 0 0 0 -3.274 0l-1.04 1.736m-1.493 2.493l-5.573 9.304a1.914 1.914 0 0 0 1.636 2.871h16.107" />
+<path d="M12 16h.01" />
+<path d="M3 3l18 18" />
+<path d="M12 7v1" />"###
 };
 #[cfg(feature = "TbAlien")]
 const TB_ALIEN: icondata_core::IconData = icondata_core::IconData {
@@ -10173,6 +11374,25 @@ const TB_ALIGN_BOX_BOTTOM_RIGHT_FILLED: icondata_core::IconData = icondata_core:
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-6.333 13a1 1 0 0 0 -1 1v2l.007 .117a1 1 0 0 0 1.993 -.117v-2l-.007 -.117a1 1 0 0 0 -.993 -.883zm3 -4a1 1 0 0 0 -1 1v6l.007 .117a1 1 0 0 0 1.993 -.117v-6l-.007 -.117a1 1 0 0 0 -.993 -.883zm3 2a1 1 0 0 0 -1 1v4l.007 .117a1 1 0 0 0 1.993 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbAlignBoxCenterBottom")]
+const TB_ALIGN_BOX_CENTER_BOTTOM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 19v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+<path d="M11 17h2" />
+<path d="M9 14h6" />
+<path d="M10 11h4" />"###
+};
 #[cfg(feature = "TbAlignBoxCenterMiddle")]
 const TB_ALIGN_BOX_CENTER_MIDDLE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -10207,6 +11427,44 @@ const TB_ALIGN_BOX_CENTER_MIDDLE_FILLED: icondata_core::IconData = icondata_core
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19 2a3 3 0 0 1 2.995 2.824l.005 .176v14a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.993 -2.802l-.007 -.198v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h14zm-6 12h-2l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h2l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm2 -3h-6l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h6l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-1 -3h-4l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h4l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbAlignBoxCenterStretch")]
+const TB_ALIGN_BOX_CENTER_STRETCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 19v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+<path d="M11 17h2" />
+<path d="M9 12h6" />
+<path d="M10 7h4" />"###
+};
+#[cfg(feature = "TbAlignBoxCenterTop")]
+const TB_ALIGN_BOX_CENTER_TOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 19v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+<path d="M11 13h2" />
+<path d="M9 10h6" />
+<path d="M10 7h4" />"###
 };
 #[cfg(feature = "TbAlignBoxLeftBottom")]
 const TB_ALIGN_BOX_LEFT_BOTTOM: icondata_core::IconData = icondata_core::IconData {
@@ -10277,6 +11535,25 @@ const TB_ALIGN_BOX_LEFT_MIDDLE_FILLED: icondata_core::IconData = icondata_core::
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-10.333 12h-2l-.117 .007a1 1 0 0 0 .117 1.993h2l.117 -.007a1 1 0 0 0 -.117 -1.993zm4 -3h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993zm-2 -3h-4l-.117 .007a1 1 0 0 0 .117 1.993h4l.117 -.007a1 1 0 0 0 -.117 -1.993z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbAlignBoxLeftStretch")]
+const TB_ALIGN_BOX_LEFT_STRETCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+<path d="M9 17h-2" />
+<path d="M13 12h-6" />
+<path d="M11 7h-4" />"###
 };
 #[cfg(feature = "TbAlignBoxLeftTop")]
 const TB_ALIGN_BOX_LEFT_TOP: icondata_core::IconData = icondata_core::IconData {
@@ -10382,6 +11659,25 @@ const TB_ALIGN_BOX_RIGHT_MIDDLE_FILLED: icondata_core::IconData = icondata_core:
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-.333 12h-2l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h2l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm0 -3h-6l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h6l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm0 -3h-4l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h4l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbAlignBoxRightStretch")]
+const TB_ALIGN_BOX_RIGHT_STRETCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 17h2" />
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+<path d="M11 12h6" />
+<path d="M13 7h4" />"###
 };
 #[cfg(feature = "TbAlignBoxRightTop")]
 const TB_ALIGN_BOX_RIGHT_TOP: icondata_core::IconData = icondata_core::IconData {
@@ -10663,6 +11959,26 @@ const TB_ALPHABET_LATIN: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 10h2a2 2 0 0 1 2 2v5h-3a2 2 0 1 1 0 -4h3" />
 <path d="M14 7v10" />
 <path d="M14 10m0 2a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2z" />"###
+};
+#[cfg(feature = "TbAlt")]
+const TB_ALT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 16v-6a2 2 0 1 1 4 0v6" />
+<path d="M4 13h4" />
+<path d="M11 8v8h4" />
+<path d="M16 8h4" />
+<path d="M18 8v8" />"###
 };
 #[cfg(feature = "TbAmbulance")]
 const TB_AMBULANCE: icondata_core::IconData = icondata_core::IconData {
@@ -11225,6 +12541,24 @@ const TB_APPS_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 4v6" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbArcheryArrow")]
+const TB_ARCHERY_ARROW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 7v3h3l3 -3h-3v-3z" />
+<path d="M14 10l-9 9" />
+<path d="M5 15v4h4" />"###
+};
 #[cfg(feature = "TbArchive")]
 const TB_ARCHIVE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -11242,6 +12576,23 @@ const TB_ARCHIVE: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
 <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
 <path d="M10 12l4 0" />"###
+};
+#[cfg(feature = "TbArchiveFilled")]
+const TB_ARCHIVE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<rect x="2" y="3" width="20" height="4" rx="2" stroke-width="0" fill="currentColor" />
+<path d="M19 9c.513 0 .936 .463 .993 1.06l.007 .14v7.2c0 1.917 -1.249 3.484 -2.824 3.594l-.176 .006h-10c-1.598 0 -2.904 -1.499 -2.995 -3.388l-.005 -.212v-7.2c0 -.663 .448 -1.2 1 -1.2h14zm-5 2h-4l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h4l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbArchiveOff")]
 const TB_ARCHIVE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -11670,6 +13021,26 @@ const TB_ARROW_BADGE_UP_FILLED: icondata_core::IconData = icondata_core::IconDat
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M11.375 6.22l-5 4a1 1 0 0 0 -.375 .78v6l.006 .112a1 1 0 0 0 1.619 .669l4.375 -3.501l4.375 3.5a1 1 0 0 0 1.625 -.78v-6a1 1 0 0 0 -.375 -.78l-5 -4a1 1 0 0 0 -1.25 0z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbArrowBarBoth")]
+const TB_ARROW_BAR_BOTH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 12h-6" />
+<path d="M5 15l-3 -3l3 -3" />
+<path d="M22 12h-6" />
+<path d="M19 15l3 -3l-3 -3" />
+<path d="M12 4v16" />"###
 };
 #[cfg(feature = "TbArrowBarDown")]
 const TB_ARROW_BAR_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -12319,6 +13690,23 @@ const TB_ARROW_BOUNCE: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 18h4" />
 <path d="M3 8a9 9 0 0 1 9 9v1l1.428 -4.285a12 12 0 0 1 6.018 -6.938l.554 -.277" />
 <path d="M15 6h5v5" />"###
+};
+#[cfg(feature = "TbArrowCapsule")]
+const TB_ARROW_CAPSULE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 15a6 6 0 1 1 -12 0v-6a6 6 0 1 1 12 0v2" />
+<path d="M15 8l3 3l3 -3" />"###
 };
 #[cfg(feature = "TbArrowCurveLeft")]
 const TB_ARROW_CURVE_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -14578,6 +15966,30 @@ const TB_ARTBOARD: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 20l0 1" />
 <path d="M16 20l0 1" />"###
 };
+#[cfg(feature = "TbArtboardFilled")]
+const TB_ARTBOARD_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 7h-6a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-6a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M4 7a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />
+<path d="M4 15a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />
+<path d="M8 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M21 7a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />
+<path d="M21 15a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />
+<path d="M8 19a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M16 19a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbArtboardOff")]
 const TB_ARTBOARD_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15202,6 +16614,22 @@ const TB_BACKPACK_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbBackslash")]
+const TB_BACKSLASH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7 5l10 14" />"###
+};
 #[cfg(feature = "TbBackspace")]
 const TB_BACKSPACE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15785,6 +17213,23 @@ const TB_BALLOON: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 8a6 6 0 1 1 12 0c0 4.97 -2.686 9 -6 9s-6 -4.03 -6 -9" />
 <path d="M12 17v1a2 2 0 0 1 -2 2h-3a2 2 0 0 0 -2 2" />"###
 };
+#[cfg(feature = "TbBalloonFilled")]
+const TB_BALLOON_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 1a7 7 0 0 1 7 7c0 5.457 -3.028 10 -7 10c-3.9 0 -6.89 -4.379 -6.997 -9.703l-.003 -.297l.004 -.24a7 7 0 0 1 6.996 -6.76zm0 4a1 1 0 0 0 0 2l.117 .007a1 1 0 0 1 .883 .993l.007 .117a1 1 0 0 0 1.993 -.117a3 3 0 0 0 -3 -3z" stroke-width="0" fill="currentColor" />
+<path d="M12 16a1 1 0 0 1 .993 .883l.007 .117v1a3 3 0 0 1 -2.824 2.995l-.176 .005h-3a1 1 0 0 0 -.993 .883l-.007 .117a1 1 0 0 1 -2 0a3 3 0 0 1 2.824 -2.995l.176 -.005h3a1 1 0 0 0 .993 -.883l.007 -.117v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBalloonOff")]
 const TB_BALLOON_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -15821,6 +17266,22 @@ const TB_BALLPEN: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 6l7 7l-4 4" />
 <path d="M5.828 18.172a2.828 2.828 0 0 0 4 0l10.586 -10.586a2 2 0 0 0 0 -2.829l-1.171 -1.171a2 2 0 0 0 -2.829 0l-10.586 10.586a2.828 2.828 0 0 0 0 4z" />
 <path d="M4 20l1.768 -1.768" />"###
+};
+#[cfg(feature = "TbBallpenFilled")]
+const TB_BALLPEN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17.828 2a3 3 0 0 1 1.977 .743l.145 .136l1.171 1.17a3 3 0 0 1 .136 4.1l-.136 .144l-1.706 1.707l2.292 2.293a1 1 0 0 1 .083 1.32l-.083 .094l-4 4a1 1 0 0 1 -1.497 -1.32l.083 -.094l3.292 -3.293l-1.586 -1.585l-7.464 7.464a3.828 3.828 0 0 1 -2.474 1.114l-.233 .008c-.674 0 -1.33 -.178 -1.905 -.508l-1.216 1.214a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.214 -1.216a3.828 3.828 0 0 1 .454 -4.442l.16 -.17l10.586 -10.586a3 3 0 0 1 1.923 -.873l.198 -.006zm0 2a1 1 0 0 0 -.608 .206l-.099 .087l-1.707 1.707l2.586 2.585l1.707 -1.706a1 1 0 0 0 .284 -.576l.01 -.131a1 1 0 0 0 -.207 -.609l-.087 -.099l-1.171 -1.171a1 1 0 0 0 -.708 -.293z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBallpenOff")]
 const TB_BALLPEN_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -16186,9 +17647,203 @@ const TB_BASKET: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M7 10l5 -6l5 6" />
-<path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z" />
-<path d="M12 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />"###
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M5.001 8h13.999a2 2 0 0 1 1.977 2.304l-1.255 7.152a3 3 0 0 1 -2.966 2.544h-9.512a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304z" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />"###
+};
+#[cfg(feature = "TbBasketBolt")]
+const TB_BASKET_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M13 20h-5.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.358 2.04" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbBasketCancel")]
+const TB_BASKET_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.3 1.713" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbBasketCheck")]
+const TB_BASKET_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M11 20h-3.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.479 2.729" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbBasketCode")]
+const TB_BASKET_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M11 20h-3.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304c-.21 1.202 -.37 2.104 -.475 2.705" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbBasketCog")]
+const TB_BASKET_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.267 1.522" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbBasketDiscount")]
+const TB_BASKET_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12.5 20h-5.256a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.394 2.248" />
+<path d="M13.856 13.254a2 2 0 1 0 -1.856 2.746" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbBasketDollar")]
+const TB_BASKET_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M13 20h-5.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbBasketDown")]
+const TB_BASKET_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.349 1.989" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbBasketExclamation")]
+const TB_BASKET_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M15 20h-7.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.36 2.055" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
 };
 #[cfg(feature = "TbBasketFilled")]
 const TB_BASKET_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -16206,6 +17861,46 @@ const TB_BASKET_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12.684 3.27l.084 .09l4.7 5.64h3.532a1 1 0 0 1 .991 1.131l-.02 .112l-1.984 7.918c-.258 1.578 -1.41 2.781 -2.817 2.838l-.17 .001l-10.148 -.002c-1.37 -.053 -2.484 -1.157 -2.787 -2.57l-.035 -.185l-2 -8a1 1 0 0 1 .857 -1.237l.113 -.006h3.53l4.702 -5.64a1 1 0 0 1 1.452 -.09zm-.684 8.73a3 3 0 0 0 -2.98 2.65l-.015 .174l-.005 .176l.005 .176a3 3 0 1 0 2.995 -3.176zm0 -6.438l-2.865 3.438h5.73l-2.865 -3.438z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbBasketHeart")]
+const TB_BASKET_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M10.5 20h-3.256a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.143 .817" />
+<path d="M12.602 12.092a2 2 0 0 0 -2.233 3.066" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbBasketMinus")]
+const TB_BASKET_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.833 4.75" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M16 19h6" />"###
+};
 #[cfg(feature = "TbBasketOff")]
 const TB_BASKET_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -16220,12 +17915,199 @@ const TB_BASKET_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M7 10l1.359 -1.63" />
-<path d="M10.176 6.188l1.824 -2.188l5 6" />
-<path d="M18.77 18.757c-.358 .768 -1.027 1.262 -1.77 1.243h-10c-.966 .024 -1.807 -.817 -2 -2l-2 -8h7" />
-<path d="M14 10h7l-1.397 5.587" />
-<path d="M12 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l.75 -2.252m1.001 -3.002l.249 -.746" />
+<path d="M12 8h7a2 2 0 0 1 1.977 2.304c-.442 2.516 -.756 4.438 -.977 5.696m-1.01 3.003a2.997 2.997 0 0 1 -2.234 .997h-9.512a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h2.999" />
+<path d="M12 12a2 2 0 1 0 2 2" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbBasketPause")]
+const TB_BASKET_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M13 20h-5.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.478 2.725" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbBasketPin")]
+const TB_BASKET_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.161 .92" />
+<path d="M13.866 13.28a2 2 0 1 0 -1.866 2.72" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbBasketPlus")]
+const TB_BASKET_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.359 2.043" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbBasketQuestion")]
+const TB_BASKET_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M15 20h-7.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.161 .918" />
+<path d="M12 16a2 2 0 1 0 0 -4a2 2 0 0 0 0 4z" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbBasketSearch")]
+const TB_BASKET_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M11 20h-3.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.215 1.227" />
+<path d="M13.483 12.658a2 2 0 1 0 -2.162 3.224" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbBasketShare")]
+const TB_BASKET_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12.5 20h-5.256a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.478 2.723" />
+<path d="M14 14a2 2 0 1 0 -2 2" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbBasketStar")]
+const TB_BASKET_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M10.5 20h-3.256a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.133 .757" />
+<path d="M13.596 12.794a2 2 0 0 0 -3.377 2.116" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbBasketUp")]
+const TB_BASKET_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M12 20h-4.756a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.358 2.04" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbBasketX")]
+const TB_BASKET_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 10l-2 -6" />
+<path d="M7 10l2 -6" />
+<path d="M13.5 20h-6.256a3 3 0 0 1 -2.965 -2.544l-1.255 -7.152a2 2 0 0 1 1.977 -2.304h13.999a2 2 0 0 1 1.977 2.304l-.532 3.03" />
+<path d="M10 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbBat")]
 const TB_BAT: icondata_core::IconData = icondata_core::IconData {
@@ -17849,6 +19731,23 @@ const TB_BOMB: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 7l1.293 -1.293a2.414 2.414 0 0 0 .707 -1.707a1 1 0 0 1 1 -1h1" />
 <path d="M7 13a3 3 0 0 1 3 -3" />"###
 };
+#[cfg(feature = "TbBombFilled")]
+const TB_BOMB_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.499 3.996a2.2 2.2 0 0 1 1.556 .645l3.302 3.301a2.2 2.2 0 0 1 0 3.113l-.567 .567l.043 .192a8.5 8.5 0 0 1 -3.732 8.83l-.23 .144a8.5 8.5 0 1 1 -2.687 -15.623l.192 .042l.567 -.566a2.2 2.2 0 0 1 1.362 -.636zm-4.499 5.004a4 4 0 0 0 -4 4a1 1 0 0 0 2 0a2 2 0 0 1 2 -2a1 1 0 0 0 0 -2z" stroke-width="0" fill="currentColor" />
+<path d="M21 2a1 1 0 0 1 .117 1.993l-.117 .007h-1c0 .83 -.302 1.629 -.846 2.25l-.154 .163l-1.293 1.293a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.293 -1.292c.232 -.232 .375 -.537 .407 -.86l.007 -.14a2 2 0 0 1 1.85 -1.995l.15 -.005h1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBone")]
 const TB_BONE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -17976,6 +19875,22 @@ const TB_BOOK_DOWNLOAD: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 19l3 3l3 -3" />
 <path d="M18 22v-9" />"###
 };
+#[cfg(feature = "TbBookFilled")]
+const TB_BOOK_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.088 4.82a10 10 0 0 1 9.412 .314a1 1 0 0 1 .493 .748l.007 .118v13a1 1 0 0 1 -1.5 .866a8 8 0 0 0 -8 0a1 1 0 0 1 -1 0a8 8 0 0 0 -7.733 -.148l-.327 .18l-.103 .044l-.049 .016l-.11 .026l-.061 .01l-.117 .006h-.042l-.11 -.012l-.077 -.014l-.108 -.032l-.126 -.056l-.095 -.056l-.089 -.067l-.06 -.056l-.073 -.082l-.064 -.089l-.022 -.036l-.032 -.06l-.044 -.103l-.016 -.049l-.026 -.11l-.01 -.061l-.004 -.049l-.002 -.068v-13a1 1 0 0 1 .5 -.866a10 10 0 0 1 9.412 -.314l.088 .044l.088 -.044z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBookOff")]
 const TB_BOOK_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18048,6 +19963,22 @@ const TB_BOOKMARK_EDIT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M11.35 17.39l-4.35 2.61v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v6" />
 <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" />"###
+};
+#[cfg(feature = "TbBookmarkFilled")]
+const TB_BOOKMARK_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 3a3 3 0 0 1 2.995 2.824l.005 .176v14a1 1 0 0 1 -1.413 .911l-.101 -.054l-4.487 -2.691l-4.485 2.691a1 1 0 0 1 -1.508 -.743l-.006 -.114v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h6z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBookmarkMinus")]
 const TB_BOOKMARK_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -18135,6 +20066,23 @@ const TB_BOOKMARKS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M13 7a2 2 0 0 1 2 2v12l-5 -3l-5 3v-12a2 2 0 0 1 2 -2h6z" />
 <path d="M9.265 4a2 2 0 0 1 1.735 -1h6a2 2 0 0 1 2 2v12l-1 -.6" />"###
+};
+#[cfg(feature = "TbBookmarksFilled")]
+const TB_BOOKMARKS_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 6h-6a3 3 0 0 0 -3 3v12l.006 .114a1 1 0 0 0 1.508 .743l4.486 -2.691l4.486 2.691a1 1 0 0 0 1.514 -.857v-12a3 3 0 0 0 -3 -3z" stroke-width="0" fill="currentColor" />
+<path d="M17 2a3 3 0 0 1 2.995 2.824l.005 .176v12a1 1 0 0 1 -1.413 .911l-.101 -.054l-1 -.6a1 1 0 0 1 .489 -1.857l.025 .001v-10.401a1 1 0 0 0 -.883 -.993l-.117 -.007h-6.001a1 1 0 0 0 -.803 .401l-.13 .197a1 1 0 0 1 -1.666 -1.098a3 3 0 0 1 2.4 -1.494l.2 -.006h6z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBookmarksOff")]
 const TB_BOOKMARKS_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -18628,6 +20576,22 @@ const TB_BOTTLE: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 3.5c0 1.626 .507 3.212 1.45 4.537l.05 .07a8.093 8.093 0 0 1 1.5 4.694v6.199a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-6.2c0 -1.682 .524 -3.322 1.5 -4.693l.05 -.07a7.823 7.823 0 0 0 1.45 -4.537" />
 <path d="M7 14.803a2.4 2.4 0 0 0 1 -.803a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 1 -.805" />"###
 };
+#[cfg(feature = "TbBottleFilled")]
+const TB_BOTTLE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 1a2 2 0 0 1 1.995 1.85l.005 .15v.5c0 1.317 .381 2.604 1.094 3.705l.17 .25l.05 .072a9.093 9.093 0 0 1 1.68 4.92l.006 .354v6.199a3 3 0 0 1 -2.824 2.995l-.176 .005h-6a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-6.2a9.1 9.1 0 0 1 1.486 -4.982l.2 -.292l.05 -.069a6.823 6.823 0 0 0 1.264 -3.957v-.5a2 2 0 0 1 1.85 -1.995l.15 -.005h2zm.362 5h-2.724a8.827 8.827 0 0 1 -1.08 2.334l-.194 .284l-.05 .069a7.091 7.091 0 0 0 -1.307 3.798l-.003 .125a3.33 3.33 0 0 1 1.975 -.61a3.4 3.4 0 0 1 2.833 1.417c.27 .375 .706 .593 1.209 .583a1.4 1.4 0 0 0 1.166 -.583a3.4 3.4 0 0 1 .81 -.8l.003 .183c0 -1.37 -.396 -2.707 -1.137 -3.852l-.228 -.332a8.827 8.827 0 0 1 -1.273 -2.616z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBottleOff")]
 const TB_BOTTLE_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18664,6 +20628,23 @@ const TB_BOUNCE_LEFT: icondata_core::IconData = icondata_core::IconData {
 <path d="M20 15.5c-3 -1 -5.5 -.5 -8 4.5c-.5 -3 -1.5 -5.5 -3 -8" />
 <path d="M6 9a2 2 0 1 1 0 -4a2 2 0 0 1 0 4z" />"###
 };
+#[cfg(feature = "TbBounceLeftFilled")]
+const TB_BOUNCE_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.486 11.143a1 1 0 0 1 1.371 .343c1.045 1.74 1.83 3.443 2.392 5.237l.172 .581l.092 -.13c2.093 -2.921 4.48 -3.653 7.565 -2.7l.238 .077a1 1 0 1 1 -.632 1.898c-2.932 -.978 -4.73 -.122 -6.79 3.998c-.433 .866 -1.721 .673 -1.88 -.283c-.46 -2.76 -1.369 -5.145 -2.871 -7.65a1 1 0 0 1 .343 -1.371z" stroke-width="0" fill="currentColor" />
+<path d="M6 4a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBounceRight")]
 const TB_BOUNCE_RIGHT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18680,6 +20661,23 @@ const TB_BOUNCE_RIGHT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M4 15.5c3 -1 5.5 -.5 8 4.5c.5 -3 1.5 -5.5 3 -8" />
 <path d="M18 9a2 2 0 1 1 0 -4a2 2 0 0 1 0 4z" />"###
+};
+#[cfg(feature = "TbBounceRightFilled")]
+const TB_BOUNCE_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.143 11.486a1 1 0 0 1 1.714 1.028c-1.502 2.505 -2.41 4.89 -2.87 7.65c-.16 .956 -1.448 1.15 -1.881 .283c-2.06 -4.12 -3.858 -4.976 -6.79 -3.998a1 1 0 1 1 -.632 -1.898c3.2 -1.067 5.656 -.373 7.803 2.623l.091 .13l.011 -.04c.522 -1.828 1.267 -3.55 2.273 -5.3l.28 -.478z" stroke-width="0" fill="currentColor" />
+<path d="M18 4a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBow")]
 const TB_BOW: icondata_core::IconData = icondata_core::IconData {
@@ -18715,6 +20713,22 @@ const TB_BOWL: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M4 8h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1z" />"###
+};
+#[cfg(feature = "TbBowlFilled")]
+const TB_BOWL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 7h-16a2 2 0 0 0 -2 2v.5l.007 .18c.134 1.806 2.169 5.275 3.928 6.771l.065 .053v.496a2 2 0 0 0 2 2h8l.15 -.005a2 2 0 0 0 1.85 -1.995v-.504l.017 -.013c1.736 -1.494 3.983 -5.289 3.983 -6.983v-.5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBox")]
 const TB_BOX: icondata_core::IconData = icondata_core::IconData {
@@ -18757,6 +20771,28 @@ const TB_BOX_ALIGN_BOTTOM: icondata_core::IconData = icondata_core::IconData {
 <path d="M20 4v.01" />
 <path d="M20 9v.01" />"###
 };
+#[cfg(feature = "TbBoxAlignBottomFilled")]
+const TB_BOX_ALIGN_BOTTOM_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 13h-16a1 1 0 0 0 -1 1v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2v-5a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBoxAlignBottomLeft")]
 const TB_BOX_ALIGN_BOTTOM_LEFT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18781,6 +20817,31 @@ const TB_BOX_ALIGN_BOTTOM_LEFT: icondata_core::IconData = icondata_core::IconDat
 <path d="M20 9v.01" />
 <path d="M20 15v.01" />
 <path d="M20 20v.01" />"###
+};
+#[cfg(feature = "TbBoxAlignBottomLeftFilled")]
+const TB_BOX_ALIGN_BOTTOM_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12h-5a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2 -2v-5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M4 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 14a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBoxAlignBottomRight")]
 const TB_BOX_ALIGN_BOTTOM_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -18807,6 +20868,31 @@ const TB_BOX_ALIGN_BOTTOM_RIGHT: icondata_core::IconData = icondata_core::IconDa
 <path d="M4 15v.01" />
 <path d="M4 20v.01" />"###
 };
+#[cfg(feature = "TbBoxAlignBottomRightFilled")]
+const TB_BOX_ALIGN_BOTTOM_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 12h-5a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2 -2v-5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M20 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 14a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBoxAlignLeft")]
 const TB_BOX_ALIGN_LEFT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18821,13 +20907,35 @@ const TB_BOX_ALIGN_LEFT: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M9.752 19.753v-16h-5a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1h5z" />
-<path d="M14.752 19.753h-.01" />
-<path d="M19.753 19.753h-.011" />
-<path d="M19.753 14.752h-.011" />
-<path d="M19.753 8.752h-.011" />
-<path d="M19.753 3.752h-.011" />
-<path d="M14.752 3.752h-.01" />"###
+<path d="M10.002 20.003v-16h-5a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1h5z" />
+<path d="M15.002 20.003h-.01" />
+<path d="M20.003 20.003h-.011" />
+<path d="M20.003 15.002h-.011" />
+<path d="M20.003 9.002h-.011" />
+<path d="M20.003 4.002h-.011" />
+<path d="M15.002 4.002h-.01" />"###
+};
+#[cfg(feature = "TbBoxAlignLeftFilled")]
+const TB_BOX_ALIGN_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10.002 3.003h-5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h5a1 1 0 0 0 1 -1v-16a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15.002 19.003a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20.003 19.003a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20.003 14.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20.003 8.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20.003 3.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M15.002 3.002a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBoxAlignRight")]
 const TB_BOX_ALIGN_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -18843,13 +20951,35 @@ const TB_BOX_ALIGN_RIGHT: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M14.248 19.753v-16h5a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-5z" />
-<path d="M9.248 19.753h.01" />
-<path d="M4.247 19.753h.011" />
-<path d="M4.247 14.752h.011" />
-<path d="M4.247 8.752h.011" />
-<path d="M4.247 3.752h.011" />
-<path d="M9.248 3.752h.01" />"###
+<path d="M13.998 20.003v-16h5a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-5z" />
+<path d="M8.998 20.003h.01" />
+<path d="M3.997 20.003h.011" />
+<path d="M3.997 15.002h.011" />
+<path d="M3.997 9.002h.011" />
+<path d="M3.997 4.002h.011" />
+<path d="M8.998 4.002h.01" />"###
+};
+#[cfg(feature = "TbBoxAlignRightFilled")]
+const TB_BOX_ALIGN_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.998 3.003h-5a1 1 0 0 0 -1 1v16a1 1 0 0 0 1 1h5a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M9.008 19.003a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4.008 19.003a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4.008 14.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4.008 8.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4.008 3.002a1 1 0 0 1 .117 1.993l-.128 .007a1 1 0 0 1 -.117 -1.993l.128 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M9.008 3.002a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBoxAlignTop")]
 const TB_BOX_ALIGN_TOP: icondata_core::IconData = icondata_core::IconData {
@@ -18865,13 +20995,35 @@ const TB_BOX_ALIGN_TOP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M4 9.505h16v-5a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1v5z" />
-<path d="M4 14.505v-.01" />
-<path d="M4 19.505v-.01" />
-<path d="M9 19.505v-.01" />
-<path d="M15 19.505v-.01" />
-<path d="M20 19.505v-.01" />
-<path d="M20 14.505v-.01" />"###
+<path d="M4 10.005h16v-5a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1v5z" />
+<path d="M4 15.005v-.01" />
+<path d="M4 20.005v-.01" />
+<path d="M9 20.005v-.01" />
+<path d="M15 20.005v-.01" />
+<path d="M20 20.005v-.01" />
+<path d="M20 15.005v-.01" />"###
+};
+#[cfg(feature = "TbBoxAlignTopFilled")]
+const TB_BOX_ALIGN_TOP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 3.005h-14a2 2 0 0 0 -2 2v5a1 1 0 0 0 1 1h16a1 1 0 0 0 1 -1v-5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M4 13.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 18.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 18.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 18.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 18.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 13.995a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBoxAlignTopLeft")]
 const TB_BOX_ALIGN_TOP_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -18898,6 +21050,31 @@ const TB_BOX_ALIGN_TOP_LEFT: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 20h-.01" />
 <path d="M4 20h-.01" />"###
 };
+#[cfg(feature = "TbBoxAlignTopLeftFilled")]
+const TB_BOX_ALIGN_TOP_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 3h-5a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2 -2v-5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M15 3a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20 3a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20 8a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20 14a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4 14a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M20 19a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M15 19a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M9 19a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />
+<path d="M4 19a1 1 0 0 1 .117 1.993l-.127 .007a1 1 0 0 1 -.117 -1.993l.127 -.007z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBoxAlignTopRight")]
 const TB_BOX_ALIGN_TOP_RIGHT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -18922,6 +21099,31 @@ const TB_BOX_ALIGN_TOP_RIGHT: icondata_core::IconData = icondata_core::IconData 
 <path d="M4 15.01v-.01" />
 <path d="M4 9.01v-.01" />
 <path d="M4 4.01v-.01" />"###
+};
+#[cfg(feature = "TbBoxAlignTopRightFilled")]
+const TB_BOX_ALIGN_TOP_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 3.01h-5a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5a2 2 0 0 0 2 -2v-5a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M20 14a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M9 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 19a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 14a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 8a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M4 3a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBoxMargin")]
 const TB_BOX_MARGIN: icondata_core::IconData = icondata_core::IconData {
@@ -19734,6 +21936,23 @@ const TB_BRAND_ANGULAR: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 15l3 -8l3 8" />
 <path d="M10 13h4" />"###
 };
+#[cfg(feature = "TbBrandAnsible")]
+const TB_BRAND_ANSIBLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M9.647 12.294l6.353 3.706l-4 -9l-4 9" />"###
+};
 #[cfg(feature = "TbBrandAo3")]
 const TB_BRAND_AO3: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20367,6 +22586,26 @@ const TB_BRAND_CHROME: icondata_core::IconData = icondata_core::IconData {
 <path d="M14.598 13.5l-4.2 7.275" />
 <path d="M9.402 13.5l-4.2 -7.275" />"###
 };
+#[cfg(feature = "TbBrandCinema4d")]
+const TB_BRAND_CINEMA4D: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9.65 6.956a5.39 5.39 0 0 0 7.494 7.495" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M17.7 12.137a5.738 5.738 0 1 1 -5.737 -5.737" />
+<path d="M17.7 12.338v-1.175c0 -.47 .171 -.92 .476 -1.253a1.56 1.56 0 0 1 1.149 -.52c.827 0 1.523 .676 1.62 1.573c.037 .344 .055 .69 .055 1.037" />
+<path d="M11.662 6.4h1.175c.47 0 .92 -.176 1.253 -.49c.333 -.314 .52 -.74 .52 -1.184c0 -.852 -.676 -1.57 -1.573 -1.67a9.496 9.496 0 0 0 -1.037 -.056" />"###
+};
 #[cfg(feature = "TbBrandCitymapper")]
 const TB_BRAND_CITYMAPPER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20589,6 +22828,24 @@ const TB_BRAND_CPP: icondata_core::IconData = icondata_core::IconData {
 <path d="M13 10v4" />
 <path d="M9 9a3 3 0 0 0 -3 -3h-.5a3.5 3.5 0 0 0 -3.5 3.5v5a3.5 3.5 0 0 0 3.5 3.5h.5a3 3 0 0 0 3 -3" />"###
 };
+#[cfg(feature = "TbBrandCraft")]
+const TB_BRAND_CRAFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 4h-8a8 8 0 1 0 0 16h8a8 8 0 0 0 -8 -8a8 8 0 0 0 8 -8" />
+<path d="M4 12h8" />
+<path d="M12 4v16" />"###
+};
 #[cfg(feature = "TbBrandCrunchbase")]
 const TB_BRAND_CRUNCHBASE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20721,6 +22978,22 @@ const TB_BRAND_D3: icondata_core::IconData = icondata_core::IconData {
 <path d="M17.472 12h-2.472" />
 <path d="M17.472 12h-2.352" />
 <path d="M17.472 12c1.948 0 3.528 1.79 3.528 4s-1.58 4 -3.528 4h-5.472" />"###
+};
+#[cfg(feature = "TbBrandDatabricks")]
+const TB_BRAND_DATABRICKS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17l9 5l9 -5v-3l-9 5l-9 -5v-3l9 5l9 -5v-3l-9 5l-9 -5l9 -5l5.418 3.01" />"###
 };
 #[cfg(feature = "TbBrandDaysCounter")]
 const TB_BRAND_DAYS_COUNTER: icondata_core::IconData = icondata_core::IconData {
@@ -20872,6 +23145,28 @@ const TB_BRAND_DEVIANTART: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18 3v4l-3.857 6h3.857v4h-6.429l-2.571 4h-3v-4l3.857 -6h-3.857v-4h6.429l2.571 -4z" />"###
 };
+#[cfg(feature = "TbBrandDigg")]
+const TB_BRAND_DIGG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 15h-3v-4h3" />
+<path d="M15 15h-3v-4h3" />
+<path d="M9 15v-4" />
+<path d="M15 11v7h-3" />
+<path d="M6 7v8" />
+<path d="M21 15h-3v-4h3" />
+<path d="M21 11v7h-3" />"###
+};
 #[cfg(feature = "TbBrandDingtalk")]
 const TB_BRAND_DINGTALK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -20905,7 +23200,7 @@ const TB_BRAND_DISCORD: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
 <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-<path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3" />
+<path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
 <path d="M7 16.5c3.5 1 6.5 1 10 0" />"###
 };
 #[cfg(feature = "TbBrandDiscordFilled")]
@@ -20922,7 +23217,7 @@ const TB_BRAND_DISCORD_FILLED: icondata_core::IconData = icondata_core::IconData
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.94 0 -2.257 -1.596 -2.777 -2.969l-.02 .005c.838 -.131 1.69 -.323 2.572 -.574a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.725 .207 1.431 .373 2.126 .499l.444 .074c-.477 1.37 -1.695 2.965 -2.627 2.965c-1.743 0 -3.276 -1.555 -4.267 -3.644c-.841 -2.206 -.369 -6.868 1.414 -12.174a1 1 0 0 1 .358 -.49c1.392 -1.016 2.807 -1.475 4.717 -1.685a1 1 0 0 1 .938 .435l.063 .107l.652 1.288l.16 -.019c.877 -.09 1.718 -.09 2.595 0l.158 .019l.65 -1.287a1 1 0 0 1 .754 -.54l.123 -.01zm-5.983 6a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z" stroke-width="0" fill="currentColor" />"###
+<path d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.732 0 -1.693 -.968 -2.328 -2.045a21.512 21.512 0 0 0 2.103 -.493a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.717 .204 1.416 .37 2.103 .494c-.635 1.075 -1.596 2.044 -2.328 2.044c-1.788 0 -3.391 -1.548 -4.428 -3.629c-.888 -2.217 -.39 -6.89 1.485 -12.204a1 1 0 0 1 .371 -.488c1.439 -1.001 2.952 -1.459 4.966 -1.673a1 1 0 0 1 .935 .435l.063 .107l.651 1.285l.137 -.016a12.97 12.97 0 0 1 2.643 0l.134 .016l.65 -1.284a1 1 0 0 1 .754 -.54l.122 -.009zm-5.983 7a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBrandDisney")]
 const TB_BRAND_DISNEY: icondata_core::IconData = icondata_core::IconData {
@@ -21166,6 +23461,26 @@ const TB_BRAND_ELASTIC: icondata_core::IconData = icondata_core::IconData {
 <path d="M14.5 19l1 -3.5" />
 <path d="M5.417 15l4.083 -4" />"###
 };
+#[cfg(feature = "TbBrandElectronicArts")]
+const TB_BRAND_ELECTRONIC_ARTS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M17.5 15l-3 -6l-3 6h-5l1.5 -3" />
+<path d="M17 14h-2" />
+<path d="M6.5 12h3.5" />
+<path d="M8 9h3" />"###
+};
 #[cfg(feature = "TbBrandEmber")]
 const TB_BRAND_EMBER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -21267,6 +23582,25 @@ const TB_BRAND_FACEBOOK_FILLED: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbBrandFeedly")]
+const TB_BRAND_FEEDLY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7.833 12.278l4.445 -4.445" />
+<path d="M10.055 14.5l2.223 -2.222" />
+<path d="M12.278 16.722l.555 -.555" />
+<path d="M19.828 14.828a4 4 0 0 0 0 -5.656l-5 -5a4 4 0 0 0 -5.656 0l-5 5a4 4 0 0 0 0 5.656l6.171 6.172h3.314l6.171 -6.172z" />"###
+};
 #[cfg(feature = "TbBrandFigma")]
 const TB_BRAND_FIGMA: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -21284,6 +23618,24 @@ const TB_BRAND_FIGMA: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
 <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
 <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />"###
+};
+#[cfg(feature = "TbBrandFilezilla")]
+const TB_BRAND_FILEZILLA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16 15.824a4.062 4.062 0 0 1 -2.25 .033c-.738 -.201 -2.018 -.08 -2.75 .143l4.583 -5h-6.583" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M8 15l2 -8h5" />"###
 };
 #[cfg(feature = "TbBrandFinder")]
 const TB_BRAND_FINDER: icondata_core::IconData = icondata_core::IconData {
@@ -22183,6 +24535,25 @@ const TB_BRAND_JUEJIN: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 9l5 4l5 -4" />
 <path d="M11 6l1 .8l1 -.8l-1 -.8z" />"###
 };
+#[cfg(feature = "TbBrandKbin")]
+const TB_BRAND_KBIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<g stroke-width="1.838">
+  <path d="M10.586 9.506h-2.43c-.434 -.932 -.7 -1.506 -1.596 -1.506l-2.404 .019c-.662 0 -1.353 .592 -1.103 1.487l2.216 9.436c.486 1.743 .811 2.058 1.145 2.058h.64" />
+  <path d="M14.275 3h5.645c.84 0 1.24 .714 1.02 1.287l-4.687 15.109c-.42 1.133 -1.159 1.603 -2.354 1.603h-7.485c.39 0 .76 -.618 1.296 -2.061l4.457 -14.49c.326 -.83 .76 -1.448 2.108 -1.448z" />
+</g>"###
+};
 #[cfg(feature = "TbBrandKick")]
 const TB_BRAND_KICK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -22529,6 +24900,24 @@ const TB_BRAND_MEDIUM: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 9l0 6" />
 <path d="M15 9l0 6" />"###
 };
+#[cfg(feature = "TbBrandMeetup")]
+const TB_BRAND_MEETUP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.455 10.82c.935 -2.163 3.045 -3.82 5.545 -3.82c2.104 0 2.844 1.915 2 4l-2 6" />
+<path d="M6.981 7l-3.981 9.914" />
+<path d="M13 11c.937 -2.16 3.071 -3.802 5.42 -3.972c2.104 0 3.128 1.706 2.284 3.792l-2.454 6.094c-.853 1.676 .75 2.586 2.75 2.086" />"###
+};
 #[cfg(feature = "TbBrandMercedes")]
 const TB_BRAND_MERCEDES: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -22581,6 +24970,27 @@ const TB_BRAND_META: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z" />
 <path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z" />"###
+};
+#[cfg(feature = "TbBrandMinecraft")]
+const TB_BRAND_MINECRAFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21 16.008v-8.018a1.98 1.98 0 0 0 -1 -1.717l-7 -4.008a2.016 2.016 0 0 0 -2 0l-7 4.008c-.619 .355 -1 1.01 -1 1.718v8.018c0 .709 .381 1.363 1 1.717l7 4.008c.62 .354 1.38 .354 2 0l7 -4.008c.619 -.355 1 -1.01 1 -1.718z" />
+<path d="M12 22v-10" />
+<path d="M12 12l8.73 -5.04" />
+<path d="M3.27 6.96l8.73 5.04" />
+<path d="M12 17l3.003 -1.668m3 -1.667l2.997 -1.665m-9 5l-9 -5" />
+<path d="M15 17l3 -1.67v-3l-3 1.67z" />"###
 };
 #[cfg(feature = "TbBrandMiniprogram")]
 const TB_BRAND_MINIPROGRAM: icondata_core::IconData = icondata_core::IconData {
@@ -22827,6 +25237,23 @@ const TB_BRAND_NEXTJS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993" />
 <path d="M15 12v-3" />"###
+};
+#[cfg(feature = "TbBrandNodejs")]
+const TB_BRAND_NODEJS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" />
+<path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" />"###
 };
 #[cfg(feature = "TbBrandNordVpn")]
 const TB_BRAND_NORD_VPN: icondata_core::IconData = icondata_core::IconData {
@@ -23098,6 +25525,24 @@ const TB_BRAND_PAGEKIT: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12.077 20h-5.077v-16h11v14h-5.077" />"###
+};
+#[cfg(feature = "TbBrandParsinta")]
+const TB_BRAND_PARSINTA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 3a9 9 0 1 0 9 9" />
+<path d="M21 12a9 9 0 0 0 -9 -9" opacity=".5" />
+<path d="M10 9v6l5 -3z" />"###
 };
 #[cfg(feature = "TbBrandPatreon")]
 const TB_BRAND_PATREON: icondata_core::IconData = icondata_core::IconData {
@@ -23596,6 +26041,23 @@ const TB_BRAND_REVOLUT: icondata_core::IconData = icondata_core::IconData {
 <path d="M10.908 6c-.091 .363 -.908 5 -.908 5h1.228c1.59 0 2.772 -1.168 2.772 -2.943c0 -1.249 -.818 -2.057 -2.087 -2.057h-1z" />
 <path d="M15.5 13.5l1.791 4.558c.535 1.352 1.13 2.008 1.709 2.442c-1 .5 -2.616 .522 -3.605 .497c-.973 0 -2.28 -.24 -3.106 -2.6l-1.289 -3.397h-1.5s-.465 2.243 -.65 3.202c-.092 .704 .059 1.594 .15 2.298c-1 .5 -2.5 .5 -3.5 .5c-.727 0 -1.45 -.248 -1.5 -1.5l0 -.311a7 7 0 0 1 .149 -1.409c.75 -3.577 1.366 -7.17 1.847 -10.78c.23 -1.722 0 -3.5 0 -3.5c.585 -.144 2.709 -.602 6.787 -.471a10.26 10.26 0 0 1 3.641 .722c.308 .148 .601 .326 .875 .531c.254 .212 .497 .437 .727 .674c.3 .382 .545 .804 .727 1.253c.155 .483 .237 .987 .243 1.493c0 2.462 -1.412 4.676 -3.5 5.798z" />"###
 };
+#[cfg(feature = "TbBrandRumble")]
+const TB_BRAND_RUMBLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.993 9.108c.383 .4 .687 .863 .893 1.368a4.195 4.195 0 0 1 .006 3.166a4.37 4.37 0 0 1 -.887 1.372a20.233 20.233 0 0 1 -2.208 2a20.615 20.615 0 0 1 -2.495 1.669a21.322 21.322 0 0 1 -5.622 2.202a4.213 4.213 0 0 1 -3.002 -.404a3.98 3.98 0 0 1 -1.163 -.967a3.796 3.796 0 0 1 -.695 -1.312c-1.199 -3.902 -1.022 -8.312 .134 -12.23c.609 -2.057 2.643 -3.349 4.737 -2.874c3.88 .88 7.52 3.147 10.302 6.01z" />
+<path d="M14.044 13.034c.67 -.505 .67 -1.489 0 -2.01a14.824 14.824 0 0 0 -1.498 -1.044a15.783 15.783 0 0 0 -1.62 -.865c-.77 -.35 -1.63 .139 -1.753 .973a15.385 15.385 0 0 0 -.1 3.786a1.232 1.232 0 0 0 1.715 1.027a14.783 14.783 0 0 0 1.694 -.827a14.46 14.46 0 0 0 1.562 -1.035v-.005z" />"###
+};
 #[cfg(feature = "TbBrandRust")]
 const TB_BRAND_RUST: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -23919,6 +26381,23 @@ const TB_BRAND_SPACEHEY: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 <path d="M14 20h6v-6a3 3 0 0 0 -6 0v6z" />
 <path d="M11 8v2.5a3.5 3.5 0 0 1 -3.5 3.5h-.5a3 3 0 0 1 0 -6h4z" />"###
+};
+#[cfg(feature = "TbBrandSpeedtest")]
+const TB_BRAND_SPEEDTEST: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.636 19.364a9 9 0 1 1 12.728 0" />
+<path d="M16 9l-4 4" />"###
 };
 #[cfg(feature = "TbBrandSpotify")]
 const TB_BRAND_SPOTIFY: icondata_core::IconData = icondata_core::IconData {
@@ -24308,6 +26787,28 @@ const TB_BRAND_TAOBAO: icondata_core::IconData = icondata_core::IconData {
 <path d="M16.5 17c-1.145 .361 -7 3 -8.5 -.5" />
 <path d="M11.765 8.539l-1.765 2.461" />"###
 };
+#[cfg(feature = "TbBrandTeams")]
+const TB_BRAND_TEAMS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 7h10v10h-10z" />
+<path d="M6 10h4" />
+<path d="M8 10v4" />
+<path d="M8.104 17c.47 2.274 2.483 4 4.896 4a5 5 0 0 0 5 -5v-7h-5" />
+<path d="M18 18a4 4 0 0 0 4 -4v-5h-4" />
+<path d="M13.003 8.83a3 3 0 1 0 -1.833 -1.833" />
+<path d="M15.83 8.36a2.5 2.5 0 1 0 .594 -4.117" />"###
+};
 #[cfg(feature = "TbBrandTed")]
 const TB_BRAND_TED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -24379,6 +26880,22 @@ const TB_BRAND_TETHER: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 15v-7" />
 <path d="M8 8h8" />"###
 };
+#[cfg(feature = "TbBrandThreads")]
+const TB_BRAND_THREADS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 7.5c-1.333 -3 -3.667 -4.5 -7 -4.5c-5 0 -8 2.5 -8 9s3.5 9 8 9s7 -3 7 -5s-1 -5 -7 -5c-2.5 0 -3 1.25 -3 2.5c0 1.5 1 2.5 2.5 2.5c2.5 0 3.5 -1.5 3.5 -5s-2 -4 -3 -4s-1.833 .333 -2.5 1" />"###
+};
 #[cfg(feature = "TbBrandThreejs")]
 const TB_BRAND_THREEJS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -24414,22 +26931,6 @@ const TB_BRAND_TIDAL: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M5.333 6l3.334 3.25l3.333 -3.25l3.333 3.25l3.334 -3.25l3.333 3.25l-3.333 3.25l-3.334 -3.25l-3.333 3.25l3.333 3.25l-3.333 3.25l-3.333 -3.25l3.333 -3.25l-3.333 -3.25l-3.334 3.25l-3.333 -3.25z" />"###
 };
-#[cfg(feature = "TbBrandTiktoFilled")]
-const TB_BRAND_TIKTO_FILLED: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" stroke-width="0" fill="currentColor" />"###
-};
 #[cfg(feature = "TbBrandTiktok")]
 const TB_BRAND_TIKTOK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -24445,6 +26946,22 @@ const TB_BRAND_TIKTOK: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />"###
+};
+#[cfg(feature = "TbBrandTiktokFilled")]
+const TB_BRAND_TIKTOK_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.083 2h-4.083a1 1 0 0 0 -1 1v11.5a1.5 1.5 0 1 1 -2.519 -1.1l.12 -.1a1 1 0 0 0 .399 -.8v-4.326a1 1 0 0 0 -1.23 -.974a7.5 7.5 0 0 0 1.73 14.8l.243 -.005a7.5 7.5 0 0 0 7.257 -7.495v-2.7l.311 .153c1.122 .53 2.333 .868 3.59 .993a1 1 0 0 0 1.099 -.996v-4.033a1 1 0 0 0 -.834 -.986a5.005 5.005 0 0 1 -4.097 -4.096a1 1 0 0 0 -.986 -.835z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBrandTinder")]
 const TB_BRAND_TINDER: icondata_core::IconData = icondata_core::IconData {
@@ -24896,6 +27413,23 @@ const TB_BRAND_VK: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M14 19h-4a8 8 0 0 1 -8 -8v-5h4v5a4 4 0 0 0 4 4h0v-9h4v4.5l.03 0a4.531 4.531 0 0 0 3.97 -4.496h4l-.342 1.711a6.858 6.858 0 0 1 -3.658 4.789h0a5.34 5.34 0 0 1 3.566 4.111l.434 2.389h0h-4a4.531 4.531 0 0 0 -3.97 -4.496v4.5z" />"###
 };
+#[cfg(feature = "TbBrandVlc")]
+const TB_BRAND_VLC: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.79 4.337l3.101 9.305c.33 .985 -.113 2.07 -1.02 2.499a9.148 9.148 0 0 1 -7.742 0c-.907 -.428 -1.35 -1.514 -1.02 -2.499l3.1 -9.305c.267 -.8 .985 -1.337 1.791 -1.337c.807 0 1.525 .537 1.79 1.337z" />
+<path d="M7 14h-1.429a2 2 0 0 0 -1.923 1.45l-.571 2a2 2 0 0 0 1.923 2.55h13.998a2 2 0 0 0 1.923 -2.55l-.572 -2a2 2 0 0 0 -1.923 -1.45h-1.426" />"###
+};
 #[cfg(feature = "TbBrandVolkswagen")]
 const TB_BRAND_VOLKSWAGEN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25087,6 +27621,27 @@ const TB_BRAND_WHATSAPP: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
 <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />"###
 };
+#[cfg(feature = "TbBrandWikipedia")]
+const TB_BRAND_WIKIPEDIA: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 4.984h2" />
+<path d="M8 4.984h2.5" />
+<path d="M14.5 4.984h2.5" />
+<path d="M22 4.984h-2" />
+<path d="M4 4.984l5.455 14.516l6.545 -14.516" />
+<path d="M9 4.984l6 14.516l6 -14.516" />"###
+};
 #[cfg(feature = "TbBrandWindows")]
 const TB_BRAND_WINDOWS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25180,6 +27735,57 @@ const TB_BRAND_WORDPRESS: icondata_core::IconData = icondata_core::IconData {
 <path d="M18 11c.177 -.528 1 -1.364 1 -2.5c0 -1.78 -.776 -2.5 -1.875 -2.5c-.898 0 -1.125 .812 -1.125 1.429c0 1.83 2 2.058 2 3.571z" />
 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />"###
 };
+#[cfg(feature = "TbBrandX")]
+const TB_BRAND_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />"###
+};
+#[cfg(feature = "TbBrandXFilled")]
+const TB_BRAND_X_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.267 3a1 1 0 0 1 .73 .317l.076 .092l4.274 5.828l5.946 -5.944a1 1 0 0 1 1.497 1.32l-.083 .094l-6.163 6.162l6.262 8.54a1 1 0 0 1 -.697 1.585l-.109 .006h-4.267a1 1 0 0 1 -.73 -.317l-.076 -.092l-4.276 -5.829l-5.944 5.945a1 1 0 0 1 -1.497 -1.32l.083 -.094l6.161 -6.163l-6.26 -8.539a1 1 0 0 1 .697 -1.585l.109 -.006h4.267z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbBrandXamarin")]
+const TB_BRAND_XAMARIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.958 21h-7.917a2 2 0 0 1 -1.732 -1l-4.041 -7a2 2 0 0 1 0 -2l4.041 -7a2 2 0 0 1 1.732 -1h7.917a2 2 0 0 1 1.732 1l4.042 7a2 2 0 0 1 0 2l-4.041 7a2 2 0 0 1 -1.733 1z" />
+<path d="M15 16l-6 -8" />
+<path d="M9 16l6 -8" />"###
+};
 #[cfg(feature = "TbBrandXbox")]
 const TB_BRAND_XBOX: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25197,6 +27803,22 @@ const TB_BRAND_XBOX: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
 <path d="M6.5 5c7.72 2.266 10.037 7.597 12.5 12.5" />
 <path d="M17.5 5c-7.72 2.266 -10.037 7.597 -12.5 12.5" />"###
+};
+#[cfg(feature = "TbBrandXdeep")]
+const TB_BRAND_XDEEP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.401 8.398l1.599 -2.398h5l-4 6l4 6h-5l-8 -12h-5l4 6l-4 6h5l1.596 -2.393" />"###
 };
 #[cfg(feature = "TbBrandXing")]
 const TB_BRAND_XING: icondata_core::IconData = icondata_core::IconData {
@@ -25236,6 +27858,23 @@ const TB_BRAND_YAHOO: icondata_core::IconData = icondata_core::IconData {
 <path d="M12.5 8l5 0" />
 <path d="M20 11l0 4" />
 <path d="M20 18l0 .01" />"###
+};
+#[cfg(feature = "TbBrandYandex")]
+const TB_BRAND_YANDEX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 20v-16h-2a4 4 0 0 0 -4 4v1a4 4 0 0 0 4 4h2" />
+<path d="M9 20l3 -7" />"###
 };
 #[cfg(feature = "TbBrandYatse")]
 const TB_BRAND_YATSE: icondata_core::IconData = icondata_core::IconData {
@@ -25285,8 +27924,24 @@ const TB_BRAND_YOUTUBE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+<path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
 <path d="M10 9l5 3l-5 3z" />"###
+};
+#[cfg(feature = "TbBrandYoutubeFilled")]
+const TB_BRAND_YOUTUBE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBrandYoutubeKids")]
 const TB_BRAND_YOUTUBE_KIDS: icondata_core::IconData = icondata_core::IconData {
@@ -25302,8 +27957,8 @@ const TB_BRAND_YOUTUBE_KIDS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M17.782 17.03l-3.413 .235l-.023 0c-1.117 .09 -2.214 .335 -3.257 .725l-2.197 .794a3.597 3.597 0 0 1 -2.876 -.189a3.342 3.342 0 0 1 -1.732 -2.211l-1.204 -5.293a3.21 3.21 0 0 1 .469 -2.503a3.468 3.468 0 0 1 2.177 -1.452l9.843 -2.06c1.87 -.392 3.716 .744 4.124 2.537l1.227 5.392a3.217 3.217 0 0 1 -.61 2.7a3.506 3.506 0 0 1 -2.528 1.323z" />
-<path d="M10 10l.972 4l4.028 -3z" />"###
+<path d="M18.608 17.75l-3.9 .268h-.027a13.83 13.83 0 0 0 -3.722 .828l-2.511 .908a4.111 4.111 0 0 1 -3.287 -.216a3.82 3.82 0 0 1 -1.98 -2.527l-1.376 -6.05a3.669 3.669 0 0 1 .536 -2.86a3.964 3.964 0 0 1 2.489 -1.661l11.25 -2.354c2.137 -.448 4.247 .85 4.713 2.9l1.403 6.162a3.677 3.677 0 0 1 -.697 3.086a4.007 4.007 0 0 1 -2.89 1.512v.002z" />
+<path d="M9 10l1.208 5l4.292 -4z" />"###
 };
 #[cfg(feature = "TbBrandZalando")]
 const TB_BRAND_ZALANDO: icondata_core::IconData = icondata_core::IconData {
@@ -25445,7 +28100,7 @@ const TB_BREAD: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 0h10z" />"###
+<path d="M18 4a3 3 0 0 1 2 5.235v8.765a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-8.764a3 3 0 0 1 1.824 -5.231h12.176v-.005z" />"###
 };
 #[cfg(feature = "TbBreadOff")]
 const TB_BREAD_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -25461,7 +28116,7 @@ const TB_BREAD_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M18.415 18.414a2 2 0 0 1 -1.415 .586h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 .435 -4.795m3.565 -.441h8a3 3 0 0 1 2 5.235v4.765" />
+<path d="M8 4l10 .005v-.005a3 3 0 0 1 2 5.235v6.765m-.59 3.418c-.36 .36 -.86 .582 -1.41 .582h-12a2 2 0 0 1 -2 -2v-8.764a3 3 0 0 1 .418 -4.785" />
 <path d="M3 3l18 18" />"###
 };
 #[cfg(feature = "TbBriefcase")]
@@ -25482,6 +28137,23 @@ const TB_BRIEFCASE: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
 <path d="M12 12l0 .01" />
 <path d="M3 13a20 20 0 0 0 18 0" />"###
+};
+#[cfg(feature = "TbBriefcase2")]
+const TB_BRIEFCASE2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" />
+<path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />"###
 };
 #[cfg(feature = "TbBriefcaseOff")]
 const TB_BRIEFCASE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -25564,6 +28236,30 @@ const TB_BRIGHTNESS_DOWN: icondata_core::IconData = icondata_core::IconData {
 <path d="M5 12l0 .01" />
 <path d="M7 7l0 .01" />"###
 };
+#[cfg(feature = "TbBrightnessDownFilled")]
+const TB_BRIGHTNESS_DOWN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 8a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" stroke-width="0" fill="currentColor" />
+<path d="M12 4a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M17 6a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M19 11a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M17 16a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M12 18a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M7 16a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M5 11a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M7 6a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbBrightnessHalf")]
 const TB_BRIGHTNESS_HALF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -25625,6 +28321,30 @@ const TB_BRIGHTNESS_UP: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 17l-1.4 1.4" />
 <path d="M6 12l-2 0" />
 <path d="M7 7l-1.4 -1.4" />"###
+};
+#[cfg(feature = "TbBrightnessUpFilled")]
+const TB_BRIGHTNESS_UP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 8a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" stroke-width="0" fill="currentColor" />
+<path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-1.4 1.4a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.4 -1.4z" stroke-width="0" fill="currentColor" />
+<path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />
+<path d="M16.293 16.293a1 1 0 0 1 1.32 -.083l.094 .083l1.4 1.4a1 1 0 0 1 -1.32 1.497l-.094 -.083l-1.4 -1.4a1 1 0 0 1 0 -1.414z" stroke-width="0" fill="currentColor" />
+<path d="M12 18a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M6.293 16.293a1 1 0 0 1 1.497 1.32l-.083 .094l-1.4 1.4a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.4 -1.4z" stroke-width="0" fill="currentColor" />
+<path d="M6 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />
+<path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l1.4 1.4a1 1 0 0 1 -1.32 1.497l-.094 -.083l-1.4 -1.4a1 1 0 0 1 0 -1.414z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbBroadcast")]
 const TB_BROADCAST: icondata_core::IconData = icondata_core::IconData {
@@ -26652,6 +29372,22 @@ const TB_CACTUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 21v-16a2 2 0 1 1 4 0v16" />
 <path d="M7 21h10" />"###
 };
+#[cfg(feature = "TbCactusFilled")]
+const TB_CACTUS_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7 22a1 1 0 0 1 -.117 -1.993l.117 -.007h2v-6a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-1a1 1 0 0 1 1.993 -.117l.007 .117v1a2 2 0 0 0 1.85 1.995l.15 .005v-7a3 3 0 0 1 5.995 -.176l.005 .176v10a2 2 0 0 0 1.995 -1.85l.005 -.15v-5a1 1 0 0 1 1.993 -.117l.007 .117v5a4 4 0 0 1 -3.8 3.995l-.2 .005v3h2a1 1 0 0 1 .117 1.993l-.117 .007h-10z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCactusOff")]
 const TB_CACTUS_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -26731,6 +29467,22 @@ const TB_CALCULATOR: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 17l0 .01" />
 <path d="M12 17l0 .01" />
 <path d="M16 17l0 .01" />"###
+};
+#[cfg(feature = "TbCalculatorFilled")]
+const TB_CALCULATOR_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-10 15a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-8 -4a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm4 0a1 1 0 0 0 -1 1l.007 .127a1 1 0 0 0 1.993 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm-1 -7h-6a2 2 0 0 0 -2 2v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-1a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCalculatorOff")]
 const TB_CALCULATOR_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -26989,6 +29741,23 @@ const TB_CALENDAR_EXCLAMATION: icondata_core::IconData = icondata_core::IconData
 <path d="M19 16v3" />
 <path d="M19 22v.01" />"###
 };
+#[cfg(feature = "TbCalendarFilled")]
+const TB_CALENDAR_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z" stroke-width="0" fill="currentColor" />
+<path d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCalendarHeart")]
 const TB_CALENDAR_HEART: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -27132,6 +29901,28 @@ const TB_CALENDAR_QUESTION: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 11h16" />
 <path d="M19 22v.01" />
 <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbCalendarRepeat")]
+const TB_CALENDAR_REPEAT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3" />
+<path d="M16 3v4" />
+<path d="M8 3v4" />
+<path d="M4 11h12" />
+<path d="M20 14l2 2h-3" />
+<path d="M20 18l2 -2" />
+<path d="M19 16a3 3 0 1 0 2 5.236" />"###
 };
 #[cfg(feature = "TbCalendarSearch")]
 const TB_CALENDAR_SEARCH: icondata_core::IconData = icondata_core::IconData {
@@ -27769,6 +30560,24 @@ const TB_CAMPFIRE: icondata_core::IconData = icondata_core::IconData {
 <path d="M20 21l-16 -4" />
 <path d="M12 15a4 4 0 0 0 4 -4c0 -3 -2 -3 -2 -8c-4 2 -6 5 -6 8a4 4 0 0 0 4 4z" />"###
 };
+#[cfg(feature = "TbCampfireFilled")]
+const TB_CAMPFIRE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.757 16.03a1 1 0 0 1 .597 1.905l-.111 .035l-16 4a1 1 0 0 1 -.597 -1.905l.111 -.035l16 -4z" stroke-width="0" fill="currentColor" />
+<path d="M3.03 16.757a1 1 0 0 1 1.098 -.749l.115 .022l16 4a1 1 0 0 1 -.37 1.962l-.116 -.022l-16 -4a1 1 0 0 1 -.727 -1.213z" stroke-width="0" fill="currentColor" />
+<path d="M13.553 2.106c-4.174 2.086 -6.553 5.358 -6.553 8.894a5 5 0 0 0 10 0c0 -1.047 -.188 -1.808 -.606 -2.705l-.169 -.345l-.33 -.647c-.621 -1.24 -.895 -2.338 -.895 -4.303a1 1 0 0 0 -1.447 -.894z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCandle")]
 const TB_CANDLE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -27785,6 +30594,23 @@ const TB_CANDLE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M9 21h6v-9a1 1 0 0 0 -1 -1h-4a1 1 0 0 0 -1 1v9z" />
 <path d="M12 3l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z" />"###
+};
+#[cfg(feature = "TbCandleFilled")]
+const TB_CANDLE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 10h-4a2 2 0 0 0 -2 2v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1 -1v-9a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M11.254 2.334l-1.55 1.737c-1.042 1.277 -.898 3.097 .296 4.166a3 3 0 0 0 4.196 -4.28l-1.452 -1.624a1 1 0 0 0 -1.491 .001z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCandy")]
 const TB_CANDY: icondata_core::IconData = icondata_core::IconData {
@@ -27856,6 +30682,70 @@ const TB_CANNABIS: icondata_core::IconData = icondata_core::IconData {
 <path d="M7 20s0 -2 1 -3.5c-1.5 0 -2 -.5 -4 -1.5c0 0 1.839 -1.38 5 -1c-1.789 -.97 -3.279 -2.03 -5 -6c0 0 3.98 -.3 6.5 3.5c-2.284 -4.9 1.5 -9.5 1.5 -9.5c2.734 5.47 2.389 7.5 1.5 9.5c2.531 -3.77 6.5 -3.5 6.5 -3.5c-1.721 3.97 -3.211 5.03 -5 6c3.161 -.38 5 1 5 1c-2 1 -2.5 1.5 -4 1.5c1 1.5 1 3.5 1 3.5c-2 0 -4.438 -2.22 -5 -3c-.563 .78 -3 3 -5 3z" />
 <path d="M12 22v-5" />"###
 };
+#[cfg(feature = "TbCapsule")]
+const TB_CAPSULE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 3m0 6a6 6 0 0 1 6 -6h0a6 6 0 0 1 6 6v6a6 6 0 0 1 -6 6h0a6 6 0 0 1 -6 -6z" />"###
+};
+#[cfg(feature = "TbCapsuleFilled")]
+const TB_CAPSULE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 2l-.243 .004a7.004 7.004 0 0 0 -6.757 6.996v6a7 7 0 0 0 7 7l.243 -.004a7.004 7.004 0 0 0 6.757 -6.996v-6a7 7 0 0 0 -7 -7z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbCapsuleHorizontal")]
+const TB_CAPSULE_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 6m0 6a6 6 0 0 1 6 -6h6a6 6 0 0 1 6 6v0a6 6 0 0 1 -6 6h-6a6 6 0 0 1 -6 -6z" />"###
+};
+#[cfg(feature = "TbCapsuleHorizontalFilled")]
+const TB_CAPSULE_HORIZONTAL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 5h-6a7 7 0 1 0 0 14h6a7 7 0 0 0 7 -7l-.007 -.303a7 7 0 0 0 -6.993 -6.697z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCapture")]
 const TB_CAPTURE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -27875,6 +30765,26 @@ const TB_CAPTURE: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 4h2a2 2 0 0 1 2 2v2" />
 <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
 <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />"###
+};
+#[cfg(feature = "TbCaptureFilled")]
+const TB_CAPTURE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 3a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 0 -.993 .883l-.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a3 3 0 0 1 2.824 -2.995l.176 -.005h2z" stroke-width="0" fill="currentColor" />
+<path d="M4 15a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 0 .883 .993l.117 .007h2a1 1 0 0 1 .117 1.993l-.117 .007h-2a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 0 -.883 -.993l-.117 -.007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />
+<path d="M20 15a1 1 0 0 1 .993 .883l.007 .117v2a3 3 0 0 1 -2.824 2.995l-.176 .005h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2a1 1 0 0 0 .993 -.883l.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M12 8a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCaptureOff")]
 const TB_CAPTURE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -27957,6 +30867,25 @@ const TB_CAR_CRASH: icondata_core::IconData = icondata_core::IconData {
 <path d="M19 12h2" />
 <path d="M17.5 15.5l1.5 1.5" />
 <path d="M17.5 8.5l1.5 -1.5" />"###
+};
+#[cfg(feature = "TbCarGarage")]
+const TB_CAR_GARAGE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M15 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M5 20h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+<path d="M3 6l9 -4l9 4" />"###
 };
 #[cfg(feature = "TbCarOff")]
 const TB_CAR_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -28076,6 +31005,24 @@ const TB_CARDS: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 4h1a1 1 0 0 1 1 1v3.5" />
 <path d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374" />"###
 };
+#[cfg(feature = "TbCardsFilled")]
+const TB_CARDS_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10.348 3.169l-7.15 3.113a2 2 0 0 0 -1.03 2.608l4.92 11.895a1.96 1.96 0 0 0 2.59 1.063l7.142 -3.11a2.002 2.002 0 0 0 1.036 -2.611l-4.92 -11.894a1.96 1.96 0 0 0 -2.588 -1.064z" stroke-width="0" fill="currentColor" />
+<path d="M16 3a2 2 0 0 1 1.995 1.85l.005 .15v3.5a1 1 0 0 1 -1.993 .117l-.007 -.117v-3.5h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />
+<path d="M19.08 5.61a1 1 0 0 1 1.31 -.53c.257 .108 .505 .21 .769 .314a2 2 0 0 1 1.114 2.479l-.056 .146l-2.298 5.374a1 1 0 0 1 -1.878 -.676l.04 -.11l2.296 -5.371l-.366 -.148l-.402 -.167a1 1 0 0 1 -.53 -1.312z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCaretDown")]
 const TB_CARET_DOWN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28091,6 +31038,22 @@ const TB_CARET_DOWN: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M6 10l6 6l6 -6h-12" />"###
+};
+#[cfg(feature = "TbCaretDownFilled")]
+const TB_CARET_DOWN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCaretLeft")]
 const TB_CARET_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -28108,6 +31071,39 @@ const TB_CARET_LEFT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M14 6l-6 6l6 6v-12" />"###
 };
+#[cfg(feature = "TbCaretLeftFilled")]
+const TB_CARET_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.883 5.007l.058 -.005h.118l.058 .005l.06 .009l.052 .01l.108 .032l.067 .027l.132 .07l.09 .065l.081 .073l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059v12c0 .852 -.986 1.297 -1.623 .783l-.084 -.076l-6 -6a1 1 0 0 1 -.083 -1.32l.083 -.094l6 -6l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbCaretLeftRight")]
+const TB_CARET_LEFT_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 18l6 -6l-6 -6v12" />
+<path d="M10 18l-6 -6l6 -6v12" />"###
+};
 #[cfg(feature = "TbCaretRight")]
 const TB_CARET_RIGHT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28124,6 +31120,22 @@ const TB_CARET_RIGHT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10 18l6 -6l-6 -6v12" />"###
 };
+#[cfg(feature = "TbCaretRightFilled")]
+const TB_CARET_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 6c0 -.852 .986 -1.297 1.623 -.783l.084 .076l6 6a1 1 0 0 1 .083 1.32l-.083 .094l-6 6l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002l-.059 -.002l-.058 -.005l-.06 -.009l-.052 -.01l-.108 -.032l-.067 -.027l-.132 -.07l-.09 -.065l-.081 -.073l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057l-.002 -12.059z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCaretUp")]
 const TB_CARET_UP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28139,6 +31151,39 @@ const TB_CARET_UP: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18 14l-6 -6l-6 6h12" />"###
+};
+#[cfg(feature = "TbCaretUpDown")]
+const TB_CARET_UP_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 10l-6 -6l-6 6h12" />
+<path d="M18 14l-6 6l-6 -6h12" />"###
+};
+#[cfg(feature = "TbCaretUpFilled")]
+const TB_CARET_UP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCarouselHorizontal")]
 const TB_CAROUSEL_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
@@ -28158,6 +31203,24 @@ const TB_CAROUSEL_HORIZONTAL: icondata_core::IconData = icondata_core::IconData 
 <path d="M22 17h-1a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h1" />
 <path d="M2 17h1a1 1 0 0 0 1 -1v-8a1 1 0 0 0 -1 -1h-1" />"###
 };
+#[cfg(feature = "TbCarouselHorizontalFilled")]
+const TB_CAROUSEL_HORIZONTAL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16 4h-8a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M22 6a1 1 0 0 1 .117 1.993l-.117 .007h-1v8h1a1 1 0 0 1 .117 1.993l-.117 .007h-1a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-8a2 2 0 0 1 1.85 -1.995l.15 -.005h1z" stroke-width="0" fill="currentColor" />
+<path d="M3 6a2 2 0 0 1 1.995 1.85l.005 .15v8a2 2 0 0 1 -1.85 1.995l-.15 .005h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1v-8h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCarouselVertical")]
 const TB_CAROUSEL_VERTICAL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28175,6 +31238,24 @@ const TB_CAROUSEL_VERTICAL: icondata_core::IconData = icondata_core::IconData {
 <path d="M19 8v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1z" />
 <path d="M7 22v-1a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v1" />
 <path d="M17 2v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1" />"###
+};
+#[cfg(feature = "TbCarouselVerticalFilled")]
+const TB_CAROUSEL_VERTICAL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 6h-12a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-8a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />
+<path d="M16 19a2 2 0 0 1 1.995 1.85l.005 .15v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1h-8v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a2 2 0 0 1 1.85 -1.995l.15 -.005h8z" stroke-width="0" fill="currentColor" />
+<path d="M17 1a1 1 0 0 1 .993 .883l.007 .117v1a2 2 0 0 1 -1.85 1.995l-.15 .005h-8a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h8v-1a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbCarrot")]
 const TB_CARROT: icondata_core::IconData = icondata_core::IconData {
@@ -28390,6 +31471,25 @@ const TB_CATEGORY2: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
 <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />"###
 };
+#[cfg(feature = "TbCategoryFilled")]
+const TB_CATEGORY_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 3h-6a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1 -1v-6a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M20 3h-6a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1 -1v-6a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M10 13h-6a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1 -1v-6a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M17 13a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbCe")]
 const TB_CE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -28404,9 +31504,9 @@ const TB_CE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11 4a8 8 0 1 0 0 16" />
-<path d="M20 4a8 8 0 1 0 0 16" />
-<path d="M12 12l8 0" />"###
+<path d="M9 6a6 6 0 1 0 0 12" />
+<path d="M21 6a6 6 0 1 0 0 12" />
+<path d="M15 12h6" />"###
 };
 #[cfg(feature = "TbCeOff")]
 const TB_CE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -29819,6 +32919,70 @@ const TB_CHESS_ROOK_FILLED: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 3a1 1 0 0 1 .993 .883l.007 .117v2h1.652l.362 -2.164a1 1 0 0 1 1.034 -.836l.116 .013a1 1 0 0 1 .836 1.035l-.013 .116l-.5 3a1 1 0 0 1 -.865 .829l-.122 .007h-1.383l.877 7.89a1 1 0 0 1 -.877 1.103l-.117 .007h-8a1 1 0 0 1 -1 -.993l.006 -.117l.877 -7.89h-1.383a1 1 0 0 1 -.96 -.718l-.026 -.118l-.5 -3a1 1 0 0 1 1.947 -.442l.025 .114l.361 2.164h1.653v-2a1 1 0 0 1 1.993 -.117l.007 .117v2h2v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
 <path d="M18 18h-12a1 1 0 0 0 -1 1a2 2 0 0 0 2 2h10a2 2 0 0 0 1.987 -1.768l.011 -.174a1 1 0 0 0 -.998 -1.058z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbChevronCompactDown")]
+const TB_CHEVRON_COMPACT_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 11l8 3l8 -3" />"###
+};
+#[cfg(feature = "TbChevronCompactLeft")]
+const TB_CHEVRON_COMPACT_LEFT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 20l-3 -8l3 -8" />"###
+};
+#[cfg(feature = "TbChevronCompactRight")]
+const TB_CHEVRON_COMPACT_RIGHT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 4l3 8l-3 8" />"###
+};
+#[cfg(feature = "TbChevronCompactUp")]
+const TB_CHEVRON_COMPACT_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 13l8 -3l8 3" />"###
+};
 #[cfg(feature = "TbChevronDown")]
 const TB_CHEVRON_DOWN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -29883,6 +33047,23 @@ const TB_CHEVRON_LEFT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M15 6l-6 6l6 6" />"###
 };
+#[cfg(feature = "TbChevronLeftPipe")]
+const TB_CHEVRON_LEFT_PIPE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7 6v12" />
+<path d="M18 6l-6 6l6 6" />"###
+};
 #[cfg(feature = "TbChevronRight")]
 const TB_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -29898,6 +33079,23 @@ const TB_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M9 6l6 6l-6 6" />"###
+};
+#[cfg(feature = "TbChevronRightPipe")]
+const TB_CHEVRON_RIGHT_PIPE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 6l6 6l-6 6" />
+<path d="M17 5v13" />"###
 };
 #[cfg(feature = "TbChevronUp")]
 const TB_CHEVRON_UP: icondata_core::IconData = icondata_core::IconData {
@@ -30852,6 +34050,272 @@ const TB_CIRCLE_DASHED: icondata_core::IconData = icondata_core::IconData {
 <path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
 <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />"###
 };
+#[cfg(feature = "TbCircleDashedNumber0")]
+const TB_CIRCLE_DASHED_NUMBER0: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0 -4 0z" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber1")]
+const TB_CIRCLE_DASHED_NUMBER1: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 10l2 -2v8" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber2")]
+const TB_CIRCLE_DASHED_NUMBER2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber3")]
+const TB_CIRCLE_DASHED_NUMBER3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber4")]
+const TB_CIRCLE_DASHED_NUMBER4: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 8v3a1 1 0 0 0 1 1h3" />
+<path d="M14 8v8" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber5")]
+const TB_CIRCLE_DASHED_NUMBER5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber6")]
+const TB_CIRCLE_DASHED_NUMBER6: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M14 9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber7")]
+const TB_CIRCLE_DASHED_NUMBER7: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 8h4l-2 8" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber8")]
+const TB_CIRCLE_DASHED_NUMBER8: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M12 12h-1a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1" />"###
+};
+#[cfg(feature = "TbCircleDashedNumber9")]
+const TB_CIRCLE_DASHED_NUMBER9: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-6a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />"###
+};
+#[cfg(feature = "TbCircleDashedX")]
+const TB_CIRCLE_DASHED_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
+<path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
+<path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" />
+<path d="M8.56 20.31a9 9 0 0 0 3.44 .69" />
+<path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" />
+<path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" />
+<path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" />
+<path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
+<path d="M14 14l-4 -4" />
+<path d="M10 14l4 -4" />"###
+};
 #[cfg(feature = "TbCircleDot")]
 const TB_CIRCLE_DOT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -31688,9 +35152,9 @@ const TB_CIRCLE_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-<path d="M9 12l6 0" />
-<path d="M12 9l0 6" />"###
+<path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+<path d="M9 12h6" />
+<path d="M12 9v6" />"###
 };
 #[cfg(feature = "TbCircleRectangle")]
 const TB_CIRCLE_RECTANGLE: icondata_core::IconData = icondata_core::IconData {
@@ -32497,6 +35961,25 @@ const TB_CLOCK: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
 <path d="M12 7v5l3 3" />"###
 };
+#[cfg(feature = "TbClock12")]
+const TB_CLOCK12: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12a9 9 0 0 0 9 9m9 -9a9 9 0 1 0 -18 0" />
+<path d="M12 7v5l.5 .5" />
+<path d="M18 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+<path d="M15 21v-6" />"###
+};
 #[cfg(feature = "TbClock2")]
 const TB_CLOCK2: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -32516,6 +35999,26 @@ const TB_CLOCK2: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 12h1" />
 <path d="M19 12h1" />
 <path d="M12 19v1" />"###
+};
+#[cfg(feature = "TbClock24")]
+const TB_CLOCK24: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12a9 9 0 0 0 5.998 8.485m12.002 -8.485a9 9 0 1 0 -18 0" />
+<path d="M12 7v5" />
+<path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+<path d="M18 15v2a1 1 0 0 0 1 1h1" />
+<path d="M21 15v6" />"###
 };
 #[cfg(feature = "TbClockBolt")]
 const TB_CLOCK_BOLT: icondata_core::IconData = icondata_core::IconData {
@@ -33579,6 +37082,26 @@ const TB_CLOUD_MINUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 18.004h-5.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 .186 -.015 .37 -.042 .548" />
 <path d="M16 19h6" />"###
 };
+#[cfg(feature = "TbCloudNetwork")]
+const TB_CLOUD_NETWORK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 20h7" />
+<path d="M14 20h7" />
+<path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 16v2" />
+<path d="M8 16.004h-1.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-2.535" />"###
+};
 #[cfg(feature = "TbCloudOff")]
 const TB_CLOUD_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -34428,6 +37951,24 @@ const TB_COLUMN_INSERT_RIGHT: icondata_core::IconData = icondata_core::IconData 
 <path d="M15 12l4 0" />
 <path d="M17 10l0 4" />"###
 };
+#[cfg(feature = "TbColumnRemove")]
+const TB_COLUMN_REMOVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1z" />
+<path d="M16 10l4 4" />
+<path d="M16 14l4 -4" />"###
+};
 #[cfg(feature = "TbColumns")]
 const TB_COLUMNS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -34671,8 +38212,7 @@ const TB_CONE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 14c3.866 0 7 1.343 7 3s-3.134 3 -7 3s-7 -1.343 -7 -3s3.134 -3 7 -3z" />
-<path d="M19 17v-.5l-7 -12.5l-7 12.5v.5" />"###
+<path d="M21 17.998v-.5l-8.13 -14.99a1 1 0 0 0 -1.74 0l-8.13 14.989v.5c0 1.659 4.03 3.003 9 3.003s9 -1.344 9 -3.002" />"###
 };
 #[cfg(feature = "TbCone2")]
 const TB_CONE2: icondata_core::IconData = icondata_core::IconData {
@@ -34688,8 +38228,7 @@ const TB_CONE2: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 7m-7 0a7 3 0 1 0 14 0a7 3 0 1 0 -14 0" />
-<path d="M19 7v.5l-7 12.5l-7 -12.5v-.5" />"###
+<path d="M21 5.002v.5l-8.13 14.99a1 1 0 0 1 -1.74 0l-8.13 -14.989v-.5c0 -1.659 4.03 -3.003 9 -3.003s9 1.344 9 3.002" />"###
 };
 #[cfg(feature = "TbConeOff")]
 const TB_CONE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -34705,9 +38244,26 @@ const TB_CONE_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M18.305 18.305c-1.132 1 -3.53 1.695 -6.305 1.695c-3.866 0 -7 -1.343 -7 -3s3.134 -3 7 -3c.747 0 1.467 .05 2.142 .143" />
-<path d="M17.07 13.054l-5.07 -9.054l-1.432 2.558m-1.439 2.569l-4.129 7.373v.5" />
+<path d="M20.396 16.384l-7.526 -13.877a1 1 0 0 0 -1.74 0l-1.626 2.998m-1.407 2.594l-5.097 9.398v.5c0 1.66 4.03 3.003 9 3.003c3.202 0 6.014 -.558 7.609 -1.398" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbConePlus")]
+const TB_CONE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.03 12.022l-5.16 -9.515a1 1 0 0 0 -1.74 0l-8.13 14.99v.5c0 1.66 4.03 3.003 9 3.003c.17 0 .34 -.002 .508 -.005" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbConfetti")]
 const TB_CONFETTI: icondata_core::IconData = icondata_core::IconData {
@@ -35890,6 +39446,66 @@ const TB_CSV: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 8l2 8l2 -8" />
 <path d="M7 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0" />"###
 };
+#[cfg(feature = "TbCube")]
+const TB_CUBE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21 16.008v-8.018a1.98 1.98 0 0 0 -1 -1.717l-7 -4.008a2.016 2.016 0 0 0 -2 0l-7 4.008c-.619 .355 -1 1.01 -1 1.718v8.018c0 .709 .381 1.363 1 1.717l7 4.008a2.016 2.016 0 0 0 2 0l7 -4.008c.619 -.355 1 -1.01 1 -1.718z" />
+<path d="M12 22v-10" />
+<path d="M12 12l8.73 -5.04" />
+<path d="M3.27 6.96l8.73 5.04" />"###
+};
+#[cfg(feature = "TbCubeOff")]
+const TB_CUBE_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20.83 16.809c.11 -.248 .17 -.52 .17 -.801v-8.018a1.98 1.98 0 0 0 -1 -1.717l-7 -4.008a2.016 2.016 0 0 0 -2 0l-3.012 1.725m-2.547 1.458l-1.441 .825c-.619 .355 -1 1.01 -1 1.718v8.018c0 .709 .381 1.363 1 1.717l7 4.008a2.016 2.016 0 0 0 2 0l5.544 -3.174" />
+<path d="M12 22v-10" />
+<path d="M14.532 10.538l6.198 -3.578" />
+<path d="M3.27 6.96l8.73 5.04" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbCubePlus")]
+const TB_CUBE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21 12.5v-4.509a1.98 1.98 0 0 0 -1 -1.717l-7 -4.008a2.016 2.016 0 0 0 -2 0l-7 4.007c-.619 .355 -1 1.01 -1 1.718v8.018c0 .709 .381 1.363 1 1.717l7 4.008a2.016 2.016 0 0 0 2 0" />
+<path d="M12 22v-10" />
+<path d="M12 12l8.73 -5.04" />
+<path d="M3.27 6.96l8.73 5.04" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
 #[cfg(feature = "TbCubeSend")]
 const TB_CUBE_SEND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -36413,6 +40029,23 @@ const TB_CURRENCY_EURO_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M17.2 7c-1.977 -2.26 -4.954 -2.602 -7.234 -1.04m-1.913 2.079c-1.604 2.72 -1.374 6.469 .69 8.894c2.292 2.691 6 2.758 8.356 .18" />
 <path d="M10 10h-5m0 4h8" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbCurrencyFlorin")]
+const TB_CURRENCY_FLORIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 12h8" />
+<path d="M7 19c1.213 0 2.31 -.723 2.788 -1.838l4.424 -10.324a3.033 3.033 0 0 1 2.788 -1.838" />"###
 };
 #[cfg(feature = "TbCurrencyForint")]
 const TB_CURRENCY_FORINT: icondata_core::IconData = icondata_core::IconData {
@@ -37307,8 +40940,45 @@ const TB_CYLINDER: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 6m-5 0a5 3 0 1 0 10 0a5 3 0 1 0 -10 0" />
-<path d="M7 6v12c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-12" />"###
+<path d="M12 6m-7 0a7 3 0 1 0 14 0a7 3 0 1 0 -14 0" />
+<path d="M5 6v12c0 1.657 3.134 3 7 3s7 -1.343 7 -3v-12" />"###
+};
+#[cfg(feature = "TbCylinderOff")]
+const TB_CYLINDER_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.23 5.233c-.15 .245 -.23 .502 -.23 .767c0 1.131 1.461 2.117 3.62 2.628m4.357 .343c3.404 -.204 6.023 -1.456 6.023 -2.971c0 -1.657 -3.134 -3 -7 -3c-1.645 0 -3.158 .243 -4.353 .65" />
+<path d="M5 6v12c0 1.657 3.134 3 7 3c3.245 0 5.974 -.946 6.767 -2.23m.233 -3.77v-9" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbCylinderPlus")]
+const TB_CYLINDER_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 6m-7 0a7 3 0 1 0 14 0a7 3 0 1 0 -14 0" />
+<path d="M5 6v12c0 1.657 3.134 3 7 3c.173 0 .345 -.003 .515 -.008m6.485 -8.992v-6" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbDashboard")]
 const TB_DASHBOARD: icondata_core::IconData = icondata_core::IconData {
@@ -37831,8 +41501,8 @@ const TB_DETAILS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
-<path d="M12 3v16" />"###
+<path d="M11.999 3l.001 17" />
+<path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />"###
 };
 #[cfg(feature = "TbDetailsOff")]
 const TB_DETAILS_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -37887,6 +41557,25 @@ const TB_DEVICE_AIRPODS_CASE: icondata_core::IconData = icondata_core::IconData 
 <path d="M21 10h-18" />
 <path d="M3 4m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
 <path d="M7 10v1.5a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5 -1.5v-1.5" />"###
+};
+#[cfg(feature = "TbDeviceAirtag")]
+const TB_DEVICE_AIRTAG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 12a8 8 0 1 0 16 0a8 8 0 0 0 -16 0" />
+<path d="M9 15v.01" />
+<path d="M15 15a6 6 0 0 0 -6 -6" />
+<path d="M12 15a3 3 0 0 0 -3 -3" />"###
 };
 #[cfg(feature = "TbDeviceAnalytics")]
 const TB_DEVICE_ANALYTICS: icondata_core::IconData = icondata_core::IconData {
@@ -38481,6 +42170,25 @@ const TB_DEVICE_FLOPPY: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2" />
 <path d="M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
 <path d="M14 4l0 4l-6 0l0 -4" />"###
+};
+#[cfg(feature = "TbDeviceGamePad")]
+const TB_DEVICE_GAME_PAD: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12l-3 -3h-2a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h2l3 -3z" />
+<path d="M14 12l3 -3h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2l-3 -3z" />
+<path d="M12 14l-3 3v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1 -1v-2l-3 -3z" />
+<path d="M12 10l-3 -3v-2a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v2l-3 3z" />"###
 };
 #[cfg(feature = "TbDeviceGamepad")]
 const TB_DEVICE_GAMEPAD: icondata_core::IconData = icondata_core::IconData {
@@ -40391,6 +44099,26 @@ const TB_DEVICE_NINTENDO_OFF: icondata_core::IconData = icondata_core::IconData 
 <path d="M6.5 8.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbDeviceProjector")]
+const TB_DEVICE_PROJECTOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 9a5 5 0 1 0 10 0a5 5 0 0 0 -10 0" />
+<path d="M9 6h-4a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2v-8a2 2 0 0 0 -2 -2h-2" />
+<path d="M6 15h1" />
+<path d="M7 18l-1 2" />
+<path d="M18 18l1 2" />"###
+};
 #[cfg(feature = "TbDeviceRemote")]
 const TB_DEVICE_REMOTE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -41005,6 +44733,39 @@ const TB_DEVICE_TV_OLD: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 7v13" />
 <path d="M18 15v.01" />
 <path d="M18 12v.01" />"###
+};
+#[cfg(feature = "TbDeviceUsb")]
+const TB_DEVICE_USB: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 8h8v9a3 3 0 0 1 -3 3h-2a3 3 0 0 1 -3 -3v-9z" />
+<path d="M10 8v-4h4v4" />"###
+};
+#[cfg(feature = "TbDeviceVisionPro")]
+const TB_DEVICE_VISION_PRO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 7c1.143 0 2.235 .035 3.275 .104c1.017 .068 1.95 .207 2.798 .42c.813 .203 1.52 .505 2.119 .909a3.903 3.903 0 0 1 1.328 1.531c.326 .657 .48 1.48 .48 2.466c0 1.006 -.189 1.91 -.574 2.707c-.375 .779 -.886 1.396 -1.537 1.848a3.696 3.696 0 0 1 -2.16 .66c-.509 0 -.97 -.068 -1.382 -.21a5.84 5.84 0 0 1 -1.17 -.548a18.45 18.45 0 0 1 -1.045 -.695a9.104 9.104 0 0 0 -1.001 -.63a2.376 2.376 0 0 0 -1.13 -.301c-.373 0 -.75 .097 -1.132 .3c-.316 .17 -.65 .38 -1 .63c-.322 .23 -.67 .462 -1.047 .695a5.78 5.78 0 0 1 -1.168 .548c-.413 .142 -.872 .21 -1.378 .21a3.706 3.706 0 0 1 -2.165 -.659c-.651 -.452 -1.162 -1.07 -1.537 -1.848c-.385 -.798 -.574 -1.7 -.574 -2.709c-.004 -.98 .15 -1.802 .477 -2.46a3.897 3.897 0 0 1 1.33 -1.531c.6 -.403 1.307 -.704 2.12 -.907a16.088 16.088 0 0 1 2.8 -.423c1.04 -.071 2.13 -.107 3.273 -.107z" />"###
 };
 #[cfg(feature = "TbDeviceWatch")]
 const TB_DEVICE_WATCH: icondata_core::IconData = icondata_core::IconData {
@@ -41943,6 +45704,63 @@ const TB_DEVICES_X: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 9h2" />
 <path d="M22 22l-5 -5" />
 <path d="M17 22l5 -5" />"###
+};
+#[cfg(feature = "TbDiabolo")]
+const TB_DIABOLO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+<path d="M4 6v.143a1 1 0 0 0 .048 .307l1.952 5.55l-1.964 5.67a1 1 0 0 0 -.036 .265v.065c0 1.657 3.582 3 8 3s8 -1.343 8 -3v-.065a1 1 0 0 0 -.036 -.265l-1.964 -5.67l1.952 -5.55a1 1 0 0 0 .048 -.307v-.143" />
+<path d="M6 12c0 1.105 2.686 2 6 2s6 -.895 6 -2" />"###
+};
+#[cfg(feature = "TbDiaboloOff")]
+const TB_DIABOLO_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4.727 4.749c-.467 .38 -.727 .804 -.727 1.251c0 1.217 1.933 2.265 4.71 2.735m4.257 .243c3.962 -.178 7.033 -1.444 7.033 -2.978c0 -1.657 -3.582 -3 -8 -3c-1.66 0 -3.202 .19 -4.48 .514" />
+<path d="M4 6v.143a1 1 0 0 0 .048 .307l1.952 5.55l-1.964 5.67a1 1 0 0 0 -.036 .265v.065c0 1.657 3.582 3 8 3c3.218 0 5.992 -.712 7.262 -1.74m-.211 -4.227l-1.051 -3.033l1.952 -5.55a1 1 0 0 0 .048 -.307v-.143" />
+<path d="M6 12c0 1.105 2.686 2 6 2c.656 0 1.288 -.035 1.879 -.1m3.198 -.834c.585 -.308 .923 -.674 .923 -1.066" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbDiaboloPlus")]
+const TB_DIABOLO_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+<path d="M4 6v.143a1 1 0 0 0 .048 .307l1.952 5.55l-1.964 5.67a1 1 0 0 0 -.036 .265v.065c0 1.657 3.582 3 8 3c.17 0 .34 -.002 .508 -.006m5.492 -8.994l1.952 -5.55a1 1 0 0 0 .048 -.307v-.143" />
+<path d="M6 12c0 1.105 2.686 2 6 2s6 -.895 6 -2" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbDialpad")]
 const TB_DIALPAD: icondata_core::IconData = icondata_core::IconData {
@@ -43359,29 +47177,7 @@ const TB_DROPLET_FILLED: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.801 11.003a6 6 0 1 0 10.396 -.003l-5.197 -8l-5.199 8.003z" stroke="#010202" stroke-width="0" fill="currentColor" />
-<path d="M12 3v17" stroke-width="0" fill="currentColor" />
-<path d="M12 12l3.544 -3.544" stroke-width="0" fill="currentColor" />
-<path d="M12 17.3l5.558 -5.558" stroke-width="0" fill="currentColor" />"###
-};
-#[cfg(feature = "TbDropletFilled2")]
-const TB_DROPLET_FILLED2: icondata_core::IconData = icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: Some("round"),
-    stroke_linejoin: Some("round"),
-    stroke_width: Some("2"),
-    stroke: Some("currentColor"),
-    fill: Some("none"),
-    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
-<path d="M6 14h12" />
-<path d="M7.305 17.695l3.695 -3.695" />
-<path d="M10.26 19.74l5.74 -5.74l-5.74 5.74z" />"###
+<path d="M10.708 2.372a2.382 2.382 0 0 0 -.71 .686l-4.892 7.26c-1.981 3.314 -1.22 7.466 1.767 9.882c2.969 2.402 7.286 2.402 10.254 0c2.987 -2.416 3.748 -6.569 1.795 -9.836l-4.919 -7.306c-.722 -1.075 -2.192 -1.376 -3.295 -.686z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbDropletHalf")]
 const TB_DROPLET_HALF: icondata_core::IconData = icondata_core::IconData {
@@ -43397,8 +47193,8 @@ const TB_DROPLET_HALF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
-<path d="M12 3v17" />"###
+<path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
+<path d="M12 3v18" />"###
 };
 #[cfg(feature = "TbDropletHalf2")]
 const TB_DROPLET_HALF2: icondata_core::IconData = icondata_core::IconData {
@@ -43414,8 +47210,24 @@ const TB_DROPLET_HALF2: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
-<path d="M6 14h12" />"###
+<path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
+<path d="M5 14h14" />"###
+};
+#[cfg(feature = "TbDropletHalf2Filled")]
+const TB_DROPLET_HALF2_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.905 2.923l.098 .135l4.92 7.306a7.566 7.566 0 0 1 1.043 3.167l.024 .326c.007 .047 .01 .094 .01 .143l-.002 .06c.056 2.3 -.944 4.582 -2.87 6.14c-2.969 2.402 -7.286 2.402 -10.255 0c-1.904 -1.54 -2.904 -3.787 -2.865 -6.071a1.052 1.052 0 0 1 .013 -.333a7.66 7.66 0 0 1 .913 -3.176l.172 -.302l4.893 -7.26c.185 -.275 .426 -.509 .709 -.686c1.055 -.66 2.446 -.413 3.197 .55zm-2.06 1.107l-.077 .038l-.041 .03l-.037 .036l-.033 .042l-4.863 7.214a5.607 5.607 0 0 0 -.651 1.61h11.723a5.444 5.444 0 0 0 -.49 -1.313l-.141 -.251l-4.891 -7.261a.428 .428 0 0 0 -.5 -.145z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbDropletHalfFilled")]
 const TB_DROPLET_HALF_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -43431,7 +47243,7 @@ const TB_DROPLET_HALF_FILLED: icondata_core::IconData = icondata_core::IconData 
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8zm5.2 -8v17m0 -8l3.544 -3.544m-3.544 8.844l5.558 -5.558" />"###
+<path d="M12 2l.07 .003a2.41 2.41 0 0 1 1.825 .907l.108 .148l4.92 7.306c1.952 3.267 1.191 7.42 -1.796 9.836c-2.968 2.402 -7.285 2.402 -10.254 0c-2.917 -2.36 -3.711 -6.376 -1.901 -9.65l.134 -.232l4.893 -7.26c.185 -.275 .426 -.509 .709 -.686a2.426 2.426 0 0 1 1.066 -.36l.226 -.012zm-1 3.149l-4.206 6.24c-1.44 2.41 -.88 5.463 1.337 7.257a6.101 6.101 0 0 0 2.869 1.276v-14.773z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbDropletHeart")]
 const TB_DROPLET_HEART: icondata_core::IconData = icondata_core::IconData {
@@ -43644,6 +47456,24 @@ const TB_DROPLET_X: icondata_core::IconData = icondata_core::IconData {
 <path d="M18.953 13.467a6.572 6.572 0 0 0 -.889 -2.59l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546a7.179 7.179 0 0 0 5.633 1.49" />
 <path d="M22 22l-5 -5" />
 <path d="M17 22l5 -5" />"###
+};
+#[cfg(feature = "TbDroplets")]
+const TB_DROPLETS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
+<path d="M16.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
+<path d="M10.072 10.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />"###
 };
 #[cfg(feature = "TbDualScreen")]
 const TB_DUAL_SCREEN: icondata_core::IconData = icondata_core::IconData {
@@ -44284,6 +48114,58 @@ const TB_ERROR404_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M21 7v10" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbEscalator")]
+const TB_ESCALATOR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 5h-2.672a2 2 0 0 0 -1.414 .586l-8.414 8.414h-2.5a2.5 2.5 0 1 0 0 5h3.672a2 2 0 0 0 1.414 -.586l8.414 -8.414h1.5a2.5 2.5 0 0 0 0 -5z" />"###
+};
+#[cfg(feature = "TbEscalatorDown")]
+const TB_ESCALATOR_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4.5 7h2.733a2 2 0 0 1 1.337 .513l9.43 8.487h1.5a2.5 2.5 0 1 1 0 5h-2.733a2 2 0 0 1 -1.337 -.513l-9.43 -8.487h-1.5a2.5 2.5 0 1 1 0 -5z" />
+<path d="M18 3v7" />
+<path d="M15 7l3 3l3 -3" />"###
+};
+#[cfg(feature = "TbEscalatorUp")]
+const TB_ESCALATOR_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 7h-2.672a2 2 0 0 0 -1.414 .586l-8.414 8.414h-2.5a2.5 2.5 0 1 0 0 5h3.672a2 2 0 0 0 1.414 -.586l8.414 -8.414h1.5a2.5 2.5 0 1 0 0 -5z" />
+<path d="M6 10v-7" />
+<path d="M3 6l3 -3l3 3" />"###
+};
 #[cfg(feature = "TbExchange")]
 const TB_EXCHANGE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -44594,6 +48476,43 @@ const TB_EYE: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
 <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />"###
 };
+#[cfg(feature = "TbEyeBolt")]
+const TB_EYE_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13.1 17.936a9.28 9.28 0 0 1 -1.1 .064c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbEyeCancel")]
+const TB_EYE_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
 #[cfg(feature = "TbEyeCheck")]
 const TB_EYE_CHECK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -44609,7 +48528,7 @@ const TB_EYE_CHECK: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-<path d="M11.143 17.961c-3.221 -.295 -5.936 -2.281 -8.143 -5.961c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.222 .37 -.449 .722 -.68 1.057" />
+<path d="M11.102 17.957c-3.204 -.307 -5.904 -2.294 -8.102 -5.957c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a19.5 19.5 0 0 1 -.663 1.032" />
 <path d="M15 19l2 2l4 -4" />"###
 };
 #[cfg(feature = "TbEyeClosed")]
@@ -44631,6 +48550,25 @@ const TB_EYE_CLOSED: icondata_core::IconData = icondata_core::IconData {
 <path d="M21 14.976l-2.492 -3.776" />
 <path d="M9 17l.5 -4" />
 <path d="M15 17l-.5 -4" />"###
+};
+#[cfg(feature = "TbEyeCode")]
+const TB_EYE_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
 };
 #[cfg(feature = "TbEyeCog")]
 const TB_EYE_COG: icondata_core::IconData = icondata_core::IconData {
@@ -44655,6 +48593,64 @@ const TB_EYE_COG: icondata_core::IconData = icondata_core::IconData {
 <path d="M17.27 20l-1.3 .75" />
 <path d="M15.97 17.25l1.3 .75" />
 <path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbEyeDiscount")]
+const TB_EYE_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbEyeDollar")]
+const TB_EYE_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13.193 17.924c-.39 .05 -.788 .076 -1.193 .076c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.005 0 5.592 1.394 7.761 4.181" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbEyeDown")]
+const TB_EYE_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
 };
 #[cfg(feature = "TbEyeEdit")]
 const TB_EYE_EDIT: icondata_core::IconData = icondata_core::IconData {
@@ -44689,7 +48685,7 @@ const TB_EYE_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-<path d="M14.473 17.659a8.897 8.897 0 0 1 -2.473 .341c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M15.03 17.478a8.797 8.797 0 0 1 -3.03 .522c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a20.48 20.48 0 0 1 -.258 .419" />
 <path d="M19 16v3" />
 <path d="M19 22v.01" />"###
 };
@@ -44723,9 +48719,27 @@ const TB_EYE_HEART: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13.923 11.45a2 2 0 1 0 -2.87 2.312" />
-<path d="M10 17.78c-2.726 -.618 -5.059 -2.545 -7 -5.78c2.4 -4 5.4 -6 9 -6c3.325 0 6.137 1.705 8.438 5.117" />
+<path d="M13.905 11.39a2 2 0 1 0 -2.855 2.37" />
+<path d="M9.992 17.779c-2.722 -.621 -5.053 -2.547 -6.992 -5.779c2.4 -4 5.4 -6 9 -6c3.332 0 6.15 1.714 8.454 5.14" />
 <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbEyeMinus")]
+const TB_EYE_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.713 1.188 -1.478 2.199 -2.296 3.034" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbEyeOff")]
 const TB_EYE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -44744,6 +48758,138 @@ const TB_EYE_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
 <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbEyePause")]
+const TB_EYE_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13.022 17.945a9.308 9.308 0 0 1 -1.022 .055c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.195 .325 -.394 .636 -.596 .935" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbEyePin")]
+const TB_EYE_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.362 0 6.202 1.745 8.517 5.234" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbEyePlus")]
+const TB_EYE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbEyeQuestion")]
+const TB_EYE_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M14.071 17.764a8.989 8.989 0 0 1 -2.071 .236c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.346 0 6.173 1.727 8.482 5.182" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbEyeSearch")]
+const TB_EYE_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-.328 0 -.652 -.017 -.97 -.05c-3.172 -.332 -5.85 -2.315 -8.03 -5.95c2.4 -4 5.4 -6 9 -6c3.465 0 6.374 1.853 8.727 5.558" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbEyeShare")]
+const TB_EYE_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.597 17.981a9.467 9.467 0 0 1 -.597 .019c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.205 .342 -.415 .67 -.63 .983" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbEyeStar")]
+const TB_EYE_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M9.608 17.682c-2.558 -.71 -4.76 -2.603 -6.608 -5.682c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
 };
 #[cfg(feature = "TbEyeTable")]
 const TB_EYE_TABLE: icondata_core::IconData = icondata_core::IconData {
@@ -44769,6 +48915,25 @@ const TB_EYE_TABLE: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 15h1" />
 <path d="M12 11v-4" />"###
 };
+#[cfg(feature = "TbEyeUp")]
+const TB_EYE_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.09 .15 -.18 .295 -.27 .439" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
 #[cfg(feature = "TbEyeX")]
 const TB_EYE_X: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -44784,7 +48949,7 @@ const TB_EYE_X: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-<path d="M13.117 17.933a9.275 9.275 0 0 1 -1.117 .067c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a18.728 18.728 0 0 1 -1.009 1.516" />
+<path d="M13.048 17.942a9.298 9.298 0 0 1 -1.048 .058c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a17.986 17.986 0 0 1 -1.362 1.975" />
 <path d="M22 22l-5 -5" />
 <path d="M17 22l5 -5" />"###
 };
@@ -46146,6 +50311,489 @@ const TB_FILE_TIME: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 14m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
 <path d="M12 12.496v1.504l1 1" />"###
 };
+#[cfg(feature = "TbFileTypeBmp")]
+const TB_FILE_TYPE_BMP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M18 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M4 21h1.5a1.5 1.5 0 0 0 0 -3h-1.5h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6z" />
+<path d="M10 21v-6l2.5 3l2.5 -3v6" />"###
+};
+#[cfg(feature = "TbFileTypeCss")]
+const TB_FILE_TYPE_CSS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M8 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+<path d="M11 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M17 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />"###
+};
+#[cfg(feature = "TbFileTypeCsv")]
+const TB_FILE_TYPE_CSV: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M7 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+<path d="M10 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M16 15l2 6l2 -6" />"###
+};
+#[cfg(feature = "TbFileTypeDoc")]
+const TB_FILE_TYPE_DOC: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M5 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+<path d="M20 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+<path d="M12.5 15a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1 -3 0v-3a1.5 1.5 0 0 1 1.5 -1.5z" />"###
+};
+#[cfg(feature = "TbFileTypeDocx")]
+const TB_FILE_TYPE_DOCX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M2 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+<path d="M17 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+<path d="M9.5 15a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1 -3 0v-3a1.5 1.5 0 0 1 1.5 -1.5z" />
+<path d="M19.5 15l3 6" />
+<path d="M19.5 21l3 -6" />"###
+};
+#[cfg(feature = "TbFileTypeHtml")]
+const TB_FILE_TYPE_HTML: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M2 21v-6" />
+<path d="M5 15v6" />
+<path d="M2 18h3" />
+<path d="M20 15v6h2" />
+<path d="M13 21v-6l2 3l2 -3v6" />
+<path d="M7.5 15h3" />
+<path d="M9 15v6" />"###
+};
+#[cfg(feature = "TbFileTypeJpg")]
+const TB_FILE_TYPE_JPG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M11 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M20 15h-1a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h1v-3" />
+<path d="M5 15h3v4.5a1.5 1.5 0 0 1 -3 0" />"###
+};
+#[cfg(feature = "TbFileTypeJs")]
+const TB_FILE_TYPE_JS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M3 15h3v4.5a1.5 1.5 0 0 1 -3 0" />
+<path d="M9 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-1" />"###
+};
+#[cfg(feature = "TbFileTypeJsx")]
+const TB_FILE_TYPE_JSX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4 15h3v4.5a1.5 1.5 0 0 1 -3 0" />
+<path d="M10 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M16 15l4 6" />
+<path d="M16 21l4 -6" />"###
+};
+#[cfg(feature = "TbFileTypePdf")]
+const TB_FILE_TYPE_PDF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M17 18h2" />
+<path d="M20 15h-3v6" />
+<path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />"###
+};
+#[cfg(feature = "TbFileTypePhp")]
+const TB_FILE_TYPE_PHP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M17 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M11 21v-6" />
+<path d="M14 15v6" />
+<path d="M11 18h3" />"###
+};
+#[cfg(feature = "TbFileTypePng")]
+const TB_FILE_TYPE_PNG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M20 15h-1a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h1v-3" />
+<path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M11 21v-6l3 6v-6" />"###
+};
+#[cfg(feature = "TbFileTypePpt")]
+const TB_FILE_TYPE_PPT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M11 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M16.5 15h3" />
+<path d="M18 15v6" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />"###
+};
+#[cfg(feature = "TbFileTypeRs")]
+const TB_FILE_TYPE_RS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M9 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-1" />
+<path d="M3 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6m3 0l-2 -3" />"###
+};
+#[cfg(feature = "TbFileTypeSql")]
+const TB_FILE_TYPE_SQL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M18 15v6h2" />
+<path d="M13 15a2 2 0 0 1 2 2v2a2 2 0 1 1 -4 0v-2a2 2 0 0 1 2 -2z" />
+<path d="M14 20l1.5 1.5" />"###
+};
+#[cfg(feature = "TbFileTypeSvg")]
+const TB_FILE_TYPE_SVG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M10 15l2 6l2 -6" />
+<path d="M20 15h-1a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h1v-3" />"###
+};
+#[cfg(feature = "TbFileTypeTs")]
+const TB_FILE_TYPE_TS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-1" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M9 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M3.5 15h3" />
+<path d="M5 15v6" />"###
+};
+#[cfg(feature = "TbFileTypeTsx")]
+const TB_FILE_TYPE_TSX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M16 15l4 6" />
+<path d="M16 21l4 -6" />
+<path d="M10 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M4.5 15h3" />
+<path d="M6 15v6" />"###
+};
+#[cfg(feature = "TbFileTypeTxt")]
+const TB_FILE_TYPE_TXT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M16.5 15h3" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4.5 15h3" />
+<path d="M6 15v6" />
+<path d="M18 15v6" />
+<path d="M10 15l4 6" />
+<path d="M10 21l4 -6" />"###
+};
+#[cfg(feature = "TbFileTypeVue")]
+const TB_FILE_TYPE_VUE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4 15l2 6l2 -6" />
+<path d="M11 15v4.5a1.5 1.5 0 0 0 3 0v-4.5" />
+<path d="M20 15h-3v6h3" />
+<path d="M17 18h2" />"###
+};
+#[cfg(feature = "TbFileTypeXls")]
+const TB_FILE_TYPE_XLS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4 15l4 6" />
+<path d="M4 21l4 -6" />
+<path d="M17 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M11 15v6h3" />"###
+};
+#[cfg(feature = "TbFileTypeXml")]
+const TB_FILE_TYPE_XML: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M4 15l4 6" />
+<path d="M4 21l4 -6" />
+<path d="M19 15v6h3" />
+<path d="M11 21v-6l2.5 3l2.5 -3v6" />"###
+};
+#[cfg(feature = "TbFileTypeZip")]
+const TB_FILE_TYPE_ZIP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+<path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+<path d="M16 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+<path d="M12 15v6" />
+<path d="M5 15h3l-3 6h3" />"###
+};
 #[cfg(feature = "TbFileTypography")]
 const TB_FILE_TYPOGRAPHY: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46335,6 +50983,76 @@ const TB_FILTER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />"###
 };
+#[cfg(feature = "TbFilterBolt")]
+const TB_FILTER_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.991 19.67l-3.991 1.33v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v3" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbFilterCancel")]
+const TB_FILTER_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbFilterCheck")]
+const TB_FILTER_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.18 20.274l-2.18 .726v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v3" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbFilterCode")]
+const TB_FILTER_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.19 20.27l-2.19 .73v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
 #[cfg(feature = "TbFilterCog")]
 const TB_FILTER_COG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46358,6 +51076,25 @@ const TB_FILTER_COG: icondata_core::IconData = icondata_core::IconData {
 <path d="M15.97 17.25l1.3 .75" />
 <path d="M20.733 20l1.3 .75" />"###
 };
+#[cfg(feature = "TbFilterDiscount")]
+const TB_FILTER_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.705 19.765l-3.705 1.235v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v.5" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
 #[cfg(feature = "TbFilterDollar")]
 const TB_FILTER_DOLLAR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46372,9 +51109,27 @@ const TB_FILTER_DOLLAR: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13.02 19.66l-4.02 1.34v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+<path d="M13.25 19.583l-4.25 1.417v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
 <path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
 <path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbFilterDown")]
+const TB_FILTER_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v3" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
 };
 #[cfg(feature = "TbFilterEdit")]
 const TB_FILTER_EDIT: icondata_core::IconData = icondata_core::IconData {
@@ -46392,6 +51147,57 @@ const TB_FILTER_EDIT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10.97 20.344l-1.97 .656v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
 <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" />"###
+};
+#[cfg(feature = "TbFilterExclamation")]
+const TB_FILTER_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbFilterFilled")]
+const TB_FILTER_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 3h-16a1 1 0 0 0 -1 1v2.227l.008 .223a3 3 0 0 0 .772 1.795l4.22 4.641v8.114a1 1 0 0 0 1.316 .949l6 -2l.108 -.043a1 1 0 0 0 .576 -.906v-6.586l4.121 -4.12a3 3 0 0 0 .879 -2.123v-2.171a1 1 0 0 0 -1 -1z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbFilterHeart")]
+const TB_FILTER_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10.888 20.37l-1.888 .63v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-3.503 3.503" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
 };
 #[cfg(feature = "TbFilterMinus")]
 const TB_FILTER_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -46427,6 +51233,42 @@ const TB_FILTER_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbFilterPause")]
+const TB_FILTER_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.97 19.677l-3.97 1.323v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbFilterPin")]
+const TB_FILTER_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
 #[cfg(feature = "TbFilterPlus")]
 const TB_FILTER_PLUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46445,6 +51287,60 @@ const TB_FILTER_PLUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 19h6" />
 <path d="M19 16v6" />"###
 };
+#[cfg(feature = "TbFilterQuestion")]
+const TB_FILTER_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 19l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbFilterSearch")]
+const TB_FILTER_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.36 20.213l-2.36 .787v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbFilterShare")]
+const TB_FILTER_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.713 19.762l-3.713 1.238v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
 #[cfg(feature = "TbFilterStar")]
 const TB_FILTER_STAR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46459,8 +51355,26 @@ const TB_FILTER_STAR: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M10.971 20.343l-1.971 .657v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414" />
+<path d="M11.042 20.32l-2.042 .68v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
 <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbFilterUp")]
+const TB_FILTER_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v2" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
 };
 #[cfg(feature = "TbFilterX")]
 const TB_FILTER_X: icondata_core::IconData = icondata_core::IconData {
@@ -46476,7 +51390,7 @@ const TB_FILTER_X: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13.785 19.405l-4.785 1.595v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+<path d="M13.758 19.414l-4.758 1.586v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
 <path d="M22 22l-5 -5" />
 <path d="M17 22l5 -5" />"###
 };
@@ -46538,6 +51452,26 @@ const TB_FINGERPRINT_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 15a18 18 0 0 0 1.8 6" />
 <path d="M4.9 19a22 22 0 0 1 -.9 -7v-1a8 8 0 0 1 1.854 -5.143m2.176 -1.825a8 8 0 0 1 7.97 .018" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbFireExtinguisher")]
+const TB_FIRE_EXTINGUISHER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 7a4 4 0 0 1 4 4v9a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-9a4 4 0 0 1 4 -4z" />
+<path d="M9 16h6" />
+<path d="M12 7v-3" />
+<path d="M16 5l-4 -1l4 -1" />
+<path d="M12 4h-3a3 3 0 0 0 -3 3" />"###
 };
 #[cfg(feature = "TbFireHydrant")]
 const TB_FIRE_HYDRANT: icondata_core::IconData = icondata_core::IconData {
@@ -46850,6 +51784,181 @@ const TB_FLAG3_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19 4c.852 0 1.297 .986 .783 1.623l-.076 .084l-3.792 3.793l3.792 3.793c.603 .602 .22 1.614 -.593 1.701l-.114 .006h-13v6a1 1 0 0 1 -.883 .993l-.117 .007a1 1 0 0 1 -.993 -.883l-.007 -.117v-16a1 1 0 0 1 .883 -.993l.117 -.007h14z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbFlagBolt")]
+const TB_FLAG_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.673 15.36a4.978 4.978 0 0 1 -2.673 -1.36a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbFlagCancel")]
+const TB_FLAG_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.342 14.941a4.993 4.993 0 0 1 -1.342 -.941a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbFlagCheck")]
+const TB_FLAG_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.767 15.12a4.983 4.983 0 0 1 -1.767 -1.12a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8.5" />
+<path d="M5 21v-7" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbFlagCode")]
+const TB_FLAG_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.41 14.973a4.991 4.991 0 0 1 -1.41 -.973a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8" />
+<path d="M5 21v-7" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbFlagCog")]
+const TB_FLAG_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.901 14.702a5.014 5.014 0 0 1 -.901 -.702a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6.5" />
+<path d="M5 21v-7" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbFlagDiscount")]
+const TB_FLAG_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.804 14.641a5.02 5.02 0 0 1 -.804 -.641a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8" />
+<path d="M5 21v-7" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbFlagDollar")]
+const TB_FLAG_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.222 14.882a4.998 4.998 0 0 1 -1.222 -.882a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v5" />
+<path d="M5 21v-7" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbFlagDown")]
+const TB_FLAG_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.434 15.315a4.978 4.978 0 0 1 -2.434 -1.315a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbFlagExclamation")]
+const TB_FLAG_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.035 15.408a4.98 4.98 0 0 1 -3.035 -1.408a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
 #[cfg(feature = "TbFlagFilled")]
 const TB_FLAG_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -46865,6 +51974,42 @@ const TB_FLAG_FILLED: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M4 5a1 1 0 0 1 .3 -.714a6 6 0 0 1 8.213 -.176l.351 .328a4 4 0 0 0 5.272 0l.249 -.227c.61 -.483 1.527 -.097 1.61 .676l.005 .113v9a1 1 0 0 1 -.3 .714a6 6 0 0 1 -8.213 .176l-.351 -.328a4 4 0 0 0 -5.136 -.114v6.552a1 1 0 0 1 -1.993 .117l-.007 -.117v-16z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbFlagHeart")]
+const TB_FLAG_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.33 13.447a5.001 5.001 0 0 0 -6.33 .553v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6" />
+<path d="M5 21v-7" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbFlagMinus")]
+const TB_FLAG_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.373 15.301a4.978 4.978 0 0 1 -2.373 -1.301a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9" />
+<path d="M5 21v-7" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbFlagOff")]
 const TB_FLAG_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -46885,6 +52030,176 @@ const TB_FLAG_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M7.641 3.645a5 5 0 0 1 4.359 1.355a5 5 0 0 0 7 0" />
 <path d="M5 14a5 5 0 0 1 7 0a4.984 4.984 0 0 0 3.437 1.429m3.019 -.966c.19 -.14 .371 -.294 .544 -.463" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbFlagPause")]
+const TB_FLAG_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.536 15.029a4.987 4.987 0 0 1 -1.536 -1.029a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8.5" />
+<path d="M5 21v-7" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbFlagPin")]
+const TB_FLAG_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.857 14.675a5.016 5.016 0 0 1 -.857 -.675a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6" />
+<path d="M5 21v-7" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbFlagPlus")]
+const TB_FLAG_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.433 15.315a4.978 4.978 0 0 1 -2.433 -1.315a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbFlagQuestion")]
+const TB_FLAG_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.5 15a4.914 4.914 0 0 1 -1.5 -1a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6" />
+<path d="M5 21v-7" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbFlagSearch")]
+const TB_FLAG_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 14a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v6" />
+<path d="M5 21v-7" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbFlagShare")]
+const TB_FLAG_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.13 14.833a5.002 5.002 0 0 1 -1.13 -.833a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8" />
+<path d="M5 21v-7" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbFlagStar")]
+const TB_FLAG_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.475 13.551a5.001 5.001 0 0 0 -6.475 .449v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v5" />
+<path d="M5 21v-7" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbFlagUp")]
+const TB_FLAG_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.138 15.241a4.979 4.979 0 0 1 -2.138 -1.241a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v7" />
+<path d="M5 21v-7" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbFlagX")]
+const TB_FLAG_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.533 15.028a4.988 4.988 0 0 1 -1.533 -1.028a5 5 0 0 0 -7 0v-9a5 5 0 0 1 7 0a5 5 0 0 0 7 0v8.5" />
+<path d="M5 21v-7" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbFlame")]
 const TB_FLAME: icondata_core::IconData = icondata_core::IconData {
@@ -47551,6 +52866,22 @@ const TB_FOLDER_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 4h1l3 3h7a2 2 0 0 1 2 2v8m-2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 1.189 -1.829" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbFolderOpen")]
+const TB_FOLDER_OPEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5 19l2.757 -7.351a1 1 0 0 1 .936 -.649h12.307a1 1 0 0 1 .986 1.164l-.996 5.211a2 2 0 0 1 -1.964 1.625h-14.026a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v2" />"###
+};
 #[cfg(feature = "TbFolderPause")]
 const TB_FOLDER_PAUSE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -47799,6 +53130,38 @@ const TB_FORBID2: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
 <path d="M9 15l6 -6" />"###
 };
+#[cfg(feature = "TbForbid2Filled")]
+const TB_FORBID2_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 4.953a1 1 0 0 0 -1.414 0l-6 6l-.083 .094a1 1 0 0 0 1.497 1.32l6 -6l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbForbidFilled")]
+const TB_FORBID_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-7.387 4.87a1 1 0 0 0 -1.32 1.497l6 6l.094 .083a1 1 0 0 0 1.32 -1.497l-6 -6z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbForklift")]
 const TB_FORKLIFT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -47862,6 +53225,22 @@ const TB_FOUNTAIN: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 16v-10a3 3 0 0 1 6 0" />
 <path d="M6 6a3 3 0 0 1 6 0" />
 <path d="M3 16h18v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-2z" />"###
+};
+#[cfg(feature = "TbFountainFilled")]
+const TB_FOUNTAIN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 2a4 4 0 0 1 4 4a1 1 0 0 1 -1.993 .117l-.007 -.117a2 2 0 0 0 -3.995 -.15l-.005 .15v9h1v-4a3 3 0 0 1 6 0a1 1 0 0 1 -1.993 .117l-.007 -.117a1 1 0 0 0 -1.993 -.117l-.007 .117v4h5a1 1 0 0 1 .993 .883l.007 .117v2a4 4 0 0 1 -3.8 3.995l-.2 .005h-12a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-2a1 1 0 0 1 .883 -.993l.117 -.007h5v-4a1 1 0 0 0 -1.993 -.117l-.007 .117a1 1 0 0 1 -2 0a3 3 0 0 1 5.995 -.176l.005 .176v4h1v-9a2 2 0 1 0 -4 0a1 1 0 1 1 -2 0a4 4 0 0 1 7.001 -2.645a3.983 3.983 0 0 1 2.999 -1.355z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbFountainOff")]
 const TB_FOUNTAIN_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -48082,6 +53461,63 @@ const TB_FRIENDS_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 22v-4h-2l1.254 -3.763m1.036 -2.942a1 1 0 0 1 .71 -.295h2a1 1 0 0 1 1 1l1.503 4.508m-1.503 2.492v3" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbFrustum")]
+const TB_FRUSTUM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.402 5.508l2.538 10.158a1.99 1.99 0 0 1 -1.064 2.278l-7.036 3.366a1.945 1.945 0 0 1 -1.682 0l-7.035 -3.365a1.99 1.99 0 0 1 -1.064 -2.278l2.539 -10.159a1.98 1.98 0 0 1 1.11 -1.328l4.496 -2.01a1.95 1.95 0 0 1 1.59 0l4.496 2.01c.554 .246 .963 .736 1.112 1.328z" />
+<path d="M18 4.82l-5.198 2.324a1.963 1.963 0 0 1 -1.602 0l-5.2 -2.325" />
+<path d="M12 7.32v14.18" />"###
+};
+#[cfg(feature = "TbFrustumOff")]
+const TB_FRUSTUM_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7.72 3.728l3.484 -1.558a1.95 1.95 0 0 1 1.59 0l4.496 2.01c.554 .246 .963 .736 1.112 1.328l2.538 10.158c.103 .412 .07 .832 -.075 1.206m-2.299 1.699l-5.725 2.738a1.945 1.945 0 0 1 -1.682 0l-7.035 -3.365a1.99 1.99 0 0 1 -1.064 -2.278l2.52 -10.08" />
+<path d="M18 4.82l-5.198 2.324a1.963 1.963 0 0 1 -1.602 0" />
+<path d="M12 7.32v.68m0 4v9.5" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbFrustumPlus")]
+const TB_FRUSTUM_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.841 21.309a1.945 1.945 0 0 1 -1.682 0l-7.035 -3.365a1.99 1.99 0 0 1 -1.064 -2.278l2.538 -10.158a1.98 1.98 0 0 1 1.11 -1.328l4.496 -2.01a1.95 1.95 0 0 1 1.59 0l4.496 2.01c.554 .246 .963 .736 1.112 1.328l1.67 6.683" />
+<path d="M18 4.82l-5.198 2.324a1.963 1.963 0 0 1 -1.602 0l-5.2 -2.325" />
+<path d="M12 7.32v14.18" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
 #[cfg(feature = "TbFunction")]
 const TB_FUNCTION: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -48099,6 +53535,22 @@ const TB_FUNCTION: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 4m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h10.666a2.667 2.667 0 0 1 2.667 2.667v10.666a2.667 2.667 0 0 1 -2.667 2.667h-10.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
 <path d="M9 15.5v.25c0 .69 .56 1.25 1.25 1.25c.71 0 1.304 -.538 1.374 -1.244l.752 -7.512a1.381 1.381 0 0 1 1.374 -1.244c.69 0 1.25 .56 1.25 1.25v.25" />
 <path d="M9 12h6" />"###
+};
+#[cfg(feature = "TbFunctionFilled")]
+const TB_FUNCTION_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17.333 3a3.667 3.667 0 0 1 3.667 3.667v10.666a3.667 3.667 0 0 1 -3.667 3.667h-10.666a3.667 3.667 0 0 1 -3.667 -3.667v-10.666a3.667 3.667 0 0 1 3.667 -3.667zm-3.583 3a2.38 2.38 0 0 0 -2.37 2.145l-.285 2.855h-2.095l-.117 .007a1 1 0 0 0 .117 1.993h1.894l-.265 2.656l-.014 .071a.38 .38 0 0 1 -.365 .273a.25 .25 0 0 1 -.25 -.25v-.25l-.007 -.117a1 1 0 0 0 -1.993 .117v.25l.005 .154a2.25 2.25 0 0 0 2.245 2.096a2.38 2.38 0 0 0 2.37 -2.145l.284 -2.855h2.096l.117 -.007a1 1 0 0 0 -.117 -1.993h-1.895l.266 -2.656l.014 -.071a.381 .381 0 0 1 .365 -.273a.25 .25 0 0 1 .25 .25v.25l.007 .117a1 1 0 0 0 1.993 -.117v-.25l-.005 -.154a2.25 2.25 0 0 0 -2.245 -2.096z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbFunctionOff")]
 const TB_FUNCTION_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -48215,6 +53667,22 @@ const TB_GAUGE: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
 <path d="M13.41 10.59l2.59 -2.59" />
 <path d="M7 12a5 5 0 0 1 5 -5" />"###
+};
+#[cfg(feature = "TbGaugeFilled")]
+const TB_GAUGE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-.293 3.953a1 1 0 0 0 -1.414 0l-2.59 2.59l-.083 .094l-.068 .1a2.001 2.001 0 0 0 -2.547 1.774l-.005 .149l.005 .15a2 2 0 1 0 3.917 -.701a.968 .968 0 0 0 .195 -.152l2.59 -2.59l.083 -.094a1 1 0 0 0 -.083 -1.32zm-4.707 -1.293a6 6 0 0 0 -6 6a1 1 0 0 0 2 0a4 4 0 0 1 4 -4a1 1 0 0 0 0 -2z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbGaugeOff")]
 const TB_GAUGE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -48670,6 +54138,24 @@ const TB_GHOST2_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 1.999l.041 .002l.208 .003a8 8 0 0 1 7.747 7.747l.003 .248l.177 .006a3 3 0 0 1 2.819 2.819l.005 .176a3 3 0 0 1 -3 3l-.001 1.696l1.833 2.75a1 1 0 0 1 -.72 1.548l-.112 .006h-10c-3.445 .002 -6.327 -2.49 -6.901 -5.824l-.028 -.178l-.071 .001a3 3 0 0 1 -2.995 -2.824l-.005 -.175a3 3 0 0 1 3 -3l.004 -.25a8 8 0 0 1 7.996 -7.75zm0 10.001a2 2 0 0 0 -2 2a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1a2 2 0 0 0 -2 -2zm-1.99 -4l-.127 .007a1 1 0 0 0 .117 1.993l.127 -.007a1 1 0 0 0 -.117 -1.993zm4 0l-.127 .007a1 1 0 0 0 .117 1.993l.127 -.007a1 1 0 0 0 -.117 -1.993z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbGhost3")]
+const TB_GHOST3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7" />
+<path d="M10 10h.01" />
+<path d="M14 10h.01" />"###
+};
 #[cfg(feature = "TbGhostFilled")]
 const TB_GHOST_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -48719,10 +54205,10 @@ const TB_GIF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8 8h-3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3v-4h-1" />
+<path d="M8 8h-2a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2v-4h-1" />
 <path d="M12 8v8" />
-<path d="M16 16v-8h5" />
-<path d="M20 12h-4" />"###
+<path d="M16 12h3" />
+<path d="M20 8h-4v8" />"###
 };
 #[cfg(feature = "TbGift")]
 const TB_GIFT: icondata_core::IconData = icondata_core::IconData {
@@ -48760,6 +54246,22 @@ const TB_GIFT_CARD: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
 <path d="M7 16l3 -3l3 3" />
 <path d="M8 13c-.789 0 -2 -.672 -2 -1.5s.711 -1.5 1.5 -1.5c1.128 -.02 2.077 1.17 2.5 3c.423 -1.83 1.372 -3.02 2.5 -3c.789 0 1.5 .672 1.5 1.5s-1.211 1.5 -2 1.5h-4z" />"###
+};
+#[cfg(feature = "TbGiftCardFilled")]
+const TB_GIFT_CARD_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 4a4 4 0 0 1 3.995 3.8l.005 .2v8a4 4 0 0 1 -3.8 3.995l-.2 .005h-12a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-5.493 5l-.19 .004c-.928 .052 -1.719 .583 -2.317 1.444c-.56 -.805 -1.288 -1.322 -2.139 -1.428l-.198 -.017l-.164 -.003l-.16 .005c-1.28 .086 -2.339 1.179 -2.339 2.495c0 1.226 1.222 2.211 2.453 2.447l.16 .026l-1.32 1.32l-.083 .094a1 1 0 0 0 0 1.226l.083 .094l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l2.293 -2.292l2.293 2.292l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.32 -1.32c1.229 -.169 2.502 -1.11 2.606 -2.315l.007 -.158l-.005 -.163c-.08 -1.189 -1.02 -2.162 -2.175 -2.316l-.159 -.016l-.154 -.005zm-.025 2l.102 .009c.194 .04 .367 .21 .407 .406l.009 .085l-.012 .031l-.034 .04c-.13 .135 -.513 .369 -.836 .42l-.118 .009h-.602l.052 -.1l.088 -.156c.27 -.444 .574 -.696 .852 -.738l.092 -.006zm-4.964 0l.084 .005l.094 .02c.254 .077 .523 .32 .765 .718l.09 .157l.05 .1h-.601l-.106 -.008c-.398 -.057 -.894 -.4 -.894 -.492c0 -.23 .194 -.446 .416 -.491l.102 -.01z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbGiftOff")]
 const TB_GIFT_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -49043,6 +54545,22 @@ const TB_GLASS_FULL: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 3l1 7c0 3.012 -2.686 5 -6 5s-6 -1.988 -6 -5l1 -7h10z" />
 <path d="M6 10a5 5 0 0 1 6 0a5 5 0 0 0 6 0" />"###
 };
+#[cfg(feature = "TbGlassFullFilled")]
+const TB_GLASS_FULL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.004 10.229l-.003 -.186l.001 -.113l.008 -.071l1 -7a1 1 0 0 1 .877 -.853l.113 -.006h10a1 1 0 0 1 .968 .747l.022 .112l1.006 7.05l.004 .091c0 3.226 -2.56 5.564 -6 5.945v4.055h3a1 1 0 0 1 .117 1.993l-.117 .007h-8a1 1 0 0 1 -.117 -1.993l.117 -.007h3v-4.055c-3.358 -.371 -5.878 -2.609 -5.996 -5.716zm11.129 -6.229h-8.267l-.607 4.258a6.001 6.001 0 0 1 5.125 .787l.216 .155a4 4 0 0 0 4.32 .31l-.787 -5.51z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbGlassOff")]
 const TB_GLASS_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -49076,10 +54594,29 @@ const TB_GLOBE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 10m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-<path d="M6.75 16a8.015 8.015 0 1 0 9.25 -13" />
-<path d="M12 18l0 4" />
-<path d="M8 22l8 0" />"###
+<path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+<path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13" />
+<path d="M11 17v4" />
+<path d="M7 21h8" />"###
+};
+#[cfg(feature = "TbGlobeFilled")]
+const TB_GLOBE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 4a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+<path d="M14.133 1.502a1 1 0 0 1 1.365 -.369a9.015 9.015 0 1 1 -10.404 14.622a1 1 0 1 1 1.312 -1.51a7.015 7.015 0 1 0 8.096 -11.378a1 1 0 0 1 -.369 -1.365z" stroke-width="0" fill="currentColor" />
+<path d="M11 16a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M15 20a1 1 0 0 1 .117 1.993l-.117 .007h-8a1 1 0 0 1 -.117 -1.993l.117 -.007h8z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbGlobeOff")]
 const TB_GLOBE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -49095,10 +54632,10 @@ const TB_GLOBE_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8.36 8.339a4 4 0 0 0 5.281 5.31m2 -1.98a4 4 0 0 0 -5.262 -5.325" />
-<path d="M6.75 16a8.015 8.015 0 0 0 9.799 .553m2.016 -2a8.015 8.015 0 0 0 -2.565 -11.555" />
-<path d="M12 18v4" />
-<path d="M8 22h8" />
+<path d="M7.353 7.355a4 4 0 0 0 5.29 5.293m2.007 -2.009a4 4 0 0 0 -5.3 -5.284" />
+<path d="M5.75 15a8.015 8.015 0 0 0 9.792 .557m2.02 -1.998a8.015 8.015 0 0 0 -2.562 -11.559" />
+<path d="M11 17v4" />
+<path d="M7 21h8" />
 <path d="M3 3l18 18" />"###
 };
 #[cfg(feature = "TbGoGame")]
@@ -50047,6 +55584,44 @@ const TB_HAZE: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 16h18" />
 <path d="M3 20h18" />"###
 };
+#[cfg(feature = "TbHazeMoon")]
+const TB_HAZE_MOON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 16h18" />
+<path d="M3 20h18" />
+<path d="M8.296 16c-2.268 -1.4 -3.598 -4.087 -3.237 -6.916c.443 -3.48 3.308 -6.083 6.698 -6.084v.006h.296c-1.991 1.916 -2.377 5.03 -.918 7.405c1.459 2.374 4.346 3.33 6.865 2.275a6.888 6.888 0 0 1 -2.777 3.314" />"###
+};
+#[cfg(feature = "TbHdr")]
+const TB_HDR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 16v-8" />
+<path d="M7 8v8" />
+<path d="M3 12h4" />
+<path d="M10 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-2z" />
+<path d="M17 12h2a2 2 0 1 0 0 -4h-2v8m4 0l-3 -4" />"###
+};
 #[cfg(feature = "TbHeading")]
 const TB_HEADING: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -50219,6 +55794,23 @@ const TB_HEART: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />"###
 };
+#[cfg(feature = "TbHeartBolt")]
+const TB_HEART_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.003 5.997" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
 #[cfg(feature = "TbHeartBroken")]
 const TB_HEART_BROKEN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -50235,6 +55827,155 @@ const TB_HEART_BROKEN: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
 <path d="M12 6l-2 4l4 3l-2 4v3" />"###
+};
+#[cfg(feature = "TbHeartCancel")]
+const TB_HEART_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 7.993 6.01" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbHeartCheck")]
+const TB_HEART_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbHeartCode")]
+const TB_HEART_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 12.572l-.536 .53m-7.91 5.96l-6.554 -6.489a5 5 0 1 1 7.5 -6.567a5 5 0 1 1 7.5 6.572" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbHeartCog")]
+const TB_HEART_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.21 5.697" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbHeartDiscount")]
+const TB_HEART_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbHeartDollar")]
+const TB_HEART_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.785 4.444" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbHeartDown")]
+const TB_HEART_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.907 6.12" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbHeartExclamation")]
+const TB_HEART_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.03 17l-3.03 3l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.922 6.102" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
 };
 #[cfg(feature = "TbHeartFilled")]
 const TB_HEART_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -50285,8 +56026,8 @@ const TB_HEART_MINUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13 19l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8 6" />
-<path d="M14 16h6" />"###
+<path d="M19.5 12.572l-2.494 2.47m-5.006 4.958l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbHeartOff")]
 const TB_HEART_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -50305,6 +56046,42 @@ const TB_HEART_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 3l18 18" />
 <path d="M19.5 12.572l-1.5 1.428m-2 2l-4 4l-7.5 -7.428a5 5 0 0 1 -1.288 -5.068a4.976 4.976 0 0 1 1.788 -2.504m3 -1c1.56 0 3.05 .727 4 2a5 5 0 1 1 7.5 6.572" />"###
 };
+#[cfg(feature = "TbHeartPause")]
+const TB_HEART_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 12.572l-.784 .777m-5.725 5.67l-.991 .981l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbHeartPin")]
+const TB_HEART_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.5 5.179" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
 #[cfg(feature = "TbHeartPlus")]
 const TB_HEART_PLUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -50319,9 +56096,27 @@ const TB_HEART_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13 19l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8 6" />
-<path d="M14 16h6" />
-<path d="M17 13v6" />"###
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbHeartQuestion")]
+const TB_HEART_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.105 17.915l-2.105 2.085l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.524 5.127" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
 };
 #[cfg(feature = "TbHeartRateMonitor")]
 const TB_HEART_RATE_MONITOR: icondata_core::IconData = icondata_core::IconData {
@@ -50342,6 +56137,95 @@ const TB_HEART_RATE_MONITOR: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 16v4" />
 <path d="M15 16v4" />
 <path d="M7 10h2l2 3l2 -6l1 3h3" />"###
+};
+#[cfg(feature = "TbHeartSearch")]
+const TB_HEART_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-.975 -.966l-6.525 -6.462a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.37 5.428" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbHeartShare")]
+const TB_HEART_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 12.572l-.468 .464m-6.077 6.019l-.955 .945l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbHeartStar")]
+const TB_HEART_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9.73 17.753l-5.23 -5.181a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.563 5.041" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbHeartUp")]
+const TB_HEART_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.893 6.139" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbHeartX")]
+const TB_HEART_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.5 12.572l-.5 .428m-6 6l-1 1l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbHeartbeat")]
 const TB_HEARTBEAT: icondata_core::IconData = icondata_core::IconData {
@@ -50709,9 +56593,9 @@ const TB_HELP_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" />
-<path d="M12 17v.01" />
-<path d="M12 14a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+<path d="M12 16v.01" />
+<path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+<path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
 };
 #[cfg(feature = "TbHelpTriangleFilled")]
 const TB_HELP_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -50727,7 +56611,61 @@ const TB_HELP_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11.94 2a2.99 2.99 0 0 1 2.45 1.279l.108 .164l8.431 14.074a2.989 2.989 0 0 1 -2.366 4.474l-.2 .009h-16.856a2.99 2.99 0 0 1 -2.648 -4.308l.101 -.189l8.425 -14.065a2.989 2.989 0 0 1 2.555 -1.438zm.06 14a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1.368 -6.673a2.98 2.98 0 0 0 -3.631 .728a1 1 0 0 0 1.44 1.383l.171 -.18a.98 .98 0 0 1 1.11 -.15a1 1 0 0 1 -.34 1.886l-.232 .012a1 1 0 0 0 .111 1.994a3 3 0 0 0 1.371 -5.673z" stroke-width="0" fill="currentColor" />"###
+<path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm0 13.33a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1.368 -6.673a2.98 2.98 0 0 0 -3.631 .728a1 1 0 0 0 1.44 1.383l.171 -.18a.98 .98 0 0 1 1.11 -.15a1 1 0 0 1 -.34 1.886l-.232 .012a1 1 0 0 0 .111 1.994a3 3 0 0 0 1.371 -5.673z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbHemisphere")]
+const TB_HEMISPHERE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 9m-9 0a9 3 0 1 0 18 0a9 3 0 1 0 -18 0" />
+<path d="M3 9a9 9 0 0 0 18 0" />"###
+};
+#[cfg(feature = "TbHemisphereOff")]
+const TB_HEMISPHERE_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6.588 6.603c-2.178 .547 -3.588 1.417 -3.588 2.397c0 1.657 4.03 3 9 3m3.72 -.267c3.114 -.473 5.28 -1.518 5.28 -2.733c0 -1.657 -4.03 -3 -9 -3c-.662 0 -1.308 .024 -1.93 .07" />
+<path d="M3 9a9 9 0 0 0 13.677 7.69m2.165 -1.843a8.965 8.965 0 0 0 2.158 -5.847" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbHemispherePlus")]
+const TB_HEMISPHERE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 9m-9 0a9 3 0 1 0 18 0a9 3 0 1 0 -18 0" />
+<path d="M3 9a9 9 0 0 0 9 9m8.396 -5.752a8.978 8.978 0 0 0 .604 -3.248" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbHexagon")]
 const TB_HEXAGON: icondata_core::IconData = icondata_core::IconData {
@@ -51583,6 +57521,141 @@ const TB_HEXAGON_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8.693 4.69l2.336 -1.39a2.056 2.056 0 0 1 2 0l6 3.573h-.029a2 2 0 0 1 1 1.747v6.536c0 .246 -.045 .485 -.13 .707m-2.16 1.847l-4.739 3.027a2 2 0 0 1 -1.942 0l-6 -3.833a2 2 0 0 1 -1.029 -1.747v-6.537a2 2 0 0 1 1.029 -1.748l1.154 -.687" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbHexagonPlus")]
+const TB_HEXAGON_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.092 21.72a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033c.7 .398 1.13 1.143 1.125 1.948v4.282" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbHexagonalPrism")]
+const TB_HEXAGONAL_PRISM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20.792 6.996l-3.775 2.643a2.005 2.005 0 0 1 -1.147 .361h-7.74c-.41 0 -.81 -.126 -1.146 -.362l-3.774 -2.641" />
+<path d="M8 10v11" />
+<path d="M16 10v11" />
+<path d="M3.853 18.274l3.367 2.363a2 2 0 0 0 1.147 .363h7.265c.41 0 .811 -.126 1.147 -.363l3.367 -2.363c.536 -.375 .854 -.99 .854 -1.643v-9.262c0 -.655 -.318 -1.268 -.853 -1.643l-3.367 -2.363a2 2 0 0 0 -1.147 -.363h-7.266c-.41 0 -.811 .126 -1.147 .363l-3.367 2.363a2.006 2.006 0 0 0 -.853 1.644v9.261c0 .655 .318 1.269 .853 1.644z" />"###
+};
+#[cfg(feature = "TbHexagonalPrismOff")]
+const TB_HEXAGONAL_PRISM_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20.792 6.996l-3.775 2.643a2.005 2.005 0 0 1 -1.147 .361h-1.87m-4 0h-1.87c-.41 0 -.81 -.126 -1.146 -.362l-3.774 -2.641" />
+<path d="M8 10v11" />
+<path d="M16 10v2m0 4v5" />
+<path d="M20.972 16.968a2.01 2.01 0 0 0 .028 -.337v-9.262c0 -.655 -.318 -1.268 -.853 -1.643l-3.367 -2.363a2 2 0 0 0 -1.147 -.363h-7.266a1.99 1.99 0 0 0 -1.066 .309m-2.345 1.643l-1.103 .774a2.006 2.006 0 0 0 -.853 1.644v9.261c0 .655 .318 1.269 .853 1.644l3.367 2.363a2 2 0 0 0 1.147 .362h7.265c.41 0 .811 -.126 1.147 -.363l2.26 -1.587" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbHexagonalPrismPlus")]
+const TB_HEXAGONAL_PRISM_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20.792 6.996l-3.775 2.643a2.005 2.005 0 0 1 -1.147 .361h-7.74c-.41 0 -.81 -.126 -1.146 -.362l-3.774 -2.641" />
+<path d="M8 10v11" />
+<path d="M16 10v3.5" />
+<path d="M21 12.5v-5.131c0 -.655 -.318 -1.268 -.853 -1.643l-3.367 -2.363a2 2 0 0 0 -1.147 -.363h-7.266c-.41 0 -.811 .126 -1.147 .363l-3.367 2.363a2.006 2.006 0 0 0 -.853 1.644v9.261c0 .655 .318 1.269 .853 1.644l3.367 2.363a2 2 0 0 0 1.147 .362h4.133" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbHexagonalPyramid")]
+const TB_HEXAGONAL_PYRAMID: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.162 2.457l-7.846 12.954a1.988 1.988 0 0 0 .267 2.483l2.527 2.523c.374 .373 .88 .583 1.408 .583h8.964c.528 0 1.034 -.21 1.408 -.583l2.527 -2.523a1.988 1.988 0 0 0 .267 -2.483l-7.846 -12.954a.996 .996 0 0 0 -1.676 0z" />
+<path d="M12 2l-5 18.9" />
+<path d="M12 2l5 18.9" />"###
+};
+#[cfg(feature = "TbHexagonalPyramidOff")]
+const TB_HEXAGONAL_PYRAMID_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7.877 7.88l-4.56 7.53a1.988 1.988 0 0 0 .266 2.484l2.527 2.523c.374 .373 .88 .583 1.408 .583h8.964c.528 0 1.034 -.21 1.408 -.583l1.264 -1.263m1.792 -2.205a1.986 1.986 0 0 0 -.262 -1.538l-7.846 -12.954a.996 .996 0 0 0 -1.676 0l-1.772 2.926" />
+<path d="M12 2l-1.254 4.742m-.841 3.177l-2.905 10.981" />
+<path d="M12 2l2.153 8.14m1.444 5.457l1.403 5.303" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbHexagonalPyramidPlus")]
+const TB_HEXAGONAL_PYRAMID_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.642 12.04l-5.804 -9.583a.996 .996 0 0 0 -1.676 0l-7.846 12.954a1.988 1.988 0 0 0 .267 2.483l2.527 2.523c.374 .373 .88 .583 1.408 .583h4.982" />
+<path d="M12 2l-5 18.9" />
+<path d="M12 2l3.304 12.489" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
 #[cfg(feature = "TbHexagons")]
 const TB_HEXAGONS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -52368,6 +58441,23 @@ const TB_HOME_X: icondata_core::IconData = icondata_core::IconData {
 <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.402 0 .777 .119 1.091 .323" />
 <path d="M21.5 21.5l-5 -5" />
 <path d="M16.5 21.5l5 -5" />"###
+};
+#[cfg(feature = "TbHorse")]
+const TB_HORSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7 10l-.85 8.507a1.357 1.357 0 0 0 1.35 1.493h.146a2 2 0 0 0 1.857 -1.257l.994 -2.486a2 2 0 0 1 1.857 -1.257h1.292a2 2 0 0 1 1.857 1.257l.994 2.486a2 2 0 0 0 1.857 1.257h.146a1.37 1.37 0 0 0 1.364 -1.494l-.864 -9.506h-8c0 -3 -3 -5 -6 -5l-3 6l2 2l3 -2z" />
+<path d="M22 14v-2a3 3 0 0 0 -3 -3" />"###
 };
 #[cfg(feature = "TbHorseToy")]
 const TB_HORSE_TOY: icondata_core::IconData = icondata_core::IconData {
@@ -53250,9 +59340,9 @@ const TB_INFO_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 10h.01" />
-<path d="M11 13h1v4h1" />
-<path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" />"###
+<path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+<path d="M12 9h.01" />
+<path d="M11 12h1v4h1" />"###
 };
 #[cfg(feature = "TbInfoTriangleFilled")]
 const TB_INFO_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -53268,7 +59358,7 @@ const TB_INFO_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11.94 2a2.99 2.99 0 0 1 2.45 1.279l.108 .164l8.431 14.074a2.989 2.989 0 0 1 -2.366 4.474l-.2 .009h-16.856a2.99 2.99 0 0 1 -2.648 -4.308l.101 -.189l8.425 -14.065a2.989 2.989 0 0 1 2.555 -1.438zm.06 10h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
+<path d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm0 9.33h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbInnerShadowBottom")]
 const TB_INNER_SHADOW_BOTTOM: icondata_core::IconData = icondata_core::IconData {
@@ -53534,6 +59624,42 @@ const TB_INNER_SHADOW_TOP_RIGHT_FILLED: icondata_core::IconData = icondata_core:
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10 -10 10s-10 -4.477 -10 -10s4.477 -10 10 -10zm0 3a1 1 0 0 0 0 2a5 5 0 0 1 5 5a1 1 0 0 0 2 0a7 7 0 0 0 -7 -7z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbInputAi")]
+const TB_INPUT_AI: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 11v-2a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4" />
+<path d="M14 21v-4a2 2 0 1 1 4 0v4" />
+<path d="M14 19h4" />
+<path d="M21 15v6" />"###
+};
+#[cfg(feature = "TbInputCheck")]
+const TB_INPUT_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 13v-4a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h6" />
+<path d="M15 19l2 2l4 -4" />"###
+};
 #[cfg(feature = "TbInputSearch")]
 const TB_INPUT_SEARCH: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -53548,9 +59674,43 @@ const TB_INPUT_SEARCH: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M19 11v-3a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5" />
-<path d="M15.5 15.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
-<path d="M17.5 17.5l2.5 2.5" />"###
+<path d="M20 11v-2a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbInputX")]
+const TB_INPUT_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 13v-4a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h7" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
+};
+#[cfg(feature = "TbIroning")]
+const TB_IRONING: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 6h7.459a3 3 0 0 1 2.959 2.507l.577 3.464l.81 4.865a1 1 0 0 1 -.985 1.164h-16.82a7 7 0 0 1 7 -7h9.8" />"###
 };
 #[cfg(feature = "TbIroning1")]
 const TB_IRONING1: icondata_core::IconData = icondata_core::IconData {
@@ -53663,6 +59823,66 @@ const TB_IRONING_STEAM_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 19l-1 2" />
 <path d="M16 19l1 2" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbIrregularPolyhedron")]
+const TB_IRREGULAR_POLYHEDRON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 12l-1.752 6.13a1 1 0 0 0 .592 1.205l6.282 2.503a2.46 2.46 0 0 0 1.756 0l6.282 -2.503a1 1 0 0 0 .592 -1.204l-1.752 -6.131l1.752 -6.13a1 1 0 0 0 -.592 -1.205l-6.282 -2.503a2.46 2.46 0 0 0 -1.756 0l-6.282 2.503a1 1 0 0 0 -.592 1.204l1.752 6.131z" />
+<path d="M4.5 5.5l6.622 2.33a2.35 2.35 0 0 0 1.756 0l6.622 -2.33" />
+<path d="M6 12l5.21 1.862a2.34 2.34 0 0 0 1.58 0l5.21 -1.862" />
+<path d="M12 22v-14" />"###
+};
+#[cfg(feature = "TbIrregularPolyhedronOff")]
+const TB_IRREGULAR_POLYHEDRON_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4.706 4.73a1 1 0 0 0 -.458 1.14l1.752 6.13l-1.752 6.13a1 1 0 0 0 .592 1.205l6.282 2.503a2.46 2.46 0 0 0 1.756 0l6.282 -2.503c.04 -.016 .079 -.035 .116 -.055m-.474 -4.474l-.802 -2.806l1.752 -6.13a1 1 0 0 0 -.592 -1.205l-6.282 -2.503a2.46 2.46 0 0 0 -1.756 0l-3.544 1.412" />
+<path d="M4.5 5.5c.661 .214 1.161 .38 1.5 .5m6 2c.29 -.003 .603 -.06 .878 -.17l6.622 -2.33" />
+<path d="M6 12l5.21 1.862a2.34 2.34 0 0 0 1.58 0l.742 -.265m2.956 -1.057c.312 -.11 .816 -.291 1.512 -.54" />
+<path d="M12 22v-10" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbIrregularPolyhedronPlus")]
+const TB_IRREGULAR_POLYHEDRON_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 12l1.752 -6.13a1 1 0 0 0 -.592 -1.205l-6.282 -2.503a2.46 2.46 0 0 0 -1.756 0l-6.282 2.503a1 1 0 0 0 -.592 1.204l1.752 6.131l-1.752 6.13a1 1 0 0 0 .592 1.205l6.282 2.503a2.46 2.46 0 0 0 1.756 0l.221 -.088" />
+<path d="M4.5 5.5l6.622 2.33a2.35 2.35 0 0 0 1.756 0l6.622 -2.33" />
+<path d="M6 12l5.21 1.862a2.34 2.34 0 0 0 1.58 0l5.21 -1.862" />
+<path d="M12 22v-14" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbItalic")]
 const TB_ITALIC: icondata_core::IconData = icondata_core::IconData {
@@ -54035,6 +60255,26 @@ const TB_KEYFRAME_ALIGN_CENTER: icondata_core::IconData = icondata_core::IconDat
 <path d="M3 12h2" />
 <path d="M19 12h2" />"###
 };
+#[cfg(feature = "TbKeyframeAlignCenterFilled")]
+const TB_KEYFRAME_ALIGN_CENTER_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 19a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M12 6c-.629 0 -1.214 .301 -1.606 .807l-2.908 3.748a2.395 2.395 0 0 0 -.011 2.876l2.919 3.762c.39 .505 .977 .807 1.606 .807c.629 0 1.214 -.301 1.606 -.807l2.908 -3.748a2.395 2.395 0 0 0 .011 -2.876l-2.919 -3.762a2.032 2.032 0 0 0 -1.606 -.807z" stroke-width="0" fill="currentColor" />
+<path d="M12 1a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M5 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />
+<path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbKeyframeAlignHorizontal")]
 const TB_KEYFRAME_ALIGN_HORIZONTAL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -54052,6 +60292,24 @@ const TB_KEYFRAME_ALIGN_HORIZONTAL: icondata_core::IconData = icondata_core::Ico
 <path d="M12.816 16.58c-.207 .267 -.504 .42 -.816 .42c-.312 0 -.61 -.153 -.816 -.42l-2.908 -3.748a1.39 1.39 0 0 1 0 -1.664l2.908 -3.748c.207 -.267 .504 -.42 .816 -.42c.312 0 .61 .153 .816 .42l2.908 3.748a1.39 1.39 0 0 1 0 1.664l-2.908 3.748z" />
 <path d="M3 12h2" />
 <path d="M19 12h2" />"###
+};
+#[cfg(feature = "TbKeyframeAlignHorizontalFilled")]
+const TB_KEYFRAME_ALIGN_HORIZONTAL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 6c-.629 0 -1.214 .301 -1.606 .807l-2.908 3.748a2.395 2.395 0 0 0 -.011 2.876l2.919 3.762c.39 .505 .977 .807 1.606 .807c.629 0 1.214 -.301 1.606 -.807l2.908 -3.748a2.395 2.395 0 0 0 .011 -2.876l-2.919 -3.762a2.032 2.032 0 0 0 -1.606 -.807z" stroke-width="0" fill="currentColor" />
+<path d="M5 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />
+<path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-2a1 1 0 0 1 -.117 -1.993l.117 -.007h2z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbKeyframeAlignVertical")]
 const TB_KEYFRAME_ALIGN_VERTICAL: icondata_core::IconData = icondata_core::IconData {
@@ -54071,6 +60329,40 @@ const TB_KEYFRAME_ALIGN_VERTICAL: icondata_core::IconData = icondata_core::IconD
 <path d="M12.816 16.58c-.207 .267 -.504 .42 -.816 .42c-.312 0 -.61 -.153 -.816 -.42l-2.908 -3.748a1.39 1.39 0 0 1 0 -1.664l2.908 -3.748c.207 -.267 .504 -.42 .816 -.42c.312 0 .61 .153 .816 .42l2.908 3.748a1.39 1.39 0 0 1 0 1.664l-2.908 3.748z" />
 <path d="M12 20v2" />"###
 };
+#[cfg(feature = "TbKeyframeAlignVerticalFilled")]
+const TB_KEYFRAME_ALIGN_VERTICAL_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 1a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />
+<path d="M12 6c-.629 0 -1.214 .301 -1.606 .807l-2.908 3.748a2.395 2.395 0 0 0 -.011 2.876l2.919 3.762c.39 .505 .977 .807 1.606 .807c.629 0 1.214 -.301 1.606 -.807l2.908 -3.748a2.395 2.395 0 0 0 .011 -2.876l-2.919 -3.762a2.032 2.032 0 0 0 -1.606 -.807z" stroke-width="0" fill="currentColor" />
+<path d="M12 19a1 1 0 0 1 .993 .883l.007 .117v2a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 1 -1z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbKeyframeFilled")]
+const TB_KEYFRAME_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 4a2.599 2.599 0 0 0 -2 .957l-4.355 5.24a2.847 2.847 0 0 0 -.007 3.598l4.368 5.256c.499 .6 1.225 .949 1.994 .949a2.599 2.599 0 0 0 2 -.957l4.355 -5.24a2.847 2.847 0 0 0 .007 -3.598l-4.368 -5.256a2.593 2.593 0 0 0 -1.994 -.949z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbKeyframes")]
 const TB_KEYFRAMES: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -54088,6 +60380,24 @@ const TB_KEYFRAMES: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.225 18.412a1.595 1.595 0 0 1 -1.225 .588c-.468 0 -.914 -.214 -1.225 -.588l-4.361 -5.248a1.844 1.844 0 0 1 0 -2.328l4.361 -5.248a1.595 1.595 0 0 1 1.225 -.588c.468 0 .914 .214 1.225 .588l4.361 5.248a1.844 1.844 0 0 1 0 2.328l-4.361 5.248z" />
 <path d="M17 5l4.586 5.836a1.844 1.844 0 0 1 0 2.328l-4.586 5.836" />
 <path d="M13 5l4.586 5.836a1.844 1.844 0 0 1 0 2.328l-4.586 5.836" />"###
+};
+#[cfg(feature = "TbKeyframesFilled")]
+const TB_KEYFRAMES_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 4a2.599 2.599 0 0 0 -2 .957l-4.355 5.24a2.847 2.847 0 0 0 -.007 3.598l4.368 5.256c.499 .6 1.224 .949 1.994 .949a2.599 2.599 0 0 0 2 -.957l4.355 -5.24a2.847 2.847 0 0 0 .007 -3.598l-4.368 -5.256a2.593 2.593 0 0 0 -1.994 -.949z" stroke-width="0" fill="currentColor" />
+<path d="M16.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z" stroke-width="0" fill="currentColor" />
+<path d="M12.382 4.214a1 1 0 0 1 1.32 .074l.084 .094l4.576 5.823c.808 .993 .848 2.396 .13 3.419l-.12 .158l-4.586 5.836a1 1 0 0 1 -1.644 -1.132l.072 -.104l4.596 -5.85a.845 .845 0 0 0 .06 -.978l-.07 -.1l-4.586 -5.836a1 1 0 0 1 .168 -1.404z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbLadder")]
 const TB_LADDER: icondata_core::IconData = icondata_core::IconData {
@@ -54131,6 +60441,23 @@ const TB_LADDER_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 6h6" />
 <path d="M8 18h8" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbLadle")]
+const TB_LADLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 14v1a6 6 0 1 0 12 0v-9a3 3 0 0 1 6 0" />
+<path d="M9 16c-.663 0 -1.3 -.036 -1.896 -.102l-.5 -.064c-2.123 -.308 -3.604 -1.013 -3.604 -1.834c0 -.82 1.482 -1.526 3.603 -1.834l.5 -.064a17.27 17.27 0 0 1 1.897 -.102c.663 0 1.3 .036 1.896 .102l.5 .064c2.123 .308 3.604 1.013 3.604 1.834c0 .82 -1.482 1.526 -3.603 1.834l-.5 .064a17.27 17.27 0 0 1 -1.897 .102z" />"###
 };
 #[cfg(feature = "TbLambda")]
 const TB_LAMBDA: icondata_core::IconData = icondata_core::IconData {
@@ -54205,6 +60532,23 @@ const TB_LAMP_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 20v-8" />
 <path d="M7.325 7.35l-2.325 4.65h7m4 0h3l-4 -8h-6l-.338 .676" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbLane")]
+const TB_LANE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 6v13" />
+<path d="M20 6v13" />"###
 };
 #[cfg(feature = "TbLanguage")]
 const TB_LANGUAGE: icondata_core::IconData = icondata_core::IconData {
@@ -54679,6 +61023,22 @@ const TB_LAYOUT_BOTTOMBAR_COLLAPSE: icondata_core::IconData = icondata_core::Ico
 <path d="M20 15h-16" />
 <path d="M14 8l-2 2l-2 -2" />"###
 };
+#[cfg(feature = "TbLayoutBottombarCollapseFilled")]
+const TB_LAYOUT_BOTTOMBAR_COLLAPSE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm0 2h-12a1 1 0 0 0 -.993 .883l-.007 .117v9h14v-9a1 1 0 0 0 -.883 -.993l-.117 -.007zm-7.387 3.21l.094 .083l1.293 1.292l1.293 -1.292a1 1 0 0 1 1.32 -.083l.094 .083a1 1 0 0 1 .083 1.32l-.083 .094l-2 2a1 1 0 0 1 -1.32 .083l-.094 -.083l-2 -2a1 1 0 0 1 1.32 -1.497z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbLayoutBottombarExpand")]
 const TB_LAYOUT_BOTTOMBAR_EXPAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -54696,6 +61056,38 @@ const TB_LAYOUT_BOTTOMBAR_EXPAND: icondata_core::IconData = icondata_core::IconD
 <path d="M20 6v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2z" />
 <path d="M20 15h-16" />
 <path d="M14 10l-2 -2l-2 2" />"###
+};
+#[cfg(feature = "TbLayoutBottombarExpandFilled")]
+const TB_LAYOUT_BOTTOMBAR_EXPAND_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm0 2h-12a1 1 0 0 0 -.993 .883l-.007 .117v9h14v-9a1 1 0 0 0 -.883 -.993l-.117 -.007zm-5.387 3.21l.094 .083l2 2a1 1 0 0 1 -1.32 1.497l-.094 -.083l-1.293 -1.292l-1.293 1.292a1 1 0 0 1 -1.32 .083l-.094 -.083a1 1 0 0 1 -.083 -1.32l.083 -.094l2 -2a1 1 0 0 1 1.32 -.083z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbLayoutBottombarFilled")]
+const TB_LAYOUT_BOTTOMBAR_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm0 2h-12a1 1 0 0 0 -.993 .883l-.007 .117v9h14v-9a1 1 0 0 0 -.883 -.993l-.117 -.007z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbLayoutCards")]
 const TB_LAYOUT_CARDS: icondata_core::IconData = icondata_core::IconData {
@@ -54842,6 +61234,25 @@ const TB_LAYOUT_GRID_ADD: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
 <path d="M14 17h6m-3 -3v6" />"###
 };
+#[cfg(feature = "TbLayoutGridRemove")]
+const TB_LAYOUT_GRID_REMOVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-4z" />
+<path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-4z" />
+<path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-4z" />
+<path d="M14 17h6" />"###
+};
 #[cfg(feature = "TbLayoutKanban")]
 const TB_LAYOUT_KANBAN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -54913,6 +61324,22 @@ const TB_LAYOUT_NAVBAR_COLLAPSE: icondata_core::IconData = icondata_core::IconDa
 <path d="M4 9h16" />
 <path d="M10 16l2 -2l2 2" />"###
 };
+#[cfg(feature = "TbLayoutNavbarCollapseFilled")]
+const TB_LAYOUT_NAVBAR_COLLAPSE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm1 6h-14v9a1 1 0 0 0 .883 .993l.117 .007h12a1 1 0 0 0 .993 -.883l.007 -.117v-9zm-6.387 3.21l.094 .083l2 2a1 1 0 0 1 -1.32 1.497l-.094 -.083l-1.293 -1.292l-1.293 1.292a1 1 0 0 1 -1.32 .083l-.094 -.083a1 1 0 0 1 -.083 -1.32l.083 -.094l2 -2a1 1 0 0 1 1.32 -.083z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbLayoutNavbarExpand")]
 const TB_LAYOUT_NAVBAR_EXPAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -54930,6 +61357,38 @@ const TB_LAYOUT_NAVBAR_EXPAND: icondata_core::IconData = icondata_core::IconData
 <path d="M4 18v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
 <path d="M4 9h16" />
 <path d="M10 14l2 2l2 -2" />"###
+};
+#[cfg(feature = "TbLayoutNavbarExpandFilled")]
+const TB_LAYOUT_NAVBAR_EXPAND_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm1 6h-14v9a1 1 0 0 0 .883 .993l.117 .007h12a1 1 0 0 0 .993 -.883l.007 -.117v-9zm-8.387 3.21l.094 .083l1.293 1.292l1.293 -1.292a1 1 0 0 1 1.32 -.083l.094 .083a1 1 0 0 1 .083 1.32l-.083 .094l-2 2a1 1 0 0 1 -1.32 .083l-.094 -.083l-2 -2a1 1 0 0 1 1.32 -1.497z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbLayoutNavbarFilled")]
+const TB_LAYOUT_NAVBAR_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm1 6h-14v9a1 1 0 0 0 .883 .993l.117 .007h12a1 1 0 0 0 .993 -.883l.007 -.117v-9z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbLayoutOff")]
 const TB_LAYOUT_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -55002,6 +61461,22 @@ const TB_LAYOUT_SIDEBAR_LEFT_COLLAPSE: icondata_core::IconData = icondata_core::
 <path d="M9 4v16" />
 <path d="M15 10l-2 2l2 2" />"###
 };
+#[cfg(feature = "TbLayoutSidebarLeftCollapseFilled")]
+const TB_LAYOUT_SIDEBAR_LEFT_COLLAPSE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm0 2h-9v14h9a1 1 0 0 0 .993 -.883l.007 -.117v-12a1 1 0 0 0 -.883 -.993l-.117 -.007zm-2.293 4.293a1 1 0 0 1 .083 1.32l-.083 .094l-1.292 1.293l1.292 1.293a1 1 0 0 1 .083 1.32l-.083 .094a1 1 0 0 1 -1.32 .083l-.094 -.083l-2 -2a1 1 0 0 1 -.083 -1.32l.083 -.094l2 -2a1 1 0 0 1 1.414 0z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbLayoutSidebarLeftExpand")]
 const TB_LAYOUT_SIDEBAR_LEFT_EXPAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -55019,6 +61494,22 @@ const TB_LAYOUT_SIDEBAR_LEFT_EXPAND: icondata_core::IconData = icondata_core::Ic
 <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
 <path d="M9 4v16" />
 <path d="M14 10l2 2l-2 2" />"###
+};
+#[cfg(feature = "TbLayoutSidebarLeftExpandFilled")]
+const TB_LAYOUT_SIDEBAR_LEFT_EXPAND_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm0 2h-9v14h9a1 1 0 0 0 .993 -.883l.007 -.117v-12a1 1 0 0 0 -.883 -.993l-.117 -.007zm-4.387 4.21l.094 .083l2 2a1 1 0 0 1 .083 1.32l-.083 .094l-2 2a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.292 -1.293l-1.292 -1.293a1 1 0 0 1 -.083 -1.32l.083 -.094a1 1 0 0 1 1.32 -.083z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbLayoutSidebarRight")]
 const TB_LAYOUT_SIDEBAR_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -55055,6 +61546,22 @@ const TB_LAYOUT_SIDEBAR_RIGHT_COLLAPSE: icondata_core::IconData = icondata_core:
 <path d="M15 4v16" />
 <path d="M9 10l2 2l-2 2" />"###
 };
+#[cfg(feature = "TbLayoutSidebarRightCollapseFilled")]
+const TB_LAYOUT_SIDEBAR_RIGHT_COLLAPSE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm-3 2h-9a1 1 0 0 0 -.993 .883l-.007 .117v12a1 1 0 0 0 .883 .993l.117 .007h9v-14zm-5.387 4.21l.094 .083l2 2a1 1 0 0 1 .083 1.32l-.083 .094l-2 2a1 1 0 0 1 -1.497 -1.32l.083 -.094l1.292 -1.293l-1.292 -1.293a1 1 0 0 1 -.083 -1.32l.083 -.094a1 1 0 0 1 1.32 -.083z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbLayoutSidebarRightExpand")]
 const TB_LAYOUT_SIDEBAR_RIGHT_EXPAND: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -55072,6 +61579,22 @@ const TB_LAYOUT_SIDEBAR_RIGHT_EXPAND: icondata_core::IconData = icondata_core::I
 <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
 <path d="M15 4v16" />
 <path d="M10 10l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbLayoutSidebarRightExpandFilled")]
+const TB_LAYOUT_SIDEBAR_RIGHT_EXPAND_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h12zm-3 2h-9a1 1 0 0 0 -.993 .883l-.007 .117v12a1 1 0 0 0 .883 .993l.117 .007h9v-14zm-3.293 4.293a1 1 0 0 1 .083 1.32l-.083 .094l-1.292 1.293l1.292 1.293a1 1 0 0 1 .083 1.32l-.083 .094a1 1 0 0 1 -1.32 .083l-.094 -.083l-2 -2a1 1 0 0 1 -.083 -1.32l.083 -.094l2 -2a1 1 0 0 1 1.414 0z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbLeaf")]
 const TB_LEAF: icondata_core::IconData = icondata_core::IconData {
@@ -55981,6 +62504,27 @@ const TB_LIST_DETAILS: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
 <path d="M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />"###
 };
+#[cfg(feature = "TbListLetters")]
+const TB_LIST_LETTERS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 6h9" />
+<path d="M11 12h9" />
+<path d="M11 18h9" />
+<path d="M4 10v-4.5a1.5 1.5 0 0 1 3 0v4.5" />
+<path d="M4 8h3" />
+<path d="M4 20h1.5a1.5 1.5 0 0 0 0 -3h-1.5h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6z" />"###
+};
 #[cfg(feature = "TbListNumbers")]
 const TB_LIST_NUMBERS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -56020,6 +62564,27 @@ const TB_LIST_SEARCH: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 6h16" />
 <path d="M4 12h4" />
 <path d="M4 18h4" />"###
+};
+#[cfg(feature = "TbListTree")]
+const TB_LIST_TREE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 6h11" />
+<path d="M12 12h8" />
+<path d="M15 18h5" />
+<path d="M5 6v.01" />
+<path d="M8 12v.01" />
+<path d="M11 18v.01" />"###
 };
 #[cfg(feature = "TbLivePhoto")]
 const TB_LIVE_PHOTO: icondata_core::IconData = icondata_core::IconData {
@@ -56221,6 +62786,23 @@ const TB_LOCATION: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />"###
 };
+#[cfg(feature = "TbLocationBolt")]
+const TB_LOCATION_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.05 20.1l-3.05 -6.1l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.312 9.173" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
 #[cfg(feature = "TbLocationBroken")]
 const TB_LOCATION_BROKEN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -56239,6 +62821,155 @@ const TB_LOCATION_BROKEN: icondata_core::IconData = icondata_core::IconData {
 <path d="M21.5 21.5l-5 -5" />
 <path d="M16.5 21.5l5 -5" />"###
 };
+#[cfg(feature = "TbLocationCancel")]
+const TB_LOCATION_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.305 9.151" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbLocationCheck")]
+const TB_LOCATION_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.512 17.023l-1.512 -3.023l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-4.45 12.324" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbLocationCode")]
+const TB_LOCATION_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.505 17.01l-1.505 -3.01l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.677 10.184" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbLocationCog")]
+const TB_LOCATION_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.14 8.697" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbLocationDiscount")]
+const TB_LOCATION_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.797 19.595l-2.797 -5.595l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.548 9.826" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbLocationDollar")]
+const TB_LOCATION_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.08 20.162l-3.08 -6.162l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-2.55 7.063" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbLocationDown")]
+const TB_LOCATION_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.328 9.217" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbLocationExclamation")]
+const TB_LOCATION_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.024 19.55l-.524 1.45a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.317 9.186" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
 #[cfg(feature = "TbLocationFilled")]
 const TB_LOCATION_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -56254,6 +62985,40 @@ const TB_LOCATION_FILLED: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M20.891 2.006l.106 -.006l.13 .008l.09 .016l.123 .035l.107 .046l.1 .057l.09 .067l.082 .075l.052 .059l.082 .116l.052 .096c.047 .1 .077 .206 .09 .316l.005 .106c0 .075 -.008 .149 -.024 .22l-.035 .123l-6.532 18.077a1.55 1.55 0 0 1 -1.409 .903a1.547 1.547 0 0 1 -1.329 -.747l-.065 -.127l-3.352 -6.702l-6.67 -3.336a1.55 1.55 0 0 1 -.898 -1.259l-.006 -.149c0 -.56 .301 -1.072 .841 -1.37l.14 -.07l18.017 -6.506l.106 -.03l.108 -.018z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbLocationHeart")]
+const TB_LOCATION_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10.365 14.73l-.365 -.73l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.024 8.373" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbLocationMinus")]
+const TB_LOCATION_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-4.347 12.038" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbLocationOff")]
 const TB_LOCATION_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -56271,6 +63036,167 @@ const TB_LOCATION_OFF: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10.72 6.712l10.28 -3.712l-3.724 10.313m-1.056 2.925l-1.72 4.762a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l4.775 -1.724" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbLocationPause")]
+const TB_LOCATION_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.02 20.04l-3.02 -6.04l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.634 10.062" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbLocationPin")]
+const TB_LOCATION_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-2.901 8.034" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbLocationPlus")]
+const TB_LOCATION_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.361 9.308" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbLocationQuestion")]
+const TB_LOCATION_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.5 21a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-2.967 8.215" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbLocationSearch")]
+const TB_LOCATION_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 16l-1 -2l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-2.916 8.076" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbLocationShare")]
+const TB_LOCATION_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.616 10.015" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbLocationStar")]
+const TB_LOCATION_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10.336 14.672l-.336 -.672l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-2.565 7.104" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbLocationUp")]
+const TB_LOCATION_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.251 9.003" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbLocationX")]
+const TB_LOCATION_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.5 21l-.224 -.448l-3.276 -6.552l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.622 10.03" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbLock")]
 const TB_LOCK: icondata_core::IconData = icondata_core::IconData {
@@ -56990,8 +63916,27 @@ const TB_LOGIN: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-<path d="M20 12h-13l3 -3m0 6l-3 -3" />"###
+<path d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+<path d="M21 12h-13l3 -3" />
+<path d="M11 15l-3 -3" />"###
+};
+#[cfg(feature = "TbLogin2")]
+const TB_LOGIN2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+<path d="M3 12h13l-3 -3" />
+<path d="M13 15l3 -3" />"###
 };
 #[cfg(feature = "TbLogout")]
 const TB_LOGOUT: icondata_core::IconData = icondata_core::IconData {
@@ -57008,7 +63953,26 @@ const TB_LOGOUT: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-<path d="M7 12h14l-3 -3m0 6l3 -3" />"###
+<path d="M9 12h12l-3 -3" />
+<path d="M18 15l3 -3" />"###
+};
+#[cfg(feature = "TbLogout2")]
+const TB_LOGOUT2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+<path d="M15 12h-12l3 -3" />
+<path d="M6 15l-3 -3" />"###
 };
 #[cfg(feature = "TbLollipop")]
 const TB_LOLLIPOP: icondata_core::IconData = icondata_core::IconData {
@@ -57817,9 +64781,9 @@ const TB_MAP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M3 7l6 -3l6 3l6 -3l0 13l-6 3l-6 -3l-6 3l0 -13" />
-<path d="M9 4l0 13" />
-<path d="M15 7l0 13" />"###
+<path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+<path d="M9 4v13" />
+<path d="M15 7v13" />"###
 };
 #[cfg(feature = "TbMap2")]
 const TB_MAP2: icondata_core::IconData = icondata_core::IconData {
@@ -57841,6 +64805,263 @@ const TB_MAP2: icondata_core::IconData = icondata_core::IconData {
 <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
 <path d="M19 18v.01" />"###
 };
+#[cfg(feature = "TbMapBolt")]
+const TB_MAP_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-4 -2l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v7.5" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbMapCancel")]
+const TB_MAP_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v8" />
+<path d="M9 4v13" />
+<path d="M15 7v6" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbMapCheck")]
+const TB_MAP_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v9" />
+<path d="M9 4v13" />
+<path d="M15 7v8" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbMapCode")]
+const TB_MAP_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v9" />
+<path d="M9 4v13" />
+<path d="M15 7v6.5" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbMapCog")]
+const TB_MAP_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v8" />
+<path d="M9 4v13" />
+<path d="M15 7v6.5" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbMapDiscount")]
+const TB_MAP_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-4 -2l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v5.5" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbMapDollar")]
+const TB_MAP_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-4 -2l-6 3v-13l6 -3l6 3l6 -3v6.5" />
+<path d="M9 4v13" />
+<path d="M15 7v5" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbMapDown")]
+const TB_MAP_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v8" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbMapEast")]
+const TB_MAP_EAST: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M14 9h-4v6h4" />
+<path d="M10 12h2.5" />"###
+};
+#[cfg(feature = "TbMapExclamation")]
+const TB_MAP_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 20l-6 -3l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v13" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbMapHeart")]
+const TB_MAP_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 17.5l-1 -.5l-6 3v-13l6 -3l6 3l6 -3v7" />
+<path d="M9 4v13" />
+<path d="M15 7v4" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbMapMinus")]
+const TB_MAP_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v11" />
+<path d="M9 4v13" />
+<path d="M15 7v8" />
+<path d="M16 19h6" />"###
+};
+#[cfg(feature = "TbMapNorth")]
+const TB_MAP_NORTH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M10 15v-6l4 6v-6" />"###
+};
 #[cfg(feature = "TbMapOff")]
 const TB_MAP_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -57860,6 +65081,26 @@ const TB_MAP_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 7v4m0 4v5" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbMapPause")]
+const TB_MAP_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-4 -2l-6 3v-13l6 -3l6 3l6 -3v9" />
+<path d="M9 4v13" />
+<path d="M15 7v6.5" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
 #[cfg(feature = "TbMapPin")]
 const TB_MAP_PIN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -57876,6 +65117,26 @@ const TB_MAP_PIN: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
 <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />"###
+};
+#[cfg(feature = "TbMapPin2")]
+const TB_MAP_PIN2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7" />
+<path d="M9 4v13" />
+<path d="M15 7v5" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
 };
 #[cfg(feature = "TbMapPinBolt")]
 const TB_MAP_PIN_BOLT: icondata_core::IconData = icondata_core::IconData {
@@ -58291,6 +65552,66 @@ const TB_MAP_PINS: icondata_core::IconData = icondata_core::IconData {
 <path d="M18.828 17.828a4 4 0 1 0 -5.656 0l2.828 2.829l2.828 -2.829z" />
 <path d="M16 15l0 .01" />"###
 };
+#[cfg(feature = "TbMapPlus")]
+const TB_MAP_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v8" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbMapQuestion")]
+const TB_MAP_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 20l-6 -3l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+<path d="M9 4v13" />
+<path d="M15 7v5.5" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbMapRoute")]
+const TB_MAP_ROUTE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+<path d="M9 12v.01" />
+<path d="M6 13v.01" />
+<path d="M17 15l-4 -4" />
+<path d="M13 15l4 -4" />"###
+};
 #[cfg(feature = "TbMapSearch")]
 const TB_MAP_SEARCH: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -58305,11 +65626,124 @@ const TB_MAP_SEARCH: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v8" />
+<path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5" />
 <path d="M9 4v13" />
 <path d="M15 7v5" />
 <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
 <path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbMapShare")]
+const TB_MAP_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 19l-4 -2l-6 3v-13l6 -3l6 3l6 -3v9" />
+<path d="M9 4v13" />
+<path d="M15 7v6.5" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbMapSouth")]
+const TB_MAP_SOUTH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M10 14.25c0 .414 .336 .75 .75 .75h2.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h2.25a.75 .75 0 0 1 .75 .75" />"###
+};
+#[cfg(feature = "TbMapStar")]
+const TB_MAP_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9.718 17.359l-.718 -.359l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+<path d="M9 4v13" />
+<path d="M15 7v4" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbMapUp")]
+const TB_MAP_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v8.5" />
+<path d="M9 4v13" />
+<path d="M15 7v7.5" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbMapWest")]
+const TB_MAP_WEST: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M9 9l1 6l2 -3.75l2 3.75l1 -6" />"###
+};
+#[cfg(feature = "TbMapX")]
+const TB_MAP_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 19.5l-5 -2.5l-6 3v-13l6 -3l6 3l6 -3v9" />
+<path d="M9 4v13" />
+<path d="M15 7v6.5" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbMarkdown")]
 const TB_MARKDOWN: icondata_core::IconData = icondata_core::IconData {
@@ -59258,6 +66692,25 @@ const TB_MEDICAL_CROSS: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M13 3a1 1 0 0 1 1 1v4.535l3.928 -2.267a1 1 0 0 1 1.366 .366l1 1.732a1 1 0 0 1 -.366 1.366l-3.927 2.268l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1 -1.366 .366l-3.928 -2.269v4.536a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-4.536l-3.928 2.268a1 1 0 0 1 -1.366 -.366l-1 -1.732a1 1 0 0 1 .366 -1.366l3.927 -2.268l-3.927 -2.268a1 1 0 0 1 -.366 -1.366l1 -1.732a1 1 0 0 1 1.366 -.366l3.928 2.267v-4.535a1 1 0 0 1 1 -1h2z" />"###
 };
+#[cfg(feature = "TbMedicalCrossCircle")]
+const TB_MEDICAL_CROSS_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+<path d="M12 8v8" />
+<path d="M15.5 10l-7 4" />
+<path d="M15.5 14l-7 -4" />"###
+};
 #[cfg(feature = "TbMedicalCrossFilled")]
 const TB_MEDICAL_CROSS_FILLED: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -59326,6 +66779,22 @@ const TB_MEEPLE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M9 20h-5a1 1 0 0 1 -1 -1c0 -2 3.378 -4.907 4 -6c-1 0 -4 -.5 -4 -2c0 -2 4 -3.5 6 -4c0 -1.5 .5 -4 3 -4s3 2.5 3 4c2 .5 6 2 6 4c0 1.5 -3 2 -4 2c.622 1.093 4 4 4 6a1 1 0 0 1 -1 1h-5c-1 0 -2 -4 -3 -4s-2 4 -3 4z" />"###
 };
+#[cfg(feature = "TbMelon")]
+const TB_MELON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 10c0 5.523 -4.477 10 -10 10a9.967 9.967 0 0 1 -6.984 -2.842l4.343 -4.153a4 4 0 0 0 5.76 -5.51l4.342 -4.153a9.963 9.963 0 0 1 2.539 6.658z" />"###
+};
 #[cfg(feature = "TbMenorah")]
 const TB_MENORAH: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -59379,6 +66848,24 @@ const TB_MENU2: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 6l16 0" />
 <path d="M4 12l16 0" />
 <path d="M4 18l16 0" />"###
+};
+#[cfg(feature = "TbMenuDeep")]
+const TB_MENU_DEEP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 6h16" />
+<path d="M7 12h13" />
+<path d="M10 18h10" />"###
 };
 #[cfg(feature = "TbMenuOrder")]
 const TB_MENU_ORDER: icondata_core::IconData = icondata_core::IconData {
@@ -60801,6 +68288,59 @@ const TB_METEOR_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.75 5.761l3.25 -2.761l-1 5l9 -5l-5 9h5l-2.467 2.536m-1.983 2.04l-2.441 2.51a6.5 6.5 0 1 1 -8.855 -9.506l2.322 -1.972" />
 <path d="M9.5 14.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbMichelinBibGourmand")]
+const TB_MICHELIN_BIB_GOURMAND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4.97 20c-2.395 -1.947 -4.763 -5.245 -1.005 -8c-.52 -4 3.442 -7.5 5.524 -7.5c.347 -1 1.499 -1.5 2.54 -1.5c1.04 0 2.135 .5 2.482 1.5c2.082 0 6.044 3.5 5.524 7.5c3.758 2.755 1.39 6.053 -1.005 8" />
+<path d="M9 11m-1 0a1 2 0 1 0 2 0a1 2 0 1 0 -2 0" />
+<path d="M15 11m-1 0a1 2 0 1 0 2 0a1 2 0 1 0 -2 0" />
+<path d="M8 17.085c3.5 2.712 6.5 2.712 9 -1.085" />
+<path d="M13 18.5c.815 -2.337 1.881 -1.472 2 -.55" />"###
+};
+#[cfg(feature = "TbMichelinStar")]
+const TB_MICHELIN_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14.792 17.063c0 .337 .057 .618 .057 .9c0 1.8 -1.238 3.037 -2.982 3.037c-1.8 0 -2.98 -1.238 -2.98 -3.206v-.731c-.957 .675 -1.576 .9 -2.42 .9c-1.518 0 -2.925 -1.463 -2.925 -3.094c0 -1.181 .844 -2.194 2.082 -2.756l.28 -.113c-1.574 -.787 -2.362 -1.688 -2.362 -2.925c0 -1.687 1.294 -3.094 2.925 -3.094c.675 0 1.52 .338 2.138 .788l.281 .112c0 -.337 -.056 -.619 -.056 -.844c0 -1.8 1.237 -3.037 2.98 -3.037c1.8 0 2.981 1.237 2.981 3.206v.394l-.056 .281c.956 -.675 1.575 -.9 2.419 -.9c1.519 0 2.925 1.463 2.925 3.094c0 1.181 -.844 2.194 -2.081 2.756l-.282 .169c1.575 .787 2.363 1.688 2.363 2.925c0 1.688 -1.294 3.094 -2.925 3.094c-.675 0 -1.575 -.281 -2.138 -.788l-.225 -.169z" />"###
+};
+#[cfg(feature = "TbMichelinStarGreen")]
+const TB_MICHELIN_STAR_GREEN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.432 17.949c.863 1.544 2.589 1.976 4.13 1.112c1.54 -.865 1.972 -2.594 1.048 -4.138c-.185 -.309 -.309 -.556 -.494 -.74c.247 .06 .555 .06 .925 .06c1.726 0 2.959 -1.234 2.959 -2.963c0 -1.73 -1.233 -2.965 -3.02 -2.965c-.37 0 -.617 0 -.925 .062c.185 -.185 .308 -.432 .493 -.74c.863 -1.545 .431 -3.274 -1.048 -4.138c-1.541 -.865 -3.205 -.433 -4.13 1.111c-.185 .309 -.308 .556 -.432 .803c-.123 -.247 -.246 -.494 -.431 -.803c-.802 -1.605 -2.528 -2.038 -4.007 -1.173c-1.541 .865 -1.973 2.594 -1.048 4.137c.185 .31 .308 .556 .493 .741c-.246 -.061 -.555 -.061 -.924 -.061c-1.788 0 -3.021 1.235 -3.021 2.964c0 1.729 1.233 2.964 3.02 2.964" />
+<path d="M4.073 21c4.286 -2.756 5.9 -5.254 7.927 -9" />"###
 };
 #[cfg(feature = "TbMickey")]
 const TB_MICKEY: icondata_core::IconData = icondata_core::IconData {
@@ -62480,6 +70020,22 @@ const TB_MOUSE2: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 3v7" />
 <path d="M6 10h12" />"###
 };
+#[cfg(feature = "TbMouseFilled")]
+const TB_MOUSE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-4a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-2 4a1 1 0 0 0 -1 1v4l.007 .117a1 1 0 0 0 1.993 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbMouseOff")]
 const TB_MOUSE_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -62736,10 +70292,232 @@ const TB_MUSIC: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-<path d="M16 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-<path d="M9 17l0 -13l10 0l0 13" />
-<path d="M9 8l10 0" />"###
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v13" />
+<path d="M9 8h10" />"###
+};
+#[cfg(feature = "TbMusicBolt")]
+const TB_MUSIC_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbMusicCancel")]
+const TB_MUSIC_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbMusicCheck")]
+const TB_MUSIC_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9.5" />
+<path d="M9 8h10" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbMusicCode")]
+const TB_MUSIC_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9" />
+<path d="M9 8h10" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbMusicCog")]
+const TB_MUSIC_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v7.5" />
+<path d="M9 8h10" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbMusicDiscount")]
+const TB_MUSIC_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9" />
+<path d="M9 8h10" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbMusicDollar")]
+const TB_MUSIC_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v6" />
+<path d="M9 8h10" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbMusicDown")]
+const TB_MUSIC_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbMusicExclamation")]
+const TB_MUSIC_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbMusicHeart")]
+const TB_MUSIC_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v7" />
+<path d="M9 8h10" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbMusicMinus")]
+const TB_MUSIC_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v11" />
+<path d="M9 8h10" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbMusicOff")]
 const TB_MUSIC_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -62761,6 +70539,185 @@ const TB_MUSIC_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 8h7" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbMusicPause")]
+const TB_MUSIC_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9" />
+<path d="M9 8h10" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbMusicPin")]
+const TB_MUSIC_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v7" />
+<path d="M9 8h10" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbMusicPlus")]
+const TB_MUSIC_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbMusicQuestion")]
+const TB_MUSIC_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v7" />
+<path d="M9 8h10" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbMusicSearch")]
+const TB_MUSIC_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v7" />
+<path d="M9 8h10" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbMusicShare")]
+const TB_MUSIC_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9" />
+<path d="M9 8h10" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbMusicStar")]
+const TB_MUSIC_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v6" />
+<path d="M9 8h10" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbMusicUp")]
+const TB_MUSIC_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v8" />
+<path d="M9 8h10" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbMusicX")]
+const TB_MUSIC_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M9 17v-13h10v9" />
+<path d="M9 8h10" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
+};
 #[cfg(feature = "TbNavigation")]
 const TB_NAVIGATION: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -62775,7 +70732,173 @@ const TB_NAVIGATION: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 18.5l7.265 2.463a.535 .535 0 0 0 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275a.547 .547 0 0 0 .135 .572a.535 .535 0 0 0 .57 .116l7.265 -2.463" />"###
+<path d="M12 18.5l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-7.969 -17.275l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />"###
+};
+#[cfg(feature = "TbNavigationBolt")]
+const TB_NAVIGATION_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.559 12.882l-4.559 -9.882l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l1.036 .351" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbNavigationCancel")]
+const TB_NAVIGATION_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.371 12.476l-4.371 -9.476l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbNavigationCheck")]
+const TB_NAVIGATION_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17.487 14.894l-5.487 -11.894l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l6.275 -2.127" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbNavigationCode")]
+const TB_NAVIGATION_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.653 13.086l-4.653 -10.086l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l6.246 -2.117" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbNavigationCog")]
+const TB_NAVIGATION_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.387 12.51l-4.387 -9.51l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbNavigationDiscount")]
+const TB_NAVIGATION_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.43 12.603l-4.43 -9.603l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l1.272 .431" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbNavigationDollar")]
+const TB_NAVIGATION_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.945 11.551l-3.945 -8.551l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l1.594 .54" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbNavigationDown")]
+const TB_NAVIGATION_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.528 12.815l-4.528 -9.815l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbNavigationExclamation")]
+const TB_NAVIGATION_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.535 12.832l-4.535 -9.832l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463c1.38 .468 2.416 .82 3.107 1.053" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
 };
 #[cfg(feature = "TbNavigationFilled")]
 const TB_NAVIGATION_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -62793,6 +70916,57 @@ const TB_NAVIGATION_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M11.092 2.581a1 1 0 0 1 1.754 -.116l.062 .116l8.005 17.365c.198 .566 .05 1.196 -.378 1.615a1.53 1.53 0 0 1 -1.459 .393l-7.077 -2.398l-6.899 2.338a1.535 1.535 0 0 1 -1.52 -.231l-.112 -.1c-.398 -.386 -.556 -.954 -.393 -1.556l.047 -.15l7.97 -17.276z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbNavigationHeart")]
+const TB_NAVIGATION_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.721 11.067l-3.721 -8.067l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l5.614 -1.903" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbNavigationMinus")]
+const TB_NAVIGATION_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17.5 15c-1.232 -2.67 -3.065 -6.67 -5.5 -12l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M16 19h6" />"###
+};
+#[cfg(feature = "TbNavigationNorth")]
+const TB_NAVIGATION_NORTH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.54 19.977a.34 .34 0 0 0 .357 -.07a.33 .33 0 0 0 .084 -.35l-4.981 -10.557l-4.982 10.557a.33 .33 0 0 0 .084 .35a.34 .34 0 0 0 .357 .07l4.541 -1.477l4.54 1.477z" />
+<path d="M12 3v2" />"###
+};
 #[cfg(feature = "TbNavigationOff")]
 const TB_NAVIGATION_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -62809,6 +70983,167 @@ const TB_NAVIGATION_OFF: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M16.28 12.28c-.95 -2.064 -2.377 -5.157 -4.28 -9.28c-.7 1.515 -1.223 2.652 -1.573 3.41m-1.27 2.75c-.882 1.913 -2.59 5.618 -5.127 11.115c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l7.265 2.463c.196 .077 .42 .032 .57 -.116a.548 .548 0 0 0 .134 -.572l-.26 -.563" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbNavigationPause")]
+const TB_NAVIGATION_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.666 13.114l-4.666 -10.114l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l1.056 .358" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbNavigationPin")]
+const TB_NAVIGATION_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.002 11.676l-4.002 -8.676l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
+#[cfg(feature = "TbNavigationPlus")]
+const TB_NAVIGATION_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.573 12.914l-4.573 -9.914l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbNavigationQuestion")]
+const TB_NAVIGATION_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.081 11.847l-4.081 -8.847l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463c1.35 .458 2.362 .8 3.037 1.03" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbNavigationSearch")]
+const TB_NAVIGATION_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.876 11.403l-3.876 -8.403l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l6.29 -2.132" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbNavigationShare")]
+const TB_NAVIGATION_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.633 13.043l-4.633 -10.043l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l.955 .324" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbNavigationStar")]
+const TB_NAVIGATION_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15.574 10.747l-3.574 -7.747l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l5.454 -1.85" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbNavigationUp")]
+const TB_NAVIGATION_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.54 12.843l-4.54 -9.843l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbNavigationX")]
+const TB_NAVIGATION_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16.622 13.02l-4.622 -10.02l-7.97 17.275c-.07 .2 -.017 .424 .135 .572c.15 .148 .374 .193 .57 .116l7.265 -2.463l1.563 .53" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbNeedle")]
 const TB_NEEDLE: icondata_core::IconData = icondata_core::IconData {
@@ -62861,14 +71196,14 @@ const TB_NETWORK: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" />
+<path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" />
 <path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" />
 <path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" />
 <path d="M6 9h12" />
-<path d="M3 19h7" />
-<path d="M14 19h7" />
-<path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M12 15v2" />"###
+<path d="M3 20h7" />
+<path d="M14 20h7" />
+<path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 15v3" />"###
 };
 #[cfg(feature = "TbNetworkOff")]
 const TB_NETWORK_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -62884,14 +71219,14 @@ const TB_NETWORK_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6.537 6.516a6 6 0 0 0 7.932 7.954m2.246 -1.76a6 6 0 0 0 -8.415 -8.433" />
-<path d="M12 3c1.333 .333 2 2.333 2 6c0 .348 0 .681 -.018 1m-.545 3.43c-.332 .89 -.811 1.414 -1.437 1.57" />
-<path d="M12 3c-.938 .234 -1.547 1.295 -1.825 3.182m-.156 3.837c.117 3.02 .777 4.68 1.981 4.981" />
+<path d="M6.528 6.536a6 6 0 0 0 7.942 7.933m2.247 -1.76a6 6 0 0 0 -8.427 -8.425" />
+<path d="M12 3c1.333 .333 2 2.333 2 6c0 .337 -.006 .66 -.017 .968m-.55 3.473c-.333 .884 -.81 1.403 -1.433 1.559" />
+<path d="M12 3c-.936 .234 -1.544 1.29 -1.822 3.167m-.16 3.838c.116 3.029 .776 4.695 1.982 4.995" />
 <path d="M6 9h3m4 0h5" />
-<path d="M3 19h7" />
-<path d="M14 19h5" />
-<path d="M12 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M12 15v2" />
+<path d="M3 20h7" />
+<path d="M14 20h7" />
+<path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 15v3" />
 <path d="M3 3l18 18" />"###
 };
 #[cfg(feature = "TbNewSection")]
@@ -63428,6 +71763,23 @@ const TB_NURSE: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 12h4" />
 <path d="M12 10v4" />"###
 };
+#[cfg(feature = "TbNut")]
+const TB_NUT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 6.84a2.007 2.007 0 0 1 1 1.754v6.555c0 .728 -.394 1.4 -1.03 1.753l-6 3.844a1.995 1.995 0 0 1 -1.94 0l-6 -3.844a2.006 2.006 0 0 1 -1.03 -1.752v-6.557c0 -.728 .394 -1.399 1.03 -1.753l6 -3.582a2.049 2.049 0 0 1 2 0l6 3.582h-.03z" />
+<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />"###
+};
 #[cfg(feature = "TbOctagon")]
 const TB_OCTAGON: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -63476,6 +71828,63 @@ const TB_OCTAGON_OFF: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M7.647 3.653l.353 -.353c.2 -.2 .4 -.3 .7 -.3h6.6c.3 0 .5 .1 .7 .3l4.7 4.7c.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-.35 .35m-2 2l-2.353 2.353c-.2 .2 -.4 .3 -.7 .3h-6.6c-.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l2.35 -2.35" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbOctahedron")]
+const TB_OCTAHEDRON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.859 21.652l8.845 -8.949a.984 .984 0 0 0 0 -1.407l-8.845 -8.948a1.233 1.233 0 0 0 -1.718 0l-8.845 8.949a.984 .984 0 0 0 0 1.407l8.845 8.949a1.234 1.234 0 0 0 1.718 -.001z" />
+<path d="M2 12c.004 .086 .103 .178 .296 .246l8.845 2.632c.459 .163 1.259 .163 1.718 0l8.845 -2.632c.195 -.07 .294 -.156 .296 -.243" />
+<path d="M12 2.12v19.76" />"###
+};
+#[cfg(feature = "TbOctahedronOff")]
+const TB_OCTAHEDRON_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6.771 6.77l-4.475 4.527a.984 .984 0 0 0 0 1.407l8.845 8.949a1.234 1.234 0 0 0 1.718 -.001l4.36 -4.412m2.002 -2.025l2.483 -2.512a.984 .984 0 0 0 0 -1.407l-8.845 -8.948a1.233 1.233 0 0 0 -1.718 0l-2.375 2.403" />
+<path d="M2 12c.004 .086 .103 .178 .296 .246l8.845 2.632c.459 .163 1.259 .163 1.718 0l1.544 -.46m3.094 -.92l4.207 -1.252c.195 -.07 .294 -.156 .296 -.243" />
+<path d="M12 2.12v5.88m0 4v9.88" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbOctahedronPlus")]
+const TB_OCTAHEDRON_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21.498 12.911l.206 -.208a.984 .984 0 0 0 0 -1.407l-8.845 -8.948a1.233 1.233 0 0 0 -1.718 0l-8.845 8.949a.984 .984 0 0 0 0 1.407l8.845 8.949a1.234 1.234 0 0 0 1.718 -.001l.08 -.081" />
+<path d="M2 12c.004 .086 .103 .178 .296 .246l8.845 2.632c.459 .163 1.259 .163 1.718 0l2.634 -.784m5.41 -1.61l.801 -.238c.195 -.07 .294 -.156 .296 -.243" />
+<path d="M12 2.12v19.76" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbOld")]
 const TB_OLD: icondata_core::IconData = icondata_core::IconData {
@@ -64181,6 +72590,87 @@ const TB_PASSWORD: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 13l4 -2" />
 <path d="M17 11l4 2" />"###
 };
+#[cfg(feature = "TbPasswordFingerprint")]
+const TB_PASSWORD_FINGERPRINT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 8c.788 1 1 2 1 3v1" />
+<path d="M9 11c0 -1.578 1.343 -3 3 -3s3 1.422 3 3v2" />
+<path d="M12 11v2" />
+<path d="M6 12v-1.397c-.006 -1.999 1.136 -3.849 2.993 -4.85a6.385 6.385 0 0 1 6.007 -.005" />
+<path d="M12 17v4" />
+<path d="M10 20l4 -2" />
+<path d="M10 18l4 2" />
+<path d="M5 17v4" />
+<path d="M3 20l4 -2" />
+<path d="M3 18l4 2" />
+<path d="M19 17v4" />
+<path d="M17 20l4 -2" />
+<path d="M17 18l4 2" />"###
+};
+#[cfg(feature = "TbPasswordMobilePhone")]
+const TB_PASSWORD_MOBILE_PHONE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 17v4" />
+<path d="M10 20l4 -2" />
+<path d="M10 18l4 2" />
+<path d="M5 17v4" />
+<path d="M3 20l4 -2" />
+<path d="M3 18l4 2" />
+<path d="M19 17v4" />
+<path d="M17 20l4 -2" />
+<path d="M17 18l4 2" />
+<path d="M7 14v-8a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v8" />
+<path d="M11 5h2" />
+<path d="M12 17v.01" />"###
+};
+#[cfg(feature = "TbPasswordUser")]
+const TB_PASSWORD_USER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 17v4" />
+<path d="M10 20l4 -2" />
+<path d="M10 18l4 2" />
+<path d="M5 17v4" />
+<path d="M3 20l4 -2" />
+<path d="M3 18l4 2" />
+<path d="M19 17v4" />
+<path d="M17 20l4 -2" />
+<path d="M17 18l4 2" />
+<path d="M9 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M7 14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2" />"###
+};
 #[cfg(feature = "TbPaw")]
 const TB_PAW: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -64294,8 +72784,201 @@ const TB_PENCIL: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
 <path d="M13.5 6.5l4 4" />"###
+};
+#[cfg(feature = "TbPencilBolt")]
+const TB_PENCIL_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbPencilCancel")]
+const TB_PENCIL_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbPencilCheck")]
+const TB_PENCIL_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbPencilCode")]
+const TB_PENCIL_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbPencilCog")]
+const TB_PENCIL_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbPencilDiscount")]
+const TB_PENCIL_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbPencilDollar")]
+const TB_PENCIL_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbPencilDown")]
+const TB_PENCIL_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbPencilExclamation")]
+const TB_PENCIL_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbPencilHeart")]
+const TB_PENCIL_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 11l1.5 -1.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4l2 -2" />
+<path d="M13.5 6.5l4 4" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
 };
 #[cfg(feature = "TbPencilMinus")]
 const TB_PENCIL_MINUS: icondata_core::IconData = icondata_core::IconData {
@@ -64311,9 +72994,9 @@ const TB_PENCIL_MINUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8 20l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4z" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
 <path d="M13.5 6.5l4 4" />
-<path d="M16 18h4" />"###
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbPencilOff")]
 const TB_PENCIL_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -64333,6 +73016,44 @@ const TB_PENCIL_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M13.5 6.5l4 4" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbPencilPause")]
+const TB_PENCIL_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbPencilPin")]
+const TB_PENCIL_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
 #[cfg(feature = "TbPencilPlus")]
 const TB_PENCIL_PLUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -64347,9 +73068,123 @@ const TB_PENCIL_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8 20l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4z" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
 <path d="M13.5 6.5l4 4" />
-<path d="M16 18h4m-2 -2v4" />"###
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbPencilQuestion")]
+const TB_PENCIL_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 20l6 -6l3 -3l1.5 -1.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4z" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbPencilSearch")]
+const TB_PENCIL_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 11l1.5 -1.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4l3 -3" />
+<path d="M13.5 6.5l4 4" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbPencilShare")]
+const TB_PENCIL_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbPencilStar")]
+const TB_PENCIL_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17.5 10.5l1 -1a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4h4l2 -2" />
+<path d="M13.5 6.5l4 4" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbPencilUp")]
+const TB_PENCIL_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
+};
+#[cfg(feature = "TbPencilX")]
+const TB_PENCIL_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+<path d="M13.5 6.5l4 4" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbPennant")]
 const TB_PENNANT: icondata_core::IconData = icondata_core::IconData {
@@ -64452,7 +73287,7 @@ const TB_PENTAGON: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13.2 3.394l7.033 5.237a2 2 0 0 1 .7 2.247l-2.973 8.764a2 2 0 0 1 -1.894 1.358h-8.12a2 2 0 0 1 -1.9 -1.373l-2.896 -8.765a2 2 0 0 1 .696 -2.225l6.958 -5.237a2 2 0 0 1 2.397 0z" />"###
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />"###
 };
 #[cfg(feature = "TbPentagonFilled")]
 const TB_PENTAGON_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -64470,6 +73305,177 @@ const TB_PENTAGON_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M10.205 2.6l-6.96 5.238a3 3 0 0 0 -1.045 3.338l2.896 8.765a3 3 0 0 0 2.85 2.059h8.12a3 3 0 0 0 2.841 -2.037l2.973 -8.764a3 3 0 0 0 -1.05 -3.37l-7.033 -5.237l-.091 -.061l-.018 -.01l-.106 -.07a3 3 0 0 0 -3.377 .148z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbPentagonNumber0")]
+const TB_PENTAGON_NUMBER0: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0 -4 0z" />"###
+};
+#[cfg(feature = "TbPentagonNumber1")]
+const TB_PENTAGON_NUMBER1: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 10l2 -2v8" />"###
+};
+#[cfg(feature = "TbPentagonNumber2")]
+const TB_PENTAGON_NUMBER2: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />"###
+};
+#[cfg(feature = "TbPentagonNumber3")]
+const TB_PENTAGON_NUMBER3: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5" />"###
+};
+#[cfg(feature = "TbPentagonNumber4")]
+const TB_PENTAGON_NUMBER4: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 8v3a1 1 0 0 0 1 1h3" />
+<path d="M14 8v8" />"###
+};
+#[cfg(feature = "TbPentagonNumber5")]
+const TB_PENTAGON_NUMBER5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" />"###
+};
+#[cfg(feature = "TbPentagonNumber6")]
+const TB_PENTAGON_NUMBER6: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M14 9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3" />"###
+};
+#[cfg(feature = "TbPentagonNumber7")]
+const TB_PENTAGON_NUMBER7: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 8h4l-2 8" />"###
+};
+#[cfg(feature = "TbPentagonNumber8")]
+const TB_PENTAGON_NUMBER8: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M12 12h-1a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1" />"###
+};
+#[cfg(feature = "TbPentagonNumber9")]
+const TB_PENTAGON_NUMBER9: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-6a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />"###
+};
 #[cfg(feature = "TbPentagonOff")]
 const TB_PENTAGON_OFF: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -64484,8 +73490,44 @@ const TB_PENTAGON_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8.868 4.857l1.936 -1.457a2 2 0 0 1 2.397 0l7.032 5.237a2 2 0 0 1 .7 2.247l-1.522 4.485m-1.027 3.029l-.424 1.25a2 2 0 0 1 -1.894 1.358h-8.12a2 2 0 0 1 -1.9 -1.373l-2.896 -8.765a2 2 0 0 1 .696 -2.225l2.736 -2.06" />
+<path d="M8.133 4.133l2.704 -1.965a1.978 1.978 0 0 1 2.326 0l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-1.887 5.808m-.981 3.02l-.196 .602a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l2.994 -2.176" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbPentagonPlus")]
+const TB_PENTAGON_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.5 21.005h-5.458a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-.78 2.401" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbPentagonX")]
+const TB_PENTAGON_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M14 14l-4 -4" />
+<path d="M10 14l4 -4" />"###
 };
 #[cfg(feature = "TbPentagram")]
 const TB_PENTAGRAM: icondata_core::IconData = icondata_core::IconData {
@@ -64902,6 +73944,66 @@ const TB_PHOTO_CHECK: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l.5 .5" />
 <path d="M15 19l2 2l4 -4" />"###
 };
+#[cfg(feature = "TbPhotoCircle")]
+const TB_PHOTO_CIRCLE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 8h.01" />
+<path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l5 5" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2 2" />
+<path d="M3 12a9 9 0 0 0 9 9a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9" />"###
+};
+#[cfg(feature = "TbPhotoCircleMinus")]
+const TB_PHOTO_CIRCLE_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 8h.01" />
+<path d="M20.475 15.035a9 9 0 0 0 -8.475 -12.035a9 9 0 0 0 -9 9a9 9 0 0 0 9.525 8.985" />
+<path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l4 4" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2 2" />
+<path d="M16 19h6" />"###
+};
+#[cfg(feature = "TbPhotoCirclePlus")]
+const TB_PHOTO_CIRCLE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 8h.01" />
+<path d="M20.964 12.806a9 9 0 0 0 -8.964 -9.806a9 9 0 0 0 -9 9a9 9 0 0 0 9.397 8.991" />
+<path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l4 4" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0" />
+<path d="M16 19.33h6" />
+<path d="M19 16.33v6" />"###
+};
 #[cfg(feature = "TbPhotoCode")]
 const TB_PHOTO_CODE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -65066,6 +74168,25 @@ const TB_PHOTO_HEART: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l1.5 1.5" />
 <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
 };
+#[cfg(feature = "TbPhotoHexagon")]
+const TB_PHOTO_HEXAGON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 8h.01" />
+<path d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+<path d="M3.5 15.5l4.5 -4.5c.928 -.893 2.072 -.893 3 0l5 5" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2.5 2.5" />"###
+};
 #[cfg(feature = "TbPhotoMinus")]
 const TB_PHOTO_MINUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -65126,6 +74247,25 @@ const TB_PHOTO_PAUSE: icondata_core::IconData = icondata_core::IconData {
 <path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0" />
 <path d="M17 17v5" />
 <path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbPhotoPentagon")]
+const TB_PHOTO_PENTAGON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M15 8h.01" />
+<path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l5 5" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2 2" />"###
 };
 #[cfg(feature = "TbPhotoPin")]
 const TB_PHOTO_PIN: icondata_core::IconData = icondata_core::IconData {
@@ -65310,6 +74450,25 @@ const TB_PHOTO_SHIELD: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 15l4 -4c.928 -.893 2.072 -.893 3 0l1.5 1.5" />
 <path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" />"###
 };
+#[cfg(feature = "TbPhotoSquareRounded")]
+const TB_PHOTO_SQUARE_ROUNDED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 8h.01" />
+<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+<path d="M3.5 15.5l4.5 -4.5c.928 -.893 2.072 -.893 3 0l5 5" />
+<path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l2.5 2.5" />"###
+};
 #[cfg(feature = "TbPhotoStar")]
 const TB_PHOTO_STAR: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -65391,6 +74550,43 @@ const TB_PHYSOTHERAPIST: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 17v-7" />
 <path d="M8 20h7l1 -4l4 -2" />
 <path d="M18 20h3" />"###
+};
+#[cfg(feature = "TbPiano")]
+const TB_PIANO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+<path d="M9 19v-6" />
+<path d="M8 5v8h2v-8" />
+<path d="M15 19v-6" />
+<path d="M14 5v8h2v-8" />"###
+};
+#[cfg(feature = "TbPick")]
+const TB_PICK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 8l-9.383 9.418a2.091 2.091 0 0 0 0 2.967a2.11 2.11 0 0 0 2.976 0l9.407 -9.385" />
+<path d="M9 3h4.586a1 1 0 0 1 .707 .293l6.414 6.414a1 1 0 0 1 .293 .707v4.586a2 2 0 1 1 -4 0v-3l-5 -5h-3a2 2 0 1 1 0 -4z" />"###
 };
 #[cfg(feature = "TbPictureInPicture")]
 const TB_PICTURE_IN_PICTURE: icondata_core::IconData = icondata_core::IconData {
@@ -66077,11 +75273,10 @@ const TB_PLAY_VOLLEYBALL: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M13 21l3.5 -2l-4.5 -4l2 -4.5" />
-<path d="M7 6l2 4l5 .5l4 2.5l2.5 3" />
-<path d="M4 20l5 -1l1.5 -2" />
-<path d="M15 7a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-<path d="M9.5 5a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z" fill="currentColor" />"###
+<path d="M13 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+<path d="M20.5 10a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z" fill="currentColor" />
+<path d="M2 16l5 1l.5 -2.5" />
+<path d="M11.5 21l2.5 -5.5l-5.5 -3.5l3.5 -4l3 4l4 2" />"###
 };
 #[cfg(feature = "TbPlayerEject")]
 const TB_PLAYER_EJECT: icondata_core::IconData = icondata_core::IconData {
@@ -66964,6 +76159,22 @@ const TB_POINTER_EXCLAMATION: icondata_core::IconData = icondata_core::IconData 
 <path d="M19 16v3" />
 <path d="M19 22v.01" />"###
 };
+#[cfg(feature = "TbPointerFilled")]
+const TB_POINTER_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3.039 4.277l3.904 13.563c.185 .837 .92 1.516 1.831 1.642l.17 .016a2.2 2.2 0 0 0 1.982 -1.006l.045 -.078l1.4 -2.072l4.05 4.05a2.067 2.067 0 0 0 2.924 0l1.047 -1.047c.388 -.388 .606 -.913 .606 -1.461l-.008 -.182a2.067 2.067 0 0 0 -.598 -1.28l-4.047 -4.048l2.103 -1.412c.726 -.385 1.18 -1.278 1.053 -2.189a2.2 2.2 0 0 0 -1.701 -1.845l-13.524 -3.89a1 1 0 0 0 -1.236 1.24z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbPointerHeart")]
 const TB_POINTER_HEART: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -67558,6 +76769,63 @@ const TB_PRINTER_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 17v2a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2h4" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbPrism")]
+const TB_PRISM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 9v13" />
+<path d="M19 17.17l-5.98 4.485a1.7 1.7 0 0 1 -2.04 0l-5.98 -4.485a2.5 2.5 0 0 1 -1 -2v-11.17a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v11.17a2.5 2.5 0 0 1 -1 2z" />
+<path d="M4.3 3.3l6.655 5.186a1.7 1.7 0 0 0 2.09 0l6.655 -5.186" />"###
+};
+#[cfg(feature = "TbPrismOff")]
+const TB_PRISM_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12v10" />
+<path d="M17.957 17.952l-4.937 3.703a1.7 1.7 0 0 1 -2.04 0l-5.98 -4.485a2.5 2.5 0 0 1 -1 -2v-11.17m3 -1h12a1 1 0 0 1 1 1v11.17c0 .25 -.037 .495 -.109 .729" />
+<path d="M12.688 8.7a1.7 1.7 0 0 0 .357 -.214l6.655 -5.186" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbPrismPlus")]
+const TB_PRISM_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 9v13" />
+<path d="M13.02 21.655a1.7 1.7 0 0 1 -2.04 0l-5.98 -4.485a2.5 2.5 0 0 1 -1 -2v-11.17a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v8" />
+<path d="M4.3 3.3l6.655 5.186a1.7 1.7 0 0 0 2.09 0l6.655 -5.186" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
 #[cfg(feature = "TbPrison")]
 const TB_PRISON: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -67890,8 +77158,8 @@ const TB_PYRAMID: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M3 17l9 4l9 -4l-9 -14z" />
-<path d="M12 3v18" />"###
+<path d="M11.105 21.788a1.994 1.994 0 0 0 1.789 0l8.092 -4.054c.538 -.27 .718 -.951 .385 -1.452l-8.54 -13.836a.999 .999 0 0 0 -1.664 0l-8.54 13.836a1.005 1.005 0 0 0 .386 1.452l8.092 4.054z" />
+<path d="M12 2v20" />"###
 };
 #[cfg(feature = "TbPyramidOff")]
 const TB_PYRAMID_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -67907,9 +77175,28 @@ const TB_PYRAMID_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M8.483 8.471l-5.483 8.529l9 4l6.22 -2.764m2.78 -1.236l-9 -14l-1.937 3.014" />
-<path d="M12 3v5m0 4v9" />
+<path d="M21.384 17.373a1.004 1.004 0 0 0 -.013 -1.091l-8.54 -13.836a.999 .999 0 0 0 -1.664 0l-1.8 2.917m-1.531 2.48l-5.209 8.439a1.005 1.005 0 0 0 .386 1.452l8.092 4.054a1.994 1.994 0 0 0 1.789 0l5.903 -2.958" />
+<path d="M12 2v6m0 4v10" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbPyramidPlus")]
+const TB_PYRAMID_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M18.719 11.985l-5.889 -9.539a.999 .999 0 0 0 -1.664 0l-8.54 13.836a1.005 1.005 0 0 0 .386 1.452l8.092 4.054a1.994 1.994 0 0 0 1.789 0l.149 -.074" />
+<path d="M12 2v20" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbQrcode")]
 const TB_QRCODE: icondata_core::IconData = icondata_core::IconData {
@@ -68014,6 +77301,25 @@ const TB_QUOTE_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1m4 4v3c0 2.667 -1.333 4.333 -4 5" />
 <path d="M19 11h-4m-1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 .66 -.082 1.26 -.245 1.798m-1.653 2.29c-.571 .4 -1.272 .704 -2.102 .912" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbQuotes")]
+const TB_QUOTES: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 12c-1.333 -1.854 -1.333 -4.146 0 -6" />
+<path d="M8 12c-1.333 -1.854 -1.333 -4.146 0 -6" />
+<path d="M16 18c1.333 -1.854 1.333 -4.146 0 -6" />
+<path d="M20 18c1.333 -1.854 1.333 -4.146 0 -6" />"###
 };
 #[cfg(feature = "TbRadar")]
 const TB_RADAR: icondata_core::IconData = icondata_core::IconData {
@@ -68592,6 +77898,38 @@ const TB_RECTANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19 4h-14a3 3 0 0 0 -3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-10a3 3 0 0 0 -3 -3z" stroke-width="0" fill="currentColor" />"###
 };
+#[cfg(feature = "TbRectangleRoundedBottom")]
+const TB_RECTANGLE_ROUNDED_BOTTOM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 18h6a6 6 0 0 0 6 -6v-5a1 1 0 0 0 -1 -1h-16a1 1 0 0 0 -1 1v5a6 6 0 0 0 6 6z" />"###
+};
+#[cfg(feature = "TbRectangleRoundedTop")]
+const TB_RECTANGLE_ROUNDED_TOP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 6h6a6 6 0 0 1 6 6v5a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-5a6 6 0 0 1 6 -6z" />"###
+};
 #[cfg(feature = "TbRectangleVertical")]
 const TB_RECTANGLE_VERTICAL: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -68623,6 +77961,66 @@ const TB_RECTANGLE_VERTICAL_FILLED: icondata_core::IconData = icondata_core::Ico
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M17 2h-10a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbRectangularPrism")]
+const TB_RECTANGULAR_PRISM: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21 14.008v-5.018a1.98 1.98 0 0 0 -1 -1.717l-4 -2.008a2.016 2.016 0 0 0 -2 0l-10 5.008c-.619 .355 -1 1.01 -1 1.718v5.018c0 .709 .381 1.363 1 1.717l4 2.008a2.016 2.016 0 0 0 2 0l10 -5.008c.619 -.355 1 -1.01 1 -1.718z" />
+<path d="M9 21v-7.5" />
+<path d="M9 13.5l11.5 -5.5" />
+<path d="M3.5 11l5.5 2.5" />"###
+};
+#[cfg(feature = "TbRectangularPrismOff")]
+const TB_RECTANGULAR_PRISM_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8.18 8.18l-4.18 2.093c-.619 .355 -1 1.01 -1 1.718v5.018c0 .709 .381 1.363 1 1.717l4 2.008a2.016 2.016 0 0 0 2 0l7.146 -3.578m2.67 -1.337l.184 -.093c.619 -.355 1 -1.01 1 -1.718v-5.018a1.98 1.98 0 0 0 -1 -1.717l-4 -2.008a2.016 2.016 0 0 0 -2 0l-3.146 1.575" />
+<path d="M9 21v-7.5" />
+<path d="M9 13.5l3.048 -1.458m2.71 -1.296l5.742 -2.746" />
+<path d="M3.5 11l5.5 2.5" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbRectangularPrismPlus")]
+const TB_RECTANGULAR_PRISM_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M21 12.5v-3.509a1.98 1.98 0 0 0 -1 -1.717l-4 -2.008a2.016 2.016 0 0 0 -2 0l-10 5.007c-.619 .355 -1 1.01 -1 1.718v5.018c0 .709 .381 1.363 1 1.717l4 2.008a2.016 2.016 0 0 0 2 0l2.062 -1.032" />
+<path d="M9 21v-7.5" />
+<path d="M9 13.5l11.5 -5.5" />
+<path d="M3.5 11l5.5 2.5" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbRecycle")]
 const TB_RECYCLE: icondata_core::IconData = icondata_core::IconData {
@@ -68875,6 +78273,26 @@ const TB_RELOAD: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" />
 <path d="M20 4v5h-5" />"###
+};
+#[cfg(feature = "TbReorder")]
+const TB_REORDER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+<path d="M10 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+<path d="M17 15m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+<path d="M5 11v-3a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v3" />
+<path d="M16.5 8.5l2.5 2.5l2.5 -2.5" />"###
 };
 #[cfg(feature = "TbRepeat")]
 const TB_REPEAT: icondata_core::IconData = icondata_core::IconData {
@@ -69142,6 +78560,328 @@ const TB_RESIZE: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M4 11v8a1 1 0 0 0 1 1h8m-9 -14v-1a1 1 0 0 1 1 -1h1m5 0h2m5 0h1a1 1 0 0 1 1 1v1m0 5v2m0 5v1a1 1 0 0 1 -1 1h-1" />
 <path d="M4 12h7a1 1 0 0 1 1 1v7" />"###
+};
+#[cfg(feature = "TbRestore")]
+const TB_RESTORE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3.06 13a9 9 0 1 0 .49 -4.087" />
+<path d="M3 4.001v5h5" />
+<path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />"###
+};
+#[cfg(feature = "TbRewindBackward10")]
+const TB_REWIND_BACKWARD10: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M7 9l-3 -3l3 -3" />
+<path d="M15.997 17.918a6.002 6.002 0 0 0 -.997 -11.918h-11" />
+<path d="M6 14v6" />
+<path d="M9 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />"###
+};
+#[cfg(feature = "TbRewindBackward15")]
+const TB_REWIND_BACKWARD15: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 20h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+<path d="M15 18a6 6 0 1 0 0 -12h-11" />
+<path d="M5 14v6" />
+<path d="M7 9l-3 -3l3 -3" />"###
+};
+#[cfg(feature = "TbRewindBackward20")]
+const TB_REWIND_BACKWARD20: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.007 16.466a6 6 0 0 0 -4.007 -10.466h-11" />
+<path d="M7 9l-3 -3l3 -3" />
+<path d="M12 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M6 14h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />"###
+};
+#[cfg(feature = "TbRewindBackward30")]
+const TB_REWIND_BACKWARD30: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.007 16.466a6 6 0 0 0 -4.007 -10.466h-11" />
+<path d="M12 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M6 14h1.5a1.5 1.5 0 0 1 0 3h-.5h.5a1.5 1.5 0 0 1 0 3h-1.5" />
+<path d="M7 9l-3 -3l3 -3" />"###
+};
+#[cfg(feature = "TbRewindBackward40")]
+const TB_REWIND_BACKWARD40: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.007 16.466a6 6 0 0 0 -4.007 -10.466h-11" />
+<path d="M12 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M6 14v2a1 1 0 0 0 1 1h1" />
+<path d="M9 14v6" />
+<path d="M7 9l-3 -3l3 -3" />"###
+};
+#[cfg(feature = "TbRewindBackward5")]
+const TB_REWIND_BACKWARD5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 18a6 6 0 1 0 0 -12h-11" />
+<path d="M7 9l-3 -3l3 -3" />
+<path d="M8 20h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />"###
+};
+#[cfg(feature = "TbRewindBackward50")]
+const TB_REWIND_BACKWARD50: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.007 16.466a6 6 0 0 0 -4.007 -10.466h-11" />
+<path d="M12 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M6 20h1.5a1.5 1.5 0 0 0 0 -3h-1.5v-3h3" />
+<path d="M7 9l-3 -3l3 -3" />"###
+};
+#[cfg(feature = "TbRewindBackward60")]
+const TB_REWIND_BACKWARD60: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19.007 16.466a6 6 0 0 0 -4.007 -10.466h-11" />
+<path d="M7 9l-3 -3l3 -3" />
+<path d="M12 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M9 14h-2a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2" />"###
+};
+#[cfg(feature = "TbRewindForward10")]
+const TB_REWIND_FORWARD10: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M8 17.918a5.997 5.997 0 0 1 -5 -5.918a6 6 0 0 1 6 -6h11" />
+<path d="M12 14v6" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />"###
+};
+#[cfg(feature = "TbRewindForward15")]
+const TB_REWIND_FORWARD15: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M9 18a6 6 0 1 1 0 -12h11" />
+<path d="M16 20h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+<path d="M13 14v6" />"###
+};
+#[cfg(feature = "TbRewindForward20")]
+const TB_REWIND_FORWARD20: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.007 16.478a6 6 0 0 1 3.993 -10.478h11" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M9 14h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />"###
+};
+#[cfg(feature = "TbRewindForward30")]
+const TB_REWIND_FORWARD30: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.007 16.478a6 6 0 0 1 3.993 -10.478h11" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M9 14h1.5a1.5 1.5 0 0 1 0 3h-.5h.5a1.5 1.5 0 0 1 0 3h-1.5" />"###
+};
+#[cfg(feature = "TbRewindForward40")]
+const TB_REWIND_FORWARD40: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.007 16.478a6 6 0 0 1 3.993 -10.478h11" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M9 14v2a1 1 0 0 0 1 1h1" />
+<path d="M12 14v6" />"###
+};
+#[cfg(feature = "TbRewindForward5")]
+const TB_REWIND_FORWARD5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 18a6 6 0 1 1 0 -12h11" />
+<path d="M13 20h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+<path d="M17 9l3 -3l-3 -3" />"###
+};
+#[cfg(feature = "TbRewindForward50")]
+const TB_REWIND_FORWARD50: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.007 16.478a6 6 0 0 1 3.993 -10.478h11" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M9 20h1.5a1.5 1.5 0 0 0 0 -3h-1.5v-3h3" />"###
+};
+#[cfg(feature = "TbRewindForward60")]
+const TB_REWIND_FORWARD60: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M5.007 16.478a6 6 0 0 1 3.993 -10.478h11" />
+<path d="M15 15.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M17 9l3 -3l-3 -3" />
+<path d="M12 14h-2a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2" />"###
 };
 #[cfg(feature = "TbRibbonHealth")]
 const TB_RIBBON_HEALTH: icondata_core::IconData = icondata_core::IconData {
@@ -69880,6 +79620,24 @@ const TB_ROW_INSERT_TOP: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 18v-4a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
 <path d="M12 9v-4" />
 <path d="M10 7l4 0" />"###
+};
+#[cfg(feature = "TbRowRemove")]
+const TB_ROW_REMOVE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 6v4a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1z" />
+<path d="M10 16l4 4" />
+<path d="M10 20l4 -4" />"###
 };
 #[cfg(feature = "TbRss")]
 const TB_RSS: icondata_core::IconData = icondata_core::IconData {
@@ -72625,6 +82383,156 @@ const TB_SHOPPING_BAG: icondata_core::IconData = icondata_core::IconData {
 <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
 <path d="M9 11v-5a3 3 0 0 1 6 0v5" />"###
 };
+#[cfg(feature = "TbShoppingBagCheck")]
+const TB_SHOPPING_BAG_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.5 21h-2.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.5 3.248" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbShoppingBagDiscount")]
+const TB_SHOPPING_BAG_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.5 21h-3.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.416 2.7" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbShoppingBagEdit")]
+const TB_SHOPPING_BAG_EDIT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11 21h-2.426a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.109 .707" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" />"###
+};
+#[cfg(feature = "TbShoppingBagExclamation")]
+const TB_SHOPPING_BAG_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M15 21h-6.426a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.258 1.678" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbShoppingBagMinus")]
+const TB_SHOPPING_BAG_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.5 21h-3.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.73 4.744" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M16 19h6" />"###
+};
+#[cfg(feature = "TbShoppingBagPlus")]
+const TB_SHOPPING_BAG_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12.5 21h-3.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.263 1.708" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />"###
+};
+#[cfg(feature = "TbShoppingBagSearch")]
+const TB_SHOPPING_BAG_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.5 21h-2.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.117 .761" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbShoppingBagX")]
+const TB_SHOPPING_BAG_X: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 21h-4.426a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.506 3.287" />
+<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
+};
 #[cfg(feature = "TbShoppingCart")]
 const TB_SHOPPING_CART: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -72644,6 +82552,128 @@ const TB_SHOPPING_CART: icondata_core::IconData = icondata_core::IconData {
 <path d="M17 17h-11v-14h-2" />
 <path d="M6 5l14 1l-1 7h-13" />"###
 };
+#[cfg(feature = "TbShoppingCartBolt")]
+const TB_SHOPPING_CART_BOLT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13.5 17h-7.5v-14h-2" />
+<path d="M6 5l14 1l-.858 6.004m-2.642 .996h-10.5" />
+<path d="M19 16l-2 3h4l-2 3" />"###
+};
+#[cfg(feature = "TbShoppingCartCancel")]
+const TB_SHOPPING_CART_CANCEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 17h-6v-14h-2" />
+<path d="M6 5l14 1l-.857 5.998m-3.643 1.002h-9.5" />
+<path d="M19 19m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M17 21l4 -4" />"###
+};
+#[cfg(feature = "TbShoppingCartCheck")]
+const TB_SHOPPING_CART_CHECK: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M11.5 17h-5.5v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M15 19l2 2l4 -4" />"###
+};
+#[cfg(feature = "TbShoppingCartCode")]
+const TB_SHOPPING_CART_CODE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M11.5 17h-5.5v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M20 21l2 -2l-2 -2" />
+<path d="M17 17l-2 2l2 2" />"###
+};
+#[cfg(feature = "TbShoppingCartCog")]
+const TB_SHOPPING_CART_COG: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 17h-6v-14h-2" />
+<path d="M6 5l14 1l-.79 5.526m-3.21 1.474h-10" />
+<path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+<path d="M19.001 15.5v1.5" />
+<path d="M19.001 21v1.5" />
+<path d="M22.032 17.25l-1.299 .75" />
+<path d="M17.27 20l-1.3 .75" />
+<path d="M15.97 17.25l1.3 .75" />
+<path d="M20.733 20l1.3 .75" />"###
+};
+#[cfg(feature = "TbShoppingCartCopy")]
+const TB_SHOPPING_CART_COPY: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M11.5 17h-5.5v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M15 19l2 2l4 -4" />"###
+};
 #[cfg(feature = "TbShoppingCartDiscount")]
 const TB_SHOPPING_CART_DISCOUNT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -72658,13 +82688,126 @@ const TB_SHOPPING_CART_DISCOUNT: icondata_core::IconData = icondata_core::IconDa
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 17h-11v-14h-2" />
-<path d="M20 6l-1 7h-13" />
-<path d="M10 10l6 -6" />
-<path d="M10.5 4.5m-.5 0a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" />
-<path d="M15.5 9.5m-.5 0a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0" />"###
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-.859 6.011m-6.141 .989h-7" />
+<path d="M16 21l5 -5" />
+<path d="M21 21v.01" />
+<path d="M16 16v.01" />"###
+};
+#[cfg(feature = "TbShoppingCartDollar")]
+const TB_SHOPPING_CART_DOLLAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13 17h-7v-14h-2" />
+<path d="M6 5l14 1l-.575 4.022m-4.925 2.978h-8.5" />
+<path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+<path d="M19 21v1m0 -8v1" />"###
+};
+#[cfg(feature = "TbShoppingCartDown")]
+const TB_SHOPPING_CART_DOWN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-.859 6.011m-2.641 .989h-10.5" />
+<path d="M19 16v6" />
+<path d="M22 19l-3 3l-3 -3" />"###
+};
+#[cfg(feature = "TbShoppingCartExclamation")]
+const TB_SHOPPING_CART_EXCLAMATION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M15 17h-9v-14h-2" />
+<path d="M6 5l14 1l-.854 5.976m-2.646 1.024h-10.5" />
+<path d="M19 16v3" />
+<path d="M19 22v.01" />"###
+};
+#[cfg(feature = "TbShoppingCartFilled")]
+const TB_SHOPPING_CART_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbShoppingCartHeart")]
+const TB_SHOPPING_CART_HEART: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M10 17h-4v-14h-2" />
+<path d="M6 5l14 1l-.717 5.016m-7.783 1.984h-5.5" />
+<path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
+};
+#[cfg(feature = "TbShoppingCartMinus")]
+const TB_SHOPPING_CART_MINUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M16 19h6" />"###
 };
 #[cfg(feature = "TbShoppingCartOff")]
 const TB_SHOPPING_CART_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -72686,6 +82829,46 @@ const TB_SHOPPING_CART_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.239 5.231l10.761 .769l-1 7h-2m-4 0h-7" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbShoppingCartPause")]
+const TB_SHOPPING_CART_PAUSE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13 17h-7v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M17 17v5" />
+<path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbShoppingCartPin")]
+const TB_SHOPPING_CART_PIN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12 17h-6v-14h-2" />
+<path d="M6 5l14 1l-.716 5.011m-5.284 1.989h-8" />
+<path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+<path d="M19 18v.01" />"###
+};
 #[cfg(feature = "TbShoppingCartPlus")]
 const TB_SHOPPING_CART_PLUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -72700,11 +82883,110 @@ const TB_SHOPPING_CART_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 17h-11v-14h-2" />
-<path d="M6 5l6 .429m7.138 6.573l-.143 1h-13" />
-<path d="M15 6h6m-3 -3v6" />"###
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-.86 6.017m-2.64 .983h-10.5" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbShoppingCartQuestion")]
+const TB_SHOPPING_CART_QUESTION: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13.5 17h-7.5v-14h-2" />
+<path d="M6 5l14 1l-.714 5m-4.786 2h-8.5" />
+<path d="M19 22v.01" />
+<path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />"###
+};
+#[cfg(feature = "TbShoppingCartSearch")]
+const TB_SHOPPING_CART_SEARCH: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M11 17h-5v-14h-2" />
+<path d="M6 5l14 1l-.718 5.023m-6.282 1.977h-7" />
+<path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M20.2 20.2l1.8 1.8" />"###
+};
+#[cfg(feature = "TbShoppingCartShare")]
+const TB_SHOPPING_CART_SHARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M16 22l5 -5" />
+<path d="M21 21.5v-4.5h-4.5" />"###
+};
+#[cfg(feature = "TbShoppingCartStar")]
+const TB_SHOPPING_CART_STAR: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M9.5 17h-3.5v-14h-2" />
+<path d="M6 5l14 1l-.615 4.302m-6.885 2.698h-6.5" />
+<path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />"###
+};
+#[cfg(feature = "TbShoppingCartUp")]
+const TB_SHOPPING_CART_UP: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M12.5 17h-6.5v-14h-2" />
+<path d="M6 5l14 1l-.854 5.977m-2.646 1.023h-10.5" />
+<path d="M19 22v-6" />
+<path d="M22 19l-3 -3l-3 3" />"###
 };
 #[cfg(feature = "TbShoppingCartX")]
 const TB_SHOPPING_CART_X: icondata_core::IconData = icondata_core::IconData {
@@ -72720,12 +83002,11 @@ const TB_SHOPPING_CART_X: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-<path d="M17 17h-11v-14h-2" />
-<path d="M6 5l8 .571m5.43 4.43l-.429 3h-13" />
-<path d="M17 3l4 4" />
-<path d="M21 3l-4 4" />"###
+<path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+<path d="M13 17h-7v-14h-2" />
+<path d="M6 5l14 1l-1 7h-13" />
+<path d="M22 22l-5 -5" />
+<path d="M17 22l5 -5" />"###
 };
 #[cfg(feature = "TbShovel")]
 const TB_SHOVEL: icondata_core::IconData = icondata_core::IconData {
@@ -73138,6 +83419,28 @@ const TB_SKATEBOARD_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M15 15a2 2 0 0 0 2 2m2 -2a2 2 0 0 0 -2 -2" />
 <path d="M3 9c0 .552 .895 1 2 1h5m4 0h5c1.105 0 2 -.448 2 -1" />
 <path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbSkateboarding")]
+const TB_SKATEBOARDING: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M16 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+<path d="M5.5 15h3.5l.75 -1.5" />
+<path d="M14 19v-5l-2.5 -3l2.5 -4" />
+<path d="M8 8l3 -1h4l1 3h3" />
+<path d="M17.5 21a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z" fill="currentColor" />
+<path d="M3 18c0 .552 .895 1 2 1h14c1.105 0 2 -.448 2 -1" />
+<path d="M6.5 21a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0 1z" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSkull")]
 const TB_SKULL: icondata_core::IconData = icondata_core::IconData {
@@ -74019,6 +84322,60 @@ const TB_SPEEDBOAT: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 13l1.5 -5" />
 <path d="M6 8h8l2 3" />"###
 };
+#[cfg(feature = "TbSphere")]
+const TB_SPHERE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12c0 1.657 4.03 3 9 3s9 -1.343 9 -3" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />"###
+};
+#[cfg(feature = "TbSphereOff")]
+const TB_SPHERE_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12c0 1.657 4.03 3 9 3c.987 0 1.936 -.053 2.825 -.15m3.357 -.67c1.735 -.547 2.818 -1.32 2.818 -2.18" />
+<path d="M20.051 16.027a9 9 0 0 0 -12.083 -12.075m-2.34 1.692a9 9 0 0 0 12.74 12.716" />
+<path d="M3 3l18 18" />"###
+};
+#[cfg(feature = "TbSpherePlus")]
+const TB_SPHERE_PLUS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12c0 1.657 4.03 3 9 3c1.116 0 2.185 -.068 3.172 -.192m5.724 -2.35a1.1 1.1 0 0 0 .104 -.458" />
+<path d="M20.984 12.546a9 9 0 1 0 -8.442 8.438" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
+};
 #[cfg(feature = "TbSpider")]
 const TB_SPIDER: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74371,6 +84728,22 @@ const TB_SQUARE_ARROW_DOWN: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 8v8" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
 };
+#[cfg(feature = "TbSquareArrowDownFilled")]
+const TB_SQUARE_ARROW_DOWN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-7 5a1 1 0 0 0 -1 1v5.585l-2.293 -2.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l4 4l.094 .083l.092 .064l.098 .052l.11 .044l.112 .03l.126 .017l.075 .003l.117 -.007l.149 -.029l.105 -.035l.113 -.054l.111 -.071a.939 .939 0 0 0 .112 -.097l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.293 2.292v-5.585l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareArrowLeft")]
 const TB_SQUARE_ARROW_LEFT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74388,6 +84761,22 @@ const TB_SQUARE_ARROW_LEFT: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 8l-4 4l4 4" />
 <path d="M16 12h-8" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+};
+#[cfg(feature = "TbSquareArrowLeftFilled")]
+const TB_SQUARE_ARROW_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-6.293 5.293a1 1 0 0 0 -1.414 0l-4 4l-.083 .094l-.064 .092l-.052 .098l-.044 .11l-.03 .112l-.017 .126l-.003 .075l.004 .09l.007 .058l.025 .118l.035 .105l.054 .113l.071 .111c.03 .04 .061 .077 .097 .112l4 4l.094 .083a1 1 0 0 0 1.32 -.083l.083 -.094a1 1 0 0 0 -.083 -1.32l-2.292 -2.293h5.585l.117 -.007a1 1 0 0 0 -.117 -1.993h-5.585l2.292 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareArrowRight")]
 const TB_SQUARE_ARROW_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -74407,6 +84796,22 @@ const TB_SQUARE_ARROW_RIGHT: icondata_core::IconData = icondata_core::IconData {
 <path d="M8 12h8" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
 };
+#[cfg(feature = "TbSquareArrowRightFilled")]
+const TB_SQUARE_ARROW_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-6.387 5.21a1 1 0 0 0 -1.32 .083l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293h-5.585l-.117 .007a1 1 0 0 0 .117 1.993h5.585l-2.292 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.074 -.104l.052 -.098l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareArrowUp")]
 const TB_SQUARE_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74424,6 +84829,22 @@ const TB_SQUARE_ARROW_UP: icondata_core::IconData = icondata_core::IconData {
 <path d="M16 12l-4 -4l-4 4" />
 <path d="M12 16v-8" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+};
+#[cfg(feature = "TbSquareArrowUpFilled")]
+const TB_SQUARE_ARROW_UP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-7 5l-.09 .004l-.058 .007l-.118 .025l-.105 .035l-.113 .054l-.111 .071a1.008 1.008 0 0 0 -.112 .097l-4 4l-.083 .094a1 1 0 0 0 .083 1.32l.094 .083a1 1 0 0 0 1.32 -.083l2.293 -2.292v5.585l.007 .117a1 1 0 0 0 1.993 -.117v-5.585l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-4 -4l-.082 -.073l-.104 -.074l-.098 -.052l-.11 -.044l-.112 -.03l-.126 -.017l-.075 -.003z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareAsterisk")]
 const TB_SQUARE_ASTERISK: icondata_core::IconData = icondata_core::IconData {
@@ -74443,6 +84864,22 @@ const TB_SQUARE_ASTERISK: icondata_core::IconData = icondata_core::IconData {
 <path d="M12 8.5v7" />
 <path d="M9 10l6 4" />
 <path d="M9 14l6 -4" />"###
+};
+#[cfg(feature = "TbSquareAsteriskFilled")]
+const TB_SQUARE_ASTERISK_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-7 5.5a1 1 0 0 0 -1 1v1.631l-1.445 -.963l-.101 -.06a1 1 0 0 0 -1.009 1.724l1.75 1.168l-1.75 1.169l-.093 .07a1 1 0 0 0 1.203 1.594l1.445 -.965v1.632l.007 .117a1 1 0 0 0 1.993 -.117v-1.631l1.445 .963l.101 .06a1 1 0 0 0 1.009 -1.724l-1.752 -1.169l1.752 -1.167l.093 -.07a1 1 0 0 0 -1.203 -1.594l-1.445 .962v-1.63l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareCheck")]
 const TB_SQUARE_CHECK: icondata_core::IconData = icondata_core::IconData {
@@ -74494,6 +84931,22 @@ const TB_SQUARE_CHEVRON_DOWN: icondata_core::IconData = icondata_core::IconData 
 <path d="M15 11l-3 3l-3 -3" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
 };
+#[cfg(feature = "TbSquareChevronDownFilled")]
+const TB_SQUARE_CHEVRON_DOWN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-9.387 8.21a1 1 0 0 0 -1.32 1.497l3 3l.094 .083a1 1 0 0 0 1.32 -.083l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.293 2.292l-2.293 -2.292z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareChevronLeft")]
 const TB_SQUARE_CHEVRON_LEFT: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74510,6 +84963,22 @@ const TB_SQUARE_CHEVRON_LEFT: icondata_core::IconData = icondata_core::IconData 
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M13 15l-3 -3l3 -3" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+};
+#[cfg(feature = "TbSquareChevronLeftFilled")]
+const TB_SQUARE_CHEVRON_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-5.293 6.293a1 1 0 0 0 -1.414 0l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l3 3l.094 .083a1 1 0 0 0 1.32 -.083l.083 -.094a1 1 0 0 0 -.083 -1.32l-2.292 -2.293l2.292 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareChevronRight")]
 const TB_SQUARE_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -74528,6 +84997,22 @@ const TB_SQUARE_CHEVRON_RIGHT: icondata_core::IconData = icondata_core::IconData
 <path d="M11 9l3 3l-3 3" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
 };
+#[cfg(feature = "TbSquareChevronRightFilled")]
+const TB_SQUARE_CHEVRON_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-7.387 6.21a1 1 0 0 0 -1.32 .083l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293l-2.292 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-3 -3z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareChevronUp")]
 const TB_SQUARE_CHEVRON_UP: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74545,6 +85030,22 @@ const TB_SQUARE_CHEVRON_UP: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
 <path d="M9 13l3 -3l3 3" />"###
 };
+#[cfg(feature = "TbSquareChevronUpFilled")]
+const TB_SQUARE_CHEVRON_UP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-6.387 7.21a1 1 0 0 0 -1.32 .083l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l.094 .083a1 1 0 0 0 1.32 -.083l2.293 -2.292l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-3 -3z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareChevronsDown")]
 const TB_SQUARE_CHEVRONS_DOWN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -74559,9 +85060,25 @@ const TB_SQUARE_CHEVRONS_DOWN: icondata_core::IconData = icondata_core::IconData
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M15 9l-3 3l-3 -3" />
+<path d="M15 8l-3 3l-3 -3" />
 <path d="M15 13l-3 3l-3 -3" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />"###
+};
+#[cfg(feature = "TbSquareChevronsDownFilled")]
+const TB_SQUARE_CHEVRONS_DOWN_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-9.387 10.21a1 1 0 0 0 -1.32 1.497l3 3l.094 .083a1 1 0 0 0 1.32 -.083l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.293 2.292l-2.293 -2.292zm0 -5a1 1 0 0 0 -1.32 1.497l3 3l.094 .083a1 1 0 0 0 1.32 -.083l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-.094 -.083a1 1 0 0 0 -1.32 .083l-2.293 2.292l-2.293 -2.292z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareChevronsLeft")]
 const TB_SQUARE_CHEVRONS_LEFT: icondata_core::IconData = icondata_core::IconData {
@@ -74577,9 +85094,25 @@ const TB_SQUARE_CHEVRONS_LEFT: icondata_core::IconData = icondata_core::IconData
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M15 15l-3 -3l3 -3" />
+<path d="M16 15l-3 -3l3 -3" />
 <path d="M11 15l-3 -3l3 -3" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />"###
+};
+#[cfg(feature = "TbSquareChevronsLeftFilled")]
+const TB_SQUARE_CHEVRONS_LEFT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-2.293 6.293a1 1 0 0 0 -1.414 0l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l3 3l.094 .083a1 1 0 0 0 1.32 -.083l.083 -.094a1 1 0 0 0 -.083 -1.32l-2.292 -2.293l2.292 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32zm-5 0a1 1 0 0 0 -1.414 0l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l3 3l.094 .083a1 1 0 0 0 1.32 -.083l.083 -.094a1 1 0 0 0 -.083 -1.32l-2.292 -2.293l2.292 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareChevronsRight")]
 const TB_SQUARE_CHEVRONS_RIGHT: icondata_core::IconData = icondata_core::IconData {
@@ -74595,9 +85128,25 @@ const TB_SQUARE_CHEVRONS_RIGHT: icondata_core::IconData = icondata_core::IconDat
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M9 9l3 3l-3 3" />
+<path d="M8 9l3 3l-3 3" />
 <path d="M13 9l3 3l-3 3" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />"###
+};
+#[cfg(feature = "TbSquareChevronsRightFilled")]
+const TB_SQUARE_CHEVRONS_RIGHT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-10.387 6.21a1 1 0 0 0 -1.32 .083l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293l-2.292 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-3 -3zm5 0a1 1 0 0 0 -1.32 .083l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293l-2.292 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l3 -3l.083 -.094a1 1 0 0 0 -.083 -1.32l-3 -3z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareChevronsUp")]
 const TB_SQUARE_CHEVRONS_UP: icondata_core::IconData = icondata_core::IconData {
@@ -74613,9 +85162,25 @@ const TB_SQUARE_CHEVRONS_UP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M9 15l3 -3l3 3" />
+<path d="M9 16l3 -3l3 3" />
 <path d="M9 11l3 -3l3 3" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />"###
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />"###
+};
+#[cfg(feature = "TbSquareChevronsUpFilled")]
+const TB_SQUARE_CHEVRONS_UP_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-6.387 10.21a1 1 0 0 0 -1.32 .083l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l.094 .083a1 1 0 0 0 1.32 -.083l2.293 -2.292l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-3 -3zm0 -5a1 1 0 0 0 -1.32 .083l-3 3l-.083 .094a1 1 0 0 0 .083 1.32l.094 .083a1 1 0 0 0 1.32 -.083l2.293 -2.292l2.293 2.292l.094 .083a1 1 0 0 0 1.32 -1.497l-3 -3z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareDot")]
 const TB_SQUARE_DOT: icondata_core::IconData = icondata_core::IconData {
@@ -74633,6 +85198,22 @@ const TB_SQUARE_DOT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />"###
+};
+#[cfg(feature = "TbSquareDotFilled")]
+const TB_SQUARE_DOT_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-7 8a2 2 0 0 0 -1.995 1.85l-.005 .15l.005 .15a2 2 0 1 0 1.995 -2.15z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareF0")]
 const TB_SQUARE_F0: icondata_core::IconData = icondata_core::IconData {
@@ -74984,6 +85565,22 @@ const TB_SQUARE_F9_FILLED: icondata_core::IconData = icondata_core::IconData {
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-3.083 6h-1.5l-.144 .006a1.75 1.75 0 0 0 -1.606 1.744v1.5l.006 .144a1.75 1.75 0 0 0 1.744 1.606h1.25v1h-1.033l-.025 -.087a1 1 0 0 0 -1.942 .337c0 .966 .784 1.75 1.75 1.75h1.5l.144 -.006a1.75 1.75 0 0 0 1.606 -1.744v-4.5l-.006 -.144a1.75 1.75 0 0 0 -1.744 -1.606zm-5.25 0h-2l-.117 .007a1 1 0 0 0 -.883 .993v6l.007 .117a1 1 0 0 0 .993 .883l.117 -.007a1 1 0 0 0 .883 -.993v-2h1l.117 -.007a1 1 0 0 0 -.117 -1.993h-1v-1h1l.117 -.007a1 1 0 0 0 -.117 -1.993zm5 2v1h-1v-1h1z" stroke-width="0" fill="currentColor" />"###
+};
+#[cfg(feature = "TbSquareFilled")]
+const TB_SQUARE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquareForbid")]
 const TB_SQUARE_FORBID: icondata_core::IconData = icondata_core::IconData {
@@ -75528,6 +86125,22 @@ const TB_SQUARE_MINUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
 <path d="M9 12l6 0" />"###
 };
+#[cfg(feature = "TbSquareMinusFilled")]
+const TB_SQUARE_MINUS_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-14a3 3 0 0 1 3 -3zm-4 9h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareNumber0")]
 const TB_SQUARE_NUMBER0: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -75730,9 +86343,9 @@ const TB_SQUARE_PLUS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
-<path d="M9 12l6 0" />
-<path d="M12 9l0 6" />"###
+<path d="M12.5 21h-7.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbSquareRoot")]
 const TB_SQUARE_ROOT: icondata_core::IconData = icondata_core::IconData {
@@ -76789,6 +87402,22 @@ const TB_SQUARE_ROUNDED_MINUS: icondata_core::IconData = icondata_core::IconData
 <path d="M9 12h6" />
 <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />"###
 };
+#[cfg(feature = "TbSquareRoundedMinusFilled")]
+const TB_SQUARE_ROUNDED_MINUS_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm3 9h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993z" stroke-width="0" fill="currentColor" />"###
+};
 #[cfg(feature = "TbSquareRoundedNumber0")]
 const TB_SQUARE_ROUNDED_NUMBER0: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -77134,9 +87763,9 @@ const TB_SQUARE_ROUNDED_PLUS: icondata_core::IconData = icondata_core::IconData 
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M9 12h6" />
-<path d="M12 9v6" />
-<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />"###
+<path d="M12.54 20.996c-.176 .004 -.356 .004 -.54 .004c-7.2 0 -9 -1.8 -9 -9s1.8 -9 9 -9s9 1.8 9 9c0 .185 -.001 .366 -.004 .544" />
+<path d="M16 19h6" />
+<path d="M19 16v6" />"###
 };
 #[cfg(feature = "TbSquareRoundedPlusFilled")]
 const TB_SQUARE_ROUNDED_PLUS_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -77241,8 +87870,24 @@ const TB_SQUARE_X: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
-<path d="M10 10l4 4m0 -4l-4 4" />"###
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+<path d="M9 9l6 6m0 -6l-6 6" />"###
+};
+#[cfg(feature = "TbSquareXFilled")]
+const TB_SQUARE_X_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3zm-9.387 6.21l.094 .083l2.293 2.292l2.293 -2.292a1 1 0 0 1 1.497 1.32l-.083 .094l-2.292 2.293l2.292 2.293a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.497 -1.32l.083 -.094l2.292 -2.293l-2.292 -2.293a1 1 0 0 1 1.32 -1.497z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbSquaresDiagonal")]
 const TB_SQUARES_DIAGONAL: icondata_core::IconData = icondata_core::IconData {
@@ -77388,7 +88033,7 @@ const TB_STAIRS: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M4 18h4v-4h4v-4h4v-4h4" />"###
+<path d="M22 5h-5v5h-5v5h-5v5h-5" />"###
 };
 #[cfg(feature = "TbStairsDown")]
 const TB_STAIRS_DOWN: icondata_core::IconData = icondata_core::IconData {
@@ -77404,8 +88049,9 @@ const TB_STAIRS_DOWN: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M4 20h4v-4h4v-4h4v-4h4" />
-<path d="M11 4l-7 7v-4m4 4h-4" />"###
+<path d="M22 21h-5v-5h-5v-5h-5v-5h-5" />
+<path d="M18 3v7" />
+<path d="M15 7l3 3l3 -3" />"###
 };
 #[cfg(feature = "TbStairsUp")]
 const TB_STAIRS_UP: icondata_core::IconData = icondata_core::IconData {
@@ -77421,8 +88067,9 @@ const TB_STAIRS_UP: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M4 20h4v-4h4v-4h4v-4h4" />
-<path d="M4 11l7 -7v4m-4 -4h4" />"###
+<path d="M22 6h-5v5h-5v5h-5v5h-5" />
+<path d="M6 10v-7" />
+<path d="M3 6l3 -3l3 3" />"###
 };
 #[cfg(feature = "TbStar")]
 const TB_STAR: icondata_core::IconData = icondata_core::IconData {
@@ -78430,6 +89077,28 @@ const TB_TABLE_ALIAS: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 3v10" />
 <path d="M2 17a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-4z" />"###
 };
+#[cfg(feature = "TbTableColumn")]
+const TB_TABLE_COLUMN: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+<path d="M10 10h11" />
+<path d="M10 3v18" />
+<path d="M9 3l-6 6" />
+<path d="M10 7l-7 7" />
+<path d="M10 12l-7 7" />
+<path d="M10 17l-4 4" />"###
+};
 #[cfg(feature = "TbTableDown")]
 const TB_TABLE_DOWN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -78610,6 +89279,28 @@ const TB_TABLE_PLUS: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 3v18" />
 <path d="M16 19h6" />
 <path d="M19 16v6" />"###
+};
+#[cfg(feature = "TbTableRow")]
+const TB_TABLE_ROW: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+<path d="M9 3l-6 6" />
+<path d="M14 3l-7 7" />
+<path d="M19 3l-7 7" />
+<path d="M21 6l-4 4" />
+<path d="M3 10h18" />
+<path d="M10 10v11" />"###
 };
 #[cfg(feature = "TbTableShare")]
 const TB_TABLE_SHARE: icondata_core::IconData = icondata_core::IconData {
@@ -79816,6 +90507,215 @@ const TB_TILT_SHIFT_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M10.57 10.602a2 2 0 0 0 2.862 2.795" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbTimeDuration0")]
+const TB_TIME_DURATION0: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12v.01" />
+<path d="M21 12v.01" />
+<path d="M12 21v.01" />
+<path d="M12 3v.01" />
+<path d="M7.5 4.2v.01" />
+<path d="M16.5 4.2v.01" />
+<path d="M16.5 19.8v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M19.8 16.5v.01" />
+<path d="M19.8 7.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M10 11v2a2 2 0 1 0 4 0v-2a2 2 0 1 0 -4 0z" />"###
+};
+#[cfg(feature = "TbTimeDuration10")]
+const TB_TIME_DURATION10: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 9v6" />
+<path d="M12 11v2a2 2 0 1 0 4 0v-2a2 2 0 1 0 -4 0z" />
+<path d="M3 12v.01" />
+<path d="M21 12v.01" />
+<path d="M12 21v.01" />
+<path d="M7.5 4.2v.01" />
+<path d="M16.5 19.8v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M19.8 16.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M19.81 7.527a8.994 8.994 0 0 0 -7.81 -4.527" />"###
+};
+#[cfg(feature = "TbTimeDuration15")]
+const TB_TIME_DURATION15: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+<path d="M9 9v6" />
+<path d="M3 12v.01" />
+<path d="M12 21v.01" />
+<path d="M7.5 4.2v.01" />
+<path d="M16.5 19.8v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M19.8 16.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M21 12a9 9 0 0 0 -9 -9" />"###
+};
+#[cfg(feature = "TbTimeDuration30")]
+const TB_TIME_DURATION30: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M8 9h1.5a1.5 1.5 0 0 1 0 3h-.5h.5a1.5 1.5 0 0 1 0 3h-1.5" />
+<path d="M3 12v.01" />
+<path d="M7.5 4.2v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M12 21a9 9 0 0 0 0 -18" />"###
+};
+#[cfg(feature = "TbTimeDuration45")]
+const TB_TIME_DURATION45: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+<path d="M7 9v2a1 1 0 0 0 1 1h1" />
+<path d="M10 9v6" />
+<path d="M7.5 4.2v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M3 12a9 9 0 1 0 9 -9" />"###
+};
+#[cfg(feature = "TbTimeDuration5")]
+const TB_TIME_DURATION5: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 15h2a1.5 1.5 0 0 0 0 -3h-2v-3h3.5" />
+<path d="M3 12v.01" />
+<path d="M21 12v.01" />
+<path d="M12 21v.01" />
+<path d="M7.5 4.2v.01" />
+<path d="M16.5 19.8v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M19.8 16.5v.01" />
+<path d="M19.8 7.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M16.5 4.206a9.042 9.042 0 0 0 -4.5 -1.206" />"###
+};
+#[cfg(feature = "TbTimeDuration60")]
+const TB_TIME_DURATION60: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M14 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M11 9h-2a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2" />
+<path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />"###
+};
+#[cfg(feature = "TbTimeDuration90")]
+const TB_TIME_DURATION90: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M8 14.25c0 .414 .336 .75 .75 .75h1.5a.75 .75 0 0 0 .75 -.75v-4.5a.75 .75 0 0 0 -.75 -.75h-1.5a.75 .75 0 0 0 -.75 .75v1.5c0 .414 .336 .75 .75 .75h2.25" />
+<path d="M14 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0z" />
+<path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />"###
+};
+#[cfg(feature = "TbTimeDurationOff")]
+const TB_TIME_DURATION_OFF: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 12v.01" />
+<path d="M7.5 19.8v.01" />
+<path d="M4.2 16.5v.01" />
+<path d="M4.2 7.5v.01" />
+<path d="M12 21a8.994 8.994 0 0 0 6.362 -2.634m1.685 -2.336a9 9 0 0 0 -8.047 -13.03" />
+<path d="M3 3l18 18" />"###
+};
 #[cfg(feature = "TbTimeline")]
 const TB_TIMELINE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -80812,6 +91712,23 @@ const TB_TRAIN: icondata_core::IconData = icondata_core::IconData {
 <path d="M13 11l0 -4.5" />
 <path d="M3 19l18 0" />"###
 };
+#[cfg(feature = "TbTransfer")]
+const TB_TRANSFER: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M20 10h-16l5.5 -6" />
+<path d="M4 14h16l-5.5 6" />"###
+};
 #[cfg(feature = "TbTransferIn")]
 const TB_TRANSFER_IN: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -80847,6 +91764,23 @@ const TB_TRANSFER_OUT: icondata_core::IconData = icondata_core::IconData {
 <path d="M4 19v2h16v-14l-8 -4l-8 4v2" />
 <path d="M13 14h-9" />
 <path d="M7 11l-3 3l3 3" />"###
+};
+#[cfg(feature = "TbTransferVertical")]
+const TB_TRANSFER_VERTICAL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 4v16l-6 -5.5" />
+<path d="M14 20v-16l6 5.5" />"###
 };
 #[cfg(feature = "TbTransform")]
 const TB_TRANSFORM: icondata_core::IconData = icondata_core::IconData {
@@ -81255,7 +92189,7 @@ const TB_TRIANGLE: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" />"###
+<path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />"###
 };
 #[cfg(feature = "TbTriangleFilled")]
 const TB_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -81271,7 +92205,7 @@ const TB_TRIANGLE_FILLED: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M11.99 1.968c1.023 0 1.97 .521 2.512 1.359l.103 .172l7.1 12.25l.062 .126a3 3 0 0 1 -2.568 4.117l-.199 .008h-14l-.049 -.003l-.112 .002a3 3 0 0 1 -2.268 -1.226l-.109 -.16a3 3 0 0 1 -.32 -2.545l.072 -.194l.06 -.125l7.092 -12.233a3 3 0 0 1 2.625 -1.548z" stroke-width="0" fill="currentColor" />"###
+<path d="M12 1.67a2.914 2.914 0 0 0 -2.492 1.403l-8.11 13.537a2.914 2.914 0 0 0 2.484 4.385h16.225a2.914 2.914 0 0 0 2.503 -4.371l-8.116 -13.546a2.917 2.917 0 0 0 -2.494 -1.408z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbTriangleInverted")]
 const TB_TRIANGLE_INVERTED: icondata_core::IconData = icondata_core::IconData {
@@ -81287,7 +92221,7 @@ const TB_TRIANGLE_INVERTED: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M10.24 20.043l-8.422 -14.06a1.989 1.989 0 0 1 1.7 -2.983h16.845a1.989 1.989 0 0 1 1.7 2.983l-8.422 14.06a1.989 1.989 0 0 1 -3.4 0z" />"###
+<path d="M10.363 20.405l-8.106 -13.534a1.914 1.914 0 0 1 1.636 -2.871h16.214a1.914 1.914 0 0 1 1.636 2.871l-8.106 13.534a1.914 1.914 0 0 1 -3.274 0z" />"###
 };
 #[cfg(feature = "TbTriangleInvertedFilled")]
 const TB_TRIANGLE_INVERTED_FILLED: icondata_core::IconData = icondata_core::IconData {
@@ -81303,7 +92237,7 @@ const TB_TRIANGLE_INVERTED_FILLED: icondata_core::IconData = icondata_core::Icon
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M19.007 3a3 3 0 0 1 2.828 3.94l-.068 .185l-.062 .126l-7.09 12.233a3 3 0 0 1 -5.137 .19l-.103 -.173l-7.1 -12.25l-.061 -.125a3 3 0 0 1 2.625 -4.125l.058 -.001l.06 .002l.043 -.002h14.007z" stroke-width="0" fill="currentColor" />"###
+<path d="M20.118 3h-16.225a2.914 2.914 0 0 0 -2.503 4.371l8.116 13.549a2.917 2.917 0 0 0 4.987 .005l8.11 -13.539a2.914 2.914 0 0 0 -2.486 -4.386z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbTriangleOff")]
 const TB_TRIANGLE_OFF: icondata_core::IconData = icondata_core::IconData {
@@ -81319,7 +92253,7 @@ const TB_TRIANGLE_OFF: icondata_core::IconData = icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-<path d="M5 19h14m1.986 -2.014a2 2 0 0 0 -.146 -.736l-7.1 -12.25a2 2 0 0 0 -3.5 0l-.825 1.424m-1.467 2.53l-4.808 8.296a2 2 0 0 0 1.75 2.75" />
+<path d="M7.825 7.83l-5.568 9.295a1.914 1.914 0 0 0 1.636 2.871h16.107m1.998 -1.99a1.913 1.913 0 0 0 -.255 -.88l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0l-1.028 1.718" />
 <path d="M3 3l18 18" />"###
 };
 #[cfg(feature = "TbTriangleSquareCircle")]
@@ -81339,6 +92273,24 @@ const TB_TRIANGLE_SQUARE_CIRCLE: icondata_core::IconData = icondata_core::IconDa
 <path d="M12 3l-4 7h8z" />
 <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
 <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />"###
+};
+#[cfg(feature = "TbTriangleSquareCircleFilled")]
+const TB_TRIANGLE_SQUARE_CIRCLE_FILLED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M11.132 2.504l-4 7a1 1 0 0 0 .868 1.496h8a1 1 0 0 0 .868 -1.496l-4 -7a1 1 0 0 0 -1.736 0z" stroke-width="0" fill="currentColor" />
+<path d="M17 13a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" stroke-width="0" fill="currentColor" />
+<path d="M9 13h-4a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor" />"###
 };
 #[cfg(feature = "TbTriangles")]
 const TB_TRIANGLES: icondata_core::IconData = icondata_core::IconData {
@@ -82048,6 +93000,24 @@ const TB_USER_HEART: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 21v-2a4 4 0 0 1 4 -4h.5" />
 <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />"###
 };
+#[cfg(feature = "TbUserHexagon")]
+const TB_USER_HEXAGON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+<path d="M6.201 18.744a4 4 0 0 1 3.799 -2.744h4a4 4 0 0 1 3.798 2.741" />
+<path d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />"###
+};
 #[cfg(feature = "TbUserMinus")]
 const TB_USER_MINUS: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -82102,6 +93072,24 @@ const TB_USER_PAUSE: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
 <path d="M17 17v5" />
 <path d="M21 17v5" />"###
+};
+#[cfg(feature = "TbUserPentagon")]
+const TB_USER_PENTAGON: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+<path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />"###
 };
 #[cfg(feature = "TbUserPin")]
 const TB_USER_PIN: icondata_core::IconData = icondata_core::IconData {
@@ -82215,6 +93203,42 @@ const TB_USER_SHIELD: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 21v-2a4 4 0 0 1 4 -4h2" />
 <path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" />
 <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />"###
+};
+#[cfg(feature = "TbUserSquare")]
+const TB_USER_SQUARE: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M9 10a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+<path d="M6 21v-1a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v1" />
+<path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />"###
+};
+#[cfg(feature = "TbUserSquareRounded")]
+const TB_USER_SQUARE_ROUNDED: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+<path d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05" />"###
 };
 #[cfg(feature = "TbUserStar")]
 const TB_USER_STAR: icondata_core::IconData = icondata_core::IconData {
@@ -83319,6 +94343,24 @@ const TB_VOLUME_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M9.069 5.054l.431 -.554a.8 .8 0 0 1 1.5 .5v2m0 4v8a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l1.294 -1.664" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbVs")]
+const TB_VS: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M2 12c0 5.523 4.477 10 10 10s10 -4.477 10 -10s-4.477 -10 -10 -10s-10 4.477 -10 10" />
+<path d="M14 14.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+<path d="M7 9l2 6l2 -6" />"###
+};
 #[cfg(feature = "TbWalk")]
 const TB_WALK: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -83643,6 +94685,23 @@ const TB_WASH_DRY_F: icondata_core::IconData = icondata_core::IconData {
 <path d="M10 16v-8h4" />
 <path d="M13 12h-3" />"###
 };
+#[cfg(feature = "TbWashDryFlat")]
+const TB_WASH_DRY_FLAT: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" />
+<path d="M7 12h10" />"###
+};
 #[cfg(feature = "TbWashDryHang")]
 const TB_WASH_DRY_HANG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -83762,6 +94821,25 @@ const TB_WASH_DRYCLEAN_OFF: icondata_core::IconData = icondata_core::IconData {
 <path d="M20.048 16.033a9 9 0 0 0 -12.094 -12.075m-2.321 1.682a9 9 0 0 0 12.733 12.723" />
 <path d="M3 3l18 18" />"###
 };
+#[cfg(feature = "TbWashEco")]
+const TB_WASH_ECO: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3 6l1.721 10.329a2 2 0 0 0 1.973 1.671h5.306m8.162 -6.972l.838 -5.028" />
+<path d="M3.486 8.965c.168 .02 .34 .033 .514 .035c.79 .009 1.539 -.178 2 -.5c.461 -.32 1.21 -.507 2 -.5c.79 -.007 1.539 .18 2 .5c.461 .322 1.21 .509 2 .5c.79 .009 1.539 -.178 2 -.5c.461 -.32 1.21 -.507 2 -.5c.79 -.007 1.539 .18 2 .5c.461 .322 1.21 .509 2 .5c.17 0 .339 -.014 .503 -.034" />
+<path d="M16 22s0 -2 3 -4" />
+<path d="M19 21a3 3 0 0 1 0 -6h3v3a3 3 0 0 1 -3 3z" />"###
+};
 #[cfg(feature = "TbWashGentle")]
 const TB_WASH_GENTLE: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -83780,6 +94858,25 @@ const TB_WASH_GENTLE: icondata_core::IconData = icondata_core::IconData {
 <path d="M3 3l1.721 10.329a2 2 0 0 0 1.973 1.671h10.612a2 2 0 0 0 1.973 -1.671l1.721 -10.329" />
 <path d="M5 18h14" />
 <path d="M5 21h14" />"###
+};
+#[cfg(feature = "TbWashHand")]
+const TB_WASH_HAND: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M3.486 8.965c.168 .02 .34 .033 .514 .035c.79 .009 1.539 -.178 2 -.5c.426 -.296 .777 -.5 1.5 -.5h1" />
+<path d="M16 8l.615 .034c.552 .067 1.046 .23 1.385 .466c.461 .322 1.21 .509 2 .5c.17 0 .339 -.014 .503 -.034" />
+<path d="M14 10.5l.586 .578a1.516 1.516 0 0 0 2 0c.476 -.433 .55 -1.112 .176 -1.622l-1.762 -2.456c-.37 -.506 -1.331 -1 -2 -1h-3.117a1 1 0 0 0 -.992 .876l-.499 3.986a3.857 3.857 0 0 0 2.608 4.138a2.28 2.28 0 0 0 3 -2.162v-2.338z" />
+<path d="M3 6l1.721 10.329a2 2 0 0 0 1.973 1.671h10.612a2 2 0 0 0 1.973 -1.671l1.721 -10.329" />"###
 };
 #[cfg(feature = "TbWashMachine")]
 const TB_WASH_MACHINE: icondata_core::IconData = icondata_core::IconData {
@@ -84117,6 +95214,29 @@ const TB_WEIGHT: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
 <path d="M6.835 9h10.33a1 1 0 0 1 .984 .821l1.637 9a1 1 0 0 1 -.984 1.179h-13.604a1 1 0 0 1 -.984 -1.179l1.637 -9a1 1 0 0 1 .984 -.821z" />"###
+};
+#[cfg(feature = "TbWheel")]
+const TB_WHEEL: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+<path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+<path d="M3 12h6" />
+<path d="M15 12h6" />
+<path d="M13.6 9.4l3.4 -4.8" />
+<path d="M10.4 14.6l-3.4 4.8" />
+<path d="M7 4.6l3.4 4.8" />
+<path d="M13.6 14.6l3.4 4.8" />"###
 };
 #[cfg(feature = "TbWheelchair")]
 const TB_WHEELCHAIR: icondata_core::IconData = icondata_core::IconData {
@@ -85309,6 +96429,27 @@ const TB_XD: icondata_core::IconData = icondata_core::IconData {
 <path d="M6 16l4 -8" />
 <path d="M14 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-2z" />"###
 };
+#[cfg(feature = "TbXxx")]
+const TB_XXX: icondata_core::IconData = icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+<path d="M10 8l4 8" />
+<path d="M10 16l4 -8" />
+<path d="M17 8l4 8" />
+<path d="M17 16l4 -8" />
+<path d="M3 8l4 8" />
+<path d="M3 16l4 -8" />"###
+};
 #[cfg(feature = "TbYinYang")]
 const TB_YIN_YANG: icondata_core::IconData = icondata_core::IconData {
     style: None,
@@ -86017,6 +97158,8 @@ impl From<TbIcon> for icondata_core::IconData {
         match icon {
             #[cfg(feature = "Tb123")]
             TbIcon::Tb123 => TB123,
+            #[cfg(feature = "Tb12Hours")]
+            TbIcon::Tb12Hours => TB12_HOURS,
             #[cfg(feature = "Tb24Hours")]
             TbIcon::Tb24Hours => TB24_HOURS,
             #[cfg(feature = "Tb2fa")]
@@ -86135,6 +97278,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAirConditioning => TB_AIR_CONDITIONING,
             #[cfg(feature = "TbAirConditioningDisabled")]
             TbIcon::TbAirConditioningDisabled => TB_AIR_CONDITIONING_DISABLED,
+            #[cfg(feature = "TbAirTrafficControl")]
+            TbIcon::TbAirTrafficControl => TB_AIR_TRAFFIC_CONTROL,
             #[cfg(feature = "TbAlarm")]
             TbIcon::TbAlarm => TB_ALARM,
             #[cfg(feature = "TbAlarmFilled")]
@@ -86161,16 +97306,22 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlertCircle => TB_ALERT_CIRCLE,
             #[cfg(feature = "TbAlertCircleFilled")]
             TbIcon::TbAlertCircleFilled => TB_ALERT_CIRCLE_FILLED,
+            #[cfg(feature = "TbAlertCircleOff")]
+            TbIcon::TbAlertCircleOff => TB_ALERT_CIRCLE_OFF,
             #[cfg(feature = "TbAlertHexagon")]
             TbIcon::TbAlertHexagon => TB_ALERT_HEXAGON,
             #[cfg(feature = "TbAlertHexagonFilled")]
             TbIcon::TbAlertHexagonFilled => TB_ALERT_HEXAGON_FILLED,
+            #[cfg(feature = "TbAlertHexagonOff")]
+            TbIcon::TbAlertHexagonOff => TB_ALERT_HEXAGON_OFF,
             #[cfg(feature = "TbAlertOctagon")]
             TbIcon::TbAlertOctagon => TB_ALERT_OCTAGON,
             #[cfg(feature = "TbAlertOctagonFilled")]
             TbIcon::TbAlertOctagonFilled => TB_ALERT_OCTAGON_FILLED,
             #[cfg(feature = "TbAlertSmall")]
             TbIcon::TbAlertSmall => TB_ALERT_SMALL,
+            #[cfg(feature = "TbAlertSmallOff")]
+            TbIcon::TbAlertSmallOff => TB_ALERT_SMALL_OFF,
             #[cfg(feature = "TbAlertSquare")]
             TbIcon::TbAlertSquare => TB_ALERT_SQUARE,
             #[cfg(feature = "TbAlertSquareFilled")]
@@ -86179,10 +97330,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlertSquareRounded => TB_ALERT_SQUARE_ROUNDED,
             #[cfg(feature = "TbAlertSquareRoundedFilled")]
             TbIcon::TbAlertSquareRoundedFilled => TB_ALERT_SQUARE_ROUNDED_FILLED,
+            #[cfg(feature = "TbAlertSquareRoundedOff")]
+            TbIcon::TbAlertSquareRoundedOff => TB_ALERT_SQUARE_ROUNDED_OFF,
             #[cfg(feature = "TbAlertTriangle")]
             TbIcon::TbAlertTriangle => TB_ALERT_TRIANGLE,
             #[cfg(feature = "TbAlertTriangleFilled")]
             TbIcon::TbAlertTriangleFilled => TB_ALERT_TRIANGLE_FILLED,
+            #[cfg(feature = "TbAlertTriangleOff")]
+            TbIcon::TbAlertTriangleOff => TB_ALERT_TRIANGLE_OFF,
             #[cfg(feature = "TbAlien")]
             TbIcon::TbAlien => TB_ALIEN,
             #[cfg(feature = "TbAlienFilled")]
@@ -86199,10 +97354,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlignBoxBottomRight => TB_ALIGN_BOX_BOTTOM_RIGHT,
             #[cfg(feature = "TbAlignBoxBottomRightFilled")]
             TbIcon::TbAlignBoxBottomRightFilled => TB_ALIGN_BOX_BOTTOM_RIGHT_FILLED,
+            #[cfg(feature = "TbAlignBoxCenterBottom")]
+            TbIcon::TbAlignBoxCenterBottom => TB_ALIGN_BOX_CENTER_BOTTOM,
             #[cfg(feature = "TbAlignBoxCenterMiddle")]
             TbIcon::TbAlignBoxCenterMiddle => TB_ALIGN_BOX_CENTER_MIDDLE,
             #[cfg(feature = "TbAlignBoxCenterMiddleFilled")]
             TbIcon::TbAlignBoxCenterMiddleFilled => TB_ALIGN_BOX_CENTER_MIDDLE_FILLED,
+            #[cfg(feature = "TbAlignBoxCenterStretch")]
+            TbIcon::TbAlignBoxCenterStretch => TB_ALIGN_BOX_CENTER_STRETCH,
+            #[cfg(feature = "TbAlignBoxCenterTop")]
+            TbIcon::TbAlignBoxCenterTop => TB_ALIGN_BOX_CENTER_TOP,
             #[cfg(feature = "TbAlignBoxLeftBottom")]
             TbIcon::TbAlignBoxLeftBottom => TB_ALIGN_BOX_LEFT_BOTTOM,
             #[cfg(feature = "TbAlignBoxLeftBottomFilled")]
@@ -86211,6 +97372,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlignBoxLeftMiddle => TB_ALIGN_BOX_LEFT_MIDDLE,
             #[cfg(feature = "TbAlignBoxLeftMiddleFilled")]
             TbIcon::TbAlignBoxLeftMiddleFilled => TB_ALIGN_BOX_LEFT_MIDDLE_FILLED,
+            #[cfg(feature = "TbAlignBoxLeftStretch")]
+            TbIcon::TbAlignBoxLeftStretch => TB_ALIGN_BOX_LEFT_STRETCH,
             #[cfg(feature = "TbAlignBoxLeftTop")]
             TbIcon::TbAlignBoxLeftTop => TB_ALIGN_BOX_LEFT_TOP,
             #[cfg(feature = "TbAlignBoxLeftTopFilled")]
@@ -86223,6 +97386,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlignBoxRightMiddle => TB_ALIGN_BOX_RIGHT_MIDDLE,
             #[cfg(feature = "TbAlignBoxRightMiddleFilled")]
             TbIcon::TbAlignBoxRightMiddleFilled => TB_ALIGN_BOX_RIGHT_MIDDLE_FILLED,
+            #[cfg(feature = "TbAlignBoxRightStretch")]
+            TbIcon::TbAlignBoxRightStretch => TB_ALIGN_BOX_RIGHT_STRETCH,
             #[cfg(feature = "TbAlignBoxRightTop")]
             TbIcon::TbAlignBoxRightTop => TB_ALIGN_BOX_RIGHT_TOP,
             #[cfg(feature = "TbAlignBoxRightTopFilled")]
@@ -86255,6 +97420,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAlphabetGreek => TB_ALPHABET_GREEK,
             #[cfg(feature = "TbAlphabetLatin")]
             TbIcon::TbAlphabetLatin => TB_ALPHABET_LATIN,
+            #[cfg(feature = "TbAlt")]
+            TbIcon::TbAlt => TB_ALT,
             #[cfg(feature = "TbAmbulance")]
             TbIcon::TbAmbulance => TB_AMBULANCE,
             #[cfg(feature = "TbAmpersand")]
@@ -86313,8 +97480,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbAppsFilled => TB_APPS_FILLED,
             #[cfg(feature = "TbAppsOff")]
             TbIcon::TbAppsOff => TB_APPS_OFF,
+            #[cfg(feature = "TbArcheryArrow")]
+            TbIcon::TbArcheryArrow => TB_ARCHERY_ARROW,
             #[cfg(feature = "TbArchive")]
             TbIcon::TbArchive => TB_ARCHIVE,
+            #[cfg(feature = "TbArchiveFilled")]
+            TbIcon::TbArchiveFilled => TB_ARCHIVE_FILLED,
             #[cfg(feature = "TbArchiveOff")]
             TbIcon::TbArchiveOff => TB_ARCHIVE_OFF,
             #[cfg(feature = "TbArmchair")]
@@ -86363,6 +97534,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbArrowBadgeUp => TB_ARROW_BADGE_UP,
             #[cfg(feature = "TbArrowBadgeUpFilled")]
             TbIcon::TbArrowBadgeUpFilled => TB_ARROW_BADGE_UP_FILLED,
+            #[cfg(feature = "TbArrowBarBoth")]
+            TbIcon::TbArrowBarBoth => TB_ARROW_BAR_BOTH,
             #[cfg(feature = "TbArrowBarDown")]
             TbIcon::TbArrowBarDown => TB_ARROW_BAR_DOWN,
             #[cfg(feature = "TbArrowBarLeft")]
@@ -86437,6 +97610,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbArrowBigUpLinesFilled => TB_ARROW_BIG_UP_LINES_FILLED,
             #[cfg(feature = "TbArrowBounce")]
             TbIcon::TbArrowBounce => TB_ARROW_BOUNCE,
+            #[cfg(feature = "TbArrowCapsule")]
+            TbIcon::TbArrowCapsule => TB_ARROW_CAPSULE,
             #[cfg(feature = "TbArrowCurveLeft")]
             TbIcon::TbArrowCurveLeft => TB_ARROW_CURVE_LEFT,
             #[cfg(feature = "TbArrowCurveRight")]
@@ -86683,6 +97858,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbArrowsVertical => TB_ARROWS_VERTICAL,
             #[cfg(feature = "TbArtboard")]
             TbIcon::TbArtboard => TB_ARTBOARD,
+            #[cfg(feature = "TbArtboardFilled")]
+            TbIcon::TbArtboardFilled => TB_ARTBOARD_FILLED,
             #[cfg(feature = "TbArtboardOff")]
             TbIcon::TbArtboardOff => TB_ARTBOARD_OFF,
             #[cfg(feature = "TbArticle")]
@@ -86747,6 +97924,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBackpack => TB_BACKPACK,
             #[cfg(feature = "TbBackpackOff")]
             TbIcon::TbBackpackOff => TB_BACKPACK_OFF,
+            #[cfg(feature = "TbBackslash")]
+            TbIcon::TbBackslash => TB_BACKSLASH,
             #[cfg(feature = "TbBackspace")]
             TbIcon::TbBackspace => TB_BACKSPACE,
             #[cfg(feature = "TbBackspaceFilled")]
@@ -86809,10 +97988,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBallVolleyball => TB_BALL_VOLLEYBALL,
             #[cfg(feature = "TbBalloon")]
             TbIcon::TbBalloon => TB_BALLOON,
+            #[cfg(feature = "TbBalloonFilled")]
+            TbIcon::TbBalloonFilled => TB_BALLOON_FILLED,
             #[cfg(feature = "TbBalloonOff")]
             TbIcon::TbBalloonOff => TB_BALLOON_OFF,
             #[cfg(feature = "TbBallpen")]
             TbIcon::TbBallpen => TB_BALLPEN,
+            #[cfg(feature = "TbBallpenFilled")]
+            TbIcon::TbBallpenFilled => TB_BALLPEN_FILLED,
             #[cfg(feature = "TbBallpenOff")]
             TbIcon::TbBallpenOff => TB_BALLPEN_OFF,
             #[cfg(feature = "TbBan")]
@@ -86849,10 +98032,50 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBaselineDensitySmall => TB_BASELINE_DENSITY_SMALL,
             #[cfg(feature = "TbBasket")]
             TbIcon::TbBasket => TB_BASKET,
+            #[cfg(feature = "TbBasketBolt")]
+            TbIcon::TbBasketBolt => TB_BASKET_BOLT,
+            #[cfg(feature = "TbBasketCancel")]
+            TbIcon::TbBasketCancel => TB_BASKET_CANCEL,
+            #[cfg(feature = "TbBasketCheck")]
+            TbIcon::TbBasketCheck => TB_BASKET_CHECK,
+            #[cfg(feature = "TbBasketCode")]
+            TbIcon::TbBasketCode => TB_BASKET_CODE,
+            #[cfg(feature = "TbBasketCog")]
+            TbIcon::TbBasketCog => TB_BASKET_COG,
+            #[cfg(feature = "TbBasketDiscount")]
+            TbIcon::TbBasketDiscount => TB_BASKET_DISCOUNT,
+            #[cfg(feature = "TbBasketDollar")]
+            TbIcon::TbBasketDollar => TB_BASKET_DOLLAR,
+            #[cfg(feature = "TbBasketDown")]
+            TbIcon::TbBasketDown => TB_BASKET_DOWN,
+            #[cfg(feature = "TbBasketExclamation")]
+            TbIcon::TbBasketExclamation => TB_BASKET_EXCLAMATION,
             #[cfg(feature = "TbBasketFilled")]
             TbIcon::TbBasketFilled => TB_BASKET_FILLED,
+            #[cfg(feature = "TbBasketHeart")]
+            TbIcon::TbBasketHeart => TB_BASKET_HEART,
+            #[cfg(feature = "TbBasketMinus")]
+            TbIcon::TbBasketMinus => TB_BASKET_MINUS,
             #[cfg(feature = "TbBasketOff")]
             TbIcon::TbBasketOff => TB_BASKET_OFF,
+            #[cfg(feature = "TbBasketPause")]
+            TbIcon::TbBasketPause => TB_BASKET_PAUSE,
+            #[cfg(feature = "TbBasketPin")]
+            TbIcon::TbBasketPin => TB_BASKET_PIN,
+            #[cfg(feature = "TbBasketPlus")]
+            TbIcon::TbBasketPlus => TB_BASKET_PLUS,
+            #[cfg(feature = "TbBasketQuestion")]
+            TbIcon::TbBasketQuestion => TB_BASKET_QUESTION,
+            #[cfg(feature = "TbBasketSearch")]
+            TbIcon::TbBasketSearch => TB_BASKET_SEARCH,
+            #[cfg(feature = "TbBasketShare")]
+            TbIcon::TbBasketShare => TB_BASKET_SHARE,
+            #[cfg(feature = "TbBasketStar")]
+            TbIcon::TbBasketStar => TB_BASKET_STAR,
+            #[cfg(feature = "TbBasketUp")]
+            TbIcon::TbBasketUp => TB_BASKET_UP,
+            #[cfg(feature = "TbBasketX")]
+            TbIcon::TbBasketX => TB_BASKET_X,
             #[cfg(feature = "TbBat")]
             TbIcon::TbBat => TB_BAT,
             #[cfg(feature = "TbBath")]
@@ -87029,6 +98252,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBoltOff => TB_BOLT_OFF,
             #[cfg(feature = "TbBomb")]
             TbIcon::TbBomb => TB_BOMB,
+            #[cfg(feature = "TbBombFilled")]
+            TbIcon::TbBombFilled => TB_BOMB_FILLED,
             #[cfg(feature = "TbBone")]
             TbIcon::TbBone => TB_BONE,
             #[cfg(feature = "TbBoneOff")]
@@ -87043,6 +98268,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBook2 => TB_BOOK2,
             #[cfg(feature = "TbBookDownload")]
             TbIcon::TbBookDownload => TB_BOOK_DOWNLOAD,
+            #[cfg(feature = "TbBookFilled")]
+            TbIcon::TbBookFilled => TB_BOOK_FILLED,
             #[cfg(feature = "TbBookOff")]
             TbIcon::TbBookOff => TB_BOOK_OFF,
             #[cfg(feature = "TbBookUpload")]
@@ -87051,6 +98278,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBookmark => TB_BOOKMARK,
             #[cfg(feature = "TbBookmarkEdit")]
             TbIcon::TbBookmarkEdit => TB_BOOKMARK_EDIT,
+            #[cfg(feature = "TbBookmarkFilled")]
+            TbIcon::TbBookmarkFilled => TB_BOOKMARK_FILLED,
             #[cfg(feature = "TbBookmarkMinus")]
             TbIcon::TbBookmarkMinus => TB_BOOKMARK_MINUS,
             #[cfg(feature = "TbBookmarkOff")]
@@ -87061,6 +98290,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBookmarkQuestion => TB_BOOKMARK_QUESTION,
             #[cfg(feature = "TbBookmarks")]
             TbIcon::TbBookmarks => TB_BOOKMARKS,
+            #[cfg(feature = "TbBookmarksFilled")]
+            TbIcon::TbBookmarksFilled => TB_BOOKMARKS_FILLED,
             #[cfg(feature = "TbBookmarksOff")]
             TbIcon::TbBookmarksOff => TB_BOOKMARKS_OFF,
             #[cfg(feature = "TbBooks")]
@@ -87099,34 +98330,58 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBorderVertical => TB_BORDER_VERTICAL,
             #[cfg(feature = "TbBottle")]
             TbIcon::TbBottle => TB_BOTTLE,
+            #[cfg(feature = "TbBottleFilled")]
+            TbIcon::TbBottleFilled => TB_BOTTLE_FILLED,
             #[cfg(feature = "TbBottleOff")]
             TbIcon::TbBottleOff => TB_BOTTLE_OFF,
             #[cfg(feature = "TbBounceLeft")]
             TbIcon::TbBounceLeft => TB_BOUNCE_LEFT,
+            #[cfg(feature = "TbBounceLeftFilled")]
+            TbIcon::TbBounceLeftFilled => TB_BOUNCE_LEFT_FILLED,
             #[cfg(feature = "TbBounceRight")]
             TbIcon::TbBounceRight => TB_BOUNCE_RIGHT,
+            #[cfg(feature = "TbBounceRightFilled")]
+            TbIcon::TbBounceRightFilled => TB_BOUNCE_RIGHT_FILLED,
             #[cfg(feature = "TbBow")]
             TbIcon::TbBow => TB_BOW,
             #[cfg(feature = "TbBowl")]
             TbIcon::TbBowl => TB_BOWL,
+            #[cfg(feature = "TbBowlFilled")]
+            TbIcon::TbBowlFilled => TB_BOWL_FILLED,
             #[cfg(feature = "TbBox")]
             TbIcon::TbBox => TB_BOX,
             #[cfg(feature = "TbBoxAlignBottom")]
             TbIcon::TbBoxAlignBottom => TB_BOX_ALIGN_BOTTOM,
+            #[cfg(feature = "TbBoxAlignBottomFilled")]
+            TbIcon::TbBoxAlignBottomFilled => TB_BOX_ALIGN_BOTTOM_FILLED,
             #[cfg(feature = "TbBoxAlignBottomLeft")]
             TbIcon::TbBoxAlignBottomLeft => TB_BOX_ALIGN_BOTTOM_LEFT,
+            #[cfg(feature = "TbBoxAlignBottomLeftFilled")]
+            TbIcon::TbBoxAlignBottomLeftFilled => TB_BOX_ALIGN_BOTTOM_LEFT_FILLED,
             #[cfg(feature = "TbBoxAlignBottomRight")]
             TbIcon::TbBoxAlignBottomRight => TB_BOX_ALIGN_BOTTOM_RIGHT,
+            #[cfg(feature = "TbBoxAlignBottomRightFilled")]
+            TbIcon::TbBoxAlignBottomRightFilled => TB_BOX_ALIGN_BOTTOM_RIGHT_FILLED,
             #[cfg(feature = "TbBoxAlignLeft")]
             TbIcon::TbBoxAlignLeft => TB_BOX_ALIGN_LEFT,
+            #[cfg(feature = "TbBoxAlignLeftFilled")]
+            TbIcon::TbBoxAlignLeftFilled => TB_BOX_ALIGN_LEFT_FILLED,
             #[cfg(feature = "TbBoxAlignRight")]
             TbIcon::TbBoxAlignRight => TB_BOX_ALIGN_RIGHT,
+            #[cfg(feature = "TbBoxAlignRightFilled")]
+            TbIcon::TbBoxAlignRightFilled => TB_BOX_ALIGN_RIGHT_FILLED,
             #[cfg(feature = "TbBoxAlignTop")]
             TbIcon::TbBoxAlignTop => TB_BOX_ALIGN_TOP,
+            #[cfg(feature = "TbBoxAlignTopFilled")]
+            TbIcon::TbBoxAlignTopFilled => TB_BOX_ALIGN_TOP_FILLED,
             #[cfg(feature = "TbBoxAlignTopLeft")]
             TbIcon::TbBoxAlignTopLeft => TB_BOX_ALIGN_TOP_LEFT,
+            #[cfg(feature = "TbBoxAlignTopLeftFilled")]
+            TbIcon::TbBoxAlignTopLeftFilled => TB_BOX_ALIGN_TOP_LEFT_FILLED,
             #[cfg(feature = "TbBoxAlignTopRight")]
             TbIcon::TbBoxAlignTopRight => TB_BOX_ALIGN_TOP_RIGHT,
+            #[cfg(feature = "TbBoxAlignTopRightFilled")]
+            TbIcon::TbBoxAlignTopRightFilled => TB_BOX_ALIGN_TOP_RIGHT_FILLED,
             #[cfg(feature = "TbBoxMargin")]
             TbIcon::TbBoxMargin => TB_BOX_MARGIN,
             #[cfg(feature = "TbBoxModel")]
@@ -87213,6 +98468,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandAndroid => TB_BRAND_ANDROID,
             #[cfg(feature = "TbBrandAngular")]
             TbIcon::TbBrandAngular => TB_BRAND_ANGULAR,
+            #[cfg(feature = "TbBrandAnsible")]
+            TbIcon::TbBrandAnsible => TB_BRAND_ANSIBLE,
             #[cfg(feature = "TbBrandAo3")]
             TbIcon::TbBrandAo3 => TB_BRAND_AO3,
             #[cfg(feature = "TbBrandAppgallery")]
@@ -87283,6 +98540,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandCashapp => TB_BRAND_CASHAPP,
             #[cfg(feature = "TbBrandChrome")]
             TbIcon::TbBrandChrome => TB_BRAND_CHROME,
+            #[cfg(feature = "TbBrandCinema4d")]
+            TbIcon::TbBrandCinema4d => TB_BRAND_CINEMA4D,
             #[cfg(feature = "TbBrandCitymapper")]
             TbIcon::TbBrandCitymapper => TB_BRAND_CITYMAPPER,
             #[cfg(feature = "TbBrandCloudflare")]
@@ -87307,6 +98566,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandCouchsurfing => TB_BRAND_COUCHSURFING,
             #[cfg(feature = "TbBrandCpp")]
             TbIcon::TbBrandCpp => TB_BRAND_CPP,
+            #[cfg(feature = "TbBrandCraft")]
+            TbIcon::TbBrandCraft => TB_BRAND_CRAFT,
             #[cfg(feature = "TbBrandCrunchbase")]
             TbIcon::TbBrandCrunchbase => TB_BRAND_CRUNCHBASE,
             #[cfg(feature = "TbBrandCss3")]
@@ -87321,6 +98582,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandCypress => TB_BRAND_CYPRESS,
             #[cfg(feature = "TbBrandD3")]
             TbIcon::TbBrandD3 => TB_BRAND_D3,
+            #[cfg(feature = "TbBrandDatabricks")]
+            TbIcon::TbBrandDatabricks => TB_BRAND_DATABRICKS,
             #[cfg(feature = "TbBrandDaysCounter")]
             TbIcon::TbBrandDaysCounter => TB_BRAND_DAYS_COUNTER,
             #[cfg(feature = "TbBrandDcos")]
@@ -87337,6 +98600,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandDenodo => TB_BRAND_DENODO,
             #[cfg(feature = "TbBrandDeviantart")]
             TbIcon::TbBrandDeviantart => TB_BRAND_DEVIANTART,
+            #[cfg(feature = "TbBrandDigg")]
+            TbIcon::TbBrandDigg => TB_BRAND_DIGG,
             #[cfg(feature = "TbBrandDingtalk")]
             TbIcon::TbBrandDingtalk => TB_BRAND_DINGTALK,
             #[cfg(feature = "TbBrandDiscord")]
@@ -87369,6 +98634,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandEdge => TB_BRAND_EDGE,
             #[cfg(feature = "TbBrandElastic")]
             TbIcon::TbBrandElastic => TB_BRAND_ELASTIC,
+            #[cfg(feature = "TbBrandElectronicArts")]
+            TbIcon::TbBrandElectronicArts => TB_BRAND_ELECTRONIC_ARTS,
             #[cfg(feature = "TbBrandEmber")]
             TbIcon::TbBrandEmber => TB_BRAND_EMBER,
             #[cfg(feature = "TbBrandEnvato")]
@@ -87381,8 +98648,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandFacebook => TB_BRAND_FACEBOOK,
             #[cfg(feature = "TbBrandFacebookFilled")]
             TbIcon::TbBrandFacebookFilled => TB_BRAND_FACEBOOK_FILLED,
+            #[cfg(feature = "TbBrandFeedly")]
+            TbIcon::TbBrandFeedly => TB_BRAND_FEEDLY,
             #[cfg(feature = "TbBrandFigma")]
             TbIcon::TbBrandFigma => TB_BRAND_FIGMA,
+            #[cfg(feature = "TbBrandFilezilla")]
+            TbIcon::TbBrandFilezilla => TB_BRAND_FILEZILLA,
             #[cfg(feature = "TbBrandFinder")]
             TbIcon::TbBrandFinder => TB_BRAND_FINDER,
             #[cfg(feature = "TbBrandFirebase")]
@@ -87481,6 +98752,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandJavascript => TB_BRAND_JAVASCRIPT,
             #[cfg(feature = "TbBrandJuejin")]
             TbIcon::TbBrandJuejin => TB_BRAND_JUEJIN,
+            #[cfg(feature = "TbBrandKbin")]
+            TbIcon::TbBrandKbin => TB_BRAND_KBIN,
             #[cfg(feature = "TbBrandKick")]
             TbIcon::TbBrandKick => TB_BRAND_KICK,
             #[cfg(feature = "TbBrandKickstarter")]
@@ -87519,12 +98792,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandMcdonalds => TB_BRAND_MCDONALDS,
             #[cfg(feature = "TbBrandMedium")]
             TbIcon::TbBrandMedium => TB_BRAND_MEDIUM,
+            #[cfg(feature = "TbBrandMeetup")]
+            TbIcon::TbBrandMeetup => TB_BRAND_MEETUP,
             #[cfg(feature = "TbBrandMercedes")]
             TbIcon::TbBrandMercedes => TB_BRAND_MERCEDES,
             #[cfg(feature = "TbBrandMessenger")]
             TbIcon::TbBrandMessenger => TB_BRAND_MESSENGER,
             #[cfg(feature = "TbBrandMeta")]
             TbIcon::TbBrandMeta => TB_BRAND_META,
+            #[cfg(feature = "TbBrandMinecraft")]
+            TbIcon::TbBrandMinecraft => TB_BRAND_MINECRAFT,
             #[cfg(feature = "TbBrandMiniprogram")]
             TbIcon::TbBrandMiniprogram => TB_BRAND_MINIPROGRAM,
             #[cfg(feature = "TbBrandMixpanel")]
@@ -87553,6 +98830,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandNextcloud => TB_BRAND_NEXTCLOUD,
             #[cfg(feature = "TbBrandNextjs")]
             TbIcon::TbBrandNextjs => TB_BRAND_NEXTJS,
+            #[cfg(feature = "TbBrandNodejs")]
+            TbIcon::TbBrandNodejs => TB_BRAND_NODEJS,
             #[cfg(feature = "TbBrandNordVpn")]
             TbIcon::TbBrandNordVpn => TB_BRAND_NORD_VPN,
             #[cfg(feature = "TbBrandNotion")]
@@ -87583,6 +98862,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandOpera => TB_BRAND_OPERA,
             #[cfg(feature = "TbBrandPagekit")]
             TbIcon::TbBrandPagekit => TB_BRAND_PAGEKIT,
+            #[cfg(feature = "TbBrandParsinta")]
+            TbIcon::TbBrandParsinta => TB_BRAND_PARSINTA,
             #[cfg(feature = "TbBrandPatreon")]
             TbIcon::TbBrandPatreon => TB_BRAND_PATREON,
             #[cfg(feature = "TbBrandPaypal")]
@@ -87637,6 +98918,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandRedux => TB_BRAND_REDUX,
             #[cfg(feature = "TbBrandRevolut")]
             TbIcon::TbBrandRevolut => TB_BRAND_REVOLUT,
+            #[cfg(feature = "TbBrandRumble")]
+            TbIcon::TbBrandRumble => TB_BRAND_RUMBLE,
             #[cfg(feature = "TbBrandRust")]
             TbIcon::TbBrandRust => TB_BRAND_RUST,
             #[cfg(feature = "TbBrandSafari")]
@@ -87673,6 +98956,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandSoundcloud => TB_BRAND_SOUNDCLOUD,
             #[cfg(feature = "TbBrandSpacehey")]
             TbIcon::TbBrandSpacehey => TB_BRAND_SPACEHEY,
+            #[cfg(feature = "TbBrandSpeedtest")]
+            TbIcon::TbBrandSpeedtest => TB_BRAND_SPEEDTEST,
             #[cfg(feature = "TbBrandSpotify")]
             TbIcon::TbBrandSpotify => TB_BRAND_SPOTIFY,
             #[cfg(feature = "TbBrandStackoverflow")]
@@ -87715,6 +99000,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandTailwind => TB_BRAND_TAILWIND,
             #[cfg(feature = "TbBrandTaobao")]
             TbIcon::TbBrandTaobao => TB_BRAND_TAOBAO,
+            #[cfg(feature = "TbBrandTeams")]
+            TbIcon::TbBrandTeams => TB_BRAND_TEAMS,
             #[cfg(feature = "TbBrandTed")]
             TbIcon::TbBrandTed => TB_BRAND_TED,
             #[cfg(feature = "TbBrandTelegram")]
@@ -87723,14 +99010,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandTerraform => TB_BRAND_TERRAFORM,
             #[cfg(feature = "TbBrandTether")]
             TbIcon::TbBrandTether => TB_BRAND_TETHER,
+            #[cfg(feature = "TbBrandThreads")]
+            TbIcon::TbBrandThreads => TB_BRAND_THREADS,
             #[cfg(feature = "TbBrandThreejs")]
             TbIcon::TbBrandThreejs => TB_BRAND_THREEJS,
             #[cfg(feature = "TbBrandTidal")]
             TbIcon::TbBrandTidal => TB_BRAND_TIDAL,
-            #[cfg(feature = "TbBrandTiktoFilled")]
-            TbIcon::TbBrandTiktoFilled => TB_BRAND_TIKTO_FILLED,
             #[cfg(feature = "TbBrandTiktok")]
             TbIcon::TbBrandTiktok => TB_BRAND_TIKTOK,
+            #[cfg(feature = "TbBrandTiktokFilled")]
+            TbIcon::TbBrandTiktokFilled => TB_BRAND_TIKTOK_FILLED,
             #[cfg(feature = "TbBrandTinder")]
             TbIcon::TbBrandTinder => TB_BRAND_TINDER,
             #[cfg(feature = "TbBrandTopbuzz")]
@@ -87783,6 +99072,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandVivaldi => TB_BRAND_VIVALDI,
             #[cfg(feature = "TbBrandVk")]
             TbIcon::TbBrandVk => TB_BRAND_VK,
+            #[cfg(feature = "TbBrandVlc")]
+            TbIcon::TbBrandVlc => TB_BRAND_VLC,
             #[cfg(feature = "TbBrandVolkswagen")]
             TbIcon::TbBrandVolkswagen => TB_BRAND_VOLKSWAGEN,
             #[cfg(feature = "TbBrandVsco")]
@@ -87803,6 +99094,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandWeibo => TB_BRAND_WEIBO,
             #[cfg(feature = "TbBrandWhatsapp")]
             TbIcon::TbBrandWhatsapp => TB_BRAND_WHATSAPP,
+            #[cfg(feature = "TbBrandWikipedia")]
+            TbIcon::TbBrandWikipedia => TB_BRAND_WIKIPEDIA,
             #[cfg(feature = "TbBrandWindows")]
             TbIcon::TbBrandWindows => TB_BRAND_WINDOWS,
             #[cfg(feature = "TbBrandWindy")]
@@ -87813,18 +99106,30 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrandWix => TB_BRAND_WIX,
             #[cfg(feature = "TbBrandWordpress")]
             TbIcon::TbBrandWordpress => TB_BRAND_WORDPRESS,
+            #[cfg(feature = "TbBrandX")]
+            TbIcon::TbBrandX => TB_BRAND_X,
+            #[cfg(feature = "TbBrandXFilled")]
+            TbIcon::TbBrandXFilled => TB_BRAND_X_FILLED,
+            #[cfg(feature = "TbBrandXamarin")]
+            TbIcon::TbBrandXamarin => TB_BRAND_XAMARIN,
             #[cfg(feature = "TbBrandXbox")]
             TbIcon::TbBrandXbox => TB_BRAND_XBOX,
+            #[cfg(feature = "TbBrandXdeep")]
+            TbIcon::TbBrandXdeep => TB_BRAND_XDEEP,
             #[cfg(feature = "TbBrandXing")]
             TbIcon::TbBrandXing => TB_BRAND_XING,
             #[cfg(feature = "TbBrandYahoo")]
             TbIcon::TbBrandYahoo => TB_BRAND_YAHOO,
+            #[cfg(feature = "TbBrandYandex")]
+            TbIcon::TbBrandYandex => TB_BRAND_YANDEX,
             #[cfg(feature = "TbBrandYatse")]
             TbIcon::TbBrandYatse => TB_BRAND_YATSE,
             #[cfg(feature = "TbBrandYcombinator")]
             TbIcon::TbBrandYcombinator => TB_BRAND_YCOMBINATOR,
             #[cfg(feature = "TbBrandYoutube")]
             TbIcon::TbBrandYoutube => TB_BRAND_YOUTUBE,
+            #[cfg(feature = "TbBrandYoutubeFilled")]
+            TbIcon::TbBrandYoutubeFilled => TB_BRAND_YOUTUBE_FILLED,
             #[cfg(feature = "TbBrandYoutubeKids")]
             TbIcon::TbBrandYoutubeKids => TB_BRAND_YOUTUBE_KIDS,
             #[cfg(feature = "TbBrandZalando")]
@@ -87847,6 +99152,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBreadOff => TB_BREAD_OFF,
             #[cfg(feature = "TbBriefcase")]
             TbIcon::TbBriefcase => TB_BRIEFCASE,
+            #[cfg(feature = "TbBriefcase2")]
+            TbIcon::TbBriefcase2 => TB_BRIEFCASE2,
             #[cfg(feature = "TbBriefcaseOff")]
             TbIcon::TbBriefcaseOff => TB_BRIEFCASE_OFF,
             #[cfg(feature = "TbBrightness")]
@@ -87855,12 +99162,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbBrightness2 => TB_BRIGHTNESS2,
             #[cfg(feature = "TbBrightnessDown")]
             TbIcon::TbBrightnessDown => TB_BRIGHTNESS_DOWN,
+            #[cfg(feature = "TbBrightnessDownFilled")]
+            TbIcon::TbBrightnessDownFilled => TB_BRIGHTNESS_DOWN_FILLED,
             #[cfg(feature = "TbBrightnessHalf")]
             TbIcon::TbBrightnessHalf => TB_BRIGHTNESS_HALF,
             #[cfg(feature = "TbBrightnessOff")]
             TbIcon::TbBrightnessOff => TB_BRIGHTNESS_OFF,
             #[cfg(feature = "TbBrightnessUp")]
             TbIcon::TbBrightnessUp => TB_BRIGHTNESS_UP,
+            #[cfg(feature = "TbBrightnessUpFilled")]
+            TbIcon::TbBrightnessUpFilled => TB_BRIGHTNESS_UP_FILLED,
             #[cfg(feature = "TbBroadcast")]
             TbIcon::TbBroadcast => TB_BROADCAST,
             #[cfg(feature = "TbBroadcastOff")]
@@ -87963,6 +99274,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbButterfly => TB_BUTTERFLY,
             #[cfg(feature = "TbCactus")]
             TbIcon::TbCactus => TB_CACTUS,
+            #[cfg(feature = "TbCactusFilled")]
+            TbIcon::TbCactusFilled => TB_CACTUS_FILLED,
             #[cfg(feature = "TbCactusOff")]
             TbIcon::TbCactusOff => TB_CACTUS_OFF,
             #[cfg(feature = "TbCake")]
@@ -87971,6 +99284,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCakeOff => TB_CAKE_OFF,
             #[cfg(feature = "TbCalculator")]
             TbIcon::TbCalculator => TB_CALCULATOR,
+            #[cfg(feature = "TbCalculatorFilled")]
+            TbIcon::TbCalculatorFilled => TB_CALCULATOR_FILLED,
             #[cfg(feature = "TbCalculatorOff")]
             TbIcon::TbCalculatorOff => TB_CALCULATOR_OFF,
             #[cfg(feature = "TbCalendar")]
@@ -87995,6 +99310,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCalendarEvent => TB_CALENDAR_EVENT,
             #[cfg(feature = "TbCalendarExclamation")]
             TbIcon::TbCalendarExclamation => TB_CALENDAR_EXCLAMATION,
+            #[cfg(feature = "TbCalendarFilled")]
+            TbIcon::TbCalendarFilled => TB_CALENDAR_FILLED,
             #[cfg(feature = "TbCalendarHeart")]
             TbIcon::TbCalendarHeart => TB_CALENDAR_HEART,
             #[cfg(feature = "TbCalendarMinus")]
@@ -88009,6 +99326,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCalendarPlus => TB_CALENDAR_PLUS,
             #[cfg(feature = "TbCalendarQuestion")]
             TbIcon::TbCalendarQuestion => TB_CALENDAR_QUESTION,
+            #[cfg(feature = "TbCalendarRepeat")]
+            TbIcon::TbCalendarRepeat => TB_CALENDAR_REPEAT,
             #[cfg(feature = "TbCalendarSearch")]
             TbIcon::TbCalendarSearch => TB_CALENDAR_SEARCH,
             #[cfg(feature = "TbCalendarShare")]
@@ -88075,8 +99394,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCamper => TB_CAMPER,
             #[cfg(feature = "TbCampfire")]
             TbIcon::TbCampfire => TB_CAMPFIRE,
+            #[cfg(feature = "TbCampfireFilled")]
+            TbIcon::TbCampfireFilled => TB_CAMPFIRE_FILLED,
             #[cfg(feature = "TbCandle")]
             TbIcon::TbCandle => TB_CANDLE,
+            #[cfg(feature = "TbCandleFilled")]
+            TbIcon::TbCandleFilled => TB_CANDLE_FILLED,
             #[cfg(feature = "TbCandy")]
             TbIcon::TbCandy => TB_CANDY,
             #[cfg(feature = "TbCandyOff")]
@@ -88085,8 +99408,18 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCane => TB_CANE,
             #[cfg(feature = "TbCannabis")]
             TbIcon::TbCannabis => TB_CANNABIS,
+            #[cfg(feature = "TbCapsule")]
+            TbIcon::TbCapsule => TB_CAPSULE,
+            #[cfg(feature = "TbCapsuleFilled")]
+            TbIcon::TbCapsuleFilled => TB_CAPSULE_FILLED,
+            #[cfg(feature = "TbCapsuleHorizontal")]
+            TbIcon::TbCapsuleHorizontal => TB_CAPSULE_HORIZONTAL,
+            #[cfg(feature = "TbCapsuleHorizontalFilled")]
+            TbIcon::TbCapsuleHorizontalFilled => TB_CAPSULE_HORIZONTAL_FILLED,
             #[cfg(feature = "TbCapture")]
             TbIcon::TbCapture => TB_CAPTURE,
+            #[cfg(feature = "TbCaptureFilled")]
+            TbIcon::TbCaptureFilled => TB_CAPTURE_FILLED,
             #[cfg(feature = "TbCaptureOff")]
             TbIcon::TbCaptureOff => TB_CAPTURE_OFF,
             #[cfg(feature = "TbCar")]
@@ -88095,6 +99428,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCarCrane => TB_CAR_CRANE,
             #[cfg(feature = "TbCarCrash")]
             TbIcon::TbCarCrash => TB_CAR_CRASH,
+            #[cfg(feature = "TbCarGarage")]
+            TbIcon::TbCarGarage => TB_CAR_GARAGE,
             #[cfg(feature = "TbCarOff")]
             TbIcon::TbCarOff => TB_CAR_OFF,
             #[cfg(feature = "TbCarTurbine")]
@@ -88107,18 +99442,36 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCardboardsOff => TB_CARDBOARDS_OFF,
             #[cfg(feature = "TbCards")]
             TbIcon::TbCards => TB_CARDS,
+            #[cfg(feature = "TbCardsFilled")]
+            TbIcon::TbCardsFilled => TB_CARDS_FILLED,
             #[cfg(feature = "TbCaretDown")]
             TbIcon::TbCaretDown => TB_CARET_DOWN,
+            #[cfg(feature = "TbCaretDownFilled")]
+            TbIcon::TbCaretDownFilled => TB_CARET_DOWN_FILLED,
             #[cfg(feature = "TbCaretLeft")]
             TbIcon::TbCaretLeft => TB_CARET_LEFT,
+            #[cfg(feature = "TbCaretLeftFilled")]
+            TbIcon::TbCaretLeftFilled => TB_CARET_LEFT_FILLED,
+            #[cfg(feature = "TbCaretLeftRight")]
+            TbIcon::TbCaretLeftRight => TB_CARET_LEFT_RIGHT,
             #[cfg(feature = "TbCaretRight")]
             TbIcon::TbCaretRight => TB_CARET_RIGHT,
+            #[cfg(feature = "TbCaretRightFilled")]
+            TbIcon::TbCaretRightFilled => TB_CARET_RIGHT_FILLED,
             #[cfg(feature = "TbCaretUp")]
             TbIcon::TbCaretUp => TB_CARET_UP,
+            #[cfg(feature = "TbCaretUpDown")]
+            TbIcon::TbCaretUpDown => TB_CARET_UP_DOWN,
+            #[cfg(feature = "TbCaretUpFilled")]
+            TbIcon::TbCaretUpFilled => TB_CARET_UP_FILLED,
             #[cfg(feature = "TbCarouselHorizontal")]
             TbIcon::TbCarouselHorizontal => TB_CAROUSEL_HORIZONTAL,
+            #[cfg(feature = "TbCarouselHorizontalFilled")]
+            TbIcon::TbCarouselHorizontalFilled => TB_CAROUSEL_HORIZONTAL_FILLED,
             #[cfg(feature = "TbCarouselVertical")]
             TbIcon::TbCarouselVertical => TB_CAROUSEL_VERTICAL,
+            #[cfg(feature = "TbCarouselVerticalFilled")]
+            TbIcon::TbCarouselVerticalFilled => TB_CAROUSEL_VERTICAL_FILLED,
             #[cfg(feature = "TbCarrot")]
             TbIcon::TbCarrot => TB_CARROT,
             #[cfg(feature = "TbCarrotOff")]
@@ -88141,6 +99494,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCategory => TB_CATEGORY,
             #[cfg(feature = "TbCategory2")]
             TbIcon::TbCategory2 => TB_CATEGORY2,
+            #[cfg(feature = "TbCategoryFilled")]
+            TbIcon::TbCategoryFilled => TB_CATEGORY_FILLED,
             #[cfg(feature = "TbCe")]
             TbIcon::TbCe => TB_CE,
             #[cfg(feature = "TbCeOff")]
@@ -88293,6 +99648,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbChessRook => TB_CHESS_ROOK,
             #[cfg(feature = "TbChessRookFilled")]
             TbIcon::TbChessRookFilled => TB_CHESS_ROOK_FILLED,
+            #[cfg(feature = "TbChevronCompactDown")]
+            TbIcon::TbChevronCompactDown => TB_CHEVRON_COMPACT_DOWN,
+            #[cfg(feature = "TbChevronCompactLeft")]
+            TbIcon::TbChevronCompactLeft => TB_CHEVRON_COMPACT_LEFT,
+            #[cfg(feature = "TbChevronCompactRight")]
+            TbIcon::TbChevronCompactRight => TB_CHEVRON_COMPACT_RIGHT,
+            #[cfg(feature = "TbChevronCompactUp")]
+            TbIcon::TbChevronCompactUp => TB_CHEVRON_COMPACT_UP,
             #[cfg(feature = "TbChevronDown")]
             TbIcon::TbChevronDown => TB_CHEVRON_DOWN,
             #[cfg(feature = "TbChevronDownLeft")]
@@ -88301,8 +99664,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbChevronDownRight => TB_CHEVRON_DOWN_RIGHT,
             #[cfg(feature = "TbChevronLeft")]
             TbIcon::TbChevronLeft => TB_CHEVRON_LEFT,
+            #[cfg(feature = "TbChevronLeftPipe")]
+            TbIcon::TbChevronLeftPipe => TB_CHEVRON_LEFT_PIPE,
             #[cfg(feature = "TbChevronRight")]
             TbIcon::TbChevronRight => TB_CHEVRON_RIGHT,
+            #[cfg(feature = "TbChevronRightPipe")]
+            TbIcon::TbChevronRightPipe => TB_CHEVRON_RIGHT_PIPE,
             #[cfg(feature = "TbChevronUp")]
             TbIcon::TbChevronUp => TB_CHEVRON_UP,
             #[cfg(feature = "TbChevronUpLeft")]
@@ -88415,6 +99782,28 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCircleChevronsUp => TB_CIRCLE_CHEVRONS_UP,
             #[cfg(feature = "TbCircleDashed")]
             TbIcon::TbCircleDashed => TB_CIRCLE_DASHED,
+            #[cfg(feature = "TbCircleDashedNumber0")]
+            TbIcon::TbCircleDashedNumber0 => TB_CIRCLE_DASHED_NUMBER0,
+            #[cfg(feature = "TbCircleDashedNumber1")]
+            TbIcon::TbCircleDashedNumber1 => TB_CIRCLE_DASHED_NUMBER1,
+            #[cfg(feature = "TbCircleDashedNumber2")]
+            TbIcon::TbCircleDashedNumber2 => TB_CIRCLE_DASHED_NUMBER2,
+            #[cfg(feature = "TbCircleDashedNumber3")]
+            TbIcon::TbCircleDashedNumber3 => TB_CIRCLE_DASHED_NUMBER3,
+            #[cfg(feature = "TbCircleDashedNumber4")]
+            TbIcon::TbCircleDashedNumber4 => TB_CIRCLE_DASHED_NUMBER4,
+            #[cfg(feature = "TbCircleDashedNumber5")]
+            TbIcon::TbCircleDashedNumber5 => TB_CIRCLE_DASHED_NUMBER5,
+            #[cfg(feature = "TbCircleDashedNumber6")]
+            TbIcon::TbCircleDashedNumber6 => TB_CIRCLE_DASHED_NUMBER6,
+            #[cfg(feature = "TbCircleDashedNumber7")]
+            TbIcon::TbCircleDashedNumber7 => TB_CIRCLE_DASHED_NUMBER7,
+            #[cfg(feature = "TbCircleDashedNumber8")]
+            TbIcon::TbCircleDashedNumber8 => TB_CIRCLE_DASHED_NUMBER8,
+            #[cfg(feature = "TbCircleDashedNumber9")]
+            TbIcon::TbCircleDashedNumber9 => TB_CIRCLE_DASHED_NUMBER9,
+            #[cfg(feature = "TbCircleDashedX")]
+            TbIcon::TbCircleDashedX => TB_CIRCLE_DASHED_X,
             #[cfg(feature = "TbCircleDot")]
             TbIcon::TbCircleDot => TB_CIRCLE_DOT,
             #[cfg(feature = "TbCircleDotFilled")]
@@ -88597,8 +99986,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbClipboardX => TB_CLIPBOARD_X,
             #[cfg(feature = "TbClock")]
             TbIcon::TbClock => TB_CLOCK,
+            #[cfg(feature = "TbClock12")]
+            TbIcon::TbClock12 => TB_CLOCK12,
             #[cfg(feature = "TbClock2")]
             TbIcon::TbClock2 => TB_CLOCK2,
+            #[cfg(feature = "TbClock24")]
+            TbIcon::TbClock24 => TB_CLOCK24,
             #[cfg(feature = "TbClockBolt")]
             TbIcon::TbClockBolt => TB_CLOCK_BOLT,
             #[cfg(feature = "TbClockCancel")]
@@ -88715,6 +100108,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCloudLockOpen => TB_CLOUD_LOCK_OPEN,
             #[cfg(feature = "TbCloudMinus")]
             TbIcon::TbCloudMinus => TB_CLOUD_MINUS,
+            #[cfg(feature = "TbCloudNetwork")]
+            TbIcon::TbCloudNetwork => TB_CLOUD_NETWORK,
             #[cfg(feature = "TbCloudOff")]
             TbIcon::TbCloudOff => TB_CLOUD_OFF,
             #[cfg(feature = "TbCloudPause")]
@@ -88807,6 +100202,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbColumnInsertLeft => TB_COLUMN_INSERT_LEFT,
             #[cfg(feature = "TbColumnInsertRight")]
             TbIcon::TbColumnInsertRight => TB_COLUMN_INSERT_RIGHT,
+            #[cfg(feature = "TbColumnRemove")]
+            TbIcon::TbColumnRemove => TB_COLUMN_REMOVE,
             #[cfg(feature = "TbColumns")]
             TbIcon::TbColumns => TB_COLUMNS,
             #[cfg(feature = "TbColumns1")]
@@ -88837,6 +100234,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCone2 => TB_CONE2,
             #[cfg(feature = "TbConeOff")]
             TbIcon::TbConeOff => TB_CONE_OFF,
+            #[cfg(feature = "TbConePlus")]
+            TbIcon::TbConePlus => TB_CONE_PLUS,
             #[cfg(feature = "TbConfetti")]
             TbIcon::TbConfetti => TB_CONFETTI,
             #[cfg(feature = "TbConfettiOff")]
@@ -88963,6 +100362,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCrystalBall => TB_CRYSTAL_BALL,
             #[cfg(feature = "TbCsv")]
             TbIcon::TbCsv => TB_CSV,
+            #[cfg(feature = "TbCube")]
+            TbIcon::TbCube => TB_CUBE,
+            #[cfg(feature = "TbCubeOff")]
+            TbIcon::TbCubeOff => TB_CUBE_OFF,
+            #[cfg(feature = "TbCubePlus")]
+            TbIcon::TbCubePlus => TB_CUBE_PLUS,
             #[cfg(feature = "TbCubeSend")]
             TbIcon::TbCubeSend => TB_CUBE_SEND,
             #[cfg(feature = "TbCubeUnfolded")]
@@ -89019,6 +100424,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCurrencyEuro => TB_CURRENCY_EURO,
             #[cfg(feature = "TbCurrencyEuroOff")]
             TbIcon::TbCurrencyEuroOff => TB_CURRENCY_EURO_OFF,
+            #[cfg(feature = "TbCurrencyFlorin")]
+            TbIcon::TbCurrencyFlorin => TB_CURRENCY_FLORIN,
             #[cfg(feature = "TbCurrencyForint")]
             TbIcon::TbCurrencyForint => TB_CURRENCY_FORINT,
             #[cfg(feature = "TbCurrencyFrank")]
@@ -89117,6 +100524,10 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbCut => TB_CUT,
             #[cfg(feature = "TbCylinder")]
             TbIcon::TbCylinder => TB_CYLINDER,
+            #[cfg(feature = "TbCylinderOff")]
+            TbIcon::TbCylinderOff => TB_CYLINDER_OFF,
+            #[cfg(feature = "TbCylinderPlus")]
+            TbIcon::TbCylinderPlus => TB_CYLINDER_PLUS,
             #[cfg(feature = "TbDashboard")]
             TbIcon::TbDashboard => TB_DASHBOARD,
             #[cfg(feature = "TbDashboardOff")]
@@ -89175,6 +100586,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDeviceAirpods => TB_DEVICE_AIRPODS,
             #[cfg(feature = "TbDeviceAirpodsCase")]
             TbIcon::TbDeviceAirpodsCase => TB_DEVICE_AIRPODS_CASE,
+            #[cfg(feature = "TbDeviceAirtag")]
+            TbIcon::TbDeviceAirtag => TB_DEVICE_AIRTAG,
             #[cfg(feature = "TbDeviceAnalytics")]
             TbIcon::TbDeviceAnalytics => TB_DEVICE_ANALYTICS,
             #[cfg(feature = "TbDeviceAudioTape")]
@@ -89235,6 +100648,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDeviceDesktopX => TB_DEVICE_DESKTOP_X,
             #[cfg(feature = "TbDeviceFloppy")]
             TbIcon::TbDeviceFloppy => TB_DEVICE_FLOPPY,
+            #[cfg(feature = "TbDeviceGamePad")]
+            TbIcon::TbDeviceGamePad => TB_DEVICE_GAME_PAD,
             #[cfg(feature = "TbDeviceGamepad")]
             TbIcon::TbDeviceGamepad => TB_DEVICE_GAMEPAD,
             #[cfg(feature = "TbDeviceGamepad2")]
@@ -89431,6 +100846,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDeviceNintendo => TB_DEVICE_NINTENDO,
             #[cfg(feature = "TbDeviceNintendoOff")]
             TbIcon::TbDeviceNintendoOff => TB_DEVICE_NINTENDO_OFF,
+            #[cfg(feature = "TbDeviceProjector")]
+            TbIcon::TbDeviceProjector => TB_DEVICE_PROJECTOR,
             #[cfg(feature = "TbDeviceRemote")]
             TbIcon::TbDeviceRemote => TB_DEVICE_REMOTE,
             #[cfg(feature = "TbDeviceSdCard")]
@@ -89497,6 +100914,10 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDeviceTvOff => TB_DEVICE_TV_OFF,
             #[cfg(feature = "TbDeviceTvOld")]
             TbIcon::TbDeviceTvOld => TB_DEVICE_TV_OLD,
+            #[cfg(feature = "TbDeviceUsb")]
+            TbIcon::TbDeviceUsb => TB_DEVICE_USB,
+            #[cfg(feature = "TbDeviceVisionPro")]
+            TbIcon::TbDeviceVisionPro => TB_DEVICE_VISION_PRO,
             #[cfg(feature = "TbDeviceWatch")]
             TbIcon::TbDeviceWatch => TB_DEVICE_WATCH,
             #[cfg(feature = "TbDeviceWatchBolt")]
@@ -89591,6 +101012,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDevicesUp => TB_DEVICES_UP,
             #[cfg(feature = "TbDevicesX")]
             TbIcon::TbDevicesX => TB_DEVICES_X,
+            #[cfg(feature = "TbDiabolo")]
+            TbIcon::TbDiabolo => TB_DIABOLO,
+            #[cfg(feature = "TbDiaboloOff")]
+            TbIcon::TbDiaboloOff => TB_DIABOLO_OFF,
+            #[cfg(feature = "TbDiaboloPlus")]
+            TbIcon::TbDiaboloPlus => TB_DIABOLO_PLUS,
             #[cfg(feature = "TbDialpad")]
             TbIcon::TbDialpad => TB_DIALPAD,
             #[cfg(feature = "TbDialpadFilled")]
@@ -89741,12 +101168,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDropletExclamation => TB_DROPLET_EXCLAMATION,
             #[cfg(feature = "TbDropletFilled")]
             TbIcon::TbDropletFilled => TB_DROPLET_FILLED,
-            #[cfg(feature = "TbDropletFilled2")]
-            TbIcon::TbDropletFilled2 => TB_DROPLET_FILLED2,
             #[cfg(feature = "TbDropletHalf")]
             TbIcon::TbDropletHalf => TB_DROPLET_HALF,
             #[cfg(feature = "TbDropletHalf2")]
             TbIcon::TbDropletHalf2 => TB_DROPLET_HALF2,
+            #[cfg(feature = "TbDropletHalf2Filled")]
+            TbIcon::TbDropletHalf2Filled => TB_DROPLET_HALF2_FILLED,
             #[cfg(feature = "TbDropletHalfFilled")]
             TbIcon::TbDropletHalfFilled => TB_DROPLET_HALF_FILLED,
             #[cfg(feature = "TbDropletHeart")]
@@ -89773,6 +101200,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbDropletUp => TB_DROPLET_UP,
             #[cfg(feature = "TbDropletX")]
             TbIcon::TbDropletX => TB_DROPLET_X,
+            #[cfg(feature = "TbDroplets")]
+            TbIcon::TbDroplets => TB_DROPLETS,
             #[cfg(feature = "TbDualScreen")]
             TbIcon::TbDualScreen => TB_DUAL_SCREEN,
             #[cfg(feature = "TbEPassport")]
@@ -89843,6 +101272,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbError404 => TB_ERROR404,
             #[cfg(feature = "TbError404Off")]
             TbIcon::TbError404Off => TB_ERROR404_OFF,
+            #[cfg(feature = "TbEscalator")]
+            TbIcon::TbEscalator => TB_ESCALATOR,
+            #[cfg(feature = "TbEscalatorDown")]
+            TbIcon::TbEscalatorDown => TB_ESCALATOR_DOWN,
+            #[cfg(feature = "TbEscalatorUp")]
+            TbIcon::TbEscalatorUp => TB_ESCALATOR_UP,
             #[cfg(feature = "TbExchange")]
             TbIcon::TbExchange => TB_EXCHANGE,
             #[cfg(feature = "TbExchangeOff")]
@@ -89877,12 +101312,24 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbExternalLinkOff => TB_EXTERNAL_LINK_OFF,
             #[cfg(feature = "TbEye")]
             TbIcon::TbEye => TB_EYE,
+            #[cfg(feature = "TbEyeBolt")]
+            TbIcon::TbEyeBolt => TB_EYE_BOLT,
+            #[cfg(feature = "TbEyeCancel")]
+            TbIcon::TbEyeCancel => TB_EYE_CANCEL,
             #[cfg(feature = "TbEyeCheck")]
             TbIcon::TbEyeCheck => TB_EYE_CHECK,
             #[cfg(feature = "TbEyeClosed")]
             TbIcon::TbEyeClosed => TB_EYE_CLOSED,
+            #[cfg(feature = "TbEyeCode")]
+            TbIcon::TbEyeCode => TB_EYE_CODE,
             #[cfg(feature = "TbEyeCog")]
             TbIcon::TbEyeCog => TB_EYE_COG,
+            #[cfg(feature = "TbEyeDiscount")]
+            TbIcon::TbEyeDiscount => TB_EYE_DISCOUNT,
+            #[cfg(feature = "TbEyeDollar")]
+            TbIcon::TbEyeDollar => TB_EYE_DOLLAR,
+            #[cfg(feature = "TbEyeDown")]
+            TbIcon::TbEyeDown => TB_EYE_DOWN,
             #[cfg(feature = "TbEyeEdit")]
             TbIcon::TbEyeEdit => TB_EYE_EDIT,
             #[cfg(feature = "TbEyeExclamation")]
@@ -89891,10 +101338,28 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbEyeFilled => TB_EYE_FILLED,
             #[cfg(feature = "TbEyeHeart")]
             TbIcon::TbEyeHeart => TB_EYE_HEART,
+            #[cfg(feature = "TbEyeMinus")]
+            TbIcon::TbEyeMinus => TB_EYE_MINUS,
             #[cfg(feature = "TbEyeOff")]
             TbIcon::TbEyeOff => TB_EYE_OFF,
+            #[cfg(feature = "TbEyePause")]
+            TbIcon::TbEyePause => TB_EYE_PAUSE,
+            #[cfg(feature = "TbEyePin")]
+            TbIcon::TbEyePin => TB_EYE_PIN,
+            #[cfg(feature = "TbEyePlus")]
+            TbIcon::TbEyePlus => TB_EYE_PLUS,
+            #[cfg(feature = "TbEyeQuestion")]
+            TbIcon::TbEyeQuestion => TB_EYE_QUESTION,
+            #[cfg(feature = "TbEyeSearch")]
+            TbIcon::TbEyeSearch => TB_EYE_SEARCH,
+            #[cfg(feature = "TbEyeShare")]
+            TbIcon::TbEyeShare => TB_EYE_SHARE,
+            #[cfg(feature = "TbEyeStar")]
+            TbIcon::TbEyeStar => TB_EYE_STAR,
             #[cfg(feature = "TbEyeTable")]
             TbIcon::TbEyeTable => TB_EYE_TABLE,
+            #[cfg(feature = "TbEyeUp")]
+            TbIcon::TbEyeUp => TB_EYE_UP,
             #[cfg(feature = "TbEyeX")]
             TbIcon::TbEyeX => TB_EYE_X,
             #[cfg(feature = "TbEyeglass")]
@@ -90037,6 +101502,52 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFileTextAi => TB_FILE_TEXT_AI,
             #[cfg(feature = "TbFileTime")]
             TbIcon::TbFileTime => TB_FILE_TIME,
+            #[cfg(feature = "TbFileTypeBmp")]
+            TbIcon::TbFileTypeBmp => TB_FILE_TYPE_BMP,
+            #[cfg(feature = "TbFileTypeCss")]
+            TbIcon::TbFileTypeCss => TB_FILE_TYPE_CSS,
+            #[cfg(feature = "TbFileTypeCsv")]
+            TbIcon::TbFileTypeCsv => TB_FILE_TYPE_CSV,
+            #[cfg(feature = "TbFileTypeDoc")]
+            TbIcon::TbFileTypeDoc => TB_FILE_TYPE_DOC,
+            #[cfg(feature = "TbFileTypeDocx")]
+            TbIcon::TbFileTypeDocx => TB_FILE_TYPE_DOCX,
+            #[cfg(feature = "TbFileTypeHtml")]
+            TbIcon::TbFileTypeHtml => TB_FILE_TYPE_HTML,
+            #[cfg(feature = "TbFileTypeJpg")]
+            TbIcon::TbFileTypeJpg => TB_FILE_TYPE_JPG,
+            #[cfg(feature = "TbFileTypeJs")]
+            TbIcon::TbFileTypeJs => TB_FILE_TYPE_JS,
+            #[cfg(feature = "TbFileTypeJsx")]
+            TbIcon::TbFileTypeJsx => TB_FILE_TYPE_JSX,
+            #[cfg(feature = "TbFileTypePdf")]
+            TbIcon::TbFileTypePdf => TB_FILE_TYPE_PDF,
+            #[cfg(feature = "TbFileTypePhp")]
+            TbIcon::TbFileTypePhp => TB_FILE_TYPE_PHP,
+            #[cfg(feature = "TbFileTypePng")]
+            TbIcon::TbFileTypePng => TB_FILE_TYPE_PNG,
+            #[cfg(feature = "TbFileTypePpt")]
+            TbIcon::TbFileTypePpt => TB_FILE_TYPE_PPT,
+            #[cfg(feature = "TbFileTypeRs")]
+            TbIcon::TbFileTypeRs => TB_FILE_TYPE_RS,
+            #[cfg(feature = "TbFileTypeSql")]
+            TbIcon::TbFileTypeSql => TB_FILE_TYPE_SQL,
+            #[cfg(feature = "TbFileTypeSvg")]
+            TbIcon::TbFileTypeSvg => TB_FILE_TYPE_SVG,
+            #[cfg(feature = "TbFileTypeTs")]
+            TbIcon::TbFileTypeTs => TB_FILE_TYPE_TS,
+            #[cfg(feature = "TbFileTypeTsx")]
+            TbIcon::TbFileTypeTsx => TB_FILE_TYPE_TSX,
+            #[cfg(feature = "TbFileTypeTxt")]
+            TbIcon::TbFileTypeTxt => TB_FILE_TYPE_TXT,
+            #[cfg(feature = "TbFileTypeVue")]
+            TbIcon::TbFileTypeVue => TB_FILE_TYPE_VUE,
+            #[cfg(feature = "TbFileTypeXls")]
+            TbIcon::TbFileTypeXls => TB_FILE_TYPE_XLS,
+            #[cfg(feature = "TbFileTypeXml")]
+            TbIcon::TbFileTypeXml => TB_FILE_TYPE_XML,
+            #[cfg(feature = "TbFileTypeZip")]
+            TbIcon::TbFileTypeZip => TB_FILE_TYPE_ZIP,
             #[cfg(feature = "TbFileTypography")]
             TbIcon::TbFileTypography => TB_FILE_TYPOGRAPHY,
             #[cfg(feature = "TbFileUnknown")]
@@ -90057,20 +101568,50 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFilesOff => TB_FILES_OFF,
             #[cfg(feature = "TbFilter")]
             TbIcon::TbFilter => TB_FILTER,
+            #[cfg(feature = "TbFilterBolt")]
+            TbIcon::TbFilterBolt => TB_FILTER_BOLT,
+            #[cfg(feature = "TbFilterCancel")]
+            TbIcon::TbFilterCancel => TB_FILTER_CANCEL,
+            #[cfg(feature = "TbFilterCheck")]
+            TbIcon::TbFilterCheck => TB_FILTER_CHECK,
+            #[cfg(feature = "TbFilterCode")]
+            TbIcon::TbFilterCode => TB_FILTER_CODE,
             #[cfg(feature = "TbFilterCog")]
             TbIcon::TbFilterCog => TB_FILTER_COG,
+            #[cfg(feature = "TbFilterDiscount")]
+            TbIcon::TbFilterDiscount => TB_FILTER_DISCOUNT,
             #[cfg(feature = "TbFilterDollar")]
             TbIcon::TbFilterDollar => TB_FILTER_DOLLAR,
+            #[cfg(feature = "TbFilterDown")]
+            TbIcon::TbFilterDown => TB_FILTER_DOWN,
             #[cfg(feature = "TbFilterEdit")]
             TbIcon::TbFilterEdit => TB_FILTER_EDIT,
+            #[cfg(feature = "TbFilterExclamation")]
+            TbIcon::TbFilterExclamation => TB_FILTER_EXCLAMATION,
+            #[cfg(feature = "TbFilterFilled")]
+            TbIcon::TbFilterFilled => TB_FILTER_FILLED,
+            #[cfg(feature = "TbFilterHeart")]
+            TbIcon::TbFilterHeart => TB_FILTER_HEART,
             #[cfg(feature = "TbFilterMinus")]
             TbIcon::TbFilterMinus => TB_FILTER_MINUS,
             #[cfg(feature = "TbFilterOff")]
             TbIcon::TbFilterOff => TB_FILTER_OFF,
+            #[cfg(feature = "TbFilterPause")]
+            TbIcon::TbFilterPause => TB_FILTER_PAUSE,
+            #[cfg(feature = "TbFilterPin")]
+            TbIcon::TbFilterPin => TB_FILTER_PIN,
             #[cfg(feature = "TbFilterPlus")]
             TbIcon::TbFilterPlus => TB_FILTER_PLUS,
+            #[cfg(feature = "TbFilterQuestion")]
+            TbIcon::TbFilterQuestion => TB_FILTER_QUESTION,
+            #[cfg(feature = "TbFilterSearch")]
+            TbIcon::TbFilterSearch => TB_FILTER_SEARCH,
+            #[cfg(feature = "TbFilterShare")]
+            TbIcon::TbFilterShare => TB_FILTER_SHARE,
             #[cfg(feature = "TbFilterStar")]
             TbIcon::TbFilterStar => TB_FILTER_STAR,
+            #[cfg(feature = "TbFilterUp")]
+            TbIcon::TbFilterUp => TB_FILTER_UP,
             #[cfg(feature = "TbFilterX")]
             TbIcon::TbFilterX => TB_FILTER_X,
             #[cfg(feature = "TbFilters")]
@@ -90079,6 +101620,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFingerprint => TB_FINGERPRINT,
             #[cfg(feature = "TbFingerprintOff")]
             TbIcon::TbFingerprintOff => TB_FINGERPRINT_OFF,
+            #[cfg(feature = "TbFireExtinguisher")]
+            TbIcon::TbFireExtinguisher => TB_FIRE_EXTINGUISHER,
             #[cfg(feature = "TbFireHydrant")]
             TbIcon::TbFireHydrant => TB_FIRE_HYDRANT,
             #[cfg(feature = "TbFireHydrantOff")]
@@ -90113,10 +101656,50 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFlag3 => TB_FLAG3,
             #[cfg(feature = "TbFlag3Filled")]
             TbIcon::TbFlag3Filled => TB_FLAG3_FILLED,
+            #[cfg(feature = "TbFlagBolt")]
+            TbIcon::TbFlagBolt => TB_FLAG_BOLT,
+            #[cfg(feature = "TbFlagCancel")]
+            TbIcon::TbFlagCancel => TB_FLAG_CANCEL,
+            #[cfg(feature = "TbFlagCheck")]
+            TbIcon::TbFlagCheck => TB_FLAG_CHECK,
+            #[cfg(feature = "TbFlagCode")]
+            TbIcon::TbFlagCode => TB_FLAG_CODE,
+            #[cfg(feature = "TbFlagCog")]
+            TbIcon::TbFlagCog => TB_FLAG_COG,
+            #[cfg(feature = "TbFlagDiscount")]
+            TbIcon::TbFlagDiscount => TB_FLAG_DISCOUNT,
+            #[cfg(feature = "TbFlagDollar")]
+            TbIcon::TbFlagDollar => TB_FLAG_DOLLAR,
+            #[cfg(feature = "TbFlagDown")]
+            TbIcon::TbFlagDown => TB_FLAG_DOWN,
+            #[cfg(feature = "TbFlagExclamation")]
+            TbIcon::TbFlagExclamation => TB_FLAG_EXCLAMATION,
             #[cfg(feature = "TbFlagFilled")]
             TbIcon::TbFlagFilled => TB_FLAG_FILLED,
+            #[cfg(feature = "TbFlagHeart")]
+            TbIcon::TbFlagHeart => TB_FLAG_HEART,
+            #[cfg(feature = "TbFlagMinus")]
+            TbIcon::TbFlagMinus => TB_FLAG_MINUS,
             #[cfg(feature = "TbFlagOff")]
             TbIcon::TbFlagOff => TB_FLAG_OFF,
+            #[cfg(feature = "TbFlagPause")]
+            TbIcon::TbFlagPause => TB_FLAG_PAUSE,
+            #[cfg(feature = "TbFlagPin")]
+            TbIcon::TbFlagPin => TB_FLAG_PIN,
+            #[cfg(feature = "TbFlagPlus")]
+            TbIcon::TbFlagPlus => TB_FLAG_PLUS,
+            #[cfg(feature = "TbFlagQuestion")]
+            TbIcon::TbFlagQuestion => TB_FLAG_QUESTION,
+            #[cfg(feature = "TbFlagSearch")]
+            TbIcon::TbFlagSearch => TB_FLAG_SEARCH,
+            #[cfg(feature = "TbFlagShare")]
+            TbIcon::TbFlagShare => TB_FLAG_SHARE,
+            #[cfg(feature = "TbFlagStar")]
+            TbIcon::TbFlagStar => TB_FLAG_STAR,
+            #[cfg(feature = "TbFlagUp")]
+            TbIcon::TbFlagUp => TB_FLAG_UP,
+            #[cfg(feature = "TbFlagX")]
+            TbIcon::TbFlagX => TB_FLAG_X,
             #[cfg(feature = "TbFlame")]
             TbIcon::TbFlame => TB_FLAME,
             #[cfg(feature = "TbFlameOff")]
@@ -90189,6 +101772,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFolderMinus => TB_FOLDER_MINUS,
             #[cfg(feature = "TbFolderOff")]
             TbIcon::TbFolderOff => TB_FOLDER_OFF,
+            #[cfg(feature = "TbFolderOpen")]
+            TbIcon::TbFolderOpen => TB_FOLDER_OPEN,
             #[cfg(feature = "TbFolderPause")]
             TbIcon::TbFolderPause => TB_FOLDER_PAUSE,
             #[cfg(feature = "TbFolderPin")]
@@ -90217,12 +101802,18 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbForbid => TB_FORBID,
             #[cfg(feature = "TbForbid2")]
             TbIcon::TbForbid2 => TB_FORBID2,
+            #[cfg(feature = "TbForbid2Filled")]
+            TbIcon::TbForbid2Filled => TB_FORBID2_FILLED,
+            #[cfg(feature = "TbForbidFilled")]
+            TbIcon::TbForbidFilled => TB_FORBID_FILLED,
             #[cfg(feature = "TbForklift")]
             TbIcon::TbForklift => TB_FORKLIFT,
             #[cfg(feature = "TbForms")]
             TbIcon::TbForms => TB_FORMS,
             #[cfg(feature = "TbFountain")]
             TbIcon::TbFountain => TB_FOUNTAIN,
+            #[cfg(feature = "TbFountainFilled")]
+            TbIcon::TbFountainFilled => TB_FOUNTAIN_FILLED,
             #[cfg(feature = "TbFountainOff")]
             TbIcon::TbFountainOff => TB_FOUNTAIN_OFF,
             #[cfg(feature = "TbFrame")]
@@ -90245,8 +101836,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbFriends => TB_FRIENDS,
             #[cfg(feature = "TbFriendsOff")]
             TbIcon::TbFriendsOff => TB_FRIENDS_OFF,
+            #[cfg(feature = "TbFrustum")]
+            TbIcon::TbFrustum => TB_FRUSTUM,
+            #[cfg(feature = "TbFrustumOff")]
+            TbIcon::TbFrustumOff => TB_FRUSTUM_OFF,
+            #[cfg(feature = "TbFrustumPlus")]
+            TbIcon::TbFrustumPlus => TB_FRUSTUM_PLUS,
             #[cfg(feature = "TbFunction")]
             TbIcon::TbFunction => TB_FUNCTION,
+            #[cfg(feature = "TbFunctionFilled")]
+            TbIcon::TbFunctionFilled => TB_FUNCTION_FILLED,
             #[cfg(feature = "TbFunctionOff")]
             TbIcon::TbFunctionOff => TB_FUNCTION_OFF,
             #[cfg(feature = "TbGardenCart")]
@@ -90259,6 +101858,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbGasStationOff => TB_GAS_STATION_OFF,
             #[cfg(feature = "TbGauge")]
             TbIcon::TbGauge => TB_GAUGE,
+            #[cfg(feature = "TbGaugeFilled")]
+            TbIcon::TbGaugeFilled => TB_GAUGE_FILLED,
             #[cfg(feature = "TbGaugeOff")]
             TbIcon::TbGaugeOff => TB_GAUGE_OFF,
             #[cfg(feature = "TbGavel")]
@@ -90307,6 +101908,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbGhost2 => TB_GHOST2,
             #[cfg(feature = "TbGhost2Filled")]
             TbIcon::TbGhost2Filled => TB_GHOST2_FILLED,
+            #[cfg(feature = "TbGhost3")]
+            TbIcon::TbGhost3 => TB_GHOST3,
             #[cfg(feature = "TbGhostFilled")]
             TbIcon::TbGhostFilled => TB_GHOST_FILLED,
             #[cfg(feature = "TbGhostOff")]
@@ -90317,6 +101920,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbGift => TB_GIFT,
             #[cfg(feature = "TbGiftCard")]
             TbIcon::TbGiftCard => TB_GIFT_CARD,
+            #[cfg(feature = "TbGiftCardFilled")]
+            TbIcon::TbGiftCardFilled => TB_GIFT_CARD_FILLED,
             #[cfg(feature = "TbGiftOff")]
             TbIcon::TbGiftOff => TB_GIFT_OFF,
             #[cfg(feature = "TbGitBranch")]
@@ -90345,10 +101950,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbGlass => TB_GLASS,
             #[cfg(feature = "TbGlassFull")]
             TbIcon::TbGlassFull => TB_GLASS_FULL,
+            #[cfg(feature = "TbGlassFullFilled")]
+            TbIcon::TbGlassFullFilled => TB_GLASS_FULL_FILLED,
             #[cfg(feature = "TbGlassOff")]
             TbIcon::TbGlassOff => TB_GLASS_OFF,
             #[cfg(feature = "TbGlobe")]
             TbIcon::TbGlobe => TB_GLOBE,
+            #[cfg(feature = "TbGlobeFilled")]
+            TbIcon::TbGlobeFilled => TB_GLOBE_FILLED,
             #[cfg(feature = "TbGlobeOff")]
             TbIcon::TbGlobeOff => TB_GLOBE_OFF,
             #[cfg(feature = "TbGoGame")]
@@ -90447,6 +102056,10 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHash => TB_HASH,
             #[cfg(feature = "TbHaze")]
             TbIcon::TbHaze => TB_HAZE,
+            #[cfg(feature = "TbHazeMoon")]
+            TbIcon::TbHazeMoon => TB_HAZE_MOON,
+            #[cfg(feature = "TbHdr")]
+            TbIcon::TbHdr => TB_HDR,
             #[cfg(feature = "TbHeading")]
             TbIcon::TbHeading => TB_HEADING,
             #[cfg(feature = "TbHeadingOff")]
@@ -90465,8 +102078,26 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHealthRecognition => TB_HEALTH_RECOGNITION,
             #[cfg(feature = "TbHeart")]
             TbIcon::TbHeart => TB_HEART,
+            #[cfg(feature = "TbHeartBolt")]
+            TbIcon::TbHeartBolt => TB_HEART_BOLT,
             #[cfg(feature = "TbHeartBroken")]
             TbIcon::TbHeartBroken => TB_HEART_BROKEN,
+            #[cfg(feature = "TbHeartCancel")]
+            TbIcon::TbHeartCancel => TB_HEART_CANCEL,
+            #[cfg(feature = "TbHeartCheck")]
+            TbIcon::TbHeartCheck => TB_HEART_CHECK,
+            #[cfg(feature = "TbHeartCode")]
+            TbIcon::TbHeartCode => TB_HEART_CODE,
+            #[cfg(feature = "TbHeartCog")]
+            TbIcon::TbHeartCog => TB_HEART_COG,
+            #[cfg(feature = "TbHeartDiscount")]
+            TbIcon::TbHeartDiscount => TB_HEART_DISCOUNT,
+            #[cfg(feature = "TbHeartDollar")]
+            TbIcon::TbHeartDollar => TB_HEART_DOLLAR,
+            #[cfg(feature = "TbHeartDown")]
+            TbIcon::TbHeartDown => TB_HEART_DOWN,
+            #[cfg(feature = "TbHeartExclamation")]
+            TbIcon::TbHeartExclamation => TB_HEART_EXCLAMATION,
             #[cfg(feature = "TbHeartFilled")]
             TbIcon::TbHeartFilled => TB_HEART_FILLED,
             #[cfg(feature = "TbHeartHandshake")]
@@ -90475,10 +102106,26 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHeartMinus => TB_HEART_MINUS,
             #[cfg(feature = "TbHeartOff")]
             TbIcon::TbHeartOff => TB_HEART_OFF,
+            #[cfg(feature = "TbHeartPause")]
+            TbIcon::TbHeartPause => TB_HEART_PAUSE,
+            #[cfg(feature = "TbHeartPin")]
+            TbIcon::TbHeartPin => TB_HEART_PIN,
             #[cfg(feature = "TbHeartPlus")]
             TbIcon::TbHeartPlus => TB_HEART_PLUS,
+            #[cfg(feature = "TbHeartQuestion")]
+            TbIcon::TbHeartQuestion => TB_HEART_QUESTION,
             #[cfg(feature = "TbHeartRateMonitor")]
             TbIcon::TbHeartRateMonitor => TB_HEART_RATE_MONITOR,
+            #[cfg(feature = "TbHeartSearch")]
+            TbIcon::TbHeartSearch => TB_HEART_SEARCH,
+            #[cfg(feature = "TbHeartShare")]
+            TbIcon::TbHeartShare => TB_HEART_SHARE,
+            #[cfg(feature = "TbHeartStar")]
+            TbIcon::TbHeartStar => TB_HEART_STAR,
+            #[cfg(feature = "TbHeartUp")]
+            TbIcon::TbHeartUp => TB_HEART_UP,
+            #[cfg(feature = "TbHeartX")]
+            TbIcon::TbHeartX => TB_HEART_X,
             #[cfg(feature = "TbHeartbeat")]
             TbIcon::TbHeartbeat => TB_HEARTBEAT,
             #[cfg(feature = "TbHearts")]
@@ -90523,6 +102170,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHelpTriangle => TB_HELP_TRIANGLE,
             #[cfg(feature = "TbHelpTriangleFilled")]
             TbIcon::TbHelpTriangleFilled => TB_HELP_TRIANGLE_FILLED,
+            #[cfg(feature = "TbHemisphere")]
+            TbIcon::TbHemisphere => TB_HEMISPHERE,
+            #[cfg(feature = "TbHemisphereOff")]
+            TbIcon::TbHemisphereOff => TB_HEMISPHERE_OFF,
+            #[cfg(feature = "TbHemispherePlus")]
+            TbIcon::TbHemispherePlus => TB_HEMISPHERE_PLUS,
             #[cfg(feature = "TbHexagon")]
             TbIcon::TbHexagon => TB_HEXAGON,
             #[cfg(feature = "TbHexagon0Filled")]
@@ -90623,6 +102276,20 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHexagonNumber9 => TB_HEXAGON_NUMBER9,
             #[cfg(feature = "TbHexagonOff")]
             TbIcon::TbHexagonOff => TB_HEXAGON_OFF,
+            #[cfg(feature = "TbHexagonPlus")]
+            TbIcon::TbHexagonPlus => TB_HEXAGON_PLUS,
+            #[cfg(feature = "TbHexagonalPrism")]
+            TbIcon::TbHexagonalPrism => TB_HEXAGONAL_PRISM,
+            #[cfg(feature = "TbHexagonalPrismOff")]
+            TbIcon::TbHexagonalPrismOff => TB_HEXAGONAL_PRISM_OFF,
+            #[cfg(feature = "TbHexagonalPrismPlus")]
+            TbIcon::TbHexagonalPrismPlus => TB_HEXAGONAL_PRISM_PLUS,
+            #[cfg(feature = "TbHexagonalPyramid")]
+            TbIcon::TbHexagonalPyramid => TB_HEXAGONAL_PYRAMID,
+            #[cfg(feature = "TbHexagonalPyramidOff")]
+            TbIcon::TbHexagonalPyramidOff => TB_HEXAGONAL_PYRAMID_OFF,
+            #[cfg(feature = "TbHexagonalPyramidPlus")]
+            TbIcon::TbHexagonalPyramidPlus => TB_HEXAGONAL_PYRAMID_PLUS,
             #[cfg(feature = "TbHexagons")]
             TbIcon::TbHexagons => TB_HEXAGONS,
             #[cfg(feature = "TbHexagonsOff")]
@@ -90705,6 +102372,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbHomeUp => TB_HOME_UP,
             #[cfg(feature = "TbHomeX")]
             TbIcon::TbHomeX => TB_HOME_X,
+            #[cfg(feature = "TbHorse")]
+            TbIcon::TbHorse => TB_HORSE,
             #[cfg(feature = "TbHorseToy")]
             TbIcon::TbHorseToy => TB_HORSE_TOY,
             #[cfg(feature = "TbHotelService")]
@@ -90835,8 +102504,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbInnerShadowTopRight => TB_INNER_SHADOW_TOP_RIGHT,
             #[cfg(feature = "TbInnerShadowTopRightFilled")]
             TbIcon::TbInnerShadowTopRightFilled => TB_INNER_SHADOW_TOP_RIGHT_FILLED,
+            #[cfg(feature = "TbInputAi")]
+            TbIcon::TbInputAi => TB_INPUT_AI,
+            #[cfg(feature = "TbInputCheck")]
+            TbIcon::TbInputCheck => TB_INPUT_CHECK,
             #[cfg(feature = "TbInputSearch")]
             TbIcon::TbInputSearch => TB_INPUT_SEARCH,
+            #[cfg(feature = "TbInputX")]
+            TbIcon::TbInputX => TB_INPUT_X,
+            #[cfg(feature = "TbIroning")]
+            TbIcon::TbIroning => TB_IRONING,
             #[cfg(feature = "TbIroning1")]
             TbIcon::TbIroning1 => TB_IRONING1,
             #[cfg(feature = "TbIroning2")]
@@ -90849,6 +102526,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbIroningSteam => TB_IRONING_STEAM,
             #[cfg(feature = "TbIroningSteamOff")]
             TbIcon::TbIroningSteamOff => TB_IRONING_STEAM_OFF,
+            #[cfg(feature = "TbIrregularPolyhedron")]
+            TbIcon::TbIrregularPolyhedron => TB_IRREGULAR_POLYHEDRON,
+            #[cfg(feature = "TbIrregularPolyhedronOff")]
+            TbIcon::TbIrregularPolyhedronOff => TB_IRREGULAR_POLYHEDRON_OFF,
+            #[cfg(feature = "TbIrregularPolyhedronPlus")]
+            TbIcon::TbIrregularPolyhedronPlus => TB_IRREGULAR_POLYHEDRON_PLUS,
             #[cfg(feature = "TbItalic")]
             TbIcon::TbItalic => TB_ITALIC,
             #[cfg(feature = "TbJacket")]
@@ -90887,16 +102570,28 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbKeyframe => TB_KEYFRAME,
             #[cfg(feature = "TbKeyframeAlignCenter")]
             TbIcon::TbKeyframeAlignCenter => TB_KEYFRAME_ALIGN_CENTER,
+            #[cfg(feature = "TbKeyframeAlignCenterFilled")]
+            TbIcon::TbKeyframeAlignCenterFilled => TB_KEYFRAME_ALIGN_CENTER_FILLED,
             #[cfg(feature = "TbKeyframeAlignHorizontal")]
             TbIcon::TbKeyframeAlignHorizontal => TB_KEYFRAME_ALIGN_HORIZONTAL,
+            #[cfg(feature = "TbKeyframeAlignHorizontalFilled")]
+            TbIcon::TbKeyframeAlignHorizontalFilled => TB_KEYFRAME_ALIGN_HORIZONTAL_FILLED,
             #[cfg(feature = "TbKeyframeAlignVertical")]
             TbIcon::TbKeyframeAlignVertical => TB_KEYFRAME_ALIGN_VERTICAL,
+            #[cfg(feature = "TbKeyframeAlignVerticalFilled")]
+            TbIcon::TbKeyframeAlignVerticalFilled => TB_KEYFRAME_ALIGN_VERTICAL_FILLED,
+            #[cfg(feature = "TbKeyframeFilled")]
+            TbIcon::TbKeyframeFilled => TB_KEYFRAME_FILLED,
             #[cfg(feature = "TbKeyframes")]
             TbIcon::TbKeyframes => TB_KEYFRAMES,
+            #[cfg(feature = "TbKeyframesFilled")]
+            TbIcon::TbKeyframesFilled => TB_KEYFRAMES_FILLED,
             #[cfg(feature = "TbLadder")]
             TbIcon::TbLadder => TB_LADDER,
             #[cfg(feature = "TbLadderOff")]
             TbIcon::TbLadderOff => TB_LADDER_OFF,
+            #[cfg(feature = "TbLadle")]
+            TbIcon::TbLadle => TB_LADLE,
             #[cfg(feature = "TbLambda")]
             TbIcon::TbLambda => TB_LAMBDA,
             #[cfg(feature = "TbLamp")]
@@ -90905,6 +102600,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLamp2 => TB_LAMP2,
             #[cfg(feature = "TbLampOff")]
             TbIcon::TbLampOff => TB_LAMP_OFF,
+            #[cfg(feature = "TbLane")]
+            TbIcon::TbLane => TB_LANE,
             #[cfg(feature = "TbLanguage")]
             TbIcon::TbLanguage => TB_LANGUAGE,
             #[cfg(feature = "TbLanguageHiragana")]
@@ -90957,8 +102654,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLayoutBottombar => TB_LAYOUT_BOTTOMBAR,
             #[cfg(feature = "TbLayoutBottombarCollapse")]
             TbIcon::TbLayoutBottombarCollapse => TB_LAYOUT_BOTTOMBAR_COLLAPSE,
+            #[cfg(feature = "TbLayoutBottombarCollapseFilled")]
+            TbIcon::TbLayoutBottombarCollapseFilled => TB_LAYOUT_BOTTOMBAR_COLLAPSE_FILLED,
             #[cfg(feature = "TbLayoutBottombarExpand")]
             TbIcon::TbLayoutBottombarExpand => TB_LAYOUT_BOTTOMBAR_EXPAND,
+            #[cfg(feature = "TbLayoutBottombarExpandFilled")]
+            TbIcon::TbLayoutBottombarExpandFilled => TB_LAYOUT_BOTTOMBAR_EXPAND_FILLED,
+            #[cfg(feature = "TbLayoutBottombarFilled")]
+            TbIcon::TbLayoutBottombarFilled => TB_LAYOUT_BOTTOMBAR_FILLED,
             #[cfg(feature = "TbLayoutCards")]
             TbIcon::TbLayoutCards => TB_LAYOUT_CARDS,
             #[cfg(feature = "TbLayoutCollage")]
@@ -90975,6 +102678,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLayoutGrid => TB_LAYOUT_GRID,
             #[cfg(feature = "TbLayoutGridAdd")]
             TbIcon::TbLayoutGridAdd => TB_LAYOUT_GRID_ADD,
+            #[cfg(feature = "TbLayoutGridRemove")]
+            TbIcon::TbLayoutGridRemove => TB_LAYOUT_GRID_REMOVE,
             #[cfg(feature = "TbLayoutKanban")]
             TbIcon::TbLayoutKanban => TB_LAYOUT_KANBAN,
             #[cfg(feature = "TbLayoutList")]
@@ -90983,8 +102688,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLayoutNavbar => TB_LAYOUT_NAVBAR,
             #[cfg(feature = "TbLayoutNavbarCollapse")]
             TbIcon::TbLayoutNavbarCollapse => TB_LAYOUT_NAVBAR_COLLAPSE,
+            #[cfg(feature = "TbLayoutNavbarCollapseFilled")]
+            TbIcon::TbLayoutNavbarCollapseFilled => TB_LAYOUT_NAVBAR_COLLAPSE_FILLED,
             #[cfg(feature = "TbLayoutNavbarExpand")]
             TbIcon::TbLayoutNavbarExpand => TB_LAYOUT_NAVBAR_EXPAND,
+            #[cfg(feature = "TbLayoutNavbarExpandFilled")]
+            TbIcon::TbLayoutNavbarExpandFilled => TB_LAYOUT_NAVBAR_EXPAND_FILLED,
+            #[cfg(feature = "TbLayoutNavbarFilled")]
+            TbIcon::TbLayoutNavbarFilled => TB_LAYOUT_NAVBAR_FILLED,
             #[cfg(feature = "TbLayoutOff")]
             TbIcon::TbLayoutOff => TB_LAYOUT_OFF,
             #[cfg(feature = "TbLayoutRows")]
@@ -90993,14 +102704,22 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLayoutSidebar => TB_LAYOUT_SIDEBAR,
             #[cfg(feature = "TbLayoutSidebarLeftCollapse")]
             TbIcon::TbLayoutSidebarLeftCollapse => TB_LAYOUT_SIDEBAR_LEFT_COLLAPSE,
+            #[cfg(feature = "TbLayoutSidebarLeftCollapseFilled")]
+            TbIcon::TbLayoutSidebarLeftCollapseFilled => TB_LAYOUT_SIDEBAR_LEFT_COLLAPSE_FILLED,
             #[cfg(feature = "TbLayoutSidebarLeftExpand")]
             TbIcon::TbLayoutSidebarLeftExpand => TB_LAYOUT_SIDEBAR_LEFT_EXPAND,
+            #[cfg(feature = "TbLayoutSidebarLeftExpandFilled")]
+            TbIcon::TbLayoutSidebarLeftExpandFilled => TB_LAYOUT_SIDEBAR_LEFT_EXPAND_FILLED,
             #[cfg(feature = "TbLayoutSidebarRight")]
             TbIcon::TbLayoutSidebarRight => TB_LAYOUT_SIDEBAR_RIGHT,
             #[cfg(feature = "TbLayoutSidebarRightCollapse")]
             TbIcon::TbLayoutSidebarRightCollapse => TB_LAYOUT_SIDEBAR_RIGHT_COLLAPSE,
+            #[cfg(feature = "TbLayoutSidebarRightCollapseFilled")]
+            TbIcon::TbLayoutSidebarRightCollapseFilled => TB_LAYOUT_SIDEBAR_RIGHT_COLLAPSE_FILLED,
             #[cfg(feature = "TbLayoutSidebarRightExpand")]
             TbIcon::TbLayoutSidebarRightExpand => TB_LAYOUT_SIDEBAR_RIGHT_EXPAND,
+            #[cfg(feature = "TbLayoutSidebarRightExpandFilled")]
+            TbIcon::TbLayoutSidebarRightExpandFilled => TB_LAYOUT_SIDEBAR_RIGHT_EXPAND_FILLED,
             #[cfg(feature = "TbLeaf")]
             TbIcon::TbLeaf => TB_LEAF,
             #[cfg(feature = "TbLeafOff")]
@@ -91103,10 +102822,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbListCheck => TB_LIST_CHECK,
             #[cfg(feature = "TbListDetails")]
             TbIcon::TbListDetails => TB_LIST_DETAILS,
+            #[cfg(feature = "TbListLetters")]
+            TbIcon::TbListLetters => TB_LIST_LETTERS,
             #[cfg(feature = "TbListNumbers")]
             TbIcon::TbListNumbers => TB_LIST_NUMBERS,
             #[cfg(feature = "TbListSearch")]
             TbIcon::TbListSearch => TB_LIST_SEARCH,
+            #[cfg(feature = "TbListTree")]
+            TbIcon::TbListTree => TB_LIST_TREE,
             #[cfg(feature = "TbLivePhoto")]
             TbIcon::TbLivePhoto => TB_LIVE_PHOTO,
             #[cfg(feature = "TbLivePhotoOff")]
@@ -91125,12 +102848,52 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLoaderQuarter => TB_LOADER_QUARTER,
             #[cfg(feature = "TbLocation")]
             TbIcon::TbLocation => TB_LOCATION,
+            #[cfg(feature = "TbLocationBolt")]
+            TbIcon::TbLocationBolt => TB_LOCATION_BOLT,
             #[cfg(feature = "TbLocationBroken")]
             TbIcon::TbLocationBroken => TB_LOCATION_BROKEN,
+            #[cfg(feature = "TbLocationCancel")]
+            TbIcon::TbLocationCancel => TB_LOCATION_CANCEL,
+            #[cfg(feature = "TbLocationCheck")]
+            TbIcon::TbLocationCheck => TB_LOCATION_CHECK,
+            #[cfg(feature = "TbLocationCode")]
+            TbIcon::TbLocationCode => TB_LOCATION_CODE,
+            #[cfg(feature = "TbLocationCog")]
+            TbIcon::TbLocationCog => TB_LOCATION_COG,
+            #[cfg(feature = "TbLocationDiscount")]
+            TbIcon::TbLocationDiscount => TB_LOCATION_DISCOUNT,
+            #[cfg(feature = "TbLocationDollar")]
+            TbIcon::TbLocationDollar => TB_LOCATION_DOLLAR,
+            #[cfg(feature = "TbLocationDown")]
+            TbIcon::TbLocationDown => TB_LOCATION_DOWN,
+            #[cfg(feature = "TbLocationExclamation")]
+            TbIcon::TbLocationExclamation => TB_LOCATION_EXCLAMATION,
             #[cfg(feature = "TbLocationFilled")]
             TbIcon::TbLocationFilled => TB_LOCATION_FILLED,
+            #[cfg(feature = "TbLocationHeart")]
+            TbIcon::TbLocationHeart => TB_LOCATION_HEART,
+            #[cfg(feature = "TbLocationMinus")]
+            TbIcon::TbLocationMinus => TB_LOCATION_MINUS,
             #[cfg(feature = "TbLocationOff")]
             TbIcon::TbLocationOff => TB_LOCATION_OFF,
+            #[cfg(feature = "TbLocationPause")]
+            TbIcon::TbLocationPause => TB_LOCATION_PAUSE,
+            #[cfg(feature = "TbLocationPin")]
+            TbIcon::TbLocationPin => TB_LOCATION_PIN,
+            #[cfg(feature = "TbLocationPlus")]
+            TbIcon::TbLocationPlus => TB_LOCATION_PLUS,
+            #[cfg(feature = "TbLocationQuestion")]
+            TbIcon::TbLocationQuestion => TB_LOCATION_QUESTION,
+            #[cfg(feature = "TbLocationSearch")]
+            TbIcon::TbLocationSearch => TB_LOCATION_SEARCH,
+            #[cfg(feature = "TbLocationShare")]
+            TbIcon::TbLocationShare => TB_LOCATION_SHARE,
+            #[cfg(feature = "TbLocationStar")]
+            TbIcon::TbLocationStar => TB_LOCATION_STAR,
+            #[cfg(feature = "TbLocationUp")]
+            TbIcon::TbLocationUp => TB_LOCATION_UP,
+            #[cfg(feature = "TbLocationX")]
+            TbIcon::TbLocationX => TB_LOCATION_X,
             #[cfg(feature = "TbLock")]
             TbIcon::TbLock => TB_LOCK,
             #[cfg(feature = "TbLockAccess")]
@@ -91205,8 +102968,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbLogicXor => TB_LOGIC_XOR,
             #[cfg(feature = "TbLogin")]
             TbIcon::TbLogin => TB_LOGIN,
+            #[cfg(feature = "TbLogin2")]
+            TbIcon::TbLogin2 => TB_LOGIN2,
             #[cfg(feature = "TbLogout")]
             TbIcon::TbLogout => TB_LOGOUT,
+            #[cfg(feature = "TbLogout2")]
+            TbIcon::TbLogout2 => TB_LOGOUT2,
             #[cfg(feature = "TbLollipop")]
             TbIcon::TbLollipop => TB_LOLLIPOP,
             #[cfg(feature = "TbLollipopOff")]
@@ -91293,10 +103060,40 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMap => TB_MAP,
             #[cfg(feature = "TbMap2")]
             TbIcon::TbMap2 => TB_MAP2,
+            #[cfg(feature = "TbMapBolt")]
+            TbIcon::TbMapBolt => TB_MAP_BOLT,
+            #[cfg(feature = "TbMapCancel")]
+            TbIcon::TbMapCancel => TB_MAP_CANCEL,
+            #[cfg(feature = "TbMapCheck")]
+            TbIcon::TbMapCheck => TB_MAP_CHECK,
+            #[cfg(feature = "TbMapCode")]
+            TbIcon::TbMapCode => TB_MAP_CODE,
+            #[cfg(feature = "TbMapCog")]
+            TbIcon::TbMapCog => TB_MAP_COG,
+            #[cfg(feature = "TbMapDiscount")]
+            TbIcon::TbMapDiscount => TB_MAP_DISCOUNT,
+            #[cfg(feature = "TbMapDollar")]
+            TbIcon::TbMapDollar => TB_MAP_DOLLAR,
+            #[cfg(feature = "TbMapDown")]
+            TbIcon::TbMapDown => TB_MAP_DOWN,
+            #[cfg(feature = "TbMapEast")]
+            TbIcon::TbMapEast => TB_MAP_EAST,
+            #[cfg(feature = "TbMapExclamation")]
+            TbIcon::TbMapExclamation => TB_MAP_EXCLAMATION,
+            #[cfg(feature = "TbMapHeart")]
+            TbIcon::TbMapHeart => TB_MAP_HEART,
+            #[cfg(feature = "TbMapMinus")]
+            TbIcon::TbMapMinus => TB_MAP_MINUS,
+            #[cfg(feature = "TbMapNorth")]
+            TbIcon::TbMapNorth => TB_MAP_NORTH,
             #[cfg(feature = "TbMapOff")]
             TbIcon::TbMapOff => TB_MAP_OFF,
+            #[cfg(feature = "TbMapPause")]
+            TbIcon::TbMapPause => TB_MAP_PAUSE,
             #[cfg(feature = "TbMapPin")]
             TbIcon::TbMapPin => TB_MAP_PIN,
+            #[cfg(feature = "TbMapPin2")]
+            TbIcon::TbMapPin2 => TB_MAP_PIN2,
             #[cfg(feature = "TbMapPinBolt")]
             TbIcon::TbMapPinBolt => TB_MAP_PIN_BOLT,
             #[cfg(feature = "TbMapPinCancel")]
@@ -91341,8 +103138,26 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMapPinX => TB_MAP_PIN_X,
             #[cfg(feature = "TbMapPins")]
             TbIcon::TbMapPins => TB_MAP_PINS,
+            #[cfg(feature = "TbMapPlus")]
+            TbIcon::TbMapPlus => TB_MAP_PLUS,
+            #[cfg(feature = "TbMapQuestion")]
+            TbIcon::TbMapQuestion => TB_MAP_QUESTION,
+            #[cfg(feature = "TbMapRoute")]
+            TbIcon::TbMapRoute => TB_MAP_ROUTE,
             #[cfg(feature = "TbMapSearch")]
             TbIcon::TbMapSearch => TB_MAP_SEARCH,
+            #[cfg(feature = "TbMapShare")]
+            TbIcon::TbMapShare => TB_MAP_SHARE,
+            #[cfg(feature = "TbMapSouth")]
+            TbIcon::TbMapSouth => TB_MAP_SOUTH,
+            #[cfg(feature = "TbMapStar")]
+            TbIcon::TbMapStar => TB_MAP_STAR,
+            #[cfg(feature = "TbMapUp")]
+            TbIcon::TbMapUp => TB_MAP_UP,
+            #[cfg(feature = "TbMapWest")]
+            TbIcon::TbMapWest => TB_MAP_WEST,
+            #[cfg(feature = "TbMapX")]
+            TbIcon::TbMapX => TB_MAP_X,
             #[cfg(feature = "TbMarkdown")]
             TbIcon::TbMarkdown => TB_MARKDOWN,
             #[cfg(feature = "TbMarkdownOff")]
@@ -91443,6 +103258,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMedal2 => TB_MEDAL2,
             #[cfg(feature = "TbMedicalCross")]
             TbIcon::TbMedicalCross => TB_MEDICAL_CROSS,
+            #[cfg(feature = "TbMedicalCrossCircle")]
+            TbIcon::TbMedicalCrossCircle => TB_MEDICAL_CROSS_CIRCLE,
             #[cfg(feature = "TbMedicalCrossFilled")]
             TbIcon::TbMedicalCrossFilled => TB_MEDICAL_CROSS_FILLED,
             #[cfg(feature = "TbMedicalCrossOff")]
@@ -91451,12 +103268,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMedicineSyrup => TB_MEDICINE_SYRUP,
             #[cfg(feature = "TbMeeple")]
             TbIcon::TbMeeple => TB_MEEPLE,
+            #[cfg(feature = "TbMelon")]
+            TbIcon::TbMelon => TB_MELON,
             #[cfg(feature = "TbMenorah")]
             TbIcon::TbMenorah => TB_MENORAH,
             #[cfg(feature = "TbMenu")]
             TbIcon::TbMenu => TB_MENU,
             #[cfg(feature = "TbMenu2")]
             TbIcon::TbMenu2 => TB_MENU2,
+            #[cfg(feature = "TbMenuDeep")]
+            TbIcon::TbMenuDeep => TB_MENU_DEEP,
             #[cfg(feature = "TbMenuOrder")]
             TbIcon::TbMenuOrder => TB_MENU_ORDER,
             #[cfg(feature = "TbMessage")]
@@ -91607,6 +103428,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMeteor => TB_METEOR,
             #[cfg(feature = "TbMeteorOff")]
             TbIcon::TbMeteorOff => TB_METEOR_OFF,
+            #[cfg(feature = "TbMichelinBibGourmand")]
+            TbIcon::TbMichelinBibGourmand => TB_MICHELIN_BIB_GOURMAND,
+            #[cfg(feature = "TbMichelinStar")]
+            TbIcon::TbMichelinStar => TB_MICHELIN_STAR,
+            #[cfg(feature = "TbMichelinStarGreen")]
+            TbIcon::TbMichelinStarGreen => TB_MICHELIN_STAR_GREEN,
             #[cfg(feature = "TbMickey")]
             TbIcon::TbMickey => TB_MICKEY,
             #[cfg(feature = "TbMickeyFilled")]
@@ -91783,6 +103610,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMouse => TB_MOUSE,
             #[cfg(feature = "TbMouse2")]
             TbIcon::TbMouse2 => TB_MOUSE2,
+            #[cfg(feature = "TbMouseFilled")]
+            TbIcon::TbMouseFilled => TB_MOUSE_FILLED,
             #[cfg(feature = "TbMouseOff")]
             TbIcon::TbMouseOff => TB_MOUSE_OFF,
             #[cfg(feature = "TbMoustache")]
@@ -91811,14 +103640,96 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbMushroomOff => TB_MUSHROOM_OFF,
             #[cfg(feature = "TbMusic")]
             TbIcon::TbMusic => TB_MUSIC,
+            #[cfg(feature = "TbMusicBolt")]
+            TbIcon::TbMusicBolt => TB_MUSIC_BOLT,
+            #[cfg(feature = "TbMusicCancel")]
+            TbIcon::TbMusicCancel => TB_MUSIC_CANCEL,
+            #[cfg(feature = "TbMusicCheck")]
+            TbIcon::TbMusicCheck => TB_MUSIC_CHECK,
+            #[cfg(feature = "TbMusicCode")]
+            TbIcon::TbMusicCode => TB_MUSIC_CODE,
+            #[cfg(feature = "TbMusicCog")]
+            TbIcon::TbMusicCog => TB_MUSIC_COG,
+            #[cfg(feature = "TbMusicDiscount")]
+            TbIcon::TbMusicDiscount => TB_MUSIC_DISCOUNT,
+            #[cfg(feature = "TbMusicDollar")]
+            TbIcon::TbMusicDollar => TB_MUSIC_DOLLAR,
+            #[cfg(feature = "TbMusicDown")]
+            TbIcon::TbMusicDown => TB_MUSIC_DOWN,
+            #[cfg(feature = "TbMusicExclamation")]
+            TbIcon::TbMusicExclamation => TB_MUSIC_EXCLAMATION,
+            #[cfg(feature = "TbMusicHeart")]
+            TbIcon::TbMusicHeart => TB_MUSIC_HEART,
+            #[cfg(feature = "TbMusicMinus")]
+            TbIcon::TbMusicMinus => TB_MUSIC_MINUS,
             #[cfg(feature = "TbMusicOff")]
             TbIcon::TbMusicOff => TB_MUSIC_OFF,
+            #[cfg(feature = "TbMusicPause")]
+            TbIcon::TbMusicPause => TB_MUSIC_PAUSE,
+            #[cfg(feature = "TbMusicPin")]
+            TbIcon::TbMusicPin => TB_MUSIC_PIN,
+            #[cfg(feature = "TbMusicPlus")]
+            TbIcon::TbMusicPlus => TB_MUSIC_PLUS,
+            #[cfg(feature = "TbMusicQuestion")]
+            TbIcon::TbMusicQuestion => TB_MUSIC_QUESTION,
+            #[cfg(feature = "TbMusicSearch")]
+            TbIcon::TbMusicSearch => TB_MUSIC_SEARCH,
+            #[cfg(feature = "TbMusicShare")]
+            TbIcon::TbMusicShare => TB_MUSIC_SHARE,
+            #[cfg(feature = "TbMusicStar")]
+            TbIcon::TbMusicStar => TB_MUSIC_STAR,
+            #[cfg(feature = "TbMusicUp")]
+            TbIcon::TbMusicUp => TB_MUSIC_UP,
+            #[cfg(feature = "TbMusicX")]
+            TbIcon::TbMusicX => TB_MUSIC_X,
             #[cfg(feature = "TbNavigation")]
             TbIcon::TbNavigation => TB_NAVIGATION,
+            #[cfg(feature = "TbNavigationBolt")]
+            TbIcon::TbNavigationBolt => TB_NAVIGATION_BOLT,
+            #[cfg(feature = "TbNavigationCancel")]
+            TbIcon::TbNavigationCancel => TB_NAVIGATION_CANCEL,
+            #[cfg(feature = "TbNavigationCheck")]
+            TbIcon::TbNavigationCheck => TB_NAVIGATION_CHECK,
+            #[cfg(feature = "TbNavigationCode")]
+            TbIcon::TbNavigationCode => TB_NAVIGATION_CODE,
+            #[cfg(feature = "TbNavigationCog")]
+            TbIcon::TbNavigationCog => TB_NAVIGATION_COG,
+            #[cfg(feature = "TbNavigationDiscount")]
+            TbIcon::TbNavigationDiscount => TB_NAVIGATION_DISCOUNT,
+            #[cfg(feature = "TbNavigationDollar")]
+            TbIcon::TbNavigationDollar => TB_NAVIGATION_DOLLAR,
+            #[cfg(feature = "TbNavigationDown")]
+            TbIcon::TbNavigationDown => TB_NAVIGATION_DOWN,
+            #[cfg(feature = "TbNavigationExclamation")]
+            TbIcon::TbNavigationExclamation => TB_NAVIGATION_EXCLAMATION,
             #[cfg(feature = "TbNavigationFilled")]
             TbIcon::TbNavigationFilled => TB_NAVIGATION_FILLED,
+            #[cfg(feature = "TbNavigationHeart")]
+            TbIcon::TbNavigationHeart => TB_NAVIGATION_HEART,
+            #[cfg(feature = "TbNavigationMinus")]
+            TbIcon::TbNavigationMinus => TB_NAVIGATION_MINUS,
+            #[cfg(feature = "TbNavigationNorth")]
+            TbIcon::TbNavigationNorth => TB_NAVIGATION_NORTH,
             #[cfg(feature = "TbNavigationOff")]
             TbIcon::TbNavigationOff => TB_NAVIGATION_OFF,
+            #[cfg(feature = "TbNavigationPause")]
+            TbIcon::TbNavigationPause => TB_NAVIGATION_PAUSE,
+            #[cfg(feature = "TbNavigationPin")]
+            TbIcon::TbNavigationPin => TB_NAVIGATION_PIN,
+            #[cfg(feature = "TbNavigationPlus")]
+            TbIcon::TbNavigationPlus => TB_NAVIGATION_PLUS,
+            #[cfg(feature = "TbNavigationQuestion")]
+            TbIcon::TbNavigationQuestion => TB_NAVIGATION_QUESTION,
+            #[cfg(feature = "TbNavigationSearch")]
+            TbIcon::TbNavigationSearch => TB_NAVIGATION_SEARCH,
+            #[cfg(feature = "TbNavigationShare")]
+            TbIcon::TbNavigationShare => TB_NAVIGATION_SHARE,
+            #[cfg(feature = "TbNavigationStar")]
+            TbIcon::TbNavigationStar => TB_NAVIGATION_STAR,
+            #[cfg(feature = "TbNavigationUp")]
+            TbIcon::TbNavigationUp => TB_NAVIGATION_UP,
+            #[cfg(feature = "TbNavigationX")]
+            TbIcon::TbNavigationX => TB_NAVIGATION_X,
             #[cfg(feature = "TbNeedle")]
             TbIcon::TbNeedle => TB_NEEDLE,
             #[cfg(feature = "TbNeedleThread")]
@@ -91887,12 +103798,20 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbNumbers => TB_NUMBERS,
             #[cfg(feature = "TbNurse")]
             TbIcon::TbNurse => TB_NURSE,
+            #[cfg(feature = "TbNut")]
+            TbIcon::TbNut => TB_NUT,
             #[cfg(feature = "TbOctagon")]
             TbIcon::TbOctagon => TB_OCTAGON,
             #[cfg(feature = "TbOctagonFilled")]
             TbIcon::TbOctagonFilled => TB_OCTAGON_FILLED,
             #[cfg(feature = "TbOctagonOff")]
             TbIcon::TbOctagonOff => TB_OCTAGON_OFF,
+            #[cfg(feature = "TbOctahedron")]
+            TbIcon::TbOctahedron => TB_OCTAHEDRON,
+            #[cfg(feature = "TbOctahedronOff")]
+            TbIcon::TbOctahedronOff => TB_OCTAHEDRON_OFF,
+            #[cfg(feature = "TbOctahedronPlus")]
+            TbIcon::TbOctahedronPlus => TB_OCTAHEDRON_PLUS,
             #[cfg(feature = "TbOld")]
             TbIcon::TbOld => TB_OLD,
             #[cfg(feature = "TbOlympics")]
@@ -91969,6 +103888,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbParkingOff => TB_PARKING_OFF,
             #[cfg(feature = "TbPassword")]
             TbIcon::TbPassword => TB_PASSWORD,
+            #[cfg(feature = "TbPasswordFingerprint")]
+            TbIcon::TbPasswordFingerprint => TB_PASSWORD_FINGERPRINT,
+            #[cfg(feature = "TbPasswordMobilePhone")]
+            TbIcon::TbPasswordMobilePhone => TB_PASSWORD_MOBILE_PHONE,
+            #[cfg(feature = "TbPasswordUser")]
+            TbIcon::TbPasswordUser => TB_PASSWORD_USER,
             #[cfg(feature = "TbPaw")]
             TbIcon::TbPaw => TB_PAW,
             #[cfg(feature = "TbPawFilled")]
@@ -91981,12 +103906,48 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPeace => TB_PEACE,
             #[cfg(feature = "TbPencil")]
             TbIcon::TbPencil => TB_PENCIL,
+            #[cfg(feature = "TbPencilBolt")]
+            TbIcon::TbPencilBolt => TB_PENCIL_BOLT,
+            #[cfg(feature = "TbPencilCancel")]
+            TbIcon::TbPencilCancel => TB_PENCIL_CANCEL,
+            #[cfg(feature = "TbPencilCheck")]
+            TbIcon::TbPencilCheck => TB_PENCIL_CHECK,
+            #[cfg(feature = "TbPencilCode")]
+            TbIcon::TbPencilCode => TB_PENCIL_CODE,
+            #[cfg(feature = "TbPencilCog")]
+            TbIcon::TbPencilCog => TB_PENCIL_COG,
+            #[cfg(feature = "TbPencilDiscount")]
+            TbIcon::TbPencilDiscount => TB_PENCIL_DISCOUNT,
+            #[cfg(feature = "TbPencilDollar")]
+            TbIcon::TbPencilDollar => TB_PENCIL_DOLLAR,
+            #[cfg(feature = "TbPencilDown")]
+            TbIcon::TbPencilDown => TB_PENCIL_DOWN,
+            #[cfg(feature = "TbPencilExclamation")]
+            TbIcon::TbPencilExclamation => TB_PENCIL_EXCLAMATION,
+            #[cfg(feature = "TbPencilHeart")]
+            TbIcon::TbPencilHeart => TB_PENCIL_HEART,
             #[cfg(feature = "TbPencilMinus")]
             TbIcon::TbPencilMinus => TB_PENCIL_MINUS,
             #[cfg(feature = "TbPencilOff")]
             TbIcon::TbPencilOff => TB_PENCIL_OFF,
+            #[cfg(feature = "TbPencilPause")]
+            TbIcon::TbPencilPause => TB_PENCIL_PAUSE,
+            #[cfg(feature = "TbPencilPin")]
+            TbIcon::TbPencilPin => TB_PENCIL_PIN,
             #[cfg(feature = "TbPencilPlus")]
             TbIcon::TbPencilPlus => TB_PENCIL_PLUS,
+            #[cfg(feature = "TbPencilQuestion")]
+            TbIcon::TbPencilQuestion => TB_PENCIL_QUESTION,
+            #[cfg(feature = "TbPencilSearch")]
+            TbIcon::TbPencilSearch => TB_PENCIL_SEARCH,
+            #[cfg(feature = "TbPencilShare")]
+            TbIcon::TbPencilShare => TB_PENCIL_SHARE,
+            #[cfg(feature = "TbPencilStar")]
+            TbIcon::TbPencilStar => TB_PENCIL_STAR,
+            #[cfg(feature = "TbPencilUp")]
+            TbIcon::TbPencilUp => TB_PENCIL_UP,
+            #[cfg(feature = "TbPencilX")]
+            TbIcon::TbPencilX => TB_PENCIL_X,
             #[cfg(feature = "TbPennant")]
             TbIcon::TbPennant => TB_PENNANT,
             #[cfg(feature = "TbPennant2")]
@@ -92001,8 +103962,32 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPentagon => TB_PENTAGON,
             #[cfg(feature = "TbPentagonFilled")]
             TbIcon::TbPentagonFilled => TB_PENTAGON_FILLED,
+            #[cfg(feature = "TbPentagonNumber0")]
+            TbIcon::TbPentagonNumber0 => TB_PENTAGON_NUMBER0,
+            #[cfg(feature = "TbPentagonNumber1")]
+            TbIcon::TbPentagonNumber1 => TB_PENTAGON_NUMBER1,
+            #[cfg(feature = "TbPentagonNumber2")]
+            TbIcon::TbPentagonNumber2 => TB_PENTAGON_NUMBER2,
+            #[cfg(feature = "TbPentagonNumber3")]
+            TbIcon::TbPentagonNumber3 => TB_PENTAGON_NUMBER3,
+            #[cfg(feature = "TbPentagonNumber4")]
+            TbIcon::TbPentagonNumber4 => TB_PENTAGON_NUMBER4,
+            #[cfg(feature = "TbPentagonNumber5")]
+            TbIcon::TbPentagonNumber5 => TB_PENTAGON_NUMBER5,
+            #[cfg(feature = "TbPentagonNumber6")]
+            TbIcon::TbPentagonNumber6 => TB_PENTAGON_NUMBER6,
+            #[cfg(feature = "TbPentagonNumber7")]
+            TbIcon::TbPentagonNumber7 => TB_PENTAGON_NUMBER7,
+            #[cfg(feature = "TbPentagonNumber8")]
+            TbIcon::TbPentagonNumber8 => TB_PENTAGON_NUMBER8,
+            #[cfg(feature = "TbPentagonNumber9")]
+            TbIcon::TbPentagonNumber9 => TB_PENTAGON_NUMBER9,
             #[cfg(feature = "TbPentagonOff")]
             TbIcon::TbPentagonOff => TB_PENTAGON_OFF,
+            #[cfg(feature = "TbPentagonPlus")]
+            TbIcon::TbPentagonPlus => TB_PENTAGON_PLUS,
+            #[cfg(feature = "TbPentagonX")]
+            TbIcon::TbPentagonX => TB_PENTAGON_X,
             #[cfg(feature = "TbPentagram")]
             TbIcon::TbPentagram => TB_PENTAGRAM,
             #[cfg(feature = "TbPepper")]
@@ -92049,6 +104034,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPhotoCancel => TB_PHOTO_CANCEL,
             #[cfg(feature = "TbPhotoCheck")]
             TbIcon::TbPhotoCheck => TB_PHOTO_CHECK,
+            #[cfg(feature = "TbPhotoCircle")]
+            TbIcon::TbPhotoCircle => TB_PHOTO_CIRCLE,
+            #[cfg(feature = "TbPhotoCircleMinus")]
+            TbIcon::TbPhotoCircleMinus => TB_PHOTO_CIRCLE_MINUS,
+            #[cfg(feature = "TbPhotoCirclePlus")]
+            TbIcon::TbPhotoCirclePlus => TB_PHOTO_CIRCLE_PLUS,
             #[cfg(feature = "TbPhotoCode")]
             TbIcon::TbPhotoCode => TB_PHOTO_CODE,
             #[cfg(feature = "TbPhotoCog")]
@@ -92065,12 +104056,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPhotoFilled => TB_PHOTO_FILLED,
             #[cfg(feature = "TbPhotoHeart")]
             TbIcon::TbPhotoHeart => TB_PHOTO_HEART,
+            #[cfg(feature = "TbPhotoHexagon")]
+            TbIcon::TbPhotoHexagon => TB_PHOTO_HEXAGON,
             #[cfg(feature = "TbPhotoMinus")]
             TbIcon::TbPhotoMinus => TB_PHOTO_MINUS,
             #[cfg(feature = "TbPhotoOff")]
             TbIcon::TbPhotoOff => TB_PHOTO_OFF,
             #[cfg(feature = "TbPhotoPause")]
             TbIcon::TbPhotoPause => TB_PHOTO_PAUSE,
+            #[cfg(feature = "TbPhotoPentagon")]
+            TbIcon::TbPhotoPentagon => TB_PHOTO_PENTAGON,
             #[cfg(feature = "TbPhotoPin")]
             TbIcon::TbPhotoPin => TB_PHOTO_PIN,
             #[cfg(feature = "TbPhotoPlus")]
@@ -92089,6 +104084,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPhotoShare => TB_PHOTO_SHARE,
             #[cfg(feature = "TbPhotoShield")]
             TbIcon::TbPhotoShield => TB_PHOTO_SHIELD,
+            #[cfg(feature = "TbPhotoSquareRounded")]
+            TbIcon::TbPhotoSquareRounded => TB_PHOTO_SQUARE_ROUNDED,
             #[cfg(feature = "TbPhotoStar")]
             TbIcon::TbPhotoStar => TB_PHOTO_STAR,
             #[cfg(feature = "TbPhotoUp")]
@@ -92097,6 +104094,10 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPhotoX => TB_PHOTO_X,
             #[cfg(feature = "TbPhysotherapist")]
             TbIcon::TbPhysotherapist => TB_PHYSOTHERAPIST,
+            #[cfg(feature = "TbPiano")]
+            TbIcon::TbPiano => TB_PIANO,
+            #[cfg(feature = "TbPick")]
+            TbIcon::TbPick => TB_PICK,
             #[cfg(feature = "TbPictureInPicture")]
             TbIcon::TbPictureInPicture => TB_PICTURE_IN_PICTURE,
             #[cfg(feature = "TbPictureInPictureOff")]
@@ -92271,6 +104272,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPointerDown => TB_POINTER_DOWN,
             #[cfg(feature = "TbPointerExclamation")]
             TbIcon::TbPointerExclamation => TB_POINTER_EXCLAMATION,
+            #[cfg(feature = "TbPointerFilled")]
+            TbIcon::TbPointerFilled => TB_POINTER_FILLED,
             #[cfg(feature = "TbPointerHeart")]
             TbIcon::TbPointerHeart => TB_POINTER_HEART,
             #[cfg(feature = "TbPointerMinus")]
@@ -92333,6 +104336,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPrinter => TB_PRINTER,
             #[cfg(feature = "TbPrinterOff")]
             TbIcon::TbPrinterOff => TB_PRINTER_OFF,
+            #[cfg(feature = "TbPrism")]
+            TbIcon::TbPrism => TB_PRISM,
+            #[cfg(feature = "TbPrismOff")]
+            TbIcon::TbPrismOff => TB_PRISM_OFF,
+            #[cfg(feature = "TbPrismPlus")]
+            TbIcon::TbPrismPlus => TB_PRISM_PLUS,
             #[cfg(feature = "TbPrison")]
             TbIcon::TbPrison => TB_PRISON,
             #[cfg(feature = "TbProgress")]
@@ -92369,6 +104378,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbPyramid => TB_PYRAMID,
             #[cfg(feature = "TbPyramidOff")]
             TbIcon::TbPyramidOff => TB_PYRAMID_OFF,
+            #[cfg(feature = "TbPyramidPlus")]
+            TbIcon::TbPyramidPlus => TB_PYRAMID_PLUS,
             #[cfg(feature = "TbQrcode")]
             TbIcon::TbQrcode => TB_QRCODE,
             #[cfg(feature = "TbQrcodeOff")]
@@ -92379,6 +104390,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbQuote => TB_QUOTE,
             #[cfg(feature = "TbQuoteOff")]
             TbIcon::TbQuoteOff => TB_QUOTE_OFF,
+            #[cfg(feature = "TbQuotes")]
+            TbIcon::TbQuotes => TB_QUOTES,
             #[cfg(feature = "TbRadar")]
             TbIcon::TbRadar => TB_RADAR,
             #[cfg(feature = "TbRadar2")]
@@ -92441,10 +104454,20 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbRectangle => TB_RECTANGLE,
             #[cfg(feature = "TbRectangleFilled")]
             TbIcon::TbRectangleFilled => TB_RECTANGLE_FILLED,
+            #[cfg(feature = "TbRectangleRoundedBottom")]
+            TbIcon::TbRectangleRoundedBottom => TB_RECTANGLE_ROUNDED_BOTTOM,
+            #[cfg(feature = "TbRectangleRoundedTop")]
+            TbIcon::TbRectangleRoundedTop => TB_RECTANGLE_ROUNDED_TOP,
             #[cfg(feature = "TbRectangleVertical")]
             TbIcon::TbRectangleVertical => TB_RECTANGLE_VERTICAL,
             #[cfg(feature = "TbRectangleVerticalFilled")]
             TbIcon::TbRectangleVerticalFilled => TB_RECTANGLE_VERTICAL_FILLED,
+            #[cfg(feature = "TbRectangularPrism")]
+            TbIcon::TbRectangularPrism => TB_RECTANGULAR_PRISM,
+            #[cfg(feature = "TbRectangularPrismOff")]
+            TbIcon::TbRectangularPrismOff => TB_RECTANGULAR_PRISM_OFF,
+            #[cfg(feature = "TbRectangularPrismPlus")]
+            TbIcon::TbRectangularPrismPlus => TB_RECTANGULAR_PRISM_PLUS,
             #[cfg(feature = "TbRecycle")]
             TbIcon::TbRecycle => TB_RECYCLE,
             #[cfg(feature = "TbRecycleOff")]
@@ -92471,6 +104494,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbRelationOneToOne => TB_RELATION_ONE_TO_ONE,
             #[cfg(feature = "TbReload")]
             TbIcon::TbReload => TB_RELOAD,
+            #[cfg(feature = "TbReorder")]
+            TbIcon::TbReorder => TB_REORDER,
             #[cfg(feature = "TbRepeat")]
             TbIcon::TbRepeat => TB_REPEAT,
             #[cfg(feature = "TbRepeatOff")]
@@ -92499,6 +104524,40 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbReservedLine => TB_RESERVED_LINE,
             #[cfg(feature = "TbResize")]
             TbIcon::TbResize => TB_RESIZE,
+            #[cfg(feature = "TbRestore")]
+            TbIcon::TbRestore => TB_RESTORE,
+            #[cfg(feature = "TbRewindBackward10")]
+            TbIcon::TbRewindBackward10 => TB_REWIND_BACKWARD10,
+            #[cfg(feature = "TbRewindBackward15")]
+            TbIcon::TbRewindBackward15 => TB_REWIND_BACKWARD15,
+            #[cfg(feature = "TbRewindBackward20")]
+            TbIcon::TbRewindBackward20 => TB_REWIND_BACKWARD20,
+            #[cfg(feature = "TbRewindBackward30")]
+            TbIcon::TbRewindBackward30 => TB_REWIND_BACKWARD30,
+            #[cfg(feature = "TbRewindBackward40")]
+            TbIcon::TbRewindBackward40 => TB_REWIND_BACKWARD40,
+            #[cfg(feature = "TbRewindBackward5")]
+            TbIcon::TbRewindBackward5 => TB_REWIND_BACKWARD5,
+            #[cfg(feature = "TbRewindBackward50")]
+            TbIcon::TbRewindBackward50 => TB_REWIND_BACKWARD50,
+            #[cfg(feature = "TbRewindBackward60")]
+            TbIcon::TbRewindBackward60 => TB_REWIND_BACKWARD60,
+            #[cfg(feature = "TbRewindForward10")]
+            TbIcon::TbRewindForward10 => TB_REWIND_FORWARD10,
+            #[cfg(feature = "TbRewindForward15")]
+            TbIcon::TbRewindForward15 => TB_REWIND_FORWARD15,
+            #[cfg(feature = "TbRewindForward20")]
+            TbIcon::TbRewindForward20 => TB_REWIND_FORWARD20,
+            #[cfg(feature = "TbRewindForward30")]
+            TbIcon::TbRewindForward30 => TB_REWIND_FORWARD30,
+            #[cfg(feature = "TbRewindForward40")]
+            TbIcon::TbRewindForward40 => TB_REWIND_FORWARD40,
+            #[cfg(feature = "TbRewindForward5")]
+            TbIcon::TbRewindForward5 => TB_REWIND_FORWARD5,
+            #[cfg(feature = "TbRewindForward50")]
+            TbIcon::TbRewindForward50 => TB_REWIND_FORWARD50,
+            #[cfg(feature = "TbRewindForward60")]
+            TbIcon::TbRewindForward60 => TB_REWIND_FORWARD60,
             #[cfg(feature = "TbRibbonHealth")]
             TbIcon::TbRibbonHealth => TB_RIBBON_HEALTH,
             #[cfg(feature = "TbRings")]
@@ -92579,6 +104638,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbRowInsertBottom => TB_ROW_INSERT_BOTTOM,
             #[cfg(feature = "TbRowInsertTop")]
             TbIcon::TbRowInsertTop => TB_ROW_INSERT_TOP,
+            #[cfg(feature = "TbRowRemove")]
+            TbIcon::TbRowRemove => TB_ROW_REMOVE,
             #[cfg(feature = "TbRss")]
             TbIcon::TbRss => TB_RSS,
             #[cfg(feature = "TbRubberStamp")]
@@ -92869,14 +104930,68 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbShoeOff => TB_SHOE_OFF,
             #[cfg(feature = "TbShoppingBag")]
             TbIcon::TbShoppingBag => TB_SHOPPING_BAG,
+            #[cfg(feature = "TbShoppingBagCheck")]
+            TbIcon::TbShoppingBagCheck => TB_SHOPPING_BAG_CHECK,
+            #[cfg(feature = "TbShoppingBagDiscount")]
+            TbIcon::TbShoppingBagDiscount => TB_SHOPPING_BAG_DISCOUNT,
+            #[cfg(feature = "TbShoppingBagEdit")]
+            TbIcon::TbShoppingBagEdit => TB_SHOPPING_BAG_EDIT,
+            #[cfg(feature = "TbShoppingBagExclamation")]
+            TbIcon::TbShoppingBagExclamation => TB_SHOPPING_BAG_EXCLAMATION,
+            #[cfg(feature = "TbShoppingBagMinus")]
+            TbIcon::TbShoppingBagMinus => TB_SHOPPING_BAG_MINUS,
+            #[cfg(feature = "TbShoppingBagPlus")]
+            TbIcon::TbShoppingBagPlus => TB_SHOPPING_BAG_PLUS,
+            #[cfg(feature = "TbShoppingBagSearch")]
+            TbIcon::TbShoppingBagSearch => TB_SHOPPING_BAG_SEARCH,
+            #[cfg(feature = "TbShoppingBagX")]
+            TbIcon::TbShoppingBagX => TB_SHOPPING_BAG_X,
             #[cfg(feature = "TbShoppingCart")]
             TbIcon::TbShoppingCart => TB_SHOPPING_CART,
+            #[cfg(feature = "TbShoppingCartBolt")]
+            TbIcon::TbShoppingCartBolt => TB_SHOPPING_CART_BOLT,
+            #[cfg(feature = "TbShoppingCartCancel")]
+            TbIcon::TbShoppingCartCancel => TB_SHOPPING_CART_CANCEL,
+            #[cfg(feature = "TbShoppingCartCheck")]
+            TbIcon::TbShoppingCartCheck => TB_SHOPPING_CART_CHECK,
+            #[cfg(feature = "TbShoppingCartCode")]
+            TbIcon::TbShoppingCartCode => TB_SHOPPING_CART_CODE,
+            #[cfg(feature = "TbShoppingCartCog")]
+            TbIcon::TbShoppingCartCog => TB_SHOPPING_CART_COG,
+            #[cfg(feature = "TbShoppingCartCopy")]
+            TbIcon::TbShoppingCartCopy => TB_SHOPPING_CART_COPY,
             #[cfg(feature = "TbShoppingCartDiscount")]
             TbIcon::TbShoppingCartDiscount => TB_SHOPPING_CART_DISCOUNT,
+            #[cfg(feature = "TbShoppingCartDollar")]
+            TbIcon::TbShoppingCartDollar => TB_SHOPPING_CART_DOLLAR,
+            #[cfg(feature = "TbShoppingCartDown")]
+            TbIcon::TbShoppingCartDown => TB_SHOPPING_CART_DOWN,
+            #[cfg(feature = "TbShoppingCartExclamation")]
+            TbIcon::TbShoppingCartExclamation => TB_SHOPPING_CART_EXCLAMATION,
+            #[cfg(feature = "TbShoppingCartFilled")]
+            TbIcon::TbShoppingCartFilled => TB_SHOPPING_CART_FILLED,
+            #[cfg(feature = "TbShoppingCartHeart")]
+            TbIcon::TbShoppingCartHeart => TB_SHOPPING_CART_HEART,
+            #[cfg(feature = "TbShoppingCartMinus")]
+            TbIcon::TbShoppingCartMinus => TB_SHOPPING_CART_MINUS,
             #[cfg(feature = "TbShoppingCartOff")]
             TbIcon::TbShoppingCartOff => TB_SHOPPING_CART_OFF,
+            #[cfg(feature = "TbShoppingCartPause")]
+            TbIcon::TbShoppingCartPause => TB_SHOPPING_CART_PAUSE,
+            #[cfg(feature = "TbShoppingCartPin")]
+            TbIcon::TbShoppingCartPin => TB_SHOPPING_CART_PIN,
             #[cfg(feature = "TbShoppingCartPlus")]
             TbIcon::TbShoppingCartPlus => TB_SHOPPING_CART_PLUS,
+            #[cfg(feature = "TbShoppingCartQuestion")]
+            TbIcon::TbShoppingCartQuestion => TB_SHOPPING_CART_QUESTION,
+            #[cfg(feature = "TbShoppingCartSearch")]
+            TbIcon::TbShoppingCartSearch => TB_SHOPPING_CART_SEARCH,
+            #[cfg(feature = "TbShoppingCartShare")]
+            TbIcon::TbShoppingCartShare => TB_SHOPPING_CART_SHARE,
+            #[cfg(feature = "TbShoppingCartStar")]
+            TbIcon::TbShoppingCartStar => TB_SHOPPING_CART_STAR,
+            #[cfg(feature = "TbShoppingCartUp")]
+            TbIcon::TbShoppingCartUp => TB_SHOPPING_CART_UP,
             #[cfg(feature = "TbShoppingCartX")]
             TbIcon::TbShoppingCartX => TB_SHOPPING_CART_X,
             #[cfg(feature = "TbShovel")]
@@ -92925,6 +105040,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSkateboard => TB_SKATEBOARD,
             #[cfg(feature = "TbSkateboardOff")]
             TbIcon::TbSkateboardOff => TB_SKATEBOARD_OFF,
+            #[cfg(feature = "TbSkateboarding")]
+            TbIcon::TbSkateboarding => TB_SKATEBOARDING,
             #[cfg(feature = "TbSkull")]
             TbIcon::TbSkull => TB_SKULL,
             #[cfg(feature = "TbSlash")]
@@ -93017,6 +105134,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSpeakerphone => TB_SPEAKERPHONE,
             #[cfg(feature = "TbSpeedboat")]
             TbIcon::TbSpeedboat => TB_SPEEDBOAT,
+            #[cfg(feature = "TbSphere")]
+            TbIcon::TbSphere => TB_SPHERE,
+            #[cfg(feature = "TbSphereOff")]
+            TbIcon::TbSphereOff => TB_SPHERE_OFF,
+            #[cfg(feature = "TbSpherePlus")]
+            TbIcon::TbSpherePlus => TB_SPHERE_PLUS,
             #[cfg(feature = "TbSpider")]
             TbIcon::TbSpider => TB_SPIDER,
             #[cfg(feature = "TbSpiral")]
@@ -93057,36 +105180,64 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSquare9Filled => TB_SQUARE9_FILLED,
             #[cfg(feature = "TbSquareArrowDown")]
             TbIcon::TbSquareArrowDown => TB_SQUARE_ARROW_DOWN,
+            #[cfg(feature = "TbSquareArrowDownFilled")]
+            TbIcon::TbSquareArrowDownFilled => TB_SQUARE_ARROW_DOWN_FILLED,
             #[cfg(feature = "TbSquareArrowLeft")]
             TbIcon::TbSquareArrowLeft => TB_SQUARE_ARROW_LEFT,
+            #[cfg(feature = "TbSquareArrowLeftFilled")]
+            TbIcon::TbSquareArrowLeftFilled => TB_SQUARE_ARROW_LEFT_FILLED,
             #[cfg(feature = "TbSquareArrowRight")]
             TbIcon::TbSquareArrowRight => TB_SQUARE_ARROW_RIGHT,
+            #[cfg(feature = "TbSquareArrowRightFilled")]
+            TbIcon::TbSquareArrowRightFilled => TB_SQUARE_ARROW_RIGHT_FILLED,
             #[cfg(feature = "TbSquareArrowUp")]
             TbIcon::TbSquareArrowUp => TB_SQUARE_ARROW_UP,
+            #[cfg(feature = "TbSquareArrowUpFilled")]
+            TbIcon::TbSquareArrowUpFilled => TB_SQUARE_ARROW_UP_FILLED,
             #[cfg(feature = "TbSquareAsterisk")]
             TbIcon::TbSquareAsterisk => TB_SQUARE_ASTERISK,
+            #[cfg(feature = "TbSquareAsteriskFilled")]
+            TbIcon::TbSquareAsteriskFilled => TB_SQUARE_ASTERISK_FILLED,
             #[cfg(feature = "TbSquareCheck")]
             TbIcon::TbSquareCheck => TB_SQUARE_CHECK,
             #[cfg(feature = "TbSquareCheckFilled")]
             TbIcon::TbSquareCheckFilled => TB_SQUARE_CHECK_FILLED,
             #[cfg(feature = "TbSquareChevronDown")]
             TbIcon::TbSquareChevronDown => TB_SQUARE_CHEVRON_DOWN,
+            #[cfg(feature = "TbSquareChevronDownFilled")]
+            TbIcon::TbSquareChevronDownFilled => TB_SQUARE_CHEVRON_DOWN_FILLED,
             #[cfg(feature = "TbSquareChevronLeft")]
             TbIcon::TbSquareChevronLeft => TB_SQUARE_CHEVRON_LEFT,
+            #[cfg(feature = "TbSquareChevronLeftFilled")]
+            TbIcon::TbSquareChevronLeftFilled => TB_SQUARE_CHEVRON_LEFT_FILLED,
             #[cfg(feature = "TbSquareChevronRight")]
             TbIcon::TbSquareChevronRight => TB_SQUARE_CHEVRON_RIGHT,
+            #[cfg(feature = "TbSquareChevronRightFilled")]
+            TbIcon::TbSquareChevronRightFilled => TB_SQUARE_CHEVRON_RIGHT_FILLED,
             #[cfg(feature = "TbSquareChevronUp")]
             TbIcon::TbSquareChevronUp => TB_SQUARE_CHEVRON_UP,
+            #[cfg(feature = "TbSquareChevronUpFilled")]
+            TbIcon::TbSquareChevronUpFilled => TB_SQUARE_CHEVRON_UP_FILLED,
             #[cfg(feature = "TbSquareChevronsDown")]
             TbIcon::TbSquareChevronsDown => TB_SQUARE_CHEVRONS_DOWN,
+            #[cfg(feature = "TbSquareChevronsDownFilled")]
+            TbIcon::TbSquareChevronsDownFilled => TB_SQUARE_CHEVRONS_DOWN_FILLED,
             #[cfg(feature = "TbSquareChevronsLeft")]
             TbIcon::TbSquareChevronsLeft => TB_SQUARE_CHEVRONS_LEFT,
+            #[cfg(feature = "TbSquareChevronsLeftFilled")]
+            TbIcon::TbSquareChevronsLeftFilled => TB_SQUARE_CHEVRONS_LEFT_FILLED,
             #[cfg(feature = "TbSquareChevronsRight")]
             TbIcon::TbSquareChevronsRight => TB_SQUARE_CHEVRONS_RIGHT,
+            #[cfg(feature = "TbSquareChevronsRightFilled")]
+            TbIcon::TbSquareChevronsRightFilled => TB_SQUARE_CHEVRONS_RIGHT_FILLED,
             #[cfg(feature = "TbSquareChevronsUp")]
             TbIcon::TbSquareChevronsUp => TB_SQUARE_CHEVRONS_UP,
+            #[cfg(feature = "TbSquareChevronsUpFilled")]
+            TbIcon::TbSquareChevronsUpFilled => TB_SQUARE_CHEVRONS_UP_FILLED,
             #[cfg(feature = "TbSquareDot")]
             TbIcon::TbSquareDot => TB_SQUARE_DOT,
+            #[cfg(feature = "TbSquareDotFilled")]
+            TbIcon::TbSquareDotFilled => TB_SQUARE_DOT_FILLED,
             #[cfg(feature = "TbSquareF0")]
             TbIcon::TbSquareF0 => TB_SQUARE_F0,
             #[cfg(feature = "TbSquareF0Filled")]
@@ -93127,6 +105278,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSquareF9 => TB_SQUARE_F9,
             #[cfg(feature = "TbSquareF9Filled")]
             TbIcon::TbSquareF9Filled => TB_SQUARE_F9_FILLED,
+            #[cfg(feature = "TbSquareFilled")]
+            TbIcon::TbSquareFilled => TB_SQUARE_FILLED,
             #[cfg(feature = "TbSquareForbid")]
             TbIcon::TbSquareForbid => TB_SQUARE_FORBID,
             #[cfg(feature = "TbSquareForbid2")]
@@ -93189,6 +105342,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSquareLetterZ => TB_SQUARE_LETTER_Z,
             #[cfg(feature = "TbSquareMinus")]
             TbIcon::TbSquareMinus => TB_SQUARE_MINUS,
+            #[cfg(feature = "TbSquareMinusFilled")]
+            TbIcon::TbSquareMinusFilled => TB_SQUARE_MINUS_FILLED,
             #[cfg(feature = "TbSquareNumber0")]
             TbIcon::TbSquareNumber0 => TB_SQUARE_NUMBER0,
             #[cfg(feature = "TbSquareNumber1")]
@@ -93337,6 +105492,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSquareRoundedLetterZ => TB_SQUARE_ROUNDED_LETTER_Z,
             #[cfg(feature = "TbSquareRoundedMinus")]
             TbIcon::TbSquareRoundedMinus => TB_SQUARE_ROUNDED_MINUS,
+            #[cfg(feature = "TbSquareRoundedMinusFilled")]
+            TbIcon::TbSquareRoundedMinusFilled => TB_SQUARE_ROUNDED_MINUS_FILLED,
             #[cfg(feature = "TbSquareRoundedNumber0")]
             TbIcon::TbSquareRoundedNumber0 => TB_SQUARE_ROUNDED_NUMBER0,
             #[cfg(feature = "TbSquareRoundedNumber0Filled")]
@@ -93391,6 +105548,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbSquareToggleHorizontal => TB_SQUARE_TOGGLE_HORIZONTAL,
             #[cfg(feature = "TbSquareX")]
             TbIcon::TbSquareX => TB_SQUARE_X,
+            #[cfg(feature = "TbSquareXFilled")]
+            TbIcon::TbSquareXFilled => TB_SQUARE_X_FILLED,
             #[cfg(feature = "TbSquaresDiagonal")]
             TbIcon::TbSquaresDiagonal => TB_SQUARES_DIAGONAL,
             #[cfg(feature = "TbSquaresFilled")]
@@ -93517,6 +105676,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbTable => TB_TABLE,
             #[cfg(feature = "TbTableAlias")]
             TbIcon::TbTableAlias => TB_TABLE_ALIAS,
+            #[cfg(feature = "TbTableColumn")]
+            TbIcon::TbTableColumn => TB_TABLE_COLUMN,
             #[cfg(feature = "TbTableDown")]
             TbIcon::TbTableDown => TB_TABLE_DOWN,
             #[cfg(feature = "TbTableExport")]
@@ -93535,6 +105696,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbTableOptions => TB_TABLE_OPTIONS,
             #[cfg(feature = "TbTablePlus")]
             TbIcon::TbTablePlus => TB_TABLE_PLUS,
+            #[cfg(feature = "TbTableRow")]
+            TbIcon::TbTableRow => TB_TABLE_ROW,
             #[cfg(feature = "TbTableShare")]
             TbIcon::TbTableShare => TB_TABLE_SHARE,
             #[cfg(feature = "TbTableShortcut")]
@@ -93663,6 +105826,24 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbTiltShift => TB_TILT_SHIFT,
             #[cfg(feature = "TbTiltShiftOff")]
             TbIcon::TbTiltShiftOff => TB_TILT_SHIFT_OFF,
+            #[cfg(feature = "TbTimeDuration0")]
+            TbIcon::TbTimeDuration0 => TB_TIME_DURATION0,
+            #[cfg(feature = "TbTimeDuration10")]
+            TbIcon::TbTimeDuration10 => TB_TIME_DURATION10,
+            #[cfg(feature = "TbTimeDuration15")]
+            TbIcon::TbTimeDuration15 => TB_TIME_DURATION15,
+            #[cfg(feature = "TbTimeDuration30")]
+            TbIcon::TbTimeDuration30 => TB_TIME_DURATION30,
+            #[cfg(feature = "TbTimeDuration45")]
+            TbIcon::TbTimeDuration45 => TB_TIME_DURATION45,
+            #[cfg(feature = "TbTimeDuration5")]
+            TbIcon::TbTimeDuration5 => TB_TIME_DURATION5,
+            #[cfg(feature = "TbTimeDuration60")]
+            TbIcon::TbTimeDuration60 => TB_TIME_DURATION60,
+            #[cfg(feature = "TbTimeDuration90")]
+            TbIcon::TbTimeDuration90 => TB_TIME_DURATION90,
+            #[cfg(feature = "TbTimeDurationOff")]
+            TbIcon::TbTimeDurationOff => TB_TIME_DURATION_OFF,
             #[cfg(feature = "TbTimeline")]
             TbIcon::TbTimeline => TB_TIMELINE,
             #[cfg(feature = "TbTimelineEvent")]
@@ -93757,10 +105938,14 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbTrafficLightsOff => TB_TRAFFIC_LIGHTS_OFF,
             #[cfg(feature = "TbTrain")]
             TbIcon::TbTrain => TB_TRAIN,
+            #[cfg(feature = "TbTransfer")]
+            TbIcon::TbTransfer => TB_TRANSFER,
             #[cfg(feature = "TbTransferIn")]
             TbIcon::TbTransferIn => TB_TRANSFER_IN,
             #[cfg(feature = "TbTransferOut")]
             TbIcon::TbTransferOut => TB_TRANSFER_OUT,
+            #[cfg(feature = "TbTransferVertical")]
+            TbIcon::TbTransferVertical => TB_TRANSFER_VERTICAL,
             #[cfg(feature = "TbTransform")]
             TbIcon::TbTransform => TB_TRANSFORM,
             #[cfg(feature = "TbTransformFilled")]
@@ -93815,6 +106000,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbTriangleOff => TB_TRIANGLE_OFF,
             #[cfg(feature = "TbTriangleSquareCircle")]
             TbIcon::TbTriangleSquareCircle => TB_TRIANGLE_SQUARE_CIRCLE,
+            #[cfg(feature = "TbTriangleSquareCircleFilled")]
+            TbIcon::TbTriangleSquareCircleFilled => TB_TRIANGLE_SQUARE_CIRCLE_FILLED,
             #[cfg(feature = "TbTriangles")]
             TbIcon::TbTriangles => TB_TRIANGLES,
             #[cfg(feature = "TbTrident")]
@@ -93889,12 +106076,16 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbUserExclamation => TB_USER_EXCLAMATION,
             #[cfg(feature = "TbUserHeart")]
             TbIcon::TbUserHeart => TB_USER_HEART,
+            #[cfg(feature = "TbUserHexagon")]
+            TbIcon::TbUserHexagon => TB_USER_HEXAGON,
             #[cfg(feature = "TbUserMinus")]
             TbIcon::TbUserMinus => TB_USER_MINUS,
             #[cfg(feature = "TbUserOff")]
             TbIcon::TbUserOff => TB_USER_OFF,
             #[cfg(feature = "TbUserPause")]
             TbIcon::TbUserPause => TB_USER_PAUSE,
+            #[cfg(feature = "TbUserPentagon")]
+            TbIcon::TbUserPentagon => TB_USER_PENTAGON,
             #[cfg(feature = "TbUserPin")]
             TbIcon::TbUserPin => TB_USER_PIN,
             #[cfg(feature = "TbUserPlus")]
@@ -93907,6 +106098,10 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbUserShare => TB_USER_SHARE,
             #[cfg(feature = "TbUserShield")]
             TbIcon::TbUserShield => TB_USER_SHIELD,
+            #[cfg(feature = "TbUserSquare")]
+            TbIcon::TbUserSquare => TB_USER_SQUARE,
+            #[cfg(feature = "TbUserSquareRounded")]
+            TbIcon::TbUserSquareRounded => TB_USER_SQUARE_ROUNDED,
             #[cfg(feature = "TbUserStar")]
             TbIcon::TbUserStar => TB_USER_STAR,
             #[cfg(feature = "TbUserUp")]
@@ -94015,6 +106210,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbVolume3 => TB_VOLUME3,
             #[cfg(feature = "TbVolumeOff")]
             TbIcon::TbVolumeOff => TB_VOLUME_OFF,
+            #[cfg(feature = "TbVs")]
+            TbIcon::TbVs => TB_VS,
             #[cfg(feature = "TbWalk")]
             TbIcon::TbWalk => TB_WALK,
             #[cfg(feature = "TbWall")]
@@ -94049,6 +106246,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbWashDryDip => TB_WASH_DRY_DIP,
             #[cfg(feature = "TbWashDryF")]
             TbIcon::TbWashDryF => TB_WASH_DRY_F,
+            #[cfg(feature = "TbWashDryFlat")]
+            TbIcon::TbWashDryFlat => TB_WASH_DRY_FLAT,
             #[cfg(feature = "TbWashDryHang")]
             TbIcon::TbWashDryHang => TB_WASH_DRY_HANG,
             #[cfg(feature = "TbWashDryOff")]
@@ -94063,8 +106262,12 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbWashDryclean => TB_WASH_DRYCLEAN,
             #[cfg(feature = "TbWashDrycleanOff")]
             TbIcon::TbWashDrycleanOff => TB_WASH_DRYCLEAN_OFF,
+            #[cfg(feature = "TbWashEco")]
+            TbIcon::TbWashEco => TB_WASH_ECO,
             #[cfg(feature = "TbWashGentle")]
             TbIcon::TbWashGentle => TB_WASH_GENTLE,
+            #[cfg(feature = "TbWashHand")]
+            TbIcon::TbWashHand => TB_WASH_HAND,
             #[cfg(feature = "TbWashMachine")]
             TbIcon::TbWashMachine => TB_WASH_MACHINE,
             #[cfg(feature = "TbWashOff")]
@@ -94101,6 +106304,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbWebhookOff => TB_WEBHOOK_OFF,
             #[cfg(feature = "TbWeight")]
             TbIcon::TbWeight => TB_WEIGHT,
+            #[cfg(feature = "TbWheel")]
+            TbIcon::TbWheel => TB_WHEEL,
             #[cfg(feature = "TbWheelchair")]
             TbIcon::TbWheelchair => TB_WHEELCHAIR,
             #[cfg(feature = "TbWheelchairOff")]
@@ -94219,6 +106424,8 @@ impl From<TbIcon> for icondata_core::IconData {
             TbIcon::TbXboxY => TB_XBOX_Y,
             #[cfg(feature = "TbXd")]
             TbIcon::TbXd => TB_XD,
+            #[cfg(feature = "TbXxx")]
+            TbIcon::TbXxx => TB_XXX,
             #[cfg(feature = "TbYinYang")]
             TbIcon::TbYinYang => TB_YIN_YANG,
             #[cfg(feature = "TbYinYangFilled")]
