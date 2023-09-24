@@ -19,11 +19,11 @@ pub struct Library<'a> {
 
 impl<'a> Library<'a> {
     pub fn new(mut path: PathBuf, ty: LibType<'a>) -> Self {
+        let cargo_path = path.join("Cargo.toml");
+        let lib_rs_path = path.join("src/lib.rs");
+        let readme_path = path.join("README.md");
         match &ty {
             LibType::IconLib(_) => {
-                let cargo_path = path.join("Cargo.toml");
-                let lib_rs_path = path.join("src/lib.rs");
-                let readme_path = path.join("README.md");
 
                 Library {
                     cargo_toml: Some(CargoToml {
@@ -36,9 +36,6 @@ impl<'a> Library<'a> {
             }
 
             LibType::MainLib => {
-                let cargo_path = path.join("Cargo.toml");
-                let lib_rs_path = path.join("src/lib.rs");
-
                 path.pop();
                 let readme_path = path.join("README.md");
 
@@ -53,9 +50,6 @@ impl<'a> Library<'a> {
             }
 
             LibType::IconIndex => {
-                let cargo_path = path.join("Cargo.toml");
-                let lib_rs_path = path.join("src/lib.rs");
-
                 Library {
                     cargo_toml: Some(CargoToml {
                         path: cargo_path,
@@ -68,7 +62,7 @@ impl<'a> Library<'a> {
 
             LibType::Boilerplate => Library {
                 cargo_toml: Some(CargoToml {
-                    path: path.join("Cargo.toml"),
+                    path: cargo_path,
                 }),
                 lib_rs: None,
                 readme: None,
