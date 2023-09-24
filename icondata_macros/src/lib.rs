@@ -7,9 +7,13 @@ extern crate proc_macro;
 ///
 /// ### Example
 /// ```
+/// use icondata::{icon, Icon};
+/// 
+///
 /// let icon: Icon = icon!(AiFileImageTwotone);
+/// assert_eq!(icon, Icon::from(icondata::AiFileImageTwotone));
 /// // Instead of:
-/// let icon: Icon = Icon::from(AiIcon::AiFileImageTwotone);
+/// // let icon: Icon = Icon::from(AiIcon::AiFileImageTwotone);
 /// ```
 #[proc_macro]
 pub fn icon(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
@@ -31,8 +35,8 @@ pub fn icon(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
     let (lib_short_name, icon_name) = icon_string.split_at(2);
 
     format!(
-        "Icon::from({}Icon::{}{})",
-        lib_short_name, lib_short_name, icon_name
+        "icondata::Icon::from(icondata::{}{})",
+        lib_short_name, icon_name
     )
     .parse()
     .unwrap()
