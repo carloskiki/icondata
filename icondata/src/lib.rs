@@ -8,44 +8,43 @@
 //! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data.
 //!
 //!
-pub use icondata_core::IconData;
 
 #[cfg(feature = "Ai")]
-pub use icondata_ai::*;
+pub use icondata_ai::AiIcon::{self, *};
 #[cfg(feature = "Bi")]
-pub use icondata_bi::*;
+pub use icondata_bi::BiIcon::{self, *};
 #[cfg(feature = "Bs")]
-pub use icondata_bs::*;
+pub use icondata_bs::BsIcon::{self, *};
 #[cfg(feature = "Cg")]
-pub use icondata_cg::*;
+pub use icondata_cg::CgIcon::{self, *};
 #[cfg(feature = "Ch")]
-pub use icondata_ch::*;
+pub use icondata_ch::ChIcon::{self, *};
 #[cfg(feature = "Fa")]
-pub use icondata_fa::*;
+pub use icondata_fa::FaIcon::{self, *};
 #[cfg(feature = "Fi")]
-pub use icondata_fi::*;
+pub use icondata_fi::FiIcon::{self, *};
 #[cfg(feature = "Hi")]
-pub use icondata_hi::*;
+pub use icondata_hi::HiIcon::{self, *};
 #[cfg(feature = "Im")]
-pub use icondata_im::*;
+pub use icondata_im::ImIcon::{self, *};
 #[cfg(feature = "Io")]
-pub use icondata_io::*;
+pub use icondata_io::IoIcon::{self, *};
 #[cfg(feature = "Lu")]
-pub use icondata_lu::*;
+pub use icondata_lu::LuIcon::{self, *};
 #[cfg(feature = "Oc")]
-pub use icondata_oc::*;
+pub use icondata_oc::OcIcon::{self, *};
 #[cfg(feature = "Ri")]
-pub use icondata_ri::*;
+pub use icondata_ri::RiIcon::{self, *};
 #[cfg(feature = "Si")]
-pub use icondata_si::*;
+pub use icondata_si::SiIcon::{self, *};
 #[cfg(feature = "Tb")]
-pub use icondata_tb::*;
+pub use icondata_tb::TbIcon::{self, *};
 #[cfg(feature = "Ti")]
-pub use icondata_ti::*;
+pub use icondata_ti::TiIcon::{self, *};
 #[cfg(feature = "Vs")]
-pub use icondata_vs::*;
+pub use icondata_vs::VsIcon::{self, *};
 #[cfg(feature = "Wi")]
-pub use icondata_wi::*;
+pub use icondata_wi::WiIcon::{self, *};
 
 #[cfg(feature = "macros")]
 pub use icondata_macros::*;
