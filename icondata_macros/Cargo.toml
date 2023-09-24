@@ -1,6 +1,6 @@
 [package]
 name = "icondata_macros"
-version = "0.1.2"
+version = "0.1.4"
 edition = "2021"
 authors = ["Charles Edward Gagnon"]
 license = "MIT"
@@ -13,3 +13,6 @@ keywords = ["icons", "svg", "macro"]
 
 [lib]
 proc-macro = true
+
+[dev-dependencies]
+icondata = { path = "../icondata", features = ["AiFileImageTwotone", "macros"] }

@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "icondata",
+    "icondata_ai",
+    "icondata_bi",
+    "icondata_bs",
+    "icondata_cg",
+    "icondata_ch",
+    "icondata_fa",
+    "icondata_fi",
+    "icondata_hi",
+    "icondata_im",
+    "icondata_io",
+    "icondata_lu",
+    "icondata_oc",
+    "icondata_ri",
+    "icondata_si",
+    "icondata_tb",
+    "icondata_ti",
+    "icondata_vs",
+    "icondata_wi",
+    "icondata_core",
+]
+exclude = ["build", "icondata_macros"]
+
+[workspace.dependencies]
+# For -Zminimal-versions
+serde = "1.0.103"
