@@ -26,4 +26,5 @@ exclude = ["build", "icondata_macros", "icon_index"]
 
 [workspace.dependencies]
 # For -Zminimal-versions
+[target.'cfg(any())'.dependencies]
 serde = "1.0.103"
