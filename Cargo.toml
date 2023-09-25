@@ -25,5 +25,4 @@ members = [
 exclude = ["build", "icondata_macros", "icon_index"]
 
 [workspace.dependencies]
-# For -Zminimal-versions
-serde = "1.0.103"
+serde = "^1.0.103"
