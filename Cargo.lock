@@ -24,7 +24,6 @@ dependencies = [
  "icondata_im 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "icondata_io 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "icondata_lu 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_macros",
  "icondata_oc 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "icondata_ri 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "icondata_si 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -264,12 +263,6 @@ dependencies = [
  "serde",
  "strum",
 ]
-
-[[package]]
-name = "icondata_macros"
-version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec327fa14753d8bb89a56159d617b2eee49a7d1df6575bf9e8ef524009298395"
 
 [[package]]
 name = "icondata_oc"
