@@ -13,7 +13,6 @@ categories = ["web-programming"]
 [dependencies]
 icondata_core = "0.0.2"
 serde = { workspace = true, optional = true }
-icondata_macros = { version = "0.1.4", optional = true }
 
 icondata_ai = { version = "0.0.8", optional = true }
 icondata_bi = { version = "0.0.8", optional = true }
@@ -34,7 +33,6 @@ icondata_ti = { version = "0.0.8", optional = true }
 icondata_vs = { version = "0.0.8", optional = true }
 icondata_wi = { version = "0.0.8", optional = true }
 [features]
-macros = ["icondata_macros"]
 strum = [
 "icondata_ai/strum",
 "icondata_bi/strum",

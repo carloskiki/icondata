@@ -13,14 +13,12 @@ categories = ["web-programming"]
 [dependencies]
 icondata_core = "0.0.2"
 serde = { workspace = true, optional = true }
-icondata_macros = { version = "0.1.4", optional = true }
 
 {% for (short_name, version) in sn_version -%}
 icondata_{{short_name}} = { version = "{{version}}", optional = true }
 {% endfor -%}
 
 [features]
-macros = ["icondata_macros"]
 strum = [
 {% for (short_name, _) in sn_version -%}
 "icondata_{{short_name}}/strum",

@@ -13,9 +13,6 @@
 pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
 {%- endfor %}
 
-#[cfg(feature = "macros")]
-pub use icondata_macros::*;
-
 /// The main enum to select an icon. This enum contains all icons from icondata_* libraries, and
 /// implements [`From`] for [`IconData`], so it can be converted into an [`IconData`] struct.
 /// It also implements [`From`] for any icon in any icondata_* library.
