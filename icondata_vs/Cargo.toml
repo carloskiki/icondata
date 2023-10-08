@@ -9,6 +9,7 @@ repository = "https://github.com/Carlosted/icondata"
 license = "MIT"
 keywords = ["icons"]
 categories = ["web-programming"]
+rust-version = "1.60.0"
 
 [dependencies]
 icondata_core = "0.0.2"
