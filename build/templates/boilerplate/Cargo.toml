@@ -12,6 +12,3 @@ strum = ["icondata/strum"]
 {% for short_name in short_names -%}
 {{short_name|capitalize}} = ["icondata/{{short_name|capitalize}}"]
 {% endfor %}
-{% for feat in features -%}
-{{feat}} = ["icondata/{{feat}}"]
-{% endfor %}
