@@ -15,13 +15,11 @@
 #[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::EnumVariantNames))]
 pub enum {{short_name|capitalize}}Icon {
     {%- for (feat, _) in features_svgs %}
-    #[cfg(feature = "{{feat}}")]
     {{ feat }},
     {%- endfor %}
 }
 
 {% for (feat, svg) in features_svgs.iter() -%}
-#[cfg(feature = "{{feat}}")]
 const {{ feat|shouty_snake_case }}: icondata_core::IconData = icondata_core::IconData {
     {% let attributes = svg.svg_attributes() -%}
     style: {{ attributes.style|attribute_value }},
@@ -42,7 +40,6 @@ impl From<{{short_name|capitalize}}Icon> for icondata_core::IconData {
     fn from(icon: {{short_name|capitalize}}Icon) -> icondata_core::IconData {
         match icon {
             {%- for (feat, _) in features_svgs %}
-            #[cfg(feature = "{{feat}}")]
             {{short_name|capitalize}}Icon::{{feat}} => {{feat|shouty_snake_case}},
             {%- endfor %}
         }

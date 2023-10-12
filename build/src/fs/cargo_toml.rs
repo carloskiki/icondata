@@ -85,9 +85,7 @@ impl CargoToml {
                     .iter()
                     .map(|pkg| pkg.meta.short_name.as_ref())
                     .collect::<Vec<_>>();
-                let features = crate::Packages::get_icons()?
-                    .map(|icon| &*icon.feature.name)
-                    .collect::<Vec<_>>();
+                let features = vec![];
 
                 Ok(Template {
                     short_names,

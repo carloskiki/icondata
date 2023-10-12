@@ -1,6 +1,6 @@
 # Icondata - {{short_name}}
 
-Icon data from the *{{package_name}}* library. Every icon is packaged as its own cargo feature to reduce build times.
+Icon data from the *{{package_name}}* library.
 
 Visit this [repository](https://github.com/Carlosted/icondata) for in-depth information.
 

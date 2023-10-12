@@ -34,7 +34,4 @@ serde = [
 
 {% for (short_name, features) in sn_features -%}
 {{short_name|capitalize}} = []
-{% for feat in features -%}
-{{ feat }} = ["icondata_{{short_name}}/{{feat}}", "{{short_name|capitalize}}"]
-{% endfor -%}
 {% endfor %}
