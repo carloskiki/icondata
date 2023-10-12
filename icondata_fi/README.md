@@ -1,6 +1,6 @@
 # Icondata - fi
 
-Icon data from the *Feather* library. Every icon is packaged as its own cargo feature to reduce build times.
+Icon data from the *Feather* library.
 
 Visit this [repository](https://github.com/Carlosted/icondata) for in-depth information.
 
