@@ -1,6 +1,6 @@
 # Icondata
 
-This crate provides SVG icon data from popular and free icon libraries. Every icon is packaged as its own cargo feature to reduce build times.
+This crate provides SVG icon data from popular and free icon libraries. Every crate is packaged as its own cargo feature to reduce build times.
 
 A [site](https://carlosted.github.io/icondata) referencing every icon is now available!
 
