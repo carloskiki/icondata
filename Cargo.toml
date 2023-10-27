@@ -22,7 +22,7 @@ members = [
     "icondata_wi",
     "icondata_core",
 ]
-exclude = ["build", "icon_index", "size-test"]
+exclude = ["build", "icon_index"]
 
 [workspace.dependencies]
 serde = "^1.0.103"
