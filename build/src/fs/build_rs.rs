@@ -14,12 +14,16 @@ pub struct BuildRs {
 impl BuildRs {
     pub fn contents(lib_type: &LibType) -> Result<String> {
         match lib_type {
-            LibType::IconLib(_) => {
+            LibType::IconLib(lib) => {
                 #[derive(Template)]
                 #[template(path = "icon_lib/build.rs", escape = "none")]
-                struct Template;
+                struct Template<'a> {
+                    short_name: &'a str,
+                }
 
-                Ok(Template.render()?)
+                Ok(Template {
+                    short_name: &lib.meta.short_name,
+                }.render()?)
             },
             LibType::MainLib => todo!(),
             _ => unimplemented!("icon index doesn't have a build.rs"),

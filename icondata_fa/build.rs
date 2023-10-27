@@ -28,7 +28,6 @@ fn main() -> anyhow::Result<()> {
     let icondata_file = Path::new(&icondata_manifest_dir).join("Icondata.toml");
 
     if !icondata_file.exists() {
-        println!("cargo:warning=Icondata.toml not found, skipping icondata generation. \n No icons will be included in the build.");
         return Ok(());
     }
 
@@ -46,9 +45,15 @@ fn main() -> anyhow::Result<()> {
 
     if let Some(icons) = toml_table.get("icons") {
         let icons = icons.as_array().context("icons is not an array")?;
-        icons.iter().try_for_each(|icon| -> anyhow::Result<()> {
-            let icon = icon.as_str().context("icon is not a string")?;
-            writeln!(&mut out_buf, "cargo:rustc-cfg={}", icon)?;
+        icons.iter().map(|value| {
+            value.as_str().context("icon is not a string")
+        }).filter(|icon| {
+            if let Ok(icon) = icon {
+                return icon.starts_with("Fa");
+            }
+            return true;
+        }).try_for_each(|icon| -> anyhow::Result<()> {
+            writeln!(&mut out_buf, "cargo:rustc-cfg={}", icon?)?;
 
             Ok(())
         })?;

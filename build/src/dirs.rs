@@ -47,7 +47,7 @@ impl<'a> Library<'a> {
                     }),
                     lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: Some(Readme { path: readme_path }),
-                    build_rs: Some(BuildRs { path: path.join("build.rs") }),
+                    build_rs: None,
                     ty,
                 }
             }
