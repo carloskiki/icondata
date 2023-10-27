@@ -3,10 +3,7 @@ use std::{fmt::Display, path::Path, str::FromStr};
 use anyhow::{Context, Result};
 use heck::ToPascalCase;
 
-use crate::{
-    feature::Feature,
-    package::{Package, PackageType, Unknown},
-};
+use crate::package::{Package, PackageType, Unknown};
 
 use self::svg::ParsedSvg;
 
@@ -15,7 +12,7 @@ pub mod svg;
 #[derive(Debug, Clone)]
 pub struct SvgIcon {
     pub svg: svg::ParsedSvg,
-    pub feature: Feature,
+    pub name: String,
 }
 
 impl SvgIcon {
@@ -34,14 +31,12 @@ impl SvgIcon {
             categories.append(&mut cats_from_name);
         }
 
-        let feature = Feature {
-            name: feature_name(
+        let name = feature_name(
                 raw_name,
                 size_from_name.or(size),
                 &categories,
                 &package.meta.short_name,
-            ),
-        };
+            );
 
         let svg = tokio::fs::read_to_string(path).await?;
 
@@ -53,12 +48,12 @@ impl SvgIcon {
             .with_context(|| {
                 format!(
                     "Error parsing icon: {} from package: {}, with path: {:?}",
-                    feature.name,
+                    &name,
                     package.meta.short_name,
                     path.to_str()
                 )
             })?,
-            feature,
+            name,
         })
     }
 }

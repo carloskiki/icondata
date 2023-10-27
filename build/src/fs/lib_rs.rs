@@ -17,15 +17,15 @@ impl LibRs {
                 #[derive(Template)]
                 #[template(path = "icon_lib/lib.rs", escape = "none")]
                 struct Template<'a> {
-                    features_svgs: Vec<(&'a str, &'a ParsedSvg)>,
+                    name_svg: Vec<(&'a str, &'a ParsedSvg)>,
                     short_name: String,
                 }
 
                 let icons = pkg.icons();
-                let features_svgs = icons.iter().map(|icon| (icon.feature.name.as_ref(), &icon.svg)).collect::<Vec<_>>();
+                let name_svg = icons.iter().map(|icon| (icon.name.as_ref(), &icon.svg)).collect::<Vec<_>>();
                 let short_name = pkg.meta.short_name.to_string();
 
-                Ok(Template { features_svgs, short_name }.render()?)
+                Ok(Template { name_svg, short_name }.render()?)
             }
             LibType::MainLib => {
                 #[derive(Template)]

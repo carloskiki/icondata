@@ -16,7 +16,6 @@ use crate::package::Package;
 use once_cell::sync::OnceCell;
 
 mod dirs;
-mod feature;
 mod fs;
 mod git;
 mod icon;
