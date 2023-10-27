@@ -25,8 +25,7 @@ impl BuildRs {
                     short_name: &lib.meta.short_name,
                 }.render()?)
             },
-            LibType::MainLib => todo!(),
-            _ => unimplemented!("icon index doesn't have a build.rs"),
+            _ => unimplemented!("icon index and main lib don't have a build.rs"),
         }
     }
 }

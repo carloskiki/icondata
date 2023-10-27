@@ -10,6 +10,7 @@ license = "MIT"
 keywords = ["icons"]
 categories = ["web-programming"]
 rust-version = "1.60.0"
+exclude = ["ICON-LIST.txt"]
 
 [dependencies]
 icondata_core = "0.0.2"
