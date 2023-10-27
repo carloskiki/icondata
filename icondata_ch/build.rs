@@ -7,6 +7,18 @@ use std::{
 
 use anyhow::Context;
 
+macro_rules! stringnify_list {
+    ($($item:expr),*) => {
+        &[
+            $(
+                stringify!($item),
+            )*
+        ]
+    };
+}
+
+const ICONS: &[&str] = stringnify_list!(include!("ICON-LIST.txt"));
+
 fn main() -> anyhow::Result<()> {
     println!("cargo:rerun-if-env-changed=ICONDATA_INCLUDE_ALL");
 
@@ -53,7 +65,12 @@ fn main() -> anyhow::Result<()> {
             }
             return true;
         }).try_for_each(|icon| -> anyhow::Result<()> {
-            writeln!(&mut out_buf, "cargo:rustc-cfg={}", icon?)?;
+            let icon = &icon?;
+            if ICONS.contains(icon) {
+                writeln!(&mut out_buf, "cargo:rustc-cfg={}", icon)?;
+            } else {
+                println!("cargo:warning=unknown icon found: {}", icon);
+            }
 
             Ok(())
         })?;
