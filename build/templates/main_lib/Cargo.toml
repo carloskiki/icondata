@@ -16,7 +16,7 @@ icondata_core = "0.0.2"
 serde = { workspace = true, optional = true }
 
 {% for (short_name, version) in sn_version -%}
-icondata_{{short_name}} = { version = "{{version}}", optional = true }
+icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{version}}" }
 {% endfor -%}
 
 [features]
@@ -31,7 +31,3 @@ serde = [
 "icondata_{{short_name}}/serde",
 {% endfor -%}
 ]
-
-{% for (short_name, features) in sn_features -%}
-{{short_name|capitalize}} = []
-{% endfor %}

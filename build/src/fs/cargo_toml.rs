@@ -34,21 +34,15 @@ impl CargoToml {
                 #[derive(Template)]
                 #[template(path = "main_lib/Cargo.toml", escape = "none")]
                 struct Template<'a> {
-                    sn_features: Vec<(&'a str, Vec<&'a str>)>,
                     sn_version: Vec<(&'a str, String)>,
                 }
 
-                let (sn_features, sn_version): (Vec<_>, Vec<_>) = crate::Packages::get()?.iter().map(|package| {
-                    let features = package
-                        .icons()
-                        .iter()
-                        .map(|icon| &*icon.feature.name)
-                        .collect::<Vec<_>>();
+                let sn_version: Vec<_> = crate::Packages::get()?.iter().map(|package| {
 
-                    ((&*package.meta.short_name, features), (&*package.meta.short_name, package.meta.crate_version.to_string()))
-                }).unzip();
+                    (&*package.meta.short_name, package.meta.crate_version.to_string())
+                }).collect();
 
-                Ok(Template { sn_features, sn_version }.render()?)
+                Ok(Template { sn_version }.render()?)
             }
 
             LibType::IconIndex => {

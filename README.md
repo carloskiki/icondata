@@ -4,8 +4,6 @@ This crate provides SVG icon data from popular and free icon libraries. Every cr
 
 A [site](https://carlosted.github.io/icondata) referencing every icon is now available!
 
-Please note that as long as version 0.1.0 is not published, any patch update may cause breaking changes and is not guaranteed to work.
-
 ## Table of Contents
 
 - [Icondata](#icondata)

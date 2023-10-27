@@ -9,7 +9,6 @@
 //!
 //!
 {% for short_name in short_names %}
-#[cfg(feature = "{{short_name|capitalize}}")]
 pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
 {%- endfor %}
 
@@ -23,7 +22,6 @@ pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Icon {
     {% for short_name in short_names -%}
-    #[cfg(feature = "{{short_name|capitalize}}")]
     {{short_name|capitalize}}({{short_name|capitalize}}Icon),
     {% endfor %}
 }
@@ -31,14 +29,12 @@ impl From<Icon> for icondata_core::IconData {
     fn from(icon: Icon) -> Self {
         match icon {
             {% for short_name in short_names -%}
-            #[cfg(feature = "{{short_name|capitalize}}")]
             Icon::{{short_name|capitalize}}(icon) => icondata_core::IconData::from(icon),
             {% endfor %}
         }
     }
 }
 {% for short_name in short_names %}
-#[cfg(feature = "{{short_name|capitalize}}")]
 impl From<{{short_name|capitalize}}Icon> for Icon {
     fn from(icon: {{short_name|capitalize}}Icon) -> Self {
         Self::{{short_name|capitalize}}(icon)
