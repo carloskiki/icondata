@@ -16,7 +16,3 @@ icondata_core = "0.0.2"
 serde = { workspace = true, features = ["derive"], optional = true }
 strum = { version = "0.24", optional = true, features = ["derive"] }
 
-[features]
-{% for feat in features -%}
-{{feat}} = []
-{% endfor %}
