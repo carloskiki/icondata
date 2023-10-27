@@ -25,6 +25,8 @@ pub use icondata_fa::FaIcon::{self, *};
 pub use icondata_fi::FiIcon::{self, *};
 #[cfg(feature = "Hi")]
 pub use icondata_hi::HiIcon::{self, *};
+#[cfg(feature = "Im")]
+pub use icondata_im::ImIcon::{self, *};
 #[cfg(feature = "Io")]
 pub use icondata_io::IoIcon::{self, *};
 #[cfg(feature = "Lu")]
@@ -69,6 +71,8 @@ pub enum Icon {
     Fi(FiIcon),
     #[cfg(feature = "Hi")]
     Hi(HiIcon),
+    #[cfg(feature = "Im")]
+    Im(ImIcon),
     #[cfg(feature = "Io")]
     Io(IoIcon),
     #[cfg(feature = "Lu")]
@@ -108,6 +112,8 @@ impl From<Icon> for icondata_core::IconData {
             Icon::Fi(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Hi")]
             Icon::Hi(icon) => icondata_core::IconData::from(icon),
+            #[cfg(feature = "Im")]
+            Icon::Im(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Io")]
             Icon::Io(icon) => icondata_core::IconData::from(icon),
             #[cfg(feature = "Lu")]
@@ -184,6 +190,13 @@ impl From<FiIcon> for Icon {
 impl From<HiIcon> for Icon {
     fn from(icon: HiIcon) -> Self {
         Self::Hi(icon)
+    }
+}
+
+#[cfg(feature = "Im")]
+impl From<ImIcon> for Icon {
+    fn from(icon: ImIcon) -> Self {
+        Self::Im(icon)
     }
 }
 

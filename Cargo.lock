@@ -12,42 +12,31 @@ checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 name = "icondata"
 version = "0.1.0"
 dependencies = [
- "icondata_ai 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_bi 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_bs 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_cg 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_ch 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "icondata_ai",
+ "icondata_bi",
+ "icondata_bs",
+ "icondata_cg",
+ "icondata_ch",
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_fa 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_fi 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_hi 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_im 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_io 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_lu 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_oc 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_ri 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_si 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_tb 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_ti 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_vs 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "icondata_wi 0.0.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "icondata_fa",
+ "icondata_fi",
+ "icondata_hi",
+ "icondata_im",
+ "icondata_io",
+ "icondata_lu",
+ "icondata_oc",
+ "icondata_ri",
+ "icondata_si",
+ "icondata_tb",
+ "icondata_ti",
+ "icondata_vs",
+ "icondata_wi",
  "serde",
 ]
 
 [[package]]
 name = "icondata_ai"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_ai"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c8fe5fa2eed7715d5388e046d97f09d3baddd155b487454eb9cda3168c79d4b"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -64,30 +53,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_bi"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c0953768d0b9cdd2da0b85b5ef44a0b43078d59411282b8da8fe6c13b123e01f"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_bs"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_bs"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3a1eeaedae6788b08308e1b050eeddaffa62dd5f2368469ef980c8e0e75837e3"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -104,30 +71,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_cg"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b90cda35aa524761219a8dbd006513734e08a4cf92ee05820b01749e76435462"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_ch"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_ch"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "80ec6aec272bdbadfd83f0f3b61ae4bd4ba5a4aa4cea1b6759923fe3bfb26ff5"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -154,30 +99,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_fa"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a515ecda53468cf4a383409da1708da2e4c00253561873c46304cd7f412e9414"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_fi"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_fi"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a68806fd5abc6bcf395fc54f6193b0f9085aa2a6c740d72825e7e43be4d6a366"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -194,30 +117,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_hi"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bdc832ba990aac731425064fbb94bd8a8a26e8af6b0622154645b8df38c8e619"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_im"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_im"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7819397102c0d80a4ad7514e704e06c9c4a43a87007ea523c21ef62e11e31b2b"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -234,30 +135,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_io"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "134d9fb91cdd0e7ac971199e2c8c8eb917a975faeeee54b227a0068c4f70c886"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_lu"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_lu"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0736406ccda9e60aa7328091258dda8b0cfb75c296cd6513c16bd4c0e47c64b2"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -274,30 +153,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_oc"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "667cb0b74516ec3d4ce357b9ec94189eab6e1bfe5a4a28b5e36579028a8075b1"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_ri"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_ri"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b1d3adc5b64b22d10ab23a7b1a005f4cb52f3d08909f578fbaa09af9f9c0b7b"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -314,30 +171,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_si"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "49619d1d1260b5d8b6774c7b11f7d3f8670013b9de902e1e086266d2e3cd7482"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_tb"
 version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_tb"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b8a3cb60c645909aa6041f11e5713a4a25f9a161c4d2798e415d4433f502d1d"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
@@ -354,38 +189,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "icondata_ti"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec37afd0e078afcf79dff04d6742d4c542dc29860629b228c2baca0c2f7ddf93"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
 name = "icondata_vs"
-version = "0.0.8"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_vs"
-version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "23b82ee337916a89f53d20656ff46fa1cbdeeb89e0f42283831301ed2a275cf3"
-dependencies = [
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde",
- "strum",
-]
-
-[[package]]
-name = "icondata_wi"
 version = "0.0.8"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -396,8 +200,6 @@ dependencies = [
 [[package]]
 name = "icondata_wi"
 version = "0.0.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51b4dd468959cd64184546573d7e67d62607a6b70d6c05951b3426e733821ed8"
 dependencies = [
  "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde",
