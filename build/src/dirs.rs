@@ -5,7 +5,7 @@ use tokio::io::AsyncWriteExt;
 use tracing::{error, instrument, trace};
 
 use crate::{
-    fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme},
+    fs::{cargo_toml::CargoToml, lib_rs::LibRs, readme_md::Readme, build_rs::BuildRs},
     package::{Downloaded, Package},
 };
 
@@ -14,6 +14,7 @@ pub struct Library<'a> {
     cargo_toml: Option<CargoToml>,
     lib_rs: Option<LibRs>,
     readme: Option<Readme>,
+    build_rs: Option<BuildRs>,
     ty: LibType<'a>,
 }
 
@@ -31,6 +32,7 @@ impl<'a> Library<'a> {
                     }),
                     lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: Some(Readme { path: readme_path }),
+                    build_rs: Some(BuildRs { path: path.join("build.rs") }),
                     ty,
                 }
             }
@@ -45,6 +47,7 @@ impl<'a> Library<'a> {
                     }),
                     lib_rs: Some(LibRs { path: lib_rs_path }),
                     readme: Some(Readme { path: readme_path }),
+                    build_rs: Some(BuildRs { path: path.join("build.rs") }),
                     ty,
                 }
             }
@@ -55,8 +58,9 @@ impl<'a> Library<'a> {
                         path: cargo_path,
                     }),
                     lib_rs: Some(LibRs { path: lib_rs_path }),
-                    readme: None,
                     ty,
+                    readme: None,
+                    build_rs: None,
                 }
             }
 
@@ -66,6 +70,7 @@ impl<'a> Library<'a> {
                 }),
                 lib_rs: None,
                 readme: None,
+                build_rs: None,
                 ty,
             },
         }
@@ -83,6 +88,10 @@ impl<'a> Library<'a> {
         if let Some(readme) = &self.readme {
             let contents = Readme::contents(&self.ty)?;
             write_to_file(&readme.path, contents).await?;
+        };
+        if let Some(build_rs) = &self.build_rs {
+            let contents = BuildRs::contents(&self.ty)?;
+            write_to_file(&build_rs.path, contents).await?;
         };
         Ok(())
     }
