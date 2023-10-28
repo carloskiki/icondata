@@ -9,7 +9,7 @@ repository = "https://github.com/Carlosted/icondata"
 license = "MIT"
 keywords = ["icons"]
 categories = ["web-programming"]
-rust-version = "1.60.0"
+rust-version = "1.67.0"
 exclude = ["ICON-LIST.txt"]
 
 [dependencies]

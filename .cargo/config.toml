@@ -1,0 +1,2 @@
+[env]
+ICONDATA_MANIFEST_DIR = { value = "", relative = true }
