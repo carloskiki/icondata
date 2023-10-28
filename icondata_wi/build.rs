@@ -20,21 +20,24 @@ macro_rules! stringnify_list {
 const ICONS: &[&str] = stringnify_list!(include!("ICON-LIST.txt"));
 
 fn main() -> anyhow::Result<()> {
+    println!("cargo:rerun-if-changed=build.rs");
     println!("cargo:rerun-if-env-changed=ICONDATA_INCLUDE_ALL");
     if let Ok(incl_all) = env::var("ICONDATA_INCLUDE_ALL") {
-        if incl_all == "1" || incl_all.to_lowercase() == "true" {
+        if incl_all != "0" || incl_all.to_lowercase() == "true" {
             println!("cargo:rustc-cfg=icondata_include_all");
             return Ok(());
         }
     }
 
-    println!("cargo:rerun-if-env-changed=ICONDATA_MANIFEST_PATH");
-    let icondata_file = env::var("ICONDATA_MANIFEST_PATH").context("icondata file path not set")?;
+    println!("cargo:rerun-if-env-changed=ICONDATA_MANIFEST_DIR");
+    let Ok(icondata_path) = env::var("ICONDATA_MANIFEST_DIR") else {
+        return Ok(());
+    };
 
-    println!("cargo:rerun-if-changed={}", &icondata_file);
-    println!("cargo:warning={}", icondata_file);
+    let icondata_file = Path::new(&icondata_path).join("Icondata.toml");
+    println!("cargo:rerun-if-changed={}", &icondata_file.display());
 
-    if !Path::new(&icondata_file).exists() {
+    if !icondata_file.exists() {
         return Ok(());
     }
 

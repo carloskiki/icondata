@@ -1,11 +1,9 @@
 # Icondata
+This crate provides SVG icon data from popular and free icon libraries.
 
-This crate provides SVG icon data from popular and free icon libraries. Every crate is packaged as its own cargo feature to reduce build times.
-
-A [site](https://carlosted.github.io/icondata) referencing every icon is now available!
+A [site](https://carlosted.github.io/icondata) referencing every icon is available!
 
 ## Table of Contents
-
 - [Icondata](#icondata)
 - [Table of Contents](#table-of-contents)
 - [Usage](#usage)
@@ -14,21 +12,11 @@ A [site](https://carlosted.github.io/icondata) referencing every icon is now ava
 - [Contributing](#contributing)
 
 ## Usage
-
 Every crate is tied to a specific icon package. You can find the name of the crate corresponding to a package in the [Icon Packages](#icon-packages) section.
 
-As an example, to use the bootstrap folder icon, add the following to your `Cargo.toml`:
-
-```toml
-[dependencies]
-# ...
-icondata_bs = { version = "...", features = ["BsFolder"] }
-```
-
-If you are creating a component library for a web framework, you can use this [boilerplate](/boilerplate) setup.
+Please see the [API documentation](https://docs.rs/icondata/latest/icondata/) to get started.
 
 ## Icon Packages
-
 Licenses of the icons provided through these libraries were extracted with best intent,
 but must only be taken as a hint. Please check the individual icon repositories for up-to-date license information.
 
@@ -54,7 +42,6 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | Weather Icons | 2.0.12 | Git: <https://github.com/erikflowers/weather-icons> - Tag: 2.0.12 | SIL OFL 1.1,  | icondata_wi |
 
 ## Developing
-
 This repository uses Just
 
 Simply call
@@ -70,6 +57,5 @@ cargo install just
 ```
 
 ## Contributing
-
 Contributions are more than welcomed!
 Do not hesitate add icon libraries, features, etc.

@@ -7,8 +7,7 @@
 //! identical.
 //!
 
-/// This enum provides every icon as a variant.
-/// It implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
+/// Icons from [__Font Awesome__](https://github.com/FortAwesome/Font-Awesome)
 #[non_exhaustive]
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]

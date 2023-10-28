@@ -7,8 +7,7 @@
 //! identical.
 //!
 
-/// This enum provides every icon as a variant.
-/// It implements [`Into<icondata_core::IconData>`][icondata_core::IconData].
+/// Icons from [__css.gg__](https://github.com/astrit/css.gg)
 #[non_exhaustive]
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
