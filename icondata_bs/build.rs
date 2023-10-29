@@ -62,7 +62,7 @@ fn main() -> anyhow::Result<()> {
                 if let Ok(icon) = icon {
                     return icon.starts_with("Bs");
                 }
-                return true;
+                true
             })
             .try_for_each(|icon| -> anyhow::Result<()> {
                 let icon = &icon?;
