@@ -136,7 +136,7 @@ impl Package<Unknown> {
 
         let icons_path = self.download_path().join(self.meta.svg_dir.as_ref());
         let mut icons = reader::read_icons(&self, icons_path.clone()).await?;
-        icons.sort_by(|a, b| a.feature.name.cmp(&b.feature.name));
+        icons.sort_by(|a, b| a.name.cmp(&b.name));
 
         Ok(Package::<Downloaded> {
             ty: self.ty,

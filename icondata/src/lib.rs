@@ -1,262 +1,260 @@
 //! This crate provides a collection of icons in the form of SVG data
 //! and an enum to select them. It re-exports all icons from the icondata_* crates.
 //!
-//! This crate is meant to be used to build component libraries for web frameworks.
-//! To do so, an [`Icon`] enum is provided, which can be used to select any icon from the
-//! collection. This enum is marked as non_exhaustive, as new icon libraries may be added in the future.
+//! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data
+//! used by a component library.
 //!
-//! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data.
+//! [`IconData`]: icondata_core::IconData
 //!
+//! # Getting Started
 //!
+//! 1. Add the latest version of this crate to your `Cargo.toml`:
+//! ```toml
+//! [dependencies]
+//! # .... Other dependencies ....
+//! icondata = "..."
+//! # .... Other dependencies ....
+//! ```
+//!
+//! 2. Set the `ICONDATA_MANIFEST_DIR` environment variable to the path of your `Icondata.toml` file:
+//! This can be done in multiple ways, but the recommended way is to set it in `.cargo/config.toml`
+//! (This assumes that your `Icondata.toml` file is in the root of your project):
+//! ```toml
+//! [env]
+//! ICONDATA_MANIFEST_DIR = { value = "", relative = true }
+//! ```
+//!
+//! 3. In order to not clog the namespace and to minimize binary sizes, Icons are imported
+//!    individually by enabling them in the `Icondata.toml` file. Please refer to the documentation
+//!    of the [__Icondata Manifest__](#icondata-manifest) for more information.
+//!
+//!    Create an `Icondata.toml` file in the root of your project, and include icons.
+//!
+//!    Icons can be searched with the [__icon index__](https://carlosted.github.io/icondata/).
+//!    Here is a basic example:
+//! ```toml
+//! icons = ["AiAlertFilled", "BsBuildingDown"]
+//! ```
+//!
+//! 4. Import and use the icons in your code:
+//! ```rust
+//! use icondata::*;
+//!
+//! let icon = BsBuildingDown;
+//! let icon = AiAlertFilled;
+//! ```
+//!
+//! # Icondata Manifest
+//!
+//! The Icondata manifest is a TOML file named `Icondata.toml` that is usually 
+//! placed in the root of your project/workspace (but can be placed anyhwere).
+//! The format of this file is currently very simple, but may be extended in the future:
+//!
+//! ```toml
+//! include-all = false # If set to `true`, all icons will be included
+//!                     # (takes precedence over `icons` field).
+//!                     # Can be useful for testing many icons,
+//!                     # but won't make `rust-analyzer` happy. 
+//!                     # It is very important to set `lto = true` in your
+//!                     # `Cargo.toml` when using this feature,
+//!                     # otherwise your binary size will be huge.
+//!
+//! icons = ["MyIcon1", "MyIcon2", ...] # Array of icons include.
+//! ```
+//!
+//! ## Environment Variables
+//!
+//! - `ICONDATA_MANIFEST_DIR`: Required to use the Icondata manifest. It is recommended 
+//! to set it in the `.cargo/config.toml` file of your project:
+//! ```toml
+//! [env]
+//! ICONDATA_MANIFEST_DIR = { value = "path/to/dir", relative = true }
+//! ```
+//!
+//! - `ICONDATA_INCLUDE_ALL`: If set to `true` or something other than 0, all icons will be included. Takes precedence over
+//! the Icondata manifest.
+//! 
 
-#[cfg(feature = "Ai")]
 pub use icondata_ai::AiIcon::{self, *};
-#[cfg(feature = "Bi")]
 pub use icondata_bi::BiIcon::{self, *};
-#[cfg(feature = "Bs")]
 pub use icondata_bs::BsIcon::{self, *};
-#[cfg(feature = "Cg")]
 pub use icondata_cg::CgIcon::{self, *};
-#[cfg(feature = "Ch")]
 pub use icondata_ch::ChIcon::{self, *};
-#[cfg(feature = "Fa")]
 pub use icondata_fa::FaIcon::{self, *};
-#[cfg(feature = "Fi")]
 pub use icondata_fi::FiIcon::{self, *};
-#[cfg(feature = "Hi")]
 pub use icondata_hi::HiIcon::{self, *};
-#[cfg(feature = "Im")]
 pub use icondata_im::ImIcon::{self, *};
-#[cfg(feature = "Io")]
 pub use icondata_io::IoIcon::{self, *};
-#[cfg(feature = "Lu")]
 pub use icondata_lu::LuIcon::{self, *};
-#[cfg(feature = "Oc")]
 pub use icondata_oc::OcIcon::{self, *};
-#[cfg(feature = "Ri")]
 pub use icondata_ri::RiIcon::{self, *};
-#[cfg(feature = "Si")]
 pub use icondata_si::SiIcon::{self, *};
-#[cfg(feature = "Tb")]
 pub use icondata_tb::TbIcon::{self, *};
-#[cfg(feature = "Ti")]
 pub use icondata_ti::TiIcon::{self, *};
-#[cfg(feature = "Vs")]
 pub use icondata_vs::VsIcon::{self, *};
-#[cfg(feature = "Wi")]
 pub use icondata_wi::WiIcon::{self, *};
 
-/// The main enum to select an icon. This enum contains all icons from icondata_* libraries, and
+/// The  enum regrouping all Icon Libraries.
+///
+/// This enum contains all icons from icondata_* libraries, and
 /// implements [`From`] for [`IconData`], so it can be converted into an [`IconData`] struct.
-/// It also implements [`From`] for any icon in any icondata_* library.
+/// It also implements [`From`] for any icon in any icondata_* library. 
 ///
 /// This enum is marked as non_exhaustive, as new icon libraries may be added in the future.
+///
+/// [`IconData`]: icondata_core::IconData
 #[non_exhaustive]
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Icon {
-    #[cfg(feature = "Ai")]
     Ai(AiIcon),
-    #[cfg(feature = "Bi")]
     Bi(BiIcon),
-    #[cfg(feature = "Bs")]
     Bs(BsIcon),
-    #[cfg(feature = "Cg")]
     Cg(CgIcon),
-    #[cfg(feature = "Ch")]
     Ch(ChIcon),
-    #[cfg(feature = "Fa")]
     Fa(FaIcon),
-    #[cfg(feature = "Fi")]
     Fi(FiIcon),
-    #[cfg(feature = "Hi")]
     Hi(HiIcon),
-    #[cfg(feature = "Im")]
     Im(ImIcon),
-    #[cfg(feature = "Io")]
     Io(IoIcon),
-    #[cfg(feature = "Lu")]
     Lu(LuIcon),
-    #[cfg(feature = "Oc")]
     Oc(OcIcon),
-    #[cfg(feature = "Ri")]
     Ri(RiIcon),
-    #[cfg(feature = "Si")]
     Si(SiIcon),
-    #[cfg(feature = "Tb")]
     Tb(TbIcon),
-    #[cfg(feature = "Ti")]
     Ti(TiIcon),
-    #[cfg(feature = "Vs")]
     Vs(VsIcon),
-    #[cfg(feature = "Wi")]
     Wi(WiIcon),
     
 }
 impl From<Icon> for icondata_core::IconData {
     fn from(icon: Icon) -> Self {
         match icon {
-            #[cfg(feature = "Ai")]
             Icon::Ai(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Bi")]
             Icon::Bi(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Bs")]
             Icon::Bs(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Cg")]
             Icon::Cg(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Ch")]
             Icon::Ch(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Fa")]
             Icon::Fa(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Fi")]
             Icon::Fi(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Hi")]
             Icon::Hi(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Im")]
             Icon::Im(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Io")]
             Icon::Io(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Lu")]
             Icon::Lu(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Oc")]
             Icon::Oc(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Ri")]
             Icon::Ri(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Si")]
             Icon::Si(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Tb")]
             Icon::Tb(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Ti")]
             Icon::Ti(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Vs")]
             Icon::Vs(icon) => icondata_core::IconData::from(icon),
-            #[cfg(feature = "Wi")]
             Icon::Wi(icon) => icondata_core::IconData::from(icon),
             
         }
     }
 }
 
-#[cfg(feature = "Ai")]
 impl From<AiIcon> for Icon {
     fn from(icon: AiIcon) -> Self {
         Self::Ai(icon)
     }
 }
 
-#[cfg(feature = "Bi")]
 impl From<BiIcon> for Icon {
     fn from(icon: BiIcon) -> Self {
         Self::Bi(icon)
     }
 }
 
-#[cfg(feature = "Bs")]
 impl From<BsIcon> for Icon {
     fn from(icon: BsIcon) -> Self {
         Self::Bs(icon)
     }
 }
 
-#[cfg(feature = "Cg")]
 impl From<CgIcon> for Icon {
     fn from(icon: CgIcon) -> Self {
         Self::Cg(icon)
     }
 }
 
-#[cfg(feature = "Ch")]
 impl From<ChIcon> for Icon {
     fn from(icon: ChIcon) -> Self {
         Self::Ch(icon)
     }
 }
 
-#[cfg(feature = "Fa")]
 impl From<FaIcon> for Icon {
     fn from(icon: FaIcon) -> Self {
         Self::Fa(icon)
     }
 }
 
-#[cfg(feature = "Fi")]
 impl From<FiIcon> for Icon {
     fn from(icon: FiIcon) -> Self {
         Self::Fi(icon)
     }
 }
 
-#[cfg(feature = "Hi")]
 impl From<HiIcon> for Icon {
     fn from(icon: HiIcon) -> Self {
         Self::Hi(icon)
     }
 }
 
-#[cfg(feature = "Im")]
 impl From<ImIcon> for Icon {
     fn from(icon: ImIcon) -> Self {
         Self::Im(icon)
     }
 }
 
-#[cfg(feature = "Io")]
 impl From<IoIcon> for Icon {
     fn from(icon: IoIcon) -> Self {
         Self::Io(icon)
     }
 }
 
-#[cfg(feature = "Lu")]
 impl From<LuIcon> for Icon {
     fn from(icon: LuIcon) -> Self {
         Self::Lu(icon)
     }
 }
 
-#[cfg(feature = "Oc")]
 impl From<OcIcon> for Icon {
     fn from(icon: OcIcon) -> Self {
         Self::Oc(icon)
     }
 }
 
-#[cfg(feature = "Ri")]
 impl From<RiIcon> for Icon {
     fn from(icon: RiIcon) -> Self {
         Self::Ri(icon)
     }
 }
 
-#[cfg(feature = "Si")]
 impl From<SiIcon> for Icon {
     fn from(icon: SiIcon) -> Self {
         Self::Si(icon)
     }
 }
 
-#[cfg(feature = "Tb")]
 impl From<TbIcon> for Icon {
     fn from(icon: TbIcon) -> Self {
         Self::Tb(icon)
     }
 }
 
-#[cfg(feature = "Ti")]
 impl From<TiIcon> for Icon {
     fn from(icon: TiIcon) -> Self {
         Self::Ti(icon)
     }
 }
 
-#[cfg(feature = "Vs")]
 impl From<VsIcon> for Icon {
     fn from(icon: VsIcon) -> Self {
         Self::Vs(icon)
     }
 }
 
-#[cfg(feature = "Wi")]
 impl From<WiIcon> for Icon {
     fn from(icon: WiIcon) -> Self {
         Self::Wi(icon)
