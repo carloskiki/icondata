@@ -2,7 +2,7 @@ use anyhow::Result;
 use askama::Template;
 use std::path::PathBuf;
 
-use crate::{dirs::LibType, Packages};
+use crate::dirs::LibType;
 
 #[derive(Debug)]
 pub struct CargoToml {
@@ -51,21 +51,6 @@ impl CargoToml {
                 struct Template {}
 
                 Ok(Template {}.render()?)
-            }
-
-            LibType::Boilerplate => {
-                #[derive(Template)]
-                #[template(path = "boilerplate/Cargo.toml", escape = "none")]
-                struct Template<'a> {
-                    short_names: Vec<&'a str>,
-                }
-
-                let short_names = Packages::get()?
-                    .iter()
-                    .map(|pkg| pkg.meta.short_name.as_ref())
-                    .collect::<Vec<_>>();
-
-                Ok(Template { short_names }.render()?)
             }
         }
     }

@@ -125,10 +125,6 @@ async fn main() -> Result<()> {
     let main_lib = Library::new(path::library_crate("icondata"), LibType::MainLib);
     main_lib.generate().await?;
 
-    info!("Generating boilerplate directory.");
-    let boilerplate = Library::new(path::library_crate("boilerplate"), LibType::Boilerplate);
-    boilerplate.generate().await?;
-
     info!("Generating icon index.");
     let icon_index = Library::new(path::library_crate("icon_index"), LibType::IconIndex);
     icon_index.generate().await?;

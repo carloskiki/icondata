@@ -80,10 +80,7 @@ impl Readme {
 
                 Ok(ReadmeTemplate { packages }.render()?)
             }
-
             LibType::IconIndex => unreachable!("IconIndex does not have a README.md file"),
-
-            LibType::Boilerplate => unreachable!("Boilerplate does not have a README.md file"),
         }
     }
 }

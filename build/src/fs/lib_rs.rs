@@ -61,8 +61,6 @@ impl LibRs {
 
                 Ok(Template { short_names }.render()?)
             }
-
-            LibType::Boilerplate => unreachable!("Boilerplate does not have a lib.rs file"),
         }
     }
 }

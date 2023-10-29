@@ -60,15 +60,6 @@ impl<'a> Library<'a> {
                 icon_list: None,
                 build_rs: None,
             },
-
-            LibType::Boilerplate => Library {
-                cargo_toml: Some(CargoToml { path: cargo_path }),
-                lib_rs: None,
-                icon_list: None,
-                readme: None,
-                build_rs: None,
-                ty,
-            },
         }
     }
 
@@ -102,7 +93,6 @@ pub enum LibType<'a> {
     IconLib(&'a Package<Downloaded>),
     MainLib,
     IconIndex,
-    Boilerplate,
 }
 
 #[instrument(level = "info", skip(contents))]
