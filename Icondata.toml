@@ -1,9 +1,0 @@
-include-all = true # If set to `true`, all icons will be included
-                   # (takes precedence over `icons` field).
-                   # Can be useful for testing many icons,
-                   # but won't make `rust-analyzer` happy. 
-                   # It is very important to set `lto = true` in your
-                   # `Cargo.toml` when using this feature,
-                   # otherwise your binary size will be huge.
-
-# icons = ["MyIcon1", "MyIcon2", ...] # Array of icons include.
