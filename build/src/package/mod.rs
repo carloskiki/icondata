@@ -434,7 +434,7 @@ impl PackageType {
                     },
                 },
                 download_dir: Cow::Borrowed("icomoon-free"),
-                svg_dir: Cow::Borrowed("svg"),
+                svg_dir: Cow::Borrowed("SVG"),
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
