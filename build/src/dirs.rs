@@ -53,7 +53,7 @@ impl<'a> Library<'a> {
             }
 
             LibType::IconIndex => Library {
-                cargo_toml: Some(CargoToml { path: cargo_path }),
+                cargo_toml: None,
                 lib_rs: Some(LibRs { path: lib_rs_path }),
                 ty,
                 readme: None,

@@ -45,13 +45,7 @@ impl CargoToml {
                 Ok(Template { sn_version }.render()?)
             }
 
-            LibType::IconIndex => {
-                #[derive(Template)]
-                #[template(path = "icon_index/Cargo.toml", escape = "none")]
-                struct Template {}
-
-                Ok(Template {}.render()?)
-            }
+            LibType::IconIndex => unimplemented!("IconIndex does not generate a Cargo.toml file.")
         }
     }
 }
