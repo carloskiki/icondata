@@ -1,6 +1,6 @@
 [package]
 name = "icondata_bs"
-version = "0.0.8"
+version = "0.0.9"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"
 description = "Library providing SVG and corresponding metadata for \"Bootstrap Icons\"."
@@ -13,10 +13,6 @@ rust-version = "1.67.0"
 exclude = ["ICON-LIST.txt"]
 
 [dependencies]
-icondata_core = "0.0.2"
+icondata_core = { path = "../icondata_core", version = "0.0.2" }
 serde = { workspace = true, features = ["derive"], optional = true }
 strum = { version = "0.24", optional = true, features = ["derive"] }
-
-[build-dependencies]
-anyhow = "1.0.75"
-toml = "0.8.6"

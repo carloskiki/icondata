@@ -1,6 +1,6 @@
 [package]
 name = "icondata"
-version = "0.2.0"
+version = "0.3.0-alpha"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"
 description = "Icon data from free icon libraries."
@@ -12,7 +12,7 @@ categories = ["web-programming"]
 rust-version = "1.67.0"
 
 [dependencies]
-icondata_core = "0.0.2"
+icondata_core = { version = "0.0.2", path = "../icondata_core" }
 serde = { workspace = true, optional = true }
 
 {% for (short_name, version) in sn_version -%}

@@ -1,10 +1,13 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them. It re-exports all icons from the icondata_* crates.
+//! and an enum to select them. It re-exports all icons libraries from the icondata_* crates.
 //!
 //! The [`Icon`] enum can be converted into an [`IconData`] struct, which contains the SVG data
 //! used by a component library.
 //!
 //! [`IconData`]: icondata_core::IconData
+//!
+//! ___Warning!!!:___ the use of `lto = true` in your `Cargo.toml` is _very __strongly___
+//! encouraged. Otherwise, the size of your binary may become very large from unused icons.
 //!
 //! # Getting Started
 //!
@@ -16,64 +19,15 @@
 //! # .... Other dependencies ....
 //! ```
 //!
-//! 2. Set the `ICONDATA_MANIFEST_DIR` environment variable to the path of your `Icondata.toml` file:
-//! This can be done in multiple ways, but the recommended way is to set it in `.cargo/config.toml`
-//! (This assumes that your `Icondata.toml` file is in the root of your project):
-//! ```toml
-//! [env]
-//! ICONDATA_MANIFEST_DIR = { value = "", relative = true }
-//! ```
-//!
-//! 3. In order to not clog the namespace and to minimize binary sizes, Icons are imported
-//!    individually by enabling them in the `Icondata.toml` file. Please refer to the documentation
-//!    of the [__Icondata Manifest__](#icondata-manifest) for more information.
-//!
-//!    Create an `Icondata.toml` file in the root of your project, and include icons.
-//!
-//!    Icons can be searched with the [__icon index__](https://carlosted.github.io/icondata/).
-//!    Here is a basic example:
-//! ```toml
-//! icons = ["AiAlertFilled", "BsBuildingDown"]
-//! ```
-//!
-//! 4. Import and use the icons in your code:
+//! 2. Import and use the icons in your code:
 //! ```rust
-//! use icondata::*;
-//!
-//! let icon = BsBuildingDown;
-//! let icon = AiAlertFilled;
+//! let icon = icondata::BsBuildingDown;
+//! let icon = icondata::AiAlertFilled;
 //! ```
-//!
-//! # Icondata Manifest
-//!
-//! The Icondata manifest is a TOML file named `Icondata.toml` that is usually 
-//! placed in the root of your project/workspace (but can be placed anyhwere).
-//! The format of this file is currently very simple, but may be extended in the future:
-//!
-//! ```toml
-//! include-all = false # If set to `true`, all icons will be included
-//!                     # (takes precedence over `icons` field).
-//!                     # Can be useful for testing many icons,
-//!                     # but won't make `rust-analyzer` happy. 
-//!                     # It is very important to set `lto = true` in your
-//!                     # `Cargo.toml` when using this feature,
-//!                     # otherwise your binary size will be huge.
-//!
-//! icons = ["MyIcon1", "MyIcon2", ...] # Array of icons include.
-//! ```
-//!
-//! ## Environment Variables
-//!
-//! - `ICONDATA_MANIFEST_DIR`: Required to use the Icondata manifest. It is recommended 
-//! to set it in the `.cargo/config.toml` file of your project:
-//! ```toml
-//! [env]
-//! ICONDATA_MANIFEST_DIR = { value = "path/to/dir", relative = true }
-//! ```
-//!
-//! - `ICONDATA_INCLUDE_ALL`: If set to `true` or something other than 0, all icons will be included. Takes precedence over
-//! the Icondata manifest.
 //! 
+//! __Note:__ importing `icondata::*` will import all icons, which can slow down rust-analyzer.
+//! This can be avoided by importing only the icons you need: `use icondata::{..., ...};`, or by
+//! using the qualified path as above.
 {% for short_name in short_names %}
 pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
 {%- endfor %}
@@ -84,7 +38,7 @@ pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
 /// implements [`From`] for [`IconData`], so it can be converted into an [`IconData`] struct.
 /// It also implements [`From`] for any icon in any icondata_* library. 
 ///
-/// This enum is marked as non_exhaustive, as new icon libraries may be added in the future.
+/// This enum is marked as non_exhaustive as new icon libraries may be added in the future.
 ///
 /// [`IconData`]: icondata_core::IconData
 #[non_exhaustive]

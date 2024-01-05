@@ -20,7 +20,10 @@ struct SearchDir {
 }
 
 #[instrument(level = "info", skip(package), fields(package = ?package.ty))]
-pub(crate) async fn read_icons(package: &Package<Unknown>, icons_path: PathBuf) -> Result<Vec<SvgIcon>> {
+pub(crate) async fn read_icons(
+    package: &Package<Unknown>,
+    icons_path: PathBuf,
+) -> Result<Vec<SvgIcon>> {
     trace!("Reading icon data...");
     let mut icons = Vec::new();
 
@@ -32,13 +35,12 @@ pub(crate) async fn read_icons(package: &Package<Unknown>, icons_path: PathBuf) 
         icon_size: None,
     });
 
-    while !search_dirs.is_empty() {
-        let SearchDir {
-            path,
-            categories,
-            icon_size,
-        } = search_dirs.pop().expect("must exist");
-
+    while let Some(SearchDir {
+        path,
+        categories,
+        icon_size,
+    }) = search_dirs.pop()
+    {
         let mut dir_stream = tokio::fs::read_dir(&path).await?;
         while let Some(entry) = dir_stream.next_entry().await? {
             let entry_path = entry.path();
@@ -82,7 +84,8 @@ pub(crate) async fn read_icons(package: &Package<Unknown>, icons_path: PathBuf) 
                         ),
                         _ => trace!(
                             ?entry_path,
-                            file_extension, "Found file without svg extension. Ignoring it."
+                            file_extension,
+                            "Found file without svg extension. Ignoring it."
                         ),
                     },
                     None => {

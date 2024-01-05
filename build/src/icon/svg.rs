@@ -185,12 +185,12 @@ impl ParsedSvg {
                             let mut is_twotone_light_element = false;
 
                             let mut attributes = attributes
-                                .into_iter()
+                                .iter()
                                 .filter_map(|attr| {
                                     if attr.name.local_name != "fill" {
                                         return Some(Ok(*attr));
                                     }
-                                    match is_light(&attr.value) {
+                                    match is_light(attr.value) {
                                         Ok(fill_contents) => match fill_contents {
                                             FillContents::Dark => None,
                                             FillContents::Unknown => Some(Ok(*attr)),
@@ -235,10 +235,10 @@ impl ParsedSvg {
         }
 
         Ok(ParsedSvg {
-            /// On Windows systems, a small percentage of icons might be rendered with "&#xD;&#xA;" instead of "&#xA;".
-            /// This seems to happens when the svg file contained windows-style line breaks.
-            /// TODO: Find a better way of ensuring consistent output across different system architectures.
-            /// TODO: We are using `EmitterConfig::default().line_separator("\n")`, which does not help on its own. Why?
+            // On Windows systems, a small percentage of icons might be rendered with "&#xD;&#xA;" instead of "&#xA;".
+            // This seems to happens when the svg file contained windows-style line breaks.
+            // TODO: Find a better way of ensuring consistent output across different system architectures.
+            // TODO: We are using `EmitterConfig::default().line_separator("\n")`, which does not help on its own. Why?
             content: from_utf8(writer.inner_mut())?
                 .to_owned()
                 .replace("&#xD;&#xA;", "\n")
