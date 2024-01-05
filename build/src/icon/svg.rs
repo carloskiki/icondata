@@ -235,10 +235,10 @@ impl ParsedSvg {
         }
 
         Ok(ParsedSvg {
-            /// On Windows systems, a small percentage of icons might be rendered with "&#xD;&#xA;" instead of "&#xA;".
-            /// This seems to happens when the svg file contained windows-style line breaks.
-            /// TODO: Find a better way of ensuring consistent output across different system architectures.
-            /// TODO: We are using `EmitterConfig::default().line_separator("\n")`, which does not help on its own. Why?
+            // On Windows systems, a small percentage of icons might be rendered with "&#xD;&#xA;" instead of "&#xA;".
+            // This seems to happens when the svg file contained windows-style line breaks.
+            // TODO: Find a better way of ensuring consistent output across different system architectures.
+            // TODO: We are using `EmitterConfig::default().line_separator("\n")`, which does not help on its own. Why?
             content: from_utf8(writer.inner_mut())?
                 .to_owned()
                 .replace("&#xD;&#xA;", "\n")
