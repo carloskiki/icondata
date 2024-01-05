@@ -185,12 +185,12 @@ impl ParsedSvg {
                             let mut is_twotone_light_element = false;
 
                             let mut attributes = attributes
-                                .into_iter()
+                                .iter()
                                 .filter_map(|attr| {
                                     if attr.name.local_name != "fill" {
                                         return Some(Ok(*attr));
                                     }
-                                    match is_light(&attr.value) {
+                                    match is_light(attr.value) {
                                         Ok(fill_contents) => match fill_contents {
                                             FillContents::Dark => None,
                                             FillContents::Unknown => Some(Ok(*attr)),
