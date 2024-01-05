@@ -17,7 +17,7 @@ dependencies = [
  "icondata_bs",
  "icondata_cg",
  "icondata_ch",
- "icondata_core 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "icondata_core",
  "icondata_fa",
  "icondata_fi",
  "icondata_hi",
@@ -38,7 +38,7 @@ dependencies = [
 name = "icondata_ai"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -47,7 +47,7 @@ dependencies = [
 name = "icondata_bi"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -56,7 +56,7 @@ dependencies = [
 name = "icondata_bs"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -65,7 +65,7 @@ dependencies = [
 name = "icondata_cg"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -74,7 +74,7 @@ dependencies = [
 name = "icondata_ch"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -84,16 +84,10 @@ name = "icondata_core"
 version = "0.0.2"
 
 [[package]]
-name = "icondata_core"
-version = "0.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1640a4c1d5ddd08ab1d9854ffa7a2fa3dc52339492676b6d3031e77ca579f434"
-
-[[package]]
 name = "icondata_fa"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -102,7 +96,7 @@ dependencies = [
 name = "icondata_fi"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -111,7 +105,7 @@ dependencies = [
 name = "icondata_hi"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -120,7 +114,7 @@ dependencies = [
 name = "icondata_im"
 version = "0.0.8"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -129,7 +123,7 @@ dependencies = [
 name = "icondata_io"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -138,7 +132,7 @@ dependencies = [
 name = "icondata_lu"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -147,7 +141,7 @@ dependencies = [
 name = "icondata_oc"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -156,7 +150,7 @@ dependencies = [
 name = "icondata_ri"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -165,7 +159,7 @@ dependencies = [
 name = "icondata_si"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -174,7 +168,7 @@ dependencies = [
 name = "icondata_tb"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -183,7 +177,7 @@ dependencies = [
 name = "icondata_ti"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -192,7 +186,7 @@ dependencies = [
 name = "icondata_vs"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
@@ -201,7 +195,7 @@ dependencies = [
 name = "icondata_wi"
 version = "0.0.9"
 dependencies = [
- "icondata_core 0.0.2",
+ "icondata_core",
  "serde",
  "strum",
 ]
