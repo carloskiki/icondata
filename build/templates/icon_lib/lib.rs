@@ -1,11 +1,5 @@
 //! This crate provides a collection of icons in the form of SVG data
 //! and an enum to select them.
-//!
-//! ## Usage
-//!
-//! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
-//! identical.
-//!
 
 /// Icons from [__{{long_name}}__]({{url}})
 #[non_exhaustive]

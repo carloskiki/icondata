@@ -1,11 +1,5 @@
 //! This crate provides a collection of icons in the form of SVG data
 //! and an enum to select them.
-//!
-//! ## Usage
-//!
-//! Every icon is shipped as its own feature; the enum variant and their corresponding feature name are
-//! identical.
-//!
 
 /// Icons from [__Feather__](https://github.com/feathericons/feather)
 #[non_exhaustive]
