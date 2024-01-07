@@ -20,7 +20,7 @@ build-site:
 
 # Build all libraries
 build:
-    cd build && cargo run
+    cd build && cargo run --release
 
 # Build all libraries, forcing new downloads of icon packages
 build-clean:

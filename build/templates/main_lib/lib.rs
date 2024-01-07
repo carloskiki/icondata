@@ -6,7 +6,7 @@
 //!
 //! [`IconData`]: icondata_core::IconData
 //!
-//! ___Warning!!!:___ the use of `lto = true` in your `Cargo.toml` is _very __strongly___
+//! __Warning!!!:__ the use of `lto = true` in your `Cargo.toml` is _very strongly_
 //! encouraged. Otherwise, the size of your binary may become very large from unused icons.
 //!
 //! # Getting Started
@@ -29,39 +29,5 @@
 //! This can be avoided by importing only the icons you need: `use icondata::{..., ...};`, or by
 //! using the qualified path as above.
 {% for short_name in short_names %}
-pub use icondata_{{short_name}}::{{short_name|capitalize}}Icon::{self, *};
+pub use icondata_{{short_name}}::*;
 {%- endfor %}
-
-/// The  enum regrouping all Icon Libraries.
-///
-/// This enum contains all icons from icondata_* libraries, and
-/// implements [`From`] for [`IconData`], so it can be converted into an [`IconData`] struct.
-/// It also implements [`From`] for any icon in any icondata_* library. 
-///
-/// This enum is marked as non_exhaustive as new icon libraries may be added in the future.
-///
-/// [`IconData`]: icondata_core::IconData
-#[non_exhaustive]
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
-#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-pub enum Icon {
-    {% for short_name in short_names -%}
-    {{short_name|capitalize}}({{short_name|capitalize}}Icon),
-    {% endfor %}
-}
-impl From<Icon> for icondata_core::IconData {
-    fn from(icon: Icon) -> Self {
-        match icon {
-            {% for short_name in short_names -%}
-            Icon::{{short_name|capitalize}}(icon) => icondata_core::IconData::from(icon),
-            {% endfor %}
-        }
-    }
-}
-{% for short_name in short_names %}
-impl From<{{short_name|capitalize}}Icon> for Icon {
-    fn from(icon: {{short_name|capitalize}}Icon) -> Self {
-        Self::{{short_name|capitalize}}(icon)
-    }
-}
-{% endfor %}
