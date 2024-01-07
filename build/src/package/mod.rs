@@ -438,7 +438,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 8,
+                    patch: 9,
                     prerelease: None,
                     build: None,
                 },

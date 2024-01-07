@@ -23,7 +23,7 @@ icondata_ch = { path = "../icondata_ch", version = "0.0.9" }
 icondata_fa = { path = "../icondata_fa", version = "0.0.9" }
 icondata_fi = { path = "../icondata_fi", version = "0.0.9" }
 icondata_hi = { path = "../icondata_hi", version = "0.0.9" }
-icondata_im = { path = "../icondata_im", version = "0.0.8" }
+icondata_im = { path = "../icondata_im", version = "0.0.9" }
 icondata_io = { path = "../icondata_io", version = "0.0.9" }
 icondata_lu = { path = "../icondata_lu", version = "0.0.9" }
 icondata_oc = { path = "../icondata_oc", version = "0.0.9" }
