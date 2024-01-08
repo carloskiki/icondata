@@ -3,14 +3,8 @@
 version = 3
 
 [[package]]
-name = "heck"
-version = "0.4.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
-
-[[package]]
 name = "icondata"
-version = "0.3.0-alpha"
+version = "0.3.0"
 dependencies = [
  "icondata_ai",
  "icondata_bi",
@@ -31,173 +25,139 @@ dependencies = [
  "icondata_ti",
  "icondata_vs",
  "icondata_wi",
- "serde",
 ]
 
 [[package]]
 name = "icondata_ai"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_bi"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_bs"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_cg"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_ch"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_core"
-version = "0.0.2"
+version = "0.1.0"
+dependencies = [
+ "serde",
+]
 
 [[package]]
 name = "icondata_fa"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_fi"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_hi"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_im"
-version = "0.0.8"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_io"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_lu"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_oc"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_ri"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_si"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_tb"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_ti"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_vs"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
 name = "icondata_wi"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "icondata_core",
- "serde",
- "strum",
 ]
 
 [[package]]
@@ -219,12 +179,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustversion"
-version = "1.0.14"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7ffc183a10b4478d04cbbbfc96d0873219d962dd5accaff2ffbd4ceb7df837f4"
-
-[[package]]
 name = "serde"
 version = "1.0.188"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -241,40 +195,7 @@ checksum = "4eca7ac642d82aa35b60049a6eccb4be6be75e599bd2e9adb5f875a737654af2"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.37",
-]
-
-[[package]]
-name = "strum"
-version = "0.24.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "063e6045c0e62079840579a7e47a355ae92f60eb74daaf156fb1e84ba164e63f"
-dependencies = [
- "strum_macros",
-]
-
-[[package]]
-name = "strum_macros"
-version = "0.24.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e385be0d24f186b4ce2f9982191e7101bb737312ad61c1f2f984f34bcf85d59"
-dependencies = [
- "heck",
- "proc-macro2",
- "quote",
- "rustversion",
- "syn 1.0.109",
-]
-
-[[package]]
-name = "syn"
-version = "1.0.109"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
-dependencies = [
- "proc-macro2",
- "quote",
- "unicode-ident",
+ "syn",
 ]
 
 [[package]]

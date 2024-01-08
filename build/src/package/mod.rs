@@ -253,7 +253,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -280,7 +280,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -307,7 +307,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -334,7 +334,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -361,7 +361,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -388,7 +388,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -416,7 +416,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -438,7 +438,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -465,7 +465,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -492,7 +492,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -519,7 +519,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -546,7 +546,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -573,7 +573,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -600,7 +600,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -627,7 +627,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -654,7 +654,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -681,7 +681,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },
@@ -708,7 +708,7 @@ impl PackageType {
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,
-                    patch: 9,
+                    patch: 10,
                     prerelease: None,
                     build: None,
                 },

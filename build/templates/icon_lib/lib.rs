@@ -1,19 +1,10 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
-
-/// Icons from [__{{long_name}}__]({{url}})
-#[non_exhaustive]
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
-#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-#[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::EnumVariantNames))]
-pub enum {{short_name|capitalize}}Icon {
-    {%- for (name, _) in name_svg %}
-    {{ name }},
-    {%- endfor %}
-}
+//! from the [__{{ long_name }}__]({{ url }}) icon set.
 
 {% for (name, svg) in name_svg.iter() -%}
-const {{ name|shouty_snake_case }}: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static {{ name }}: &icondata_core::IconData = &icondata_core::IconData {
     {% let attributes = svg.svg_attributes() -%}
     style: {{ attributes.style|attribute_value }},
     x: {{ attributes.x|attribute_value }},
@@ -29,12 +20,3 @@ const {{ name|shouty_snake_case }}: icondata_core::IconData = icondata_core::Ico
     data: r###"{{ svg.content.as_str() }}"###
 };
 {% endfor %}
-impl From<{{short_name|capitalize}}Icon> for icondata_core::IconData {
-    fn from(icon: {{short_name|capitalize}}Icon) -> icondata_core::IconData {
-        match icon {
-            {%- for (name, _) in name_svg %}
-            {{short_name|capitalize}}Icon::{{name}} => {{name|shouty_snake_case}},
-            {%- endfor %}
-        }
-    }
-}

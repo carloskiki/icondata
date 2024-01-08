@@ -1,4 +1,5 @@
-#[derive(Debug, PartialEq, Eq, Clone, Copy)]
+#[derive(Debug, PartialEq, Eq, Clone, Copy, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct IconData {
     pub style: Option<&'static str>,
     pub x: Option<&'static str>,
@@ -13,3 +14,5 @@ pub struct IconData {
     pub fill: Option<&'static str>,
     pub data: &'static str,
 }
+
+pub type Icon = &'static IconData;

@@ -1,234 +1,9 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
+//! from the [__Weather Icons__](https://github.com/erikflowers/weather-icons) icon set.
 
-/// Icons from [__Weather Icons__](https://github.com/erikflowers/weather-icons)
-#[non_exhaustive]
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
-#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
-#[cfg_attr(feature = "strum", derive(strum::EnumIter, strum::EnumVariantNames))]
-pub enum WiIcon {
-    WiAlien,
-    WiBarometer,
-    WiCelsius,
-    WiCloud,
-    WiCloudDown,
-    WiCloudRefresh,
-    WiCloudUp,
-    WiCloudy,
-    WiCloudyGusts,
-    WiCloudyWindy,
-    WiDayCloudy,
-    WiDayCloudyGusts,
-    WiDayCloudyHigh,
-    WiDayCloudyWindy,
-    WiDayFog,
-    WiDayHail,
-    WiDayHaze,
-    WiDayLightWind,
-    WiDayLightning,
-    WiDayRain,
-    WiDayRainMix,
-    WiDayRainWind,
-    WiDayShowers,
-    WiDaySleet,
-    WiDaySleetStorm,
-    WiDaySnow,
-    WiDaySnowThunderstorm,
-    WiDaySnowWind,
-    WiDaySprinkle,
-    WiDayStormShowers,
-    WiDaySunny,
-    WiDaySunnyOvercast,
-    WiDayThunderstorm,
-    WiDayWindy,
-    WiDegrees,
-    WiDirectionDown,
-    WiDirectionDownLeft,
-    WiDirectionDownRight,
-    WiDirectionLeft,
-    WiDirectionRight,
-    WiDirectionUp,
-    WiDirectionUpLeft,
-    WiDirectionUpRight,
-    WiDust,
-    WiEarthquake,
-    WiFahrenheit,
-    WiFire,
-    WiFlood,
-    WiFog,
-    WiGaleWarning,
-    WiHail,
-    WiHorizon,
-    WiHorizonAlt,
-    WiHot,
-    WiHumidity,
-    WiHurricane,
-    WiHurricaneWarning,
-    WiLightning,
-    WiLunarEclipse,
-    WiMeteor,
-    WiMoonAltFirstQuarter,
-    WiMoonAltFull,
-    WiMoonAltNew,
-    WiMoonAltThirdQuarter,
-    WiMoonAltWaningCrescent1,
-    WiMoonAltWaningCrescent2,
-    WiMoonAltWaningCrescent3,
-    WiMoonAltWaningCrescent4,
-    WiMoonAltWaningCrescent5,
-    WiMoonAltWaningCrescent6,
-    WiMoonAltWaningGibbous1,
-    WiMoonAltWaningGibbous2,
-    WiMoonAltWaningGibbous3,
-    WiMoonAltWaningGibbous4,
-    WiMoonAltWaningGibbous5,
-    WiMoonAltWaningGibbous6,
-    WiMoonAltWaxingCrescent1,
-    WiMoonAltWaxingCrescent2,
-    WiMoonAltWaxingCrescent3,
-    WiMoonAltWaxingCrescent4,
-    WiMoonAltWaxingCrescent5,
-    WiMoonAltWaxingCrescent6,
-    WiMoonAltWaxingGibbous1,
-    WiMoonAltWaxingGibbous2,
-    WiMoonAltWaxingGibbous3,
-    WiMoonAltWaxingGibbous4,
-    WiMoonAltWaxingGibbous5,
-    WiMoonAltWaxingGibbous6,
-    WiMoonFirstQuarter,
-    WiMoonFull,
-    WiMoonNew,
-    WiMoonThirdQuarter,
-    WiMoonWaningCrescent1,
-    WiMoonWaningCrescent2,
-    WiMoonWaningCrescent3,
-    WiMoonWaningCrescent4,
-    WiMoonWaningCrescent5,
-    WiMoonWaningCrescent6,
-    WiMoonWaningGibbous1,
-    WiMoonWaningGibbous2,
-    WiMoonWaningGibbous3,
-    WiMoonWaningGibbous4,
-    WiMoonWaningGibbous5,
-    WiMoonWaningGibbous6,
-    WiMoonWaxingCrescent1,
-    WiMoonWaxingCrescent2,
-    WiMoonWaxingCrescent3,
-    WiMoonWaxingCrescent4,
-    WiMoonWaxingCrescent5,
-    WiMoonWaxingCrescent6,
-    WiMoonWaxingGibbous1,
-    WiMoonWaxingGibbous2,
-    WiMoonWaxingGibbous3,
-    WiMoonWaxingGibbous4,
-    WiMoonWaxingGibbous5,
-    WiMoonWaxingGibbous6,
-    WiMoonrise,
-    WiMoonset,
-    WiNa,
-    WiNightAltCloudy,
-    WiNightAltCloudyGusts,
-    WiNightAltCloudyHigh,
-    WiNightAltCloudyWindy,
-    WiNightAltHail,
-    WiNightAltLightning,
-    WiNightAltPartlyCloudy,
-    WiNightAltRain,
-    WiNightAltRainMix,
-    WiNightAltRainWind,
-    WiNightAltShowers,
-    WiNightAltSleet,
-    WiNightAltSleetStorm,
-    WiNightAltSnow,
-    WiNightAltSnowThunderstorm,
-    WiNightAltSnowWind,
-    WiNightAltSprinkle,
-    WiNightAltStormShowers,
-    WiNightAltThunderstorm,
-    WiNightClear,
-    WiNightCloudy,
-    WiNightCloudyGusts,
-    WiNightCloudyHigh,
-    WiNightCloudyWindy,
-    WiNightFog,
-    WiNightHail,
-    WiNightLightning,
-    WiNightPartlyCloudy,
-    WiNightRain,
-    WiNightRainMix,
-    WiNightRainWind,
-    WiNightShowers,
-    WiNightSleet,
-    WiNightSleetStorm,
-    WiNightSnow,
-    WiNightSnowThunderstorm,
-    WiNightSnowWind,
-    WiNightSprinkle,
-    WiNightStormShowers,
-    WiNightThunderstorm,
-    WiRain,
-    WiRainMix,
-    WiRainWind,
-    WiRaindrop,
-    WiRaindrops,
-    WiRefresh,
-    WiRefreshAlt,
-    WiSandstorm,
-    WiShowers,
-    WiSleet,
-    WiSmallCraftAdvisory,
-    WiSmog,
-    WiSmoke,
-    WiSnow,
-    WiSnowWind,
-    WiSnowflakeCold,
-    WiSolarEclipse,
-    WiSprinkle,
-    WiStars,
-    WiStormShowers,
-    WiStormWarning,
-    WiStrongWind,
-    WiSunrise,
-    WiSunset,
-    WiThermometer,
-    WiThermometerExterior,
-    WiThermometerInternal,
-    WiThunderstorm,
-    WiTime1,
-    WiTime10,
-    WiTime11,
-    WiTime12,
-    WiTime2,
-    WiTime3,
-    WiTime4,
-    WiTime5,
-    WiTime6,
-    WiTime7,
-    WiTime8,
-    WiTime9,
-    WiTornado,
-    WiTrain,
-    WiTsunami,
-    WiUmbrella,
-    WiVolcano,
-    WiWindBeaufort0,
-    WiWindBeaufort1,
-    WiWindBeaufort10,
-    WiWindBeaufort11,
-    WiWindBeaufort12,
-    WiWindBeaufort2,
-    WiWindBeaufort3,
-    WiWindBeaufort4,
-    WiWindBeaufort5,
-    WiWindBeaufort6,
-    WiWindBeaufort7,
-    WiWindBeaufort8,
-    WiWindBeaufort9,
-    WiWindDeg,
-    WiWindy,
-}
-
-const WI_ALIEN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiAlien: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -252,7 +27,9 @@ const WI_ALIEN: icondata_core::IconData = icondata_core::IconData {
 	c-0.07-0.08-0.22-0.11-0.44-0.08c-0.59,0.1-1.12,0.23-1.59,0.4c-1.15,0.43-2.02,1.01-2.62,1.74C16.05,15.68,15.72,16.6,15.66,17.73z
 	" />"###
 };
-const WI_BAROMETER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiBarometer: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -275,7 +52,9 @@ const WI_BAROMETER: icondata_core::IconData = icondata_core::IconData {
 	c0.18,0.25,0.26,0.54,0.26,0.88c0,0.44-0.15,0.81-0.46,1.11c-0.31,0.3-0.68,0.45-1.12,0.45c-0.43,0-0.8-0.15-1.1-0.45
 	C13.65,15.76,13.5,15.39,13.5,14.95z M14.81,10.28V8.12h0.69v2.17H14.81z M17.75,13.55v-0.74h2.17v0.74H17.75z" />"###
 };
-const WI_CELSIUS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCelsius: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -301,7 +80,9 @@ const WI_CELSIUS: icondata_core::IconData = icondata_core::IconData {
 	c-0.05-0.11-0.14-0.26-0.28-0.43c-0.13-0.18-0.29-0.32-0.45-0.44c-0.21-0.15-0.48-0.27-0.82-0.38c-0.34-0.1-0.71-0.15-1.11-0.15
 	c-0.51,0-0.95,0.09-1.35,0.27c-0.39,0.18-0.7,0.42-0.91,0.73c-0.43,0.59-0.65,1.28-0.65,2.07V15.4z" />"###
 };
-const WI_CLOUD: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloud: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -321,7 +102,9 @@ const WI_CLOUD: icondata_core::IconData = icondata_core::IconData {
 	l-0.07-0.57c-0.11-1.08-0.58-1.99-1.4-2.72c-0.82-0.73-1.77-1.1-2.86-1.1c-1.09,0-2.05,0.37-2.85,1.1
 	c-0.81,0.73-1.27,1.64-1.37,2.72l-0.08,0.57c0,0.12-0.07,0.18-0.2,0.18H9.27c-0.84,0.1-1.54,0.46-2.1,1.07S6.32,16.05,6.32,16.88z" />"###
 };
-const WI_CLOUD_DOWN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudDown: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -347,7 +130,9 @@ const WI_CLOUD_DOWN: icondata_core::IconData = icondata_core::IconData {
 	c-0.16,0.16-0.23,0.35-0.23,0.59v3.98l-1.1-1.11c-0.18-0.16-0.38-0.23-0.63-0.23c-0.25,0-0.45,0.08-0.61,0.23
 	C11.66,17.97,11.58,18.17,11.58,18.4z" />"###
 };
-const WI_CLOUD_REFRESH: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudRefresh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -376,7 +161,9 @@ const WI_CLOUD_REFRESH: icondata_core::IconData = icondata_core::IconData {
 	l-1.82-1.83c-0.19-0.18-0.39-0.26-0.62-0.26c-0.23,0-0.43,0.08-0.59,0.25c-0.16,0.17-0.24,0.37-0.24,0.61
 	c0,0.24,0.07,0.43,0.23,0.58l0.35,0.36c-1,0.17-1.83,0.63-2.49,1.4C11.19,16.24,10.86,17.14,10.86,18.18z" />"###
 };
-const WI_CLOUD_UP: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudUp: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -402,7 +189,9 @@ const WI_CLOUD_UP: icondata_core::IconData = icondata_core::IconData {
 	c0.4,0.31,0.81,0.31,1.22,0c0.16-0.15,0.24-0.36,0.24-0.62c0-0.24-0.08-0.44-0.24-0.62l-2.59-2.57c-0.16-0.16-0.36-0.24-0.6-0.24
 	c-0.24,0-0.44,0.08-0.59,0.24l-2.58,2.57C11.66,17.08,11.58,17.27,11.58,17.51z" />"###
 };
-const WI_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -428,7 +217,9 @@ const WI_CLOUDY: icondata_core::IconData = icondata_core::IconData {
 	c-0.75-0.75-1.65-1.12-2.7-1.12h-0.15c-0.26-1-0.81-1.82-1.65-2.47c-0.83-0.65-1.77-0.97-2.8-0.97C16.28,7.29,15.11,7.82,14.19,8.88
 	z" />"###
 };
-const WI_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -458,7 +249,9 @@ const WI_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
 	c-1.08-0.85-2.33-1.27-3.73-1.27c-1.41,0-2.66,0.44-3.75,1.32s-1.78,2-2.07,3.37c-0.86,0.2-1.62,0.61-2.28,1.23
 	s-1.12,1.36-1.38,2.21v0.04C5.77,15.56,5.77,15.58,5.77,15.61z" />"###
 };
-const WI_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -485,7 +278,9 @@ const WI_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.45,0.08,0.61,0.24c0.17,0.16,0.25,0.36,0.25,0.6c0,0.24-0.08,0.44-0.25,0.61c-0.17,0.17-0.37,0.25-0.61,0.25H8.35
 	c-0.23,0-0.43-0.08-0.6-0.25C7.58,24.57,7.5,24.37,7.5,24.13z" />"###
 };
-const WI_DAY_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -519,7 +314,9 @@ const WI_DAY_CLOUDY: icondata_core::IconData = icondata_core::IconData {
 	c0.16,0.16,0.37,0.24,0.61,0.24h2.04c0.23,0,0.42-0.08,0.58-0.23s0.23-0.35,0.23-0.59c0-0.24-0.08-0.44-0.23-0.6
 	s-0.35-0.25-0.58-0.25h-2.04c-0.24,0-0.44,0.08-0.61,0.25C24.8,11.17,24.72,11.37,24.72,11.6z" />"###
 };
-const WI_DAY_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -562,7 +359,9 @@ const WI_DAY_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
 	c0.15,0.18,0.34,0.26,0.57,0.26h2.02c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6c0-0.23-0.09-0.43-0.26-0.6
 	c-0.17-0.17-0.37-0.26-0.6-0.26h-2.02c-0.24,0-0.43,0.08-0.59,0.25C26.03,11.13,25.95,11.33,25.95,11.57z" />"###
 };
-const WI_DAY_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -596,7 +395,9 @@ const WI_DAY_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconData {
 	c0-0.19,0.06-0.35,0.19-0.48c0.12-0.13,0.28-0.2,0.47-0.2h1.62c0.19,0,0.36,0.07,0.5,0.2s0.21,0.29,0.21,0.48
 	c0,0.19-0.07,0.36-0.21,0.49c-0.14,0.13-0.3,0.2-0.5,0.2h-1.62c-0.19,0-0.34-0.07-0.47-0.2C23.14,16.35,23.08,16.19,23.08,15.99z" />"###
 };
-const WI_DAY_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -637,7 +438,9 @@ const WI_DAY_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
 	c0-0.22-0.08-0.41-0.24-0.57c-0.16-0.15-0.36-0.23-0.59-0.23h-2.03c-0.24,0-0.45,0.08-0.62,0.23C25.9,11.22,25.81,11.41,25.81,11.63
 	z" />"###
 };
-const WI_DAY_FOG: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -676,7 +479,9 @@ const WI_DAY_FOG: icondata_core::IconData = icondata_core::IconData {
 	c0.15,0.17,0.35,0.25,0.59,0.25h2.05c0.23,0,0.43-0.08,0.59-0.25c0.16-0.17,0.24-0.37,0.24-0.6c0-0.24-0.08-0.44-0.24-0.6
 	c-0.16-0.16-0.35-0.24-0.59-0.24h-2.05c-0.24,0-0.44,0.08-0.6,0.25C26.04,11.14,25.96,11.34,25.96,11.57z" />"###
 };
-const WI_DAY_HAIL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -726,7 +531,9 @@ const WI_DAY_HAIL: icondata_core::IconData = icondata_core::IconData {
 	h2.03c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.26-0.37,0.26-0.61c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.38-0.24-0.62-0.24h-2.03
 	c-0.25,0-0.46,0.08-0.63,0.24C24.83,11.12,24.74,11.32,24.74,11.55z" />"###
 };
-const WI_DAY_HAZE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayHaze: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -767,7 +574,9 @@ const WI_DAY_HAZE: icondata_core::IconData = icondata_core::IconData {
 	c0.17-0.17,0.36-0.25,0.57-0.25h2.02c0.23,0,0.43,0.09,0.6,0.26c0.17,0.17,0.26,0.37,0.26,0.6c0,0.23-0.09,0.43-0.26,0.6
 	c-0.17,0.17-0.37,0.25-0.6,0.25h-2.02c-0.23,0-0.43-0.08-0.58-0.25S21.92,15.86,21.92,15.62z" />"###
 };
-const WI_DAY_LIGHT_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayLightWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -807,7 +616,9 @@ const WI_DAY_LIGHT_WIND: icondata_core::IconData = icondata_core::IconData {
 	c0.16-0.16,0.35-0.24,0.56-0.24h2.03c0.23,0,0.43,0.09,0.61,0.26c0.17,0.17,0.26,0.37,0.26,0.6c0,0.23-0.09,0.43-0.26,0.6
 	c-0.18,0.17-0.38,0.25-0.61,0.25h-2.03c-0.23,0-0.42-0.08-0.58-0.25C24.08,11.99,24,11.79,24,11.55z" />"###
 };
-const WI_DAY_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -844,7 +655,9 @@ const WI_DAY_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.44-0.08,0.61-0.24c0.17-0.16,0.25-0.35,0.25-0.59c0-0.24-0.09-0.44-0.26-0.61s-0.37-0.25-0.6-0.25h-2.04
 	c-0.23,0-0.43,0.08-0.6,0.25C24.77,11.12,24.68,11.32,24.68,11.56z" />"###
 };
-const WI_DAY_RAIN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -887,7 +700,9 @@ const WI_DAY_RAIN: icondata_core::IconData = icondata_core::IconData {
 	c0.17-0.17,0.25-0.37,0.25-0.6c0-0.24-0.08-0.44-0.25-0.61s-0.37-0.26-0.61-0.26H25.6c-0.24,0-0.44,0.09-0.62,0.26
 	C24.8,11.14,24.72,11.34,24.72,11.58z" />"###
 };
-const WI_DAY_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -944,7 +759,9 @@ const WI_DAY_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
 	c0.23,0,0.43-0.08,0.59-0.25c0.16-0.17,0.24-0.37,0.24-0.61c0-0.24-0.08-0.44-0.24-0.6c-0.16-0.17-0.35-0.25-0.59-0.25h-2.03
 	c-0.24,0-0.44,0.08-0.62,0.25S24.66,11.37,24.66,11.6z" />"###
 };
-const WI_DAY_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -992,7 +809,9 @@ const WI_DAY_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
 	c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.37-0.24-0.61-0.24h-2.04c-0.24,0-0.44,0.08-0.6,0.24C24.86,11.15,24.78,11.35,24.78,11.58
 	z" />"###
 };
-const WI_DAY_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1043,7 +862,9 @@ const WI_DAY_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	c0.16,0.16,0.36,0.24,0.58,0.24h2.04c0.26,0,0.47-0.08,0.63-0.23c0.16-0.16,0.24-0.35,0.24-0.59c0-0.25-0.08-0.46-0.25-0.62
 	c-0.17-0.16-0.37-0.24-0.62-0.24h-2.04c-0.23,0-0.43,0.08-0.59,0.25C24.79,11.2,24.71,11.41,24.71,11.64z" />"###
 };
-const WI_DAY_SLEET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1097,7 +918,9 @@ const WI_DAY_SLEET: icondata_core::IconData = icondata_core::IconData {
 	c0.17-0.16,0.37-0.24,0.61-0.24h2.06c0.24,0,0.45,0.08,0.61,0.24s0.25,0.36,0.25,0.6c0,0.24-0.08,0.44-0.25,0.61
 	c-0.17,0.17-0.37,0.25-0.61,0.25h-2.06c-0.24,0-0.44-0.09-0.6-0.27C24.81,12.05,24.73,11.85,24.73,11.61z" />"###
 };
-const WI_DAY_SLEET_STORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1145,7 +968,9 @@ const WI_DAY_SLEET_STORM: icondata_core::IconData = icondata_core::IconData {
 	c0,0.24,0.09,0.44,0.26,0.59c0.16,0.18,0.36,0.26,0.6,0.26h2.06c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6
 	s-0.08-0.44-0.25-0.6c-0.17-0.16-0.37-0.24-0.61-0.24h-2.06c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
-const WI_DAY_SNOW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1193,7 +1018,9 @@ const WI_DAY_SNOW: icondata_core::IconData = icondata_core::IconData {
 	h2.02c0.23,0,0.43-0.08,0.6-0.25s0.25-0.37,0.25-0.61c0-0.24-0.08-0.44-0.25-0.6s-0.37-0.25-0.6-0.25h-2.02
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
-const WI_DAY_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1238,7 +1065,9 @@ const WI_DAY_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::IconDat
 	c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6s-0.08-0.44-0.25-0.6c-0.17-0.16-0.37-0.24-0.61-0.24h-2.06
 	c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
-const WI_DAY_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1286,7 +1115,9 @@ const WI_DAY_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
 	h2.02c0.23,0,0.43-0.08,0.6-0.25s0.25-0.37,0.25-0.61c0-0.24-0.08-0.44-0.25-0.6s-0.37-0.25-0.6-0.25h-2.02
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
-const WI_DAY_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1327,7 +1158,9 @@ const WI_DAY_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.44-0.08,0.6-0.24c0.17-0.16,0.25-0.35,0.25-0.59c0-0.24-0.08-0.44-0.25-0.6s-0.37-0.25-0.6-0.25h-2.02
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
-const WI_DAY_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1373,7 +1206,9 @@ const WI_DAY_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.44-0.08,0.61-0.25c0.17-0.17,0.25-0.37,0.25-0.6s-0.08-0.44-0.25-0.6c-0.17-0.16-0.37-0.24-0.61-0.24h-2.06
 	c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
-const WI_DAY_SUNNY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySunny: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1408,7 +1243,9 @@ const WI_DAY_SUNNY: icondata_core::IconData = icondata_core::IconData {
 	c0.23,0,0.43,0.09,0.6,0.26c0.17,0.17,0.26,0.37,0.26,0.6s-0.09,0.43-0.26,0.6c-0.17,0.17-0.37,0.25-0.6,0.25h-2.02
 	c-0.23,0-0.43-0.08-0.58-0.25S21.92,14.86,21.92,14.62z" />"###
 };
-const WI_DAY_SUNNY_OVERCAST: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDaySunnyOvercast: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1445,7 +1282,9 @@ const WI_DAY_SUNNY_OVERCAST: icondata_core::IconData = icondata_core::IconData {
 	s0.29-0.4,0.29-0.66c0-0.29-0.09-0.53-0.28-0.71s-0.42-0.28-0.69-0.28h-1.69c-0.29,0-0.53,0.09-0.72,0.28
 	C23.35,12.89,23.25,13.13,23.25,13.43z" />"###
 };
-const WI_DAY_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1487,7 +1326,9 @@ const WI_DAY_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
 	c0-0.23-0.08-0.43-0.25-0.59c-0.17-0.16-0.37-0.24-0.61-0.24h-2.03c-0.25,0-0.46,0.08-0.63,0.24C24.78,11.15,24.7,11.35,24.7,11.58z
 	" />"###
 };
-const WI_DAY_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDayWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1531,7 +1372,9 @@ const WI_DAY_WINDY: icondata_core::IconData = icondata_core::IconData {
 	c0,0.23-0.09,0.43-0.26,0.6c-0.18,0.17-0.38,0.25-0.61,0.25h-2.02c-0.23,0-0.42-0.08-0.58-0.25C24.89,11.99,24.82,11.79,24.82,11.55
 	z" />"###
 };
-const WI_DEGREES: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDegrees: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1549,7 +1392,9 @@ const WI_DEGREES: icondata_core::IconData = icondata_core::IconData {
 	s0.28-0.41,0.28-0.67c0-0.26-0.09-0.48-0.28-0.66c-0.19-0.18-0.41-0.28-0.67-0.28c-0.26,0-0.48,0.09-0.67,0.27
 	C14.16,8.72,14.07,8.94,14.07,9.21z" />"###
 };
-const WI_DIRECTION_DOWN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionDown: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1566,7 +1411,9 @@ const WI_DIRECTION_DOWN: icondata_core::IconData = icondata_core::IconData {
 	c0-0.22-0.08-0.41-0.24-0.56C15.42,9.66,15.23,9.58,15,9.58s-0.42,0.07-0.58,0.22c-0.16,0.15-0.24,0.34-0.24,0.56v6.59l-1.06-1.05
 	c-0.16-0.16-0.34-0.23-0.55-0.23c-0.22,0-0.42,0.08-0.57,0.23S11.77,16.25,11.77,16.47z" />"###
 };
-const WI_DIRECTION_DOWN_LEFT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1584,7 +1431,9 @@ const WI_DIRECTION_DOWN_LEFT: icondata_core::IconData = icondata_core::IconData 
 	v-1.25c0-0.19-0.06-0.35-0.19-0.48c-0.13-0.13-0.29-0.19-0.48-0.19c-0.19,0-0.35,0.07-0.47,0.2c-0.13,0.13-0.19,0.29-0.19,0.48
 	V16.77z" />"###
 };
-const WI_DIRECTION_DOWN_RIGHT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1601,7 +1450,9 @@ const WI_DIRECTION_DOWN_RIGHT: icondata_core::IconData = icondata_core::IconData
 	s-0.45,0.3-0.74,0.3h-4.48c-0.29,0-0.54-0.1-0.74-0.3s-0.3-0.45-0.3-0.75c0-0.29,0.1-0.54,0.3-0.73s0.45-0.29,0.74-0.29h1.93
 	l-6.08-6.06C10.13,10.63,10.04,10.38,10.04,10.08z" />"###
 };
-const WI_DIRECTION_LEFT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1618,7 +1469,9 @@ const WI_DIRECTION_LEFT: icondata_core::IconData = icondata_core::IconData {
 	s-0.52-0.38-0.87-0.39H11.4l1.64-1.66c0.24-0.24,0.37-0.53,0.37-0.86c0-0.35-0.12-0.65-0.37-0.89S12.5,9.9,12.14,9.9
 	c-0.32,0-0.61,0.14-0.85,0.41l-3.84,3.75C7.21,14.31,7.09,14.6,7.09,14.96z" />"###
 };
-const WI_DIRECTION_RIGHT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1636,7 +1489,9 @@ const WI_DIRECTION_RIGHT: icondata_core::IconData = icondata_core::IconData {
 	c-0.16,0.15-0.23,0.34-0.23,0.56c0,0.23,0.08,0.42,0.23,0.57l1.06,1.08h-6.59c-0.23,0.01-0.41,0.09-0.56,0.25
 	C10.01,13.95,9.94,14.14,9.94,14.36z" />"###
 };
-const WI_DIRECTION_UP: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionUp: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1653,7 +1508,9 @@ const WI_DIRECTION_UP: icondata_core::IconData = icondata_core::IconData {
 	c0.23,0.24,0.53,0.37,0.88,0.37c0.36,0,0.66-0.12,0.9-0.36s0.36-0.53,0.36-0.89c-0.02-0.36-0.15-0.64-0.4-0.85l-3.74-3.84
 	c-0.24-0.23-0.55-0.37-0.92-0.4c-0.37,0.02-0.68,0.16-0.92,0.41l-3.75,3.81C10.08,10.25,9.95,10.53,9.95,10.87z" />"###
 };
-const WI_DIRECTION_UP_LEFT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1670,7 +1527,9 @@ const WI_DIRECTION_UP_LEFT: icondata_core::IconData = icondata_core::IconData {
 	c-0.2,0.19-0.46,0.28-0.79,0.28c-0.3,0-0.55-0.09-0.73-0.28l-6.02-6.05v1.95c0,0.3-0.1,0.55-0.3,0.75c-0.2,0.2-0.45,0.3-0.75,0.3
 	c-0.29,0-0.54-0.1-0.74-0.31S10.03,14.6,10.03,14.31z" />"###
 };
-const WI_DIRECTION_UP_RIGHT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDirectionUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1687,7 +1546,9 @@ const WI_DIRECTION_UP_RIGHT: icondata_core::IconData = icondata_core::IconData {
 	s-0.45-0.3-0.74-0.3h-4.5c-0.29,0-0.54,0.1-0.73,0.3S13.4,9.39,13.4,9.7c0,0.29,0.1,0.54,0.29,0.73s0.44,0.29,0.73,0.29h1.95
 	l-6.06,6.06C10.14,16.99,10.05,17.25,10.05,17.55z" />"###
 };
-const WI_DUST: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiDust: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1726,7 +1587,9 @@ const WI_DUST: icondata_core::IconData = icondata_core::IconData {
 	c0-0.22,0.07-0.4,0.22-0.55C21.4,9.97,21.58,9.9,21.8,9.9c0.27,0,0.48,0.07,0.64,0.22c0.16,0.14,0.24,0.33,0.24,0.55
 	c0,0.27-0.08,0.48-0.24,0.64c-0.16,0.16-0.37,0.24-0.64,0.24c-0.23,0-0.41-0.08-0.55-0.24C21.1,11.15,21.03,10.94,21.03,10.67z" />"###
 };
-const WI_EARTHQUAKE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiEarthquake: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1750,7 +1613,9 @@ const WI_EARTHQUAKE: icondata_core::IconData = icondata_core::IconData {
 	L10.94,6.15c-0.03-0.14-0.09-0.26-0.19-0.35c-0.1-0.09-0.22-0.14-0.36-0.15c-0.14-0.01-0.27,0.03-0.38,0.12
 	c-0.11,0.09-0.18,0.2-0.2,0.35l-1.48,8.61H5.82c-0.16,0-0.29,0.06-0.4,0.17C5.31,15.01,5.25,15.14,5.25,15.3z" />"###
 };
-const WI_FAHRENHEIT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiFahrenheit: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1771,7 +1636,9 @@ const WI_FAHRENHEIT: icondata_core::IconData = icondata_core::IconData {
 	c0.14,0,0.26-0.05,0.36-0.15s0.14-0.23,0.14-0.38s-0.05-0.27-0.14-0.38s-0.21-0.15-0.36-0.15h-4.77c-0.07,0-0.1,0.04-0.1,0.11V17.9z
 	" />"###
 };
-const WI_FIRE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiFire: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1801,7 +1668,9 @@ const WI_FIRE: icondata_core::IconData = icondata_core::IconData {
 	c-0.01-0.01-0.03-0.03-0.07-0.06s-0.06-0.05-0.08-0.07C9.26,18.98,8.98,18.6,8.7,18.1c-0.08-0.15-0.18-0.38-0.29-0.69
 	C8.29,17.1,8.22,16.75,8.2,16.37z" />"###
 };
-const WI_FLOOD: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiFlood: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1831,7 +1700,9 @@ const WI_FLOOD: icondata_core::IconData = icondata_core::IconData {
 	c-0.12-0.11-0.17-0.25-0.17-0.4v-6.9l-1.22,1.22c-0.12,0.12-0.26,0.18-0.42,0.18c-0.16,0-0.3-0.06-0.41-0.18
 	C12.29,9.97,12.23,9.83,12.23,9.67z" />"###
 };
-const WI_FOG: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1857,7 +1728,9 @@ const WI_FOG: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.44,0.08,0.6,0.23c0.17,0.16,0.25,0.35,0.25,0.58c0,0.24-0.08,0.44-0.25,0.61c-0.17,0.17-0.37,0.25-0.6,0.25H7.84
 	c-0.23,0-0.43-0.09-0.6-0.26C7.07,24.55,6.98,24.34,6.98,24.11z" />"###
 };
-const WI_GALE_WARNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiGaleWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1871,7 +1744,9 @@ const WI_GALE_WARNING: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M10.67,24.6V7.45h1.03V24.6H10.67z M12.4,22.44v-7.41l8.65,3.69L12.4,22.44z M12.4,14.86V7.45l8.65,3.69L12.4,14.86z" />"###
 };
-const WI_HAIL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1909,7 +1784,9 @@ const WI_HAIL: icondata_core::IconData = icondata_core::IconData {
 	c0.02-0.17,0.03-0.26,0.03-0.26c0-0.16-0.05-0.31-0.15-0.46c-0.1-0.15-0.25-0.25-0.45-0.31c-0.09-0.02-0.18-0.03-0.26-0.03
 	c-0.16,0-0.32,0.05-0.47,0.15s-0.25,0.25-0.31,0.45l-0.9,3.36L17.47,21.23z" />"###
 };
-const WI_HORIZON: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHorizon: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1934,7 +1811,9 @@ const WI_HORIZON: icondata_core::IconData = icondata_core::IconData {
 	l1.54-1.5c0.16-0.18,0.36-0.26,0.62-0.26c0.24,0,0.44,0.08,0.6,0.25s0.23,0.38,0.23,0.64c0,0.26-0.08,0.47-0.23,0.62l-1.48,1.5
 	c-0.17,0.17-0.36,0.26-0.56,0.28c-0.23,0.02-0.44-0.06-0.65-0.24S19.86,14.43,19.86,14.18z" />"###
 };
-const WI_HORIZON_ALT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHorizonAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -1966,7 +1845,9 @@ const WI_HORIZON_ALT: icondata_core::IconData = icondata_core::IconData {
 	c0.14-0.15,0.34-0.23,0.59-0.23h2.09c0.24,0,0.45,0.08,0.62,0.24c0.17,0.16,0.26,0.36,0.26,0.6c0,0.24-0.09,0.44-0.26,0.61
 	c-0.18,0.17-0.38,0.25-0.62,0.25h-2.09c-0.23,0-0.43-0.08-0.59-0.25C22.18,16.34,22.1,16.14,22.1,15.9z" />"###
 };
-const WI_HOT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHot: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2030,7 +1911,9 @@ const WI_HOT: icondata_core::IconData = icondata_core::IconData {
 	c0,0.24-0.09,0.45-0.26,0.62c-0.18,0.17-0.38,0.26-0.63,0.26h-2.06c-0.24,0-0.45-0.08-0.6-0.25C22.15,15.22,22.07,15.01,22.07,14.76
 	z" />"###
 };
-const WI_HUMIDITY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHumidity: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2061,7 +1944,9 @@ const WI_HUMIDITY: icondata_core::IconData = icondata_core::IconData {
 	l-0.16,0.19l-0.24,0.06c-0.14,0-0.25-0.04-0.33-0.12s-0.14-0.21-0.17-0.38c-0.03-0.18-0.05-0.33-0.06-0.45S17.85,19.25,17.85,19.02z
 	" />"###
 };
-const WI_HURRICANE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHurricane: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2086,7 +1971,9 @@ const WI_HURRICANE: icondata_core::IconData = icondata_core::IconData {
 	c-0.01-0.6-0.23-1.11-0.66-1.52c-0.43-0.42-0.96-0.62-1.57-0.62c-0.56,0-1.04,0.18-1.46,0.54s-0.66,0.82-0.73,1.36l-0.02,0.25V14.48
 	z" />"###
 };
-const WI_HURRICANE_WARNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiHurricaneWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2101,7 +1988,9 @@ const WI_HURRICANE_WARNING: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M7.8,24.6V7.45h1.13V24.6H7.8z M9.73,21.52v-6.6h8.55v6.6H9.73z M9.73,14.05v-6.6h8.55v6.6H9.73z M12.09,19.52h3.81v-2.51
 	h-3.81V19.52z M12.09,12.05h3.81v-2.5h-3.81V12.05z" />"###
 };
-const WI_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2118,7 +2007,9 @@ const WI_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
 	c0.05-0.08,0.06-0.15,0.04-0.2s-0.08-0.07-0.17-0.07h-2.1l2.18-4.03c0.12-0.2,0.06-0.3-0.18-0.3h-2.74c-0.13,0-0.23,0.06-0.3,0.19
 	l-2.08,5.48c-0.03,0.09-0.03,0.16,0.01,0.21c0.04,0.05,0.1,0.07,0.19,0.07h2.04L16.46,18.18z" />"###
 };
-const WI_LUNAR_ECLIPSE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiLunarEclipse: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2137,7 +2028,9 @@ const WI_LUNAR_ECLIPSE: icondata_core::IconData = icondata_core::IconData {
 	c0.2,0.02,0.34,0.04,0.43,0.04c0.98,0,1.81-0.35,2.5-1.04c0.69-0.69,1.04-1.52,1.04-2.5c0-0.96-0.35-1.78-1.04-2.47
 	c-0.69-0.68-1.53-1.02-2.5-1.02C14.74,11.14,14.49,11.17,14.25,11.22z" />"###
 };
-const WI_METEOR: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMeteor: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2162,7 +2055,9 @@ const WI_METEOR: icondata_core::IconData = icondata_core::IconData {
 	c0.66-0.47,1.13-1.09,1.41-1.84c0.17-0.43,0.25-0.87,0.25-1.34c0-1.07-0.38-1.99-1.13-2.75c-0.76-0.76-1.67-1.13-2.75-1.13
 	c-1,0-1.87,0.33-2.6,1c-0.41,0.36-0.72,0.78-0.95,1.28C8.4,18.3,8.29,18.83,8.29,19.39z" />"###
 };
-const WI_MOON_ALT_FIRST_QUARTER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltFirstQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2180,7 +2075,9 @@ const WI_MOON_ALT_FIRST_QUARTER: icondata_core::IconData = icondata_core::IconDa
 	c1.37,0,2.67-0.27,3.91-0.8s2.31-1.25,3.21-2.15s1.61-1.97,2.15-3.21s0.8-2.54,0.8-3.91c0-1.36-0.27-2.66-0.8-3.9
 	s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15s-2.54-0.8-3.91-0.8H14.8V24.51z" />"###
 };
-const WI_MOON_ALT_FULL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltFull: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2199,7 +2096,9 @@ const WI_MOON_ALT_FULL: icondata_core::IconData = icondata_core::IconData {
 	s2.31-1.25,3.22-2.15s1.62-1.97,2.15-3.22s0.8-2.55,0.8-3.9c0-1.82-0.45-3.5-1.35-5.05s-2.13-2.77-3.68-3.68s-3.23-1.35-5.05-1.35
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.41,7.89,7.32s-1.61,1.98-2.15,3.22S4.94,13.08,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_NEW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltNew: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2215,7 +2114,9 @@ const WI_MOON_ALT_NEW: icondata_core::IconData = icondata_core::IconData {
 	s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.09-4.09s-3.61-1.51-5.65-1.51S11.08,3.7,9.35,4.7s-3.1,2.37-4.1,4.09
 	S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_ALT_THIRD_QUARTER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltThirdQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2233,7 +2134,9 @@ const WI_MOON_ALT_THIRD_QUARTER: icondata_core::IconData = icondata_core::IconDa
 	c0,1.37,0.27,2.67,0.8,3.91s1.25,2.31,2.15,3.21s1.97,1.61,3.21,2.15s2.54,0.8,3.9,0.8h0.21V4.39h-0.21c-1.36,0-2.66,0.27-3.9,0.8
 	S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2251,7 +2154,9 @@ const WI_MOON_ALT_WANING_CRESCENT1: icondata_core::IconData = icondata_core::Ico
 	c0,1.37,0.27,2.67,0.8,3.91s1.25,2.31,2.15,3.21s1.97,1.61,3.21,2.15s2.54,0.8,3.9,0.8h0.07c-0.59-2.67-0.88-6.02-0.88-10.06
 	c0-3.39,0.3-6.74,0.91-10.05h-0.1c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2269,7 +2174,9 @@ const WI_MOON_ALT_WANING_CRESCENT2: icondata_core::IconData = icondata_core::Ico
 	c0,1.36,0.26,2.65,0.79,3.89s1.24,2.3,2.12,3.2s1.95,1.62,3.17,2.15s2.52,0.81,3.87,0.82c-1.16-2.47-1.74-5.83-1.74-10.06
 	c0-3.61,0.6-6.96,1.8-10.05c-1.36,0-2.65,0.27-3.89,0.81s-2.3,1.25-3.19,2.15s-1.61,1.97-2.14,3.2S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2287,7 +2194,9 @@ const WI_MOON_ALT_WANING_CRESCENT3: icondata_core::IconData = icondata_core::Ico
 	c0,1.34,0.26,2.62,0.77,3.85s1.21,2.29,2.08,3.19s1.92,1.62,3.13,2.16s2.48,0.83,3.81,0.87c-1.71-2.32-2.56-5.68-2.56-10.06
 	c0-1.87,0.23-3.67,0.69-5.41s1.11-3.29,1.95-4.64c-1.8,0.03-3.45,0.5-4.96,1.41s-2.7,2.13-3.58,3.65S4.94,12.65,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2306,7 +2215,9 @@ const WI_MOON_ALT_WANING_CRESCENT4: icondata_core::IconData = icondata_core::Ico
 	s-0.75-3.6-0.75-5.76c0-1.93,0.31-3.78,0.92-5.54s1.47-3.26,2.56-4.5c-1.77,0.07-3.39,0.56-4.88,1.47S7.09,8,6.23,9.51
 	S4.94,12.68,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2325,7 +2236,9 @@ const WI_MOON_ALT_WANING_CRESCENT5: icondata_core::IconData = icondata_core::Ico
 	s-1.08-3.66-1.08-5.93c0-2.07,0.44-4,1.32-5.78s2.1-3.2,3.66-4.24c-1.26,0.11-2.46,0.45-3.59,1.02s-2.1,1.3-2.92,2.19
 	s-1.46,1.92-1.93,3.11S4.94,13.15,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_CRESCENT6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2344,7 +2257,9 @@ const WI_MOON_ALT_WANING_CRESCENT6: icondata_core::IconData = icondata_core::Ico
 	s-0.26-1.95-0.26-3.06c0-2.11,0.5-4.06,1.49-5.84s2.37-3.16,4.12-4.12c-1.63,0.21-3.11,0.77-4.45,1.7S6.87,8.3,6.1,9.76
 	S4.94,12.77,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2363,7 +2278,9 @@ const WI_MOON_ALT_WANING_GIBBOUS1: icondata_core::IconData = icondata_core::Icon
 	s0.1-1.37,0.1-2.15c0-0.93-0.1-1.84-0.3-2.74S21.52,9.9,21.1,9.02s-0.99-1.72-1.72-2.5s-1.57-1.45-2.54-1.99
 	c-0.4-0.09-1.01-0.13-1.82-0.13c-1.36,0-2.66,0.26-3.9,0.79S8.8,6.43,7.9,7.32s-1.62,1.97-2.15,3.2S4.94,13.06,4.94,14.43z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2383,7 +2300,9 @@ const WI_MOON_ALT_WANING_GIBBOUS2: icondata_core::IconData = icondata_core::Icon
 	s-0.84-2.34-1.59-3.49s-1.69-2.11-2.81-2.89c-0.41-0.02-0.73-0.03-0.95-0.03c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34
 	s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2403,7 +2322,9 @@ const WI_MOON_ALT_WANING_GIBBOUS3: icondata_core::IconData = icondata_core::Icon
 	s-1.65-3.28-3.02-4.49c-0.13-0.01-0.32-0.01-0.59-0.01c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21
 	S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2422,7 +2343,9 @@ const WI_MOON_ALT_WANING_GIBBOUS4: icondata_core::IconData = icondata_core::Icon
 	s0.71-1.67,0.9-2.58s0.33-1.77,0.41-2.59s0.12-1.73,0.12-2.7c0-1.88-0.24-3.7-0.73-5.46s-1.25-3.28-2.3-4.59h-0.28
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2441,7 +2364,9 @@ const WI_MOON_ALT_WANING_GIBBOUS5: icondata_core::IconData = icondata_core::Icon
 	c0.77-1.33,1.3-2.83,1.57-4.5s0.42-3.52,0.42-5.55c0-4.01-0.68-7.36-2.04-10.03c-0.11-0.01-0.29-0.01-0.54-0.01
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WANING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaningGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2459,7 +2384,9 @@ const WI_MOON_ALT_WANING_GIBBOUS6: icondata_core::IconData = icondata_core::Icon
 	c0,1.37,0.27,2.67,0.8,3.91s1.25,2.31,2.15,3.21s1.97,1.61,3.21,2.15s2.54,0.8,3.9,0.8h0.38c0.67-2.49,1.01-5.84,1.01-10.06
 	c0-3.82-0.34-7.17-1.03-10.05h-0.37c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2477,7 +2404,9 @@ const WI_MOON_ALT_WAXING_CRESCENT1: icondata_core::IconData = icondata_core::Ico
 	c1.64,0.9,2.99,2.2,4.04,3.9s1.57,3.72,1.57,6.06c0,4.9-1.72,8.2-5.16,9.89c2.35-0.44,4.31-1.59,5.87-3.44s2.34-4,2.34-6.45
 	c0-1.66-0.38-3.21-1.14-4.66s-1.8-2.63-3.13-3.57S18,4.71,16.38,4.48z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2495,7 +2424,9 @@ const WI_MOON_ALT_WAXING_CRESCENT2: icondata_core::IconData = icondata_core::Ico
 	c1.48,0.99,2.7,2.34,3.65,4.05s1.42,3.7,1.42,5.97c0,4.8-1.6,8.13-4.79,9.99c1.65-0.2,3.15-0.76,4.5-1.68s2.42-2.12,3.2-3.58
 	s1.17-3.03,1.17-4.72c0-1.72-0.41-3.32-1.22-4.8s-1.91-2.69-3.31-3.61S17.59,4.57,15.9,4.42z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2513,7 +2444,9 @@ const WI_MOON_ALT_WAXING_CRESCENT3: icondata_core::IconData = icondata_core::Ico
 	c1.28,1.1,2.32,2.51,3.13,4.22s1.22,3.65,1.22,5.82c0,4.64-1.39,7.99-4.16,10.05c1.28-0.1,2.49-0.43,3.63-1s2.13-1.29,2.96-2.18
 	s1.49-1.93,1.97-3.13s0.73-2.44,0.73-3.74c0-1.75-0.42-3.38-1.26-4.89s-1.99-2.72-3.44-3.64S17.31,4.5,15.58,4.41z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2531,7 +2464,9 @@ const WI_MOON_ALT_WAXING_CRESCENT4: icondata_core::IconData = icondata_core::Ico
 	c1.05,1.27,1.91,2.75,2.57,4.44s0.99,3.56,0.99,5.61c0,4.39-1.14,7.75-3.43,10.06c1.31-0.06,2.55-0.37,3.74-0.92s2.2-1.28,3.05-2.18
 	s1.53-1.95,2.04-3.16s0.75-2.48,0.75-3.81c0-1.78-0.43-3.43-1.3-4.94s-2.04-2.73-3.53-3.65S17.12,4.45,15.35,4.39z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2549,7 +2484,9 @@ const WI_MOON_ALT_WAXING_CRESCENT5: icondata_core::IconData = icondata_core::Ico
 	c1.83,3.22,2.74,6.57,2.74,10.05c0,4.16-0.88,7.51-2.65,10.06c1.34-0.03,2.61-0.32,3.82-0.86s2.25-1.27,3.13-2.16
 	s1.57-1.95,2.09-3.18s0.78-2.51,0.78-3.86c0-1.8-0.44-3.46-1.33-5s-2.08-2.75-3.6-3.65S16.95,4.42,15.15,4.39z" />"###
 };
-const WI_MOON_ALT_WAXING_CRESCENT6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2567,7 +2504,9 @@ const WI_MOON_ALT_WAXING_CRESCENT6: icondata_core::IconData = icondata_core::Ico
 	c1.23,3.54,1.85,6.89,1.85,10.05c0,3.93-0.59,7.28-1.77,10.06c1.35-0.01,2.64-0.28,3.87-0.81s2.3-1.25,3.19-2.15s1.6-1.97,2.12-3.21
 	s0.79-2.54,0.79-3.9s-0.27-2.66-0.8-3.9s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15S16.36,4.39,15.01,4.39z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2586,7 +2525,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS1: icondata_core::IconData = icondata_core::Icon
 	c0-1.36-0.27-2.66-0.8-3.9s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15s-2.54-0.8-3.91-0.8h-0.34C13.81,7.99,13.38,11.34,13.38,14.44
 	z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2605,7 +2546,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS2: icondata_core::IconData = icondata_core::Icon
 	s0.8-2.54,0.8-3.91c0-1.36-0.27-2.66-0.8-3.9s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15s-2.54-0.8-3.91-0.8
 	c-0.23,0-0.42,0-0.54,0.01C12.79,7.55,11.96,10.9,11.96,14.44z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2624,7 +2567,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS3: icondata_core::IconData = icondata_core::Icon
 	s0.8-2.54,0.8-3.91c0-1.36-0.27-2.66-0.8-3.9s-1.25-2.31-2.15-3.21s-1.97-1.61-3.22-2.15s-2.55-0.8-3.9-0.8
 	c-0.36,0-0.63,0.01-0.81,0.03c-1.08,1.22-1.96,2.69-2.64,4.42S10.54,12.43,10.54,14.44z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2643,7 +2588,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS4: icondata_core::IconData = icondata_core::Icon
 	s0.8-2.55,0.8-3.9c0-1.82-0.45-3.5-1.35-5.05s-2.13-2.77-3.68-3.68s-3.23-1.35-5.05-1.35c-0.45,0-0.84,0.02-1.19,0.06
 	c-1.4,1.06-2.53,2.46-3.39,4.2S9.13,12.29,9.13,14.43z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2662,7 +2609,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS5: icondata_core::IconData = icondata_core::Icon
 	s0.8-2.55,0.8-3.9c0-1.82-0.45-3.5-1.35-5.05s-2.13-2.77-3.68-3.68s-3.23-1.35-5.05-1.35c-0.68,0-1.3,0.05-1.85,0.16
 	c-1.63,0.94-2.95,2.27-3.95,3.99S7.71,12.22,7.71,14.44z" />"###
 };
-const WI_MOON_ALT_WAXING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonAltWaxingGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2682,7 +2631,9 @@ const WI_MOON_ALT_WAXING_GIBBOUS6: icondata_core::IconData = icondata_core::Icon
 	c0-1.82-0.45-3.5-1.35-5.05s-2.13-2.77-3.68-3.68s-3.23-1.35-5.05-1.35c-0.85,0-1.62,0.09-2.31,0.26C11.81,5.05,11.03,5.51,10.35,6
 	S9.1,7.01,8.66,7.54S7.84,8.62,7.53,9.16s-0.54,1.12-0.69,1.74s-0.26,1.2-0.32,1.75S6.42,13.8,6.42,14.44z" />"###
 };
-const WI_MOON_FIRST_QUARTER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonFirstQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2697,7 +2648,9 @@ const WI_MOON_FIRST_QUARTER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M15.01,25.71c2.04,0,3.92-0.5,5.65-1.51s3.09-2.37,4.09-4.1s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.09-4.09
 	s-3.61-1.51-5.65-1.51V25.71z" />"###
 };
-const WI_MOON_FULL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonFull: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2713,7 +2666,9 @@ const WI_MOON_FULL: icondata_core::IconData = icondata_core::IconData {
 	s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.09-4.09s-3.61-1.51-5.65-1.51S11.08,3.7,9.35,4.7s-3.1,2.37-4.1,4.09
 	S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_NEW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonNew: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2732,7 +2687,9 @@ const WI_MOON_NEW: icondata_core::IconData = icondata_core::IconData {
 	s2.31-1.25,3.22-2.15s1.62-1.97,2.15-3.22s0.8-2.55,0.8-3.9c0-1.82-0.45-3.5-1.35-5.05s-2.13-2.77-3.68-3.68s-3.23-1.35-5.05-1.35
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.41,7.89,7.32s-1.61,1.98-2.15,3.22S4.94,13.08,4.94,14.44z" />"###
 };
-const WI_MOON_THIRD_QUARTER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonThirdQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2747,7 +2704,9 @@ const WI_MOON_THIRD_QUARTER: icondata_core::IconData = icondata_core::IconData {
     data: r###"<path d="M3.74,14.44c0,2.04,0.5,3.93,1.51,5.65s2.37,3.1,4.09,4.1s3.61,1.51,5.65,1.51V3.19c-2.04,0-3.92,0.5-5.65,1.51
 	S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2762,7 +2721,9 @@ const WI_MOON_WANING_CRESCENT1: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path d="M3.74,14.44c0,2.04,0.5,3.93,1.51,5.65s2.37,3.1,4.09,4.1s3.61,1.51,5.65,1.51c-1-3.14-1.49-6.9-1.49-11.26
 	c0-3.43,0.5-7.18,1.49-11.25c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2777,7 +2738,9 @@ const WI_MOON_WANING_CRESCENT2: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path d="M3.74,14.44c0,2.04,0.5,3.93,1.51,5.65s2.37,3.1,4.1,4.1s3.61,1.51,5.65,1.51c-2.01-2.74-3.02-6.5-3.02-11.26
 	c0-3.98,1.01-7.73,3.02-11.25c-2.04,0-3.93,0.5-5.65,1.51s-3.1,2.37-4.1,4.09S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2792,7 +2755,9 @@ const WI_MOON_WANING_CRESCENT3: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path d="M3.74,14.44c0,2.04,0.5,3.93,1.51,5.65s2.37,3.1,4.09,4.1s3.61,1.51,5.65,1.51c-2.99-2.33-4.48-6.09-4.48-11.26
 	c0-2.32,0.42-4.46,1.25-6.4s1.91-3.56,3.23-4.85c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2808,7 +2773,9 @@ const WI_MOON_WANING_CRESCENT4: icondata_core::IconData = icondata_core::IconDat
 	S9,17.19,9,14.44c0-2.53,0.56-4.78,1.69-6.75s2.57-3.47,4.31-4.5c-2.04,0-3.93,0.5-5.65,1.51s-3.1,2.37-4.1,4.09
 	S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2824,7 +2791,9 @@ const WI_MOON_WANING_CRESCENT5: icondata_core::IconData = icondata_core::IconDat
 	s-1.81-4.3-1.81-7.24c0-1.39,0.2-2.7,0.6-3.95c0.4-1.25,0.94-2.34,1.63-3.27s1.48-1.75,2.37-2.44s1.86-1.22,2.89-1.59
 	c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_CRESCENT6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2841,7 +2810,9 @@ const WI_MOON_WANING_CRESCENT6: icondata_core::IconData = icondata_core::IconDat
 	s0.38-1.21,0.64-1.75s0.63-1.09,1.08-1.66s0.98-1.1,1.59-1.57s1.34-0.95,2.21-1.42s1.85-0.89,2.93-1.27c-2.04,0-3.92,0.5-5.65,1.51
 	S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
-const WI_MOON_WANING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2857,7 +2828,9 @@ const WI_MOON_WANING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData
 	c5.03-1.4,7.54-5.14,7.54-11.22c0-1.18-0.14-2.3-0.42-3.37s-0.65-2.01-1.13-2.83s-1.04-1.57-1.68-2.24s-1.34-1.24-2.06-1.68
 	s-1.47-0.81-2.26-1.07c-1.52,0-2.98,0.3-4.37,0.89S8.02,5.57,7.02,6.57s-1.8,2.19-2.39,3.57S3.74,12.97,3.74,14.49z" />"###
 };
-const WI_MOON_WANING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2873,7 +2846,9 @@ const WI_MOON_WANING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData
 	c4.33-1.73,6.49-5.47,6.49-11.22c0-1.39-0.18-2.7-0.54-3.93s-0.85-2.31-1.47-3.23s-1.31-1.71-2.06-2.39s-1.56-1.23-2.42-1.66
 	c-2.03,0-3.91,0.5-5.63,1.5S6.25,7.14,5.24,8.86S3.74,12.46,3.74,14.49z" />"###
 };
-const WI_MOON_WANING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2889,7 +2864,9 @@ const WI_MOON_WANING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData
 	c3.61-2.07,5.42-5.81,5.42-11.22c0-1.31-0.15-2.56-0.45-3.74s-0.71-2.24-1.23-3.17s-1.1-1.75-1.72-2.46s-1.3-1.33-2.02-1.86
 	c-1.52,0-2.98,0.3-4.37,0.89s-2.58,1.39-3.58,2.4s-1.8,2.2-2.39,3.59S3.74,12.96,3.74,14.49z" />"###
 };
-const WI_MOON_WANING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2905,7 +2882,9 @@ const WI_MOON_WANING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData
 	c2.89-2.39,4.34-6.14,4.34-11.24c0-2.34-0.41-4.47-1.22-6.36s-1.85-3.52-3.11-4.87c-2.03,0-3.91,0.5-5.64,1.51S6.25,7.12,5.24,8.84
 	S3.74,12.44,3.74,14.47z" />"###
 };
-const WI_MOON_WANING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2920,7 +2899,9 @@ const WI_MOON_WANING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData
     data: r###"<path d="M3.74,14.47c0,2.03,0.5,3.91,1.51,5.63s2.37,3.09,4.09,4.09s3.6,1.51,5.63,1.51c2.17-2.75,3.25-6.5,3.25-11.24
 	c0-3.96-1.08-7.71-3.25-11.24c-2.03,0-3.91,0.5-5.63,1.5S6.26,7.1,5.25,8.83S3.74,12.44,3.74,14.47z" />"###
 };
-const WI_MOON_WANING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaningGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2935,7 +2916,9 @@ const WI_MOON_WANING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData
     data: r###"<path d="M3.74,14.46c0,2.04,0.5,3.92,1.51,5.65s2.37,3.09,4.09,4.09s3.61,1.51,5.65,1.51c1.44-3.08,2.15-6.83,2.15-11.25
 	c0-3.46-0.72-7.2-2.15-11.24c-1.52,0-2.98,0.3-4.37,0.89S8.03,5.5,7.03,6.5s-1.8,2.2-2.4,3.59S3.74,12.93,3.74,14.46z" />"###
 };
-const WI_MOON_WAXING_CRESCENT1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2952,7 +2935,9 @@ const WI_MOON_WAXING_CRESCENT1: icondata_core::IconData = icondata_core::IconDat
 	c0,0.64-0.02,1.26-0.07,1.84c-0.05,0.58-0.15,1.2-0.29,1.87s-0.33,1.28-0.56,1.86s-0.54,1.15-0.92,1.74s-0.83,1.11-1.35,1.58
 	s-1.14,0.92-1.87,1.33S15.9,25.42,15.01,25.71z" />"###
 };
-const WI_MOON_WAXING_CRESCENT2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2968,7 +2953,9 @@ const WI_MOON_WAXING_CRESCENT2: icondata_core::IconData = icondata_core::IconDat
 	s-3.61-1.51-5.65-1.51c1.1,0.59,2.07,1.32,2.89,2.19s1.47,1.82,1.95,2.83s0.83,2.03,1.05,3.07s0.34,2.09,0.34,3.16
 	c0,0.91-0.04,1.76-0.13,2.54s-0.27,1.63-0.53,2.53s-0.62,1.71-1.06,2.43s-1.04,1.42-1.82,2.09S16.03,25.26,15.01,25.71z" />"###
 };
-const WI_MOON_WAXING_CRESCENT3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -2984,7 +2971,9 @@ const WI_MOON_WAXING_CRESCENT3: icondata_core::IconData = icondata_core::IconDat
 	s-3.61-1.51-5.65-1.51c1.71,1.26,2.97,2.9,3.78,4.91S20,12.24,20,14.44c0,0.9-0.03,1.73-0.1,2.5s-0.21,1.59-0.43,2.47
 	s-0.51,1.68-0.86,2.4s-0.83,1.42-1.45,2.12S15.83,25.21,15.01,25.71z" />"###
 };
-const WI_MOON_WAXING_CRESCENT4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3000,7 +2989,9 @@ const WI_MOON_WAXING_CRESCENT4: icondata_core::IconData = icondata_core::IconDat
 	s-3.61-1.51-5.65-1.51c1.29,1.39,2.24,3.07,2.84,5.05s0.91,4.05,0.91,6.2c0,0.88-0.03,1.69-0.08,2.44s-0.16,1.55-0.32,2.41
 	s-0.38,1.65-0.64,2.37s-0.63,1.43-1.09,2.15S15.62,25.15,15.01,25.71z" />"###
 };
-const WI_MOON_WAXING_CRESCENT5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3015,7 +3006,9 @@ const WI_MOON_WAXING_CRESCENT5: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path d="M14.99,25.71c2.04,0,3.93-0.5,5.65-1.51s3.1-2.37,4.1-4.1s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.1-4.09
 	s-3.61-1.51-5.65-1.51c1.67,2.9,2.5,6.65,2.5,11.25c0,2.33-0.17,4.43-0.52,6.3S15.97,24.26,14.99,25.71z" />"###
 };
-const WI_MOON_WAXING_CRESCENT6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3030,7 +3023,9 @@ const WI_MOON_WAXING_CRESCENT6: icondata_core::IconData = icondata_core::IconDat
     data: r###"<path d="M14.99,25.71c2.04,0,3.93-0.5,5.65-1.51s3.1-2.37,4.1-4.1s1.51-3.61,1.51-5.65s-0.5-3.92-1.51-5.65s-2.37-3.09-4.1-4.09
 	s-3.61-1.51-5.65-1.51c1.67,2.9,2.5,6.65,2.5,11.25c0,2.33-0.17,4.43-0.52,6.3S15.97,24.26,14.99,25.71z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3045,7 +3040,9 @@ const WI_MOON_WAXING_GIBBOUS1: icondata_core::IconData = icondata_core::IconData
     data: r###"<path d="M13.93,14.44c-0.02,4.53,0.33,8.29,1.04,11.27c2.04,0.01,3.93-0.49,5.65-1.49s3.1-2.36,4.11-4.08s1.52-3.61,1.53-5.65
 	c0.01-2.04-0.49-3.93-1.49-5.65c-1-1.73-2.36-3.1-4.08-4.11s-3.6-1.52-5.64-1.53C14.32,6.91,13.94,10.66,13.93,14.44z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3060,7 +3057,9 @@ const WI_MOON_WAXING_GIBBOUS2: icondata_core::IconData = icondata_core::IconData
     data: r###"<path d="M12.85,14.44c0,4.77,0.71,8.52,2.14,11.26c2.04,0,3.93-0.5,5.65-1.51s3.1-2.37,4.1-4.1s1.51-3.61,1.51-5.65
 	s-0.5-3.92-1.51-5.65s-2.37-3.09-4.1-4.09s-3.61-1.51-5.65-1.51C13.57,6.61,12.85,10.36,12.85,14.44z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3076,7 +3075,9 @@ const WI_MOON_WAXING_GIBBOUS3: icondata_core::IconData = icondata_core::IconData
 	s0.89-2.85,0.89-4.39s-0.3-2.99-0.89-4.38s-1.4-2.58-2.4-3.59s-2.2-1.81-3.6-2.4s-2.85-0.89-4.37-0.89
 	c-1.02,1.46-1.81,3.16-2.37,5.13S11.8,12.3,11.8,14.43z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3092,7 +3093,9 @@ const WI_MOON_WAXING_GIBBOUS4: icondata_core::IconData = icondata_core::IconData
 	s2.58-1.4,3.59-2.4s1.81-2.2,2.4-3.6s0.89-2.85,0.89-4.39c0-2.04-0.5-3.93-1.51-5.65s-2.37-3.1-4.1-4.1s-3.61-1.51-5.65-1.51
 	c-1.35,1.3-2.4,2.94-3.16,4.93S10.73,12.19,10.73,14.43z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3108,7 +3111,9 @@ const WI_MOON_WAXING_GIBBOUS5: icondata_core::IconData = icondata_core::IconData
 	c1.52,0,2.98-0.3,4.37-0.89s2.59-1.4,3.6-2.4s1.81-2.2,2.4-3.6s0.89-2.85,0.89-4.39s-0.3-2.99-0.89-4.38s-1.4-2.58-2.4-3.59
 	s-2.2-1.81-3.6-2.4s-2.85-0.89-4.37-0.89c-1.67,1.14-2.98,2.72-3.94,4.74S9.65,12.09,9.65,14.43z" />"###
 };
-const WI_MOON_WAXING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonWaxingGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3124,7 +3129,9 @@ const WI_MOON_WAXING_GIBBOUS6: icondata_core::IconData = icondata_core::IconData
 	c1.53,0,2.99-0.3,4.38-0.89s2.58-1.4,3.59-2.4s1.81-2.2,2.4-3.6s0.89-2.85,0.89-4.39c0-2.04-0.5-3.93-1.51-5.65s-2.37-3.1-4.1-4.1
 	s-3.61-1.51-5.65-1.51c-1.99,1-3.56,2.51-4.72,4.55S8.58,11.99,8.58,14.43z" />"###
 };
-const WI_MOONRISE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonrise: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3145,7 +3152,9 @@ const WI_MOONRISE: icondata_core::IconData = icondata_core::IconData {
 	c-0.19,0.19-0.42,0.29-0.69,0.29h-3.38c-0.1,0-0.2-0.02-0.29-0.07l-2.41-2.27l-2.39,2.27c-0.08,0.05-0.17,0.07-0.28,0.07H9.06
 	c-0.27,0-0.5-0.1-0.69-0.29S8.09,21.14,8.09,20.87z" />"###
 };
-const WI_MOONSET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiMoonset: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3167,7 +3176,9 @@ const WI_MOONSET: icondata_core::IconData = icondata_core::IconData {
 	c0.19,0.19,0.29,0.42,0.29,0.68c0,0.27-0.1,0.5-0.29,0.69c-0.19,0.19-0.42,0.29-0.69,0.29h-2.68l-3.13,2.84
 	c-0.12,0.09-0.24,0.09-0.34,0l-3.08-2.84h-2.6c-0.27,0-0.5-0.1-0.69-0.29C8.09,21.39,7.99,21.16,7.99,20.89z" />"###
 };
-const WI_NA: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNa: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3183,7 +3194,9 @@ const WI_NA: icondata_core::IconData = icondata_core::IconData {
 	h-1.42L13.39,18.38z M16.26,18.23h2.07l0.29-0.95h2.12l0.28,0.95h2.13l-2.43-6.66h-2.01L16.26,18.23z M19.07,15.84l0.64-2.04h0.03
 	l0.6,2.04H19.07z" />"###
 };
-const WI_NIGHT_ALT_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3210,7 +3223,9 @@ const WI_NIGHT_ALT_CLOUDY: icondata_core::IconData = icondata_core::IconData {
 	c-0.91-0.43-1.63-1.09-2.16-1.97c-0.52-0.88-0.79-1.81-0.79-2.78V7.09c-0.05-0.01-0.13-0.01-0.24-0.01
 	c-0.58-0.01-1.15,0.13-1.7,0.44C18.38,7.82,17.93,8.24,17.6,8.79z" />"###
 };
-const WI_NIGHT_ALT_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3246,7 +3261,9 @@ const WI_NIGHT_ALT_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconDa
 	c0,0.94,0.26,1.85,0.79,2.71c0.52,0.86,1.25,1.51,2.17,1.94c-0.16,0.38-0.41,0.72-0.75,1.03c-0.89-0.76-1.94-1.14-3.16-1.14h-0.33
 	C20.48,10.71,19.81,9.64,18.73,8.76z" />"###
 };
-const WI_NIGHT_ALT_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3270,7 +3287,9 @@ const WI_NIGHT_ALT_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconDat
 	c0.4,0.65,0.91,1.15,1.54,1.5c0.63,0.35,1.29,0.52,1.99,0.52c0.62,0,1.23-0.15,1.82-0.45c0.6-0.3,1.12-0.75,1.58-1.36
 	s0.75-1.31,0.86-2.1c-1.08-0.22-1.98-0.65-2.72-1.3c-0.84,0.65-1.78,0.99-2.82,1.01H16.71z" />"###
 };
-const WI_NIGHT_ALT_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3303,7 +3322,9 @@ const WI_NIGHT_ALT_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconDa
 	c0.53,0.88,1.25,1.55,2.17,1.98c-0.17,0.4-0.43,0.76-0.76,1.07c-0.88-0.79-1.95-1.18-3.2-1.18h-0.32
 	C21.06,10.77,20.4,9.71,19.33,8.78z" />"###
 };
-const WI_NIGHT_ALT_HAIL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3345,7 +3366,9 @@ const WI_NIGHT_ALT_HAIL: icondata_core::IconData = icondata_core::IconData {
 	c0.11,0,0.2,0.01,0.25,0.02v0.31c0,0.98,0.26,1.89,0.78,2.75c0.52,0.86,1.25,1.51,2.17,1.95c-0.19,0.44-0.44,0.79-0.75,1.07
 	C22.25,12.39,21.17,12,19.88,12h-0.32C19.3,10.75,18.66,9.69,17.62,8.83z" />"###
 };
-const WI_NIGHT_ALT_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3374,7 +3397,9 @@ const WI_NIGHT_ALT_LIGHTNING: icondata_core::IconData = icondata_core::IconData 
 	c0.52,0.86,1.24,1.51,2.17,1.96c-0.16,0.37-0.41,0.73-0.75,1.07c-0.92-0.79-1.99-1.18-3.22-1.18h-0.32
 	C19.29,10.71,18.63,9.66,17.6,8.81z" />"###
 };
-const WI_NIGHT_ALT_PARTLY_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltPartlyCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3401,7 +3426,9 @@ const WI_NIGHT_ALT_PARTLY_CLOUDY: icondata_core::IconData = icondata_core::IconD
 	s-0.88-2.01-0.88-3.11V9.39c-0.03,0-0.07,0-0.12,0c-0.05,0-0.09,0-0.12,0c-0.61,0-1.2,0.13-1.77,0.39
 	c-0.57,0.26-1.05,0.64-1.44,1.12l-0.03-0.02C13.55,11.56,13.25,12.35,13.18,13.25z" />"###
 };
-const WI_NIGHT_ALT_RAIN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3436,7 +3463,9 @@ const WI_NIGHT_ALT_RAIN: icondata_core::IconData = icondata_core::IconData {
 	c0.12,0,0.21,0,0.27,0.01v0.3c-0.01,0.97,0.24,1.88,0.77,2.75c0.52,0.86,1.26,1.52,2.21,1.97c-0.22,0.46-0.49,0.81-0.79,1.07
 	c-0.92-0.76-1.99-1.13-3.23-1.13h-0.31C19.3,10.7,18.64,9.64,17.58,8.77z" />"###
 };
-const WI_NIGHT_ALT_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3486,7 +3515,9 @@ const WI_NIGHT_ALT_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
 	c-0.01,0.98,0.25,1.9,0.77,2.76c0.53,0.86,1.27,1.5,2.22,1.94c-0.19,0.41-0.46,0.78-0.8,1.11c-0.92-0.76-2-1.14-3.23-1.14h-0.31
 	C19.27,10.66,18.61,9.59,17.59,8.76z" />"###
 };
-const WI_NIGHT_ALT_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3526,7 +3557,9 @@ const WI_NIGHT_ALT_RAIN_WIND: icondata_core::IconData = icondata_core::IconData 
 	c0.53,0.87,1.26,1.52,2.19,1.96c-0.25,0.47-0.51,0.84-0.79,1.12c-0.89-0.79-1.96-1.18-3.22-1.18h-0.32
 	C19.26,10.74,18.6,9.67,17.57,8.81z" />"###
 };
-const WI_NIGHT_ALT_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3568,7 +3601,9 @@ const WI_NIGHT_ALT_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	c0,0.95,0.26,1.85,0.78,2.71c0.52,0.86,1.25,1.51,2.17,1.96c-0.22,0.43-0.48,0.8-0.78,1.1c-0.93-0.81-2.02-1.21-3.25-1.21h-0.32
 	C19.27,10.78,18.63,9.73,17.58,8.81z" />"###
 };
-const WI_NIGHT_ALT_SLEET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3614,7 +3649,9 @@ const WI_NIGHT_ALT_SLEET: icondata_core::IconData = icondata_core::IconData {
 	c-0.45-0.51-0.79-1.06-1.02-1.66c-0.23-0.6-0.34-1.22-0.34-1.86V7.09h-0.22c-0.62,0-1.21,0.15-1.77,0.45
 	C18.36,7.84,17.92,8.27,17.59,8.82z" />"###
 };
-const WI_NIGHT_ALT_SLEET_STORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3654,7 +3691,9 @@ const WI_NIGHT_ALT_SLEET_STORM: icondata_core::IconData = icondata_core::IconDat
 	c0,0.64,0.11,1.26,0.34,1.86c0.23,0.6,0.56,1.15,1.02,1.66c0.45,0.51,0.99,0.91,1.61,1.21c-0.17,0.38-0.42,0.72-0.76,1.03
 	c-0.91-0.78-1.98-1.17-3.22-1.17h-0.33C19.28,10.68,18.62,9.62,17.59,8.77z" />"###
 };
-const WI_NIGHT_ALT_SNOW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3694,7 +3733,9 @@ const WI_NIGHT_ALT_SNOW: icondata_core::IconData = icondata_core::IconData {
 	c0.31-0.54,0.75-0.96,1.3-1.26S20,7.06,20.59,7.05c0.15,0,0.26,0.01,0.33,0.02v0.31c0,0.97,0.26,1.88,0.78,2.74s1.25,1.51,2.17,1.96
 	c-0.16,0.36-0.41,0.72-0.76,1.07c-0.89-0.79-1.96-1.18-3.23-1.18h-0.31C19.3,10.74,18.64,9.68,17.58,8.77z" />"###
 };
-const WI_NIGHT_ALT_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3732,7 +3773,9 @@ const WI_NIGHT_ALT_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::I
 	c0.23,0.6,0.56,1.15,1.02,1.66c0.45,0.51,0.99,0.91,1.61,1.21c-0.17,0.38-0.42,0.72-0.76,1.03c-0.91-0.78-1.98-1.17-3.22-1.17h-0.33
 	C19.28,10.68,18.62,9.62,17.59,8.77z" />"###
 };
-const WI_NIGHT_ALT_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3773,7 +3816,9 @@ const WI_NIGHT_ALT_SNOW_WIND: icondata_core::IconData = icondata_core::IconData 
 	c0.15,0,0.26,0.01,0.33,0.02v0.31c0,0.97,0.26,1.88,0.78,2.74s1.25,1.51,2.17,1.96c-0.16,0.36-0.41,0.72-0.76,1.07
 	c-0.89-0.79-1.96-1.18-3.23-1.18h-0.31C19.3,10.74,18.64,9.68,17.58,8.77z" />"###
 };
-const WI_NIGHT_ALT_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3807,7 +3852,9 @@ const WI_NIGHT_ALT_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
 	c0.12,0,0.21,0.01,0.27,0.02v0.3c0,0.96,0.26,1.87,0.79,2.74s1.25,1.52,2.18,1.97c-0.16,0.38-0.41,0.72-0.75,1.03
 	c-0.93-0.76-1.99-1.14-3.21-1.14h-0.33C19.27,10.65,18.6,9.59,17.56,8.77z" />"###
 };
-const WI_NIGHT_ALT_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3846,7 +3893,9 @@ const WI_NIGHT_ALT_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconD
 	c-0.11-0.16-0.27-0.27-0.49-0.33c-0.01,0-0.05,0-0.1-0.01c-0.05-0.01-0.1-0.01-0.13-0.01c-0.16,0-0.32,0.05-0.48,0.15
 	s-0.27,0.26-0.33,0.47l-0.29,1.02c0,0.01,0,0.04-0.01,0.1C17.79,18.79,17.78,18.84,17.78,18.87z" />"###
 };
-const WI_NIGHT_ALT_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightAltThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3879,7 +3928,9 @@ const WI_NIGHT_ALT_THUNDERSTORM: icondata_core::IconData = icondata_core::IconDa
 	c0.33-0.57,0.77-1,1.33-1.3c0.55-0.3,1.14-0.45,1.76-0.45c0.12,0,0.22,0,0.27,0.01v0.32c0,0.96,0.26,1.87,0.78,2.73
 	s1.25,1.51,2.17,1.97c-0.18,0.42-0.44,0.77-0.79,1.07c-0.92-0.79-1.99-1.18-3.22-1.18h-0.32C19.29,10.66,18.63,9.61,17.59,8.75z" />"###
 };
-const WI_NIGHT_CLEAR: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightClear: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3900,7 +3951,9 @@ const WI_NIGHT_CLEAR: icondata_core::IconData = icondata_core::IconData {
 	c-1.63-0.34-2.94-1.04-3.92-2.1s-1.55-2.3-1.7-3.74C13.86,9.08,13,9.37,12.21,9.9c-0.78,0.53-1.39,1.2-1.82,2.02
 	C9.96,12.74,9.74,13.59,9.74,14.48z" />"###
 };
-const WI_NIGHT_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3923,7 +3976,9 @@ const WI_NIGHT_CLOUDY: icondata_core::IconData = icondata_core::IconData {
 	c0.69,0.68,1.04,1.52,1.04,2.51c0,0.62-0.17,1.23-0.52,1.84C22.56,12.48,21.4,12,20.03,12h-0.31C19.45,10.89,18.89,9.91,18.04,9.06z
 	" />"###
 };
-const WI_NIGHT_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3956,7 +4011,9 @@ const WI_NIGHT_CLOUDY_GUSTS: icondata_core::IconData = icondata_core::IconData {
 	c0.72-0.68,1.54-1.02,2.48-1.02c0.98,0,1.81,0.35,2.51,1.05s1.05,1.53,1.05,2.5c0,0.61-0.17,1.22-0.51,1.85
 	c-0.96-0.96-2.11-1.43-3.47-1.43h-0.33C20.73,10.88,20.16,9.89,19.24,9z" />"###
 };
-const WI_NIGHT_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -3981,7 +4038,9 @@ const WI_NIGHT_CLOUDY_HIGH: icondata_core::IconData = icondata_core::IconData {
 	c0.36-0.39,0.65-0.83,0.85-1.33c0.21-0.5,0.31-1,0.31-1.52c0-0.49-0.1-0.98-0.3-1.47s-0.48-0.94-0.85-1.35
 	c-0.39,0.82-0.97,1.5-1.74,2.02c-0.77,0.52-1.63,0.79-2.57,0.83h-3.03C16.54,18.44,16.54,18.47,16.55,18.56z" />"###
 };
-const WI_NIGHT_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4011,7 +4070,9 @@ const WI_NIGHT_CLOUDY_WINDY: icondata_core::IconData = icondata_core::IconData {
 	 M19.83,9.02c0.67-0.65,1.5-0.98,2.47-0.98c0.99,0,1.83,0.35,2.52,1.04c0.69,0.69,1.04,1.53,1.04,2.52c0,0.63-0.16,1.22-0.49,1.77
 	c-0.98-0.96-2.15-1.43-3.52-1.43h-0.32C21.3,10.84,20.73,9.87,19.83,9.02z" />"###
 };
-const WI_NIGHT_FOG: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4041,7 +4102,9 @@ const WI_NIGHT_FOG: icondata_core::IconData = icondata_core::IconData {
 	c-0.07,1.04,0.17,2.02,0.7,2.93c0.54,0.91,1.28,1.58,2.22,2.02c-0.15,0.35-0.4,0.71-0.75,1.07c-0.92-0.76-1.97-1.13-3.14-1.13H20.5
 	C20.18,10.57,19.52,9.51,18.51,8.7z" />"###
 };
-const WI_NIGHT_HAIL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4081,7 +4144,9 @@ const WI_NIGHT_HAIL: icondata_core::IconData = icondata_core::IconData {
 	c0.69-0.66,1.51-0.99,2.48-0.99c0.97,0,1.81,0.35,2.5,1.04c0.69,0.69,1.04,1.53,1.04,2.5c0,0.62-0.17,1.23-0.52,1.84
 	c-0.98-0.98-2.14-1.47-3.49-1.47h-0.33C19.41,10.78,18.85,9.81,18.04,9.02z" />"###
 };
-const WI_NIGHT_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4107,7 +4172,9 @@ const WI_NIGHT_LIGHTNING: icondata_core::IconData = icondata_core::IconData {
 	c0.98,0,1.81,0.34,2.5,1.03C23.66,9.77,24,10.61,24,11.6c0,0.59-0.17,1.19-0.52,1.8c-0.97-0.93-2.12-1.4-3.45-1.4h-0.31
 	C19.44,10.81,18.86,9.83,18,9.05z" />"###
 };
-const WI_NIGHT_PARTLY_CLOUDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightPartlyCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4131,7 +4198,9 @@ const WI_NIGHT_PARTLY_CLOUDY: icondata_core::IconData = icondata_core::IconData 
 	c1.11,0,2.06,0.4,2.84,1.19c0.78,0.79,1.17,1.76,1.17,2.89c0,0.7-0.17,1.35-0.51,1.95c-0.34,0.6-0.8,1.08-1.38,1.45
 	c-0.59-0.49-1.27-0.73-2.03-0.73c-0.29-0.88-0.81-1.57-1.54-2.09c-0.73-0.52-1.56-0.78-2.49-0.78H13.18z" />"###
 };
-const WI_NIGHT_RAIN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4163,7 +4232,9 @@ const WI_NIGHT_RAIN: icondata_core::IconData = icondata_core::IconData {
 	c0.69,0.68,1.03,1.51,1.03,2.48c0,0.63-0.17,1.24-0.52,1.85C22.56,12.48,21.4,12,20.02,12h-0.31C19.43,10.83,18.87,9.86,18.03,9.08z
 	" />"###
 };
-const WI_NIGHT_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4212,7 +4283,9 @@ const WI_NIGHT_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
 	c0.69,0.7,1.04,1.54,1.04,2.52c0,0.67-0.17,1.28-0.51,1.85c-0.96-0.96-2.14-1.44-3.54-1.44h-0.32C19.44,10.77,18.88,9.79,18.03,9.01
 	z" />"###
 };
-const WI_NIGHT_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4249,7 +4322,9 @@ const WI_NIGHT_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
 	c0.68-0.68,1.51-1.02,2.48-1.02c1.01,0,1.86,0.35,2.56,1.05s1.05,1.56,1.05,2.56c0,0.62-0.17,1.23-0.52,1.82
 	c-0.97-0.98-2.16-1.46-3.55-1.46H19.8C19.55,10.84,18.98,9.86,18.09,9.03z" />"###
 };
-const WI_NIGHT_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4288,7 +4363,9 @@ const WI_NIGHT_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	C17.74,18.82,17.72,18.9,17.72,18.95z M18.06,9.05c0.67-0.64,1.48-0.97,2.45-0.97c0.98,0,1.81,0.35,2.49,1.05
 	c0.69,0.7,1.03,1.53,1.03,2.51c0,0.64-0.16,1.23-0.48,1.77c-0.96-0.96-2.12-1.44-3.49-1.44h-0.32C19.5,10.87,18.94,9.9,18.06,9.05z" />"###
 };
-const WI_NIGHT_SLEET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4330,7 +4407,9 @@ const WI_NIGHT_SLEET: icondata_core::IconData = icondata_core::IconData {
 	C17.11,21.63,17.02,21.44,17.02,21.21z M18.06,9.1c0.84,0.76,1.4,1.74,1.7,2.93h0.31c1.38,0,2.55,0.48,3.52,1.44
 	c0.31-0.55,0.47-1.15,0.47-1.81c0-0.98-0.35-1.81-1.04-2.5c-0.69-0.68-1.53-1.03-2.51-1.03C19.54,8.14,18.73,8.46,18.06,9.1z" />"###
 };
-const WI_NIGHT_SLEET_STORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4367,7 +4446,9 @@ const WI_NIGHT_SLEET_STORM: icondata_core::IconData = icondata_core::IconData {
 	c0.67-0.64,1.48-0.97,2.45-0.97c0.98,0,1.82,0.34,2.51,1.03c0.69,0.68,1.04,1.52,1.04,2.5c0,0.66-0.16,1.26-0.47,1.81
 	c-0.96-0.96-2.13-1.44-3.52-1.44h-0.31C19.42,10.76,18.85,9.78,18.02,9.02z" />"###
 };
-const WI_NIGHT_SNOW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4404,7 +4485,9 @@ const WI_NIGHT_SNOW: icondata_core::IconData = icondata_core::IconData {
 	c0.68-0.68,1.5-1.01,2.48-1.01c0.98,0,1.81,0.35,2.5,1.04s1.03,1.53,1.03,2.52c0,0.59-0.17,1.2-0.51,1.84
 	c-0.96-0.96-2.13-1.44-3.5-1.44h-0.31C19.44,10.8,18.87,9.82,18.03,9.02z" />"###
 };
-const WI_NIGHT_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4439,7 +4522,9 @@ const WI_NIGHT_SNOW_THUNDERSTORM: icondata_core::IconData = icondata_core::IconD
 	c0.69,0.68,1.04,1.52,1.04,2.5c0,0.66-0.16,1.26-0.47,1.81c-0.96-0.96-2.13-1.44-3.52-1.44h-0.31C19.46,10.76,18.89,9.78,18.06,9.02
 	z" />"###
 };
-const WI_NIGHT_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4476,7 +4561,9 @@ const WI_NIGHT_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
 	c0.68-0.68,1.5-1.01,2.48-1.01c0.98,0,1.81,0.35,2.5,1.04s1.03,1.53,1.03,2.52c0,0.59-0.17,1.2-0.51,1.84
 	c-0.96-0.96-2.13-1.44-3.5-1.44h-0.31C19.44,10.8,18.87,9.82,18.03,9.02z" />"###
 };
-const WI_NIGHT_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4507,7 +4594,9 @@ const WI_NIGHT_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
 	c0.98,0,1.81,0.34,2.49,1.02s1.03,1.51,1.03,2.48c0,0.63-0.17,1.25-0.51,1.85c-1-0.96-2.17-1.44-3.51-1.44H19.7
 	C19.42,10.76,18.85,9.79,18.01,9.02z" />"###
 };
-const WI_NIGHT_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4543,7 +4632,9 @@ const WI_NIGHT_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData 
 	 M18.06,8.98c0.66-0.64,1.48-0.96,2.45-0.96c0.98,0,1.82,0.35,2.5,1.04c0.69,0.69,1.03,1.53,1.03,2.51c0,0.63-0.16,1.22-0.49,1.78
 	c-0.99-0.96-2.15-1.44-3.49-1.44h-0.32C19.44,10.75,18.88,9.77,18.06,8.98z" />"###
 };
-const WI_NIGHT_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiNightThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4573,7 +4664,9 @@ const WI_NIGHT_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
 	c0.68-0.64,1.5-0.96,2.48-0.96c0.97,0,1.8,0.34,2.48,1.02c0.69,0.68,1.03,1.51,1.03,2.48c0,0.63-0.17,1.25-0.51,1.85
 	c-0.96-0.96-2.12-1.44-3.48-1.44h-0.32C19.42,10.84,18.86,9.86,18.02,9.04z" />"###
 };
-const WI_RAIN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4604,7 +4697,9 @@ const WI_RAIN: icondata_core::IconData = icondata_core::IconData {
 	s-0.02,0.1-0.02,0.12l-1.63,5.73c-0.04,0.19-0.13,0.35-0.28,0.46s-0.32,0.17-0.51,0.17l-0.24-0.05c-0.2-0.06-0.35-0.16-0.46-0.32
 	C16.79,23.94,16.74,23.78,16.74,23.62z" />"###
 };
-const WI_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4649,7 +4744,9 @@ const WI_RAIN_MIX: icondata_core::IconData = icondata_core::IconData {
 	c-0.23-0.07-0.44-0.05-0.64,0.06c-0.19,0.11-0.33,0.27-0.39,0.51l-0.28,0.91c0,0.02-0.01,0.06-0.02,0.12
 	C18.1,18.74,18.1,18.78,18.1,18.81z" />"###
 };
-const WI_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4685,7 +4782,9 @@ const WI_RAIN_WIND: icondata_core::IconData = icondata_core::IconData {
 	c-0.08-0.21-0.23-0.35-0.44-0.44l-0.36-0.09c-0.09,0.02-0.19,0.04-0.32,0.07c-0.22,0.08-0.37,0.23-0.45,0.44
 	C15.84,25.8,15.81,25.92,15.81,26.03z" />"###
 };
-const WI_RAINDROP: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRaindrop: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4702,7 +4801,9 @@ const WI_RAINDROP: icondata_core::IconData = icondata_core::IconData {
 	c-0.44-0.57-0.96-1.2-1.56-1.88c-0.6-0.68-1.65-1.73-1.89-1.97l-1.28,1.29c-0.62,0.6-1.22,1.29-1.79,2.08
 	c-0.57,0.79-1.07,1.64-1.49,2.55C10.01,13.79,9.81,14.58,9.81,15.25z" />"###
 };
-const WI_RAINDROPS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRaindrops: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4723,7 +4824,9 @@ const WI_RAINDROPS: icondata_core::IconData = icondata_core::IconData {
 	c0.19,0.22,0.36,0.46,0.51,0.74c0.15,0.27,0.23,0.5,0.23,0.68c0,0.28-0.1,0.5-0.29,0.69c-0.19,0.18-0.42,0.28-0.7,0.28
 	c-0.29,0-0.53-0.09-0.72-0.28C15.75,9.98,15.65,9.75,15.65,9.48z" />"###
 };
-const WI_REFRESH: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRefresh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4743,7 +4846,9 @@ const WI_REFRESH: icondata_core::IconData = icondata_core::IconData {
 	c0.16-0.12,0.24-0.33,0.24-0.62c0-0.26-0.08-0.45-0.24-0.57L14.97,8.8c-0.18-0.16-0.37-0.24-0.57-0.24c-0.25,0-0.46,0.08-0.63,0.25
 	c-0.17,0.17-0.25,0.37-0.25,0.6c0,0.24,0.08,0.45,0.24,0.61l0.38,0.36c-1.25,0.22-2.29,0.82-3.12,1.8S9.77,14.27,9.77,15.53z" />"###
 };
-const WI_REFRESH_ALT: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiRefreshAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4762,7 +4867,9 @@ const WI_REFRESH_ALT: icondata_core::IconData = icondata_core::IconData {
 	c0.13-0.11,0.2-0.27,0.2-0.51c0-0.22-0.07-0.38-0.2-0.47l-1.51-1.53c-0.13-0.14-0.29-0.21-0.49-0.21s-0.36,0.07-0.5,0.21
 	s-0.21,0.3-0.21,0.5c0,0.21,0.07,0.38,0.22,0.51l0.3,0.28c-1.15,0.08-2.11,0.53-2.89,1.35C12.17,12.77,11.78,13.76,11.78,14.91z" />"###
 };
-const WI_SANDSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSandstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4801,7 +4908,9 @@ const WI_SANDSTORM: icondata_core::IconData = icondata_core::IconData {
 	 M22.81,17.04c0,0.24,0.08,0.43,0.24,0.58c0.16,0.16,0.36,0.24,0.58,0.24c0.24,0,0.45-0.08,0.61-0.23c0.17-0.16,0.25-0.35,0.25-0.59
 	c0-0.23-0.08-0.43-0.25-0.6c-0.17-0.17-0.37-0.25-0.61-0.25c-0.23,0-0.42,0.08-0.58,0.25C22.9,16.61,22.81,16.81,22.81,17.04z" />"###
 };
-const WI_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4840,7 +4949,9 @@ const WI_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	c0.12,0.17,0.14,0.38,0.07,0.65l-0.24,1.03c-0.13,0.43-0.38,0.65-0.76,0.65c-0.06,0-0.17-0.02-0.34-0.06
 	c-0.21-0.06-0.36-0.17-0.46-0.31C18.16,19.29,18.11,19.14,18.11,18.98z" />"###
 };
-const WI_SLEET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4883,7 +4994,9 @@ const WI_SLEET: icondata_core::IconData = icondata_core::IconData {
 	c0.24,0,0.43,0.08,0.59,0.23c0.16,0.16,0.23,0.35,0.23,0.59c0,0.23-0.08,0.43-0.23,0.58C18.14,21.92,17.95,22,17.71,22
 	c-0.24,0-0.43-0.08-0.58-0.24C16.97,21.61,16.88,21.42,16.88,21.19z" />"###
 };
-const WI_SMALL_CRAFT_ADVISORY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSmallCraftAdvisory: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4897,7 +5010,9 @@ const WI_SMALL_CRAFT_ADVISORY: icondata_core::IconData = icondata_core::IconData
     fill: None,
     data: r###"<path d="M9.81,24.6V7.45h1.03V24.6H9.81z M11.54,14.86V7.45l8.65,3.69L11.54,14.86z" />"###
 };
-const WI_SMOG: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSmog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4918,7 +5033,9 @@ const WI_SMOG: icondata_core::IconData = icondata_core::IconData {
 	c0-0.23,0.12-0.58,0.37-1.06c-0.49-0.26-0.88-0.67-1.17-1.26h-1.25c-1.09-0.09-2.02-0.53-2.78-1.3C6.73,14.49,6.35,13.55,6.35,12.46
 	z" />"###
 };
-const WI_SMOKE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSmoke: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4943,7 +5060,9 @@ const WI_SMOKE: icondata_core::IconData = icondata_core::IconData {
 	c0.06-0.24,0.08-0.51,0.08-0.79c0-0.96-0.34-1.78-1.03-2.46c-0.69-0.68-1.52-1.01-2.49-1.01c-0.94,0-1.75,0.33-2.43,0.97
 	s-1.04,1.44-1.07,2.37c-0.02,0-0.05,0-0.08,0c-0.04,0-0.07,0-0.09,0c-0.79,0-1.46,0.28-2.03,0.84S7.74,11.45,7.74,12.23z" />"###
 };
-const WI_SNOW: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -4978,7 +5097,9 @@ const WI_SNOW: icondata_core::IconData = icondata_core::IconData {
 	 M17.41,24.65c0-0.22,0.08-0.42,0.25-0.6c0.16-0.15,0.36-0.23,0.6-0.23c0.24,0,0.43,0.08,0.59,0.23s0.23,0.35,0.23,0.59
 	c0,0.24-0.08,0.43-0.23,0.59c-0.16,0.16-0.35,0.23-0.59,0.23c-0.24,0-0.44-0.08-0.6-0.24C17.5,25.07,17.41,24.88,17.41,24.65z" />"###
 };
-const WI_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5013,7 +5134,9 @@ const WI_SNOW_WIND: icondata_core::IconData = icondata_core::IconData {
 	 M17.41,21.02c0-0.22,0.08-0.41,0.25-0.58c0.17-0.17,0.37-0.25,0.6-0.25c0.23,0,0.43,0.08,0.59,0.24c0.16,0.16,0.24,0.36,0.24,0.58
 	c0,0.24-0.08,0.44-0.24,0.6c-0.16,0.17-0.35,0.25-0.59,0.25c-0.24,0-0.44-0.08-0.6-0.25C17.5,21.45,17.41,21.25,17.41,21.02z" />"###
 };
-const WI_SNOWFLAKE_COLD: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSnowflakeCold: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5051,7 +5174,9 @@ const WI_SNOWFLAKE_COLD: icondata_core::IconData = icondata_core::IconData {
 	c0-0.19,0.07-0.36,0.2-0.5c0.13-0.14,0.3-0.21,0.49-0.21c0.18,0,0.34,0.07,0.47,0.21c0.13,0.14,0.2,0.3,0.2,0.5
 	c0,0.18-0.07,0.34-0.2,0.47c-0.13,0.13-0.29,0.2-0.47,0.2c-0.19,0-0.36-0.07-0.49-0.2C21.24,14.75,21.17,14.59,21.17,14.41z" />"###
 };
-const WI_SOLAR_ECLIPSE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSolarEclipse: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5087,7 +5212,9 @@ const WI_SOLAR_ECLIPSE: icondata_core::IconData = icondata_core::IconData {
 	c0.17,0.17,0.26,0.37,0.26,0.6s-0.09,0.43-0.26,0.6c-0.17,0.17-0.37,0.25-0.6,0.25h-2.02c-0.23,0-0.43-0.08-0.58-0.25
 	S21.92,14.86,21.92,14.62z" />"###
 };
-const WI_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5115,7 +5242,9 @@ const WI_SPRINKLE: icondata_core::IconData = icondata_core::IconData {
 	c0-0.42,0.32-0.95,0.97-1.6l0.24,0.25c0.18,0.21,0.33,0.45,0.48,0.71c0.14,0.26,0.22,0.47,0.22,0.64c0,0.26-0.09,0.48-0.28,0.66
 	c-0.18,0.18-0.4,0.28-0.66,0.28c-0.27,0-0.5-0.09-0.69-0.28C15.11,15.6,15.02,15.38,15.02,15.12z" />"###
 };
-const WI_STARS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiStars: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5137,7 +5266,9 @@ const WI_STARS: icondata_core::IconData = icondata_core::IconData {
 	 M17.83,15.01c0.95-0.04,1.75-0.41,2.41-1.1c0.66-0.69,0.98-1.51,0.98-2.48c0,0.96,0.33,1.78,0.99,2.47s1.47,1.06,2.42,1.1
 	c-0.95,0.04-1.76,0.41-2.42,1.1c-0.66,0.69-0.99,1.51-0.99,2.47c0-0.96-0.33-1.78-0.98-2.47C19.58,15.42,18.78,15.05,17.83,15.01z" />"###
 };
-const WI_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5171,7 +5302,9 @@ const WI_STORM_SHOWERS: icondata_core::IconData = icondata_core::IconData {
 	c0-0.17-0.05-0.33-0.16-0.49s-0.27-0.27-0.49-0.33c-0.02,0-0.06-0.01-0.11-0.02C19.49,17,19.45,17,19.42,17
 	c-0.17,0-0.33,0.05-0.49,0.15c-0.16,0.1-0.27,0.26-0.33,0.48l-0.27,1.01C18.32,18.72,18.31,18.79,18.31,18.86z" />"###
 };
-const WI_STORM_WARNING: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiStormWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5185,7 +5318,9 @@ const WI_STORM_WARNING: icondata_core::IconData = icondata_core::IconData {
     fill: None,
     data: r###"<path d="M9.76,24.6V7.45h1.13V24.6H9.76z M11.7,14.05v-6.6h8.55v6.6H11.7z M14.06,12.05h3.81v-2.5h-3.81V12.05z" />"###
 };
-const WI_STRONG_WIND: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiStrongWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5208,7 +5343,9 @@ const WI_STRONG_WIND: icondata_core::IconData = icondata_core::IconData {
 	c0.29,0,0.53,0.1,0.73,0.3c0.2,0.2,0.3,0.44,0.3,0.73c0,0.29-0.1,0.53-0.3,0.72c-0.2,0.19-0.44,0.29-0.73,0.29H4.01
 	c-0.25,0-0.46,0.09-0.64,0.26C3.19,13.23,3.1,13.44,3.1,13.69z" />"###
 };
-const WI_SUNRISE: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSunrise: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5241,7 +5378,9 @@ const WI_SUNRISE: icondata_core::IconData = icondata_core::IconData {
 	c0.19,0.19,0.29,0.43,0.29,0.69c0,0.28-0.1,0.51-0.29,0.71s-0.42,0.3-0.69,0.3h-2.35c-0.27,0-0.49-0.1-0.67-0.29
 	C23.08,15.88,22.99,15.64,22.99,15.36z" />"###
 };
-const WI_SUNSET: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiSunset: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5274,7 +5413,9 @@ const WI_SUNSET: icondata_core::IconData = icondata_core::IconData {
 	c0.17-0.18,0.4-0.27,0.67-0.27h2.32c0.27,0,0.5,0.09,0.69,0.27c0.19,0.18,0.29,0.4,0.29,0.67c0,0.27-0.1,0.5-0.29,0.7
 	c-0.19,0.2-0.42,0.3-0.69,0.3h-2.32c-0.26,0-0.48-0.1-0.66-0.29C22.99,15.99,22.9,15.75,22.9,15.47z" />"###
 };
-const WI_THERMOMETER: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiThermometer: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5297,7 +5438,9 @@ const WI_THERMOMETER: icondata_core::IconData = icondata_core::IconData {
 	c-0.43-0.48-0.96-0.77-1.58-0.85V9.69c0-0.06-0.03-0.13-0.1-0.19c-0.07-0.07-0.14-0.1-0.22-0.1c-0.09,0-0.16,0.03-0.21,0.08
 	c-0.05,0.06-0.08,0.12-0.08,0.21v7.34c-0.61,0.09-1.13,0.37-1.56,0.85C12.66,18.37,12.45,18.92,12.45,19.56z" />"###
 };
-const WI_THERMOMETER_EXTERIOR: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiThermometerExterior: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5317,7 +5460,9 @@ const WI_THERMOMETER_EXTERIOR: icondata_core::IconData = icondata_core::IconData
 	c0-0.32-0.11-0.59-0.34-0.81C15.62,4.4,15.34,4.29,15,4.29c-0.32,0-0.6,0.11-0.83,0.32c-0.23,0.21-0.34,0.48-0.34,0.81v10.74
 	c0,0.15-0.05,0.25-0.14,0.29l-0.27,0.14c-0.55,0.29-0.98,0.7-1.29,1.23C11.82,18.35,11.67,18.92,11.67,19.56z" />"###
 };
-const WI_THERMOMETER_INTERNAL: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiThermometerInternal: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5334,7 +5479,9 @@ const WI_THERMOMETER_INTERNAL: icondata_core::IconData = icondata_core::IconData
 	c-0.09,0-0.16,0.03-0.21,0.08c-0.05,0.06-0.08,0.12-0.08,0.21v7.34c-0.61,0.09-1.13,0.37-1.56,0.85
 	C12.69,18.37,12.48,18.92,12.48,19.56z" />"###
 };
-const WI_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5363,7 +5510,9 @@ const WI_THUNDERSTORM: icondata_core::IconData = icondata_core::IconData {
 	c0-0.15-0.05-0.3-0.16-0.45s-0.26-0.26-0.46-0.32c-0.17-0.02-0.26-0.03-0.26-0.03c-0.17,0-0.33,0.05-0.47,0.15
 	c-0.14,0.1-0.24,0.25-0.3,0.45l-1.46,5.7c0,0.02,0,0.05-0.01,0.11C16.93,23.5,16.93,23.53,16.93,23.56z" />"###
 };
-const WI_TIME1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5384,7 +5533,9 @@ const WI_TIME1: icondata_core::IconData = icondata_core::IconData {
 	c0.12-0.2,0.29-0.32,0.52-0.38s0.44-0.03,0.64,0.09c0.2,0.11,0.32,0.27,0.39,0.5s0.04,0.43-0.08,0.63l-2.29,3.91
 	c-0.13,0.35-0.38,0.53-0.76,0.53c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
-const WI_TIME10: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime10: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5405,7 +5556,9 @@ const WI_TIME10: icondata_core::IconData = icondata_core::IconData {
 	c0-0.23,0.08-0.43,0.24-0.59s0.36-0.24,0.59-0.24s0.43,0.08,0.59,0.24s0.24,0.36,0.24,0.59v6.67c0,0.23-0.08,0.43-0.24,0.59
 	s-0.36,0.24-0.59,0.24c-0.21,0-0.39-0.07-0.56-0.22l-3.88-2.17C10.34,12.8,10.21,12.63,10.14,12.41z" />"###
 };
-const WI_TIME11: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime11: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5426,7 +5579,9 @@ const WI_TIME11: icondata_core::IconData = icondata_core::IconData {
 	c0-0.23,0.08-0.43,0.24-0.59s0.36-0.24,0.59-0.24s0.43,0.08,0.59,0.24s0.24,0.36,0.24,0.59v6.67c0,0.23-0.08,0.43-0.24,0.59
 	s-0.36,0.24-0.59,0.24c-0.4,0-0.66-0.18-0.79-0.53l-2.26-3.91C11.81,10.67,11.78,10.46,11.84,10.24z" />"###
 };
-const WI_TIME12: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime12: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5446,7 +5601,9 @@ const WI_TIME12: icondata_core::IconData = icondata_core::IconData {
 	 M14.14,14.47c0,0.22,0.08,0.42,0.24,0.59c0.16,0.17,0.36,0.25,0.59,0.25c0.22,0,0.42-0.08,0.59-0.25c0.17-0.17,0.25-0.36,0.25-0.59
 	V7.81c0-0.23-0.08-0.43-0.25-0.59s-0.36-0.24-0.59-0.24c-0.23,0-0.43,0.08-0.59,0.24s-0.24,0.36-0.24,0.59V14.47z" />"###
 };
-const WI_TIME2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5467,7 +5624,9 @@ const WI_TIME2: icondata_core::IconData = icondata_core::IconData {
 	c0.2-0.12,0.41-0.15,0.63-0.09s0.39,0.2,0.5,0.41c0.12,0.2,0.14,0.41,0.08,0.63s-0.19,0.4-0.39,0.51l-3.88,2.17
 	c-0.17,0.15-0.35,0.22-0.56,0.22c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
-const WI_TIME3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5488,7 +5647,9 @@ const WI_TIME3: icondata_core::IconData = icondata_core::IconData {
 	c0.23,0,0.43,0.08,0.59,0.24s0.24,0.36,0.24,0.59c0,0.22-0.08,0.42-0.24,0.59c-0.16,0.17-0.36,0.25-0.59,0.25h-4.44
 	c-0.03,0.01-0.09,0.01-0.18,0.01c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
-const WI_TIME4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5509,7 +5670,9 @@ const WI_TIME4: icondata_core::IconData = icondata_core::IconData {
 	c0.2,0.12,0.32,0.29,0.38,0.51s0.03,0.43-0.09,0.62c-0.16,0.28-0.4,0.42-0.72,0.42c-0.17,0-0.31-0.04-0.42-0.12l-3.82-2.23
 	c-0.17-0.05-0.31-0.15-0.42-0.29S14.14,14.66,14.14,14.47z" />"###
 };
-const WI_TIME5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5530,7 +5693,9 @@ const WI_TIME5: icondata_core::IconData = icondata_core::IconData {
 	c0.12,0.21,0.14,0.43,0.08,0.65s-0.19,0.39-0.39,0.51c-0.11,0.06-0.24,0.09-0.41,0.09c-0.33,0-0.58-0.14-0.73-0.41l-2.2-3.9
 	C14.2,14.85,14.14,14.68,14.14,14.47z" />"###
 };
-const WI_TIME6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5550,7 +5715,9 @@ const WI_TIME6: icondata_core::IconData = icondata_core::IconData {
 	 M14.14,19.07V7.81c0-0.23,0.08-0.43,0.24-0.59s0.36-0.24,0.59-0.24s0.43,0.08,0.59,0.24s0.24,0.36,0.24,0.59v11.26
 	c0,0.23-0.08,0.43-0.24,0.6s-0.36,0.25-0.59,0.25s-0.43-0.08-0.59-0.25S14.14,19.31,14.14,19.07z" />"###
 };
-const WI_TIME7: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime7: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5571,7 +5738,9 @@ const WI_TIME7: icondata_core::IconData = icondata_core::IconData {
 	s0.24,0.36,0.24,0.59v6.67c0,0.2-0.06,0.37-0.19,0.53l-2.18,3.9c-0.16,0.27-0.41,0.41-0.75,0.41c-0.16,0-0.29-0.03-0.4-0.09
 	C12.09,19.1,11.96,18.93,11.89,18.71z" />"###
 };
-const WI_TIME8: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime8: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5592,7 +5761,9 @@ const WI_TIME8: icondata_core::IconData = icondata_core::IconData {
 	s0.24,0.36,0.24,0.59v6.67c0,0.19-0.06,0.35-0.17,0.5s-0.25,0.24-0.42,0.29l-3.84,2.23c-0.12,0.08-0.25,0.12-0.41,0.12
 	c-0.32,0-0.56-0.14-0.72-0.42C10.14,16.99,10.11,16.78,10.17,16.56z" />"###
 };
-const WI_TIME9: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTime9: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5613,7 +5784,9 @@ const WI_TIME9: icondata_core::IconData = icondata_core::IconData {
 	s0.43,0.08,0.59,0.24s0.24,0.36,0.24,0.59v6.67c0,0.23-0.08,0.43-0.24,0.59s-0.36,0.24-0.59,0.24c-0.1,0-0.16,0-0.19-0.01h-4.44
 	c-0.23,0-0.43-0.08-0.59-0.25C9.59,14.88,9.51,14.68,9.51,14.46z" />"###
 };
-const WI_TORNADO: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTornado: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5646,7 +5819,9 @@ const WI_TORNADO: icondata_core::IconData = icondata_core::IconData {
 	c0.22,0.22,0.34,0.42,0.34,0.59s-0.11,0.35-0.34,0.56c-0.44,0.42-1.33,0.83-2.68,1.23c-1.45,0.42-3.17,0.63-5.19,0.63
 	c-2,0-3.72-0.21-5.14-0.63C9.32,8.71,8.42,8.3,7.98,7.87C7.75,7.66,7.63,7.48,7.63,7.31z" />"###
 };
-const WI_TRAIN: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTrain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5680,7 +5855,9 @@ const WI_TRAIN: icondata_core::IconData = icondata_core::IconData {
 	s-0.71-0.39-1.12-0.39c-0.41,0-0.77,0.13-1.08,0.38c-0.31,0.25-0.52,0.58-0.62,0.97h-0.11c-0.41,0-0.77,0.13-1.08,0.39
 	C15.93,4.75,15.78,5.07,15.78,5.43z" />"###
 };
-const WI_TSUNAMI: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiTsunami: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5714,7 +5891,9 @@ const WI_TSUNAMI: icondata_core::IconData = icondata_core::IconData {
 	c-0.8-0.18-1.7-0.26-2.69-0.26c-1.58,0-3.05,0.26-4.42,0.77c-1.34,0.51-2.48,1.22-3.42,2.14c-0.98,0.91-1.73,2-2.23,3.26
 	C6.89,12.65,6.62,14.07,6.62,15.58z M18.05,20.64h3.88v-3.52l-1.98-1.21l-1.9,1.19V20.64z" />"###
 };
-const WI_UMBRELLA: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiUmbrella: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5745,7 +5924,9 @@ const WI_UMBRELLA: icondata_core::IconData = icondata_core::IconData {
 	c0.38-0.33,0.84-0.62,1.39-0.88c0.54-0.26,1.13-0.41,1.77-0.45h0.09c0.56,0,1.15,0.15,1.75,0.44c-0.44-0.86-0.74-1.41-0.88-1.66
 	c-1.79-2.34-4.27-3.51-7.43-3.51c-1.58,0-2.99,0.3-4.24,0.9c-1.24,0.6-2.26,1.47-3.05,2.61C7.44,11.82,7.12,12.41,6.73,13.23z" />"###
 };
-const WI_VOLCANO: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiVolcano: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5776,7 +5957,9 @@ const WI_VOLCANO: icondata_core::IconData = icondata_core::IconData {
 	c-0.19-0.31-0.46-0.61-0.81-0.91c-0.34-0.3-0.64-0.59-0.88-0.88c-0.24-0.28-0.43-0.54-0.56-0.76c-0.13-0.22-0.23-0.45-0.29-0.68
 	C14.79,15.84,14.76,15.64,14.76,15.48z" />"###
 };
-const WI_WIND_BEAUFORT0: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort0: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5805,7 +5988,9 @@ const WI_WIND_BEAUFORT0: icondata_core::IconData = icondata_core::IconData {
 	c0.08-0.32,0.18-0.62,0.3-0.89c0.12-0.27,0.29-0.5,0.52-0.69c0.22-0.19,0.47-0.29,0.75-0.29c0.27,0,0.49,0.09,0.65,0.26
 	c0.16,0.17,0.23,0.44,0.23,0.79c0,0.96-0.17,1.78-0.5,2.45s-0.74,1.01-1.23,1.01C20.63,20.19,20.32,19.78,20.32,18.96z" />"###
 };
-const WI_WIND_BEAUFORT1: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5828,7 +6013,9 @@ const WI_WIND_BEAUFORT1: icondata_core::IconData = icondata_core::IconData {
 	c0.13,0.12,0.2,0.27,0.2,0.45c0,0.18-0.07,0.34-0.2,0.47c-0.13,0.13-0.28,0.2-0.46,0.2H6.35c-0.16,0-0.3,0.06-0.42,0.17
 	C5.81,11.18,5.76,11.32,5.76,11.48z M18.65,21.85h2.47l1.65-7.98H20.3L18.65,21.85z" />"###
 };
-const WI_WIND_BEAUFORT10: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort10: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5857,7 +6044,9 @@ const WI_WIND_BEAUFORT10: icondata_core::IconData = icondata_core::IconData {
 	c0.27,0,0.48,0.09,0.65,0.27c0.16,0.18,0.24,0.44,0.24,0.79c0,0.96-0.17,1.78-0.5,2.45s-0.75,1.01-1.23,1.01
 	C22.52,20.19,22.21,19.79,22.21,18.98z" />"###
 };
-const WI_WIND_BEAUFORT11: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort11: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5881,7 +6070,9 @@ const WI_WIND_BEAUFORT11: icondata_core::IconData = icondata_core::IconData {
 	c-0.16,0-0.3,0.06-0.42,0.17C4.74,11.18,4.68,11.32,4.68,11.48z M17.57,21.9h2.47l1.65-7.99h-2.47L17.57,21.9z M21.3,21.9h2.46
 	l1.65-7.99h-2.45L21.3,21.9z" />"###
 };
-const WI_WIND_BEAUFORT12: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort12: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5910,7 +6101,9 @@ const WI_WIND_BEAUFORT12: icondata_core::IconData = icondata_core::IconData {
 	c-0.22,0.18-0.63,0.42-1.25,0.72c-0.04,0.01-0.07,0.02-0.08,0.04c-0.89,0.43-1.44,0.7-1.65,0.83c-0.79,0.47-1.34,1.06-1.65,1.74
 	C19.68,21.03,19.57,21.44,19.51,21.9z" />"###
 };
-const WI_WIND_BEAUFORT2: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5939,7 +6132,9 @@ const WI_WIND_BEAUFORT2: icondata_core::IconData = icondata_core::IconData {
 	c-0.17,0.09-0.3,0.17-0.4,0.22c-0.1,0.05-0.27,0.13-0.53,0.25c-0.88,0.43-1.43,0.71-1.64,0.83c-0.8,0.48-1.35,1.07-1.66,1.78
 	C17.82,21.01,17.71,21.41,17.66,21.85z" />"###
 };
-const WI_WIND_BEAUFORT3: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5969,7 +6164,9 @@ const WI_WIND_BEAUFORT3: icondata_core::IconData = icondata_core::IconData {
 	c0.68,0,1.02,0.23,1.02,0.7c0,0.31-0.11,0.55-0.34,0.72c-0.23,0.17-0.5,0.25-0.83,0.25c-0.38,0-0.66-0.11-0.83-0.34
 	c-0.17-0.21-0.24-0.51-0.21-0.89h-2.07C18.13,19.06,18.12,19.27,18.12,19.52z" />"###
 };
-const WI_WIND_BEAUFORT4: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -5993,7 +6190,9 @@ const WI_WIND_BEAUFORT4: icondata_core::IconData = icondata_core::IconData {
 	C5.04,11.18,4.98,11.32,4.98,11.48z M17.98,20.35h3.57l-0.32,1.55h2.2l0.36-1.55h1.01l0.36-1.9h-1l0.9-4.34h-2.22l-4.43,4.16
 	L17.98,20.35z M20.23,18.45l2.24-2.21h0.03l-0.49,2.21H20.23z" />"###
 };
-const WI_WIND_BEAUFORT5: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6021,7 +6220,9 @@ const WI_WIND_BEAUFORT5: icondata_core::IconData = icondata_core::IconData {
 	c0.16-0.34,0.53-0.51,1.11-0.51c0.32,0,0.58,0.08,0.77,0.25c0.19,0.17,0.29,0.41,0.29,0.75c0,0.34-0.12,0.61-0.35,0.82
 	c-0.23,0.21-0.57,0.31-1,0.31c-0.31,0-0.56-0.06-0.73-0.17c-0.21-0.11-0.33-0.31-0.36-0.6H18.04z" />"###
 };
-const WI_WIND_BEAUFORT6: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6052,7 +6253,9 @@ const WI_WIND_BEAUFORT6: icondata_core::IconData = icondata_core::IconData {
 	c0.04,0.11,0.06,0.19,0.07,0.25c0.01,0.06,0.01,0.12,0.01,0.19c0,0.31-0.11,0.58-0.32,0.79s-0.5,0.32-0.85,0.32
 	c-0.31,0-0.55-0.09-0.75-0.27C20.48,19.69,20.38,19.46,20.38,19.17z" />"###
 };
-const WI_WIND_BEAUFORT7: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort7: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6076,7 +6279,9 @@ const WI_WIND_BEAUFORT7: icondata_core::IconData = icondata_core::IconData {
 	C4.89,11.18,4.83,11.32,4.83,11.48z M18.85,21.9h2.47c0.26-1.29,0.73-2.45,1.39-3.47c0.67-1.02,1.39-1.84,2.16-2.44l0.38-1.87h-5.96
 	l-0.41,1.89h3.49C20.39,18,19.22,19.96,18.85,21.9z" />"###
 };
-const WI_WIND_BEAUFORT8: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort8: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6110,7 +6315,9 @@ const WI_WIND_BEAUFORT8: icondata_core::IconData = icondata_core::IconData {
 	c0.3,0,0.55,0.07,0.76,0.2s0.31,0.35,0.31,0.63c0,0.07-0.02,0.15-0.05,0.23c-0.03,0.08-0.09,0.17-0.17,0.27
 	c-0.08,0.1-0.21,0.18-0.39,0.24c-0.18,0.06-0.4,0.09-0.66,0.09c-0.4,0-0.68-0.08-0.84-0.23C20.94,16.75,20.86,16.57,20.86,16.37z" />"###
 };
-const WI_WIND_BEAUFORT9: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindBeaufort9: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6141,7 +6348,9 @@ const WI_WIND_BEAUFORT9: icondata_core::IconData = icondata_core::IconData {
 	s-0.1,0.23-0.18,0.36c-0.08,0.12-0.2,0.23-0.37,0.31s-0.35,0.12-0.56,0.12s-0.39-0.04-0.54-0.11c-0.15-0.07-0.25-0.17-0.32-0.29
 	c-0.07-0.12-0.11-0.22-0.14-0.31S20.75,16.96,20.75,16.88z" />"###
 };
-const WI_WIND_DEG: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindDeg: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6161,7 +6370,9 @@ const WI_WIND_DEG: icondata_core::IconData = icondata_core::IconData {
 	 M11.11,20.35l3.75-13.11c0.01-0.1,0.06-0.15,0.15-0.15s0.14,0.05,0.15,0.15l3.74,13.11c0.04,0.11,0.03,0.19-0.02,0.25
 	s-0.13,0.06-0.24,0l-3.47-1.3c-0.1-0.04-0.2-0.04-0.29,0l-3.5,1.3c-0.1,0.06-0.17,0.06-0.21,0S11.09,20.45,11.11,20.35z" />"###
 };
-const WI_WINDY: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static WiWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
     y: Some("0px"),
@@ -6183,229 +6394,3 @@ const WI_WINDY: icondata_core::IconData = icondata_core::IconData {
 	c0.23,0,0.42,0.07,0.57,0.22c0.15,0.15,0.22,0.34,0.22,0.56c0,0.22-0.07,0.4-0.22,0.54c-0.15,0.14-0.34,0.22-0.56,0.22h-4.52
 	c-0.23,0-0.42-0.07-0.57-0.22C19.33,15.9,19.26,15.72,19.26,15.5z" />"###
 };
-
-impl From<WiIcon> for icondata_core::IconData {
-    fn from(icon: WiIcon) -> icondata_core::IconData {
-        match icon {
-            WiIcon::WiAlien => WI_ALIEN,
-            WiIcon::WiBarometer => WI_BAROMETER,
-            WiIcon::WiCelsius => WI_CELSIUS,
-            WiIcon::WiCloud => WI_CLOUD,
-            WiIcon::WiCloudDown => WI_CLOUD_DOWN,
-            WiIcon::WiCloudRefresh => WI_CLOUD_REFRESH,
-            WiIcon::WiCloudUp => WI_CLOUD_UP,
-            WiIcon::WiCloudy => WI_CLOUDY,
-            WiIcon::WiCloudyGusts => WI_CLOUDY_GUSTS,
-            WiIcon::WiCloudyWindy => WI_CLOUDY_WINDY,
-            WiIcon::WiDayCloudy => WI_DAY_CLOUDY,
-            WiIcon::WiDayCloudyGusts => WI_DAY_CLOUDY_GUSTS,
-            WiIcon::WiDayCloudyHigh => WI_DAY_CLOUDY_HIGH,
-            WiIcon::WiDayCloudyWindy => WI_DAY_CLOUDY_WINDY,
-            WiIcon::WiDayFog => WI_DAY_FOG,
-            WiIcon::WiDayHail => WI_DAY_HAIL,
-            WiIcon::WiDayHaze => WI_DAY_HAZE,
-            WiIcon::WiDayLightWind => WI_DAY_LIGHT_WIND,
-            WiIcon::WiDayLightning => WI_DAY_LIGHTNING,
-            WiIcon::WiDayRain => WI_DAY_RAIN,
-            WiIcon::WiDayRainMix => WI_DAY_RAIN_MIX,
-            WiIcon::WiDayRainWind => WI_DAY_RAIN_WIND,
-            WiIcon::WiDayShowers => WI_DAY_SHOWERS,
-            WiIcon::WiDaySleet => WI_DAY_SLEET,
-            WiIcon::WiDaySleetStorm => WI_DAY_SLEET_STORM,
-            WiIcon::WiDaySnow => WI_DAY_SNOW,
-            WiIcon::WiDaySnowThunderstorm => WI_DAY_SNOW_THUNDERSTORM,
-            WiIcon::WiDaySnowWind => WI_DAY_SNOW_WIND,
-            WiIcon::WiDaySprinkle => WI_DAY_SPRINKLE,
-            WiIcon::WiDayStormShowers => WI_DAY_STORM_SHOWERS,
-            WiIcon::WiDaySunny => WI_DAY_SUNNY,
-            WiIcon::WiDaySunnyOvercast => WI_DAY_SUNNY_OVERCAST,
-            WiIcon::WiDayThunderstorm => WI_DAY_THUNDERSTORM,
-            WiIcon::WiDayWindy => WI_DAY_WINDY,
-            WiIcon::WiDegrees => WI_DEGREES,
-            WiIcon::WiDirectionDown => WI_DIRECTION_DOWN,
-            WiIcon::WiDirectionDownLeft => WI_DIRECTION_DOWN_LEFT,
-            WiIcon::WiDirectionDownRight => WI_DIRECTION_DOWN_RIGHT,
-            WiIcon::WiDirectionLeft => WI_DIRECTION_LEFT,
-            WiIcon::WiDirectionRight => WI_DIRECTION_RIGHT,
-            WiIcon::WiDirectionUp => WI_DIRECTION_UP,
-            WiIcon::WiDirectionUpLeft => WI_DIRECTION_UP_LEFT,
-            WiIcon::WiDirectionUpRight => WI_DIRECTION_UP_RIGHT,
-            WiIcon::WiDust => WI_DUST,
-            WiIcon::WiEarthquake => WI_EARTHQUAKE,
-            WiIcon::WiFahrenheit => WI_FAHRENHEIT,
-            WiIcon::WiFire => WI_FIRE,
-            WiIcon::WiFlood => WI_FLOOD,
-            WiIcon::WiFog => WI_FOG,
-            WiIcon::WiGaleWarning => WI_GALE_WARNING,
-            WiIcon::WiHail => WI_HAIL,
-            WiIcon::WiHorizon => WI_HORIZON,
-            WiIcon::WiHorizonAlt => WI_HORIZON_ALT,
-            WiIcon::WiHot => WI_HOT,
-            WiIcon::WiHumidity => WI_HUMIDITY,
-            WiIcon::WiHurricane => WI_HURRICANE,
-            WiIcon::WiHurricaneWarning => WI_HURRICANE_WARNING,
-            WiIcon::WiLightning => WI_LIGHTNING,
-            WiIcon::WiLunarEclipse => WI_LUNAR_ECLIPSE,
-            WiIcon::WiMeteor => WI_METEOR,
-            WiIcon::WiMoonAltFirstQuarter => WI_MOON_ALT_FIRST_QUARTER,
-            WiIcon::WiMoonAltFull => WI_MOON_ALT_FULL,
-            WiIcon::WiMoonAltNew => WI_MOON_ALT_NEW,
-            WiIcon::WiMoonAltThirdQuarter => WI_MOON_ALT_THIRD_QUARTER,
-            WiIcon::WiMoonAltWaningCrescent1 => WI_MOON_ALT_WANING_CRESCENT1,
-            WiIcon::WiMoonAltWaningCrescent2 => WI_MOON_ALT_WANING_CRESCENT2,
-            WiIcon::WiMoonAltWaningCrescent3 => WI_MOON_ALT_WANING_CRESCENT3,
-            WiIcon::WiMoonAltWaningCrescent4 => WI_MOON_ALT_WANING_CRESCENT4,
-            WiIcon::WiMoonAltWaningCrescent5 => WI_MOON_ALT_WANING_CRESCENT5,
-            WiIcon::WiMoonAltWaningCrescent6 => WI_MOON_ALT_WANING_CRESCENT6,
-            WiIcon::WiMoonAltWaningGibbous1 => WI_MOON_ALT_WANING_GIBBOUS1,
-            WiIcon::WiMoonAltWaningGibbous2 => WI_MOON_ALT_WANING_GIBBOUS2,
-            WiIcon::WiMoonAltWaningGibbous3 => WI_MOON_ALT_WANING_GIBBOUS3,
-            WiIcon::WiMoonAltWaningGibbous4 => WI_MOON_ALT_WANING_GIBBOUS4,
-            WiIcon::WiMoonAltWaningGibbous5 => WI_MOON_ALT_WANING_GIBBOUS5,
-            WiIcon::WiMoonAltWaningGibbous6 => WI_MOON_ALT_WANING_GIBBOUS6,
-            WiIcon::WiMoonAltWaxingCrescent1 => WI_MOON_ALT_WAXING_CRESCENT1,
-            WiIcon::WiMoonAltWaxingCrescent2 => WI_MOON_ALT_WAXING_CRESCENT2,
-            WiIcon::WiMoonAltWaxingCrescent3 => WI_MOON_ALT_WAXING_CRESCENT3,
-            WiIcon::WiMoonAltWaxingCrescent4 => WI_MOON_ALT_WAXING_CRESCENT4,
-            WiIcon::WiMoonAltWaxingCrescent5 => WI_MOON_ALT_WAXING_CRESCENT5,
-            WiIcon::WiMoonAltWaxingCrescent6 => WI_MOON_ALT_WAXING_CRESCENT6,
-            WiIcon::WiMoonAltWaxingGibbous1 => WI_MOON_ALT_WAXING_GIBBOUS1,
-            WiIcon::WiMoonAltWaxingGibbous2 => WI_MOON_ALT_WAXING_GIBBOUS2,
-            WiIcon::WiMoonAltWaxingGibbous3 => WI_MOON_ALT_WAXING_GIBBOUS3,
-            WiIcon::WiMoonAltWaxingGibbous4 => WI_MOON_ALT_WAXING_GIBBOUS4,
-            WiIcon::WiMoonAltWaxingGibbous5 => WI_MOON_ALT_WAXING_GIBBOUS5,
-            WiIcon::WiMoonAltWaxingGibbous6 => WI_MOON_ALT_WAXING_GIBBOUS6,
-            WiIcon::WiMoonFirstQuarter => WI_MOON_FIRST_QUARTER,
-            WiIcon::WiMoonFull => WI_MOON_FULL,
-            WiIcon::WiMoonNew => WI_MOON_NEW,
-            WiIcon::WiMoonThirdQuarter => WI_MOON_THIRD_QUARTER,
-            WiIcon::WiMoonWaningCrescent1 => WI_MOON_WANING_CRESCENT1,
-            WiIcon::WiMoonWaningCrescent2 => WI_MOON_WANING_CRESCENT2,
-            WiIcon::WiMoonWaningCrescent3 => WI_MOON_WANING_CRESCENT3,
-            WiIcon::WiMoonWaningCrescent4 => WI_MOON_WANING_CRESCENT4,
-            WiIcon::WiMoonWaningCrescent5 => WI_MOON_WANING_CRESCENT5,
-            WiIcon::WiMoonWaningCrescent6 => WI_MOON_WANING_CRESCENT6,
-            WiIcon::WiMoonWaningGibbous1 => WI_MOON_WANING_GIBBOUS1,
-            WiIcon::WiMoonWaningGibbous2 => WI_MOON_WANING_GIBBOUS2,
-            WiIcon::WiMoonWaningGibbous3 => WI_MOON_WANING_GIBBOUS3,
-            WiIcon::WiMoonWaningGibbous4 => WI_MOON_WANING_GIBBOUS4,
-            WiIcon::WiMoonWaningGibbous5 => WI_MOON_WANING_GIBBOUS5,
-            WiIcon::WiMoonWaningGibbous6 => WI_MOON_WANING_GIBBOUS6,
-            WiIcon::WiMoonWaxingCrescent1 => WI_MOON_WAXING_CRESCENT1,
-            WiIcon::WiMoonWaxingCrescent2 => WI_MOON_WAXING_CRESCENT2,
-            WiIcon::WiMoonWaxingCrescent3 => WI_MOON_WAXING_CRESCENT3,
-            WiIcon::WiMoonWaxingCrescent4 => WI_MOON_WAXING_CRESCENT4,
-            WiIcon::WiMoonWaxingCrescent5 => WI_MOON_WAXING_CRESCENT5,
-            WiIcon::WiMoonWaxingCrescent6 => WI_MOON_WAXING_CRESCENT6,
-            WiIcon::WiMoonWaxingGibbous1 => WI_MOON_WAXING_GIBBOUS1,
-            WiIcon::WiMoonWaxingGibbous2 => WI_MOON_WAXING_GIBBOUS2,
-            WiIcon::WiMoonWaxingGibbous3 => WI_MOON_WAXING_GIBBOUS3,
-            WiIcon::WiMoonWaxingGibbous4 => WI_MOON_WAXING_GIBBOUS4,
-            WiIcon::WiMoonWaxingGibbous5 => WI_MOON_WAXING_GIBBOUS5,
-            WiIcon::WiMoonWaxingGibbous6 => WI_MOON_WAXING_GIBBOUS6,
-            WiIcon::WiMoonrise => WI_MOONRISE,
-            WiIcon::WiMoonset => WI_MOONSET,
-            WiIcon::WiNa => WI_NA,
-            WiIcon::WiNightAltCloudy => WI_NIGHT_ALT_CLOUDY,
-            WiIcon::WiNightAltCloudyGusts => WI_NIGHT_ALT_CLOUDY_GUSTS,
-            WiIcon::WiNightAltCloudyHigh => WI_NIGHT_ALT_CLOUDY_HIGH,
-            WiIcon::WiNightAltCloudyWindy => WI_NIGHT_ALT_CLOUDY_WINDY,
-            WiIcon::WiNightAltHail => WI_NIGHT_ALT_HAIL,
-            WiIcon::WiNightAltLightning => WI_NIGHT_ALT_LIGHTNING,
-            WiIcon::WiNightAltPartlyCloudy => WI_NIGHT_ALT_PARTLY_CLOUDY,
-            WiIcon::WiNightAltRain => WI_NIGHT_ALT_RAIN,
-            WiIcon::WiNightAltRainMix => WI_NIGHT_ALT_RAIN_MIX,
-            WiIcon::WiNightAltRainWind => WI_NIGHT_ALT_RAIN_WIND,
-            WiIcon::WiNightAltShowers => WI_NIGHT_ALT_SHOWERS,
-            WiIcon::WiNightAltSleet => WI_NIGHT_ALT_SLEET,
-            WiIcon::WiNightAltSleetStorm => WI_NIGHT_ALT_SLEET_STORM,
-            WiIcon::WiNightAltSnow => WI_NIGHT_ALT_SNOW,
-            WiIcon::WiNightAltSnowThunderstorm => WI_NIGHT_ALT_SNOW_THUNDERSTORM,
-            WiIcon::WiNightAltSnowWind => WI_NIGHT_ALT_SNOW_WIND,
-            WiIcon::WiNightAltSprinkle => WI_NIGHT_ALT_SPRINKLE,
-            WiIcon::WiNightAltStormShowers => WI_NIGHT_ALT_STORM_SHOWERS,
-            WiIcon::WiNightAltThunderstorm => WI_NIGHT_ALT_THUNDERSTORM,
-            WiIcon::WiNightClear => WI_NIGHT_CLEAR,
-            WiIcon::WiNightCloudy => WI_NIGHT_CLOUDY,
-            WiIcon::WiNightCloudyGusts => WI_NIGHT_CLOUDY_GUSTS,
-            WiIcon::WiNightCloudyHigh => WI_NIGHT_CLOUDY_HIGH,
-            WiIcon::WiNightCloudyWindy => WI_NIGHT_CLOUDY_WINDY,
-            WiIcon::WiNightFog => WI_NIGHT_FOG,
-            WiIcon::WiNightHail => WI_NIGHT_HAIL,
-            WiIcon::WiNightLightning => WI_NIGHT_LIGHTNING,
-            WiIcon::WiNightPartlyCloudy => WI_NIGHT_PARTLY_CLOUDY,
-            WiIcon::WiNightRain => WI_NIGHT_RAIN,
-            WiIcon::WiNightRainMix => WI_NIGHT_RAIN_MIX,
-            WiIcon::WiNightRainWind => WI_NIGHT_RAIN_WIND,
-            WiIcon::WiNightShowers => WI_NIGHT_SHOWERS,
-            WiIcon::WiNightSleet => WI_NIGHT_SLEET,
-            WiIcon::WiNightSleetStorm => WI_NIGHT_SLEET_STORM,
-            WiIcon::WiNightSnow => WI_NIGHT_SNOW,
-            WiIcon::WiNightSnowThunderstorm => WI_NIGHT_SNOW_THUNDERSTORM,
-            WiIcon::WiNightSnowWind => WI_NIGHT_SNOW_WIND,
-            WiIcon::WiNightSprinkle => WI_NIGHT_SPRINKLE,
-            WiIcon::WiNightStormShowers => WI_NIGHT_STORM_SHOWERS,
-            WiIcon::WiNightThunderstorm => WI_NIGHT_THUNDERSTORM,
-            WiIcon::WiRain => WI_RAIN,
-            WiIcon::WiRainMix => WI_RAIN_MIX,
-            WiIcon::WiRainWind => WI_RAIN_WIND,
-            WiIcon::WiRaindrop => WI_RAINDROP,
-            WiIcon::WiRaindrops => WI_RAINDROPS,
-            WiIcon::WiRefresh => WI_REFRESH,
-            WiIcon::WiRefreshAlt => WI_REFRESH_ALT,
-            WiIcon::WiSandstorm => WI_SANDSTORM,
-            WiIcon::WiShowers => WI_SHOWERS,
-            WiIcon::WiSleet => WI_SLEET,
-            WiIcon::WiSmallCraftAdvisory => WI_SMALL_CRAFT_ADVISORY,
-            WiIcon::WiSmog => WI_SMOG,
-            WiIcon::WiSmoke => WI_SMOKE,
-            WiIcon::WiSnow => WI_SNOW,
-            WiIcon::WiSnowWind => WI_SNOW_WIND,
-            WiIcon::WiSnowflakeCold => WI_SNOWFLAKE_COLD,
-            WiIcon::WiSolarEclipse => WI_SOLAR_ECLIPSE,
-            WiIcon::WiSprinkle => WI_SPRINKLE,
-            WiIcon::WiStars => WI_STARS,
-            WiIcon::WiStormShowers => WI_STORM_SHOWERS,
-            WiIcon::WiStormWarning => WI_STORM_WARNING,
-            WiIcon::WiStrongWind => WI_STRONG_WIND,
-            WiIcon::WiSunrise => WI_SUNRISE,
-            WiIcon::WiSunset => WI_SUNSET,
-            WiIcon::WiThermometer => WI_THERMOMETER,
-            WiIcon::WiThermometerExterior => WI_THERMOMETER_EXTERIOR,
-            WiIcon::WiThermometerInternal => WI_THERMOMETER_INTERNAL,
-            WiIcon::WiThunderstorm => WI_THUNDERSTORM,
-            WiIcon::WiTime1 => WI_TIME1,
-            WiIcon::WiTime10 => WI_TIME10,
-            WiIcon::WiTime11 => WI_TIME11,
-            WiIcon::WiTime12 => WI_TIME12,
-            WiIcon::WiTime2 => WI_TIME2,
-            WiIcon::WiTime3 => WI_TIME3,
-            WiIcon::WiTime4 => WI_TIME4,
-            WiIcon::WiTime5 => WI_TIME5,
-            WiIcon::WiTime6 => WI_TIME6,
-            WiIcon::WiTime7 => WI_TIME7,
-            WiIcon::WiTime8 => WI_TIME8,
-            WiIcon::WiTime9 => WI_TIME9,
-            WiIcon::WiTornado => WI_TORNADO,
-            WiIcon::WiTrain => WI_TRAIN,
-            WiIcon::WiTsunami => WI_TSUNAMI,
-            WiIcon::WiUmbrella => WI_UMBRELLA,
-            WiIcon::WiVolcano => WI_VOLCANO,
-            WiIcon::WiWindBeaufort0 => WI_WIND_BEAUFORT0,
-            WiIcon::WiWindBeaufort1 => WI_WIND_BEAUFORT1,
-            WiIcon::WiWindBeaufort10 => WI_WIND_BEAUFORT10,
-            WiIcon::WiWindBeaufort11 => WI_WIND_BEAUFORT11,
-            WiIcon::WiWindBeaufort12 => WI_WIND_BEAUFORT12,
-            WiIcon::WiWindBeaufort2 => WI_WIND_BEAUFORT2,
-            WiIcon::WiWindBeaufort3 => WI_WIND_BEAUFORT3,
-            WiIcon::WiWindBeaufort4 => WI_WIND_BEAUFORT4,
-            WiIcon::WiWindBeaufort5 => WI_WIND_BEAUFORT5,
-            WiIcon::WiWindBeaufort6 => WI_WIND_BEAUFORT6,
-            WiIcon::WiWindBeaufort7 => WI_WIND_BEAUFORT7,
-            WiIcon::WiWindBeaufort8 => WI_WIND_BEAUFORT8,
-            WiIcon::WiWindBeaufort9 => WI_WIND_BEAUFORT9,
-            WiIcon::WiWindDeg => WI_WIND_DEG,
-            WiIcon::WiWindy => WI_WINDY,
-        }
-    }
-}
