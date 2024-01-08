@@ -2,7 +2,8 @@
 //! and an enum to select them.
 
 {% for (name, svg) in name_svg.iter() -%}
-pub static {{ name|shouty_snake_case }}: icondata_core::IconData = icondata_core::IconData {
+#[allow(non_upper_case_globals)]
+pub static {{ name }}: &icondata_core::IconData = &icondata_core::IconData {
     {% let attributes = svg.svg_attributes() -%}
     style: {{ attributes.style|attribute_value }},
     x: {{ attributes.x|attribute_value }},

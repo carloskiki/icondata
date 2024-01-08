@@ -6,7 +6,7 @@
 //!
 //! [`IconData`]: icondata_core::IconData
 //!
-//! ___Warning!!!:___ the use of `lto = true` in your `Cargo.toml` is _very __strongly___
+//! __Warning!!!:__ the use of `lto = true` in your `Cargo.toml` is _very strongly_
 //! encouraged. Otherwise, the size of your binary may become very large from unused icons.
 //!
 //! # Getting Started
