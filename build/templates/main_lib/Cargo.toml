@@ -12,22 +12,13 @@ categories = ["web-programming"]
 rust-version = "1.67.0"
 
 [dependencies]
-icondata_core = { version = "0.0.2", path = "../icondata_core" }
-serde = { workspace = true, optional = true }
+icondata_core = { version = "0.1.0", path = "../icondata_core" }
 
 {% for (short_name, version) in sn_version -%}
 icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{version}}" }
 {% endfor -%}
 
 [features]
-strum = [
-{% for (short_name, _) in sn_version -%}
-"icondata_{{short_name}}/strum",
-{% endfor -%}
-]
 serde = [
-"dep:serde",
-{% for (short_name, _) in sn_version -%}
-"icondata_{{short_name}}/serde",
-{% endfor -%}
+"icondata_core/serde",
 ]

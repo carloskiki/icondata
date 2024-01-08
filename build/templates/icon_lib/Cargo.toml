@@ -13,4 +13,4 @@ rust-version = "1.67.0"
 exclude = ["ICON-LIST.txt"]
 
 [dependencies]
-icondata_core = { path = "../icondata_core", version = "0.0.2" }
+icondata_core = { path = "../icondata_core", version = "0.1.0" }

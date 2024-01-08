@@ -1,6 +1,6 @@
 [package]
 name = "icondata_core"
-version = "0.0.2"
+version = "0.1.0"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"
 description = "Provides a common struct for representing svg icon data"
@@ -9,3 +9,9 @@ repository = "https://github.com/Carlosted/icondata"
 license = "MIT"
 keywords = ["icons"]
 categories = ["web-programming"]
+
+[dependencies]
+serde = { version = "1", optional = true, features = ["derive"] }
+
+[features]
+serde = ["dep:serde"]

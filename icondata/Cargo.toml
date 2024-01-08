@@ -12,8 +12,7 @@ categories = ["web-programming"]
 rust-version = "1.67.0"
 
 [dependencies]
-icondata_core = { version = "0.0.2", path = "../icondata_core" }
-serde = { workspace = true, optional = true }
+icondata_core = { version = "0.1.0", path = "../icondata_core" }
 
 icondata_ai = { path = "../icondata_ai", version = "0.0.9" }
 icondata_bi = { path = "../icondata_bi", version = "0.0.9" }
@@ -34,44 +33,6 @@ icondata_ti = { path = "../icondata_ti", version = "0.0.9" }
 icondata_vs = { path = "../icondata_vs", version = "0.0.9" }
 icondata_wi = { path = "../icondata_wi", version = "0.0.9" }
 [features]
-strum = [
-"icondata_ai/strum",
-"icondata_bi/strum",
-"icondata_bs/strum",
-"icondata_cg/strum",
-"icondata_ch/strum",
-"icondata_fa/strum",
-"icondata_fi/strum",
-"icondata_hi/strum",
-"icondata_im/strum",
-"icondata_io/strum",
-"icondata_lu/strum",
-"icondata_oc/strum",
-"icondata_ri/strum",
-"icondata_si/strum",
-"icondata_tb/strum",
-"icondata_ti/strum",
-"icondata_vs/strum",
-"icondata_wi/strum",
-]
 serde = [
-"dep:serde",
-"icondata_ai/serde",
-"icondata_bi/serde",
-"icondata_bs/serde",
-"icondata_cg/serde",
-"icondata_ch/serde",
-"icondata_fa/serde",
-"icondata_fi/serde",
-"icondata_hi/serde",
-"icondata_im/serde",
-"icondata_io/serde",
-"icondata_lu/serde",
-"icondata_oc/serde",
-"icondata_ri/serde",
-"icondata_si/serde",
-"icondata_tb/serde",
-"icondata_ti/serde",
-"icondata_vs/serde",
-"icondata_wi/serde",
+"icondata_core/serde",
 ]
