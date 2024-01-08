@@ -14,3 +14,5 @@ pub struct IconData {
     pub fill: Option<&'static str>,
     pub data: &'static str,
 }
+
+pub type Icon = &'static IconData;

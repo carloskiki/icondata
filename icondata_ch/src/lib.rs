@@ -1,7 +1,8 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
+//! from the [__Charm__](https://github.com/jaynewey/charm-icons) icon set.
 
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChAnchor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -18,6 +19,7 @@ pub static ChAnchor: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="3.5" r="1.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChApps: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -36,6 +38,7 @@ pub static ChApps: &icondata_core::IconData = &icondata_core::IconData {
 <rect width="4.5" height="4.5" x="9.75" y="1.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChAppsMinus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -54,6 +57,7 @@ pub static ChAppsMinus: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.8 3.75h-5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChAppsPlus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -72,6 +76,7 @@ pub static ChAppsPlus: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.8 3.75h-5m2.5-2.5v5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArchive: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -88,6 +93,7 @@ pub static ChArchive: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m6.75 9.25h2.5m-6.5-2.5v7.5h10.5v-7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -103,6 +109,7 @@ pub static ChArrowDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.25 8.75 4.5 4.5 4.5-4.5m-4.5-6v10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -118,6 +125,7 @@ pub static ChArrowDownLeft: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="m10.75 11.75h-6.5v-6.5m7.5-1-7.5 7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -133,6 +141,7 @@ pub static ChArrowDownRight: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="m5.25 11.75h6.5v-6.5m-7.5-1 7.5 7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -148,6 +157,7 @@ pub static ChArrowLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m7.25 3.75-4.5 4.5 4.5 4.5m6-4.5h-10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -163,6 +173,7 @@ pub static ChArrowRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8.75 3.25 4.5 4.5-4.5 4.5m-6-4.5h10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -178,6 +189,7 @@ pub static ChArrowUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 7.25 4.5-4.5 4.5 4.5m-4.5 6v-10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -193,6 +205,7 @@ pub static ChArrowUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m10.75 4.25h-6.5v6.5m7.5 1-7.5-7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChArrowUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -208,6 +221,7 @@ pub static ChArrowUpRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.25 4.25h6.5v6.5m-7.5 1 7.5-7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChAtSign: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -224,6 +238,7 @@ pub static ChAtSign: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="2.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChAtom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -241,6 +256,7 @@ pub static ChAtom: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 8v0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBell: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -257,6 +273,7 @@ pub static ChBell: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.75 12.25c0 3 4.5 3 4.5 0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBellSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -275,6 +292,7 @@ pub static ChBellSlash: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 1.75 10.5 12.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBin: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -290,6 +308,7 @@ pub static ChBin: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.75 4.25v-2.5h4.5v2.5m-6.5 1v9h8.5v-9m-9.5-.5h10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBinary: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -308,6 +327,7 @@ pub static ChBinary: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m3.25 14.25h3m-3-4.5h1.5v4" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBlock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -324,6 +344,7 @@ pub static ChBlock: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="4.25" x2="12.25" y1="11.75" y2="3.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBluetooth: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -339,6 +360,7 @@ pub static ChBluetooth: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 11.25 8.5-6.25-4.5-3.25v12.5l4.5-3.25-8.5-6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBluetoothConnected: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -355,6 +377,7 @@ pub static ChBluetoothConnected: &icondata_core::IconData = &icondata_core::Icon
 <path d="m1.75 8h1.5m9.5 0h1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBluetoothSearching: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -371,6 +394,7 @@ pub static ChBluetoothSearching: &icondata_core::IconData = &icondata_core::Icon
 <path d="m13.25 6.25s1 .5 1 1.75-1 1.75-1 1.75m-2-1.75v0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBluetoothSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -387,6 +411,7 @@ pub static ChBluetoothSlash: &icondata_core::IconData = &icondata_core::IconData
 <path d="m1.75 3.25 12.5 9" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBook: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -402,6 +427,7 @@ pub static ChBook: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m11.75 11.75v2m1.5.5h-9c-.75 0-1.5-.5-1.5-1.5s.75-1.5 1.5-1.5h9v-9.5h-9c-.75 0-1.5.75-1.5 1.5v9.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBookOpen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -418,6 +444,7 @@ pub static ChBookOpen: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 4.25v8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBookmark: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -433,6 +460,7 @@ pub static ChBookmark: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="3.75 1.75,12.25 1.75,12.25 14.25,8 9.75,3.75 14.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBriefcase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -449,6 +477,7 @@ pub static ChBriefcase: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m1.75 6.25s-.5 3.5 3 3.5h6.5c3.5 0 3-3.5 3-3.5m-8.5-2v-2.5h4.5v2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChBug: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -465,6 +494,7 @@ pub static ChBug: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.25 10.25h-1.5m-1 2.5 1.5 1.5m0-8.5-1.5 1.5m-10 3h1.5m1 2.5-1.5 1.5m0-8.5 1.5 1.5m1.5-1.5s-.75-3 2.25-3 2.25 3 2.25 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCalendar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -481,6 +511,7 @@ pub static ChCalendar: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m11.25 1.75v1.5m-6.5-1.5v1.5m-2.5 4h11.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCamera: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -497,6 +528,7 @@ pub static ChCamera: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8.5" r="2.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCameraVideo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -513,6 +545,7 @@ pub static ChCameraVideo: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 7.25 4.5-2.5v7.5l-4.5-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCameraVideoSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -529,6 +562,7 @@ pub static ChCameraVideoSlash: &icondata_core::IconData = &icondata_core::IconDa
 <line x1="1.75" y1="2.25" x2="10.25" y2="14.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCandy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -545,6 +579,7 @@ pub static ChCandy: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.25 11.25c0 1-.5 2.5-1.5 3-.75 0-1.5-1-2-2-1-.5-2-1.5-2-2 .5-1 2-1.5 3-1.5m4-4c0-1 .5-2.5 1.5-3 .75 0 1.5 1 2 2 1 .5 2 1.5 2 2-.5 1-2 1.5-3 1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCards: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -561,6 +596,7 @@ pub static ChCards: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10 3.75 4.25 2-4.25 7.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCast: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -577,6 +613,7 @@ pub static ChCast: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m1.75 8.25c2.76142 0 5 2.23858 5 5m-5-2.5c1.38071 0 2.5 1.11929 2.5 2.5m-2.5 0v0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCertificate: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -594,6 +631,7 @@ pub static ChCertificate: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="10.5" cy="7.5" r="2.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChartBar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -609,6 +647,7 @@ pub static ChChartBar: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 1.75v12.5h12.5m-9-3v-2.5m4 2.5v-5.5m4 5.5v-8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChartLine: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -624,6 +663,7 @@ pub static ChChartLine: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m4.75 11.25 2.5-4.5 2.5 2.5 3.5-6m-11.5-1.5v12.5h12.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -639,6 +679,7 @@ pub static ChChevronDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 5.75 4.25 4.5 4.25-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -654,6 +695,7 @@ pub static ChChevronLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m10.25 3.75-4.5 4.25l4.5 4.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -669,6 +711,7 @@ pub static ChChevronRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.75 12.25 4.5-4.25-4.5-4.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -684,6 +727,7 @@ pub static ChChevronUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m12.25 10.25-4.25-4.5-4.25 4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronsDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -699,6 +743,7 @@ pub static ChChevronsDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 3.75 4.25 4.5 4.25-4.5m-8.5 5 4.25 4.5 4.25-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronsLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -714,6 +759,7 @@ pub static ChChevronsLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m12.25 3.75-4.5 4.25l4.5 4.25m-5-8.5-4.5 4.25 4.5 4.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronsRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -729,6 +775,7 @@ pub static ChChevronsRight: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="m3.75 12.25 4.5-4.25-4.5-4.25m5 8.5l4.5-4.25-4.5-4.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronsUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -744,6 +791,7 @@ pub static ChChevronsUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m12.25 12.25-4.25-4.5-4.25 4.5m8.5-5l-4.25-4.5-4.25 4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChevronsUpDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -760,6 +808,7 @@ pub static ChChevronsUpDown: &icondata_core::IconData = &icondata_core::IconData
 <path d="m11.25 5.25-3.25-3.5-3.25 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChChip: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -777,6 +826,7 @@ pub static ChChip: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.25 10.25h-1m1-4.5h-1m13.5 4.5h-1m1-4.5h-1m-3.5 8v1m-4.5-1v1m4.5-13.5v1m-4.5-1v1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCircle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -792,6 +842,7 @@ pub static ChCircle: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<circle cx="8" cy="8" r="6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCircleCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -808,6 +859,7 @@ pub static ChCircleCross: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCircleMinus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -824,6 +876,7 @@ pub static ChCircleMinus: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="4.75" y1="8" x2="11.25" y2="8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCircleTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -840,6 +893,7 @@ pub static ChCircleTick: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="5.75 7.75,8.25 10.25,14.25 3.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCircleWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -856,6 +910,7 @@ pub static ChCircleWarning: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m8 10.75v0m0-6v3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChClipboard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -872,6 +927,7 @@ pub static ChClipboard: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 2.75h-2.5v11.5h10.5v-11.5h-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChClipboardTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -888,6 +944,7 @@ pub static ChClipboardTick: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m9.75 12.8 1.5 1.5 3-2.5m-9-9h-2.5v11.5h4.5m6-5v-6.5h-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChClock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -904,6 +961,7 @@ pub static ChClock: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.25 4.75v3.5l-2.5 2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChClockAlarm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -920,6 +978,7 @@ pub static ChClockAlarm: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="9" r="5.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCloud: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -935,6 +994,7 @@ pub static ChCloud: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m7 3.75c-1.79493 0-3.25 1.45507-3.25 3.25.00152.254757.032983.508452.09375.755859h-.00195c-1.17822.08305-2.09165 1.063-2.0918 2.24414 0 1.24264 1.00736 2.25 2.25 2.25h7.5c1.51878 0 2.75-1.23122 2.75-2.75s-1.2312-2.75-2.75-2.75c-.4352-.00022-.8643.10286-1.252.30078.0008-.01692.0015-.03385.0020-.05078 0-1.79493-1.45507-3.25-3.25-3.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChClover: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -950,6 +1010,7 @@ pub static ChClover: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m4.75 2.75c-.50 1.5 1.25 3.25 3.25 5.25 2-2 3.75-3.75 3.25-5.25s-2.5-1-3.25.50c-.75-1.5-2.75-2-3.25-.50zm3.25 5.25c2 2 3.75 3.75 5.25 3.25s1-2.5-.5-3.25c1.5-.75 2-2.75.5-3.25s-3.25 1.25-5.25 3.25zm0 0c-2 2-3.75 3.75-3.25 5.25s2.5 1 3.25-.5c.75 1.5 2.75 2 3.25.5s-1.25-3.25-3.25-5.25zm0 0c-2-2-3.75-3.75-5.25-3.25s-1 2.5.5 3.25c-1.5.75-2 2.75-.5 3.25s3.25-1.25 5.25-3.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCode: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -965,6 +1026,7 @@ pub static ChCode: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.25 11.25-3.5-3.25 3.5-3.25m5.5 6.5 3.5-3.25-3.5-3.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCoffee: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -981,6 +1043,7 @@ pub static ChCoffee: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.75 1.75v1.5m-3-1.5v1.5m-3-1.5v1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCog: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -997,6 +1060,7 @@ pub static ChCog: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m6.75 1.75-.5 1.5-1.5 1-2-.5-1 2 1.5 1.5v1.5l-1.5 1.5 1 2 2-.5 1.5 1 .5 1.5h2.5l.5-1.5 1.5-1 2 .5 1-2-1.5-1.5v-1.5l1.5-1.5-1-2-2 .5-1.5-1-.5-1.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCompass: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1013,6 +1077,7 @@ pub static ChCompass: &icondata_core::IconData = &icondata_core::IconData {
 <polygon points="6.75 6.75,5.75 10.75,9.25 9.25,10.25 5.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChConicalFlask: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1028,6 +1093,7 @@ pub static ChConicalFlask: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m4.75 1.75h6.5m-6.5 8h6.5m-5.5-7.5v4.5l-4 7.5h12.5l-4-7.5v-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChContainer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1044,6 +1110,7 @@ pub static ChContainer: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.8 6.25v5.5m-3.5-3.5v6m-5.5-8 5.5 2 7-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCopy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1059,6 +1126,7 @@ pub static ChCopy: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m11.25 4.25v-2.5h-9.5v9.5h2.5m.5-6.5v9.5h9.5v-9.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCopyleft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1075,6 +1143,7 @@ pub static ChCopyleft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m6 6.75s.75-1 2-1 2.25 1 2.25 2.25-1 2.25-2.25 2.25-2-1-2-1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCopyright: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1091,6 +1160,7 @@ pub static ChCopyright: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10 6.75s-.75-1-2-1-2.25 1-2.25 2.25 1 2.25 2.25 2.25 2-1 2-1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCreditCard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1107,6 +1177,7 @@ pub static ChCreditCard: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 10.25h1.5m-9-3h11.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCrop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1123,6 +1194,7 @@ pub static ChCrop: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m11.8 14.2v-2.5m0-2.5v-5h-5m-2.5 0h-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1138,6 +1210,7 @@ pub static ChCross: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m11.25 4.75-6.5 6.5m0-6.5 6.5 6.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCrosshair: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1154,6 +1227,7 @@ pub static ChCrosshair: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCube: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1170,6 +1244,7 @@ pub static ChCube: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 14v-6m5.75-3-5.75 3m-6-3 6 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChCursor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1186,6 +1261,7 @@ pub static ChCursor: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="9.25" y1="9.25" x2="13.25" y2="13.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDatabase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1202,6 +1278,7 @@ pub static ChDatabase: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 8.25s1.5 2 5.25 2 5.25-2 5.25-2m-10.5-4s1.5 2 5.25 2 5.25-2 5.25-2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDiamond: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1217,6 +1294,7 @@ pub static ChDiamond: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="1.25 8,8 14.75,14.75 8,8 1.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDiff: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1232,6 +1310,7 @@ pub static ChDiff: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 13.75h8m0-7.5h-8m4-4v8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDisc: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1248,6 +1327,7 @@ pub static ChDisc: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="1.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDownload: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1263,6 +1343,7 @@ pub static ChDownload: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.25 13.25h9m-8.5-6.5 4 3.5 4-3.5m-4-5v8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChDroplet: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1278,6 +1359,7 @@ pub static ChDroplet: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m2.75 9c0 2.9 2.35 5.25 5.25 5.25s5.25-2.35 5.25-5.25c0-3.25-5.25-7.25-5.25-7.25s-5.25 4-5.25 7.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChEraser: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1294,6 +1376,7 @@ pub static ChEraser: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="5.25" y1="6.75" x2="10.25" y2="11.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChEye: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1310,6 +1393,7 @@ pub static ChEye: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="1.25" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChEyeSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1327,6 +1411,7 @@ pub static ChEyeSlash: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m3.75 1.75 8.5 12.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFaceFrown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1343,6 +1428,7 @@ pub static ChFaceFrown: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 6.25v-.5m-3.5.5v-.5m-.5 5s.5-1 2.25-1 2.25 1 2.25 1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFaceNeutral: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1359,6 +1445,7 @@ pub static ChFaceNeutral: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 6.25v-.5m-3.5.5v-.5m-.5 4.5h4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFaceSmile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1375,6 +1462,7 @@ pub static ChFaceSmile: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 6.25v-.5m-3.5.5v-.5m-.5 4s.5 1.5 2.25 1.5 2.25-1.5 2.25-1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1391,6 +1479,7 @@ pub static ChFile: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="7.75 2.25,7.75 7.25,12.75 7.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFileBinary: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1409,6 +1498,7 @@ pub static ChFileBinary: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="7.75 2.25 7.75 7.25 12.8 7.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFileCode: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1426,6 +1516,7 @@ pub static ChFileCode: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m6.75 10.8 2 1.75-2 1.75m-3-3.5-2 1.75 2 1.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFileSymlink: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1443,6 +1534,7 @@ pub static ChFileSymlink: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 14.25 3.5-3.5m0 3v-3h-3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFiles: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1460,6 +1552,7 @@ pub static ChFiles: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="10.25 11.75,10.25 14.25,2.75 14.25,2.75 4.75,5.25 4.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFilter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1475,6 +1568,7 @@ pub static ChFilter: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="1.75 1.75,14.25 1.75,14.25 3.25,9.25 8.75,9.25 12.75,6.75 14.25,6.75 8.75,1.75 3.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFlag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1490,6 +1584,7 @@ pub static ChFlag: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 14.25v-11s2-1.5 4-1.5 2.5 1.5 4.5 1.5 4-1.5 4-1.5v7s-2 1.5-4 1.5-2.5-1.5-4.5-1.5-4 1.5-4 1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFlame: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1505,6 +1600,7 @@ pub static ChFlame: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8.25 7.75c2 2 2.5-2.5 3.5-2s1.5 2 1.5 3.25c0 3.25-2.35 5.25-5.25 5.25s-5.25-2.5-5.25-6 3.5-7 5.5-7c0 0-2 4.5 0 6.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFloppyDisk: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1521,6 +1617,7 @@ pub static ChFloppyDisk: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="5.75 13.25,5.75 9.75,10.25 9.75,10.25 13.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFolder: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1536,6 +1633,7 @@ pub static ChFolder: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="1.75 2.75,1.75 13.25,14.25 13.25,14.25 4.75,8.25 4.75,6.75 2.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFolderSymlink: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1552,6 +1650,7 @@ pub static ChFolderSymlink: &icondata_core::IconData = &icondata_core::IconData 
 <polyline points="8.25 13.25,14.25 13.25,14.25 4.75,8.25 4.75,6.75 2.75,1.75 2.75,1.75 6.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChFolders: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1568,6 +1667,7 @@ pub static ChFolders: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="4.75 5.25,1.75 5.25,1.75 13.25,11.25 13.25,11.25 10.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChForward: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1583,6 +1683,7 @@ pub static ChForward: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 13.25c.5-6 5.5-7.5 8-7v-3.5l4.5 5.25-4.5 5.25v-3.5c-2.5-0.5-6.5 0.5-8 3.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGamepad: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1598,6 +1699,7 @@ pub static ChGamepad: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.25 3.75c-2 5-2 9 0 9.5s2.5-2 2.5-2h4.5s.5 2.5 2.5 2 2-4.5 0-9.5h-2l-1 1h-3.5l-1-1z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGem: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1613,6 +1715,7 @@ pub static ChGem: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="4.75 2.75,11.25 2.75,14.25 6.25,8 13.25,1.75 6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGift: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1629,6 +1732,7 @@ pub static ChGift: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.25 4.75h-2.25c0-2 .5-3 2.25-3 2 0 2 3 0 3zm-4.5 0h2.25c0-2-.5-3-2.25-3-2 0-2 3 0 3zm2.25 9v-8.75m-5.25 3.75v5.5h10.5v-5.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitBranch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1647,6 +1751,7 @@ pub static ChGitBranch: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 8.25c3 0 6 .5 6-2.5m-6.5 4.5v-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitCherryPick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1664,6 +1769,7 @@ pub static ChGitCherryPick: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m11.75 8h1.5m-4.5-3.25h1.5l1 3.25-1 3.25h-1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitCommit: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1680,6 +1786,7 @@ pub static ChGitCommit: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 10.75v3.5m0-12.5v3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitCompare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1697,6 +1804,7 @@ pub static ChGitCompare: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m3.75 5.75v5c0 1 .5 1.5 1.5 1.5h2m-.5 2 1.5-2-1.5-2m5.5 0v-5c0-1-.5-1.5-1.5-1.5h-2m.5-2-1.5 2 1.5 2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitFork: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1715,6 +1823,7 @@ pub static ChGitFork: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 8.75v1.5m-3.25-4.5c0 3.5 6.5 3.5 6.5 0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitMerge: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1733,6 +1842,7 @@ pub static ChGitMerge: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 10.25v-4.5c1 2 2 3 5.5 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitRequest: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1751,6 +1861,7 @@ pub static ChGitRequest: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.25 1.75-1.5 2 1.5 2m3 4.5v-5c0-1-.5-1.5-1.5-1.5h-2m-5 2v4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitRequestCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1770,6 +1881,7 @@ pub static ChGitRequestCross: &icondata_core::IconData = &icondata_core::IconDat
 <path d="m14.25 1.75-3.5 3.5m0-3.5 3.5 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitRequestDraft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1788,6 +1900,7 @@ pub static ChGitRequestDraft: &icondata_core::IconData = &icondata_core::IconDat
 <path d="m7.75 2.75h.5m2.5 0h.5m1.5 2.5v-.5m0 3v.5m-9-2.5v4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGithub: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1804,6 +1917,7 @@ pub static ChGithub: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 13.75c-1.5.5-3-.5-3.5-1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGitlab: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1819,6 +1933,7 @@ pub static ChGitlab: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8 14.25-6.25-4.5 2-8 2 5.5h4.5l2-5.5 2 8z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGlasses: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1836,6 +1951,7 @@ pub static ChGlasses: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.25 10.75c-1.5-6-2-6.5-3.5-7m-9 7c1.5-6 2-6.5 3.5-7m1 7c1-1 2.5-1 3.5 0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGlobe: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1854,6 +1970,7 @@ pub static ChGlobe: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.75 14.2c-2.75-3.2-2.75-9.2 0-12.4" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGrabHorizontal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1874,6 +1991,7 @@ pub static ChGrabHorizontal: &icondata_core::IconData = &icondata_core::IconData
 <circle cy="10.5" cx="13.5" r=".75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGrabVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1894,6 +2012,7 @@ pub static ChGrabVertical: &icondata_core::IconData = &icondata_core::IconData {
 <circle cy="13.5" cx="10.4957" r=".75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChGraduateCap: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1909,6 +2028,7 @@ pub static ChGraduateCap: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m14.25 9.25v-3.25l-6.25-3.25-6.25 3.25 6.25 3.25 3.25-1.5v3.5c0 1-1.5 2-3.25 2s-3.25-1-3.25-2v-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1924,6 +2044,7 @@ pub static ChHash: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m2.75 10.25h9.5m-8.5-4.5h9.5m-2.5-4-1.5 12.5m-2.5-12.5-1.5 12.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHeadphones: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1939,6 +2060,7 @@ pub static ChHeadphones: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 11.75c0-2.5 3.5-2 3.5-2v4.5s-3.5.5-3.5-2.5v-3.5c0-3 .5-6.5 6.25-6.5s6.25 3.5 6.25 6.5v3.5c0 3-3.5 2.5-3.5 2.5v-4.5s3.5-.5 3.5 2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHeart: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1954,6 +2076,7 @@ pub static ChHeart: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.25 9.75c3 3.5 4.75 4.5 4.75 4.5s1.75-1 4.75-4.5 1-7-1.5-7-3.25 3-3.25 3-.75-3-3.25-3-4.5 3.5-1.5 7z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHelp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1970,6 +2093,7 @@ pub static ChHelp: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.75 6.75c0-1 1-2 2.25-2s2.25 1.0335 2.25 2c0 1.5-1.5 1.5-2.25 2m0 2.5v0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHexagon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1985,6 +2109,7 @@ pub static ChHexagon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="1.75 4.75,8 1.25,14.25 4.75,14.25 11.25,8 14.75,1.75 11.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHome: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2000,6 +2125,7 @@ pub static ChHome: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 5.75v7.5h8.5v-7.5m-10.5 1.5 6.25-5.5l6.25 5.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChHourglass: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2015,6 +2141,7 @@ pub static ChHourglass: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m11.75 13.75c0-5-2-4-2-5.75s2-0.75 2-5.75m-7.5 11.5c0-5 2-4 2-5.75s-2-.75-2-5.75m-1.5-.5h10.5m-10.5 12.5h10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChId: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2032,6 +2159,7 @@ pub static ChId: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 12.75c0-1 .75-3 3.25-3s3.25 2 3.25 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChImage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2049,6 +2177,7 @@ pub static ChImage: &icondata_core::IconData = &icondata_core::IconData {
 <circle fill="currentColor" cx="5.25" cy="6.25" r=".5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChInbox: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2065,6 +2194,7 @@ pub static ChInbox: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.25 8.75h3l1 1.5h3.5l1-1.5h3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChInfinity: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2080,6 +2210,7 @@ pub static ChInfinity: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5 5c2.5 1 3.5 5 6 6s3.25-1.25 3.25-3-.75-4-3.25-3-3.5 5-6 6-3.25-1.25-3.25-3 .75-4 3.25-3z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChInfo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2096,6 +2227,7 @@ pub static ChInfo: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 5.25v0m0 6v-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChKey: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2112,6 +2244,7 @@ pub static ChKey: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="10.75" cy="5.25" r="0.5" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLaptop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2128,6 +2261,7 @@ pub static ChLaptop: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 10.25-1 3h12.5l-1-3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutColumns: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2144,6 +2278,7 @@ pub static ChLayoutColumns: &icondata_core::IconData = &icondata_core::IconData 
 <line x1="8" y1="3.25" x2="8" y2="12.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutDashboard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2160,6 +2295,7 @@ pub static ChLayoutDashboard: &icondata_core::IconData = &icondata_core::IconDat
 <path d="m8.25 6.75h5.5m-11.5 2.5h5.5m.25-6v9.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutGrid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2176,6 +2312,7 @@ pub static ChLayoutGrid: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2 8h12m-3.75-4.75v9.5m-4.5-9.5v9.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2192,6 +2329,7 @@ pub static ChLayoutList: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 3.25v9.5m-3-6.5h11.5m-11.5 3.5h11.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutRows: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2208,6 +2346,7 @@ pub static ChLayoutRows: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="2" y1="8" x2="14" y2="8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutSidebar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2224,6 +2363,7 @@ pub static ChLayoutSidebar: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m6.25 3v9.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutStackH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2241,6 +2381,7 @@ pub static ChLayoutStackH: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="8" y1="8" x2="8" y2="12.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLayoutStackV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2258,6 +2399,7 @@ pub static ChLayoutStackV: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="8" y1="8" x2="14" y2="8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLightbulb: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2273,6 +2415,7 @@ pub static ChLightbulb: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m6.75 14.25h2.5m-1.25-12.5c-2.75 0-4.25 2-4.25 4s2 2.5 2 4.5v1h4.5v-1c0-2 2-2.5 2-4.5s-1.5-4-4.25-4z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLightningBolt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2288,6 +2431,7 @@ pub static ChLightningBolt: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<polygon points="9.25 1.75,2.75 9.25,7.25 9.75,6.75 14.25,13.25 6.75,8.75 6.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLink: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2303,6 +2447,7 @@ pub static ChLink: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m9.75 4.75c3 0 4.5 1.5 4.5 3.25s-1.5 3.25-4.5 3.25m-4-3.25h4.5m-4-3.25c-3 0-4.5 1.5-4.5 3.25s1.5 3.25 4.5 3.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLinkExternal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2319,6 +2464,7 @@ pub static ChLinkExternal: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChLinkSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2334,6 +2480,7 @@ pub static ChLinkSlash: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m10.75 1.75-5.5 12.5m4.5-9.5c3 0 4.5 1.5 4.5 3.25s-1.5 3.25-4.5 3.25m-3.5-6.5c-3 0-4.5 1.5-4.5 3.25s1.5 3.25 4.5 3.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMail: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2350,6 +2497,7 @@ pub static ChMail: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.25 4.25 5.75 5 5.75-5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMap: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2365,6 +2513,7 @@ pub static ChMap: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m10.25 5.25v8.5m-4.5-10.5v8.5m-4 2.5v-9.5l4-2 4.5 2 4-2v9.5l-4 2-4.5-2z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMapPin: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2381,6 +2530,7 @@ pub static ChMapPin: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="7" r="1.25" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaBack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2397,6 +2547,7 @@ pub static ChMediaBack: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="1.75" y1="3.75" x2="1.75" y2="12.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaEject: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2413,6 +2564,7 @@ pub static ChMediaEject: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="13.25" y1="14.25" x2="2.75" y2="14.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaFastForward: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2429,6 +2581,7 @@ pub static ChMediaFastForward: &icondata_core::IconData = &icondata_core::IconDa
 <polygon points="1.75 3.75,1.75 12.25,7.75 8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaPause: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2445,6 +2598,7 @@ pub static ChMediaPause: &icondata_core::IconData = &icondata_core::IconData {
 <rect height="10.5" width="3.5" y="2.75" x="9.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaPlay: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2460,6 +2614,7 @@ pub static ChMediaPlay: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="2.75 2.75,2.75 13.25,12.25 8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaRewind: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2476,6 +2631,7 @@ pub static ChMediaRewind: &icondata_core::IconData = &icondata_core::IconData {
 <polygon points="14.25 3.75,14.25 12.25,8.25 8" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMediaSkip: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2492,6 +2648,7 @@ pub static ChMediaSkip: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="14.25" y1="3.75" x2="14.25" y2="12.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMenuHamburger: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2507,6 +2664,7 @@ pub static ChMenuHamburger: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMenuKebab: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2524,6 +2682,7 @@ pub static ChMenuKebab: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="13.5" r=".75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMenuMeatball: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2541,6 +2700,7 @@ pub static ChMenuMeatball: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="13.5" cy="8" r=".75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMessage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2556,6 +2716,7 @@ pub static ChMessage: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="1.75 14.25,1.75 2.75,14.25 2.75,14.25 11.25,5.75 11.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMessages: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2572,6 +2733,7 @@ pub static ChMessages: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 7.25-3 3v-8.5h10v3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMicrophone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2588,6 +2750,7 @@ pub static ChMicrophone: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 13v1.25m-5.25-6.5s0 4.5 5.25 4.50785c5.25.0079 5.25-4.5078 5.25-4.5078" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMinus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2603,6 +2766,7 @@ pub static ChMinus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m13.25 7.75h-10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMobile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2619,6 +2783,7 @@ pub static ChMobile: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.25 11.75h-.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMonitor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2635,6 +2800,7 @@ pub static ChMonitor: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 14.25h6.5m-3.25-2.5v2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMonitorArrow: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2652,6 +2818,7 @@ pub static ChMonitorArrow: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 6.25 4.5-4.5m-3.5-0.5h4v4" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMonitorCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2669,6 +2836,7 @@ pub static ChMonitorCross: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.2 1.75-3.5 3.5m0-3.5 3.5 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMoon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2684,6 +2852,7 @@ pub static ChMoon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 8c0 3.45 2.8 6.25 6.25 6.25 3.41-.0027 6.25-3 6.25-6-1 .5-4 1.5-6-.5s-1-5-.5-6c-3 0-6 2.84-6 6.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2699,6 +2868,7 @@ pub static ChMove: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m12.25 10.25 2-2.25-2-2.25m-2-2-2.25-2-2.25 2m-2 2-2 2.25 2 2.25m2 2 2.25 2 2.25-2m-2.25-10.5v12m5.75-5.75h-12" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChMusic: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2716,6 +2886,7 @@ pub static ChMusic: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="6.25 12,6.25 2.75,14.25 1.75,14.25 11" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNewspaper: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2733,6 +2904,7 @@ pub static ChNewspaper: &icondata_core::IconData = &icondata_core::IconData {
 <rect x="4.75" y="4.75" width="3.5" height="3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNorthStar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2751,6 +2923,7 @@ pub static ChNorthStar: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m11.25 11.25-7-7" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNotes: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2767,6 +2940,7 @@ pub static ChNotes: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.75 7.75h4.5m-4.5 3h2.5m-2.5-6h4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNotesCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2783,6 +2957,7 @@ pub static ChNotesCross: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.25 10.75-3.5 3.5m-5-6.5h4.5m-4.5 3h1.5m-1.5-6h4.5m.5 6 3.5 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNotesTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2799,6 +2974,7 @@ pub static ChNotesTick: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 12.75 1.5 1.5 3-2.5m-8.5-4h4.5m-4.5 3h1.5m-1.5-6h4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChNut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2815,6 +2991,7 @@ pub static ChNut: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="8" r="2.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChOctagon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2830,6 +3007,7 @@ pub static ChOctagon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="5.25 1.75,10.75 1.75,14.25 5.25,14.25 10.75,10.75 14.25,5.25 14.25,1.75 10.75,1.75 5.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChOctagonWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2846,6 +3024,7 @@ pub static ChOctagonWarning: &icondata_core::IconData = &icondata_core::IconData
 <path d="m8 11.25v0m0-6.5v3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChOrganisation: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2864,6 +3043,7 @@ pub static ChOrganisation: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.5 5.75v2m-3.75 2.5v-2h7.5v2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPackage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2880,6 +3060,7 @@ pub static ChPackage: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 1.75v3.5m-5.75.5h11.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPadlock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2896,6 +3077,7 @@ pub static ChPadlock: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 6.25s-1-4.5 3.25-4.5 3.25 4.5 3.25 4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPaperPlane: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2912,6 +3094,7 @@ pub static ChPaperPlane: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="3.75" y1="7.75" x2="7.25" y2="7.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPaperclip: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2927,6 +3110,7 @@ pub static ChPaperclip: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8.25 10.25v-7s0-1.5-1.75-1.5-1.75 1.5-1.75 1.5v8s0 3 3.25 3 3.25-3 3.25-3v-4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPencil: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2943,6 +3127,7 @@ pub static ChPencil: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="8.75" y1="4.75" x2="11.25" y2="7.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPeople: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2960,6 +3145,7 @@ pub static ChPeople: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.75 9.25c0-1 .75-3 3.25-3s3.25 2 3.25 3m-12.5 5c0-1 .75-3 3.25-3s3.25 2 3.25 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPerson: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2976,6 +3162,7 @@ pub static ChPerson: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 14.25c0-2.5 2-5 5.25-5s5.25 2.5 5.25 5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2991,6 +3178,7 @@ pub static ChPhone: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 1.75c0 8.5 4 12.5 12.5 12.5v-4l-3.5-1-1 1.5c-2 0-4.5-2.5-4.5-4.5l1.5-1-1-3.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhoneCall: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3007,6 +3195,7 @@ pub static ChPhoneCall: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 1.75c2.5 0 4.5 2 4.5 4.5m-4.5-2c1 0 2 1 2 2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhoneCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3023,6 +3212,7 @@ pub static ChPhoneCross: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m13.25 2.75-3.5 3.5m0-3.5 3.5 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhoneForward: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3039,6 +3229,7 @@ pub static ChPhoneForward: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 4.75h4.5m-2 2 2-2-2-2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhoneIncoming: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3055,6 +3246,7 @@ pub static ChPhoneIncoming: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m13.25 2.75-3.5 3.5m0-3v3h3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPhoneOutgoing: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3071,6 +3263,7 @@ pub static ChPhoneOutgoing: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m9.75 6.25 3.5-3.5m0 3v-3h-3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPin: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3086,6 +3279,7 @@ pub static ChPin: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m10.25 10.25 4 4m-12.5-7.5 5-5s1 2 2 3 4.5 2 4.5 2l-6.5 6.5s-1-3.5-2-4.5-3-2-3-2z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPlantPot: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3102,6 +3296,7 @@ pub static ChPlantPot: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 9.75h6.5s.5 4.5-3.25 4.5-3.25-4.5-3.25-4.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPlus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3117,6 +3312,7 @@ pub static ChPlus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m12.75 7.75h-10m5-5v10" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPower: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3132,6 +3328,7 @@ pub static ChPower: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8 1.75v6.5m4.25-5s2 1.29822 2 4.75-2.79822 6.25-6.25 6.25-6.25-2.79822-6.25-6.25 2-4.75 2-4.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPrinter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3148,6 +3345,7 @@ pub static ChPrinter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 4.25v-2.5h6.5v2.5m-7 8h-2.5v-7.5h12.5v7.5h-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChPulse: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3163,6 +3361,7 @@ pub static ChPulse: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polyline points="1.75 8.25, 4.25 8.25, 6.25 3.75, 9.75 12.25, 11.75 8.25, 14.25 8.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChQuote: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3179,6 +3378,7 @@ pub static ChQuote: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m13.25 3.75h-4.5v5.5c0 3.5 2.5 4.5 4.5 4-1.5-1.5-1.5-2.5-1.5-4h1.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChRefresh: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3194,6 +3394,7 @@ pub static ChRefresh: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m4.75 10.75h-3m12.5-2c0 3-2.79822 5.5-6.25 5.5-3.75 0-6.25-3.5-6.25-3.5v3.5m9.5-9h3m-12.5 2c0-3 2.79822-5.5 6.25-5.5 3.75 0 6.25 3.5 6.25 3.5v-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChReply: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3209,6 +3410,7 @@ pub static ChReply: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m14.25 13.25c-.5-6-5.5-7.5-8-7v-3.5l-4.5 5.25 4.5 5.25v-3.5c2.50001-0.5 6.5 0.5 8 3.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChRobot: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3225,6 +3427,7 @@ pub static ChRobot: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.75 8.75v1.5m-5.5-1.5v1.5m-.5-7.5 3.25 3 3.25-3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChRocket: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3242,6 +3445,7 @@ pub static ChRocket: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="10.25" cy="5.75" r=".5" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChRotateAntiClockwise: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3257,6 +3461,7 @@ pub static ChRotateAntiClockwise: &icondata_core::IconData = &icondata_core::Ico
     data: r###"<path d="m4.75 5.25h-3m0 3.5c0 2.5 2.79822 5.5 6.25 5.5s6.25-2.79822 6.25-6.25-2.79822-6.25-6.25-6.25c-3.75 0-6.25 3.5-6.25 3.5v-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChRotateClockwise: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3272,6 +3477,7 @@ pub static ChRotateClockwise: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="m11.25 5.25h3m0 3.5c0 2.5-2.79822 5.5-6.25 5.5s-6.25-2.7982-6.25-6.25c0-3.45178 2.79822-6.25 6.25-6.25 3.75 0 6.25 3.5 6.25 3.5v-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChScales: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3288,6 +3494,7 @@ pub static ChScales: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m12.75 4.75-2 5c.5 1 3.5 1 4 0zm-9.5 0-2 5c.5 1 3.5 1 4 0z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChScreenMaximise: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3303,6 +3510,7 @@ pub static ChScreenMaximise: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="m5.25 14.25h-3.5v-3.5m12.5 0v3.5h-3.5m0-12.5h3.5v3.5m-12.5 0v-3.5h3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChScreenMinimise: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3318,6 +3526,7 @@ pub static ChScreenMinimise: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="m1.75 10.75h3.5v3.5m5.5 0v-3.5h3.5m0-5.5h-3.5v-3.5m-5.5 0v3.5h-3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSearch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3334,6 +3543,7 @@ pub static ChSearch: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="7.5" cy="7.5" r="4.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChServer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3351,6 +3561,7 @@ pub static ChServer: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.75 10.75v0m0-5v0m6.5 0h-3m3 5h-3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3369,6 +3580,7 @@ pub static ChShare: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m6 9 4 2m-4-4 4-2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShield: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3384,6 +3596,7 @@ pub static ChShield: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8 1.75 5.25 2v5c0 2.25-2 4.5-5.25 5.5-3.25-1-5.25-3-5.25-5.5v-5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShieldCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3400,6 +3613,7 @@ pub static ChShieldCross: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 5.75-3.5 3.5m0-3.5 3.5 3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShieldKeyhole: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3417,6 +3631,7 @@ pub static ChShieldKeyhole: &icondata_core::IconData = &icondata_core::IconData 
 <circle cx="8" cy="6.5" r=".75" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShieldTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3433,6 +3648,7 @@ pub static ChShieldTick: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="5.75 7.75,7.25 9.25,10.25 5.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShieldWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3449,6 +3665,7 @@ pub static ChShieldWarning: &icondata_core::IconData = &icondata_core::IconData 
 <path d="m8 10.75v0m0-5.5v3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChShoppingBag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3465,6 +3682,7 @@ pub static ChShoppingBag: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.75 7.75c0 1.5 1 2.5 2.25 2.5s2.25-1 2.25-2.5m-7.5-3 1.5-3h7.5l1.5 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSignIn: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3480,6 +3698,7 @@ pub static ChSignIn: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.25 2.25h-3.5v12h3.5m4-9.5-3.5 3.5 3.5 3.5m5-3.5h-8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSignOut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3495,6 +3714,7 @@ pub static ChSignOut: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m5.25 2.25h-3.5v12h3.5m5.5-9.5 3.5 3.5-3.5 3.5m-5-3.5h8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSignpost: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3511,6 +3731,7 @@ pub static ChSignpost: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.25 9.75v4.5m0-12.5v2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSkull: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3528,6 +3749,7 @@ pub static ChSkull: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="10.75" cy="7.75" r=".5" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSnowflake: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3548,6 +3770,7 @@ pub static ChSnowflake: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m12.75 10.25-2.5-2.5 2.5-2.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSoundDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3564,6 +3787,7 @@ pub static ChSoundDown: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.75 6.25s1 .5 1 1.75-1 1.75-1 1.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSoundMute: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3580,6 +3804,7 @@ pub static ChSoundMute: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m14.25 5.75-3.5 4.5m0-4.5 3.5 4.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSoundUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3596,6 +3821,7 @@ pub static ChSoundUp: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.75 6.25s1 .5 1 1.75-1 1.75-1 1.75m1-6.5c2 1 3 2.5 3 4.75s-1 3.75-3 4.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSpeaker: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3613,6 +3839,7 @@ pub static ChSpeaker: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="8" cy="9.5" r="2.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSquare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3628,6 +3855,7 @@ pub static ChSquare: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<rect height="10.5" width="10.5" y="2.75" x="2.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSquareCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3644,6 +3872,7 @@ pub static ChSquareCross: &icondata_core::IconData = &icondata_core::IconData {
 <rect height="10.5" width="10.5" y="2.75" x="2.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSquareTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3660,6 +3889,7 @@ pub static ChSquareTick: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="5.75 7.75,8.25 10.25,14.25 3.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChStack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3675,6 +3905,7 @@ pub static ChStack: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 11 6.25 3.25 6.25-3.25m-12.5-3 6.25 3.25 6.25-3.25m-6.25-6.25-6.25 3.25 6.25 3.25 6.25-3.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChStackPop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3691,6 +3922,7 @@ pub static ChStackPop: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 8.25v-6.5m-2.25 2 2.25-2 2.25 2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChStackPush: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3707,6 +3939,7 @@ pub static ChStackPush: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 8.25v-6.5m-2.25 4.5 2.25 2 2.25-2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChStar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3722,6 +3955,7 @@ pub static ChStar: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="8 1.75,5.75 5.75,1.75 6.25,4.75 9.75,3.75 14.25,8.00 12.25,12.25 14.25,11.25 9.75,14.25 6.25,10.25 5.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChStickyNote: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3738,6 +3972,7 @@ pub static ChStickyNote: &icondata_core::IconData = &icondata_core::IconData {
 <polyline points="8.75 13.25,8.75 8.75,13.25 8.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSun: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3754,6 +3989,7 @@ pub static ChSun: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m2.75 13.25.5-.5m9.5 0 .5.5m-.5-10 .5-.5m-10 .5-.5-.5m-.50 5.25h-1m13.5 0h-1m-5.75 5.75v1m0-13.5v1" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSwapHorizontal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3769,6 +4005,7 @@ pub static ChSwapHorizontal: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="m5.75 8.25-3 3 3 3m7.5-3h-10.5m7.5-9.5l3 3-3 3m-7.5-3h10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSwapVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3784,6 +4021,7 @@ pub static ChSwapVertical: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m7.75 5.75-3-3-3 3m3 7.5v-10.5m9.5 7.5-3 3-3-3m3-7.5v10.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSword: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3799,6 +4037,7 @@ pub static ChSword: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m2.75 9.25 1.5 2.5 2 1.5m-4.5 0 1 1m1.5-2.5-1.5 1.5m3-1 8.5-8.5v-2h-2l-8.5 8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChSwords: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3815,6 +4054,7 @@ pub static ChSwords: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m10.25 12.25-2.25-2.25m2-2 2.25 2.25m1-1-1.5 2.5-2 1.5m4.5 0-1 1m-1.5-2.5 1.5 1.5m-7.25-5.25-4.25-4.25v-2h2l4.25 4.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTablet: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3831,6 +4071,7 @@ pub static ChTablet: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.25 11.75h-.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3847,6 +4088,7 @@ pub static ChTag: &icondata_core::IconData = &icondata_core::IconData {
 <circle cx="11" cy="5" r=".5" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTelescope: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3863,6 +4105,7 @@ pub static ChTelescope: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.75 11.2v3m-3-0.5 2.25-2.5 1.75-0.5 2.5 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTent: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3879,6 +4122,7 @@ pub static ChTent: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.75 1.75-8 12.5h12.5l-8-12.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTerminal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3895,6 +4139,7 @@ pub static ChTerminal: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.75 10.25h2.5m-6.5-4.5 2.5 2.25-2.5 2.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChThumbDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3911,6 +4156,7 @@ pub static ChThumbDown: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 10.25h-3.5v-7.5h3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChThumbUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3927,6 +4173,7 @@ pub static ChThumbUp: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5.25 5.75h-3.5v7.5h3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTick: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3942,6 +4189,7 @@ pub static ChTick: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTickDouble: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3957,6 +4205,7 @@ pub static ChTickDouble: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 9.75 2.5 2.5m3.5-4 2.5-2.5m-4.5 4 2.5 2.5 6-6.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTicket: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3973,6 +4222,7 @@ pub static ChTicket: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8.75 11.75v1.5m0-9.5v1.5m0 2.5v1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTreeFir: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3988,6 +4238,7 @@ pub static ChTreeFir: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m8 1.75-4.25 5.5h2.5l-3.5 4h4v3h2.5v-3h4l-3.5-4h2.5z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTriangle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4003,6 +4254,7 @@ pub static ChTriangle: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<polygon points="8 2.75,1.75 14.25,14.25 14.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChTrophy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4019,6 +4271,7 @@ pub static ChTrophy: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m8 8.75v2m-3.25-9c-1.5 0-3 .5-3 2.25s1.5 2.25 3 2.25m6.5-4.5c1.5 0 3 .5 3 2.25s-1.5 2.25-3 2.25m-6.5-4.5h6.5v3.5c0 1.5-1 3-3.25 3s-3.25-1.5-3.25-3z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChUmbrella: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4035,6 +4288,7 @@ pub static ChUmbrella: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m7.75 8.75v4s0 1.5 1.5 1.5 1.5-1.5 1.5-1.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChUpload: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4050,6 +4304,7 @@ pub static ChUpload: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m3.75 2.75h9m-8.5 6.5 4-3.5 4 3.5m-4 5v-8.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChWifi: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4065,6 +4320,7 @@ pub static ChWifi: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="m1.75 4.75 6.25 8.5 6.25-8.5c-3.25-2.75-9.25-2.75-12.5 0z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChWifiFair: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4081,6 +4337,7 @@ pub static ChWifiFair: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m4.25 8c2-1.75 5.5-1.75 7.5 0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChWifiPoor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4097,6 +4354,7 @@ pub static ChWifiPoor: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m5 9c.75-1.75 5.25-1.75 6 0" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChWifiSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4113,6 +4371,7 @@ pub static ChWifiSlash: &icondata_core::IconData = &icondata_core::IconData {
 <line x1="4.25" y1="1.75" x2="12.25" y2="12.25" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChWifiWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4129,6 +4388,7 @@ pub static ChWifiWarning: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m12.25 13.75v0m0-6v3.5" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChZoomIn: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4145,6 +4405,7 @@ pub static ChZoomIn: &icondata_core::IconData = &icondata_core::IconData {
 <path d="m9.25 7.49992h-3.5m1.74992-1.74992v3.5m3.75008 2 3 3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static ChZoomOut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,

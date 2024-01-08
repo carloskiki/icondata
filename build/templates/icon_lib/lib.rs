@@ -1,8 +1,9 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
+//! from the [__{{ long_name }}__]({{ url }}) icon set.
 
 {% for (name, svg) in name_svg.iter() -%}
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static {{ name }}: &icondata_core::IconData = &icondata_core::IconData {
     {% let attributes = svg.svg_attributes() -%}
     style: {{ attributes.style|attribute_value }},

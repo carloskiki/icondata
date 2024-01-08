@@ -1,6 +1,6 @@
 [package]
 name = "icondata_hi"
-version = "0.0.9"
+version = "0.0.10"
 authors = ["Charles Edward Gagnon"]
 edition = "2021"
 description = "Library providing SVG and corresponding metadata for \"Heroicons\"."

@@ -14,24 +14,24 @@ rust-version = "1.67.0"
 [dependencies]
 icondata_core = { version = "0.1.0", path = "../icondata_core" }
 
-icondata_ai = { path = "../icondata_ai", version = "0.0.9" }
-icondata_bi = { path = "../icondata_bi", version = "0.0.9" }
-icondata_bs = { path = "../icondata_bs", version = "0.0.9" }
-icondata_cg = { path = "../icondata_cg", version = "0.0.9" }
-icondata_ch = { path = "../icondata_ch", version = "0.0.9" }
-icondata_fa = { path = "../icondata_fa", version = "0.0.9" }
-icondata_fi = { path = "../icondata_fi", version = "0.0.9" }
-icondata_hi = { path = "../icondata_hi", version = "0.0.9" }
-icondata_im = { path = "../icondata_im", version = "0.0.9" }
-icondata_io = { path = "../icondata_io", version = "0.0.9" }
-icondata_lu = { path = "../icondata_lu", version = "0.0.9" }
-icondata_oc = { path = "../icondata_oc", version = "0.0.9" }
-icondata_ri = { path = "../icondata_ri", version = "0.0.9" }
-icondata_si = { path = "../icondata_si", version = "0.0.9" }
-icondata_tb = { path = "../icondata_tb", version = "0.0.9" }
-icondata_ti = { path = "../icondata_ti", version = "0.0.9" }
-icondata_vs = { path = "../icondata_vs", version = "0.0.9" }
-icondata_wi = { path = "../icondata_wi", version = "0.0.9" }
+icondata_ai = { path = "../icondata_ai", version = "0.0.10" }
+icondata_bi = { path = "../icondata_bi", version = "0.0.10" }
+icondata_bs = { path = "../icondata_bs", version = "0.0.10" }
+icondata_cg = { path = "../icondata_cg", version = "0.0.10" }
+icondata_ch = { path = "../icondata_ch", version = "0.0.10" }
+icondata_fa = { path = "../icondata_fa", version = "0.0.10" }
+icondata_fi = { path = "../icondata_fi", version = "0.0.10" }
+icondata_hi = { path = "../icondata_hi", version = "0.0.10" }
+icondata_im = { path = "../icondata_im", version = "0.0.10" }
+icondata_io = { path = "../icondata_io", version = "0.0.10" }
+icondata_lu = { path = "../icondata_lu", version = "0.0.10" }
+icondata_oc = { path = "../icondata_oc", version = "0.0.10" }
+icondata_ri = { path = "../icondata_ri", version = "0.0.10" }
+icondata_si = { path = "../icondata_si", version = "0.0.10" }
+icondata_tb = { path = "../icondata_tb", version = "0.0.10" }
+icondata_ti = { path = "../icondata_ti", version = "0.0.10" }
+icondata_vs = { path = "../icondata_vs", version = "0.0.10" }
+icondata_wi = { path = "../icondata_wi", version = "0.0.10" }
 [features]
 serde = [
 "icondata_core/serde",

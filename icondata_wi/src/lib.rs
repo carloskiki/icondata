@@ -1,7 +1,8 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
+//! from the [__Weather Icons__](https://github.com/erikflowers/weather-icons) icon set.
 
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiAlien: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -27,6 +28,7 @@ pub static WiAlien: &icondata_core::IconData = &icondata_core::IconData {
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiBarometer: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -51,6 +53,7 @@ pub static WiBarometer: &icondata_core::IconData = &icondata_core::IconData {
 	C13.65,15.76,13.5,15.39,13.5,14.95z M14.81,10.28V8.12h0.69v2.17H14.81z M17.75,13.55v-0.74h2.17v0.74H17.75z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCelsius: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -78,6 +81,7 @@ pub static WiCelsius: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.51,0-0.95,0.09-1.35,0.27c-0.39,0.18-0.7,0.42-0.91,0.73c-0.43,0.59-0.65,1.28-0.65,2.07V15.4z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloud: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -99,6 +103,7 @@ pub static WiCloud: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.81,0.73-1.27,1.64-1.37,2.72l-0.08,0.57c0,0.12-0.07,0.18-0.2,0.18H9.27c-0.84,0.1-1.54,0.46-2.1,1.07S6.32,16.05,6.32,16.88z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudDown: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -126,6 +131,7 @@ pub static WiCloudDown: &icondata_core::IconData = &icondata_core::IconData {
 	C11.66,17.97,11.58,18.17,11.58,18.4z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudRefresh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -156,6 +162,7 @@ pub static WiCloudRefresh: &icondata_core::IconData = &icondata_core::IconData {
 	c0,0.24,0.07,0.43,0.23,0.58l0.35,0.36c-1,0.17-1.83,0.63-2.49,1.4C11.19,16.24,10.86,17.14,10.86,18.18z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudUp: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -183,6 +190,7 @@ pub static WiCloudUp: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.44,0.08-0.59,0.24l-2.58,2.57C11.66,17.08,11.58,17.27,11.58,17.51z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -210,6 +218,7 @@ pub static WiCloudy: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -241,6 +250,7 @@ pub static WiCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
 	s-1.12,1.36-1.38,2.21v0.04C5.77,15.56,5.77,15.58,5.77,15.61z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -269,6 +279,7 @@ pub static WiCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.23,0-0.43-0.08-0.6-0.25C7.58,24.57,7.5,24.37,7.5,24.13z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -304,6 +315,7 @@ pub static WiDayCloudy: &icondata_core::IconData = &icondata_core::IconData {
 	s-0.35-0.25-0.58-0.25h-2.04c-0.24,0-0.44,0.08-0.61,0.25C24.8,11.17,24.72,11.37,24.72,11.6z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -348,6 +360,7 @@ pub static WiDayCloudyGusts: &icondata_core::IconData = &icondata_core::IconData
 	c-0.17-0.17-0.37-0.26-0.6-0.26h-2.02c-0.24,0-0.43,0.08-0.59,0.25C26.03,11.13,25.95,11.33,25.95,11.57z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -383,6 +396,7 @@ pub static WiDayCloudyHigh: &icondata_core::IconData = &icondata_core::IconData 
 	c0,0.19-0.07,0.36-0.21,0.49c-0.14,0.13-0.3,0.2-0.5,0.2h-1.62c-0.19,0-0.34-0.07-0.47-0.2C23.14,16.35,23.08,16.19,23.08,15.99z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -425,6 +439,7 @@ pub static WiDayCloudyWindy: &icondata_core::IconData = &icondata_core::IconData
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -465,6 +480,7 @@ pub static WiDayFog: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.16-0.16-0.35-0.24-0.59-0.24h-2.05c-0.24,0-0.44,0.08-0.6,0.25C26.04,11.14,25.96,11.34,25.96,11.57z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -516,6 +532,7 @@ pub static WiDayHail: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.25,0-0.46,0.08-0.63,0.24C24.83,11.12,24.74,11.32,24.74,11.55z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayHaze: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -558,6 +575,7 @@ pub static WiDayHaze: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0.17-0.37,0.25-0.6,0.25h-2.02c-0.23,0-0.43-0.08-0.58-0.25S21.92,15.86,21.92,15.62z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayLightWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -599,6 +617,7 @@ pub static WiDayLightWind: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.18,0.17-0.38,0.25-0.61,0.25h-2.03c-0.23,0-0.42-0.08-0.58-0.25C24.08,11.99,24,11.79,24,11.55z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -637,6 +656,7 @@ pub static WiDayLightning: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.23,0-0.43,0.08-0.6,0.25C24.77,11.12,24.68,11.32,24.68,11.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -681,6 +701,7 @@ pub static WiDayRain: &icondata_core::IconData = &icondata_core::IconData {
 	C24.8,11.14,24.72,11.34,24.72,11.58z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -739,6 +760,7 @@ pub static WiDayRainMix: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.44,0.08-0.62,0.25S24.66,11.37,24.66,11.6z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -788,6 +810,7 @@ pub static WiDayRainWind: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -840,6 +863,7 @@ pub static WiDayShowers: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17-0.16-0.37-0.24-0.62-0.24h-2.04c-0.23,0-0.43,0.08-0.59,0.25C24.79,11.2,24.71,11.41,24.71,11.64z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -895,6 +919,7 @@ pub static WiDaySleet: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0.17-0.37,0.25-0.61,0.25h-2.06c-0.24,0-0.44-0.09-0.6-0.27C24.81,12.05,24.73,11.85,24.73,11.61z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -944,6 +969,7 @@ pub static WiDaySleetStorm: &icondata_core::IconData = &icondata_core::IconData 
 	s-0.08-0.44-0.25-0.6c-0.17-0.16-0.37-0.24-0.61-0.24h-2.06c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -993,6 +1019,7 @@ pub static WiDaySnow: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1039,6 +1066,7 @@ pub static WiDaySnowThunderstorm: &icondata_core::IconData = &icondata_core::Ico
 	c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1088,6 +1116,7 @@ pub static WiDaySnowWind: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1130,6 +1159,7 @@ pub static WiDaySprinkle: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.44,0.08-0.62,0.25S24.67,11.37,24.67,11.6z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1177,6 +1207,7 @@ pub static WiDayStormShowers: &icondata_core::IconData = &icondata_core::IconDat
 	c-0.24,0-0.45,0.08-0.61,0.24C24.81,11.14,24.73,11.34,24.73,11.58z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySunny: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1213,6 +1244,7 @@ pub static WiDaySunny: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.23,0-0.43-0.08-0.58-0.25S21.92,14.86,21.92,14.62z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDaySunnyOvercast: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1251,6 +1283,7 @@ pub static WiDaySunnyOvercast: &icondata_core::IconData = &icondata_core::IconDa
 	C23.35,12.89,23.25,13.13,23.25,13.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1294,6 +1327,7 @@ pub static WiDayThunderstorm: &icondata_core::IconData = &icondata_core::IconDat
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDayWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1339,6 +1373,7 @@ pub static WiDayWindy: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDegrees: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1358,6 +1393,7 @@ pub static WiDegrees: &icondata_core::IconData = &icondata_core::IconData {
 	C14.16,8.72,14.07,8.94,14.07,9.21z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionDown: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1376,6 +1412,7 @@ pub static WiDirectionDown: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.16-0.16-0.34-0.23-0.55-0.23c-0.22,0-0.42,0.08-0.57,0.23S11.77,16.25,11.77,16.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1395,6 +1432,7 @@ pub static WiDirectionDownLeft: &icondata_core::IconData = &icondata_core::IconD
 	V16.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1413,6 +1451,7 @@ pub static WiDirectionDownRight: &icondata_core::IconData = &icondata_core::Icon
 	l-6.08-6.06C10.13,10.63,10.04,10.38,10.04,10.08z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1431,6 +1470,7 @@ pub static WiDirectionLeft: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.32,0-0.61,0.14-0.85,0.41l-3.84,3.75C7.21,14.31,7.09,14.6,7.09,14.96z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1450,6 +1490,7 @@ pub static WiDirectionRight: &icondata_core::IconData = &icondata_core::IconData
 	C10.01,13.95,9.94,14.14,9.94,14.36z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionUp: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1468,6 +1509,7 @@ pub static WiDirectionUp: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24-0.23-0.55-0.37-0.92-0.4c-0.37,0.02-0.68,0.16-0.92,0.41l-3.75,3.81C10.08,10.25,9.95,10.53,9.95,10.87z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1486,6 +1528,7 @@ pub static WiDirectionUpLeft: &icondata_core::IconData = &icondata_core::IconDat
 	c-0.29,0-0.54-0.1-0.74-0.31S10.03,14.6,10.03,14.31z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDirectionUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1504,6 +1547,7 @@ pub static WiDirectionUpRight: &icondata_core::IconData = &icondata_core::IconDa
 	l-6.06,6.06C10.14,16.99,10.05,17.25,10.05,17.55z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiDust: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1544,6 +1588,7 @@ pub static WiDust: &icondata_core::IconData = &icondata_core::IconData {
 	c0,0.27-0.08,0.48-0.24,0.64c-0.16,0.16-0.37,0.24-0.64,0.24c-0.23,0-0.41-0.08-0.55-0.24C21.1,11.15,21.03,10.94,21.03,10.67z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiEarthquake: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1569,6 +1614,7 @@ pub static WiEarthquake: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.11,0.09-0.18,0.2-0.2,0.35l-1.48,8.61H5.82c-0.16,0-0.29,0.06-0.4,0.17C5.31,15.01,5.25,15.14,5.25,15.3z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiFahrenheit: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1591,6 +1637,7 @@ pub static WiFahrenheit: &icondata_core::IconData = &icondata_core::IconData {
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiFire: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1622,6 +1669,7 @@ pub static WiFire: &icondata_core::IconData = &icondata_core::IconData {
 	C8.29,17.1,8.22,16.75,8.2,16.37z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiFlood: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1653,6 +1701,7 @@ pub static WiFlood: &icondata_core::IconData = &icondata_core::IconData {
 	C12.29,9.97,12.23,9.83,12.23,9.67z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1680,6 +1729,7 @@ pub static WiFog: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.23,0-0.43-0.09-0.6-0.26C7.07,24.55,6.98,24.34,6.98,24.11z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiGaleWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1695,6 +1745,7 @@ pub static WiGaleWarning: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.67,24.6V7.45h1.03V24.6H10.67z M12.4,22.44v-7.41l8.65,3.69L12.4,22.44z M12.4,14.86V7.45l8.65,3.69L12.4,14.86z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1734,6 +1785,7 @@ pub static WiHail: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.16,0-0.32,0.05-0.47,0.15s-0.25,0.25-0.31,0.45l-0.9,3.36L17.47,21.23z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHorizon: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1760,6 +1812,7 @@ pub static WiHorizon: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0.17-0.36,0.26-0.56,0.28c-0.23,0.02-0.44-0.06-0.65-0.24S19.86,14.43,19.86,14.18z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHorizonAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1793,6 +1846,7 @@ pub static WiHorizonAlt: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.18,0.17-0.38,0.25-0.62,0.25h-2.09c-0.23,0-0.43-0.08-0.59-0.25C22.18,16.34,22.1,16.14,22.1,15.9z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHot: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1858,6 +1912,7 @@ pub static WiHot: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHumidity: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1890,6 +1945,7 @@ pub static WiHumidity: &icondata_core::IconData = &icondata_core::IconData {
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHurricane: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1916,6 +1972,7 @@ pub static WiHurricane: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiHurricaneWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1932,6 +1989,7 @@ pub static WiHurricaneWarning: &icondata_core::IconData = &icondata_core::IconDa
 	h-3.81V19.52z M12.09,12.05h3.81v-2.5h-3.81V12.05z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1950,6 +2008,7 @@ pub static WiLightning: &icondata_core::IconData = &icondata_core::IconData {
 	l-2.08,5.48c-0.03,0.09-0.03,0.16,0.01,0.21c0.04,0.05,0.1,0.07,0.19,0.07h2.04L16.46,18.18z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiLunarEclipse: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1970,6 +2029,7 @@ pub static WiLunarEclipse: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.69-0.68-1.53-1.02-2.5-1.02C14.74,11.14,14.49,11.17,14.25,11.22z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMeteor: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -1996,6 +2056,7 @@ pub static WiMeteor: &icondata_core::IconData = &icondata_core::IconData {
 	c-1,0-1.87,0.33-2.6,1c-0.41,0.36-0.72,0.78-0.95,1.28C8.4,18.3,8.29,18.83,8.29,19.39z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltFirstQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2015,6 +2076,7 @@ pub static WiMoonAltFirstQuarter: &icondata_core::IconData = &icondata_core::Ico
 	s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15s-2.54-0.8-3.91-0.8H14.8V24.51z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltFull: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2035,6 +2097,7 @@ pub static WiMoonAltFull: &icondata_core::IconData = &icondata_core::IconData {
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.41,7.89,7.32s-1.61,1.98-2.15,3.22S4.94,13.08,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltNew: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2052,6 +2115,7 @@ pub static WiMoonAltNew: &icondata_core::IconData = &icondata_core::IconData {
 	S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltThirdQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2071,6 +2135,7 @@ pub static WiMoonAltThirdQuarter: &icondata_core::IconData = &icondata_core::Ico
 	S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2090,6 +2155,7 @@ pub static WiMoonAltWaningCrescent1: &icondata_core::IconData = &icondata_core::
 	c0-3.39,0.3-6.74,0.91-10.05h-0.1c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2109,6 +2175,7 @@ pub static WiMoonAltWaningCrescent2: &icondata_core::IconData = &icondata_core::
 	c0-3.61,0.6-6.96,1.8-10.05c-1.36,0-2.65,0.27-3.89,0.81s-2.3,1.25-3.19,2.15s-1.61,1.97-2.14,3.2S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2128,6 +2195,7 @@ pub static WiMoonAltWaningCrescent3: &icondata_core::IconData = &icondata_core::
 	c0-1.87,0.23-3.67,0.69-5.41s1.11-3.29,1.95-4.64c-1.8,0.03-3.45,0.5-4.96,1.41s-2.7,2.13-3.58,3.65S4.94,12.65,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2148,6 +2216,7 @@ pub static WiMoonAltWaningCrescent4: &icondata_core::IconData = &icondata_core::
 	S4.94,12.68,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2168,6 +2237,7 @@ pub static WiMoonAltWaningCrescent5: &icondata_core::IconData = &icondata_core::
 	s-1.46,1.92-1.93,3.11S4.94,13.15,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2188,6 +2258,7 @@ pub static WiMoonAltWaningCrescent6: &icondata_core::IconData = &icondata_core::
 	S4.94,12.77,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2208,6 +2279,7 @@ pub static WiMoonAltWaningGibbous1: &icondata_core::IconData = &icondata_core::I
 	c-0.4-0.09-1.01-0.13-1.82-0.13c-1.36,0-2.66,0.26-3.9,0.79S8.8,6.43,7.9,7.32s-1.62,1.97-2.15,3.2S4.94,13.06,4.94,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2229,6 +2301,7 @@ pub static WiMoonAltWaningGibbous2: &icondata_core::IconData = &icondata_core::I
 	s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2250,6 +2323,7 @@ pub static WiMoonAltWaningGibbous3: &icondata_core::IconData = &icondata_core::I
 	S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2270,6 +2344,7 @@ pub static WiMoonAltWaningGibbous4: &icondata_core::IconData = &icondata_core::I
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2290,6 +2365,7 @@ pub static WiMoonAltWaningGibbous5: &icondata_core::IconData = &icondata_core::I
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaningGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2309,6 +2385,7 @@ pub static WiMoonAltWaningGibbous6: &icondata_core::IconData = &icondata_core::I
 	c0-3.82-0.34-7.17-1.03-10.05h-0.37c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.44,7.89,7.34s-1.61,1.97-2.15,3.21S4.94,13.09,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2328,6 +2405,7 @@ pub static WiMoonAltWaxingCrescent1: &icondata_core::IconData = &icondata_core::
 	c0-1.66-0.38-3.21-1.14-4.66s-1.8-2.63-3.13-3.57S18,4.71,16.38,4.48z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2347,6 +2425,7 @@ pub static WiMoonAltWaxingCrescent2: &icondata_core::IconData = &icondata_core::
 	s1.17-3.03,1.17-4.72c0-1.72-0.41-3.32-1.22-4.8s-1.91-2.69-3.31-3.61S17.59,4.57,15.9,4.42z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2366,6 +2445,7 @@ pub static WiMoonAltWaxingCrescent3: &icondata_core::IconData = &icondata_core::
 	s1.49-1.93,1.97-3.13s0.73-2.44,0.73-3.74c0-1.75-0.42-3.38-1.26-4.89s-1.99-2.72-3.44-3.64S17.31,4.5,15.58,4.41z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2385,6 +2465,7 @@ pub static WiMoonAltWaxingCrescent4: &icondata_core::IconData = &icondata_core::
 	s1.53-1.95,2.04-3.16s0.75-2.48,0.75-3.81c0-1.78-0.43-3.43-1.3-4.94s-2.04-2.73-3.53-3.65S17.12,4.45,15.35,4.39z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2404,6 +2485,7 @@ pub static WiMoonAltWaxingCrescent5: &icondata_core::IconData = &icondata_core::
 	s1.57-1.95,2.09-3.18s0.78-2.51,0.78-3.86c0-1.8-0.44-3.46-1.33-5s-2.08-2.75-3.6-3.65S16.95,4.42,15.15,4.39z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2423,6 +2505,7 @@ pub static WiMoonAltWaxingCrescent6: &icondata_core::IconData = &icondata_core::
 	s0.79-2.54,0.79-3.9s-0.27-2.66-0.8-3.9s-1.25-2.31-2.15-3.21s-1.97-1.61-3.21-2.15S16.36,4.39,15.01,4.39z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2443,6 +2526,7 @@ pub static WiMoonAltWaxingGibbous1: &icondata_core::IconData = &icondata_core::I
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2463,6 +2547,7 @@ pub static WiMoonAltWaxingGibbous2: &icondata_core::IconData = &icondata_core::I
 	c-0.23,0-0.42,0-0.54,0.01C12.79,7.55,11.96,10.9,11.96,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2483,6 +2568,7 @@ pub static WiMoonAltWaxingGibbous3: &icondata_core::IconData = &icondata_core::I
 	c-0.36,0-0.63,0.01-0.81,0.03c-1.08,1.22-1.96,2.69-2.64,4.42S10.54,12.43,10.54,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2503,6 +2589,7 @@ pub static WiMoonAltWaxingGibbous4: &icondata_core::IconData = &icondata_core::I
 	c-1.4,1.06-2.53,2.46-3.39,4.2S9.13,12.29,9.13,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2523,6 +2610,7 @@ pub static WiMoonAltWaxingGibbous5: &icondata_core::IconData = &icondata_core::I
 	c-1.63,0.94-2.95,2.27-3.95,3.99S7.71,12.22,7.71,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonAltWaxingGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2544,6 +2632,7 @@ pub static WiMoonAltWaxingGibbous6: &icondata_core::IconData = &icondata_core::I
 	S9.1,7.01,8.66,7.54S7.84,8.62,7.53,9.16s-0.54,1.12-0.69,1.74s-0.26,1.2-0.32,1.75S6.42,13.8,6.42,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonFirstQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2560,6 +2649,7 @@ pub static WiMoonFirstQuarter: &icondata_core::IconData = &icondata_core::IconDa
 	s-3.61-1.51-5.65-1.51V25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonFull: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2577,6 +2667,7 @@ pub static WiMoonFull: &icondata_core::IconData = &icondata_core::IconData {
 	S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonNew: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2597,6 +2688,7 @@ pub static WiMoonNew: &icondata_core::IconData = &icondata_core::IconData {
 	c-1.36,0-2.66,0.27-3.9,0.8S8.79,6.41,7.89,7.32s-1.61,1.98-2.15,3.22S4.94,13.08,4.94,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonThirdQuarter: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2613,6 +2705,7 @@ pub static WiMoonThirdQuarter: &icondata_core::IconData = &icondata_core::IconDa
 	S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2629,6 +2722,7 @@ pub static WiMoonWaningCrescent1: &icondata_core::IconData = &icondata_core::Ico
 	c0-3.43,0.5-7.18,1.49-11.25c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2645,6 +2739,7 @@ pub static WiMoonWaningCrescent2: &icondata_core::IconData = &icondata_core::Ico
 	c0-3.98,1.01-7.73,3.02-11.25c-2.04,0-3.93,0.5-5.65,1.51s-3.1,2.37-4.1,4.09S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2661,6 +2756,7 @@ pub static WiMoonWaningCrescent3: &icondata_core::IconData = &icondata_core::Ico
 	c0-2.32,0.42-4.46,1.25-6.4s1.91-3.56,3.23-4.85c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2678,6 +2774,7 @@ pub static WiMoonWaningCrescent4: &icondata_core::IconData = &icondata_core::Ico
 	S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2695,6 +2792,7 @@ pub static WiMoonWaningCrescent5: &icondata_core::IconData = &icondata_core::Ico
 	c-2.04,0-3.92,0.5-5.65,1.51S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2713,6 +2811,7 @@ pub static WiMoonWaningCrescent6: &icondata_core::IconData = &icondata_core::Ico
 	S6.26,7.07,5.25,8.8S3.74,12.4,3.74,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2730,6 +2829,7 @@ pub static WiMoonWaningGibbous1: &icondata_core::IconData = &icondata_core::Icon
 	s-1.47-0.81-2.26-1.07c-1.52,0-2.98,0.3-4.37,0.89S8.02,5.57,7.02,6.57s-1.8,2.19-2.39,3.57S3.74,12.97,3.74,14.49z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2747,6 +2847,7 @@ pub static WiMoonWaningGibbous2: &icondata_core::IconData = &icondata_core::Icon
 	c-2.03,0-3.91,0.5-5.63,1.5S6.25,7.14,5.24,8.86S3.74,12.46,3.74,14.49z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2764,6 +2865,7 @@ pub static WiMoonWaningGibbous3: &icondata_core::IconData = &icondata_core::Icon
 	c-1.52,0-2.98,0.3-4.37,0.89s-2.58,1.39-3.58,2.4s-1.8,2.2-2.39,3.59S3.74,12.96,3.74,14.49z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2781,6 +2883,7 @@ pub static WiMoonWaningGibbous4: &icondata_core::IconData = &icondata_core::Icon
 	S3.74,12.44,3.74,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2797,6 +2900,7 @@ pub static WiMoonWaningGibbous5: &icondata_core::IconData = &icondata_core::Icon
 	c0-3.96-1.08-7.71-3.25-11.24c-2.03,0-3.91,0.5-5.63,1.5S6.26,7.1,5.25,8.83S3.74,12.44,3.74,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaningGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2813,6 +2917,7 @@ pub static WiMoonWaningGibbous6: &icondata_core::IconData = &icondata_core::Icon
 	c0-3.46-0.72-7.2-2.15-11.24c-1.52,0-2.98,0.3-4.37,0.89S8.03,5.5,7.03,6.5s-1.8,2.2-2.4,3.59S3.74,12.93,3.74,14.46z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2831,6 +2936,7 @@ pub static WiMoonWaxingCrescent1: &icondata_core::IconData = &icondata_core::Ico
 	s-1.14,0.92-1.87,1.33S15.9,25.42,15.01,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2848,6 +2954,7 @@ pub static WiMoonWaxingCrescent2: &icondata_core::IconData = &icondata_core::Ico
 	c0,0.91-0.04,1.76-0.13,2.54s-0.27,1.63-0.53,2.53s-0.62,1.71-1.06,2.43s-1.04,1.42-1.82,2.09S16.03,25.26,15.01,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2865,6 +2972,7 @@ pub static WiMoonWaxingCrescent3: &icondata_core::IconData = &icondata_core::Ico
 	s-0.51,1.68-0.86,2.4s-0.83,1.42-1.45,2.12S15.83,25.21,15.01,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2882,6 +2990,7 @@ pub static WiMoonWaxingCrescent4: &icondata_core::IconData = &icondata_core::Ico
 	s-0.38,1.65-0.64,2.37s-0.63,1.43-1.09,2.15S15.62,25.15,15.01,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2898,6 +3007,7 @@ pub static WiMoonWaxingCrescent5: &icondata_core::IconData = &icondata_core::Ico
 	s-3.61-1.51-5.65-1.51c1.67,2.9,2.5,6.65,2.5,11.25c0,2.33-0.17,4.43-0.52,6.3S15.97,24.26,14.99,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingCrescent6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2914,6 +3024,7 @@ pub static WiMoonWaxingCrescent6: &icondata_core::IconData = &icondata_core::Ico
 	s-3.61-1.51-5.65-1.51c1.67,2.9,2.5,6.65,2.5,11.25c0,2.33-0.17,4.43-0.52,6.3S15.97,24.26,14.99,25.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2930,6 +3041,7 @@ pub static WiMoonWaxingGibbous1: &icondata_core::IconData = &icondata_core::Icon
 	c0.01-2.04-0.49-3.93-1.49-5.65c-1-1.73-2.36-3.1-4.08-4.11s-3.6-1.52-5.64-1.53C14.32,6.91,13.94,10.66,13.93,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2946,6 +3058,7 @@ pub static WiMoonWaxingGibbous2: &icondata_core::IconData = &icondata_core::Icon
 	s-0.5-3.92-1.51-5.65s-2.37-3.09-4.1-4.09s-3.61-1.51-5.65-1.51C13.57,6.61,12.85,10.36,12.85,14.44z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2963,6 +3076,7 @@ pub static WiMoonWaxingGibbous3: &icondata_core::IconData = &icondata_core::Icon
 	c-1.02,1.46-1.81,3.16-2.37,5.13S11.8,12.3,11.8,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2980,6 +3094,7 @@ pub static WiMoonWaxingGibbous4: &icondata_core::IconData = &icondata_core::Icon
 	c-1.35,1.3-2.4,2.94-3.16,4.93S10.73,12.19,10.73,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -2997,6 +3112,7 @@ pub static WiMoonWaxingGibbous5: &icondata_core::IconData = &icondata_core::Icon
 	s-2.2-1.81-3.6-2.4s-2.85-0.89-4.37-0.89c-1.67,1.14-2.98,2.72-3.94,4.74S9.65,12.09,9.65,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonWaxingGibbous6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3014,6 +3130,7 @@ pub static WiMoonWaxingGibbous6: &icondata_core::IconData = &icondata_core::Icon
 	s-3.61-1.51-5.65-1.51c-1.99,1-3.56,2.51-4.72,4.55S8.58,11.99,8.58,14.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonrise: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3036,6 +3153,7 @@ pub static WiMoonrise: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.27,0-0.5-0.1-0.69-0.29S8.09,21.14,8.09,20.87z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiMoonset: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3059,6 +3177,7 @@ pub static WiMoonset: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.12,0.09-0.24,0.09-0.34,0l-3.08-2.84h-2.6c-0.27,0-0.5-0.1-0.69-0.29C8.09,21.39,7.99,21.16,7.99,20.89z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNa: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3076,6 +3195,7 @@ pub static WiNa: &icondata_core::IconData = &icondata_core::IconData {
 	l0.6,2.04H19.07z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3104,6 +3224,7 @@ pub static WiNightAltCloudy: &icondata_core::IconData = &icondata_core::IconData
 	c-0.58-0.01-1.15,0.13-1.7,0.44C18.38,7.82,17.93,8.24,17.6,8.79z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3141,6 +3262,7 @@ pub static WiNightAltCloudyGusts: &icondata_core::IconData = &icondata_core::Ico
 	C20.48,10.71,19.81,9.64,18.73,8.76z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3166,6 +3288,7 @@ pub static WiNightAltCloudyHigh: &icondata_core::IconData = &icondata_core::Icon
 	s0.75-1.31,0.86-2.1c-1.08-0.22-1.98-0.65-2.72-1.3c-0.84,0.65-1.78,0.99-2.82,1.01H16.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3200,6 +3323,7 @@ pub static WiNightAltCloudyWindy: &icondata_core::IconData = &icondata_core::Ico
 	C21.06,10.77,20.4,9.71,19.33,8.78z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3243,6 +3367,7 @@ pub static WiNightAltHail: &icondata_core::IconData = &icondata_core::IconData {
 	C22.25,12.39,21.17,12,19.88,12h-0.32C19.3,10.75,18.66,9.69,17.62,8.83z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3273,6 +3398,7 @@ pub static WiNightAltLightning: &icondata_core::IconData = &icondata_core::IconD
 	C19.29,10.71,18.63,9.66,17.6,8.81z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltPartlyCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3301,6 +3427,7 @@ pub static WiNightAltPartlyCloudy: &icondata_core::IconData = &icondata_core::Ic
 	c-0.57,0.26-1.05,0.64-1.44,1.12l-0.03-0.02C13.55,11.56,13.25,12.35,13.18,13.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3337,6 +3464,7 @@ pub static WiNightAltRain: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.92-0.76-1.99-1.13-3.23-1.13h-0.31C19.3,10.7,18.64,9.64,17.58,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3388,6 +3516,7 @@ pub static WiNightAltRainMix: &icondata_core::IconData = &icondata_core::IconDat
 	C19.27,10.66,18.61,9.59,17.59,8.76z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3429,6 +3558,7 @@ pub static WiNightAltRainWind: &icondata_core::IconData = &icondata_core::IconDa
 	C19.26,10.74,18.6,9.67,17.57,8.81z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3472,6 +3602,7 @@ pub static WiNightAltShowers: &icondata_core::IconData = &icondata_core::IconDat
 	C19.27,10.78,18.63,9.73,17.58,8.81z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3519,6 +3650,7 @@ pub static WiNightAltSleet: &icondata_core::IconData = &icondata_core::IconData 
 	C18.36,7.84,17.92,8.27,17.59,8.82z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3560,6 +3692,7 @@ pub static WiNightAltSleetStorm: &icondata_core::IconData = &icondata_core::Icon
 	c-0.91-0.78-1.98-1.17-3.22-1.17h-0.33C19.28,10.68,18.62,9.62,17.59,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3601,6 +3734,7 @@ pub static WiNightAltSnow: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.16,0.36-0.41,0.72-0.76,1.07c-0.89-0.79-1.96-1.18-3.23-1.18h-0.31C19.3,10.74,18.64,9.68,17.58,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3640,6 +3774,7 @@ pub static WiNightAltSnowThunderstorm: &icondata_core::IconData = &icondata_core
 	C19.28,10.68,18.62,9.62,17.59,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3682,6 +3817,7 @@ pub static WiNightAltSnowWind: &icondata_core::IconData = &icondata_core::IconDa
 	c-0.89-0.79-1.96-1.18-3.23-1.18h-0.31C19.3,10.74,18.64,9.68,17.58,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3717,6 +3853,7 @@ pub static WiNightAltSprinkle: &icondata_core::IconData = &icondata_core::IconDa
 	c-0.93-0.76-1.99-1.14-3.21-1.14h-0.33C19.27,10.65,18.6,9.59,17.56,8.77z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3757,6 +3894,7 @@ pub static WiNightAltStormShowers: &icondata_core::IconData = &icondata_core::Ic
 	s-0.27,0.26-0.33,0.47l-0.29,1.02c0,0.01,0,0.04-0.01,0.1C17.79,18.79,17.78,18.84,17.78,18.87z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightAltThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3791,6 +3929,7 @@ pub static WiNightAltThunderstorm: &icondata_core::IconData = &icondata_core::Ic
 	s1.25,1.51,2.17,1.97c-0.18,0.42-0.44,0.77-0.79,1.07c-0.92-0.79-1.99-1.18-3.22-1.18h-0.32C19.29,10.66,18.63,9.61,17.59,8.75z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightClear: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3813,6 +3952,7 @@ pub static WiNightClear: &icondata_core::IconData = &icondata_core::IconData {
 	C9.96,12.74,9.74,13.59,9.74,14.48z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3837,6 +3977,7 @@ pub static WiNightCloudy: &icondata_core::IconData = &icondata_core::IconData {
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightCloudyGusts: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3871,6 +4012,7 @@ pub static WiNightCloudyGusts: &icondata_core::IconData = &icondata_core::IconDa
 	c-0.96-0.96-2.11-1.43-3.47-1.43h-0.33C20.73,10.88,20.16,9.89,19.24,9z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightCloudyHigh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3897,6 +4039,7 @@ pub static WiNightCloudyHigh: &icondata_core::IconData = &icondata_core::IconDat
 	c-0.39,0.82-0.97,1.5-1.74,2.02c-0.77,0.52-1.63,0.79-2.57,0.83h-3.03C16.54,18.44,16.54,18.47,16.55,18.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightCloudyWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3928,6 +4071,7 @@ pub static WiNightCloudyWindy: &icondata_core::IconData = &icondata_core::IconDa
 	c-0.98-0.96-2.15-1.43-3.52-1.43h-0.32C21.3,10.84,20.73,9.87,19.83,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightFog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -3959,6 +4103,7 @@ pub static WiNightFog: &icondata_core::IconData = &icondata_core::IconData {
 	C20.18,10.57,19.52,9.51,18.51,8.7z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightHail: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4000,6 +4145,7 @@ pub static WiNightHail: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.98-0.98-2.14-1.47-3.49-1.47h-0.33C19.41,10.78,18.85,9.81,18.04,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightLightning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4027,6 +4173,7 @@ pub static WiNightLightning: &icondata_core::IconData = &icondata_core::IconData
 	C19.44,10.81,18.86,9.83,18,9.05z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightPartlyCloudy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4052,6 +4199,7 @@ pub static WiNightPartlyCloudy: &icondata_core::IconData = &icondata_core::IconD
 	c-0.59-0.49-1.27-0.73-2.03-0.73c-0.29-0.88-0.81-1.57-1.54-2.09c-0.73-0.52-1.56-0.78-2.49-0.78H13.18z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4085,6 +4233,7 @@ pub static WiNightRain: &icondata_core::IconData = &icondata_core::IconData {
 	" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4135,6 +4284,7 @@ pub static WiNightRainMix: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4173,6 +4323,7 @@ pub static WiNightRainWind: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.97-0.98-2.16-1.46-3.55-1.46H19.8C19.55,10.84,18.98,9.86,18.09,9.03z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4213,6 +4364,7 @@ pub static WiNightShowers: &icondata_core::IconData = &icondata_core::IconData {
 	c0.69,0.7,1.03,1.53,1.03,2.51c0,0.64-0.16,1.23-0.48,1.77c-0.96-0.96-2.12-1.44-3.49-1.44h-0.32C19.5,10.87,18.94,9.9,18.06,9.05z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4256,6 +4408,7 @@ pub static WiNightSleet: &icondata_core::IconData = &icondata_core::IconData {
 	c0.31-0.55,0.47-1.15,0.47-1.81c0-0.98-0.35-1.81-1.04-2.5c-0.69-0.68-1.53-1.03-2.51-1.03C19.54,8.14,18.73,8.46,18.06,9.1z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSleetStorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4294,6 +4447,7 @@ pub static WiNightSleetStorm: &icondata_core::IconData = &icondata_core::IconDat
 	c-0.96-0.96-2.13-1.44-3.52-1.44h-0.31C19.42,10.76,18.85,9.78,18.02,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4332,6 +4486,7 @@ pub static WiNightSnow: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.96-0.96-2.13-1.44-3.5-1.44h-0.31C19.44,10.8,18.87,9.82,18.03,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSnowThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4368,6 +4523,7 @@ pub static WiNightSnowThunderstorm: &icondata_core::IconData = &icondata_core::I
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4406,6 +4562,7 @@ pub static WiNightSnowWind: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.96-0.96-2.13-1.44-3.5-1.44h-0.31C19.44,10.8,18.87,9.82,18.03,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4438,6 +4595,7 @@ pub static WiNightSprinkle: &icondata_core::IconData = &icondata_core::IconData 
 	C19.42,10.76,18.85,9.79,18.01,9.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4475,6 +4633,7 @@ pub static WiNightStormShowers: &icondata_core::IconData = &icondata_core::IconD
 	c-0.99-0.96-2.15-1.44-3.49-1.44h-0.32C19.44,10.75,18.88,9.77,18.06,8.98z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiNightThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4506,6 +4665,7 @@ pub static WiNightThunderstorm: &icondata_core::IconData = &icondata_core::IconD
 	c-0.96-0.96-2.12-1.44-3.48-1.44h-0.32C19.42,10.84,18.86,9.86,18.02,9.04z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4538,6 +4698,7 @@ pub static WiRain: &icondata_core::IconData = &icondata_core::IconData {
 	C16.79,23.94,16.74,23.78,16.74,23.62z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRainMix: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4584,6 +4745,7 @@ pub static WiRainMix: &icondata_core::IconData = &icondata_core::IconData {
 	C18.1,18.74,18.1,18.78,18.1,18.81z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRainWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4621,6 +4783,7 @@ pub static WiRainWind: &icondata_core::IconData = &icondata_core::IconData {
 	C15.84,25.8,15.81,25.92,15.81,26.03z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRaindrop: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4639,6 +4802,7 @@ pub static WiRaindrop: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.57,0.79-1.07,1.64-1.49,2.55C10.01,13.79,9.81,14.58,9.81,15.25z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRaindrops: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4661,6 +4825,7 @@ pub static WiRaindrops: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.29,0-0.53-0.09-0.72-0.28C15.75,9.98,15.65,9.75,15.65,9.48z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRefresh: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4682,6 +4847,7 @@ pub static WiRefresh: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0.17-0.25,0.37-0.25,0.6c0,0.24,0.08,0.45,0.24,0.61l0.38,0.36c-1.25,0.22-2.29,0.82-3.12,1.8S9.77,14.27,9.77,15.53z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiRefreshAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4702,6 +4868,7 @@ pub static WiRefreshAlt: &icondata_core::IconData = &icondata_core::IconData {
 	s-0.21,0.3-0.21,0.5c0,0.21,0.07,0.38,0.22,0.51l0.3,0.28c-1.15,0.08-2.11,0.53-2.89,1.35C12.17,12.77,11.78,13.76,11.78,14.91z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSandstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4742,6 +4909,7 @@ pub static WiSandstorm: &icondata_core::IconData = &icondata_core::IconData {
 	c0-0.23-0.08-0.43-0.25-0.6c-0.17-0.17-0.37-0.25-0.61-0.25c-0.23,0-0.42,0.08-0.58,0.25C22.9,16.61,22.81,16.81,22.81,17.04z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4782,6 +4950,7 @@ pub static WiShowers: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.21-0.06-0.36-0.17-0.46-0.31C18.16,19.29,18.11,19.14,18.11,18.98z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSleet: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4826,6 +4995,7 @@ pub static WiSleet: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.24,0-0.43-0.08-0.58-0.24C16.97,21.61,16.88,21.42,16.88,21.19z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSmallCraftAdvisory: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4841,6 +5011,7 @@ pub static WiSmallCraftAdvisory: &icondata_core::IconData = &icondata_core::Icon
     data: r###"<path d="M9.81,24.6V7.45h1.03V24.6H9.81z M11.54,14.86V7.45l8.65,3.69L11.54,14.86z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSmog: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4863,6 +5034,7 @@ pub static WiSmog: &icondata_core::IconData = &icondata_core::IconData {
 	z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSmoke: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4889,6 +5061,7 @@ pub static WiSmoke: &icondata_core::IconData = &icondata_core::IconData {
 	s-1.04,1.44-1.07,2.37c-0.02,0-0.05,0-0.08,0c-0.04,0-0.07,0-0.09,0c-0.79,0-1.46,0.28-2.03,0.84S7.74,11.45,7.74,12.23z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSnow: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4925,6 +5098,7 @@ pub static WiSnow: &icondata_core::IconData = &icondata_core::IconData {
 	c0,0.24-0.08,0.43-0.23,0.59c-0.16,0.16-0.35,0.23-0.59,0.23c-0.24,0-0.44-0.08-0.6-0.24C17.5,25.07,17.41,24.88,17.41,24.65z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSnowWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -4961,6 +5135,7 @@ pub static WiSnowWind: &icondata_core::IconData = &icondata_core::IconData {
 	c0,0.24-0.08,0.44-0.24,0.6c-0.16,0.17-0.35,0.25-0.59,0.25c-0.24,0-0.44-0.08-0.6-0.25C17.5,21.45,17.41,21.25,17.41,21.02z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSnowflakeCold: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5000,6 +5175,7 @@ pub static WiSnowflakeCold: &icondata_core::IconData = &icondata_core::IconData 
 	c0,0.18-0.07,0.34-0.2,0.47c-0.13,0.13-0.29,0.2-0.47,0.2c-0.19,0-0.36-0.07-0.49-0.2C21.24,14.75,21.17,14.59,21.17,14.41z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSolarEclipse: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5037,6 +5213,7 @@ pub static WiSolarEclipse: &icondata_core::IconData = &icondata_core::IconData {
 	S21.92,14.86,21.92,14.62z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSprinkle: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5066,6 +5243,7 @@ pub static WiSprinkle: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.18,0.18-0.4,0.28-0.66,0.28c-0.27,0-0.5-0.09-0.69-0.28C15.11,15.6,15.02,15.38,15.02,15.12z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiStars: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5089,6 +5267,7 @@ pub static WiStars: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.95,0.04-1.76,0.41-2.42,1.1c-0.66,0.69-0.99,1.51-0.99,2.47c0-0.96-0.33-1.78-0.98-2.47C19.58,15.42,18.78,15.05,17.83,15.01z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiStormShowers: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5124,6 +5303,7 @@ pub static WiStormShowers: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0-0.33,0.05-0.49,0.15c-0.16,0.1-0.27,0.26-0.33,0.48l-0.27,1.01C18.32,18.72,18.31,18.79,18.31,18.86z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiStormWarning: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5139,6 +5319,7 @@ pub static WiStormWarning: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9.76,24.6V7.45h1.13V24.6H9.76z M11.7,14.05v-6.6h8.55v6.6H11.7z M14.06,12.05h3.81v-2.5h-3.81V12.05z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiStrongWind: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5163,6 +5344,7 @@ pub static WiStrongWind: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.25,0-0.46,0.09-0.64,0.26C3.19,13.23,3.1,13.44,3.1,13.69z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSunrise: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5197,6 +5379,7 @@ pub static WiSunrise: &icondata_core::IconData = &icondata_core::IconData {
 	C23.08,15.88,22.99,15.64,22.99,15.36z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiSunset: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5231,6 +5414,7 @@ pub static WiSunset: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.19,0.2-0.42,0.3-0.69,0.3h-2.32c-0.26,0-0.48-0.1-0.66-0.29C22.99,15.99,22.9,15.75,22.9,15.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiThermometer: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5255,6 +5439,7 @@ pub static WiThermometer: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.05,0.06-0.08,0.12-0.08,0.21v7.34c-0.61,0.09-1.13,0.37-1.56,0.85C12.66,18.37,12.45,18.92,12.45,19.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiThermometerExterior: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5276,6 +5461,7 @@ pub static WiThermometerExterior: &icondata_core::IconData = &icondata_core::Ico
 	c0,0.15-0.05,0.25-0.14,0.29l-0.27,0.14c-0.55,0.29-0.98,0.7-1.29,1.23C11.82,18.35,11.67,18.92,11.67,19.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiThermometerInternal: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5294,6 +5480,7 @@ pub static WiThermometerInternal: &icondata_core::IconData = &icondata_core::Ico
 	C12.69,18.37,12.48,18.92,12.48,19.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5324,6 +5511,7 @@ pub static WiThunderstorm: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.14,0.1-0.24,0.25-0.3,0.45l-1.46,5.7c0,0.02,0,0.05-0.01,0.11C16.93,23.5,16.93,23.53,16.93,23.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5346,6 +5534,7 @@ pub static WiTime1: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.13,0.35-0.38,0.53-0.76,0.53c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime10: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5368,6 +5557,7 @@ pub static WiTime10: &icondata_core::IconData = &icondata_core::IconData {
 	s-0.36,0.24-0.59,0.24c-0.21,0-0.39-0.07-0.56-0.22l-3.88-2.17C10.34,12.8,10.21,12.63,10.14,12.41z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime11: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5390,6 +5580,7 @@ pub static WiTime11: &icondata_core::IconData = &icondata_core::IconData {
 	s-0.36,0.24-0.59,0.24c-0.4,0-0.66-0.18-0.79-0.53l-2.26-3.91C11.81,10.67,11.78,10.46,11.84,10.24z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime12: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5411,6 +5602,7 @@ pub static WiTime12: &icondata_core::IconData = &icondata_core::IconData {
 	V7.81c0-0.23-0.08-0.43-0.25-0.59s-0.36-0.24-0.59-0.24c-0.23,0-0.43,0.08-0.59,0.24s-0.24,0.36-0.24,0.59V14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5433,6 +5625,7 @@ pub static WiTime2: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17,0.15-0.35,0.22-0.56,0.22c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5455,6 +5648,7 @@ pub static WiTime3: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.03,0.01-0.09,0.01-0.18,0.01c-0.23,0-0.43-0.08-0.59-0.24S14.14,14.71,14.14,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5477,6 +5671,7 @@ pub static WiTime4: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.17-0.05-0.31-0.15-0.42-0.29S14.14,14.66,14.14,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5499,6 +5694,7 @@ pub static WiTime5: &icondata_core::IconData = &icondata_core::IconData {
 	C14.2,14.85,14.14,14.68,14.14,14.47z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5520,6 +5716,7 @@ pub static WiTime6: &icondata_core::IconData = &icondata_core::IconData {
 	c0,0.23-0.08,0.43-0.24,0.6s-0.36,0.25-0.59,0.25s-0.43-0.08-0.59-0.25S14.14,19.31,14.14,19.07z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime7: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5542,6 +5739,7 @@ pub static WiTime7: &icondata_core::IconData = &icondata_core::IconData {
 	C12.09,19.1,11.96,18.93,11.89,18.71z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime8: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5564,6 +5762,7 @@ pub static WiTime8: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.32,0-0.56-0.14-0.72-0.42C10.14,16.99,10.11,16.78,10.17,16.56z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTime9: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5586,6 +5785,7 @@ pub static WiTime9: &icondata_core::IconData = &icondata_core::IconData {
 	c-0.23,0-0.43-0.08-0.59-0.25C9.59,14.88,9.51,14.68,9.51,14.46z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTornado: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5620,6 +5820,7 @@ pub static WiTornado: &icondata_core::IconData = &icondata_core::IconData {
 	c-2,0-3.72-0.21-5.14-0.63C9.32,8.71,8.42,8.3,7.98,7.87C7.75,7.66,7.63,7.48,7.63,7.31z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTrain: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5655,6 +5856,7 @@ pub static WiTrain: &icondata_core::IconData = &icondata_core::IconData {
 	C15.93,4.75,15.78,5.07,15.78,5.43z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiTsunami: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5690,6 +5892,7 @@ pub static WiTsunami: &icondata_core::IconData = &icondata_core::IconData {
 	C6.89,12.65,6.62,14.07,6.62,15.58z M18.05,20.64h3.88v-3.52l-1.98-1.21l-1.9,1.19V20.64z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiUmbrella: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5722,6 +5925,7 @@ pub static WiUmbrella: &icondata_core::IconData = &icondata_core::IconData {
 	c-1.79-2.34-4.27-3.51-7.43-3.51c-1.58,0-2.99,0.3-4.24,0.9c-1.24,0.6-2.26,1.47-3.05,2.61C7.44,11.82,7.12,12.41,6.73,13.23z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiVolcano: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5754,6 +5958,7 @@ pub static WiVolcano: &icondata_core::IconData = &icondata_core::IconData {
 	C14.79,15.84,14.76,15.64,14.76,15.48z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort0: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5784,6 +5989,7 @@ pub static WiWindBeaufort0: &icondata_core::IconData = &icondata_core::IconData 
 	c0.16,0.17,0.23,0.44,0.23,0.79c0,0.96-0.17,1.78-0.5,2.45s-0.74,1.01-1.23,1.01C20.63,20.19,20.32,19.78,20.32,18.96z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort1: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5808,6 +6014,7 @@ pub static WiWindBeaufort1: &icondata_core::IconData = &icondata_core::IconData 
 	C5.81,11.18,5.76,11.32,5.76,11.48z M18.65,21.85h2.47l1.65-7.98H20.3L18.65,21.85z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort10: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5838,6 +6045,7 @@ pub static WiWindBeaufort10: &icondata_core::IconData = &icondata_core::IconData
 	C22.52,20.19,22.21,19.79,22.21,18.98z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort11: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5863,6 +6071,7 @@ pub static WiWindBeaufort11: &icondata_core::IconData = &icondata_core::IconData
 	l1.65-7.99h-2.45L21.3,21.9z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort12: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5893,6 +6102,7 @@ pub static WiWindBeaufort12: &icondata_core::IconData = &icondata_core::IconData
 	C19.68,21.03,19.57,21.44,19.51,21.9z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort2: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5923,6 +6133,7 @@ pub static WiWindBeaufort2: &icondata_core::IconData = &icondata_core::IconData 
 	C17.82,21.01,17.71,21.41,17.66,21.85z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort3: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5954,6 +6165,7 @@ pub static WiWindBeaufort3: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.17-0.21-0.24-0.51-0.21-0.89h-2.07C18.13,19.06,18.12,19.27,18.12,19.52z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort4: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -5979,6 +6191,7 @@ pub static WiWindBeaufort4: &icondata_core::IconData = &icondata_core::IconData 
 	L17.98,20.35z M20.23,18.45l2.24-2.21h0.03l-0.49,2.21H20.23z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort5: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6008,6 +6221,7 @@ pub static WiWindBeaufort5: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.23,0.21-0.57,0.31-1,0.31c-0.31,0-0.56-0.06-0.73-0.17c-0.21-0.11-0.33-0.31-0.36-0.6H18.04z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort6: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6040,6 +6254,7 @@ pub static WiWindBeaufort6: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.31,0-0.55-0.09-0.75-0.27C20.48,19.69,20.38,19.46,20.38,19.17z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort7: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6065,6 +6280,7 @@ pub static WiWindBeaufort7: &icondata_core::IconData = &icondata_core::IconData 
 	l-0.41,1.89h3.49C20.39,18,19.22,19.96,18.85,21.9z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort8: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6100,6 +6316,7 @@ pub static WiWindBeaufort8: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.08,0.1-0.21,0.18-0.39,0.24c-0.18,0.06-0.4,0.09-0.66,0.09c-0.4,0-0.68-0.08-0.84-0.23C20.94,16.75,20.86,16.57,20.86,16.37z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindBeaufort9: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6132,6 +6349,7 @@ pub static WiWindBeaufort9: &icondata_core::IconData = &icondata_core::IconData 
 	c-0.07-0.12-0.11-0.22-0.14-0.31S20.75,16.96,20.75,16.88z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindDeg: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),
@@ -6153,6 +6371,7 @@ pub static WiWindDeg: &icondata_core::IconData = &icondata_core::IconData {
 	s-0.13,0.06-0.24,0l-3.47-1.3c-0.1-0.04-0.2-0.04-0.29,0l-3.5,1.3c-0.1,0.06-0.17,0.06-0.21,0S11.09,20.45,11.11,20.35z" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static WiWindy: &icondata_core::IconData = &icondata_core::IconData {
     style: Some("enable-background:new 0 0 30 30;"),
     x: Some("0px"),

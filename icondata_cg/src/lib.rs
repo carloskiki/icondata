@@ -1,7 +1,8 @@
 //! This crate provides a collection of icons in the form of SVG data
-//! and an enum to select them.
+//! from the [__css.gg__](https://github.com/astrit/css.gg) icon set.
 
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAbstract: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -18,6 +19,7 @@ pub static CgAbstract: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 19C12.7614 19 15 16.7614 15 14C15 11.2386 12.7614 9 10 9C7.23858 9 5 11.2386 5 14C5 16.7614 7.23858 19 10 19ZM10 16C11.1046 16 12 15.1046 12 14C12 12.8954 11.1046 12 10 12C8.89543 12 8 12.8954 8 14C8 15.1046 8.89543 16 10 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -34,6 +36,7 @@ pub static CgAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAddR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -50,6 +53,7 @@ pub static CgAddR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5ZM4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5V19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAdidas: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -67,6 +71,7 @@ pub static CgAdidas: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M23.2687 19H17.4952L10.8557 7.5L15.1858 5L23.2687 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAirplane: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -82,6 +87,7 @@ pub static CgAirplane: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlarm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -100,6 +106,7 @@ pub static CgAlarm: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18.5411 2L23 6.01478L21.6617 7.50107L17.2029 3.48629L18.5411 2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlbum: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -115,6 +122,7 @@ pub static CgAlbum: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5C3.34315 2 2 3.34315 2 5V19ZM20 19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44772 4 5 4H10V12.0111L12.395 12.0112L14.0001 9.86419L15.6051 12.0112H18.0001L18 4H19C19.5523 4 20 4.44772 20 5V19ZM16 4H12V9.33585L14.0001 6.66046L16 9.33571V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignBottom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -132,6 +140,7 @@ pub static CgAlignBottom: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 18H6V20H18V18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignCenter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -148,6 +157,7 @@ pub static CgAlignCenter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6 7H18V11H6V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -165,6 +175,7 @@ pub static CgAlignLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 7H8V11H20V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignMiddle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -181,6 +192,7 @@ pub static CgAlignMiddle: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 6H11V18H7V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -198,6 +210,7 @@ pub static CgAlignRight: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9964 10.9851L15.9964 11.0107L16.0049 7.0107L4.00493 6.98512L3.9964 10.9851Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAlignTop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -215,6 +228,7 @@ pub static CgAlignTop: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0374 19.9864L11.0321 7.98637L7.03207 7.98813L7.03736 19.9881L11.0374 19.9864Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAnchor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -230,6 +244,7 @@ pub static CgAnchor: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15 6C15 7.30622 14.1652 8.41746 13 8.82929V16.874C14.7252 16.4299 16 14.8638 16 13H18C18 15.973 15.8377 18.441 13 18.917V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V18.917C8.16229 18.441 6 15.973 6 13H8C8 14.8638 9.27477 16.4299 11 16.874V8.82929C9.83481 8.41746 9 7.30622 9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6ZM12 7C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6C11 6.55228 11.4477 7 12 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAppleWatch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -245,6 +260,7 @@ pub static CgAppleWatch: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4975 5.02988C16.4973 5.07798 16.4959 5.12581 16.4934 5.17335C17.662 5.58332 18.5 6.69628 18.5 8.00496V9.00493H19.5V13.0049H18.5V16.005C18.5 17.3129 17.663 18.4254 16.4953 18.8359C16.4984 18.8919 16.5 18.9482 16.5 19.005C16.5 20.6618 15.1569 22.005 13.5 22.005H9.5C7.84315 22.005 6.5 20.6618 6.5 19.005C6.5 18.9482 6.50158 18.8919 6.50468 18.8359C5.33705 18.4254 4.5 17.3129 4.5 16.005V8.00496C4.5 6.69767 5.33618 5.58568 6.50286 5.17465C6.49907 5.11032 6.4973 5.04546 6.49763 4.98011C6.50587 3.32328 7.85569 1.98683 9.51252 1.99508L13.5125 2.01499C15.1693 2.02324 16.5058 3.37305 16.4975 5.02988ZM8.49764 5.00496H14.4975C14.4922 4.45954 14.0498 4.01769 13.5025 4.01496L9.50257 3.99505C8.95029 3.99231 8.50035 4.43779 8.4976 4.99006L8.49764 5.00496ZM15.7049 7.02596L11.4846 7.00496H7.5C6.94772 7.00496 6.5 7.45267 6.5 8.00496V16.005C6.5 16.5568 6.94696 17.0042 7.4986 17.005H15.5014C16.053 17.0042 16.5 16.5568 16.5 16.005V8.00496C16.5 7.52289 16.1589 7.12049 15.7049 7.02596ZM8.5 19.005C8.5 19.5572 8.94772 20.005 9.5 20.005H13.5C14.0523 20.005 14.5 19.5572 14.5 19.005H8.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrangeBack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -260,6 +276,7 @@ pub static CgArrangeBack: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H11V7H17V13H21V21H13V17H7V11H3V3ZM15 13H13V15H9V11H11V9H15V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrangeFront: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -275,6 +292,7 @@ pub static CgArrangeFront: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H11V7H17V13H21V21H13V17H7V11H3V3ZM15 9H9V15H15V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowAlignH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -292,6 +310,7 @@ pub static CgArrowAlignH: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 16.2427L16.5858 14.8285L18.4143 13H14V11L18.4142 11L16.5858 9.17161L18 7.75739L22.2427 12L18 16.2427Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowAlignV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -309,6 +328,7 @@ pub static CgArrowAlignV: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16.2427 5.99996L14.8285 7.41418L13 5.58572V9.99996H11L11 5.58579L9.17161 7.41418L7.75739 5.99996L12 1.75732L16.2427 5.99996Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -324,6 +344,7 @@ pub static CgArrowBottomLeft: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="M18.2426 7.17154L16.8284 5.75732L7.75739 14.8283L7.75739 10.2427H5.75739L5.75739 18.2427H13.7574V16.2427L9.17144 16.2427L18.2426 7.17154Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -340,6 +361,7 @@ pub static CgArrowBottomLeftO: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -356,6 +378,7 @@ pub static CgArrowBottomLeftR: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -371,6 +394,7 @@ pub static CgArrowBottomRight: &icondata_core::IconData = &icondata_core::IconDa
     data: r###"<path d="M5.75739 7.17154L7.1716 5.75732L16.2426 14.8283L16.2426 10.2427H18.2426L18.2426 18.2427H10.2426V16.2427L14.8285 16.2427L5.75739 7.17154Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -387,6 +411,7 @@ pub static CgArrowBottomRightO: &icondata_core::IconData = &icondata_core::IconD
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowBottomRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -403,6 +428,7 @@ pub static CgArrowBottomRightR: &icondata_core::IconData = &icondata_core::IconD
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -418,6 +444,7 @@ pub static CgArrowDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowDownO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -434,6 +461,7 @@ pub static CgArrowDownO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7782 19.7782C15.4824 24.0739 8.51759 24.0739 4.22183 19.7782C-0.0739417 15.4824 -0.0739417 8.51759 4.22183 4.22183C8.51759 -0.0739419 15.4824 -0.0739419 19.7782 4.22183C24.0739 8.51759 24.0739 15.4824 19.7782 19.7782ZM18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowDownR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -450,6 +478,7 @@ pub static CgArrowDownR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -465,6 +494,7 @@ pub static CgArrowLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -481,6 +511,7 @@ pub static CgArrowLeftO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22183 19.7782C-0.0739419 15.4824 -0.0739419 8.51759 4.22183 4.22183C8.51759 -0.0739419 15.4824 -0.0739419 19.7782 4.22183C24.0739 8.51759 24.0739 15.4824 19.7782 19.7782C15.4824 24.0739 8.51759 24.0739 4.22183 19.7782ZM5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -497,6 +528,7 @@ pub static CgArrowLeftR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19ZM19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -512,6 +544,7 @@ pub static CgArrowLongDown: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M13.0125 19.162L14.8246 17.3398L16.2427 18.7501L12.012 23.0046L7.75726 18.7739L9.16751 17.3557L11.0126 19.1905L10.998 0.997021L12.998 0.995422L13.0125 19.162Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongDownC: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -527,6 +560,7 @@ pub static CgArrowLongDownC: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9991 6.84976C9.83339 6.43819 8.99813 5.32671 8.99813 4.02014C8.99813 2.36329 10.3413 1.02014 11.9981 1.02014C13.655 1.02014 14.9981 2.36329 14.9981 4.02014C14.9981 5.32601 14.1638 6.43701 12.9991 6.84911L13.0121 19.1375L14.8244 17.315L16.2426 18.7253L12.0119 22.9799L7.75739 18.7491L9.16763 17.3309L11.0122 19.1652L10.9991 6.84976ZM11.9981 5.02014C11.4458 5.02014 10.9981 4.57243 10.9981 4.02014C10.9981 3.46786 11.4458 3.02014 11.9981 3.02014C12.5504 3.02014 12.9981 3.46786 12.9981 4.02014C12.9981 4.57243 12.5504 5.02014 11.9981 5.02014Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongDownE: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -542,6 +576,7 @@ pub static CgArrowLongDownE: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.998 1.02014H8.99801V7.02014H10.9991L11.012 19.1652L9.16751 17.3309L7.75726 18.7491L12.0118 22.9799L16.2427 18.7253L14.8246 17.315L13.012 19.1378L12.9991 7.02014H14.998V1.02014ZM10.998 3.02014H12.998V5.02014H10.998V3.02014Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongDownL: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -557,6 +592,7 @@ pub static CgArrowLongDownL: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="M8.99801 0.972107V2.97211H11.9983L10.998 2.97299L11.0124 19.2135L9.16751 17.379L7.75726 18.7972L12.0118 23.0279L16.2427 18.7734L14.8246 17.3632L13.0124 19.1856L12.998 2.97211H14.998V0.972107H8.99801Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongDownR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -572,6 +608,7 @@ pub static CgArrowLongDownR: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2416 4.64146L11.9989 0.398819L7.75629 4.64146L11.0003 7.88551L11.013 19.7865L9.16846 17.9523L7.75821 19.3704L12.0127 23.6012L16.2437 19.3466L14.8255 17.9363L13.013 19.7591L13.0003 7.8827L16.2416 4.64146ZM10.5847 4.64146L11.9989 3.22725L13.4131 4.64146L11.9989 6.05567L10.5847 4.64146Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -587,6 +624,7 @@ pub static CgArrowLongLeft: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongLeftC: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -602,6 +640,7 @@ pub static CgArrowLongLeftC: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.27 7.75737L1.0202 11.9928L5.25576 16.2426L6.67236 14.8308L4.85801 13.0103L17.1463 13.0525C17.5532 14.219 18.6604 15.0583 19.9663 15.0642C21.6231 15.0717 22.9723 13.7346 22.9798 12.0777C22.9872 10.4209 21.6501 9.07172 19.9933 9.06427C18.6867 9.05841 17.5715 9.88865 17.1547 11.0525L4.83934 11.0102L6.68182 9.17397L5.27 7.75737ZM18.9798 12.0598C18.9823 11.5075 19.432 11.0618 19.9843 11.0643C20.5366 11.0667 20.9823 11.5165 20.9798 12.0687C20.9773 12.621 20.5276 13.0667 19.9753 13.0642C19.423 13.0618 18.9773 12.612 18.9798 12.0598Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongLeftE: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -617,6 +656,7 @@ pub static CgArrowLongLeftE: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.26323 7.75737L1.01343 11.9928L5.24893 16.2426L6.66553 14.8308L4.85123 13.0104L16.9685 13.0519L16.9596 15.0507L22.9595 15.0777L22.9865 9.07773L16.9865 9.05079L16.9775 11.0519L4.83252 11.0103L6.67505 9.17397L5.26323 7.75737ZM20.9775 11.0687L20.9685 13.0687L18.9685 13.0597L18.9775 11.0597L20.9775 11.0687Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongLeftL: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -632,6 +672,7 @@ pub static CgArrowLongLeftL: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="M5.20837 7.75725L0.969116 12.0033L5.21515 16.2428L6.62823 14.8274L4.80949 13.0116L21.0229 13.0298L21.0189 15.0297L23.0189 15.0338L23.0309 9.03377L21.0309 9.02976L21.0249 12.019L21.0261 11.0298L4.78543 11.0115L6.62371 9.17033L5.20837 7.75725Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -647,6 +688,7 @@ pub static CgArrowLongLeftR: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64872 7.72528L0.398926 11.9608L4.63443 16.2105L6.05103 14.7987L4.23673 12.9783L16.1027 13.019L19.3585 16.2747L23.6011 12.0321L19.3585 7.78945L16.1289 11.019L4.21801 10.9782L6.06055 9.14188L4.64872 7.72528ZM17.9443 12.0321L19.3585 10.6179L20.7727 12.0321L19.3585 13.4463L17.9443 12.0321Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -662,6 +704,7 @@ pub static CgArrowLongRight: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongRightC: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -677,6 +720,7 @@ pub static CgArrowLongRightC: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18.73 7.75739L22.9798 11.9929L18.7443 16.2426L17.3277 14.8308L19.142 13.0103L6.85364 13.0525C6.44678 14.219 5.33954 15.0584 4.03368 15.0642C2.37684 15.0717 1.02767 13.7346 1.02023 12.0777C1.01279 10.4209 2.34989 9.07173 4.00673 9.06429C5.31328 9.05842 6.4285 9.88867 6.84531 11.0525L19.1607 11.0103L17.3182 9.17398L18.73 7.75739ZM5.02019 12.0598C5.01771 11.5075 4.56799 11.0618 4.01571 11.0643C3.46343 11.0667 3.01773 11.5165 3.02021 12.0687C3.02269 12.621 3.47242 13.0667 4.02469 13.0642C4.57697 13.0618 5.02267 12.612 5.02019 12.0598Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongRightE: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -692,6 +736,7 @@ pub static CgArrowLongRightE: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9865 11.9929L18.7511 16.2426L17.3345 14.8308L19.1488 13.0104L7.0314 13.0519L7.04038 15.0507L1.04044 15.0777L1.01349 9.07773L7.01343 9.05079L7.02242 11.0519L19.1674 11.0103L17.3249 9.17398L18.7367 7.75739L22.9865 11.9929ZM3.02245 11.0687L3.03143 13.0687L5.03141 13.0597L5.02243 11.0597L3.02245 11.0687Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongRightL: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -707,6 +752,7 @@ pub static CgArrowLongRightL: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="M18.9164 7.75739L23.1662 11.9929L18.9305 16.2426L17.5139 14.8308L19.3325 13.0061L2.8338 13.0285V15.0299H0.833801V9.02988H2.8338V11.0285L19.3429 11.0061L17.5046 9.17398L18.9164 7.75739Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -722,6 +768,7 @@ pub static CgArrowLongRightR: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19.3514 7.72525L23.6012 11.9607L19.3655 16.2105L17.9489 14.7987L19.7633 12.9781L7.89744 13.0188L4.64151 16.2748L0.398865 12.0321L4.64151 7.78947L7.87093 11.0189L19.782 10.9781L17.9395 9.14185L19.3514 7.72525ZM4.64151 13.4463L6.05572 12.0321L4.64151 10.6179L3.22729 12.0321L4.64151 13.4463Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -737,6 +784,7 @@ pub static CgArrowLongUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12.0321 1.01712L7.75751 5.22761L9.161 6.65246L11.0197 4.82165L10.9644 22.9768L12.9644 22.9829L13.0195 4.86974L14.8177 6.69525L16.2425 5.29175L12.0321 1.01712Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongUpC: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -752,6 +800,7 @@ pub static CgArrowLongUpC: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.75751 5.23078L12.0321 1.02029L16.2425 5.29492L14.8177 6.69842L13.0141 4.86736L12.9427 17.1555C14.1054 17.5732 14.9345 18.6881 14.9283 19.994C14.9204 21.6508 13.5709 22.9876 11.9141 22.9797C10.2572 22.9718 8.92049 21.6223 8.92836 19.9655C8.93456 18.6589 9.77508 17.5514 10.9427 17.1454L11.0142 4.83017L9.161 6.65563L7.75751 5.23078ZM11.9331 18.9797C11.3808 18.9771 10.931 19.4227 10.9283 19.975C10.9257 20.5273 11.3713 20.9771 11.9236 20.9797C12.4759 20.9823 12.9257 20.5367 12.9283 19.9845C12.9309 19.4322 12.4853 18.9824 11.9331 18.9797Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongUpE: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -767,6 +816,7 @@ pub static CgArrowLongUpE: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0321 1.01318L16.2425 5.28781L14.8177 6.69131L13.014 4.86019L12.9436 16.9774L14.9425 16.9869L14.914 22.9868L8.91412 22.9583L8.9426 16.9584L10.9436 16.9679L11.0142 4.82318L9.16107 6.64852L7.75757 5.22367L12.0321 1.01318ZM10.9236 20.9678L12.9236 20.9773L12.9331 18.9773L10.9331 18.9678L10.9236 20.9678Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongUpL: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -782,6 +832,7 @@ pub static CgArrowLongUpL: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12.0321 1.01865L16.2425 5.29327L14.8177 6.69677L13.0192 4.87094L12.9676 20.9813H14.9644V22.9813H8.96441V20.9813H10.9676L11.0194 4.82354L9.16107 6.65399L7.75757 5.22914L12.0321 1.01865Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowLongUpR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -797,6 +848,7 @@ pub static CgArrowLongUpR: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.79337 4.60945L12.0679 0.398956L16.2785 4.67358L14.8536 6.07708L13.0499 4.24596L12.9809 16.1324L16.2068 19.3584L11.9642 23.601L7.72156 19.3584L10.981 16.0989L11.0501 4.20883L9.19686 6.0343L7.79337 4.60945ZM11.9642 20.7726L13.3784 19.3584L11.9642 17.9442L10.55 19.3584L11.9642 20.7726Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -812,6 +864,7 @@ pub static CgArrowRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -828,6 +881,7 @@ pub static CgArrowRightO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183C15.4824 -0.0739417 8.51759 -0.0739417 4.22183 4.22183C-0.0739417 8.51759 -0.0739417 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782ZM18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -844,6 +898,7 @@ pub static CgArrowRightR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -859,6 +914,7 @@ pub static CgArrowTopLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M13.4747 5.49475L13.4793 7.49475L8.92175 7.50541L18.5253 17.0896L17.1125 18.5052L7.48259 8.89473L7.49339 13.5088L5.49339 13.5134L5.47467 5.51345L13.4747 5.49475Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -875,6 +931,7 @@ pub static CgArrowTopLeftO: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -891,6 +948,7 @@ pub static CgArrowTopLeftR: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -906,6 +964,7 @@ pub static CgArrowTopRight: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -922,6 +981,7 @@ pub static CgArrowTopRightO: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowTopRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -938,6 +998,7 @@ pub static CgArrowTopRightR: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19ZM19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -953,6 +1014,7 @@ pub static CgArrowUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowUpO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -969,6 +1031,7 @@ pub static CgArrowUpO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7782 4.22183C15.4824 -0.0739415 8.51759 -0.0739422 4.22183 4.22183C-0.0739415 8.51759 -0.0739422 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183ZM18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowUpR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -985,6 +1048,7 @@ pub static CgArrowUpR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsBreakeH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1001,6 +1065,7 @@ pub static CgArrowsBreakeH: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M15.2527 7.00012H13.2527V11.0001H13.2477V13.0001H13.2527V17.0001H15.2527V13.0001L19.667 13L17.8385 14.8285L19.2527 16.2427L23.4954 12L19.2527 7.75739L17.8385 9.17161L19.6669 11H15.2527L15.2527 7.00012Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsBreakeV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1017,6 +1082,7 @@ pub static CgArrowsBreakeV: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M7 15.2527V13.2527H17V15.2527H13.0001L13 19.6669L14.8284 17.8385L16.2426 19.2527L12 23.4954L7.75732 19.2527L9.17154 17.8385L11 19.667V15.2527L7 15.2527Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExchange: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1033,6 +1099,7 @@ pub static CgArrowsExchange: &icondata_core::IconData = &icondata_core::IconData
 <path d="M19.0074 11.0159C19.5597 11.0159 20.0074 10.5682 20.0074 10.0159C20.0074 9.6585 19.82 9.3449 19.538 9.16807L16.8504 6.48045C16.4598 6.08993 15.8267 6.08993 15.4361 6.48045C15.0456 6.87098 15.0456 7.50414 15.4361 7.89467L16.5574 9.01589L9.00745 9.01589C8.45516 9.01589 8.00745 9.46361 8.00745 10.0159C8.00745 10.5682 8.45516 11.0159 9.00745 11.0159L18.958 11.0159C18.9671 11.016 18.9762 11.016 18.9854 11.0159H19.0074Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExchangeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1049,6 +1116,7 @@ pub static CgArrowsExchangeAlt: &icondata_core::IconData = &icondata_core::IconD
 <path d="M19.0074 12.9841C19.5597 12.9841 20.0074 13.4318 20.0074 13.9841C20.0074 14.3415 19.82 14.6551 19.538 14.8319L16.8504 17.5195C16.4598 17.9101 15.8267 17.9101 15.4361 17.5195C15.0456 17.129 15.0456 16.4958 15.4361 16.1053L16.5574 14.9841H9.00745C8.45516 14.9841 8.00745 14.5364 8.00745 13.9841C8.00745 13.4318 8.45516 12.9841 9.00745 12.9841L18.958 12.9841C18.9671 12.984 18.9762 12.984 18.9854 12.9841H19.0074Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExchangeAltV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1065,6 +1133,7 @@ pub static CgArrowsExchangeAltV: &icondata_core::IconData = &icondata_core::Icon
 <path d="M11.0159 19.0074C11.0159 19.5597 10.5682 20.0074 10.0159 20.0074C9.6585 20.0074 9.3449 19.82 9.16807 19.538L6.48045 16.8504C6.08993 16.4598 6.08993 15.8267 6.48045 15.4361C6.87098 15.0456 7.50414 15.0456 7.89467 15.4361L9.01589 16.5574V9.00745C9.01589 8.45516 9.46361 8.00745 10.0159 8.00745C10.5682 8.00745 11.0159 8.45516 11.0159 9.00745V18.958C11.016 18.9671 11.016 18.9762 11.0159 18.9854V19.0074Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExchangeV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1081,6 +1150,7 @@ pub static CgArrowsExchangeV: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M11.016 9C11.016 8.44771 10.5682 8 10.016 8C9.65856 8 9.34496 8.18748 9.16813 8.46947L6.48052 11.1571C6.08999 11.5476 6.08999 12.1808 6.48051 12.5713C6.87104 12.9618 7.5042 12.9618 7.89473 12.5713L9.01596 11.4501L9.01596 19C9.01596 19.5523 9.46367 20 10.016 20C10.5682 20 11.016 19.5523 11.016 19L11.016 9.04945C11.0161 9.04033 11.0161 9.03121 11.016 9.02208V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1097,6 +1167,7 @@ pub static CgArrowsExpandDownLeft: &icondata_core::IconData = &icondata_core::Ic
 <path d="M5 13H3V21H11V19H6.41424L11.7782 13.6361C12.1687 13.2456 12.1687 12.6124 11.7782 12.2219C11.3876 11.8314 10.7545 11.8314 10.3639 12.2219L5 17.5858V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1113,6 +1184,7 @@ pub static CgArrowsExpandDownRight: &icondata_core::IconData = &icondata_core::I
 <path d="M19 13H21V21H13V19H17.5858L12.2218 13.6361C11.8313 13.2456 11.8313 12.6124 12.2218 12.2219C12.6124 11.8314 13.2455 11.8314 13.6361 12.2219L19 17.5858V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1129,6 +1201,7 @@ pub static CgArrowsExpandLeft: &icondata_core::IconData = &icondata_core::IconDa
 <path d="M19.8995 13.8995H21.8995V21.8995H13.8995V19.8995H18.4853L12.7071 14.1212L14.1213 12.707L19.8995 18.4853V13.8995Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandLeftAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1146,6 +1219,7 @@ pub static CgArrowsExpandLeftAlt: &icondata_core::IconData = &icondata_core::Ico
 <path d="M16.2426 9.1716L14.8284 7.75739L7.7573 14.8285L9.17151 16.2427L16.2426 9.1716Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1162,6 +1236,7 @@ pub static CgArrowsExpandRight: &icondata_core::IconData = &icondata_core::IconD
 <path d="M4.10046 13.8995H2.10046V21.8995H10.1005V19.8995H5.51468L11.2929 14.1212L9.87872 12.707L4.10046 18.4853V13.8995Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandRightAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1179,6 +1254,7 @@ pub static CgArrowsExpandRightAlt: &icondata_core::IconData = &icondata_core::Ic
 <path d="M9.17154 7.75739L7.75732 9.1716L14.8284 16.2427L16.2426 14.8285L9.17154 7.75739Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1195,6 +1271,7 @@ pub static CgArrowsExpandUpLeft: &icondata_core::IconData = &icondata_core::Icon
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19 13C20.1046 13 21 13.8954 21 15V19C21 20.1046 20.1046 21 19 21H15C13.8954 21 13 20.1046 13 19V15C13 13.8954 13.8954 13 15 13H19ZM19 15V19H15V15H19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsExpandUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1211,6 +1288,7 @@ pub static CgArrowsExpandUpRight: &icondata_core::IconData = &icondata_core::Ico
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 13C3.89543 13 3 13.8954 3 15L3 19C3 20.1046 3.89543 21 5 21H9C10.1046 21 11 20.1046 11 19V15C11 13.8954 10.1046 13 9 13H5ZM5 15L5 19H9V15H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1227,6 +1305,7 @@ pub static CgArrowsH: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.0001 11V13H20.1716L18.3432 14.8284L19.7574 16.2426L24.0001 12L19.7574 7.75735L18.3432 9.17157L20.1717 11H14.0001Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsHAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1242,6 +1321,7 @@ pub static CgArrowsHAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M4.24267 7.75735L5.65688 9.17157L3.82842 11H20.1716L18.3431 9.17157L19.7573 7.75735L24 12L19.7572 16.2426L18.343 14.8284L20.1714 13H3.82845L5.65685 14.8284L4.24264 16.2426L0 12L4.24267 7.75735Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsMergeAltH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1258,6 +1338,7 @@ pub static CgArrowsMergeAltH: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M20.4967 6H22.4967V18H20.4967V13H16.3251L18.1536 14.8285L16.7393 16.2427L12.4967 12L16.7393 7.75739L18.1536 9.17161L16.3252 11H20.4967V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsMergeAltV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1274,6 +1355,7 @@ pub static CgArrowsMergeAltV: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M18 20.4967V22.4967H6V20.4967H11V16.3251L9.17154 18.1536L7.75732 16.7393L12 12.4967L16.2426 16.7393L14.8284 18.1536L13 16.3252V20.4967H18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsScrollH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1290,6 +1372,7 @@ pub static CgArrowsScrollH: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M10.1091 10.5858L10.1128 10.5821L11.527 11.9963L11.5233 12L11.527 12.0037L10.1128 13.4179L10.1091 13.4142L7.28433 16.239L5.87012 14.8248L8.69487 12L5.87012 9.17526L7.28433 7.76105L10.1091 10.5858Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsScrollV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1306,6 +1389,7 @@ pub static CgArrowsScrollV: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M12 15.3052L14.8247 18.1299L16.239 16.7157L13.4142 13.891L13.4179 13.8873L12.0037 12.4731L12 12.4767L11.9963 12.4731L10.5821 13.8873L10.5858 13.891L7.76105 16.7157L9.17526 18.1299L12 15.3052Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsShrinkH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1323,6 +1407,7 @@ pub static CgArrowsShrinkH: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M23 7H21V17H23V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsShrinkV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1340,6 +1425,7 @@ pub static CgArrowsShrinkV: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M17 23V21H7V23H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1356,6 +1442,7 @@ pub static CgArrowsV: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16.2426 18.9593L14.8284 17.545L13.0001 19.3734V14H11.0001V19.3735L9.1716 17.545L7.75739 18.9593L12 23.2019L16.2426 18.9593Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgArrowsVAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1371,6 +1458,7 @@ pub static CgArrowsVAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9.1716 6.45504L7.75739 5.04083L12 0.798187L16.2426 5.04083L14.8284 6.45504L13.0001 4.62667V19.3733L14.8284 17.5449L16.2426 18.9592L12 23.2018L7.75739 18.9592L9.1716 17.5449L11.0001 19.3734V4.62658L9.1716 6.45504Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAssign: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1390,6 +1478,7 @@ pub static CgAssign: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAsterisk: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1405,6 +1494,7 @@ pub static CgAsterisk: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M11 6H13V10.079L16.3413 7.73938L17.4885 9.37768L13.7434 12L17.4885 14.6223L16.3413 16.2606L13 13.921V18H11V13.921L7.65864 16.2606L6.51148 14.6223L10.2565 12L6.51147 9.37769L7.65863 7.73938L11 10.079V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAtlasian: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1421,6 +1511,7 @@ pub static CgAtlasian: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12.8745 7.12641C11.6074 8.93603 11.1992 12.0835 11.9627 14.1565L13.7126 18.9074H18.9644L14.3673 6.42648C14.1764 5.90823 13.7649 5.85485 13.4481 6.30726L12.8745 7.12641Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAttachment: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1436,6 +1527,7 @@ pub static CgAttachment: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M14 0C16.7614 0 19 2.23858 19 5V17C19 20.866 15.866 24 12 24C8.13401 24 5 20.866 5 17V9H7V17C7 19.7614 9.23858 22 12 22C14.7614 22 17 19.7614 17 17V5C17 3.34315 15.6569 2 14 2C12.3431 2 11 3.34315 11 5V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V6H15V17C15 18.6569 13.6569 20 12 20C10.3431 20 9 18.6569 9 17V5C9 2.23858 11.2386 0 14 0Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAttribution: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1451,6 +1543,7 @@ pub static CgAttribution: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6 8C6.74028 8 7.38663 7.5978 7.73244 7H14C15.1046 7 16 7.89543 16 9C16 10.1046 15.1046 11 14 11H10C7.79086 11 6 12.7909 6 15C6 17.2091 7.79086 19 10 19H16.2676C16.6134 19.5978 17.2597 20 18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C17.2597 16 16.6134 16.4022 16.2676 17H10C8.89543 17 8 16.1046 8 15C8 13.8954 8.89543 13 10 13H14C16.2091 13 18 11.2091 18 9C18 6.79086 16.2091 5 14 5H7.73244C7.38663 4.4022 6.74028 4 6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgAwards: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1466,6 +1559,7 @@ pub static CgAwards: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19 9C19 11.3787 17.8135 13.4804 16 14.7453V22H13.4142L12 20.5858L10.5858 22H8V14.7453C6.18652 13.4804 5 11.3787 5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9ZM17 9C17 11.7614 14.7614 14 12 14C9.23858 14 7 11.7614 7 9C7 6.23858 9.23858 4 12 4C14.7614 4 17 6.23858 17 9ZM10 19.7573L12 17.7573L14 19.7574V15.7101C13.3663 15.8987 12.695 16 12 16C11.305 16 10.6337 15.8987 10 15.7101V19.7573Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBackspace: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1482,6 +1576,7 @@ pub static CgBackspace: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.58579 19L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929L8.58579 5H22.5857V19H8.58579ZM9.41421 7L4.41421 12L9.41421 17H20.5857V7H9.41421Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBandAid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1501,6 +1596,7 @@ pub static CgBandAid: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0714 1.12432C14.0682 -0.276119 10.4983 1.02321 9.09783 4.02645L4.02641 14.9021C2.62598 17.9054 3.92531 21.4753 6.92855 22.8757C9.93179 24.2761 13.5017 22.9768 14.9021 19.9736L19.9735 9.09787C21.374 6.09463 20.0746 2.52475 17.0714 1.12432ZM13.9347 17.3157L17.3157 10.0653L10.0652 6.6843L6.68427 13.9348L13.9347 17.3157ZM13.0895 19.1283L5.83903 15.7474C4.90541 17.7495 5.77163 20.1295 7.77379 21.0631C9.77595 21.9967 12.1559 21.1305 13.0895 19.1283ZM16.2262 2.93693C18.2283 3.87055 19.0945 6.25047 18.1609 8.25264L10.9104 4.87169C11.8441 2.86953 14.224 2.00331 16.2262 2.93693Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBattery: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1517,6 +1613,7 @@ pub static CgBattery: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H5C3.34315 6 2 7.34315 2 9V15C2 16.6569 3.34315 18 5 18H18C19.6569 18 21 16.6569 21 15C21.5523 15 22 14.5523 22 14V10C22 9.44772 21.5523 9 21 9C21 7.34315 19.6569 6 18 6ZM18 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H18C18.5523 16 19 15.5523 19 15V9C19 8.44772 18.5523 8 18 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBatteryEmpty: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1532,6 +1629,7 @@ pub static CgBatteryEmpty: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H5C3.34315 6 2 7.34315 2 9V15C2 16.6569 3.34315 18 5 18H18C19.6569 18 21 16.6569 21 15C21.5523 15 22 14.5523 22 14V10C22 9.44772 21.5523 9 21 9C21 7.34315 19.6569 6 18 6ZM18 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H18C18.5523 16 19 15.5523 19 15V9C19 8.44772 18.5523 8 18 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBatteryFull: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1548,6 +1646,7 @@ pub static CgBatteryFull: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H5C3.34315 6 2 7.34315 2 9V15C2 16.6569 3.34315 18 5 18H18C19.6569 18 21 16.6569 21 15C21.5523 15 22 14.5523 22 14V10C22 9.44772 21.5523 9 21 9C21 7.34315 19.6569 6 18 6ZM18 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H18C18.5523 16 19 15.5523 19 15V9C19 8.44772 18.5523 8 18 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBee: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1563,6 +1662,7 @@ pub static CgBee: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17.9513 15.571C17.7695 17.2187 16.9205 18.6654 15.6805 19.635C15.332 20.4692 14.7092 21.1601 13.9247 21.5951C13.7025 22.4574 12.9196 23.0944 11.9879 23.0944C11.0562 23.0944 10.2733 22.4574 10.0511 21.5951C9.26672 21.1602 8.64392 20.4693 8.29547 19.6353C7.05955 18.6691 6.21203 17.229 6.02621 15.5883C4.93527 16.4161 3.37955 16.4118 2.28618 15.4944C1.01696 14.4294 0.851409 12.5371 1.91641 11.2679L6.00966 6.38975C6.27125 3.31753 8.84785 0.905579 11.9878 0.905579C15.1166 0.905579 17.6861 3.30046 17.9631 6.35711L22.0837 11.2679C23.1487 12.5371 22.9831 14.4294 21.7139 15.4944C20.613 16.4182 19.0433 16.4161 17.9513 15.571ZM15.6254 12.9056L13.9472 10.9056H10.0529L8.37467 12.9056H15.6254ZM17.9878 12.6095L19.0195 13.839C19.3745 14.2621 20.0053 14.3173 20.4283 13.9623C20.8514 13.6073 20.9066 12.9765 20.5516 12.5535L17.9878 9.49803V12.6095ZM15.9878 8.90558V6.90558C15.9878 4.69644 14.1969 2.90558 11.9878 2.90558C9.77865 2.90558 7.98779 4.69644 7.98779 6.90558V8.90558H15.9878ZM4.98059 13.839L5.98779 12.6387V9.52726L3.4485 12.5535C3.0935 12.9765 3.14869 13.6073 3.57176 13.9623C3.99483 14.3173 4.62559 14.2621 4.98059 13.839ZM11.9878 18.9056C9.77865 18.9056 7.98779 17.1147 7.98779 14.9056H15.9878C15.9878 17.1147 14.1969 18.9056 11.9878 18.9056Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBell: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1578,6 +1678,7 @@ pub static CgBell: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14 3V3.28988C16.8915 4.15043 19 6.82898 19 10V17H20V19H4V17H5V10C5 6.82898 7.10851 4.15043 10 3.28988V3C10 1.89543 10.8954 1 12 1C13.1046 1 14 1.89543 14 3ZM7 17H17V10C17 7.23858 14.7614 5 12 5C9.23858 5 7 7.23858 7 10V17ZM14 21V20H10V21C10 22.1046 10.8954 23 12 23C13.1046 23 14 22.1046 14 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBitbucket: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1593,6 +1694,7 @@ pub static CgBitbucket: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4.5831 4.63507C4.03082 4.63507 3.66768 5.07472 3.77202 5.61706L6.22804 18.383C6.33238 18.9253 6.86468 19.3649 7.41696 19.3649H16.583C17.1353 19.3649 17.6676 18.9253 17.7719 18.383L20.2279 5.61706C20.3323 5.07472 19.9691 4.63507 19.4168 4.63507H4.5831ZM13.5449 14.3649L14.4549 9.63507H9.54504L10.455 14.3649H13.5449Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBlock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1609,6 +1711,7 @@ pub static CgBlock: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34315 17.6569C9.46734 20.781 14.5327 20.781 17.6569 17.6569C20.781 14.5327 20.781 9.46734 17.6569 6.34315C14.5327 3.21895 9.46734 3.21895 6.34315 6.34315C3.21895 9.46734 3.21895 14.5327 6.34315 17.6569ZM16.2426 16.2426C13.8995 18.5858 10.1005 18.5858 7.75736 16.2426C5.41421 13.8995 5.41421 10.1005 7.75736 7.75736C10.1005 5.41421 13.8995 5.41421 16.2426 7.75736C18.5858 10.1005 18.5858 13.8995 16.2426 16.2426Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBmw: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1624,6 +1727,7 @@ pub static CgBmw: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM5 12C5 15.866 8.13401 19 12 19V12H19C19 8.13401 15.866 5 12 5V12H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBoard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1639,6 +1743,7 @@ pub static CgBoard: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H18C20.2091 20 22 18.2091 22 16V8C22 5.79086 20.2091 4 18 4H6ZM14 6H10V18H14V6ZM16 6V18H18C19.1046 18 20 17.1046 20 16V8C20 6.89543 19.1046 6 18 6H16ZM6 18H8V6H6C4.89543 6 4 6.89543 4 8V16C4 17.1046 4.89543 18 6 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBolt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1654,6 +1759,7 @@ pub static CgBolt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9 21.5L17.5 13L13 10L15 2.5L6.5 11L11 14L9 21.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBookmark: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1669,6 +1775,7 @@ pub static CgBookmark: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19 20H17.1717L12.7072 15.5354C12.3166 15.1449 11.6835 15.1449 11.2929 15.5354L6.82843 20L5 20V7C5 5.34315 6.34315 4 8 4H16C17.6569 4 19 5.34314 19 7V20ZM17 7C17 6.44772 16.5523 6 16 6H8C7.44772 6 7 6.44772 7 7V17L9.87873 14.1212C11.0503 12.9497 12.9498 12.9497 14.1214 14.1212L17 16.9999V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderAll: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1684,6 +1791,7 @@ pub static CgBorderAll: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6.5 6.5H17.5V17.5H6.5V6.5Z" stroke="currentColor" stroke-width="3" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderBottom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1700,6 +1808,7 @@ pub static CgBorderBottom: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 17H19V20H5V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1716,6 +1825,7 @@ pub static CgBorderLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 5L7 19H4L4 5L7 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1732,6 +1842,7 @@ pub static CgBorderRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17 19L17 5L20 5L20 19H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderStyleDashed: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1749,6 +1860,7 @@ pub static CgBorderStyleDashed: &icondata_core::IconData = &icondata_core::IconD
 <path d="M20 11H16V13H20V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderStyleDotted: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1769,6 +1881,7 @@ pub static CgBorderStyleDotted: &icondata_core::IconData = &icondata_core::IconD
 <path d="M23 11H21V13H23V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderStyleSolid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1784,6 +1897,7 @@ pub static CgBorderStyleSolid: &icondata_core::IconData = &icondata_core::IconDa
     data: r###"<path d="M2 11H22V13H2V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBorderTop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1800,6 +1914,7 @@ pub static CgBorderTop: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 7L19 7V4L5 4L5 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBot: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1818,6 +1933,7 @@ pub static CgBot: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.74884 14.6663C3.73056 16.6421 5.76939 18 8.12537 18H16.1254C18.5654 18 20.6652 16.5435 21.6029 14.4525C22.3722 13.9093 22.8746 13.0133 22.8746 12C22.8746 10.9867 22.3722 10.0907 21.6029 9.54753C20.6652 7.45651 18.5654 6 16.1254 6H8.12537C5.76939 6 3.73056 7.3579 2.74884 9.33375C1.78448 9.83263 1.12537 10.8393 1.12537 12C1.12537 13.1607 1.78448 14.1674 2.74884 14.6663ZM8.12537 8H16.1254C17.5088 8 18.7282 8.70234 19.4465 9.76991C19.7227 10.4593 19.8746 11.2119 19.8746 12C19.8746 12.7881 19.7227 13.5407 19.4465 14.2301C18.7282 15.2977 17.5088 16 16.1254 16H8.12537C5.91623 16 4.12537 14.2091 4.12537 12C4.12537 9.79086 5.91623 8 8.12537 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBowl: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1833,6 +1949,7 @@ pub static CgBowl: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M20.5468 3.67162C20.1563 3.28109 19.5231 3.28109 19.1326 3.67162L13.7687 9.03555H2V11.0356H2.00842C2.22563 16.3663 6.61591 20.6213 12 20.6213C17.3841 20.6213 21.7744 16.3663 21.9916 11.0356H22V9.03555H16.5971L20.5468 5.08583C20.9374 4.69531 20.9374 4.06214 20.5468 3.67162ZM14.1762 11.0356C14.1806 11.0356 14.1851 11.0356 14.1896 11.0356H19.9895C19.7739 15.2613 16.2793 18.6213 12 18.6213C7.72066 18.6213 4.22609 15.2613 4.01054 11.0356H14.1762Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBox: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1849,6 +1966,7 @@ pub static CgBox: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C2.34314 2 1 3.34314 1 5V19C1 20.6569 2.34314 22 4 22H20C21.6569 22 23 20.6569 23 19V5C23 3.34314 21.6569 2 20 2H4ZM20 4H4C3.44769 4 3 4.44769 3 5V8H21V5C21 4.44769 20.5522 4 20 4ZM3 19V10H21V19C21 19.5523 20.5522 20 20 20H4C3.44769 20 3 19.5523 3 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBoy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1866,6 +1984,7 @@ pub static CgBoy: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 11.1637 19.8717 10.3574 19.6337 9.59973C18.7991 9.82556 17.9212 9.94604 17.0152 9.94604C13.2921 9.94604 10.0442 7.91139 8.32277 4.89334C5.75469 6.22486 4 8.90751 4 12C4 16.4183 7.58172 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBrackets: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1883,6 +2002,7 @@ pub static CgBrackets: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBriefcase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1899,6 +2019,7 @@ pub static CgBriefcase: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBrowse: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1917,6 +2038,7 @@ pub static CgBrowse: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 2.34315 5.34315 1 7 1H17C18.6569 1 20 2.34315 20 4V20C20 21.6569 18.6569 23 17 23H7C5.34315 23 4 21.6569 4 20V4ZM7 3H17C17.5523 3 18 3.44772 18 4V20C18 20.5523 17.5523 21 17 21H7C6.44772 21 6 20.5523 6 20V4C6 3.44772 6.44771 3 7 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBrowser: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1935,6 +2057,7 @@ pub static CgBrowser: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V9H22V6C22 5.44772 21.5523 5 21 5ZM2 18V11H22V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBrush: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1950,6 +2073,7 @@ pub static CgBrush: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15 11H18C18.5523 11 19 11.4477 19 12V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V12C5 11.4477 5.44772 11 6 11H9V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V11ZM13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6V13H7V18C7 18.5523 7.44772 19 8 19H9V16H11V19H13V16H15V19H16C16.5523 19 17 18.5523 17 18V13H13V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgBulb: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1966,6 +2090,7 @@ pub static CgBulb: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10 21.0064V21C10.5883 21.3403 11.2714 21.5351 12 21.5351C12.7286 21.5351 13.4117 21.3403 14 21V21.0064C14 22.111 13.1046 23.0064 12 23.0064C10.8954 23.0064 10 22.111 10 21.0064Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCPlusPlus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1983,6 +2108,7 @@ pub static CgCPlusPlus: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 9H22V11H24V13H22V15H20V13H18V11H20V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalculator: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2007,6 +2133,7 @@ pub static CgCalculator: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C3 1.89543 3.89543 1 5 1H19C20.1046 1 21 1.89543 21 3V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V3ZM5 3H19V21H5V3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2023,6 +2150,7 @@ pub static CgCalendar: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V7H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendarDates: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2045,6 +2173,7 @@ pub static CgCalendarDates: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendarDue: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2062,6 +2191,7 @@ pub static CgCalendarDue: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendarNext: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2079,6 +2209,7 @@ pub static CgCalendarNext: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendarToday: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2095,6 +2226,7 @@ pub static CgCalendarToday: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM5 18V7H19V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalendarTwo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2111,6 +2243,7 @@ pub static CgCalendarTwo: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCalibrate: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2127,6 +2260,7 @@ pub static CgCalibrate: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12.0503 19C13.7071 19 15.0503 17.6569 15.0503 16C15.0503 14.3431 13.7071 13 12.0503 13C10.3934 13 9.05029 14.3431 9.05029 16C9.05029 17.6569 10.3934 19 12.0503 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCamera: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2142,6 +2276,7 @@ pub static CgCamera: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4.5V6.5H12V7.5H3C1.34315 7.5 0 8.84315 0 10.5V16.5C0 18.1569 1.34315 19.5 3 19.5H15C16.5731 19.5 17.8634 18.2892 17.9898 16.7487L24 17.5V9.5L17.9898 10.2513C17.8634 8.71078 16.5731 7.5 15 7.5H14V5.5C14 4.94772 13.5523 4.5 13 4.5H4ZM18 12.2656V14.7344L22 15.2344V11.7656L18 12.2656ZM16 10.5C16 9.94772 15.5523 9.5 15 9.5H3C2.44772 9.5 2 9.94772 2 10.5V16.5C2 17.0523 2.44772 17.5 3 17.5H15C15.5523 17.5 16 17.0523 16 16.5V10.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCap: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2158,6 +2293,7 @@ pub static CgCap: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.988 3.2203C13.9959 3.14796 14 3.07446 14 3C14 1.89543 13.1046 1 12 1C10.8954 1 10 1.89543 10 3C10 3.07446 10.0041 3.14796 10.012 3.2203C5.99799 4.12533 3 7.71255 3 12C3 12.3883 3.02459 12.7709 3.0723 13.1462C1.86949 13.5369 1 14.6669 1 16V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V16C23 14.6669 22.1305 13.5369 20.9277 13.1462C20.9754 12.7709 21 12.3883 21 12C21 7.71255 18.002 4.12533 13.988 3.2203ZM12 5C8.13401 5 5 8.13401 5 12C5 12.3402 5.02412 12.674 5.07063 13H18.9294C18.9759 12.674 19 12.3402 19 12C19 8.13401 15.866 5 12 5ZM3 16C3 15.4477 3.44772 15 4 15H20C20.5523 15 21 15.4477 21 16V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCaptions: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2175,6 +2311,7 @@ pub static CgCaptions: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 4.44772 2.44772 4 3 4H21C21.5523 4 22 4.44772 22 5V19C22 19.5523 21.5523 20 21 20H3C2.44772 20 2 19.5523 2 19V5ZM4 18V6H20V18H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCardClubs: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2193,6 +2330,7 @@ pub static CgCardClubs: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 2.34315 4.34315 1 6 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V4ZM6 3H18C18.5523 3 19 3.44772 19 4V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V4C5 3.44772 5.44772 3 6 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCardDiamonds: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2209,6 +2347,7 @@ pub static CgCardDiamonds: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 2.34315 4.34315 1 6 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V4ZM6 3H18C18.5523 3 19 3.44772 19 4V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V4C5 3.44772 5.44772 3 6 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCardHearts: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2225,6 +2364,7 @@ pub static CgCardHearts: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 2.34315 4.34315 1 6 1H18C19.6569 1 21 2.34315 21 4V20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20V4ZM6 3H18C18.5523 3 19 3.44772 19 4V20C19 20.5523 18.5523 21 18 21H6C5.44772 21 5 20.5523 5 20V4C5 3.44772 5.44772 3 6 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCardSpades: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2241,6 +2381,7 @@ pub static CgCardSpades: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 20C3 21.6569 4.34315 23 6 23H18C19.6569 23 21 21.6569 21 20V4C21 2.34315 19.6569 1 18 1H6C4.34315 1 3 2.34315 3 4V20ZM6 21H18C18.5523 21 19 20.5523 19 20V4C19 3.44772 18.5523 3 18 3H6C5.44772 3 5 3.44772 5 4V20C5 20.5523 5.44772 21 6 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCarousel: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2258,6 +2399,7 @@ pub static CgCarousel: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 15C4.44772 15 4 15.4477 4 16C4 16.5523 4.44772 17 5 17H19C19.5523 17 20 16.5523 20 16C20 15.4477 19.5523 15 19 15H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCast: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2276,6 +2418,7 @@ pub static CgCast: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 9C8.07513 9 13 13.9249 13 20H11C11 15.0294 6.97056 11 2 11V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChanel: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2291,6 +2434,7 @@ pub static CgChanel: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6.07178 3.17291C4.32593 3.5202 2.72229 4.37738 1.46362 5.63605L3.59332 7.76575C4.43079 6.92835 5.4978 6.35803 6.65936 6.12695C7.53564 5.95264 8.43604 5.9773 9.29523 6.19452C9.0791 6.45056 8.87671 6.71936 8.68927 6.99988C7.70032 8.47992 7.17249 10.22 7.17249 12C7.17249 13.78 7.70032 15.5201 8.68927 17.0001C8.87671 17.2806 9.07916 17.5494 9.29529 17.8055C8.4361 18.0227 7.53564 18.0474 6.65936 17.873C5.4978 17.642 4.43079 17.0717 3.59332 16.2343L1.46362 18.364C2.72229 19.6226 4.32593 20.4798 6.07178 20.8271C7.81757 21.1743 9.6272 20.9961 11.2717 20.3149C11.5201 20.212 11.7632 20.0983 12.0001 19.9744C12.2369 20.0983 12.4799 20.212 12.7283 20.3149C14.3729 20.9961 16.1825 21.1743 17.9283 20.8271C19.6741 20.4798 21.2778 19.6226 22.5364 18.364L20.4067 16.2343C19.5693 17.0717 18.5023 17.642 17.3407 17.873C16.4644 18.0474 15.564 18.0227 14.7048 17.8055C14.9209 17.5494 15.1234 17.2806 15.3108 17.0001C16.2997 15.5201 16.8276 13.78 16.8276 12C16.8276 10.22 16.2997 8.47992 15.3108 6.99988C15.1234 6.71936 14.921 6.45056 14.7048 6.19452C15.564 5.9773 16.4644 5.95264 17.3407 6.12695C18.5023 6.35803 19.5693 6.92835 20.4067 7.76575L22.5364 5.63605C21.2778 4.37738 19.6741 3.5202 17.9283 3.17291C16.1825 2.82568 14.3729 3.00391 12.7283 3.68506C12.4799 3.78796 12.2369 3.90167 12.0001 4.02564C11.7632 3.90167 11.5201 3.78796 11.2717 3.68506C9.6272 3.00391 7.81757 2.82568 6.07178 3.17291ZM12.0001 7.7049C11.6994 7.99695 11.4288 8.32117 11.1935 8.67316C10.5356 9.6579 10.1844 10.8157 10.1844 12C10.1844 13.1843 10.5356 14.3421 11.1935 15.3268C11.4288 15.6788 11.6994 16.0031 12.0001 16.2951C12.3007 16.0031 12.5713 15.6788 12.8065 15.3268C13.4645 14.3421 13.8157 13.1843 13.8157 12C13.8157 10.8157 13.4645 9.6579 12.8065 8.67316C12.5713 8.32117 12.3007 7.99695 12.0001 7.7049Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChart: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2307,6 +2451,7 @@ pub static CgChart: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 14C1 9.02944 5.02944 5 10 5C10.6746 5 11.3454 5.07584 12 5.22504V12H18.775C18.9242 12.6546 19 13.3254 19 14C19 18.9706 14.9706 23 10 23C5.02944 23 1 18.9706 1 14ZM16.8035 14H10V7.19648C6.24252 7.19648 3.19648 10.2425 3.19648 14C3.19648 17.7575 6.24252 20.8035 10 20.8035C13.7575 20.8035 16.8035 17.7575 16.8035 14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCheck: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2322,6 +2467,7 @@ pub static CgCheck: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCheckO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2338,6 +2484,7 @@ pub static CgCheckO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCheckR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2354,6 +2501,7 @@ pub static CgCheckR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2370,6 +2518,7 @@ pub static CgChevronDoubleDown: &icondata_core::IconData = &icondata_core::IconD
 <path d="M6.34314 12.7071L7.75735 11.2929L12 15.5356L16.2427 11.2929L17.6569 12.7071L12 18.364L6.34314 12.7071Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleDownO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2387,6 +2536,7 @@ pub static CgChevronDoubleDownO: &icondata_core::IconData = &icondata_core::Icon
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleDownR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2404,6 +2554,7 @@ pub static CgChevronDoubleDownR: &icondata_core::IconData = &icondata_core::Icon
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2420,6 +2571,7 @@ pub static CgChevronDoubleLeft: &icondata_core::IconData = &icondata_core::IconD
 <path d="M11.2929 6.34314L12.7071 7.75735L8.46447 12L12.7071 16.2426L11.2929 17.6568L5.63605 12L11.2929 6.34314Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2437,6 +2589,7 @@ pub static CgChevronDoubleLeftO: &icondata_core::IconData = &icondata_core::Icon
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2454,6 +2607,7 @@ pub static CgChevronDoubleLeftR: &icondata_core::IconData = &icondata_core::Icon
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2470,6 +2624,7 @@ pub static CgChevronDoubleRight: &icondata_core::IconData = &icondata_core::Icon
 <path d="M12.7071 6.34314L11.2929 7.75735L15.5356 12L11.2929 16.2426L12.7072 17.6568L18.364 12L12.7071 6.34314Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2487,6 +2642,7 @@ pub static CgChevronDoubleRightO: &icondata_core::IconData = &icondata_core::Ico
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2504,6 +2660,7 @@ pub static CgChevronDoubleRightR: &icondata_core::IconData = &icondata_core::Ico
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2520,6 +2677,7 @@ pub static CgChevronDoubleUp: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M17.6569 16.9497L16.2427 18.3639L12 14.1213L7.75735 18.364L6.34314 16.9498L12 11.2929L17.6569 16.9497Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleUpO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2537,6 +2695,7 @@ pub static CgChevronDoubleUpO: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDoubleUpR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2554,6 +2713,7 @@ pub static CgChevronDoubleUpR: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 4.77411C23 2.56497 21.2091 0.774109 19 0.774109H5C2.79086 0.774109 1 2.56497 1 4.77411V18.7741C1 20.9832 2.79086 22.7741 5 22.7741H19C21.2091 22.7741 23 20.9832 23 18.7741V4.77411ZM19 2.77411H5C3.89543 2.77411 3 3.66954 3 4.77411V18.7741C3 19.8787 3.89543 20.7741 5 20.7741H19C20.1046 20.7741 21 19.8787 21 18.7741V4.77411C21 3.66954 20.1046 2.77411 19 2.77411Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2569,6 +2729,7 @@ pub static CgChevronDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDownO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2585,6 +2746,7 @@ pub static CgChevronDownO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronDownR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2601,6 +2763,7 @@ pub static CgChevronDownR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2616,6 +2779,7 @@ pub static CgChevronLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2632,6 +2796,7 @@ pub static CgChevronLeftO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2648,6 +2813,7 @@ pub static CgChevronLeftR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19 1C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19ZM21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19L3 5C3 3.89543 3.89543 3 5 3L19 3C20.1046 3 21 3.89543 21 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2663,6 +2829,7 @@ pub static CgChevronRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2679,6 +2846,7 @@ pub static CgChevronRightO: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2695,6 +2863,7 @@ pub static CgChevronRightR: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4C1 2.34315 2.34315 1 4 1H20C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2710,6 +2879,7 @@ pub static CgChevronUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronUpO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2726,6 +2896,7 @@ pub static CgChevronUpO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgChevronUpR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2742,6 +2913,7 @@ pub static CgChevronUpR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCircleci: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2757,6 +2929,7 @@ pub static CgCircleci: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM4.14355 13.5165C4.85219 17.2096 8.10023 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C8.0886 4 4.83283 6.80704 4.13728 10.5165L6.72824 10.5071C7.37819 8.20738 9.49236 6.52222 12.0001 6.52222C15.0254 6.52222 17.4779 8.9747 17.4779 12C17.4779 15.0253 15.0254 17.4778 12.0001 17.4778C9.49752 17.4778 7.3869 15.7995 6.73228 13.5071L4.14355 13.5165ZM9.52234 12C9.52234 13.3684 10.6317 14.4778 12.0001 14.4778C13.3685 14.4778 14.4779 13.3684 14.4779 12C14.4779 10.6316 13.3685 9.52222 12.0001 9.52222C10.6317 9.52222 9.52234 10.6316 9.52234 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgClapperBoard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2772,6 +2945,7 @@ pub static CgClapperBoard: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1702 3L20.1663 3.00453C21.7458 3.09084 23 4.39896 23 6V18C23 19.6569 21.6569 21 20 21H4C2.34315 21 1 19.6569 1 18V6C1 4.34315 2.34315 3 4 3H20.1702ZM10.4764 5H16.4764L13.089 9H7.08899L10.4764 5ZM5.08899 9L8.47644 5H4C3.44772 5 3 5.44772 3 6V9H5.08899ZM3 11V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V11H3ZM21 9V6C21 5.44771 20.5523 5 20 5H18.4764L15.089 9H21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgClipboard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2789,6 +2963,7 @@ pub static CgClipboard: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5ZM7 5H5L5 19H19V5H17V6C17 7.65685 15.6569 9 14 9H10C8.34315 9 7 7.65685 7 6V5ZM9 5V6C9 6.55228 9.44772 7 10 7H14C14.5523 7 15 6.55228 15 6V5H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgClose: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2804,6 +2979,7 @@ pub static CgClose: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCloseO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2820,6 +2996,7 @@ pub static CgCloseO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCloseR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2836,6 +3013,7 @@ pub static CgCloseR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4C23 2.34315 21.6569 1 20 1H4ZM20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCloud: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2851,6 +3029,7 @@ pub static CgCloud: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.738 19.9964C14.8186 19.9988 14.8994 20 14.9806 20C19.3989 20 22.9806 16.4183 22.9806 12C22.9806 7.58172 19.3989 4 14.9806 4C12.4542 4 10.2013 5.17108 8.73522 7H7.51941C3.92956 7 1.01941 9.91015 1.01941 13.5C1.01941 17.0899 3.92956 20 7.51941 20H14.5194C14.5926 20 14.6654 19.9988 14.738 19.9964ZM16.6913 17.721C19.0415 16.9522 20.9806 14.6815 20.9806 12C20.9806 8.68629 18.2943 6 14.9806 6C11.6669 6 8.98059 8.68629 8.98059 12H6.98059C6.98059 10.9391 7.1871 9.92643 7.56211 9H7.51941C5.03413 9 3.01941 11.0147 3.01941 13.5C3.01941 15.9853 5.03413 18 7.51941 18H14.5194C15.0691 18 15.9041 17.9014 16.6913 17.721Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCode: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2867,6 +3046,7 @@ pub static CgCode: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.0474 16.9123L15.4068 18.3608L21.9692 12.2016L15.8101 5.63922L14.3517 7.00791L19.1422 12.112L14.0479 16.8932L14.0474 16.9123Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCodeClimate: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2883,6 +3063,7 @@ pub static CgCodeClimate: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.5049 8.11092L12.5317 10.0842L13.9503 11.494L14.5049 10.9393L19.4547 15.8891L20.8689 14.4749L14.5049 8.11092Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCodeSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2900,6 +3081,7 @@ pub static CgCodeSlash: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16.388 18.3608L15.0286 16.9124L15.0291 16.8933L20.1234 12.1121L15.333 7.00798L16.7913 5.63928L22.9504 12.2017L16.388 18.3608Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCoffee: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2918,6 +3100,7 @@ pub static CgCoffee: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14 2.5C13.4477 2.5 13 2.94772 13 3.5V5.5C13 6.05228 13.4477 6.5 14 6.5C14.5523 6.5 15 6.05228 15 5.5V3.5C15 2.94772 14.5523 2.5 14 2.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCollage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2933,6 +3116,7 @@ pub static CgCollage: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 3.34315 5.34315 2 7 2H17C18.6569 2 20 3.34315 20 5V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V5ZM13 4H17C17.5523 4 18 4.44772 18 5V13H13V4ZM13 15V20H17C17.5523 20 18 19.5523 18 19V15H13ZM11 4H7C6.44771 4 6 4.44772 6 5V8H11V4ZM6 19V10H11V20H7C6.44772 20 6 19.5523 6 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgColorBucket: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2949,6 +3133,7 @@ pub static CgColorBucket: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16.8586 16.8749C15.687 18.0465 15.687 19.946 16.8586 21.1175C18.0302 22.2891 19.9297 22.2891 21.1013 21.1175C22.2728 19.946 22.2728 18.0465 21.1013 16.8749L18.9799 14.7536L16.8586 16.8749Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgColorPicker: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2965,6 +3150,7 @@ pub static CgColorPicker: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9297 7.09116L4.1515 14.8693C3.22786 15.793 3.03239 17.169 3.5651 18.2842L1.99994 19.8493L3.41415 21.2635L4.97931 19.6984C6.09444 20.2311 7.4705 20.0356 8.39414 19.112L16.1723 11.3338L11.9297 7.09116ZM13.3439 11.3338L11.9297 9.91959L5.56571 16.2835C5.17518 16.6741 5.17518 17.3072 5.56571 17.6978C5.95623 18.0883 6.5894 18.0883 6.97992 17.6978L13.3439 11.3338Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgComedyCentral: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2981,6 +3167,7 @@ pub static CgComedyCentral: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M10.5445 14C11.1376 14 11.6704 13.7418 12.0367 13.3317L14.1594 15.4544C13.249 16.4068 11.966 17 10.5445 17C7.78305 17 5.54447 14.7614 5.54447 12C5.54447 9.23858 7.78305 7 10.5445 7C11.966 7 13.249 7.59323 14.1594 8.54563L12.0367 10.6683C11.6704 10.2582 11.1376 10 10.5445 10C9.4399 10 8.54447 10.8954 8.54447 12C8.54447 13.1046 9.4399 14 10.5445 14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgComment: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2998,6 +3185,7 @@ pub static CgComment: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 18V2H22V18H16V22H14C11.7909 22 10 20.2091 10 18H2ZM12 16V18C12 19.1046 12.8954 20 14 20V16H20V4H4V16H12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCommunity: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3013,6 +3201,7 @@ pub static CgCommunity: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.456C11.2389 17.8053 10.3922 18 9.5 18C6.18629 18 3.5 15.3137 3.5 12C3.5 8.68629 6.18629 6 9.5 6C10.3922 6 11.2389 6.19474 12 6.54404C12.7611 6.19474 13.6078 6 14.5 6C17.8137 6 20.5 8.68629 20.5 12C20.5 15.3137 17.8137 18 14.5 18C13.6078 18 12.7611 17.8053 12 17.456ZM10.0003 15.969C9.83637 15.9895 9.66942 16 9.5 16C7.29086 16 5.5 14.2091 5.5 12C5.5 9.79086 7.29086 8 9.5 8C9.66942 8 9.83637 8.01053 10.0003 8.03098C9.06656 9.08871 8.5 10.4782 8.5 12C8.5 13.5218 9.06656 14.9113 10.0003 15.969ZM13.9998 8.03098C14.1636 8.01054 14.3306 8 14.5 8C16.7091 8 18.5 9.79086 18.5 12C18.5 14.2091 16.7091 16 14.5 16C14.3306 16 14.1636 15.9895 13.9998 15.969C14.9334 14.9113 15.5 13.5218 15.5 12C15.5 10.4782 14.9334 9.08872 13.9998 8.03098ZM12 8.87732C12.9145 9.61038 13.5 10.7368 13.5 12C13.5 13.2632 12.9145 14.3896 12 15.1227C11.0855 14.3896 10.5 13.2632 10.5 12C10.5 10.7368 11.0855 9.61038 12 8.87732Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgComponents: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3031,6 +3220,7 @@ pub static CgComponents: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7572 17.6569L11.9998 13.4142L16.2425 17.6569L11.9998 21.8995L7.7572 17.6569ZM10.5856 17.6569L11.9998 16.2427L13.4141 17.6569L11.9998 19.0711L10.5856 17.6569Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCompress: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3047,6 +3237,7 @@ pub static CgCompress: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5.46742 15.5618L6.88341 16.9742L11.827 12.0183L6.87102 7.07476L5.45857 8.49074L8.04995 11.0756L0.843506 11.1004L0.850384 13.1004L7.94701 13.076L5.46742 15.5618Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCompressLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3063,6 +3254,7 @@ pub static CgCompressLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19.5615 14.5521L19.5535 12.5521L12.5536 12.58L12.5814 19.5799L14.5814 19.572L14.5671 15.9706L20.9105 22.2307L22.3153 20.8071L15.9914 14.5663L19.5615 14.5521Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCompressRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3079,6 +3271,7 @@ pub static CgCompressRight: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M7.97879 14.5429L4.40886 14.5457L4.40729 12.5457L11.4073 12.5402L11.4128 19.5402L9.41277 19.5417L9.40995 15.9402L3.09623 22.2306L1.68463 20.8138L7.97879 14.5429Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCompressV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3095,6 +3288,7 @@ pub static CgCompressV: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M15.5627 18.532L16.9749 17.1159L12.0184 12.1729L7.07543 17.1295L8.49159 18.5418L11.0762 15.95L11.1019 23.1566L13.1019 23.1495L13.0765 16.0528L15.5627 18.532Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgController: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3114,6 +3308,7 @@ pub static CgController: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8ZM12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCopy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3132,6 +3327,7 @@ pub static CgCopy: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 19V1H17V5H21V23H7V19H3ZM15 17V3H5V17H15ZM17 7V19H9V21H19V7H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCopyright: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3148,6 +3344,7 @@ pub static CgCopyright: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3163,6 +3360,7 @@ pub static CgCornerDoubleDownLeft: &icondata_core::IconData = &icondata_core::Ic
     data: r###"<path d="M11.2952 7.69432L16.1357 2.6377L21.1924 7.47821L19.8094 8.92296L17.3474 6.56617L17.5094 12.6C17.5805 15.25 15.49 17.456 12.8399 17.5271L6.91369 17.6863L9.20765 19.9335L7.80805 21.3622L2.80768 16.4636L7.70628 11.4632L9.13495 12.8628L6.75759 15.2896L12.7755 15.128C14.1005 15.0924 15.1458 13.9895 15.1102 12.6645L14.9519 6.76668L12.74 9.07732L11.2952 7.69432Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3178,6 +3376,7 @@ pub static CgCornerDoubleDownRight: &icondata_core::IconData = &icondata_core::I
     data: r###"<path d="M12.6004 7.67915L7.63814 2.74194L2.70093 7.7042L4.11871 9.11483L6.52249 6.69886L6.5075 12.7348C6.50092 15.3857 8.64461 17.5401 11.2956 17.5467L17.224 17.5614L14.9855 19.8638L16.4195 21.258L21.299 16.239L16.2801 11.3595L14.8859 12.7934L17.3217 15.1616L11.3015 15.1467C9.97605 15.1434 8.9042 14.0662 8.9075 12.7407L8.92214 6.84077L11.1898 9.09694L12.6004 7.67915Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleLeftDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3193,6 +3392,7 @@ pub static CgCornerDoubleLeftDown: &icondata_core::IconData = &icondata_core::Ic
     data: r###"<path d="M21.299 7.7609L16.2801 12.6405L14.8859 11.2065L17.3217 8.83829L11.3015 8.85324C9.97605 8.85653 8.9042 9.93371 8.9075 11.2592L8.92214 17.1591L11.1898 14.903L12.6004 16.3208L7.63814 21.258L2.70093 16.2957L4.11871 14.8851L6.52249 17.3011L6.5075 11.2652C6.50092 8.61419 8.64461 6.45983 11.2956 6.45325L17.224 6.43853L14.9855 4.1361L16.4195 2.74194L21.299 7.7609Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleLeftUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3209,6 +3409,7 @@ pub static CgCornerDoubleLeftUp: &icondata_core::IconData = &icondata_core::Icon
 <path d="M13.4406 13.4932L14.8548 12.0789L10.6121 7.83628L6.36951 12.0789L7.78372 13.4931L9.63052 11.6463V16.4063C9.63052 18.6155 11.4214 20.4063 13.6305 20.4063H17.6305V18.4063H13.6305C12.526 18.4063 11.6305 17.5109 11.6305 16.4063V11.6831L13.4406 13.4932Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleRightDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3224,6 +3425,7 @@ pub static CgCornerDoubleRightDown: &icondata_core::IconData = &icondata_core::I
     data: r###"<path d="M7.69438 12.7048L2.63776 7.86424L7.47827 2.80762L8.92302 4.19062L6.56623 6.65263L12.6002 6.49061C15.2502 6.41945 17.4561 8.51002 17.5273 11.16L17.6864 17.0862L19.9335 14.7924L21.3622 16.192L16.4636 21.1924L11.4632 16.2938L12.8628 14.8651L15.2897 17.2426L15.1281 11.2245C15.0926 9.89945 13.9896 8.85417 12.6646 8.88974L6.76674 9.04811L9.07738 11.26L7.69438 12.7048Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleRightUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3240,6 +3442,7 @@ pub static CgCornerDoubleRightUp: &icondata_core::IconData = &icondata_core::Ico
 <path d="M10.5595 13.4932L9.14526 12.0789L13.3879 7.83628L17.6305 12.0789L16.2163 13.4931L14.3695 11.6463V16.4063C14.3695 18.6155 12.5786 20.4063 10.3695 20.4063H6.36951V18.4063H10.3695C11.4741 18.4063 12.3695 17.5109 12.3695 16.4063V11.6831L10.5595 13.4932Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3256,6 +3459,7 @@ pub static CgCornerDoubleUpLeft: &icondata_core::IconData = &icondata_core::Icon
 <path d="M13.4932 13.4405L12.0789 14.8547L7.83627 10.6121L12.0789 6.36948L13.4931 7.78369L11.6463 9.63049L16.4063 9.63049C18.6155 9.63049 20.4063 11.4214 20.4063 13.6305L20.4063 17.6305L18.4063 17.6305L18.4063 13.6305C18.4063 12.5259 17.5109 11.6305 16.4063 11.6305L11.6831 11.6305L13.4932 13.4405Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDoubleUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3272,6 +3476,7 @@ pub static CgCornerDoubleUpRight: &icondata_core::IconData = &icondata_core::Ico
 <path d="M10.5068 13.4405L11.9211 14.8547L16.1637 10.6121L11.9211 6.36948L10.5069 7.78369L12.3537 9.63049L7.59366 9.63049C5.38452 9.63049 3.59366 11.4214 3.59366 13.6305L3.59366 17.6305L5.59366 17.6305L5.59366 13.6305C5.59366 12.5259 6.48909 11.6305 7.59366 11.6305L12.3169 11.6305L10.5068 13.4405Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDownLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3287,6 +3492,7 @@ pub static CgCornerDownLeft: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="M17.1495 13.4005C18.2541 13.4005 19.1495 12.5051 19.1495 11.4005V3.40051H21.1495V11.4005C21.1495 13.6097 19.3587 15.4005 17.1495 15.4005H6.84398L10.6286 19.1852L9.21443 20.5994L2.85046 14.2354L9.21443 7.87146L10.6286 9.28567L6.5138 13.4005H17.1495Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerDownRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3302,6 +3508,7 @@ pub static CgCornerDownRight: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="M6.85046 13.4005C5.74589 13.4005 4.85046 12.5051 4.85046 11.4005V3.40051H2.85046V11.4005C2.85046 13.6097 4.64132 15.4005 6.85046 15.4005H17.156L13.3714 19.1852L14.7856 20.5994L21.1495 14.2354L14.7856 7.87146L13.3714 9.28567L17.4862 13.4005H6.85046Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerLeftDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3317,6 +3524,7 @@ pub static CgCornerLeftDown: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path d="M10.6013 6.84996C10.6023 5.74539 11.4986 4.85079 12.6032 4.85181L20.6032 4.8592L20.605 2.8592L12.605 2.85181C10.3959 2.84977 8.60335 4.63897 8.60131 6.84811L8.59179 17.1538L4.81054 13.3656L3.39502 14.7785L9.7531 21.1483L16.1229 14.7902L14.71 13.3747L10.5915 17.4856L10.6013 6.84996Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerLeftUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3332,6 +3540,7 @@ pub static CgCornerLeftUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M14.71 10.6254L16.1229 9.20989L9.7531 2.85181L3.39502 9.22164L4.81054 10.6346L8.59179 6.84631L8.60131 17.152C8.60335 19.3611 10.3959 21.1503 12.605 21.1483L20.605 21.1409L20.6032 19.1409L12.6032 19.1483C11.4986 19.1493 10.6023 18.2547 10.6013 17.1501L10.5915 6.51446L14.71 10.6254Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerRightDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3347,6 +3556,7 @@ pub static CgCornerRightDown: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="M13.3987 6.84996C13.3977 5.74539 12.5014 4.85079 11.3969 4.85181L3.39687 4.8592L3.39502 2.8592L11.395 2.85181C13.6042 2.84977 15.3967 4.63897 15.3987 6.84811L15.4082 17.1538L19.1895 13.3656L20.605 14.7785L14.2469 21.1483L7.87709 14.7902L9.28999 13.3747L13.4085 17.4856L13.3987 6.84996Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerRightUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3362,6 +3572,7 @@ pub static CgCornerRightUp: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M9.28999 10.6254L7.87709 9.20989L14.2469 2.85181L20.605 9.22164L19.1895 10.6346L15.4082 6.84631L15.3987 17.152C15.3967 19.3611 13.6042 21.1503 11.395 21.1483L3.39502 21.1409L3.39687 19.1409L11.3969 19.1483C12.5014 19.1493 13.3977 18.2547 13.3987 17.1501L13.4085 6.51446L9.28999 10.6254Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3377,6 +3588,7 @@ pub static CgCornerUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.6276 14.7219L9.21641 16.1391L2.83875 9.78892L9.18897 3.41125L10.6062 4.82242L6.82971 8.61526L17.1353 8.59304C19.3445 8.58828 21.1392 10.3753 21.144 12.5844L21.1612 20.5844L19.1612 20.5887L19.144 12.5887C19.1416 11.4841 18.2442 10.5907 17.1396 10.593L6.50391 10.616L10.6276 14.7219Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCornerUpRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3392,6 +3604,7 @@ pub static CgCornerUpRight: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M13.3724 14.7219L14.7835 16.1391L21.1612 9.78892L14.811 3.41125L13.3937 4.82242L17.1702 8.61526L6.86461 8.59304C4.65547 8.58828 2.86076 10.3753 2.85599 12.5844L2.83875 20.5844L4.83874 20.5887L4.85599 12.5887C4.85837 11.4841 5.75573 10.5907 6.8603 10.593L17.496 10.616L13.3724 14.7219Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCreditCard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3408,6 +3621,7 @@ pub static CgCreditCard: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C1.79086 3 0 4.79086 0 7V17C0 19.2091 1.79086 21 4 21H20C22.2091 21 24 19.2091 24 17V7C24 4.79086 22.2091 3 20 3H4ZM20 5H4C2.89543 5 2 5.89543 2 7V14H22V7C22 5.89543 21.1046 5 20 5ZM22 16H2V17C2 18.1046 2.89543 19 4 19H20C21.1046 19 22 18.1046 22 17V16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCrop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3423,6 +3637,7 @@ pub static CgCrop: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.93164 9.00891V16H15V20.0089H17V16H20.9316V14H17V7.00891H9.93164V3H7.93164V7.00891H4V9.00891H7.93164ZM9.93164 9.00891V14H15V9.00891H9.93164Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCross: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3438,6 +3653,7 @@ pub static CgCross: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6V9H7C6.44772 9 6 9.44772 6 10C6 10.5523 6.44772 11 7 11H11V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V11H17C17.5523 11 18 10.5523 18 10C18 9.44772 17.5523 9 17 9H13V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCrowdfire: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3453,6 +3669,7 @@ pub static CgCrowdfire: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2V4H20V12H22C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM18 12H16V8H12V6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18C15.3137 18 18 15.3137 18 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgCrown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3468,6 +3685,7 @@ pub static CgCrown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 6.09143L7.21997 10.8114L12.0005 6.03088L16.7811 10.8114L21.5 6.09245V14.9691C21.5 16.626 20.1569 17.9691 18.5 17.9691H5.5C3.84314 17.9691 2.5 16.626 2.5 14.9691V6.09143ZM19.5 10.9087V14.9691C19.5 15.5214 19.0523 15.9691 18.5 15.9691H5.5C4.94771 15.9691 4.5 15.5214 4.5 14.9691V10.9077L7.21997 13.6277L12.0005 8.84717L16.7811 13.6277L19.5 10.9087Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDanger: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3485,6 +3703,7 @@ pub static CgDanger: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDarkMode: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3501,6 +3720,7 @@ pub static CgDarkMode: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgData: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3520,6 +3740,7 @@ pub static CgData: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19.7781 19.6673C21.7688 17.6767 23 14.9266 23 11.8891C23 8.85147 21.7688 6.10145 19.7781 4.11084L18.3639 5.52505C19.9926 7.15374 21 9.40376 21 11.8891C21 14.3744 19.9926 16.6244 18.3639 18.2531L19.7781 19.6673Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDatabase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3539,6 +3760,7 @@ pub static CgDatabase: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6V18C23 19.6569 21.6569 21 20 21H4C2.34315 21 1 19.6569 1 18V6ZM4 5H20C20.5523 5 21 5.44772 21 6V11H3V6C3 5.44772 3.44772 5 4 5ZM3 13V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V13H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDebug: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3556,6 +3778,7 @@ pub static CgDebug: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09447 4.74918C8.41606 4.03243 8 3.0648 8 2H10C10 3.10457 10.8954 4 12 4C13.1046 4 14 3.10457 14 2H16C16 3.0648 15.5839 4.03243 14.9055 4.74918C16.1782 5.45491 17.1673 6.6099 17.6586 8H19C19.5523 8 20 8.44772 20 9C20 9.55229 19.5523 10 19 10H18V12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H18V16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H17.6586C16.8349 20.3304 14.6124 22 12 22C9.38756 22 7.16508 20.3304 6.34141 18H5C4.44772 18 4 17.5523 4 17C4 16.4477 4.44772 16 5 16H6V14H5C4.44772 14 4 13.5523 4 13C4 12.4477 4.44772 12 5 12H6V10H5C4.44772 10 4 9.55229 4 9C4 8.44772 4.44772 8 5 8H6.34141C6.83274 6.6099 7.82181 5.45491 9.09447 4.74918ZM8 16V10C8 7.79086 9.79086 6 12 6C14.2091 6 16 7.79086 16 10V16C16 18.2091 14.2091 20 12 20C9.79086 20 8 18.2091 8 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDesignmodo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3573,6 +3796,7 @@ pub static CgDesignmodo: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11.5503 16.9457C12.6786 16.9457 13.6977 16.4786 14.4249 15.7272C14.4097 15.7429 14.3943 15.7585 14.3788 15.774L16.5001 17.8954C15.2334 19.1621 13.4834 19.9457 11.5503 19.9457C9.61734 19.9457 7.86734 19.1622 6.60059 17.8954L8.72191 15.7741C9.44576 16.498 10.4458 16.9457 11.5503 16.9457Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDesktop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3591,6 +3815,7 @@ pub static CgDesktop: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V7H21V6C21 5.44772 20.5523 5 20 5ZM3 18V9H21V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDetailsLess: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3607,6 +3832,7 @@ pub static CgDetailsLess: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 13C2.44772 13 2 13.4477 2 14C2 14.5523 2.44772 15 3 15H15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDetailsMore: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3624,6 +3850,7 @@ pub static CgDetailsMore: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 15C2.44772 15 2 15.4477 2 16C2 16.5523 2.44772 17 3 17H15C15.5523 17 16 16.5523 16 16C16 15.4477 15.5523 15 15 15H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDialpad: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3648,6 +3875,7 @@ pub static CgDialpad: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M15.5 13H18.5V16H15.5V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice1: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3664,6 +3892,7 @@ pub static CgDice1: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4C1 2.34315 2.34315 1 4 1H20C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice2: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3681,6 +3910,7 @@ pub static CgDice2: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4C23 2.34315 21.6569 1 20 1H4ZM20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice3: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3699,6 +3929,7 @@ pub static CgDice3: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4C1 2.34315 2.34315 1 4 1H20C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice4: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3718,6 +3949,7 @@ pub static CgDice4: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4C23 2.34315 21.6569 1 20 1H4ZM20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice5: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3738,6 +3970,7 @@ pub static CgDice5: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4C1 2.34315 2.34315 1 4 1H20C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDice6: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3759,6 +3992,7 @@ pub static CgDice6: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1C2.34315 1 1 2.34315 1 4V20C1 21.6569 2.34315 23 4 23H20C21.6569 23 23 21.6569 23 20V4C23 2.34315 21.6569 1 20 1H4ZM20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDigitalocean: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3777,6 +4011,7 @@ pub static CgDigitalocean: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 18H1V16H3V18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDisc: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3795,6 +4030,7 @@ pub static CgDisc: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDisplayFlex: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3812,6 +4048,7 @@ pub static CgDisplayFlex: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3H22V21H2V3ZM4 5V19H20V5H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDisplayFullwidth: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3829,6 +4066,7 @@ pub static CgDisplayFullwidth: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7V17H22V7H2ZM4 9H20V15H4V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDisplayGrid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3848,6 +4086,7 @@ pub static CgDisplayGrid: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H21V21H3V3ZM5 5V19H19V5H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDisplaySpacing: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3865,6 +4104,7 @@ pub static CgDisplaySpacing: &icondata_core::IconData = &icondata_core::IconData
 <path d="M19 3V21H21V3H19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDistributeHorizontal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3882,6 +4122,7 @@ pub static CgDistributeHorizontal: &icondata_core::IconData = &icondata_core::Ic
 <path d="M17 5V19H19V5H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDistributeVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3899,6 +4140,7 @@ pub static CgDistributeVertical: &icondata_core::IconData = &icondata_core::Icon
 <path d="M19 19H5V17H19V19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDockBottom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3914,6 +4156,7 @@ pub static CgDockBottom: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 20V4H22V20H2ZM4 6H20V14H4V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDockLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3929,6 +4172,7 @@ pub static CgDockLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4H22V20H2V4ZM8 6H20V18H8V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDockRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3944,6 +4188,7 @@ pub static CgDockRight: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4H22V20H2V4ZM16 18V6H4V18H16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDockWindow: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3959,6 +4204,7 @@ pub static CgDockWindow: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 20V4H22V20H2ZM20 6H6V16L20 16V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDolby: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3974,6 +4220,7 @@ pub static CgDolby: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4V20H24V4H0ZM10 12C10 9.79086 8.20914 8 6 8H4V16H6C8.20914 16 10 14.2091 10 12ZM18 16H20V8H18C15.7909 8 14 9.79086 14 12C14 14.2091 15.7909 16 18 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDollar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3989,6 +4236,7 @@ pub static CgDollar: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 19V22H13V19H14C16.2091 19 18 17.2091 18 15C18 12.7909 16.2091 11 14 11H13V7H15V9H17V5H13V2H11V5H10C7.79086 5 6 6.79086 6 9C6 11.2091 7.79086 13 10 13H11V17H9V15H7V19H11ZM13 17H14C15.1046 17 16 16.1046 16 15C16 13.8954 15.1046 13 14 13H13V17ZM11 11V7H10C8.89543 7 8 7.89543 8 9C8 10.1046 8.89543 11 10 11H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDribbble: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4004,6 +4252,7 @@ pub static CgDribbble: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M1 11.9554V12.0446C1.01066 14.7301 1.98363 17.1885 3.59196 19.0931C4.05715 19.6439 4.57549 20.1485 5.13908 20.5987C5.70631 21.0519 6.31937 21.4501 6.97019 21.7853C7.90271 22.2656 8.91275 22.6165 9.97659 22.8143C10.5914 22.9286 11.2243 22.9918 11.8705 22.9993C11.9136 22.9998 11.9567 23 11.9999 23C15.6894 23 18.9547 21.1836 20.9502 18.3962C21.3681 17.8125 21.7303 17.1861 22.0291 16.525C22.6528 15.1448 22.9999 13.613 22.9999 12C22.9999 8.73978 21.5816 5.81084 19.3283 3.79653C18.8064 3.32998 18.2397 2.91249 17.6355 2.55132C15.9873 1.56615 14.0597 1 11.9999 1C11.888 1 11.7764 1.00167 11.6653 1.00499C9.99846 1.05479 8.42477 1.47541 7.0239 2.18719C6.07085 2.67144 5.19779 3.29045 4.42982 4.01914C3.7166 4.69587 3.09401 5.4672 2.58216 6.31302C2.22108 6.90969 1.91511 7.54343 1.6713 8.20718C1.24184 9.37631 1.00523 10.6386 1 11.9554ZM20.4812 15.0186C20.8171 14.075 20.9999 13.0588 20.9999 12C20.9999 9.54265 20.0151 7.31533 18.4186 5.6912C17.5975 7.05399 16.5148 8.18424 15.2668 9.0469C15.7351 10.2626 15.9886 11.5603 16.0045 12.8778C16.7692 13.0484 17.5274 13.304 18.2669 13.6488C19.0741 14.0252 19.8141 14.487 20.4812 15.0186ZM15.8413 14.8954C16.3752 15.0321 16.904 15.22 17.4217 15.4614C18.222 15.8346 18.9417 16.3105 19.5723 16.8661C18.0688 19.2008 15.5151 20.7953 12.5788 20.9817C13.5517 20.0585 14.3709 18.9405 14.972 17.6514C15.3909 16.7531 15.678 15.8272 15.8413 14.8954ZM13.9964 12.6219C13.9583 11.7382 13.7898 10.8684 13.5013 10.0408C10.6887 11.2998 7.36584 11.3765 4.35382 9.97197C4.01251 9.81281 3.68319 9.63837 3.36632 9.44983C3.12787 10.2584 2.99991 11.1142 2.99991 12C2.99991 13.9462 3.61763 15.748 4.6677 17.2203C6.83038 14.1875 10.3685 12.4987 13.9964 12.6219ZM6.047 18.7502C7.77258 16.059 10.7714 14.5382 13.8585 14.6191C13.723 15.3586 13.4919 16.093 13.1594 16.8062C12.3777 18.4825 11.1453 19.805 9.67385 20.6965C8.31043 20.3328 7.07441 19.6569 6.047 18.7502ZM11.9999 3C13.7846 3 15.4479 3.51946 16.847 4.41543C16.2113 5.54838 15.3593 6.4961 14.368 7.23057C13.3472 5.57072 11.8752 4.16433 10.027 3.21692C10.6619 3.07492 11.3222 3 11.9999 3ZM8.80619 4.84582C10.4462 5.61056 11.7474 6.80659 12.6379 8.23588C10.3464 9.24654 7.64722 9.30095 5.19906 8.15936C4.83384 7.98905 4.48541 7.79735 4.15458 7.58645C4.91365 6.24006 6.00929 5.10867 7.32734 4.30645C7.82672 4.44058 8.32138 4.61975 8.80619 4.84582Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDrive: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4021,6 +4270,7 @@ pub static CgDrive: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C0.895431 8 0 8.89543 0 10V14C0 15.1046 0.89543 16 2 16H22C23.1046 16 24 15.1046 24 14V10C24 8.89543 23.1046 8 22 8H2ZM22 10H2L2 14H22V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDrop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4036,6 +4286,7 @@ pub static CgDrop: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6.34315 19.5208C3.21895 16.3966 3.21895 11.3312 6.34315 8.20705L12 2.5502L17.6569 8.20705C20.781 11.3312 20.781 16.3966 17.6569 19.5208C14.5327 22.645 9.46734 22.645 6.34315 19.5208Z" stroke="currentColor" stroke-width="2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDropInvert: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4051,6 +4302,7 @@ pub static CgDropInvert: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 1.13611L5.63604 7.50002C2.12132 11.0147 2.12132 16.7132 5.63604 20.2279C7.39343 21.9853 9.69679 22.864 12.0001 22.864C12.288 22.864 12.5759 22.8502 12.8627 22.8228C14.8706 22.6306 16.8264 21.7657 18.3641 20.2279C21.8788 16.7132 21.8788 11.0147 18.3641 7.50002L12.0001 1.13611ZM7.05025 8.91423L12 3.96448L12.0001 20.864C10.2086 20.864 8.41711 20.1806 7.05025 18.8137C4.31658 16.0801 4.31658 11.6479 7.05025 8.91423Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDropOpacity: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4066,6 +4318,7 @@ pub static CgDropOpacity: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9451 21.9559C12.5884 23.5927 8.42477 23.0167 5.63598 20.2279C2.12126 16.7132 2.12126 11.0147 5.63598 7.49995L11.9999 1.13599L18.3639 7.49995C19.2521 8.38814 19.9158 9.41578 20.3551 10.5124C21.6543 13.7553 20.9906 17.6012 18.364 20.2278C17.6381 20.9538 16.8189 21.5298 15.9451 21.9559ZM7.05019 8.91416L11.9999 3.96441L16.9497 8.91416C18.274 10.2385 18.9568 11.9615 18.998 13.6968H5.00192C5.04309 11.9615 5.72585 10.2385 7.05019 8.91416Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgDuplicate: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4083,6 +4336,7 @@ pub static CgDuplicate: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7H17V21H3V7ZM5 9H15V19H5V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditBlackPoint: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4099,6 +4353,7 @@ pub static CgEditBlackPoint: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditContrast: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4115,6 +4370,7 @@ pub static CgEditContrast: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditExposure: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4130,6 +4386,7 @@ pub static CgEditExposure: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11 7V9H9V11H11V13H13V11H15V9H13V7H11ZM9 15V17H15V15H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditFade: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4147,6 +4404,7 @@ pub static CgEditFade: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" stroke="currentColor" stroke-width="2" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditFlipH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4164,6 +4422,7 @@ pub static CgEditFlipH: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 8C5 7.44772 5.44772 7 6 7H9V5H6C4.34315 5 3 6.34315 3 8V16C3 17.6569 4.34315 19 6 19H9V17H6C5.44772 17 5 16.5523 5 16V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditFlipV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4181,6 +4440,7 @@ pub static CgEditFlipV: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21 13V11L3 11V13H21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditHighlight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4197,6 +4457,7 @@ pub static CgEditHighlight: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditMarkup: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4212,6 +4473,7 @@ pub static CgEditMarkup: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM18.5793 19.531C20.6758 17.698 22 15.0036 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.9616 3.28743 17.6225 5.33317 19.4535L6.99999 10.9738H9.17026L12 6.07251L14.8297 10.9738H17L18.5793 19.531ZM16.0919 21.1272L15.2056 12.9738H8.79438L7.90814 21.1272C9.15715 21.688 10.5421 22 12 22C13.4579 22 14.8428 21.688 16.0919 21.1272Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditMask: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4228,6 +4490,7 @@ pub static CgEditMask: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47716 22 2 17.5228 2 12C2 6.47717 6.47716 2 12 2C17.5228 2 22 6.47717 22 12C22 17.5228 17.5228 22 12 22ZM9.0307 19.4308C9.01047 19.29 9 19.1462 9 19C9 17.3431 10.3431 16 12 16C13.6569 16 15 17.3431 15 19C15 19.1462 14.9895 19.29 14.9693 19.4308C16.9993 18.6189 18.619 16.9993 19.4308 14.9692C19.2901 14.9895 19.1463 15 19 15C17.3431 15 16 13.6569 16 12C16 10.3431 17.3431 9 19 9C19.0637 9 19.127 9.00195 19.1897 9.00586C19.271 9.01099 19.3514 9.01929 19.4308 9.03076C18.6189 7.00073 16.9993 5.3811 14.9693 4.56921C14.9895 4.70996 15 4.85376 15 5C15 6.65686 13.6569 8 12 8C10.3431 8 9 6.65686 9 5C9 4.85376 9.01048 4.70996 9.03072 4.56921C7.0007 5.3811 5.38106 7.00073 4.56915 9.03076C4.64857 9.01929 4.729 9.01099 4.8103 9.00586C4.87303 9.00195 4.93628 9 5 9C6.65686 9 8 10.3431 8 12C8 13.6569 6.65686 15 5 15C4.8537 15 4.70985 14.9895 4.56915 14.9692C5.38104 16.9993 7.00069 18.6189 9.0307 19.4308Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditNoise: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4264,6 +4527,7 @@ pub static CgEditNoise: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditShadows: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4280,6 +4544,7 @@ pub static CgEditShadows: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditStraight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4298,6 +4563,7 @@ pub static CgEditStraight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 13V11H23V13H19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEditUnmask: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4317,6 +4583,7 @@ pub static CgEditUnmask: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 15C6.65685 15 8 13.6569 8 12C8 10.3431 6.65685 9 5 9C3.34315 9 2 10.3431 2 12C2 13.6569 3.34315 15 5 15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEject: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4333,6 +4600,7 @@ pub static CgEject: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6.00014 17.3835H18.0001V15.3835H6.00014V17.3835Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEnter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4349,6 +4617,7 @@ pub static CgEnter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13.0743 16.9498L11.6601 15.5356L14.1957 13H2V11H14.1956L11.6601 8.46451L13.0743 7.05029L18.024 12L13.0743 16.9498Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgErase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4364,6 +4633,7 @@ pub static CgErase: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.49997 12.8995C2.71892 13.6805 2.71892 14.9468 3.49997 15.7279L7.35785 19.5858H4.08576C3.53347 19.5858 3.08576 20.0335 3.08576 20.5858C3.08576 21.1381 3.53347 21.5858 4.08576 21.5858H20.0858C20.638 21.5858 21.0858 21.1381 21.0858 20.5858C21.0858 20.0335 20.638 19.5858 20.0858 19.5858H10.9558L20.4705 10.071C21.2516 9.28999 21.2516 8.02366 20.4705 7.24261L16.2279 2.99997C15.4468 2.21892 14.1805 2.21892 13.3995 2.99997L3.49997 12.8995ZM7.82579 11.4021L4.91418 14.3137L9.15683 18.5563L12.0684 15.6447L7.82579 11.4021ZM9.24 9.98787L13.4826 14.2305L19.0563 8.65683L14.8137 4.41418L9.24 9.98787Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEreader: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4382,6 +4652,7 @@ pub static CgEreader: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H13V19H21C21.5523 19 22 18.5523 22 18V6C22 5.44772 21.5523 5 21 5ZM3 5H11V19H3C2.44772 19 2 18.5523 2 18V6C2 5.44772 2.44772 5 3 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEricsson: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4399,6 +4670,7 @@ pub static CgEricsson: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2.74951 22.381C2.2827 21.3799 2.71581 20.19 3.71689 19.7231L14.5926 14.6517C15.5937 14.1849 16.7836 14.618 17.2504 15.6191C17.7172 16.6202 17.2841 17.8101 16.2831 18.277L5.40736 23.3484C4.40628 23.8152 3.21632 23.3821 2.74951 22.381Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEthernet: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4414,6 +4686,7 @@ pub static CgEthernet: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0.5V20.5H11V23.5H13V20.5H20V0.5H4ZM18 2.5H6V8.5H10V14.5H14V8.5H18V2.5ZM6 18.5V10.5H8V16.5H16V10.5H18V18.5H6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEuro: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4429,6 +4702,7 @@ pub static CgEuro: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M18.5535 15.5355C17.6487 16.4404 16.3987 17 15.018 17C13.1416 17 11.5066 15.9664 10.6513 14.4374H13.0323L13.7284 12.5625H10.0493C10.0286 12.3779 10.018 12.1902 10.018 12C10.018 11.8098 10.0286 11.6221 10.0493 11.4374H14.3362L15.0324 9.5625H10.6514C11.5066 8.0336 13.1416 7 15.018 7C16.3987 7 17.6487 7.55964 18.5535 8.46447L19.9677 7.05025C18.701 5.7835 16.951 5 15.018 5C12.0092 5 9.44381 6.89827 8.45407 9.5625H6.03241L5.33624 11.4374H8.04028C8.02552 11.623 8.018 11.8106 8.018 12C8.018 12.1894 8.02552 12.3769 8.04027 12.5625H4.72845L4.03229 14.4374H8.45404C9.44377 17.1017 12.0092 19 15.018 19C16.951 19 18.701 18.2165 19.9677 16.9497L18.5535 15.5355Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEventbrite: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4444,6 +4718,7 @@ pub static CgEventbrite: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6734 17.4378C12.3057 18.5419 9.5858 17.9679 7.85444 16.2039L21.8647 9.67074C21.7105 9.02969 21.4902 8.39446 21.2008 7.77376C18.8667 2.76836 12.9169 0.602811 7.91152 2.93687C2.90612 5.27092 0.740567 11.2207 3.07462 16.2261C5.40868 21.2315 11.3585 23.3971 16.3639 21.063C19.016 19.8263 20.8708 17.5746 21.6815 14.986H17.3424C16.7484 16.0235 15.8393 16.8941 14.6734 17.4378ZM9.60199 6.5621C7.23436 7.66615 5.92572 10.1185 6.16403 12.5786L16.4208 7.79583C14.6894 6.03194 11.9696 5.45805 9.60199 6.5621Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExpand: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4459,6 +4734,7 @@ pub static CgExpand: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12.3062 16.5933L12.2713 18.593L5.2724 18.4708L5.39457 11.4719L7.39426 11.5068L7.33168 15.092L15.2262 7.46833L11.6938 7.40668L11.7287 5.40698L18.7277 5.52915L18.6055 12.5281L16.6058 12.4932L16.6693 8.85507L8.72095 16.5307L12.3062 16.5933Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExport: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4475,6 +4751,7 @@ pub static CgExport: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 20.9819V10.9819H9V8.98193H3V22.9819H21V8.98193H15V10.9819H19V20.9819H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExtension: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4491,6 +4768,7 @@ pub static CgExtension: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 21V13H11V7H3V21H17ZM9 9H5V13H9V9ZM5 19L5 15H9V19H5ZM11 19V15H15V19H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExtensionAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4507,6 +4785,7 @@ pub static CgExtensionAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V6H4V20H18V12H12ZM6 8H10V12H6V8ZM10 14V18H6V14H10ZM16 14V18H12V14H16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExtensionAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4522,6 +4801,7 @@ pub static CgExtensionAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5V19H13V13H19V5H5ZM11 7H7V11H11V7ZM11 13H7V17H11V13ZM13 11H17V7H13V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExtensionRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4538,6 +4818,7 @@ pub static CgExtensionRemove: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M20 7H14V9H20V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgExternal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4554,6 +4835,7 @@ pub static CgExternal: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEye: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4570,6 +4852,7 @@ pub static CgEye: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C17.5915 3 22.2898 6.82432 23.6219 12C22.2898 17.1757 17.5915 21 12 21C6.40848 21 1.71018 17.1757 0.378052 12C1.71018 6.82432 6.40848 3 12 3ZM12 19C7.52443 19 3.73132 16.0581 2.45723 12C3.73132 7.94186 7.52443 5 12 5C16.4756 5 20.2687 7.94186 21.5428 12C20.2687 16.0581 16.4756 19 12 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgEyeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4586,6 +4869,7 @@ pub static CgEyeAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C6.40848 3 1.71018 6.82432 0.378052 12C1.71018 17.1757 6.40848 21 12 21C17.5915 21 22.2898 17.1757 23.6219 12C22.2898 6.82432 17.5915 3 12 3ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFacebook: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4601,6 +4885,7 @@ pub static CgFacebook: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFeed: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4621,6 +4906,7 @@ pub static CgFeed: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3.448 12.9979C2.89571 12.9979 2.448 13.4456 2.448 13.9979V18.9979C2.448 19.5502 2.89571 19.9979 3.448 19.9979H8.448C9.00028 19.9979 9.448 19.5502 9.448 18.9979V13.9979C9.448 13.4456 9.00028 12.9979 8.448 12.9979H3.448Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFigma: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4639,6 +4925,7 @@ pub static CgFigma: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8.5 16C6.84315 16 5.5 17.3431 5.5 19C5.5 20.6569 6.84315 22 8.5 22C10.1569 22 11.5 20.6569 11.5 19V16H8.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4654,6 +4941,7 @@ pub static CgFile: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.34315 4.34315 2 6 2H14C17.866 2 21 5.13401 21 9V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V5ZM13 4H6C5.44772 4 5 4.44772 5 5V19C5 19.5523 5.44772 20 6 20H18C18.5523 20 19 19.5523 19 19V9H13V4ZM18.584 7C17.9413 5.52906 16.6113 4.4271 15 4.10002V7H18.584Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFileAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4670,6 +4958,7 @@ pub static CgFileAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V9C21 5.13401 17.866 2 14 2H6ZM6 4H13V9H19V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4ZM15 4.10002C16.6113 4.4271 17.9413 5.52906 18.584 7H15V4.10002Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFileDocument: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4688,6 +4977,7 @@ pub static CgFileDocument: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V9C21 5.13401 17.866 2 14 2H6ZM6 4H13V9H19V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4ZM15 4.10002C16.6113 4.4271 17.9413 5.52906 18.584 7H15V4.10002Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFileRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4704,6 +4994,7 @@ pub static CgFileRemove: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V9C21 5.13401 17.866 2 14 2H6ZM6 4H13V9H19V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5C5 4.44772 5.44772 4 6 4ZM15 4.10002C16.6113 4.4271 17.9413 5.52906 18.584 7H15V4.10002Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFilm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4725,6 +5016,7 @@ pub static CgFilm: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFilters: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4740,6 +5032,7 @@ pub static CgFilters: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4.70834 15.4397C5.92663 16.2928 7.3222 16.7038 8.70461 16.7063C9.17977 18.0045 10.0433 19.1753 11.2616 20.0284C14.4284 22.2458 18.7932 21.4762 21.0107 18.3093C23.2281 15.1425 22.4585 10.7777 19.2916 8.56024C18.0734 7.70719 16.6778 7.29621 15.2954 7.29371C14.8202 5.99552 13.9567 4.82467 12.7384 3.97161C9.57158 1.75417 5.20676 2.52381 2.98931 5.69064C0.771871 8.85748 1.54151 13.2223 4.70834 15.4397ZM5.8555 13.8014C6.6016 14.3239 7.44081 14.6142 8.28736 14.6875C8.20112 13.1725 8.60464 11.6187 9.54254 10.2793C10.4804 8.9398 11.8025 8.0292 13.2556 7.59209C12.8972 6.82166 12.3374 6.13235 11.5913 5.60992C9.32924 4.02603 6.21151 4.57577 4.62762 6.8378C3.04373 9.09982 3.59347 12.2176 5.8555 13.8014ZM18.1445 10.1985C17.3984 9.67611 16.5592 9.38581 15.7126 9.31251C15.7989 10.8275 15.3953 12.3813 14.4574 13.7207C13.5195 15.0602 12.1975 15.9708 10.7444 16.4079C11.1028 17.1783 11.6626 17.8676 12.4087 18.3901C14.6707 19.9739 17.7885 19.4242 19.3724 17.1622C20.9562 14.9002 20.4065 11.7824 18.1445 10.1985Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFlag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4755,6 +5048,7 @@ pub static CgFlag: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 21H6V11H12V13H20V5H13V3H4V21ZM12 5H6V9H13V11H18V7H12V5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFlagAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4770,6 +5064,7 @@ pub static CgFlagAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.4388 7L14.8387 4H7V10H14.8387L12.4388 7ZM19 12H7V22H5V2H19L15 7L19 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFolder: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4785,6 +5080,7 @@ pub static CgFolder: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C2.89543 1.5 2 2.39543 2 3.5V4.5C2 4.55666 2.00236 4.61278 2.00698 4.66825C0.838141 5.07811 0 6.19118 0 7.5V19.5C0 21.1569 1.34315 22.5 3 22.5H21C22.6569 22.5 24 21.1569 24 19.5V7.5C24 5.84315 22.6569 4.5 21 4.5H11.874C11.4299 2.77477 9.86384 1.5 8 1.5H4ZM9.73244 4.5C9.38663 3.9022 8.74028 3.5 8 3.5H4V4.5H9.73244ZM3 6.5C2.44772 6.5 2 6.94772 2 7.5V19.5C2 20.0523 2.44772 20.5 3 20.5H21C21.5523 20.5 22 20.0523 22 19.5V7.5C22 6.94772 21.5523 6.5 21 6.5H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFolderAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4801,6 +5097,7 @@ pub static CgFolderAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C2.89543 1.5 2 2.39543 2 3.5V4.5C2 4.55666 2.00236 4.61278 2.00698 4.66825C0.838141 5.07811 0 6.19118 0 7.5V19.5C0 21.1569 1.34315 22.5 3 22.5H21C22.6569 22.5 24 21.1569 24 19.5V7.5C24 5.84315 22.6569 4.5 21 4.5H11.874C11.4299 2.77477 9.86384 1.5 8 1.5H4ZM9.73244 4.5C9.38663 3.9022 8.74028 3.5 8 3.5H4V4.5H9.73244ZM3 6.5C2.44772 6.5 2 6.94772 2 7.5V19.5C2 20.0523 2.44772 20.5 3 20.5H21C21.5523 20.5 22 20.0523 22 19.5V7.5C22 6.94772 21.5523 6.5 21 6.5H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFolderRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4817,6 +5114,7 @@ pub static CgFolderRemove: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C2.89543 1.5 2 2.39543 2 3.5V4.5C2 4.55666 2.00236 4.61278 2.00698 4.66825C0.838141 5.07811 0 6.19118 0 7.5V19.5C0 21.1569 1.34315 22.5 3 22.5H21C22.6569 22.5 24 21.1569 24 19.5V7.5C24 5.84315 22.6569 4.5 21 4.5H11.874C11.4299 2.77477 9.86384 1.5 8 1.5H4ZM9.73244 4.5C9.38663 3.9022 8.74028 3.5 8 3.5H4V4.5H9.73244ZM3 6.5C2.44772 6.5 2 6.94772 2 7.5V19.5C2 20.0523 2.44772 20.5 3 20.5H21C21.5523 20.5 22 20.0523 22 19.5V7.5C22 6.94772 21.5523 6.5 21 6.5H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFontHeight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4834,6 +5132,7 @@ pub static CgFontHeight: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 7.37636C11.602 7.35207 11.2112 7.56874 11.0325 7.95204L7.65154 15.2025C7.41815 15.7031 7.6347 16.2981 8.13522 16.5315C8.63577 16.7649 9.23074 16.5484 9.46417 16.0477L9.95278 14.9999H14.0473L14.5359 16.0477C14.7693 16.5484 15.3643 16.7649 15.8648 16.5315C16.3654 16.2981 16.5819 15.7031 16.3485 15.2025L12.9676 7.95204C12.7888 7.56874 12.3981 7.35207 12.0001 7.37636ZM13.1147 12.9999H10.8854L12.0001 10.6095L13.1147 12.9999Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFontSpacing: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4851,6 +5150,7 @@ pub static CgFontSpacing: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.46416 16.0479L9.95281 14.9999H14.0473L14.5359 16.0478C14.7693 16.5484 15.3643 16.7649 15.8649 16.5315C16.3654 16.2981 16.582 15.7031 16.3485 15.2026L12.9676 7.95213C12.7888 7.56877 12.398 7.35199 11.9999 7.37637C11.6019 7.35214 11.2112 7.5689 11.0325 7.95216L7.65155 15.2026C7.41814 15.7032 7.6347 16.2981 8.13524 16.5315C8.63578 16.7649 9.23076 16.5484 9.46416 16.0479ZM12.0001 10.6096L10.8854 12.9999H13.1147L12.0001 10.6096Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatBold: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4866,6 +5166,7 @@ pub static CgFormatBold: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4.504H7v14.992h6a4 4 0 0 0 .604-7.955A4 4 0 0 0 11 4.505Zm-2 2h2a2 2 0 1 1 0 4H9v-4Zm0 10.991v-4h4a2 2 0 1 1 0 4H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatCenter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4884,6 +5185,7 @@ pub static CgFormatCenter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 17C6.44772 17 6 17.4477 6 18C6 18.5523 6.44772 19 7 19H17C17.5523 19 18 18.5523 18 18C18 17.4477 17.5523 17 17 17H7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatColor: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4900,6 +5202,7 @@ pub static CgFormatColor: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6 19.3682C5.44772 19.3682 5 19.816 5 20.3682C5 20.9205 5.44772 21.3682 6 21.3682H18C18.5523 21.3682 19 20.9205 19 20.3682C19 19.816 18.5523 19.3682 18 19.3682H6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatHeading: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4915,6 +5218,7 @@ pub static CgFormatHeading: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path d="M6 19V5H8V11H16V5H18V19H16V13H8V19H6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatIndentDecrease: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4934,6 +5238,7 @@ pub static CgFormatIndentDecrease: &icondata_core::IconData = &icondata_core::Ic
 <path d="M4 17V19H20V17H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatIndentIncrease: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4953,6 +5258,7 @@ pub static CgFormatIndentIncrease: &icondata_core::IconData = &icondata_core::Ic
 <path d="M4 17V19H20V17H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatItalic: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4968,6 +5274,7 @@ pub static CgFormatItalic: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M11.4903 5.45801H17.4903L16.7788 7.32716H14.7788L11.2212 16.6729H13.2212L12.5097 18.5421H6.5097L7.22122 16.6729H9.22122L12.7788 7.32716H10.7788L11.4903 5.45801Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatJustify: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4986,6 +5293,7 @@ pub static CgFormatJustify: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5004,6 +5312,7 @@ pub static CgFormatLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H12C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatLineHeight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5023,6 +5332,7 @@ pub static CgFormatLineHeight: &icondata_core::IconData = &icondata_core::IconDa
 <path d="M22.8412 19H8.84119V17H22.8412V19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5041,6 +5351,7 @@ pub static CgFormatRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 17C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H12C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17H20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatSeparator: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5062,6 +5373,7 @@ pub static CgFormatSeparator: &icondata_core::IconData = &icondata_core::IconDat
 <path fill-rule="evenodd" clip-rule="evenodd" d="M21 16C21 16.5523 20.5523 17 20 17L4 17C3.44772 17 3 16.5523 3 16C3 15.4477 3.44772 15 4 15L20 15C20.5523 15 21 15.4477 21 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatSlash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5077,6 +5389,7 @@ pub static CgFormatSlash: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.526 6.10576C15.0265 6.33917 15.2667 6.88343 15.0625 7.3214L9.88541 18.4237C9.68118 18.8616 9.10985 19.0275 8.60931 18.7941C8.10877 18.5607 7.86857 18.0164 8.0728 17.5784L13.2499 6.47616C13.4541 6.03819 14.0254 5.87235 14.526 6.10576Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatStrike: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5094,6 +5407,7 @@ pub static CgFormatStrike: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 13H19V11H5V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatText: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5121,6 +5435,7 @@ pub static CgFormatText: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11 9.5H7V7.5H17V9.5H13V16.5H11V9.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatUnderline: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5137,6 +5452,7 @@ pub static CgFormatUnderline: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M7 18C6.44772 18 6 18.4477 6 19C6 19.5523 6.44771 20 7 20H17C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18H7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFormatUppercase: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5152,6 +5468,7 @@ pub static CgFormatUppercase: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13 9H10V17H8V9H5V7H13V9ZM18 13H16V17H14V13H12V11H18V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgFramer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5168,6 +5485,7 @@ pub static CgFramer: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 9V3H6L12 9H6V15H18L12 9H18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGames: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5188,6 +5506,7 @@ pub static CgGames: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C3.13401 5 0 8.13401 0 12C0 15.866 3.13401 19 7 19H17C20.866 19 24 15.866 24 12C24 8.13401 20.866 5 17 5H7ZM17 7H7C4.23858 7 2 9.23858 2 12C2 14.7614 4.23858 17 7 17H17C19.7614 17 22 14.7614 22 12C22 9.23858 19.7614 7 17 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGenderFemale: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5203,6 +5522,7 @@ pub static CgGenderFemale: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C9.23858 3 7 5.23858 7 8C7 10.419 8.71776 12.4367 11 12.9V15H8V17H11V21H13V17H16V15H13V12.9C15.2822 12.4367 17 10.419 17 8C17 5.23858 14.7614 3 12 3ZM9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGenderMale: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5218,6 +5538,7 @@ pub static CgGenderMale: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.1888 7L12.1909 5L19.1909 5.00746L19.1834 12.0075L17.1834 12.0053L17.1873 8.41678L14.143 11.4611C15.4612 13.4063 15.2587 16.0743 13.5355 17.7975C11.5829 19.7501 8.41709 19.7501 6.46447 17.7975C4.51184 15.8449 4.51184 12.6791 6.46447 10.7264C8.16216 9.02873 10.777 8.80709 12.7141 10.0615L15.7718 7.00382L12.1888 7ZM7.87868 12.1406C9.05025 10.9691 10.9497 10.9691 12.1213 12.1406C13.2929 13.3122 13.2929 15.2117 12.1213 16.3833C10.9497 17.5549 9.05025 17.5549 7.87868 16.3833C6.70711 15.2117 6.70711 13.3122 7.87868 12.1406Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGhost: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5237,6 +5558,7 @@ pub static CgGhost: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13 16V20H21V16H13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGhostCharacter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5254,6 +5576,7 @@ pub static CgGhostCharacter: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19 20.9999V10C19 6.13401 15.866 3 12 3C8.13401 3 5 6.13401 5 10V21L7.82846 21L9.24264 19.5858L10.6569 21L13.3433 21L14.7574 19.5858L16.1717 21L19 20.9999ZM17 10C17 7.23858 14.7614 5 12 5C9.23858 5 7 7.23858 7 10V19L9.24264 16.7573L12 19.5147L14.7574 16.7573L17 18.9999V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGift: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5269,6 +5592,7 @@ pub static CgGift: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5354 2.87868C16.3638 1.70711 14.4644 1.70711 13.2928 2.87868L11.8786 4.29289C11.8183 4.35317 11.7611 4.41538 11.707 4.47931C11.653 4.41539 11.5958 4.3532 11.5355 4.29293L10.1213 2.87871C8.94975 1.70714 7.05025 1.70714 5.87868 2.87871C4.70711 4.05029 4.70711 5.94978 5.87868 7.12136L6.75732 8H1V14H3V22H21V14H23V8H16.6567L17.5354 7.12132C18.707 5.94975 18.707 4.05025 17.5354 2.87868ZM14.707 7.12132L16.1212 5.70711C16.5117 5.31658 16.5117 4.68342 16.1212 4.29289C15.7307 3.90237 15.0975 3.90237 14.707 4.29289L13.2928 5.70711C12.9023 6.09763 12.9023 6.7308 13.2928 7.12132C13.6833 7.51184 14.3165 7.51184 14.707 7.12132ZM10.1213 5.70714L8.70711 4.29293C8.31658 3.9024 7.68342 3.9024 7.29289 4.29293C6.90237 4.68345 6.90237 5.31662 7.29289 5.70714L8.70711 7.12136C9.09763 7.51188 9.7308 7.51188 10.1213 7.12136C10.5118 6.73083 10.5118 6.09767 10.1213 5.70714ZM21 10V12H3V10H21ZM12.9167 14H19V20H12.9167V14ZM11.0834 14V20H5V14H11.0834Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGirl: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5286,6 +5610,7 @@ pub static CgGirl: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0244 2.00003L12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.74235 17.9425 2.43237 12.788 2.03059L12.7886 2.0282C12.5329 2.00891 12.278 1.99961 12.0244 2.00003ZM12 20C16.4183 20 20 16.4183 20 12C20 11.3014 19.9105 10.6237 19.7422 9.97775C16.1597 10.2313 12.7359 8.52461 10.7605 5.60246C9.31322 7.07886 7.2982 7.99666 5.06879 8.00253C4.38902 9.17866 4 10.5439 4 12C4 16.4183 7.58172 20 12 20ZM11.9785 4.00003L12.0236 4.00003L12 4L11.9785 4.00003Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGitBranch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5301,6 +5626,7 @@ pub static CgGitBranch: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M9 3C7.89543 3 7 3.89543 7 5C7 5.74028 7.4022 6.38663 8 6.73244V17.2676C7.4022 17.6134 7 18.2597 7 19C7 20.1046 7.89543 21 9 21C9.74028 21 10.3866 20.5978 10.7324 20H11.9585C14.1676 20 15.9585 18.2091 15.9585 16V14.7324C16.5563 14.3866 16.9585 13.7403 16.9585 13C16.9585 11.8954 16.0631 11 14.9585 11C13.8539 11 12.9585 11.8954 12.9585 13C12.9585 13.7403 13.3607 14.3866 13.9585 14.7324V16C13.9585 17.1046 13.0631 18 11.9585 18H10.7324C10.5568 17.6964 10.3036 17.4432 10 17.2676V6.73244C10.5978 6.38663 11 5.74028 11 5C11 3.89543 10.1046 3 9 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGitCommit: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5316,6 +5642,7 @@ pub static CgGitCommit: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C11 3.44772 11.4477 3 12 3C12.5523 3 13 3.44772 13 4V9.17071C14.1652 9.58254 15 10.6938 15 12C15 13.3062 14.1652 14.4175 13 14.8293V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V14.8293C9.83481 14.4175 9 13.3062 9 12C9 10.6938 9.83481 9.58254 11 9.17071V4ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGitFork: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5331,6 +5658,7 @@ pub static CgGitFork: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M7 5C7 3.89543 7.89543 3 9 3C10.1046 3 11 3.89543 11 5C11 5.74028 10.5978 6.38663 10 6.73244V14.0396H11.7915C12.8961 14.0396 13.7915 13.1441 13.7915 12.0396V10.7838C13.1823 10.4411 12.7708 9.78837 12.7708 9.03955C12.7708 7.93498 13.6662 7.03955 14.7708 7.03955C15.8753 7.03955 16.7708 7.93498 16.7708 9.03955C16.7708 9.77123 16.3778 10.4111 15.7915 10.7598V12.0396C15.7915 14.2487 14.0006 16.0396 11.7915 16.0396H10V17.2676C10.5978 17.6134 11 18.2597 11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 18.2597 7.4022 17.6134 8 17.2676V6.73244C7.4022 6.38663 7 5.74028 7 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGitPull: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5346,6 +5674,7 @@ pub static CgGitPull: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M7 5C7 3.89543 7.89543 3 9 3C10.1046 3 11 3.89543 11 5C11 5.34168 10.9143 5.66336 10.7633 5.9447H11.3438C13.5529 5.9447 15.3438 7.73556 15.3438 9.9447V11.2244C15.9301 11.5731 16.323 12.213 16.323 12.9447C16.323 14.0493 15.4276 14.9447 14.323 14.9447C13.2184 14.9447 12.323 14.0493 12.323 12.9447C12.323 12.1959 12.7345 11.5432 13.3438 11.2004V9.9447C13.3438 8.84013 12.4483 7.9447 11.3438 7.9447H10V17.2676C10.5978 17.6134 11 18.2597 11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 18.2597 7.4022 17.6134 8 17.2676V6.73244C7.4022 6.38663 7 5.74028 7 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGitter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5364,6 +5693,7 @@ pub static CgGitter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17 4.5H19V14.5H17V4.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGlass: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5379,6 +5709,7 @@ pub static CgGlass: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 10C17 12.419 15.2822 14.4367 13 14.9V17H15V19H9V17H11V14.9C8.71776 14.4367 7 12.419 7 10V5H17V10ZM15 7H9V10C9 11.6569 10.3431 13 12 13C13.6569 13 15 11.6569 15 10V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGlassAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5394,6 +5725,7 @@ pub static CgGlassAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 2H19L17.3602 18.398C17.1557 20.4428 15.4351 22 13.38 22H10.62C8.56494 22 6.84428 20.4428 6.6398 18.398L5 2ZM7.50998 7L7.20998 4H16.79L16.49 7H7.50998ZM7.70998 9L8.62988 18.199C8.73212 19.2214 9.59245 20 10.62 20H13.38C14.4076 20 15.2679 19.2214 15.3701 18.199L16.29 9H7.70998Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGlobe: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5410,6 +5742,7 @@ pub static CgGlobe: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 12.1294C6.25216 14.2031 8.4189 15.6624 10.9414 15.9486V18H8.85327V20H14.8533V18H12.9414V15.9266C16.8449 15.3958 19.8532 12.0492 19.8532 8.00001C19.8532 6.43638 19.4046 4.97752 18.6291 3.74512L16.9253 4.79326C17.513 5.72084 17.8532 6.82069 17.8532 8.00001C17.8532 11.3137 15.167 14 11.8532 14C9.66611 14 7.75231 12.8298 6.70381 11.0813L5 12.1294Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGlobeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5425,6 +5758,7 @@ pub static CgGlobeAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM14.8055 18.4151C17.1228 17.4003 18.7847 15.1667 18.9806 12.525C18.1577 12.9738 17.12 13.3418 15.9371 13.598C15.7882 15.4676 15.3827 17.1371 14.8055 18.4151ZM9.1945 5.58487C7.24725 6.43766 5.76275 8.15106 5.22208 10.244C5.4537 10.4638 5.84813 10.7341 6.44832 11.0008C6.89715 11.2003 7.42053 11.3798 8.00537 11.5297C8.05853 9.20582 8.50349 7.11489 9.1945 5.58487ZM10.1006 13.9108C10.2573 15.3675 10.5852 16.6202 10.9992 17.5517C11.2932 18.2133 11.5916 18.6248 11.8218 18.8439C11.9037 18.9219 11.9629 18.9634 12 18.9848C12.0371 18.9634 12.0963 18.9219 12.1782 18.8439C12.4084 18.6248 12.7068 18.2133 13.0008 17.5517C13.4148 16.6202 13.7427 15.3675 13.8994 13.9108C13.2871 13.9692 12.6516 14 12 14C11.3484 14 10.7129 13.9692 10.1006 13.9108ZM8.06286 13.598C8.21176 15.4676 8.61729 17.1371 9.1945 18.4151C6.8772 17.4003 5.21525 15.1666 5.01939 12.525C5.84231 12.9738 6.88001 13.3418 8.06286 13.598ZM13.9997 11.8896C13.369 11.9609 12.6993 12 12 12C11.3008 12 10.631 11.9609 10.0003 11.8896C10.0135 9.66408 10.4229 7.74504 10.9992 6.44832C11.2932 5.78673 11.5916 5.37516 11.8218 5.15605C11.9037 5.07812 11.9629 5.03659 12 5.01516C12.0371 5.03659 12.0963 5.07812 12.1782 5.15605C12.4084 5.37516 12.7068 5.78673 13.0008 6.44832C13.5771 7.74504 13.9865 9.66408 13.9997 11.8896ZM15.9946 11.5297C15.9415 9.20582 15.4965 7.11489 14.8055 5.58487C16.7528 6.43766 18.2373 8.15107 18.7779 10.244C18.5463 10.4638 18.1519 10.7341 17.5517 11.0008C17.1029 11.2003 16.5795 11.3798 15.9946 11.5297Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGoogle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5440,6 +5774,7 @@ pub static CgGoogle: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGoogleTasks: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5456,6 +5791,7 @@ pub static CgGoogleTasks: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 12.7396C3 11.6351 3.89543 10.7396 5 10.7396C6.10457 10.7396 7 11.6351 7 12.7396C7 13.8442 6.10457 14.7396 5 14.7396C3.89543 14.7396 3 13.8442 3 12.7396Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgGym: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5475,6 +5811,7 @@ pub static CgGym: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M4.38208 18.5549L2.74377 19.702L1.59662 18.0637L3.23492 16.9166L4.38208 18.5549Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHashtag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5490,6 +5827,7 @@ pub static CgHashtag: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4V8H4V10H8V14H4V16H8V20H10V16H14V20H16V16H20V14H16V10H20V8H16V4H14V8H10V4H8ZM14 14V10H10V14H14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHeadset: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5505,6 +5843,7 @@ pub static CgHeadset: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 21C15.8954 21 15 20.1046 15 19V15C15 13.8954 15.8954 13 17 13H19V12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12V13H7C8.10457 13 9 13.8954 9 15V19C9 20.1046 8.10457 21 7 21H3V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21H17ZM19 15H17V19H19V15ZM7 15H5V19H7V15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHeart: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5520,6 +5859,7 @@ pub static CgHeart: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHello: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5536,6 +5876,7 @@ pub static CgHello: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 7C1 3.68629 3.68629 1 7 1H17C20.3137 1 23 3.68629 23 7V17C23 20.3137 20.3137 23 17 23H1V7ZM3.75 12C3.75 7.44365 7.44365 3.75 12 3.75C16.5563 3.75 20.25 7.44365 20.25 12C20.25 16.5563 16.5563 20.25 12 20.25C7.44365 20.25 3.75 16.5563 3.75 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHome: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5551,6 +5892,7 @@ pub static CgHome: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M21 8.77217L14.0208 1.79299C12.8492 0.621414 10.9497 0.621413 9.77817 1.79299L3 8.57116V23.0858H10V17.0858C10 15.9812 10.8954 15.0858 12 15.0858C13.1046 15.0858 14 15.9812 14 17.0858V23.0858H21V8.77217ZM11.1924 3.2072L5 9.39959V21.0858H8V17.0858C8 14.8767 9.79086 13.0858 12 13.0858C14.2091 13.0858 16 14.8767 16 17.0858V21.0858H19V9.6006L12.6066 3.2072C12.2161 2.81668 11.5829 2.81668 11.1924 3.2072Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHomeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5566,6 +5908,7 @@ pub static CgHomeAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 22.8787C4.34315 22.8787 3 21.5355 3 19.8787V9.87866C3 9.84477 3.00169 9.81126 3.00498 9.77823H3C3 9.20227 3.2288 8.64989 3.63607 8.24262L9.87868 2.00002C11.0502 0.828445 12.9497 0.828445 14.1213 2.00002L20.3639 8.24264C20.7712 8.6499 21 9.20227 21 9.77823H20.995C20.9983 9.81126 21 9.84477 21 9.87866V19.8787C21 21.5355 19.6569 22.8787 18 22.8787H6ZM12.7071 3.41423L19 9.70713V19.8787C19 20.4309 18.5523 20.8787 18 20.8787H15V15.8787C15 14.2218 13.6569 12.8787 12 12.8787C10.3431 12.8787 9 14.2218 9 15.8787V20.8787H6C5.44772 20.8787 5 20.4309 5 19.8787V9.7072L11.2929 3.41423C11.6834 3.02371 12.3166 3.02371 12.7071 3.41423Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgHomeScreen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5591,6 +5934,7 @@ pub static CgHomeScreen: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1C6.34315 1 5 2.34315 5 4V20C5 21.6569 6.34315 23 8 23H16C17.6569 23 19 21.6569 19 20V4C19 2.34315 17.6569 1 16 1H8ZM16 3H8C7.44771 3 7 3.44772 7 4V20C7 20.5523 7.44772 21 8 21H16C16.5523 21 17 20.5523 17 20V4C17 3.44772 16.5523 3 16 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgIcecream: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5606,6 +5950,7 @@ pub static CgIcecream: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15 17H19V8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8V17H9V20C9 21.6569 10.3431 23 12 23C13.6569 23 15 21.6569 15 20V17ZM17 15V8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8V15H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V15H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgIfDesign: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5625,6 +5970,7 @@ pub static CgIfDesign: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 10H15V14H19V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgImage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5641,6 +5987,7 @@ pub static CgImage: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V18C2 18.5523 2.44772 19 3 19H7.31374L14.1924 12.1214C15.364 10.9498 17.2635 10.9498 18.435 12.1214L22 15.6863V6C22 5.44772 21.5523 5 21 5ZM21 19H10.1422L15.6066 13.5356C15.9971 13.145 16.6303 13.145 17.0208 13.5356L21.907 18.4217C21.7479 18.7633 21.4016 19 21 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgImport: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5657,6 +6004,7 @@ pub static CgImport: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13.0001 2H11.0001V14.0531L8.46451 11.5175L7.05029 12.9317L12 17.8815L16.9498 12.9317L15.5356 11.5175L13.0001 14.053V2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInbox: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5672,6 +6020,7 @@ pub static CgInbox: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V20C22 21.1046 21.1046 22 20 22H8.1477C8.09893 22.0036 8.04968 22.0054 8 22.0054H4C2.89543 22.0054 2 21.1099 2 20.0054V5ZM5 4H19C19.5523 4 20 4.44771 20 5V14H16C14.8954 14 14 14.8954 14 16V17H10V16.0054C10 14.9008 9.10457 14.0054 8 14.0054H4V5C4 4.44772 4.44771 4 5 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgIndieHackers: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5688,6 +6037,7 @@ pub static CgIndieHackers: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10 6H13V10.5H17V6H20V18H17V13.5H13V18H10V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInfinity: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5703,6 +6053,7 @@ pub static CgInfinity: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M8.12132 9.87868L10.2044 11.9617L10.2106 11.9555L11.6631 13.408L11.6693 13.4142L13.7907 15.5355C15.7433 17.4882 18.9091 17.4882 20.8617 15.5355C22.8144 13.5829 22.8144 10.4171 20.8617 8.46447C18.9091 6.51184 15.7433 6.51184 13.7907 8.46447L13.0773 9.17786L14.4915 10.5921L15.2049 9.87868C16.3764 8.70711 18.2759 8.70711 19.4475 9.87868C20.6191 11.0503 20.6191 12.9497 19.4475 14.1213C18.2759 15.2929 16.3764 15.2929 15.2049 14.1213L13.1326 12.0491L13.1263 12.0554L9.53553 8.46447C7.58291 6.51184 4.41709 6.51184 2.46447 8.46447C0.511845 10.4171 0.511845 13.5829 2.46447 15.5355C4.41709 17.4882 7.58291 17.4882 9.53553 15.5355L10.2488 14.8222L8.83463 13.408L8.12132 14.1213C6.94975 15.2929 5.05025 15.2929 3.87868 14.1213C2.70711 12.9497 2.70711 11.0503 3.87868 9.87868C5.05025 8.70711 6.94975 8.70711 8.12132 9.87868Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInfo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5720,6 +6071,7 @@ pub static CgInfo: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInpicture: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5736,6 +6088,7 @@ pub static CgInpicture: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 6C1 4.89543 1.89543 4 3 4H21C22.1046 4 23 4.89543 23 6V18C23 19.1046 22.1046 20 21 20H3C1.89543 20 1 19.1046 1 18V6ZM3 6H21V18H3L3 6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertAfter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5752,6 +6105,7 @@ pub static CgInsertAfter: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 19C3 18.4477 3.44772 18 4 18H20C20.5523 18 21 18.4477 21 19C21 19.5523 20.5523 20 20 20H4C3.44772 20 3 19.5523 3 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertAfterO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5769,6 +6123,7 @@ pub static CgInsertAfterO: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 20C4.44772 20 4 20.4477 4 21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertAfterR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5786,6 +6141,7 @@ pub static CgInsertAfterR: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 20C4.44772 20 4 20.4477 4 21C4 21.5523 4.44772 22 5 22H19C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertBefore: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5802,6 +6158,7 @@ pub static CgInsertBefore: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12 20C12.5523 20 13 19.5523 13 19V16H16C16.5523 16 17 15.5523 17 15C17 14.4477 16.5523 14 16 14H13V11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11V14H8C7.44772 14 7 14.4477 7 15C7 15.5523 7.44772 16 8 16H11V19C11 19.5523 11.4477 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertBeforeO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5819,6 +6176,7 @@ pub static CgInsertBeforeO: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 14C4 18.4183 7.58172 22 12 22C16.4183 22 20 18.4183 20 14C20 9.58172 16.4183 6 12 6C7.58172 6 4 9.58172 4 14ZM12 8C8.68629 8 6 10.6863 6 14C6 17.3137 8.68629 20 12 20C15.3137 20 18 17.3137 18 14C18 10.6863 15.3137 8 12 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsertBeforeR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5836,6 +6194,7 @@ pub static CgInsertBeforeR: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V9C20 7.34315 18.6569 6 17 6H7C5.34315 6 4 7.34315 4 9V19ZM17 20C17.5523 20 18 19.5523 18 19V9C18 8.44772 17.5523 8 17 8H7C6.44772 8 6 8.44772 6 9V19C6 19.5523 6.44772 20 7 20H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInsights: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5851,6 +6210,7 @@ pub static CgInsights: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8H19V20H5V10H9V4H15V8ZM13 6H11V18H13V6ZM15 10V18H17V10H15ZM9 12V18H7V12H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInstagram: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5868,6 +6228,7 @@ pub static CgInstagram: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgInternal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5884,6 +6245,7 @@ pub static CgInternal: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11 4.70581V6.70581H5V18.7058H17V12.7058H19V20.7058H3V4.70581H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgKey: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5899,6 +6261,7 @@ pub static CgKey: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 8C4.34315 8 3 9.34315 3 11V13C3 14.6569 4.34315 16 6 16C7.65685 16 9 14.6569 9 13H15V15H17V13H18V15H20V11H9C9 9.34315 7.65685 8 6 8ZM7 13V11C7 10.4477 6.55228 10 6 10C5.44772 10 5 10.4477 5 11V13C5 13.5523 5.44772 14 6 14C6.55228 14 7 13.5523 7 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgKeyboard: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5921,6 +6284,7 @@ pub static CgKeyboard: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgKeyhole: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5937,6 +6301,7 @@ pub static CgKeyhole: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLaptop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5953,6 +6318,7 @@ pub static CgLaptop: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 18C1.44772 18 1 18.4477 1 19C1 19.5523 1.44772 20 2 20H22C22.5523 20 23 19.5523 23 19C23 18.4477 22.5523 18 22 18H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLastpass: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5971,6 +6337,7 @@ pub static CgLastpass: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16 14C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10C14.8954 10 14 10.8954 14 12C14 13.1046 14.8954 14 16 14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLayoutGrid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5989,6 +6356,7 @@ pub static CgLayoutGrid: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17 7H13V11H17V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLayoutGridSmall: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6012,6 +6380,7 @@ pub static CgLayoutGridSmall: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M17 15H15V17H17V15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLayoutList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6032,6 +6401,7 @@ pub static CgLayoutList: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17 7V9H11V7H17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLayoutPin: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6047,6 +6417,7 @@ pub static CgLayoutPin: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9307 4.01587H14.7655C14.3582 2.84239 13.2428 2 11.9307 2C10.6185 2 9.50313 2.84239 9.09581 4.01587H6.93066C5.27381 4.01587 3.93066 5.35901 3.93066 7.01587V9.21205C2.80183 9.64283 2 10.7357 2 12.0159C2 13.296 2.80183 14.3889 3.93066 14.8197V17.0159C3.93066 18.6727 5.27381 20.0159 6.93066 20.0159H9.08467C9.48247 21.2064 10.6064 22.0645 11.9307 22.0645C13.255 22.0645 14.3789 21.2064 14.7767 20.0159H16.9307C18.5875 20.0159 19.9307 18.6727 19.9307 17.0159V14.8446C21.095 14.4322 21.929 13.3214 21.929 12.0159C21.929 10.7103 21.095 9.5995 19.9307 9.18718V7.01587C19.9307 5.35901 18.5875 4.01587 16.9307 4.01587ZM5.93066 14.8687V17.0159C5.93066 17.5682 6.37838 18.0159 6.93066 18.0159H9.11902C9.54426 16.8761 10.6427 16.0645 11.9307 16.0645C13.2187 16.0645 14.3171 16.8761 14.7423 18.0159H16.9307C17.4829 18.0159 17.9307 17.5682 17.9307 17.0159V14.8458C16.7646 14.4344 15.929 13.3227 15.929 12.0159C15.929 10.709 16.7646 9.59732 17.9307 9.18597V7.01587C17.9307 6.46358 17.4829 6.01587 16.9307 6.01587H14.7543C14.338 7.17276 13.2309 8 11.9307 8C10.6304 8 9.52331 7.17276 9.10703 6.01587H6.93066C6.37838 6.01587 5.93066 6.46358 5.93066 7.01587V9.16302C7.13193 9.55465 8 10.6839 8 12.0159C8 13.3479 7.13193 14.4771 5.93066 14.8687Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLinear: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6065,6 +6436,7 @@ pub static CgLinear: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5.66301 5.59517C9.18091 2.12137 14.8488 2.135 18.3498 5.63604C21.8508 9.13708 21.8645 14.8049 18.3907 18.3228L5.66301 5.59517Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLink: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6082,6 +6454,7 @@ pub static CgLink: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.8285 10.5857C15.219 10.1952 15.219 9.56199 14.8285 9.17147C14.4379 8.78094 13.8048 8.78094 13.4142 9.17147L9.1716 13.4141C8.78107 13.8046 8.78107 14.4378 9.1716 14.8283C9.56212 15.2188 10.1953 15.2188 10.5858 14.8283L14.8285 10.5857Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6097,6 +6470,7 @@ pub static CgList: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M20 4H4C3.44771 4 3 4.44772 3 5V19C3 19.5523 3.44772 20 4 20H20C20.5523 20 21 19.5523 21 19V5C21 4.44771 20.5523 4 20 4ZM4 2C2.34315 2 1 3.34315 1 5V19C1 20.6569 2.34315 22 4 22H20C21.6569 22 23 20.6569 23 19V5C23 3.34315 21.6569 2 20 2H4ZM6 7H8V9H6V7ZM11 7C10.4477 7 10 7.44772 10 8C10 8.55228 10.4477 9 11 9H17C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7H11ZM8 11H6V13H8V11ZM10 12C10 11.4477 10.4477 11 11 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H11C10.4477 13 10 12.5523 10 12ZM8 15H6V17H8V15ZM10 16C10 15.4477 10.4477 15 11 15H17C17.5523 15 18 15.4477 18 16C18 16.5523 17.5523 17 17 17H11C10.4477 17 10 16.5523 10 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgListTree: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6112,6 +6486,7 @@ pub static CgListTree: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9 1H1V9H9V6H11V20H15V23H23V15H15V18H13V6H15V9H23V1H15V4H9V1ZM21 3H17V7H21V3ZM17 17H21V21H17V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLivePhoto: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6144,6 +6519,7 @@ pub static CgLivePhoto: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6ZM8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLoadbar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6159,6 +6535,7 @@ pub static CgLoadbar: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<rect x="3" y="10" width="18" height="4" rx="2" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLoadbarAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6175,6 +6552,7 @@ pub static CgLoadbarAlt: &icondata_core::IconData = &icondata_core::IconData {
 <rect x="7" y="10" width="10" height="4" rx="2" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLoadbarDoc: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6193,6 +6571,7 @@ pub static CgLoadbarDoc: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8 15H13V17H8V15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLoadbarSound: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6210,6 +6589,7 @@ pub static CgLoadbarSound: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M15 9H17V18H15V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6225,6 +6605,7 @@ pub static CgLock: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.5C19.6569 10.5 21 11.8431 21 13.5V19.5C21 21.1569 19.6569 22.5 18 22.5H6C4.34315 22.5 3 21.1569 3 19.5V13.5C3 11.8431 4.34315 10.5 6 10.5V7.5C6 4.18629 8.68629 1.5 12 1.5C15.3137 1.5 18 4.18629 18 7.5V10.5ZM12 3.5C14.2091 3.5 16 5.29086 16 7.5V10.5H8V7.5C8 5.29086 9.79086 3.5 12 3.5ZM18 12.5H6C5.44772 12.5 5 12.9477 5 13.5V19.5C5 20.0523 5.44772 20.5 6 20.5H18C18.5523 20.5 19 20.0523 19 19.5V13.5C19 12.9477 18.5523 12.5 18 12.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLockUnlock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6240,6 +6621,7 @@ pub static CgLockUnlock: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19 7H17C17 4.79086 15.2091 3 13 3C10.7909 3 9 4.79086 9 7V10H18C19.6569 10 21 11.3431 21 13V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V13C3 11.3431 4.34315 10 6 10H7V7C7 3.68629 9.68629 1 13 1C16.3137 1 19 3.68629 19 7ZM18 12H6C5.44772 12 5 12.4477 5 13V19C5 19.5523 5.44772 20 6 20H18C18.5523 20 19 19.5523 19 19V13C19 12.4477 18.5523 12 18 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLogIn: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6256,6 +6638,7 @@ pub static CgLogIn: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10.1582 17.385L8.73801 15.9768L12.6572 12.0242L3.51428 12.0242C2.96199 12.0242 2.51428 11.5765 2.51428 11.0242C2.51429 10.4719 2.962 10.0242 3.51429 10.0242L12.6765 10.0242L8.69599 6.0774L10.1042 4.6572L16.4951 10.9941L10.1582 17.385Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLogOff: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6272,6 +6655,7 @@ pub static CgLogOff: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M4 12.9917C4 10.7826 4.89541 8.7826 6.34308 7.33488L7.7573 8.7491C6.67155 9.83488 6 11.3349 6 12.9917C6 16.3054 8.68629 18.9917 12 18.9917C15.3137 18.9917 18 16.3054 18 12.9917C18 11.3348 17.3284 9.83482 16.2426 8.74903L17.6568 7.33481C19.1046 8.78253 20 10.7825 20 12.9917C20 17.41 16.4183 20.9917 12 20.9917C7.58172 20.9917 4 17.41 4 12.9917Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLogOut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6288,6 +6672,7 @@ pub static CgLogOut: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13.8418 17.385L15.262 15.9768L11.3428 12.0242L20.4857 12.0242C21.038 12.0242 21.4857 11.5765 21.4857 11.0242C21.4857 10.4719 21.038 10.0242 20.4857 10.0242L11.3236 10.0242L15.304 6.0774L13.8958 4.6572L7.5049 10.9941L13.8418 17.385Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgLoupe: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6304,6 +6689,7 @@ pub static CgLoupe: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 16.9706 7.02944 21 12 21H18C19.6569 21 21 19.6569 21 18V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMagnet: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6321,6 +6707,7 @@ pub static CgMagnet: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8 7.5H4V13.5C4 17.9183 7.58172 21.5 12 21.5C16.4183 21.5 20 17.9183 20 13.5V7.5H16V13.5C16 15.7091 14.2091 17.5 12 17.5C9.79086 17.5 8 15.7091 8 13.5V7.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMail: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6336,6 +6723,7 @@ pub static CgMail: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.00977 5.83789C3.00977 5.28561 3.45748 4.83789 4.00977 4.83789H20C20.5523 4.83789 21 5.28561 21 5.83789V17.1621C21 18.2667 20.1046 19.1621 19 19.1621H5C3.89543 19.1621 3 18.2667 3 17.1621V6.16211C3 6.11449 3.00333 6.06765 3.00977 6.0218V5.83789ZM5 8.06165V17.1621H19V8.06199L14.1215 12.9405C12.9499 14.1121 11.0504 14.1121 9.87885 12.9405L5 8.06165ZM6.57232 6.80554H17.428L12.7073 11.5263C12.3168 11.9168 11.6836 11.9168 11.2931 11.5263L6.57232 6.80554Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMailForward: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6351,6 +6739,7 @@ pub static CgMailForward: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M13.6378 15.529L15.052 16.9432L20.0018 11.9934L15.052 7.0437L13.6378 8.45791L16.1363 10.9564H7.99823C5.78909 10.9564 3.99823 12.7472 3.99823 14.9564V16.9564H5.99823V14.9564C5.99823 13.8518 6.89366 12.9564 7.99823 12.9564H16.2104L13.6378 15.529Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMailOpen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6366,6 +6755,7 @@ pub static CgMailOpen: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.05002 10.0151C2.79178 9.30708 2.94668 8.48233 3.51474 7.91427L9.8787 1.55031C11.0503 0.378738 12.9498 0.378738 14.1213 1.55031L20.4853 7.91427C21.0534 8.48239 21.2083 9.30727 20.9499 10.0154C20.9824 10.1139 20.9999 10.2191 20.9999 10.3285V21.3285C20.9999 22.4331 20.1045 23.3285 18.9999 23.3285H4.99994C3.89537 23.3285 2.99994 22.4331 2.99994 21.3285V10.3285C2.99994 10.219 3.01752 10.1137 3.05002 10.0151ZM4.92896 9.32848L11.2929 2.96452C11.6834 2.574 12.3166 2.574 12.7071 2.96452L19.0711 9.32848H19.0408V9.3588L12.7071 15.6924C12.3166 16.083 11.6834 16.083 11.2929 15.6924L4.92896 9.32848ZM18.9999 12.2281L14.1213 17.1067C12.9498 18.2782 11.0503 18.2782 9.8787 17.1067L4.99994 12.2279L4.99994 21.3285H18.9999V12.2281Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMailReply: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6381,6 +6771,7 @@ pub static CgMailReply: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.3623 15.529L8.94804 16.9432L3.99829 11.9934L8.94804 7.0437L10.3623 8.45791L7.86379 10.9564H16.0018C18.2109 10.9564 20.0018 12.7472 20.0018 14.9564V16.9564H18.0018V14.9564C18.0018 13.8518 17.1063 12.9564 16.0018 12.9564H7.78965L10.3623 15.529Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMathDivide: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6398,6 +6789,7 @@ pub static CgMathDivide: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMathEqual: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6414,6 +6806,7 @@ pub static CgMathEqual: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15H19C19.5523 15 20 14.5523 20 14C20 13.4477 19.5523 13 19 13H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMathMinus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6429,6 +6822,7 @@ pub static CgMathMinus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMathPercent: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6446,6 +6840,7 @@ pub static CgMathPercent: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.1213 16.9498C14.9023 17.7308 16.1687 17.7308 16.9497 16.9498C17.7308 16.1687 17.7308 14.9024 16.9497 14.1214C16.1687 13.3403 14.9023 13.3403 14.1213 14.1214C13.3403 14.9024 13.3403 16.1687 14.1213 16.9498Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMathPlus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6461,6 +6856,7 @@ pub static CgMathPlus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMaximize: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6479,6 +6875,7 @@ pub static CgMaximize: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21 3H15V5H19V9H21V3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMaximizeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6497,6 +6894,7 @@ pub static CgMaximizeAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21 3H15V5H17.5619L12.7189 9.84301L14.1331 11.2572L19 6.39032V9H21V3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMaze: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6513,6 +6911,7 @@ pub static CgMaze: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M15.2218 7L23 14.7782L20.424 17.3542L15.2218 12.152L10.0197 17.3542L7.44367 14.7782L15.2218 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMediaLive: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6530,6 +6929,7 @@ pub static CgMediaLive: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMediaPodcast: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6547,6 +6947,7 @@ pub static CgMediaPodcast: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.1213 16.1213C14.6642 15.5784 15 14.8284 15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 14.8285 9.33581 15.5785 9.87874 16.1214L11.293 14.7072C11.112 14.5262 11 14.2762 11 14C11 13.4477 11.4477 13 12 13C12.5523 13 13 13.4477 13 14C13 14.2761 12.8881 14.5261 12.7071 14.7071L14.1213 16.1213Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenu: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6564,6 +6965,7 @@ pub static CgMenu: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuBoxed: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6582,6 +6984,7 @@ pub static CgMenuBoxed: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuCake: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6600,6 +7003,7 @@ pub static CgMenuCake: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19C20 18.4477 19.5523 18 19 18H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuCheese: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6617,6 +7021,7 @@ pub static CgMenuCheese: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H10.2625L7.61456 15.6479L4.96662 13H4C3.44772 13 3 12.5523 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuGridO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6640,6 +7045,7 @@ pub static CgMenuGridO: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C16.8954 16 16 16.8954 16 18C16 19.1046 16.8954 20 18 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuGridR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6663,6 +7069,7 @@ pub static CgMenuGridR: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 16H16V20H20V16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuHotdog: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6680,6 +7087,7 @@ pub static CgMenuHotdog: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6697,6 +7105,7 @@ pub static CgMenuLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2.99519 17.0096C2.44556 17.0096 2 17.4552 2 18.0048C2 18.5544 2.44556 19 2.99519 19H15.0048C15.5544 19 16 18.5544 16 18.0048C16 17.4552 15.5544 17.0096 15.0048 17.0096H2.99519Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuLeftAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6714,6 +7123,7 @@ pub static CgMenuLeftAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H13C13.5523 13 14 12.5523 14 12C14 11.4477 13.5523 11 13 11H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuMotion: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6731,6 +7141,7 @@ pub static CgMenuMotion: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 18C3 17.4477 3.44772 17 4 17H12C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19H4C3.44772 19 3 18.5523 3 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuOreos: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6749,6 +7160,7 @@ pub static CgMenuOreos: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 21C5.34315 21 4 19.6569 4 18H20C20 19.6569 18.6569 21 17 21H7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6766,6 +7178,7 @@ pub static CgMenuRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21.0048 6.99039C21.5544 6.99039 22 6.54482 22 5.99519C22 5.44556 21.5544 5 21.0048 5H8.99519C8.44556 5 8 5.44556 8 5.99519C8 6.54482 8.44556 6.99039 8.99519 6.99039H21.0048Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuRightAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6783,6 +7196,7 @@ pub static CgMenuRightAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11 11C10.4477 11 10 11.4477 10 12C10 12.5523 10.4477 13 11 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMenuRound: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6801,6 +7215,7 @@ pub static CgMenuRound: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMergeHorizontal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6818,6 +7233,7 @@ pub static CgMergeHorizontal: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M12 15.0242L7.75736 19.2668L9.17157 20.681L12 17.8526L14.8284 20.681L16.2426 19.2668L12 15.0242Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMergeVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6835,6 +7251,7 @@ pub static CgMergeVertical: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M15.0242 12L19.2669 16.2426L20.6811 14.8284L17.8527 12L20.6811 9.17157L19.2669 7.75736L15.0242 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMic: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6851,6 +7268,7 @@ pub static CgMic: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 12C18 14.973 15.8377 17.441 13 17.917V21H17V23H7V21H11V17.917C8.16229 17.441 6 14.973 6 12V9H8V12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12V9H18V12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMicrobit: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6868,6 +7286,7 @@ pub static CgMicrobit: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C3.13401 5 0 8.13401 0 12C0 15.866 3.13401 19 7 19H17C20.866 19 24 15.866 24 12C24 8.13401 20.866 5 17 5H7ZM17 8H7C4.79086 8 3 9.79086 3 12C3 14.2091 4.79086 16 7 16H17C19.2091 16 21 14.2091 21 12C21 9.79086 19.2091 8 17 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMicrosoft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6886,6 +7305,7 @@ pub static CgMicrosoft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13 13H21V21H13V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMiniPlayer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6901,6 +7321,7 @@ pub static CgMiniPlayer: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V12.2676C18.7058 12.0974 18.3643 12 18 12H14C12.8954 12 12 12.8954 12 14V18C12 18.3643 12.0974 18.7058 12.2676 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMinimize: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6919,6 +7340,7 @@ pub static CgMinimize: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M15 9.00012H21V7.00012H17V3.00012H15V9.00012Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMinimizeAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6935,6 +7357,7 @@ pub static CgMinimizeAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11.1824 12.2642V18.2642H9.1824V15.8422L3.41421 21.6104L2 20.1962L7.93203 14.2642H5.1824V12.2642H11.1824Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgModem: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6951,6 +7374,7 @@ pub static CgModem: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.86603 3.13414C5.38773 2.858 4.77614 3.02187 4.5 3.50017C4.22386 3.97846 4.38773 4.59005 4.86603 4.86619L18.3205 12.6341H2V16.6341C2 18.8433 3.79086 20.6341 6 20.6341H18C20.2091 20.6341 22 18.8433 22 16.6341V12.6341L5.86603 3.13414ZM20 14.6341H4V16.6341C4 17.7387 4.89543 18.6341 6 18.6341H18C19.1046 18.6341 20 17.7387 20 16.6341V14.6341Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMonday: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6968,6 +7392,7 @@ pub static CgMonday: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20.5 18.8596C22.1569 18.8596 23.5 17.5165 23.5 15.8596C23.5 14.2028 22.1569 12.8596 20.5 12.8596C18.8431 12.8596 17.5 14.2028 17.5 15.8596C17.5 17.5165 18.8431 18.8596 20.5 18.8596Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6983,6 +7408,7 @@ pub static CgMoon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2256 2.00253C9.59172 1.94346 6.93894 2.9189 4.92893 4.92891C1.02369 8.83415 1.02369 15.1658 4.92893 19.071C8.83418 22.9763 15.1658 22.9763 19.0711 19.071C21.0811 17.061 22.0565 14.4082 21.9975 11.7743C21.9796 10.9772 21.8669 10.1818 21.6595 9.40643C21.0933 9.9488 20.5078 10.4276 19.9163 10.8425C18.5649 11.7906 17.1826 12.4053 15.9301 12.6837C14.0241 13.1072 12.7156 12.7156 12 12C11.2844 11.2844 10.8928 9.97588 11.3163 8.0699C11.5947 6.81738 12.2094 5.43511 13.1575 4.08368C13.5724 3.49221 14.0512 2.90664 14.5935 2.34046C13.8182 2.13305 13.0228 2.02041 12.2256 2.00253ZM17.6569 17.6568C18.9081 16.4056 19.6582 14.8431 19.9072 13.2186C16.3611 15.2643 12.638 15.4664 10.5858 13.4142C8.53361 11.362 8.73568 7.63895 10.7814 4.09281C9.1569 4.34184 7.59434 5.09193 6.34315 6.34313C3.21895 9.46732 3.21895 14.5326 6.34315 17.6568C9.46734 20.781 14.5327 20.781 17.6569 17.6568Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMore: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7000,6 +7426,7 @@ pub static CgMore: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 13.6569 20.6569 15 19 15C17.3431 15 16 13.6569 16 12C16 10.3431 17.3431 9 19 9C20.6569 9 22 10.3431 22 12ZM20 12C20 12.5523 19.5523 13 19 13C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11C19.5523 11 20 11.4477 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7017,6 +7444,7 @@ pub static CgMoreAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 14C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10C16.8954 10 16 10.8954 16 12C16 13.1046 16.8954 14 18 14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7035,6 +7463,7 @@ pub static CgMoreO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7053,6 +7482,7 @@ pub static CgMoreR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 3.34315 1.34315 2 3 2H21C22.6569 2 24 3.34315 24 5V19C24 20.6569 22.6569 22 21 22H3C1.34315 22 0 20.6569 0 19V5ZM3 4H21C21.5523 4 22 4.44772 22 5V19C22 19.5523 21.5523 20 21 20H3C2.44772 20 2 19.5523 2 19V5C2 4.44772 2.44771 4 3 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7068,6 +7498,7 @@ pub static CgMoreVertical: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21ZM15 4C15 5.65685 13.6569 7 12 7C10.3431 7 9 5.65685 9 4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12ZM12 23C13.6569 23 15 21.6569 15 20C15 18.3431 13.6569 17 12 17C10.3431 17 9 18.3431 9 20C9 21.6569 10.3431 23 12 23Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreVerticalAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7085,6 +7516,7 @@ pub static CgMoreVerticalAlt: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreVerticalO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7103,6 +7535,7 @@ pub static CgMoreVerticalO: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoreVerticalR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7121,6 +7554,7 @@ pub static CgMoreVerticalR: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3C2 1.34315 3.34315 0 5 0H19C20.6569 0 22 1.34315 22 3V21C22 22.6569 20.6569 24 19 24H5C3.34315 24 2 22.6569 2 21V3ZM5 2H19C19.5523 2 20 2.44771 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V3C4 2.44772 4.44772 2 5 2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMouse: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7137,6 +7571,7 @@ pub static CgMouse: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C4 3.58172 7.58172 0 12 0C16.4183 0 20 3.58172 20 8V16C20 20.4183 16.4183 24 12 24C7.58172 24 4 20.4183 4 16V8ZM18 8V16C18 19.3137 15.3137 22 12 22C8.68629 22 6 19.3137 6 16V8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoveDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7154,6 +7589,7 @@ pub static CgMoveDown: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11.0001 5H13.0001V14.9999H16.0355L12.0356 19.071L8.03564 14.9999H11.0001V5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoveLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7171,6 +7607,7 @@ pub static CgMoveLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19.071 12.9999V10.9999H9.07109V7.96454L5 11.9644L9.07109 15.9644V12.9999H19.071Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoveRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7188,6 +7625,7 @@ pub static CgMoveRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 12.9999V10.9999H14.9999V7.96454L19.071 11.9644L14.9999 15.9644V12.9999H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoveTask: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7206,6 +7644,7 @@ pub static CgMoveTask: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10.9641 15H18.9641V17H10.9641V15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMoveUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7223,6 +7662,7 @@ pub static CgMoveUp: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12.9999 19.071H10.9999V9.07109H7.96454L11.9644 5L15.9644 9.07109H12.9999V19.071Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMusic: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7238,6 +7678,7 @@ pub static CgMusic: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M22 6.00086C22 3.54932 19.8148 1.6746 17.3918 2.04737L10.3918 3.1243C8.44044 3.4245 7 5.1035 7 7.07778V15.8407C6.54537 15.6248 6.0368 15.5039 5.5 15.5039C3.567 15.5039 2 17.0709 2 19.0039C2 20.9369 3.567 22.5039 5.5 22.5039C7.43296 22.5039 8.99994 20.937 9 19.004V7.07778C9 6.09064 9.72022 5.25114 10.6959 5.10104L17.6959 4.02412C18.9074 3.83773 20 4.77509 20 6.00086V12.8407C19.5454 12.6248 19.0368 12.5039 18.5 12.5039C16.567 12.5039 15 14.0709 15 16.0039C15 17.9369 16.567 19.5039 18.5 19.5039C20.433 19.5039 21.9999 17.937 22 16.004V6.00086ZM20 16.0039C20 15.1755 19.3284 14.5039 18.5 14.5039C17.6716 14.5039 17 15.1755 17 16.0039C17 16.8323 17.6716 17.5039 18.5 17.5039C19.3284 17.5039 19.9999 16.8323 20 16.0039ZM7 19.0039C7 18.1755 6.32843 17.5039 5.5 17.5039C4.67157 17.5039 4 18.1755 4 19.0039C4 19.8323 4.67157 20.5039 5.5 20.5039C6.32839 20.5039 6.99994 19.8323 7 19.0039Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMusicNote: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7253,6 +7694,7 @@ pub static CgMusicNote: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 8.95439L17.6352 7.82736C19.0102 7.55235 20 6.34501 20 4.94274C20 3.08637 18.3017 1.69406 16.4813 2.05813L12.4117 2.87206C11.0094 3.15252 10 4.38376 10 5.8138V13.8895C9.41165 13.5492 8.72857 13.3544 8 13.3544C5.79086 13.3544 4 15.1453 4 17.3544C4 19.5635 5.79086 21.3544 8 21.3544C10.2091 21.3544 12 19.5635 12 17.3544V8.95439ZM16.8736 4.01929L12.8039 4.83322C12.3365 4.92671 12 5.33712 12 5.8138V6.91479L17.2429 5.8662C17.6831 5.77816 18 5.39165 18 4.94274C18 4.34846 17.4563 3.90274 16.8736 4.01929ZM10 17.3544C10 16.2498 9.10457 15.3544 8 15.3544C6.89543 15.3544 6 16.2498 6 17.3544C6 18.459 6.89543 19.3544 8 19.3544C9.10457 19.3544 10 18.459 10 17.3544Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgMusicSpeaker: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7270,6 +7712,7 @@ pub static CgMusicSpeaker: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1C5.34315 1 4 2.34315 4 4V20C4 21.6569 5.34315 23 7 23H17C18.6569 23 20 21.6569 20 20V4C20 2.34315 18.6569 1 17 1H7ZM17 3H7C6.44772 3 6 3.44772 6 4V20C6 20.5523 6.44772 21 7 21H17C17.5523 21 18 20.5523 18 20V4C18 3.44772 17.5523 3 17 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgNametag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7289,6 +7732,7 @@ pub static CgNametag: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 14V20H14V18H18V14H20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgNotes: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7308,6 +7752,7 @@ pub static CgNotes: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C2 2.34315 3.34315 1 5 1H19C20.6569 1 22 2.34315 22 4V20C22 21.6569 20.6569 23 19 23H5C3.34315 23 2 21.6569 2 20V4ZM5 3H19C19.5523 3 20 3.44771 20 4V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4C4 3.44772 4.44771 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgNotifications: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7324,6 +7769,7 @@ pub static CgNotifications: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M12 6H4V20H18V12H16V18H6V8H12V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgNpm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7339,6 +7785,7 @@ pub static CgNpm: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 21C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5ZM6 18V6H18V18H15V9H12V18H6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgOculus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7354,6 +7801,7 @@ pub static CgOculus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M16 10H8C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14H16C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10ZM8 6C4.68629 6 2 8.68629 2 12C2 15.3137 4.68629 18 8 18H16C19.3137 18 22 15.3137 22 12C22 8.68629 19.3137 6 16 6H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgOpenCollective: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7370,6 +7818,7 @@ pub static CgOpenCollective: &icondata_core::IconData = &icondata_core::IconData
 <path d="M15.6734 16.7445C14.6583 17.5315 13.3839 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C13.4202 6 14.7252 6.49344 15.7528 7.31823L17.8826 5.18843C16.3051 3.82482 14.2489 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C14.2126 21 16.2387 20.2016 17.806 18.8771L15.6734 16.7445Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgOptions: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7386,6 +7835,7 @@ pub static CgOptions: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C15.1362 20 13.5701 18.7252 13.126 17H5V15H13.126C13.5701 13.2748 15.1362 12 17 12C19.2091 12 21 13.7909 21 16C21 18.2091 19.2091 20 17 20ZM17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgOrganisation: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7403,6 +7853,7 @@ pub static CgOrganisation: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 7H23V21H1V3H13V7ZM8 5H11V7H8V5ZM11 19V17H8V19H11ZM11 15V13H8V15H11ZM11 11V9H8V11H11ZM21 19V9H13V11H15V13H13V15H15V17H13V19H21ZM3 19V17H6V19H3ZM3 15H6V13H3V15ZM6 11V9H3V11H6ZM3 7H6V5H3V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgOverflow: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7420,6 +7871,7 @@ pub static CgOverflow: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 11C20 8.87827 19.1571 6.84344 17.6569 5.34315C16.1566 3.84285 14.1217 3 12 3C9.87827 3 7.84344 3.84285 6.34315 5.34315C4.84286 6.84344 4 8.87827 4 11L20 11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPacman: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7436,6 +7888,7 @@ pub static CgPacman: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 3C15.1523 3 17.1281 3.7555 18.6768 5.01576L20.124 6.46299L18.8288 7.75818L18.828 7.75738L14.5854 12L18.2236 15.6383L18.2224 15.6396L20.1273 17.5445L18.7144 18.9575L18.7122 18.9553C17.1583 20.2329 15.1687 21 13 21C8.02944 21 4 16.9706 4 12C4 7.02944 8.02944 3 13 3ZM11.7569 12L17.2893 17.5323C16.1044 18.4523 14.6162 19 13 19C9.13401 19 6 15.866 6 12C6 8.13401 9.13401 5 13 5C14.6162 5 16.1045 5.54772 17.2893 6.46768L11.7569 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPassword: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7455,6 +7908,7 @@ pub static CgPassword: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C0.895431 6 0 6.89543 0 8V16C0 17.1046 0.89543 18 2 18H22C23.1046 18 24 17.1046 24 16V8C24 6.89543 23.1046 6 22 6H2ZM22 8H2L2 16H22V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathBack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7470,6 +7924,7 @@ pub static CgPathBack: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9 14H4V4H14V9H19V19H9V14ZM6 6H12V12H6V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathCrop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7486,6 +7941,7 @@ pub static CgPathCrop: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 9H19V19H9V9ZM15 11H17V17H11V15H15V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathDivide: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7503,6 +7959,7 @@ pub static CgPathDivide: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10 10H14V14H10V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathExclude: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7518,6 +7975,7 @@ pub static CgPathExclude: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H15V9H9V15H5V5ZM9 15V19H19V9H15V15H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathFront: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7533,6 +7991,7 @@ pub static CgPathFront: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H15V9H19V19H9V15H5V5ZM11 11V17H17V11H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathIntersect: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7548,6 +8007,7 @@ pub static CgPathIntersect: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5H5V15H9V19H19V9H15V5ZM13 7H7V13H9V9H13V7ZM17 17H11V15H15V11H17V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathOutline: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7563,6 +8023,7 @@ pub static CgPathOutline: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H15V9H19V19H9V15H5V5ZM7 7H13V9H9V13H7V7ZM11 17H17V11H15V15H11V17ZM13 11H11V13H13V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathTrim: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7579,6 +8040,7 @@ pub static CgPathTrim: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 9H9V19H19V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPathUnite: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7594,6 +8056,7 @@ pub static CgPathUnite: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M15 5H5V15H9V19H19V9H15V5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPatreon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7610,6 +8073,7 @@ pub static CgPatreon: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 4H7V20H3V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPaypal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7625,6 +8089,7 @@ pub static CgPaypal: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6.47005 3.54443H14.4701C16.1089 3.54443 17.4146 4.31866 18.0963 5.51496C19.3165 6.38743 19.9427 7.91487 19.6082 9.65332C19.0865 12.365 16.425 14.5633 13.6636 14.5633H11.6636L10.5301 20.4553H6.39824L6.62891 19.2563H3.44727L6.47005 3.54443ZM8.0922 5.50842H14.0922C15.7491 5.50842 16.8385 6.82737 16.5254 8.45439C16.2124 10.0814 14.6155 11.4004 12.9587 11.4004H8.95866L7.82511 17.2923H5.82511L8.0922 5.50842Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7641,6 +8106,7 @@ pub static CgPen: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 22.9502L4.12171 15.1717L9.77817 20.8289L2 22.9502Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonBottomLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7656,6 +8122,7 @@ pub static CgPentagonBottomLeft: &icondata_core::IconData = &icondata_core::Icon
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3301 9.23205L10 5L5 13.6603L8.33013 17.8923L13.6603 18.6603L18.6603 10L13.3301 9.23205ZM15.4512 11.5583L12.2531 11.0975L10.255 8.5583L7.40908 13.4876L9.40716 16.0268L12.6052 16.4876L15.4512 11.5583Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonBottomRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7671,6 +8138,7 @@ pub static CgPentagonBottomRight: &icondata_core::IconData = &icondata_core::Ico
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.3301 8.23205L13.6603 4L18.6603 12.6603L15.3301 16.8923L10 17.6603L5 9L10.3301 8.23205ZM8.20908 10.5583L11.4072 10.0975L13.4052 7.5583L16.2512 12.4876L14.2531 15.0268L11.055 15.4876L8.20908 10.5583Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7686,6 +8154,7 @@ pub static CgPentagonDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 8L7 6V16L12 18.5L17 16V6L12 8ZM15 8.95407L12 10.1541L9 8.95407V14.7639L12 16.2639L15 14.7639V8.95407Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7701,6 +8170,7 @@ pub static CgPentagonLeft: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M16 12L18 7H8L6 12L8 17H18L16 12ZM15.0459 15L13.8459 12L15.0459 9H9.35407L8.15407 12L9.35407 15H15.0459Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7716,6 +8186,7 @@ pub static CgPentagonRight: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 12L6 7H16L18 12L16 17H6L8 12ZM8.95407 15L10.1541 12L8.95407 9H14.6459L15.8459 12L14.6459 15H8.95407Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonTopLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7731,6 +8202,7 @@ pub static CgPentagonTopLeft: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3301 15.1601L11 19.3922L6 10.7319L9.33013 6.49988L14.6603 5.73193L19.6603 14.3922L14.3301 15.1601ZM16.4512 12.8339L13.2531 13.2947L11.255 15.8339L8.40908 10.9046L10.4072 8.36536L13.6052 7.90459L16.4512 12.8339Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonTopRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7746,6 +8218,7 @@ pub static CgPentagonTopRight: &icondata_core::IconData = &icondata_core::IconDa
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.3301 15.1601L5 14.3922L10 5.73193L15.3301 6.49988L18.6603 10.7319L13.6603 19.3922L10.3301 15.1601ZM13.4052 15.8339L11.4072 13.2947L8.20908 12.8339L11.055 7.90459L14.2531 8.36536L16.2512 10.9046L13.4052 15.8339Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPentagonUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7761,6 +8234,7 @@ pub static CgPentagonUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 16L17 18V8L12 6L7 8V18L12 16ZM9 15.0459L12 13.8459L15 15.0459V9.35407L12 8.15407L9 9.35407V15.0459Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPerformance: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7778,6 +8252,7 @@ pub static CgPerformance: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPexels: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7793,6 +8268,7 @@ pub static CgPexels: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 5C12.7111 5 13.3875 5.14845 14 5.41604C15.7659 6.1876 17 7.94968 17 10C17 12.0503 15.7659 13.8124 14 14.584C13.3875 14.8516 12.7111 15 12 15V19H6V5H12ZM8 7V17H10V13H12L12.0032 12.9988C13.6427 13.0303 15.0746 11.6934 15.0443 9.95469L15.0375 9.56529C15.0121 8.10183 13.7882 6.94549 12.3257 7.00299L12.0203 7.00762L12 7H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPhone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7810,6 +8286,7 @@ pub static CgPhone: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17.5433 9.70386C17.8448 10.4319 18 11.2122 18 12H16.2C16.2 11.4485 16.0914 10.9023 15.8803 10.3928C15.6692 9.88306 15.3599 9.42017 14.9698 9.03027C14.5798 8.64014 14.1169 8.33081 13.6073 8.11963C13.0977 7.90869 12.5515 7.80005 12 7.80005V6C12.7879 6 13.5681 6.15527 14.2961 6.45679C15.024 6.7583 15.6855 7.2002 16.2426 7.75732C16.7998 8.31445 17.2418 8.97583 17.5433 9.70386Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPhotoscan: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7826,6 +8303,7 @@ pub static CgPhotoscan: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3C18.1046 3 19 3.89543 19 5V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H17ZM12.4649 5H17V16H7L7 10.4649C7.58835 10.8052 8.27143 11 9 11C11.2091 11 13 9.20914 13 7C13 6.27143 12.8052 5.58835 12.4649 5ZM9 5C7.89543 5 7 5.89543 7 7C7 8.10457 7.89543 9 9 9C10.1046 9 11 8.10457 11 7C11 5.89543 10.1046 5 9 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPiano: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7841,6 +8319,7 @@ pub static CgPiano: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M22 21C23.1046 21 24 20.1046 24 19V5C24 3.89543 23.1046 3 22 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H22ZM11 5H8.98486V13H7.98511V19H12V13H11V5ZM18.0151 19H22V5H19.0151V13H18.0151V19ZM17.0151 13H16.0151V5H14V13H13V19H17.0151V13ZM6.98511 19V13H5.98486V5H3L3 19H6.98511Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPill: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7856,6 +8335,7 @@ pub static CgPill: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6569 2.75736C15 0.414213 18.799 0.414214 21.1421 2.75736C23.4853 5.1005 23.4853 8.8995 21.1421 11.2426L11.2426 21.1421C8.89949 23.4853 5.1005 23.4853 2.75736 21.1421C0.414214 18.799 0.414213 15 2.75736 12.6569L12.6569 2.75736ZM19.7279 9.82843L15.4853 14.0711L9.82843 8.41421L14.0711 4.17157C15.6332 2.60948 18.1658 2.60948 19.7279 4.17157C21.29 5.73367 21.29 8.26633 19.7279 9.82843Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPin: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7872,6 +8352,7 @@ pub static CgPin: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPinAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7888,6 +8369,7 @@ pub static CgPinAlt: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 11.973 15.8377 14.441 13 14.917V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V14.917C8.16229 14.441 6 11.973 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 11.2091 9.79086 13 12 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPinBottom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7904,6 +8386,7 @@ pub static CgPinBottom: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 11.973 15.8377 14.441 13 14.917V20H16C16.5523 20 17 20.4477 17 21C17 21.5523 16.5523 22 16 22H8C7.44772 22 7 21.5523 7 21C7 20.4477 7.44772 20 8 20H11V14.917C8.16229 14.441 6 11.973 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM12 13C14.2091 13 16 11.2091 16 9C16 6.79086 14.2091 5 12 5C9.79086 5 8 6.79086 8 9C8 11.2091 9.79086 13 12 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPinTop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7920,6 +8403,7 @@ pub static CgPinTop: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 5C7.44772 5 7 4.55228 7 4C7 3.44772 7.44772 3 8 3H16C16.5523 3 17 3.44772 17 4C17 4.55228 16.5523 5 16 5H13V10.083C15.8377 10.559 18 13.027 18 16C18 19.3137 15.3137 22 12 22C8.68629 22 6 19.3137 6 16C6 13.027 8.16229 10.559 11 10.083V5H8ZM12 12C14.2091 12 16 13.7909 16 16C16 18.2091 14.2091 20 12 20C9.79086 20 8 18.2091 8 16C8 13.7909 9.79086 12 12 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayBackwards: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7937,6 +8421,7 @@ pub static CgPlayBackwards: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M21.0023 7.00003L14 12L21.0023 17V7.00003Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayButton: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7952,6 +8437,7 @@ pub static CgPlayButton: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M15 12.3301L9 16.6603L9 8L15 12.3301Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayButtonO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7968,6 +8454,7 @@ pub static CgPlayButtonO: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16 12L10 16.3301V7.66987L16 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayButtonR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7984,6 +8471,7 @@ pub static CgPlayButtonR: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16 12L10 16.3301V7.66987L16 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayForwards: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8001,6 +8489,7 @@ pub static CgPlayForwards: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 17L9.00232 12L2 7V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8019,6 +8508,7 @@ pub static CgPlayList: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 16L14 13V19L20 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayListAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8037,6 +8527,7 @@ pub static CgPlayListAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16 9H18V13H22V15H18V19H16V15H12V13H16V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayListCheck: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8055,6 +8546,7 @@ pub static CgPlayListCheck: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M11.9905 15.025L13.4049 13.6106L15.526 15.7321L19.7687 11.4895L21.1829 12.9037L15.526 18.5606L11.9905 15.025Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayListRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8073,6 +8565,7 @@ pub static CgPlayListRemove: &icondata_core::IconData = &icondata_core::IconData
 <path d="M12.9645 13.7093L14.3787 12.295L16.5 14.4163L18.6213 12.2951L20.0355 13.7093L17.9142 15.8305L20.0356 17.9519L18.6214 19.3661L16.5 17.2447L14.3786 19.3661L12.9644 17.9519L15.0858 15.8305L12.9645 13.7093Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayListSearch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8091,6 +8584,7 @@ pub static CgPlayListSearch: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7574 12.7573C12.5858 13.9289 12.5858 15.8284 13.7574 17C14.681 17.9236 16.0571 18.1191 17.1722 17.5864L18.7071 19.1213L20.1213 17.7071L18.5864 16.1722C19.1191 15.057 18.9236 13.681 18 12.7573C16.8284 11.5858 14.9289 11.5858 13.7574 12.7573ZM15.1716 15.5858C15.5621 15.9763 16.1953 15.9763 16.5858 15.5858C16.9763 15.1952 16.9763 14.5621 16.5858 14.1716C16.1953 13.781 15.5621 13.781 15.1716 14.1716C14.7811 14.5621 14.7811 15.1952 15.1716 15.5858Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayPause: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8107,6 +8601,7 @@ pub static CgPlayPause: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13 17H16V7H13V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayPauseO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8124,6 +8619,7 @@ pub static CgPlayPauseO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayPauseR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8141,6 +8637,7 @@ pub static CgPlayPauseR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayStop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8156,6 +8653,7 @@ pub static CgPlayStop: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M7 7H17V17H7V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayStopO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8172,6 +8670,7 @@ pub static CgPlayStopO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayStopR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8188,6 +8687,7 @@ pub static CgPlayStopR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackNext: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8204,6 +8704,7 @@ pub static CgPlayTrackNext: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M18 7H15V12V17H18V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackNextO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8219,6 +8720,7 @@ pub static CgPlayTrackNextO: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM14 9C14 8.44772 14.4477 8 15 8C15.5523 8 16 8.44772 16 9V15C16 15.5523 15.5523 16 15 16C14.4477 16 14 15.5523 14 15V9ZM13 12L7 15.4641V8.5359L13 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackNextR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8236,6 +8738,7 @@ pub static CgPlayTrackNextR: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackPrev: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8252,6 +8755,7 @@ pub static CgPlayTrackPrev: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M6 7H9V17H6V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackPrevO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8268,6 +8772,7 @@ pub static CgPlayTrackPrevO: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlayTrackPrevR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8284,6 +8789,7 @@ pub static CgPlayTrackPrevR: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3ZM5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPlug: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8299,6 +8805,7 @@ pub static CgPlug: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C8.44771 2 8 2.44772 8 3V5C8 5.55228 8.44771 6 9 6C9.55229 6 10 5.55228 10 5V3C10 2.44772 9.55229 2 9 2ZM8 9H16V11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11V9ZM13 16.917C15.8377 16.441 18 13.973 18 11V7H6V11C6 13.973 8.16229 16.441 11 16.917V22C11 22.5523 11.4477 23 12 23C12.5523 23 13 22.5523 13 22V16.917ZM14 3C14 2.44772 14.4477 2 15 2C15.5523 2 16 2.44772 16 3V5C16 5.55228 15.5523 6 15 6C14.4477 6 14 5.55228 14 5V3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPocket: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8314,6 +8821,7 @@ pub static CgPocket: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 4H21V11C21 15.9706 16.9706 20 12 20C7.02944 20 3 15.9706 3 11V4ZM1 2H23V11C23 17.0751 18.0751 22 12 22C5.92487 22 1 17.0751 1 11V2ZM11.2929 14.6935C11.6834 15.084 12.3166 15.084 12.7071 14.6935L16.9497 10.4508C17.3403 10.0603 17.3403 9.42714 16.9497 9.03661C16.5592 8.64609 15.9261 8.64609 15.5355 9.03661L12 12.5721L8.46447 9.03661C8.07394 8.64609 7.44078 8.64609 7.05025 9.03661C6.65973 9.42714 6.65973 10.0603 7.05025 10.4508L11.2929 14.6935Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPokemon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8329,6 +8837,7 @@ pub static CgPokemon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM5.07089 13C5.55612 16.3923 8.47353 19 12 19C15.5265 19 18.4439 16.3923 18.9291 13H14.8293C14.4174 14.1652 13.3062 15 12 15C10.6938 15 9.58251 14.1652 9.17068 13H5.07089ZM18.9291 11C18.4439 7.60771 15.5265 5 12 5C8.47353 5 5.55612 7.60771 5.07089 11H9.17068C9.58251 9.83481 10.6938 9 12 9C13.3062 9 14.4174 9.83481 14.8293 11H18.9291ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPolaroid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8344,6 +8853,7 @@ pub static CgPolaroid: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 2.89543 3.89543 2 5 2H19C20.1046 2 21 2.89543 21 4V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V4ZM5 4H19V15H5V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPoll: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8362,6 +8872,7 @@ pub static CgPoll: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 10H9V17H7V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPresentation: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8377,6 +8888,7 @@ pub static CgPresentation: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM20 12H18C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12H4C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM4.25204 14H19.748C18.8599 17.4505 15.7277 20 12 20C8.27232 20 5.14012 17.4505 4.25204 14ZM8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPrinter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8392,6 +8904,7 @@ pub static CgPrinter: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4H16V6H8V4ZM18 6H22V18H18V22H6V18H2V6H6V2H18V6ZM20 16H18V14H6V16H4V8H20V16ZM8 16H16V20H8V16ZM8 10H6V12H8V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgProductHunt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8407,6 +8920,7 @@ pub static CgProductHunt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12C19 15.866 15.866 19 12 19ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM9 16V8H13C14.6569 8 16 9.34315 16 11C16 12.6569 14.6569 14 13 14H11V16H9ZM14 11C14 11.5523 13.5523 12 13 12H11V10H13C13.5523 10 14 10.4477 14 11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgProfile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8423,6 +8937,7 @@ pub static CgProfile: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPullClear: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8440,6 +8955,7 @@ pub static CgPullClear: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 8H6V10H18V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8456,6 +8972,7 @@ pub static CgPushChevronDown: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M19 16.3432H5V18.3432H19V16.3432Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronDownO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8473,6 +8990,7 @@ pub static CgPushChevronDownO: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronDownR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8490,6 +9008,7 @@ pub static CgPushChevronDownR: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8506,6 +9025,7 @@ pub static CgPushChevronLeft: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M8 19V5H6V19H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronLeftO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8523,6 +9043,7 @@ pub static CgPushChevronLeftO: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12ZM3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronLeftR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8540,6 +9061,7 @@ pub static CgPushChevronLeftR: &icondata_core::IconData = &icondata_core::IconDa
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8556,6 +9078,7 @@ pub static CgPushChevronRight: &icondata_core::IconData = &icondata_core::IconDa
 <path d="M16.3432 19V5H18.3432V19H16.3432Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronRightO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8573,6 +9096,7 @@ pub static CgPushChevronRightO: &icondata_core::IconData = &icondata_core::IconD
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12ZM21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronRightR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8590,6 +9114,7 @@ pub static CgPushChevronRightR: &icondata_core::IconData = &icondata_core::IconD
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8606,6 +9131,7 @@ pub static CgPushChevronUp: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M19 8H5V6H19V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronUpO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8621,6 +9147,7 @@ pub static CgPushChevronUpO: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM8 10V8H16V10H8ZM16.2427 15.2974L14.8285 16.7116L12 13.8832L9.17164 16.7116L7.75743 15.2974L12.0001 11.0547L16.2427 15.2974Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushChevronUpR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8636,6 +9163,7 @@ pub static CgPushChevronUpR: &icondata_core::IconData = &icondata_core::IconData
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21ZM1 19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5C2.79086 1 1 2.79086 1 5V19ZM9.17154 16.7116L7.75732 15.2974L11.9999 11.0547L16.2426 15.2974L14.8284 16.7116L12 13.8832L9.17154 16.7116ZM8.00001 10H16V8H8.00001V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8652,6 +9180,7 @@ pub static CgPushDown: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8668,6 +9197,7 @@ pub static CgPushLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 18V6H1V18H3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8684,6 +9214,7 @@ pub static CgPushRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20.2877 6V18H22.2877V6H20.2877Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgPushUp: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8699,6 +9230,7 @@ pub static CgPushUp: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0001 22.2877H13.0001V7.80237L16.2428 11.045L17.657 9.63079L12.0001 3.97394L6.34326 9.63079L7.75748 11.045L11.0001 7.80236V22.2877ZM18 3H6V1H18V3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgQr: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8714,6 +9246,7 @@ pub static CgQr: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9 3H3V9H5V5H9V3ZM3 21V15H5V19H9V21H3ZM15 3V5H19V9H21V3H15ZM19 15H21V21H15V19H19V15ZM7 7H11V11H7V7ZM7 13H11V17H7V13ZM17 7H13V11H17V7ZM13 13H17V17H13V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgQuote: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8730,6 +9263,7 @@ pub static CgQuote: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgQuoteO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8747,6 +9281,7 @@ pub static CgQuoteO: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M14.0672 9.19629H17.0672L14.9327 14.8038H11.9327L14.0672 9.19629Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRadioCheck: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8762,6 +9297,7 @@ pub static CgRadioCheck: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRadioChecked: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8778,6 +9314,7 @@ pub static CgRadioChecked: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRatio: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8795,6 +9332,7 @@ pub static CgRatio: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C1.79086 2 0 3.79086 0 6V18C0 20.2091 1.79086 22 4 22H20C22.2091 22 24 20.2091 24 18V6C24 3.79086 22.2091 2 20 2H4ZM20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRead: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8810,6 +9348,7 @@ pub static CgRead: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C8.10457 14 9 13.1046 9 12C9 10.8954 8.10457 10 7 10C5.89543 10 5 10.8954 5 12C5 13.1046 5.89543 14 7 14ZM10.4649 10C9.77325 8.8044 8.48056 8 7 8C5.13616 8 3.57006 9.27477 3.12602 11H2C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13H3.12602C3.57006 14.7252 5.13616 16 7 16C9.20914 16 11 14.2091 11 12H13C13 14.2091 14.7909 16 17 16C18.8638 16 20.4299 14.7252 20.874 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H20.874C20.4299 9.27477 18.8638 8 17 8C15.5194 8 14.2267 8.8044 13.5351 10H10.4649ZM15 12C15 13.1046 15.8954 14 17 14C18.1046 14 19 13.1046 19 12C19 10.8954 18.1046 10 17 10C15.8954 10 15 10.8954 15 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgReadme: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8825,6 +9364,7 @@ pub static CgReadme: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 5.5H9C10.1046 5.5 11 6.39543 11 7.5V16.5C11 17.0523 10.5523 17.5 10 17.5H4C3.44772 17.5 3 17.0523 3 16.5V6.5C3 5.94772 3.44772 5.5 4 5.5ZM14 19.5C13.6494 19.5 13.3128 19.4398 13 19.3293V19.5C13 20.0523 12.5523 20.5 12 20.5C11.4477 20.5 11 20.0523 11 19.5V19.3293C10.6872 19.4398 10.3506 19.5 10 19.5H4C2.34315 19.5 1 18.1569 1 16.5V6.5C1 4.84315 2.34315 3.5 4 3.5H9C10.1947 3.5 11.2671 4.02376 12 4.85418C12.7329 4.02376 13.8053 3.5 15 3.5H20C21.6569 3.5 23 4.84315 23 6.5V16.5C23 18.1569 21.6569 19.5 20 19.5H14ZM13 7.5V16.5C13 17.0523 13.4477 17.5 14 17.5H20C20.5523 17.5 21 17.0523 21 16.5V6.5C21 5.94772 20.5523 5.5 20 5.5H15C13.8954 5.5 13 6.39543 13 7.5ZM5 7.5H9V9.5H5V7.5ZM15 7.5H19V9.5H15V7.5ZM19 10.5H15V12.5H19V10.5ZM5 10.5H9V12.5H5V10.5ZM19 13.5H15V15.5H19V13.5ZM5 13.5H9V15.5H5V13.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRecord: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8841,6 +9381,7 @@ pub static CgRecord: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRedo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8856,6 +9397,7 @@ pub static CgRedo: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M13.1459 11.0499L12.9716 9.05752L15.3462 8.84977C14.4471 7.98322 13.2242 7.4503 11.8769 7.4503C9.11547 7.4503 6.87689 9.68888 6.87689 12.4503C6.87689 15.2117 9.11547 17.4503 11.8769 17.4503C13.6977 17.4503 15.2911 16.4771 16.1654 15.0224L18.1682 15.5231C17.0301 17.8487 14.6405 19.4503 11.8769 19.4503C8.0109 19.4503 4.87689 16.3163 4.87689 12.4503C4.87689 8.58431 8.0109 5.4503 11.8769 5.4503C13.8233 5.4503 15.5842 6.24474 16.853 7.52706L16.6078 4.72412L18.6002 4.5498L19.1231 10.527L13.1459 11.0499Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRemote: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8872,6 +9414,7 @@ pub static CgRemote: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6.94864 19.6785L5.53442 18.2643L9.77706 14.0216L5.53442 9.77897L6.94864 8.36476L12.6055 14.0216L6.94864 19.6785Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8888,6 +9431,7 @@ pub static CgRemove: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRemoveR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8904,6 +9448,7 @@ pub static CgRemoveR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRename: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8920,6 +9465,7 @@ pub static CgRename: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 16H12V18H19C20.6569 18 22 16.6569 22 15V9C22 7.34315 20.6569 6 19 6H12V8H19C19.5523 8 20 8.44771 20 9V15C20 15.5523 19.5523 16 19 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgReorder: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8939,6 +9485,7 @@ pub static CgReorder: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1707 9C15.5825 10.1652 16.6938 11 18 11C19.6569 11 21 9.65685 21 8C21 6.34315 19.6569 5 18 5C16.6938 5 15.5825 5.83481 15.1707 7H4C3.44772 7 3 7.44772 3 8C3 8.55228 3.44772 9 4 9H15.1707ZM19 8C19 8.55228 18.5523 9 18 9C17.4477 9 17 8.55228 17 8C17 7.44772 17.4477 7 18 7C18.5523 7 19 7.44772 19 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRepeat: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8955,6 +9502,7 @@ pub static CgRepeat: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10.1299 16.9999H19.1101V10.9999H17.1101V14.9999H10.1299V13.4019L5.62988 15.9999L10.1299 18.598V16.9999Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRing: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8971,6 +9519,7 @@ pub static CgRing: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 12.6576C2 9.52653 3.43899 6.73156 5.69172 4.89796L7.11528 6.32152C5.22043 7.78449 4 10.0785 4 12.6576C4 17.0759 7.58172 20.6576 12 20.6576C16.4183 20.6576 20 17.0759 20 12.6576C20 10.0785 18.7796 7.78451 16.8847 6.32154L18.3083 4.89798C20.561 6.73158 22 9.52654 22 12.6576C22 18.1804 17.5228 22.6576 12 22.6576C6.47715 22.6576 2 18.1804 2 12.6576Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRowFirst: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8990,6 +9539,7 @@ pub static CgRowFirst: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 8C5 7.44772 5.44772 7 6 7H18C18.5523 7 19 7.44772 19 8C19 8.55228 18.5523 9 18 9H6C5.44772 9 5 8.55228 5 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRowLast: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9009,6 +9559,7 @@ pub static CgRowLast: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M5 16C5 16.5523 5.44772 17 6 17H18C18.5523 17 19 16.5523 19 16C19 15.4477 18.5523 15 18 15H6C5.44772 15 5 15.4477 5 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgRuler: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9024,6 +9575,7 @@ pub static CgRuler: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C1.34315 6 0 7.34315 0 9V16C0 17.6569 1.34315 19 3 19H21C22.6569 19 24 17.6569 24 16V9C24 7.34315 22.6569 6 21 6H3ZM9 8H7V13C7 13.5523 6.55228 14 6 14C5.44772 14 5 13.5523 5 13V8H3C2.44772 8 2 8.44772 2 9V16C2 16.5523 2.44772 17 3 17H21C21.5523 17 22 16.5523 22 16V9C22 8.44772 21.5523 8 21 8H19V11C19 11.5523 18.5523 12 18 12C17.4477 12 17 11.5523 17 11V8H15V13C15 13.5523 14.5523 14 14 14C13.4477 14 13 13.5523 13 13V8H11V11C11 11.5523 10.5523 12 10 12C9.44771 12 9 11.5523 9 11V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSandClock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9040,6 +9592,7 @@ pub static CgSandClock: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2V4H7V7C7 9.76142 9.23858 12 12 12C9.23858 12 7 14.2386 7 17V20H6V22H18V20H17V17C17 14.2386 14.7614 12 12 12C14.7614 12 17 9.76142 17 7V4H18V2H6ZM9 4H15V7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7V4ZM9 17V20H15V17C15 15.3431 13.6569 14 12 14C10.3431 14 9 15.3431 9 17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScan: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9057,6 +9610,7 @@ pub static CgScan: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 8C19 7.44771 18.5523 7 18 7H15V5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H15V17H18C18.5523 17 19 16.5523 19 16V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScreen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9072,6 +9626,7 @@ pub static CgScreen: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 17H4C2.34315 17 1 15.6569 1 14V6C1 4.34315 2.34315 3 4 3H20C21.6569 3 23 4.34315 23 6V14C23 15.6569 21.6569 17 20 17H13V19H16C16.5523 19 17 19.4477 17 20C17 20.5523 16.5523 21 16 21H8C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19H11V17ZM4 5H20C20.5523 5 21 5.44772 21 6V14C21 14.5523 20.5523 15 20 15H4C3.44772 15 3 14.5523 3 14V6C3 5.44772 3.44772 5 4 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScreenMirror: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9088,6 +9643,7 @@ pub static CgScreenMirror: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16.3301 19L12 13L7.66987 19H16.3301Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScreenShot: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9105,6 +9661,7 @@ pub static CgScreenShot: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V3ZM6 20V4H18V20H6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScreenWide: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9120,6 +9677,7 @@ pub static CgScreenWide: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 16H3C1.34315 16 0 14.6569 0 13V8C0 6.34315 1.34315 5 3 5H21C22.6569 5 24 6.34315 24 8V13C24 14.6569 22.6569 16 21 16H13V17H15C15.5523 17 16 17.4477 16 18C16 18.5523 15.5523 19 15 19H9C8.44771 19 8 18.5523 8 18C8 17.4477 8.44771 17 9 17H11V16ZM3 7H21C21.5523 7 22 7.44772 22 8V13C22 13.5523 21.5523 14 21 14H3C2.44772 14 2 13.5523 2 13V8C2 7.44772 2.44772 7 3 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScrollH: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9137,6 +9695,7 @@ pub static CgScrollH: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9999 12C14.9999 13.6569 13.6567 15 11.9999 15C10.343 15 8.99988 13.6569 8.99988 12C8.99988 10.3431 10.343 9 11.9999 9C13.6567 9 14.9999 10.3431 14.9999 12ZM12.9999 12C12.9999 12.5523 12.5522 13 11.9999 13C11.4476 13 10.9999 12.5523 10.9999 12C10.9999 11.4477 11.4476 11 11.9999 11C12.5522 11 12.9999 11.4477 12.9999 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgScrollV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9154,6 +9713,7 @@ pub static CgScrollV: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9.00018C13.6569 9.00018 15 10.3433 15 12.0002C15 13.657 13.6569 15.0002 12 15.0002C10.3431 15.0002 9 13.657 9 12.0002C9 10.3433 10.3431 9.00018 12 9.00018ZM12 11.0002C12.5523 11.0002 13 11.4479 13 12.0002C13 12.5525 12.5523 13.0002 12 13.0002C11.4477 13.0002 11 12.5525 11 12.0002C11 11.4479 11.4477 11.0002 12 11.0002Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSearch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9169,6 +9729,7 @@ pub static CgSearch: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSearchFound: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9185,6 +9746,7 @@ pub static CgSearchFound: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 4.89344C19.0923 7.77862 19.3131 12.3193 16.8693 15.4578C16.8846 15.4713 16.8996 15.4854 16.9143 15.5L21.1569 19.7427C21.5474 20.1332 21.5474 20.7664 21.1569 21.1569C20.7664 21.5474 20.1332 21.5474 19.7427 21.1569L15.5 16.9143C15.4854 16.8996 15.4713 16.8846 15.4578 16.8693C12.3193 19.3131 7.77862 19.0923 4.89344 16.2071C1.76924 13.083 1.76924 8.01763 4.89344 4.89344C8.01763 1.76924 13.083 1.76924 16.2071 4.89344ZM14.7929 14.7929C17.1361 12.4498 17.1361 8.6508 14.7929 6.30765C12.4498 3.96451 8.6508 3.96451 6.30765 6.30765C3.96451 8.6508 3.96451 12.4498 6.30765 14.7929C8.6508 17.1361 12.4498 17.1361 14.7929 14.7929Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSearchLoading: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9203,6 +9765,7 @@ pub static CgSearchLoading: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 4.89344C19.0922 7.7786 19.313 12.3192 16.8693 15.4577C16.8846 15.4712 16.8996 15.4853 16.9142 15.4999L21.1568 19.7426C21.5473 20.1331 21.5473 20.7663 21.1568 21.1568C20.7663 21.5473 20.1331 21.5473 19.7426 21.1568L15.5 16.9141C15.4853 16.8995 15.4713 16.8846 15.4578 16.8693C12.3193 19.3131 7.77858 19.0923 4.89338 16.2071C1.76918 13.083 1.76918 8.01763 4.89338 4.89344C8.01757 1.76924 13.0829 1.76924 16.2071 4.89344ZM6.30759 14.7929C8.65074 17.1361 12.4497 17.1361 14.7929 14.7929C17.136 12.4498 17.136 8.6508 14.7929 6.30765C12.4497 3.96451 8.65074 3.96451 6.30759 6.30765C3.96445 8.6508 3.96445 12.4498 6.30759 14.7929Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSelect: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9219,6 +9782,7 @@ pub static CgSelect: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6 14.4433L7.41421 13.0291L11.6569 17.2717L15.8995 13.0291L17.3137 14.4433L11.6569 20.1001L6 14.4433Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSelectO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9236,6 +9800,7 @@ pub static CgSelectO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSelectR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9253,6 +9818,7 @@ pub static CgSelectR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgServer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9271,6 +9837,7 @@ pub static CgServer: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 3.34315 5.34315 2 7 2H17C18.6569 2 20 3.34315 20 5V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V5ZM7 4H17C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20H7C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44771 4 7 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgServerless: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9291,6 +9858,7 @@ pub static CgServerless: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12.8236 9L13.9156 6H20V9H12.8236Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeCircle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9306,6 +9874,7 @@ pub static CgShapeCircle: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeHalfCircle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9321,6 +9890,7 @@ pub static CgShapeHalfCircle: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path d="M16 4C11.5817 4 8 7.58172 8 12C8 16.4183 11.5817 20 16 20V17C13.2386 17 11 14.7614 11 12C11 9.23858 13.2386 7 16 7V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeHexagon: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9336,6 +9906,7 @@ pub static CgShapeHexagon: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.2348L12 18.5681L18 15.2348V8.76521L12 5.43188L6 8.76521V15.2348ZM12 2L3 7V17L12 22L21 17V7L12 2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeRhombus: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9351,6 +9922,7 @@ pub static CgShapeRhombus: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.34315L6.34317 12L12 17.6569L17.6569 12L12 6.34315ZM2.10052 12L12 21.8995L21.8995 12L12 2.10051L2.10052 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeSquare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9366,6 +9938,7 @@ pub static CgShapeSquare: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 7H7V17H17V7ZM4 4V20H20V4H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeTriangle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9381,6 +9954,7 @@ pub static CgShapeTriangle: &icondata_core::IconData = &icondata_core::IconData 
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6603 5L3 20H20.3205L11.6603 5ZM11.6603 11L8.19615 17H15.1244L11.6603 11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShapeZigzag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9396,6 +9970,7 @@ pub static CgShapeZigzag: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2.31212 9L1 10.5094L4.77355 13.7897L6.28297 15.1018L7.59509 13.5924L9.13456 11.8214L11.3988 13.7897L12.9082 15.1018L14.2203 13.5924L15.7584 11.823L18.0209 13.7897L19.5303 15.1018L20.8424 13.5924L22.8106 11.3283L21.3012 10.0162L19.333 12.2803L15.5594 9L14.2473 10.5094L14.249 10.5109L12.7109 12.2803L8.93736 9L8.05395 10.0163L6.08567 12.2803L2.31212 9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9411,6 +9986,7 @@ pub static CgShare: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M18 9C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3C16.3431 3 15 4.34315 15 6C15 6.12549 15.0077 6.24919 15.0227 6.37063L8.08261 9.84066C7.54305 9.32015 6.80891 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15C6.80891 15 7.54305 14.6798 8.08261 14.1593L15.0227 17.6294C15.0077 17.7508 15 17.8745 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C17.1911 15 16.457 15.3202 15.9174 15.8407L8.97733 12.3706C8.99229 12.2492 9 12.1255 9 12C9 11.8745 8.99229 11.7508 8.97733 11.6294L15.9174 8.15934C16.457 8.67985 17.1911 9 18 9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShield: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9426,6 +10002,7 @@ pub static CgShield: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7 8V13C7 15.7614 9.23858 18 12 18C14.7614 18 17 15.7614 17 13V8H7ZM5 4H19V13C19 16.866 15.866 20 12 20C8.13401 20 5 16.866 5 13V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShoppingBag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9441,6 +10018,7 @@ pub static CgShoppingBag: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShoppingCart: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9458,6 +10036,7 @@ pub static CgShoppingCart: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShortcut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9474,6 +10053,7 @@ pub static CgShortcut: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.34315 4.34315 3 6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6ZM6 5H18C18.5523 5 19 5.44772 19 6V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V6C5 5.44772 5.44772 5 6 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgShutterstock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9491,6 +10071,7 @@ pub static CgShutterstock: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5ZM19 4H5C4.44771 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44771 19.5523 4 19 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSidebar: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9507,6 +10088,7 @@ pub static CgSidebar: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M3 20H5V4H3V20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSidebarOpen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9522,6 +10104,7 @@ pub static CgSidebarOpen: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 4H21V20H3V4ZM9 6H19V18H9V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSidebarRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9538,6 +10121,7 @@ pub static CgSidebarRight: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21 4H19V20H21V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSignal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9555,6 +10139,7 @@ pub static CgSignal: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12 10C11.4477 10 11 10.4477 11 11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V11C13 10.4477 12.5523 10 12 10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSize: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9570,6 +10155,7 @@ pub static CgSize: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6V4H20V20H12V18H8V16H4V8H8V6H12ZM14 6H18V18H14V6ZM12 8H10V16H12V8ZM8 10V14H6V10H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSketch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9586,6 +10172,7 @@ pub static CgSketch: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8.05592 8H16.0559V10H8.05592V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSlack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9601,6 +10188,7 @@ pub static CgSlack: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13 10C13 11.1046 13.8954 12 15 12C16.1046 12 17 11.1046 17 10V5C17 3.89543 16.1046 3 15 3C13.8954 3 13 3.89543 13 5V10ZM5 8C3.89543 8 3 8.89543 3 10C3 11.1046 3.89543 12 5 12H10C11.1046 12 12 11.1046 12 10C12 8.89543 11.1046 8 10 8H5ZM15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17H20C21.1046 17 22 16.1046 22 15C22 13.8954 21.1046 13 20 13H15ZM10 22C8.89543 22 8 21.1046 8 20L8 15C8 13.8954 8.89543 13 10 13C11.1046 13 12 13.8954 12 15V20C12 21.1046 11.1046 22 10 22ZM8 5C8 3.89543 8.89543 3 10 3C11.1046 3 12 3.89543 12 5V7H10C8.89543 7 8 6.10457 8 5ZM3 15C3 16.1046 3.89543 17 5 17C6.10457 17 7 16.1046 7 15V13H5C3.89543 13 3 13.8954 3 15ZM17 20C17 21.1046 16.1046 22 15 22C13.8954 22 13 21.1046 13 20V18H15C16.1046 18 17 18.8954 17 20ZM22 10C22 8.89543 21.1046 8 20 8C18.8954 8 18 8.89543 18 10V12H20C21.1046 12 22 11.1046 22 10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSleep: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9616,6 +10204,7 @@ pub static CgSleep: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM16.899 17C15.6364 18.2372 13.9073 19 12 19C10.0927 19 8.36355 18.2372 7.10102 17H16.899ZM18.3264 15C18.7583 14.0907 19 13.0736 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 13.0736 5.24169 14.0907 5.67363 15H18.3264Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeBoiler: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9631,6 +10220,7 @@ pub static CgSmartHomeBoiler: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5C5 2.79086 6.79086 1 9 1H15C17.2091 1 19 2.79086 19 5V21H15.144L15.8865 22.9999H13.8865L13.144 21H11.144L11.8865 22.9999H9.88653L9.14397 21H5V5ZM9 3H15C16.1046 3 17 3.89543 17 5V7H7V5C7 3.89543 7.89543 3 9 3ZM7 9H17V19H7V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeCooker: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9647,6 +10237,7 @@ pub static CgSmartHomeCooker: &icondata_core::IconData = &icondata_core::IconDat
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 1H9V3H11V5H7C4.79086 5 3 6.79086 3 9V19C3 21.2091 4.79086 23 7 23H17C19.2091 23 21 21.2091 21 19V9C21 6.79086 19.2091 5 17 5H13V3H15V1ZM17 7H7C5.89543 7 5 7.89543 5 9H19C19 7.89543 18.1046 7 17 7ZM19 11H5V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeHeat: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9663,6 +10254,7 @@ pub static CgSmartHomeHeat: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 8.13401 3.13401 5 7 5H17C20.866 5 24 8.13401 24 12C24 15.866 20.866 19 17 19H7C3.13401 19 0 15.866 0 12ZM7 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeLight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9681,6 +10273,7 @@ pub static CgSmartHomeLight: &icondata_core::IconData = &icondata_core::IconData
 <path d="M14.974 15.8421C14.4551 16.031 14.1875 16.6048 14.3764 17.1238L15.7445 20.8825C15.9333 21.4015 16.5072 21.6691 17.0262 21.4802C17.5451 21.2913 17.8127 20.7175 17.6238 20.1985L16.2558 16.4397C16.0669 15.9208 15.493 15.6532 14.974 15.8421Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeRefrigerator: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9698,6 +10291,7 @@ pub static CgSmartHomeRefrigerator: &icondata_core::IconData = &icondata_core::I
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4C5 2.34315 6.34315 1 8 1H16C17.6569 1 19 2.34315 19 4V20C19 21.6569 17.6569 23 16 23H8C6.34315 23 5 21.6569 5 20V4ZM8 3H16C16.5523 3 17 3.44772 17 4V10H7V4C7 3.44772 7.44772 3 8 3ZM7 12H17V20C17 20.5523 16.5523 21 16 21H8C7.44772 21 7 20.5523 7 20V12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartHomeWashMachine: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9713,6 +10307,7 @@ pub static CgSmartHomeWashMachine: &icondata_core::IconData = &icondata_core::Ic
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 4H18C18.5523 4 19 4.44772 19 5V8H5V5C5 4.44772 5.44771 4 6 4ZM19 19V10H5V19C5 19.5523 5.44772 20 6 20H18C18.5523 20 19 19.5523 19 19ZM3 5C3 3.34315 4.34315 2 6 2H18C19.6569 2 21 3.34315 21 5V19C21 20.6569 19.6569 22 18 22H6C4.34315 22 3 20.6569 3 19V5ZM7 5C6.44772 5 6 5.44772 6 6C6 6.55228 6.44772 7 7 7H9C9.55228 7 10 6.55228 10 6C10 5.44772 9.55228 5 9 5H7ZM14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5C13.4477 5 13 5.44772 13 6C13 6.55228 13.4477 7 14 7ZM18 6C18 6.55228 17.5523 7 17 7C16.4477 7 16 6.55228 16 6C16 5.44772 16.4477 5 17 5C17.5523 5 18 5.44772 18 6ZM14 15C14 16.1046 13.1046 17 12 17C10.8954 17 10 16.1046 10 15C10 13.8954 10.8954 13 12 13C13.1046 13 14 13.8954 14 15ZM16 15C16 17.2091 14.2091 19 12 19C9.79086 19 8 17.2091 8 15C8 12.7909 9.79086 11 12 11C14.2091 11 16 12.7909 16 15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartphone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9729,6 +10324,7 @@ pub static CgSmartphone: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4C5 2.89543 5.89543 2 7 2H17C18.1046 2 19 2.89543 19 4V20C19 21.1046 18.1046 22 17 22H7C5.89543 22 5 21.1046 5 20V4ZM7 4H17V20H7L7 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartphoneChip: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9745,6 +10341,7 @@ pub static CgSmartphoneChip: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C9 2.55228 8.55228 3 8 3C7.44772 3 7 2.55228 7 2C7 1.44772 7.44772 1 8 1C8.55228 1 9 1.44772 9 2ZM13 2C13 2.55228 12.5523 3 12 3C11.4477 3 11 2.55228 11 2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2ZM16 3C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3ZM9 22C9 22.5523 8.55228 23 8 23C7.44772 23 7 22.5523 7 22C7 21.4477 7.44772 21 8 21C8.55228 21 9 21.4477 9 22ZM13 22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22C11 21.4477 11.4477 21 12 21C12.5523 21 13 21.4477 13 22ZM16 23C16.5523 23 17 22.5523 17 22C17 21.4477 16.5523 21 16 21C15.4477 21 15 21.4477 15 22C15 22.5523 15.4477 23 16 23ZM23 16C23 15.4477 22.5523 15 22 15C21.4477 15 21 15.4477 21 16C21 16.5523 21.4477 17 22 17C22.5523 17 23 16.5523 23 16ZM23 12C23 11.4477 22.5523 11 22 11C21.4477 11 21 11.4477 21 12C21 12.5523 21.4477 13 22 13C22.5523 13 23 12.5523 23 12ZM22 7C22.5523 7 23 7.44771 23 8C23 8.55229 22.5523 9 22 9C21.4477 9 21 8.55229 21 8C21 7.44771 21.4477 7 22 7ZM2 15C2.55228 15 3 15.4477 3 16C3 16.5523 2.55228 17 2 17C1.44772 17 1 16.5523 1 16C1 15.4477 1.44772 15 2 15ZM2 11C2.55228 11 3 11.4477 3 12C3 12.5523 2.55228 13 2 13C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11ZM3 8C3 7.44771 2.55228 7 2 7C1.44772 7 1 7.44771 1 8C1 8.55229 1.44772 9 2 9C2.55228 9 3 8.55229 3 8ZM17 6H7C6.44772 6 6 6.44772 6 7V17C6 17.5523 6.44772 18 7 18H17C17.5523 18 18 17.5523 18 17V7C18 6.44772 17.5523 6 17 6ZM7 4C5.34315 4 4 5.34315 4 7V17C4 18.6569 5.34315 20 7 20H17C18.6569 20 20 18.6569 20 17V7C20 5.34315 18.6569 4 17 4H7ZM14 10H10V14H14V10ZM8 8V16H16V8H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartphoneRam: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9772,6 +10369,7 @@ pub static CgSmartphoneRam: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 7.34315 1.34315 6 3 6H21C22.6569 6 24 7.34315 24 9V15C24 16.6569 22.6569 18 21 18H3C1.34315 18 0 16.6569 0 15V9ZM3 8H21C21.5523 8 22 8.44772 22 9V15C22 15.5523 21.5523 16 21 16H3C2.44772 16 2 15.5523 2 15V9C2 8.44772 2.44772 8 3 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmartphoneShake: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9792,6 +10390,7 @@ pub static CgSmartphoneShake: &icondata_core::IconData = &icondata_core::IconDat
 <path d="M24 10H22V14H24V10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmile: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9810,6 +10409,7 @@ pub static CgSmile: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileMouthOpen: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9828,6 +10428,7 @@ pub static CgSmileMouthOpen: &icondata_core::IconData = &icondata_core::IconData
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileNeutral: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9846,6 +10447,7 @@ pub static CgSmileNeutral: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileNoMouth: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9863,6 +10465,7 @@ pub static CgSmileNoMouth: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileNone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9881,6 +10484,7 @@ pub static CgSmileNone: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileSad: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9899,6 +10503,7 @@ pub static CgSmileSad: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSmileUpside: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9917,6 +10522,7 @@ pub static CgSmileUpside: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSoftwareDownload: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9933,6 +10539,7 @@ pub static CgSoftwareDownload: &icondata_core::IconData = &icondata_core::IconDa
 <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSoftwareUpload: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9949,6 +10556,7 @@ pub static CgSoftwareUpload: &icondata_core::IconData = &icondata_core::IconData
 <path d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSortAz: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9966,6 +10574,7 @@ pub static CgSortAz: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11 15C10.4477 15 10 15.4477 10 16C10 16.5523 10.4477 17 11 17H13C13.5523 17 14 16.5523 14 16C14 15.4477 13.5523 15 13 15H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSortZa: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -9983,6 +10592,7 @@ pub static CgSortZa: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M11 9C10.4477 9 10 8.55229 10 8C10 7.44771 10.4477 7 11 7H13C13.5523 7 14 7.44771 14 8C14 8.55229 13.5523 9 13 9H11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpaceBetween: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10000,6 +10610,7 @@ pub static CgSpaceBetween: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13 7V17H11L11 7H13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpaceBetweenV: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10017,6 +10628,7 @@ pub static CgSpaceBetweenV: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M7 11H17V13H7V11Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpectrum: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10032,6 +10644,7 @@ pub static CgSpectrum: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12 16H16C16 11.5817 12.4183 8 8 8V12C10.2091 12 12 13.7909 12 16Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpinner: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10048,6 +10661,7 @@ pub static CgSpinner: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpinnerAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10063,6 +10677,7 @@ pub static CgSpinnerAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpinnerTwo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10080,6 +10695,7 @@ pub static CgSpinnerTwo: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSpinnerTwoAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10096,6 +10712,7 @@ pub static CgSpinnerTwoAlt: &icondata_core::IconData = &icondata_core::IconData 
 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSquare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10112,6 +10729,7 @@ pub static CgSquare: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9C5 6.79086 6.79086 5 9 5H15C17.2091 5 19 6.79086 19 9V15C19 17.2091 17.2091 19 15 19H9C6.79086 19 5 17.2091 5 15V9ZM9 8H15C15.5523 8 16 8.44772 16 9V15C16 15.5523 15.5523 16 15 16H9C8.44772 16 8 15.5523 8 15V9C8 8.44772 8.44772 8 9 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10129,6 +10747,7 @@ pub static CgStack: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M17 7H5V5H19V19H17V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStark: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10144,6 +10763,7 @@ pub static CgStark: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M7.17222 18.0249C5.81662 17.2862 4.69522 16.1661 3.95526 14.791C3.01664 13.0467 2.75847 11.0163 3.23071 9.0927C3.70295 7.16908 4.87201 5.48904 6.51164 4.37775C8.15127 3.26646 10.1449 2.80295 12.1066 3.07692L11.67 6.20259C10.4822 6.03669 9.2751 6.31735 8.28231 6.99024C7.28951 7.66312 6.58164 8.68039 6.2957 9.84514C6.00976 11.0099 6.16608 12.2393 6.73442 13.2954C7.18247 14.1281 7.86148 14.8063 8.6823 15.2536L14.8278 3.97537L17.4621 5.4108C18.8177 6.14946 19.9391 7.26961 20.679 8.64469C21.6177 10.3889 21.8758 12.4193 21.4036 14.343C20.9314 16.2666 19.7623 17.9466 18.1227 19.0579C16.483 20.1692 14.4894 20.6327 12.5277 20.3587L12.9643 17.2331C14.1521 17.399 15.3592 17.1183 16.352 16.4454C17.3448 15.7725 18.0527 14.7553 18.3386 13.5905C18.6245 12.4258 18.4682 11.1964 17.8999 10.1402C17.4518 9.30761 16.7728 8.62938 15.952 8.18212L9.80647 19.4604L7.17222 18.0249Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStopwatch: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10161,6 +10781,7 @@ pub static CgStopwatch: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.18633 18.8137C8.70105 22.3285 14.3995 22.3285 17.9143 18.8137C21.429 15.299 21.429 9.60055 17.9143 6.08583C14.3995 2.57111 8.70105 2.57111 5.18633 6.08583C1.67161 9.60054 1.67161 15.299 5.18633 18.8137ZM6.60054 17.3995C9.33422 20.1332 13.7664 20.1332 16.5 17.3995C19.2337 14.6659 19.2337 10.2337 16.5 7.50004C13.7664 4.76637 9.33422 4.76637 6.60054 7.50004C3.86688 10.2337 3.86688 14.6659 6.60054 17.3995Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStories: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10178,6 +10799,7 @@ pub static CgStories: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M20 6C20 5.44772 20.4477 5 21 5C21.5523 5 22 5.44772 22 6V18C22 18.5523 21.5523 19 21 19C20.4477 19 20 18.5523 20 18V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStudio: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10194,6 +10816,7 @@ pub static CgStudio: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H21V21H3V3ZM5 5H19V19H5V5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgStyle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10212,6 +10835,7 @@ pub static CgStyle: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M12 18H6L6 12H8L8 16H12V18Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSun: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10228,6 +10852,7 @@ pub static CgSun: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSupport: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10243,6 +10868,7 @@ pub static CgSupport: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2607 21.9966C12.174 21.9988 12.0871 22 12 22C11.9128 22 11.8259 21.9988 11.7393 21.9966C7.68318 21.8928 4.22762 19.3738 2.7573 15.8242C1.74192 13.3674 1.7476 10.588 2.77433 8.13481C3.27688 6.93672 4.00599 5.85718 4.90808 4.94979L4.94983 4.90804C5.85259 4.01056 6.92574 3.28429 8.1165 2.78202C10.5894 1.74123 13.3958 1.73933 15.87 2.77633C17.0688 3.27993 18.1488 4.01042 19.0562 4.91407L19.0859 4.94373C19.9989 5.86054 20.7351 6.95351 21.2392 8.16721C21.7279 9.34662 21.9812 10.6006 21.999 11.8573C21.9997 11.9047 22 11.9523 22 12C22 12.0506 21.9996 12.1012 21.9989 12.1516C21.9376 16.2743 19.3814 19.7925 15.7731 21.2637C14.6481 21.7213 13.4566 21.9656 12.2607 21.9966ZM14.0322 15.4464L16.906 18.3202C14.0281 20.5599 9.97192 20.5599 7.09402 18.3202L9.96779 15.4464C11.2175 16.1845 12.7825 16.1845 14.0322 15.4464ZM8.55358 14.0322L5.67981 16.906C3.44007 14.0281 3.44007 9.97192 5.67981 7.09402L8.55358 9.96779C7.81548 11.2175 7.81548 12.7825 8.55358 14.0322ZM10.0824 12.5694C10.0773 12.5523 10.0725 12.5351 10.0679 12.5179C9.97738 12.179 9.97738 11.821 10.0679 11.4821C10.1556 11.1537 10.3282 10.8434 10.5858 10.5858C10.8299 10.3417 11.1213 10.1739 11.4306 10.0824C11.4477 10.0773 11.4649 10.0725 11.4821 10.0679C11.821 9.97738 12.179 9.97737 12.5179 10.0679C12.8463 10.1556 13.1566 10.3282 13.4142 10.5858C13.6583 10.8299 13.8261 11.1213 13.9176 11.4306C13.9227 11.4477 13.9275 11.4649 13.9321 11.4821C14.0226 11.821 14.0226 12.179 13.9321 12.5179C13.8444 12.8462 13.6718 13.1566 13.4142 13.4142C13.1701 13.6583 12.8787 13.8261 12.5694 13.9176C12.5523 13.9227 12.5351 13.9275 12.5179 13.9321C12.179 14.0226 11.821 14.0226 11.4821 13.9321C11.1538 13.8444 10.8434 13.6718 10.5858 13.4142C10.3417 13.1701 10.1739 12.8787 10.0824 12.5694ZM14.0322 8.55357C12.7825 7.81548 11.2175 7.81548 9.96779 8.55357L7.09402 5.6798C9.97192 3.44007 14.0281 3.44007 16.906 5.6798L14.0322 8.55357ZM18.3202 16.906C20.5599 14.0281 20.5599 9.97192 18.3202 7.09402L15.4464 9.96779C16.1845 11.2175 16.1845 12.7825 15.4464 14.0322L18.3202 16.906Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSwap: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10259,6 +10885,7 @@ pub static CgSwap: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8 17V15.5H14V13.5H8V12L5 14.5L8 17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSwapVertical: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10275,6 +10902,7 @@ pub static CgSwapVertical: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8 8H9.5L9.5 14H11.5L11.5 8H13L10.5 5L8 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSweden: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10293,6 +10921,7 @@ pub static CgSweden: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M1 11V4H8V11H1Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSwiss: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10308,6 +10937,7 @@ pub static CgSwiss: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 3V21H21V3H3ZM14 7H10V10H7V14H10V17H14V14H17V10H14V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgSync: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10324,6 +10954,7 @@ pub static CgSync: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19.4392 13.3581L17.646 20.0502L15.7459 18.1501C12.2688 20.3411 7.61857 19.9223 4.58991 16.8936L6.00413 15.4794C8.24638 17.7217 11.6313 18.1247 14.2844 16.6887L12.747 15.1512L19.4392 13.3581Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTab: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10339,6 +10970,7 @@ pub static CgTab: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18.9999 4C20.6568 4 21.9999 5.34315 21.9999 7V17C21.9999 18.6569 20.6568 20 18.9999 20H4.99994C3.34308 20 1.99994 18.6569 1.99994 17V7C1.99994 5.34315 3.34308 4 4.99994 4H18.9999ZM19.9999 9.62479H13C12.4478 9.62479 11.8442 9.20507 11.652 8.68732L10.6542 6H4.99994C4.44765 6 3.99994 6.44772 3.99994 7V17C3.99994 17.5523 4.44765 18 4.99994 18H18.9999C19.5522 18 19.9999 17.5523 19.9999 17V9.62479Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTag: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10355,6 +10987,7 @@ pub static CgTag: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 13C15.5523 13 16 12.5523 16 12C16 11.4477 15.5523 11 15 11C14.4477 11 14 11.4477 14 12C14 12.5523 14.4477 13 15 13ZM15 15C16.6569 15 18 13.6569 18 12C18 10.3431 16.6569 9 15 9C13.3431 9 12 10.3431 12 12C12 13.6569 13.3431 15 15 15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTally: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10373,6 +11006,7 @@ pub static CgTally: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18.6612 2.67117C18.7134 2.4 18.9796 2.18018 19.2557 2.18018H21.2557C21.5318 2.18018 21.7134 2.4 21.6612 2.67117L20.3388 9.54511C20.2866 9.81628 20.0205 10.0361 19.7443 10.0361H17.7443C17.4682 10.0361 17.2866 9.81628 17.3388 9.54511L18.6612 2.67117Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTapDouble: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10391,6 +11025,7 @@ pub static CgTapDouble: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9233 5C13.5809 5 15.1038 5.5761 16.3029 6.53898L14.8768 7.9651C14.0493 7.35833 13.0281 7 11.9233 7C10.848 7 9.85204 7.33943 9.03662 7.91699L7.60779 6.48816C8.79686 5.55586 10.2952 5 11.9233 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTapSingle: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10408,6 +11043,7 @@ pub static CgTapSingle: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9767 6.88599C9.21526 6.88599 6.97668 9.12456 6.97668 11.886V15.886C6.97668 18.6474 9.21526 20.886 11.9767 20.886C14.7381 20.886 16.9767 18.6474 16.9767 15.886V11.886C16.9767 9.12456 14.7381 6.88599 11.9767 6.88599ZM14.9767 15.886V11.886C14.9767 10.2291 13.6335 8.88599 11.9767 8.88599C10.3198 8.88599 8.97668 10.2291 8.97668 11.886V15.886C8.97668 17.5428 10.3198 18.886 11.9767 18.886C13.6335 18.886 14.9767 17.5428 14.9767 15.886Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTemplate: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10427,6 +11063,7 @@ pub static CgTemplate: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M21 19H13V21H21V19Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTennis: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10442,6 +11079,7 @@ pub static CgTennis: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0711 19.0711C22.9763 15.1658 22.9763 8.83418 19.0711 4.92893C15.1658 1.02369 8.83418 1.02369 4.92893 4.92893C1.02369 8.83418 1.02369 15.1658 4.92893 19.0711C8.83418 22.9763 15.1658 22.9763 19.0711 19.0711ZM19.9426 11.0407C19.7364 9.32374 18.9745 7.6608 17.6569 6.34315C16.3343 5.0206 14.6639 4.25792 12.9402 4.0551L12.93 4.11139C12.1086 8.58308 8.58304 12.1086 4.11136 12.93L4.05511 12.9402C4.25793 14.6639 5.02061 16.3343 6.34315 17.6569C7.66079 18.9745 9.32373 19.7364 11.0407 19.9426C11.0449 19.9191 11.0491 19.8956 11.0534 19.8721C11.8748 15.4004 15.4003 11.8748 19.872 11.0534C19.8955 11.0491 19.9191 11.0449 19.9426 11.0407ZM19.872 13.4292V13.0951C16.5073 13.8586 13.8586 16.5073 13.095 19.8721H13.429C14.9777 19.5924 16.4598 18.8539 17.6569 17.6569C18.8539 16.4598 19.5923 14.9778 19.872 13.4292ZM4.11136 10.8884L4.11136 10.666C4.37766 9.08301 5.12159 7.5647 6.34315 6.34315C7.56465 5.12165 9.08288 4.37773 10.6658 4.11139L10.8883 4.11139C10.1248 7.47615 7.47612 10.1249 4.11136 10.8884Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTerminal: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10459,6 +11097,7 @@ pub static CgTerminal: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTerrain: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10475,6 +11114,7 @@ pub static CgTerrain: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M10.5286 10.7543L13.5 6L21 18H15.0572L10.5286 10.7543Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgThermometer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10491,6 +11131,7 @@ pub static CgThermometer: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.82813 17.5862C9.7695 18.8725 12.4109 18.6603 14.1214 16.9499L21.1924 9.8788C23.1451 7.92617 23.1451 4.76035 21.1924 2.80773C19.2398 0.855106 16.074 0.855106 14.1214 2.80773L7.0503 9.8788C5.33984 11.5893 5.12771 14.2307 6.41392 16.172L2.80766 19.7783C2.41714 20.1688 2.41714 20.802 2.80766 21.1925C3.19819 21.583 3.83135 21.583 4.22188 21.1925L7.82813 17.5862ZM12.7072 15.5356L19.7782 8.46458C20.9498 7.29301 20.9498 5.39351 19.7782 4.22194C18.6067 3.05037 16.7072 3.05037 15.5356 4.22194L8.46452 11.293C7.29294 12.4646 7.29294 14.3641 8.46452 15.5356C9.63609 16.7072 11.5356 16.7072 12.7072 15.5356Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgThermostat: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10507,6 +11148,7 @@ pub static CgThermostat: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 13.9997C16.2144 14.9119 17 16.3642 17 18C17 20.7614 14.7614 23 12 23C9.23858 23 7 20.7614 7 18C7 16.3642 7.78555 14.9119 9 13.9997V4C9 2.34315 10.3431 1 12 1C13.6569 1 15 2.34315 15 4V13.9997ZM13 4V15.1707C14.1652 15.5826 15 16.6938 15 18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18C9 16.6938 9.83481 15.5826 11 15.1707V4C11 3.44772 11.4477 3 12 3C12.5523 3 13 3.44772 13 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTikcode: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10527,6 +11169,7 @@ pub static CgTikcode: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M19 13H21V21H19V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTime: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10543,6 +11186,7 @@ pub static CgTime: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTimelapse: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10559,6 +11203,7 @@ pub static CgTimelapse: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTimer: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10575,6 +11220,7 @@ pub static CgTimer: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7.70711 8.70708C7.31658 9.0976 7.31658 9.73077 7.70711 10.1213L10.5355 12.9497C10.9261 13.3402 11.5592 13.3402 11.9497 12.9497C12.3403 12.5592 12.3403 11.926 11.9497 11.5355L9.12132 8.70708C8.7308 8.31655 8.09763 8.31655 7.70711 8.70708Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToday: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10592,6 +11238,7 @@ pub static CgToday: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M7 6C7 5.44772 7.44772 5 8 5H12C12.5523 5 13 5.44772 13 6C13 6.55228 12.5523 7 12 7H8C7.44772 7 7 6.55228 7 6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToggleOff: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10608,6 +11255,7 @@ pub static CgToggleOff: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 8.13401 3.13401 5 7 5H17C20.866 5 24 8.13401 24 12C24 15.866 20.866 19 17 19H7C3.13401 19 0 15.866 0 12ZM7 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToggleOn: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10624,6 +11272,7 @@ pub static CgToggleOn: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 8.13401 20.866 5 17 5H7C3.13401 5 0 8.13401 0 12C0 15.866 3.13401 19 7 19H17C20.866 19 24 15.866 24 12ZM17 7H7C4.23858 7 2 9.23858 2 12C2 14.7614 4.23858 17 7 17H17C19.7614 17 22 14.7614 22 12C22 9.23858 19.7614 7 17 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToggleSquare: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10640,6 +11289,7 @@ pub static CgToggleSquare: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 7C24 5.89543 23.1046 5 22 5H2C0.89543 5 0 5.89543 0 7V17C0 18.1046 0.895432 19 2 19H22C23.1046 19 24 18.1046 24 17V7ZM22 7H2V17H22V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToggleSquareOff: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10656,6 +11306,7 @@ pub static CgToggleSquareOff: &icondata_core::IconData = &icondata_core::IconDat
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7C0 5.89543 0.895431 5 2 5H22C23.1046 5 24 5.89543 24 7V17C24 18.1046 23.1046 19 22 19H2C0.89543 19 0 18.1046 0 17V7ZM2 7H22V17H2L2 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToolbarBottom: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10672,6 +11323,7 @@ pub static CgToolbarBottom: &icondata_core::IconData = &icondata_core::IconData 
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToolbarLeft: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10688,6 +11340,7 @@ pub static CgToolbarLeft: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToolbarRight: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10704,6 +11357,7 @@ pub static CgToolbarRight: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 8C22 6.34315 20.6569 5 19 5H5C3.34315 5 2 6.34315 2 8V16C2 17.6569 3.34315 19 5 19H19C20.6569 19 22 17.6569 22 16V8ZM19 7H5C4.44772 7 4 7.44771 4 8V16C4 16.5523 4.44772 17 5 17H19C19.5523 17 20 16.5523 20 16V8C20 7.44772 19.5523 7 19 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToolbarTop: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10720,6 +11374,7 @@ pub static CgToolbarTop: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 16C2 17.6569 3.34315 19 5 19H19C20.6569 19 22 17.6569 22 16V8C22 6.34315 20.6569 5 19 5H5C3.34315 5 2 6.34315 2 8V16ZM5 17H19C19.5523 17 20 16.5523 20 16V8C20 7.44772 19.5523 7 19 7H5C4.44772 7 4 7.44771 4 8V16C4 16.5523 4.44772 17 5 17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgToolbox: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10735,6 +11390,7 @@ pub static CgToolbox: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 5.5H20C21.1046 5.5 22 6.39543 22 7.5V19.5C22 20.6046 21.1046 21.5 20 21.5H4C2.89543 21.5 2 20.6046 2 19.5V7.5C2 6.39543 2.89543 5.5 4 5.5H7C7 3.84315 8.34315 2.5 10 2.5H14C15.6569 2.5 17 3.84315 17 5.5ZM14 4.5H10C9.44772 4.5 9 4.94772 9 5.5H15C15 4.94772 14.5523 4.5 14 4.5ZM20 7.5H4V9.5H20V7.5ZM4 19.5V11.5H7V13.5H11V11.5H13V13.5H17V11.5H20V19.5H4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTouchpad: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10750,6 +11406,7 @@ pub static CgTouchpad: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M20 21C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20ZM4 5H20C20.5523 5 21 5.44772 21 6V14H3V6C3 5.44772 3.44772 5 4 5ZM3 16V18C3 18.5523 3.44772 19 4 19H11V16H3ZM13 19V16H21V18C21 18.5523 20.5523 19 20 19H13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrack: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10766,6 +11423,7 @@ pub static CgTrack: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C12.5523 3 13 3.44772 13 4V5.07089C16.0657 5.5094 18.4906 7.93431 18.9291 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H18.9291C18.4906 16.0657 16.0657 18.4906 13 18.9291V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V18.9291C7.93431 18.4906 5.5094 16.0657 5.07089 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H5.07089C5.5094 7.93431 7.93431 5.5094 11 5.07089V4C11 3.44772 11.4477 3 12 3ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTranscript: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10785,6 +11443,7 @@ pub static CgTranscript: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44771 20.5523 5 20 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10802,6 +11461,7 @@ pub static CgTrash: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M13 9H15V17H13V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrashEmpty: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10817,6 +11477,7 @@ pub static CgTrashEmpty: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTree: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10832,6 +11493,7 @@ pub static CgTree: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M11 17.9C8.71776 17.4367 7 15.419 7 13V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V13C17 15.419 15.2822 17.4367 13 17.9V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21V17.9ZM12 4C13.6569 4 15 5.34315 15 7V13C15 14.3062 14.1652 15.4175 13 15.8293V11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11V15.8293C9.83481 15.4175 9 14.3062 9 13V7C9 5.34315 10.3431 4 12 4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrees: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10847,6 +11509,7 @@ pub static CgTrees: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7401 16.3185C12.035 17.1126 11.0808 17.6806 10 17.9V21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21V17.9C5.71776 17.4367 4 15.419 4 13V7C4 4.23858 6.23858 2 9 2C11.6087 2 13.7508 3.99781 13.9797 6.54693C14.5726 6.1993 15.2631 6 16 6C18.2091 6 20 7.79086 20 10V14C20 15.8638 18.7252 17.4299 17 17.874V21C17 21.5523 16.5523 22 16 22C15.4477 22 15 21.5523 15 21V17.874C14.0747 17.6358 13.279 17.075 12.7401 16.3185ZM12 7V13C12 14.3062 11.1652 15.4175 10 15.8293V13C10 12.4477 9.55228 12 9 12C8.44772 12 8 12.4477 8 13V15.8293C6.83481 15.4175 6 14.3062 6 13V7C6 5.34315 7.34315 4 9 4C10.6569 4 12 5.34315 12 7ZM17 15.7324V13C17 12.4477 16.5523 12 16 12C15.4477 12 15 12.4477 15 13V15.7324C14.4022 15.3866 14 14.7403 14 14V10C14 8.89543 14.8954 8 16 8C17.1046 8 18 8.89543 18 10V14C18 14.7403 17.5978 15.3866 17 15.7324Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrello: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10864,6 +11527,7 @@ pub static CgTrello: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V4ZM4 4H20V20H4V4Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrending: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10879,6 +11543,7 @@ pub static CgTrending: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M1.41421 16.4322L0 15.018L7.07107 7.94693L13.435 14.3109L17.6777 10.0682L15.9353 8.32587L22.6274 6.53271L20.8343 13.2248L19.0919 11.4825L13.435 17.1393L7.07107 10.7754L1.41421 16.4322Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrendingDown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10894,6 +11559,7 @@ pub static CgTrendingDown: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M1.85104 8.10628L0.436829 9.52049L7.5079 16.5916L13.8719 10.2276L18.1145 14.4702L16.3721 16.2126L23.0642 18.0058L21.2711 11.3136L19.5287 13.056L13.8719 7.39917L7.5079 13.7631L1.85104 8.10628Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTrophy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10911,6 +11577,7 @@ pub static CgTrophy: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6 6H4V11H6V6Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTv: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10927,6 +11594,7 @@ pub static CgTv: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M8 19.876H16V20.876H8V19.876Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTwilio: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10946,6 +11614,7 @@ pub static CgTwilio: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgTwitter: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10961,6 +11630,7 @@ pub static CgTwitter: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUiKit: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10978,6 +11648,7 @@ pub static CgUiKit: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 7.45936L20.5068 7.04156C22.3354 6.73679 24 8.14692 24 10.0007V14.918C24 16.7718 22.3354 18.1819 20.5068 17.8772L18 17.4594V15.4318L20.8356 15.9044C21.4451 16.006 22 15.5359 22 14.918V10.0007C22 9.3828 21.4451 8.91276 20.8356 9.01435L18 9.48695V7.45936Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUmbrella: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -10993,6 +11664,7 @@ pub static CgUmbrella: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 9C4 4.58172 7.58172 1 12 1C16.4183 1 20 4.58172 20 9V11H13.0187V20.5C13.0187 21.8807 11.8994 23 10.5187 23C9.13797 23 8.01868 21.8807 8.01868 20.5V17.8571H10.0187V20.5C10.0187 20.7761 10.2425 21 10.5187 21C10.7948 21 11.0187 20.7761 11.0187 20.5V11H4V9ZM12 3C15.3137 3 18 5.68629 18 9H6C6 5.68629 8.68629 3 12 3Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUnavailable: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11008,6 +11680,7 @@ pub static CgUnavailable: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.364C14.8492 21.8787 9.15076 21.8787 5.63604 18.364C2.12132 14.8492 2.12132 9.15076 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.364 5.63604ZM16.1925 17.6067L6.39327 7.80749C4.33767 10.5493 4.55666 14.4562 7.05025 16.9497C9.54384 19.4433 13.4507 19.6623 16.1925 17.6067ZM16.9497 7.05025C19.4433 9.54384 19.6623 13.4507 17.6067 16.1925L7.80749 6.39327C10.5493 4.33767 14.4562 4.55666 16.9497 7.05025Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUnblock: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11023,6 +11696,7 @@ pub static CgUnblock: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364ZM7.80749 17.6067C10.5493 19.6623 14.4562 19.4433 16.9497 16.9497C19.4433 14.4562 19.6623 10.5493 17.6067 7.80749L14.8284 10.5858C14.4379 10.9763 13.8047 10.9763 13.4142 10.5858C13.0237 10.1953 13.0237 9.5621 13.4142 9.17157L16.1925 6.39327C13.4507 4.33767 9.54384 4.55666 7.05025 7.05025C4.55666 9.54384 4.33767 13.4507 6.39327 16.1925L9.17157 13.4142C9.5621 13.0237 10.1953 13.0237 10.5858 13.4142C10.9763 13.8047 10.9763 14.4379 10.5858 14.8284L7.80749 17.6067Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUndo: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11038,6 +11712,7 @@ pub static CgUndo: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M5.33929 4.46777H7.33929V7.02487C8.52931 6.08978 10.0299 5.53207 11.6607 5.53207C15.5267 5.53207 18.6607 8.66608 18.6607 12.5321C18.6607 16.3981 15.5267 19.5321 11.6607 19.5321C9.51025 19.5321 7.58625 18.5623 6.30219 17.0363L7.92151 15.8515C8.83741 16.8825 10.1732 17.5321 11.6607 17.5321C14.4222 17.5321 16.6607 15.2935 16.6607 12.5321C16.6607 9.77065 14.4222 7.53207 11.6607 7.53207C10.5739 7.53207 9.56805 7.87884 8.74779 8.46777L11.3393 8.46777V10.4678H5.33929V4.46777Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUnfold: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11053,6 +11728,7 @@ pub static CgUnfold: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12H2Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUnsplash: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11069,6 +11745,7 @@ pub static CgUnsplash: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M4 10.5H9V14.5H15V10.5H20V19.5H4V10.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUsb: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11086,6 +11763,7 @@ pub static CgUsb: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8.5V1.5H17V8.5H19V19.5C19 21.1569 17.6569 22.5 16 22.5H8C6.34315 22.5 5 21.1569 5 19.5V8.5H7ZM9 3.5H15V8.5H9V3.5ZM17 10.5H7V19.5C7 20.0523 7.44772 20.5 8 20.5H16C16.5523 20.5 17 20.0523 17 19.5V10.5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUsbC: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11102,6 +11780,7 @@ pub static CgUsbC: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12C3 9.23858 5.23858 7 8 7H16C18.7614 7 21 9.23858 21 12C21 14.7614 18.7614 17 16 17H8C5.23858 17 3 14.7614 3 12ZM8 9H16C17.6569 9 19 10.3431 19 12C19 13.6569 17.6569 15 16 15H8C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUser: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11118,6 +11797,7 @@ pub static CgUser: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUserAdd: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11135,6 +11815,7 @@ pub static CgUserAdd: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M18 7H20V9H22V11H20V13H18V11H16V9H18V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUserList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11154,6 +11835,7 @@ pub static CgUserList: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M22 7H16V9H22V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUserRemove: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11171,6 +11853,7 @@ pub static CgUserRemove: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M22 9H16V11H22V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgUserlane: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11188,6 +11871,7 @@ pub static CgUserlane: &icondata_core::IconData = &icondata_core::IconData {
 <path d="M6 10C7.65685 10 9 8.65685 9 7C9 5.34315 7.65685 4 6 4C4.34315 4 3 5.34315 3 7C3 8.65685 4.34315 10 6 10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVercel: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11203,6 +11887,7 @@ pub static CgVercel: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M17.9923 17.0225L11.9806 6.97729L6.00775 17.0225H17.9923Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewCols: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11218,6 +11903,7 @@ pub static CgViewCols: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM16 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H16V7ZM14 7H10V17H14V7ZM8 17V7H5C4.44772 7 4 7.44772 4 8V16C4 16.5523 4.44772 17 5 17H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewComfortable: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11233,6 +11919,7 @@ pub static CgViewComfortable: &icondata_core::IconData = &icondata_core::IconDat
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM5 7H19C19.5523 7 20 7.44771 20 8V11H4V8C4 7.44772 4.44772 7 5 7ZM4 13V16C4 16.5523 4.44772 17 5 17H8V13H4ZM10 17H19C19.5523 17 20 16.5523 20 16V13H10V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewDay: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11248,6 +11935,7 @@ pub static CgViewDay: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM13 7H19C19.5523 7 20 7.44771 20 8V11H13V7ZM11 7H5C4.44772 7 4 7.44772 4 8V11H11V7ZM4 13V16C4 16.5523 4.44772 17 5 17H11V13H4ZM13 17H19C19.5523 17 20 16.5523 20 16V13H13V17Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewGrid: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11263,6 +11951,7 @@ pub static CgViewGrid: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5C3.34315 5 2 6.34315 2 8V16C2 17.6569 3.34315 19 5 19H19C20.6569 19 22 17.6569 22 16V8C22 6.34315 20.6569 5 19 5H5ZM8 7H5C4.44772 7 4 7.44772 4 8V9H8V7ZM10 7V9H14V7H10ZM16 7V9H20V8C20 7.44771 19.5523 7 19 7H16ZM14 11H10V13H14V11ZM16 13V11H20V13H16ZM14 15H10V17H14V15ZM16 17V15H20V16C20 16.5523 19.5523 17 19 17H16ZM8 17V15H4V16C4 16.5523 4.44772 17 5 17H8ZM8 13V11H4V13H8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewList: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11278,6 +11967,7 @@ pub static CgViewList: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5C3.34315 5 2 6.34315 2 8V16C2 17.6569 3.34315 19 5 19H19C20.6569 19 22 17.6569 22 16V8C22 6.34315 20.6569 5 19 5H5ZM7 7H5C4.44772 7 4 7.44772 4 8V9H7V7ZM9 7V9H20V8C20 7.44771 19.5523 7 19 7H9ZM7 11H4V13H7V11ZM9 13V11H20V13H9ZM7 15H4V16C4 16.5523 4.44772 17 5 17H7V15ZM9 17V15H20V16C20 16.5523 19.5523 17 19 17H9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewMonth: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11293,6 +11983,7 @@ pub static CgViewMonth: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM17 7H19C19.5523 7 20 7.44771 20 8V9H17V7ZM15 7H13V9H15V7ZM11 7H9V9H11V7ZM7 7H5C4.44772 7 4 7.44772 4 8V9H7V7ZM4 11V13H7V11H4ZM4 15V16C4 16.5523 4.44772 17 5 17H7V15H4ZM9 17H11V15H9V17ZM13 17H15V15H13V17ZM17 17H19C19.5523 17 20 16.5523 20 16V15H17V17ZM20 13V11H17V13H20ZM11 13H9V11H11V13ZM15 13H13V11H15V13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgViewSplit: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11308,6 +11999,7 @@ pub static CgViewSplit: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM13 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H13V7ZM11 7H5C4.44772 7 4 7.44772 4 8V16C4 16.5523 4.44772 17 5 17H11V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVinyl: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11324,6 +12016,7 @@ pub static CgVinyl: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVoicemail: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11339,6 +12032,7 @@ pub static CgVoicemail: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 15C10.6281 14.1643 11 13.1256 11 12C11 9.23858 8.76142 7 6 7C3.23858 7 1 9.23858 1 12C1 14.7614 3.23858 17 6 17H18C20.7614 17 23 14.7614 23 12C23 9.23858 20.7614 7 18 7C15.2386 7 13 9.23858 13 12C13 13.1256 13.3719 14.1643 13.9996 15H10.0004ZM6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15ZM18 15C19.6569 15 21 13.6569 21 12C21 10.3431 19.6569 9 18 9C16.3431 9 15 10.3431 15 12C15 13.6569 16.3431 15 18 15Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVoicemailO: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11355,6 +12049,7 @@ pub static CgVoicemailO: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVoicemailR: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11371,6 +12066,7 @@ pub static CgVoicemailR: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 8C1.5 6.34315 2.84315 5 4.5 5H19.5C21.1569 5 22.5 6.34315 22.5 8V16C22.5 17.6569 21.1569 19 19.5 19H4.5C2.84315 19 1.5 17.6569 1.5 16V8ZM4.5 7H19.5C20.0523 7 20.5 7.44772 20.5 8V16C20.5 16.5523 20.0523 17 19.5 17H4.5C3.94772 17 3.5 16.5523 3.5 16V8C3.5 7.44772 3.94772 7 4.5 7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgVolume: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11388,6 +12084,7 @@ pub static CgVolume: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 16L15 20V4L9 8H5C2.79086 8 1 9.79086 1 12C1 14.2091 2.79086 16 5 16H9ZM5 10H9L13 7.5V16.5L9 14H5C3.89543 14 3 13.1046 3 12C3 10.8954 3.89543 10 5 10Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgWebcam: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11404,6 +12101,7 @@ pub static CgWebcam: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 14.9C15.2822 14.4367 17 12.419 17 10C17 7.23858 14.7614 5 12 5C9.23858 5 7 7.23858 7 10C7 12.419 8.71776 14.4367 11 14.9V17H7V19H17V17H13V14.9ZM12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgWebsite: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11423,6 +12121,7 @@ pub static CgWebsite: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgWindows: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11438,6 +12137,7 @@ pub static CgWindows: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M3 5.5485L10.1954 4.58174V11.6106L3.00672 11.6651L3 5.5485ZM10.1954 12.3909V19.4957L3.00571 18.5105L3.0053 12.3909H10.1954ZM11.1134 4.45599L20.9977 3V11.5334L11.1134 11.6106V4.45599ZM21 12.505L20.9977 21L11.1134 19.6466V12.505H21Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgWorkAlt: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11453,6 +12153,7 @@ pub static CgWorkAlt: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M17 7C17 5.34315 15.6569 4 14 4H10C8.34315 4 7 5.34315 7 7H6C4.34315 7 3 8.34315 3 10V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V10C21 8.34315 19.6569 7 18 7H17ZM14 6H10C9.44772 6 9 6.44772 9 7H15C15 6.44772 14.5523 6 14 6ZM6 9H18C18.5523 9 19 9.44772 19 10V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V10C5 9.44772 5.44772 9 6 9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgYinyang: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11469,6 +12170,7 @@ pub static CgYinyang: &icondata_core::IconData = &icondata_core::IconData {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C14.2091 20 16 18.2091 16 16C16 13.7909 14.2091 12 12 12ZM14 8C14 9.10457 13.1046 10 12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgYoutube: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11484,6 +12186,7 @@ pub static CgYoutube: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgZoomIn: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -11499,6 +12202,7 @@ pub static CgZoomIn: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3431 15.2426C17.6863 12.8995 17.6863 9.1005 15.3431 6.75736C13 4.41421 9.20101 4.41421 6.85786 6.75736C4.51472 9.1005 4.51472 12.8995 6.85786 15.2426C9.20101 17.5858 13 17.5858 15.3431 15.2426ZM16.7574 5.34315C19.6425 8.22833 19.8633 12.769 17.4195 15.9075C17.4348 15.921 17.4498 15.9351 17.4645 15.9497L21.7071 20.1924C22.0976 20.5829 22.0976 21.2161 21.7071 21.6066C21.3166 21.9971 20.6834 21.9971 20.2929 21.6066L16.0503 17.364C16.0356 17.3493 16.0215 17.3343 16.008 17.319C12.8695 19.7628 8.32883 19.542 5.44365 16.6569C2.31946 13.5327 2.31946 8.46734 5.44365 5.34315C8.56785 2.21895 13.6332 2.21895 16.7574 5.34315ZM10.1005 7H12.1005V10H15.1005V12H12.1005V15H10.1005V12H7.10052V10H10.1005V7Z" fill="currentColor" />"###
 };
 #[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static CgZoomOut: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
