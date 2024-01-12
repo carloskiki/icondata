@@ -1,13 +1,13 @@
 use leptos::{ev::MouseEvent, *};
-use leptos_icons::{BsIcon, Icon};
-use web_sys::{HtmlHeadingElement, ScrollToOptions, ScrollBehavior};
+use leptos_icons::Icon;
+use web_sys::{HtmlHeadingElement, ScrollBehavior, ScrollToOptions};
 
 use crate::searchbar::*;
 use crate::DarkModeRw;
 
 #[component]
-pub fn Header(cx: Scope) -> impl IntoView {
-    view! {cx,
+pub fn Header() -> impl IntoView {
+    view! {
     <nav class="sticky top-0 left-0 w-screen flex justify-between px-8 sm:px-16 p-6 items-center bg-primary dark:bg-primary-dark z-50">
         <HeaderLogo />
         <div class="flex space-x-6 items-center">
@@ -20,9 +20,9 @@ pub fn Header(cx: Scope) -> impl IntoView {
 }
 
 #[component]
-pub fn HeaderLogo(cx: Scope) -> impl IntoView {
-    let (pos, set_pos) = create_signal(cx, (0, 0));
-    let DarkModeRw(dark_mode) = use_context::<DarkModeRw>(cx).unwrap();
+pub fn HeaderLogo() -> impl IntoView {
+    let (pos, set_pos) = create_signal((0, 0));
+    let DarkModeRw(dark_mode) = use_context::<DarkModeRw>().unwrap();
 
     let logo_animation = move |ev: MouseEvent| {
         let target = event_target::<HtmlHeadingElement>(&ev);
@@ -31,11 +31,11 @@ pub fn HeaderLogo(cx: Scope) -> impl IntoView {
         let x = (ev.client_x() as f64 - dom_rect.left()) as i32;
         let y = (ev.client_y() as f64 - dom_rect.top()) as i32;
 
-        set_pos((x, y));
+        set_pos.set((x, y));
     };
 
     let logo_style = move || {
-        let (gradient_suffix, text_color) = match dark_mode() {
+        let (gradient_suffix, text_color) = match dark_mode.get() {
             true => ("-dark", "white"),
             false => ("", "gray"),
         };
@@ -49,8 +49,8 @@ pub fn HeaderLogo(cx: Scope) -> impl IntoView {
             -webkit-background-clip: text;
             background-clip: text;
             ",
-            pos().0,
-            pos().1
+            pos.get().0,
+            pos.get().1
         )
     };
 
@@ -61,7 +61,7 @@ pub fn HeaderLogo(cx: Scope) -> impl IntoView {
         window().scroll_to_with_scroll_to_options(&options);
     };
 
-    view! { cx,
+    view! {
             <h1
             on:mousemove=logo_animation
             on:click=scroll_to_top
@@ -72,22 +72,22 @@ pub fn HeaderLogo(cx: Scope) -> impl IntoView {
 }
 
 #[component]
-pub fn ThemeButton(cx: Scope) -> impl IntoView {
-    let DarkModeRw(dark_mode) = use_context::<DarkModeRw>(cx).unwrap();
+pub fn ThemeButton() -> impl IntoView {
+    let DarkModeRw(dark_mode) = use_context::<DarkModeRw>().unwrap();
     let icon_size = "1.75rem";
     let trigger_theme = move |_| {
         dark_mode.update(|dark| *dark = !*dark);
     };
 
-    let icon = move || {
-        if dark_mode() {
-            view! { cx, <Icon icon=Icon::from(BsIcon::BsSun) width=icon_size height=icon_size /> }
+    let icon = Signal::derive(move || {
+        if dark_mode.get() {
+            icondata::BsSun
         } else {
-            view! { cx, <Icon icon=Icon::from(BsIcon::BsMoonStars) width=icon_size height=icon_size /> }
+            icondata::BsMoonStars
         }
-    };
+    });
 
-    view! { cx,
+    view! {
         <div
             on:click=trigger_theme
             class="p-2 rounded-lg border-2 border-secondary
@@ -101,7 +101,7 @@ pub fn ThemeButton(cx: Scope) -> impl IntoView {
                 hover:dark:border-primary
                 "
         >
-            {icon}
+         <Icon icon width=icon_size height=icon_size />
         </div>
     }
 }

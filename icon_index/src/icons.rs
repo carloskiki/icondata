@@ -1,6 +1,9 @@
-use std::{time::Duration, cmp::{min, max}};
+use std::{
+    cmp::{max, min},
+    time::Duration,
+};
 
-use icon_index::{ALL_ICONS, NAMES};
+use icon_index::ICONS;
 use leptos::{html::Main, *};
 use leptos_icons::Icon;
 use web_sys::MouseEvent;
@@ -10,73 +13,64 @@ use crate::{
     searchbar::SearchContent,
 };
 
+// TODO: Test overscroll behaivor
 #[component]
-pub fn Icons(cx: Scope) -> impl IntoView {
-    let SearchContent(search_content) = use_context::<SearchContent>(cx).unwrap();
-    let container_ref: NodeRef<Main> = create_node_ref(cx);
-    let (window_size, set_window_size) = create_signal(cx, fetch_window_size());
-    let (scroll_pos, set_scroll_pos) = create_signal(cx, 0);
+pub fn Icons() -> impl IntoView {
+    let SearchContent(search_content) = use_context::<SearchContent>().unwrap();
+    let container_ref: NodeRef<Main> = create_node_ref();
+    let (window_size, set_window_size) = create_signal(fetch_window_size());
+    let (scroll_pos, set_scroll_pos) = create_signal(0);
 
     // Set event listener for the resize of the window, to update the number of columns
     window_event_listener(ev::resize, move |_| {
-        set_window_size(fetch_window_size());
+        set_window_size.set(fetch_window_size());
     });
     // Set event listener for the scrolling of the window
     window_event_listener(ev::scroll, move |_| {
         let scroll_y = window().scroll_y().unwrap() as u32;
 
-        set_scroll_pos(scroll_y);
+        set_scroll_pos.set(scroll_y);
     });
 
-    let filtered_search = create_memo(cx, move |_| {
-        NAMES
-            .iter()
-            .enumerate()
-            .filter_map(move |(index, feat_name)| feat_name.to_lowercase().contains(&search_content()).then_some(index))
+    let search_content_memo = create_memo(move |_| search_content.get());
+    // No need for a memo here, since the search content is memoized
+    let filtered_search = Signal::derive(move || {
+        ICONS
+            .into_iter()
+            .filter_map(|(name, lower_name, icon)| lower_name.contains(&search_content_memo.get()).then(|| (*name, *icon)))
             .collect::<Vec<_>>()
     });
 
     let item_rem_size = 10;
-
     let base_font = base_font();
     let item_size = item_rem_size * base_font;
 
-    let col_count = move || max(window_size().0 / item_size, 1);
-    let row_count = move || window_size().1 / item_size;
+    let col_count = Memo::new(move |_| max(window_size.get().0 / item_size, 1));
+    let row_count = Memo::new(move |_| window_size.get().1 / item_size);
 
-    let item_count = move || filtered_search.with(|indicies| {
-        indicies.len()
-    });
+    let skipped_items = Memo::new(move |_| scroll_pos.get() / item_size * col_count.get());
 
-    let skipped_items = move || scroll_pos() / item_size * col_count();
+    let items = create_memo(move |_| {
+        filtered_search.with(|icons: &Vec<(&str, icondata::Icon)>| {
+            let end = skipped_items.get() + col_count.get() * (row_count.get() + 1);
+            let show_range = (skipped_items.get() as usize)..(min(end as usize, icons.len()));
 
-    let show_items_range = move || {
-        // start + the numbers of items in screen
-        let end = skipped_items() + col_count() * (row_count() + 1);
-        (min(skipped_items() as usize, item_count()))..(min(end as usize, item_count()))
-    };
+            icons[show_range]
+                .iter()
+                .enumerate()
+                .map(move |(pos, icon)| {
+                    let top = (skipped_items.get() + pos as u32) / col_count.get() * item_size;
+                    let gap_size = (window_size.get().0 - col_count.get() * item_size)
+                        / max(col_count.get() - 1, 1);
+                    let left = (skipped_items.get() + pos as u32) % col_count.get()
+                        * (item_size + gap_size);
 
-    let item_parts = create_memo(cx, move |_| {
-        filtered_search.with(|indicies: &Vec<usize>| {
-            indicies[show_items_range()].iter().enumerate().map(move |(pos, index)| {
-                let top = (skipped_items() + pos as u32) / col_count() * item_size;
-
-                let gap_size = (window_size().0 - col_count() * item_size) / max(col_count() - 1, 1);
-
-                let left = (skipped_items() + pos as u32) % col_count() * (item_size + gap_size);
-
-
-                (*index, top, left)
-            }).collect::<Vec<_>>()
+                    view! {
+                        <IconItem icon=icon.1 name=icon.0 top left />
+                    }
+                })
+                .collect_view()
         })
-    });
-    
-    let items = move || item_parts.with(|parts| {
-        parts.iter().map(|(index, top, left)| {
-            view! {cx, 
-                <IconItem icon=ALL_ICONS[*index] feat_name=NAMES[*index] top=*top left=*left />
-            }
-        }).collect_view(cx)
     });
 
     // 0. Get rem conversion
@@ -84,14 +78,14 @@ pub fn Icons(cx: Scope) -> impl IntoView {
     // 2. Get the number of rows
     // 3. Get the number of icons in window + 2 rows on top and bottom
     // 4. Every icon should have its own pos
-
     let container_height = move || {
-        let height = (item_count() as u32 / col_count() + 1) * item_size;
+        let item_count = filtered_search.with(|icons| icons.len());
+        let height = (item_count as u32 / col_count.get() + 1) * item_size;
         let styles = format!("height: {height}px;");
         styles
     };
 
-    view! { cx,
+    view! {
         <main _ref=container_ref class="relative mx-4"
             // Set the number of columns
             style=container_height
@@ -124,27 +118,27 @@ fn base_font() -> u32 {
 }
 
 #[component]
-pub fn IconItem(cx: Scope, icon: Icon, feat_name: &'static str, top: u32, left: u32) -> impl IntoView {
-    let text_size = match feat_name.len() {
+pub fn IconItem(icon: icondata::Icon, name: &'static str, top: u32, left: u32) -> impl IntoView {
+    let text_size = match name.len() {
         0..=16 => "text-xs",
         17..=22 => "text-[0.6rem]",
         _ => "text-[0.5rem]",
     };
 
-    let alert_manager = use_context::<AlertManager>(cx).unwrap();
+    let alert_manager = use_context::<AlertManager>().unwrap();
 
     let copy_name = move |_: MouseEvent| {
         let clipboard = window().navigator().clipboard().unwrap();
-        let _ = clipboard.write_text(feat_name);
+        let _ = clipboard.write_text(name);
 
         let alert = Alert {
-            text: format!("Copied! {}", feat_name),
+            text: format!("Copied! {}", name),
         };
 
         alert_manager.add_alert(alert, Duration::from_secs(2));
     };
 
-    view! { cx,
+    view! {
         <div
             class="rounded-xl border-gray-400 absolute dark:border-gray-200 border-4
             hover:border-secondary hover:dark:border-secondary-dark w-32 h-32
@@ -156,7 +150,7 @@ pub fn IconItem(cx: Scope, icon: Icon, feat_name: &'static str, top: u32, left: 
             <Icon icon=icon width="4em" height="4em" class="group-hover:text-emphasis
             group-hover:dark:text-emphasis-dark transition-colors delay-75 duration-200
             ease-in-out" />
-            <p class={"line-clamp-1 break-all px-1 ".to_owned() + text_size}>{move || feat_name}</p>
+            <p class={"line-clamp-1 break-all px-1 ".to_owned() + text_size}>{move || name}</p>
         </div>
     }
 }

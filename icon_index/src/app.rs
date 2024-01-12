@@ -10,21 +10,21 @@ use crate::searchbar::*;
 pub struct DarkModeRw(pub RwSignal<bool>);
 
 #[component]
-pub fn App(cx: Scope) -> impl IntoView {
-    let dark_mode = create_rw_signal(cx, get_theme_mode().unwrap_or_default());
-    provide_context(cx, DarkModeRw(dark_mode));
-    let alert_manager = AlertManager::new(cx);
-    provide_context(cx, alert_manager);
-    provide_context(cx, SearchContent(create_rw_signal(cx, String::new())));
+pub fn App() -> impl IntoView {
+    let dark_mode = create_rw_signal(get_theme_mode().unwrap_or_default());
+    provide_context(DarkModeRw(dark_mode));
+    let alert_manager = AlertManager::new();
+    provide_context(alert_manager);
+    provide_context(SearchContent(create_rw_signal(String::new())));
 
-    create_effect(cx, move |_| {
-        set_theme_mode(dark_mode())
+    create_effect(move |_| {
+        set_theme_mode(dark_mode.get())
             .unwrap_or_else(|| log::debug!("could not set theme preference"));
     });
 
-    view! { cx,
+    view! {
     <Html class={move || {
-        if dark_mode() {
+        if dark_mode.get() {
             return "dark".to_string();
         }
         "".to_string()
