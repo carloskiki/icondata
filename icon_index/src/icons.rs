@@ -32,12 +32,18 @@ pub fn Icons() -> impl IntoView {
         set_scroll_pos.set(scroll_y);
     });
 
-    let search_content_memo = create_memo(move |_| search_content.get());
-    // No need for a memo here, since the search content is memoized
-    let filtered_search = Signal::derive(move || {
+    let search_content_memo = create_memo(move |_| {
+        search_content.get()
+    });
+    let filtered_search = Memo::new(move |_| {
+        log::debug!("Filtering icons");
         ICONS
             .into_iter()
-            .filter_map(|(name, lower_name, icon)| lower_name.contains(&search_content_memo.get()).then(|| (*name, *icon)))
+            .filter_map(|(name, lower_name, icon)| {
+                lower_name
+                    .contains(&search_content_memo.get())
+                    .then(|| (*name, *icon))
+            })
             .collect::<Vec<_>>()
     });
 
@@ -53,7 +59,7 @@ pub fn Icons() -> impl IntoView {
     let items = create_memo(move |_| {
         filtered_search.with(|icons: &Vec<(&str, icondata::Icon)>| {
             let end = skipped_items.get() + col_count.get() * (row_count.get() + 1);
-            let show_range = (skipped_items.get() as usize)..(min(end as usize, icons.len()));
+            let show_range = (min(skipped_items.get() as usize, icons.len()))..(min(end as usize, icons.len()));
 
             icons[show_range]
                 .iter()

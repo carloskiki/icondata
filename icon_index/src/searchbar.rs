@@ -11,7 +11,6 @@ pub fn SearchBar() -> impl IntoView {
 
     let key_pressed = move |event: KeyboardEvent| {
         let input_string = event_target_value(&event);
-        window().scroll_to_with_x_and_y(0.0, 0.0);
         search_content.set(input_string.to_lowercase());
     };
 
