@@ -1,7 +1,7 @@
 use std::collections::VecDeque;
 
 use leptos::*;
-use leptos_icons::{FaIcon, Icon};
+use leptos_icons::Icon;
 
 #[derive(Copy, Clone, Debug)]
 pub struct AlertManager {
@@ -9,9 +9,9 @@ pub struct AlertManager {
 }
 
 impl AlertManager {
-    pub fn new(cx: Scope) -> AlertManager {
+    pub fn new() -> AlertManager {
         Self {
-            alerts: create_rw_signal(cx, VecDeque::new()),
+            alerts: create_rw_signal(VecDeque::new()),
         }
     }
 
@@ -22,18 +22,18 @@ impl AlertManager {
 }
 
 #[component]
-pub fn Alerts(cx: Scope, alert_manager: AlertManager) -> impl IntoView {
+pub fn Alerts(alert_manager: AlertManager) -> impl IntoView {
     let rendered_alerts = move || {
         let alerts = alert_manager
             .alerts
             .get()
             .into_iter()
-            .map(|alert| alert.render(cx))
+            .map(|alert| alert.render())
             .collect::<Vec<_>>();
         alerts
     };
 
-    view! { cx,
+    view! {
         <div class="fixed top-32 right-6 flex flex-col gap-2">
             {rendered_alerts}
         </div>
@@ -46,11 +46,11 @@ pub struct Alert {
 }
 
 impl Alert {
-    fn render(&self, cx: Scope) -> impl IntoView {
-        view! { cx,
+    fn render(&self) -> impl IntoView {
+        view! {
             <div class="flex w-72 h-14 rounded-md bg-green-300 dark:bg-green-600 px-4 gap-2 justify-between items-center">
                 <p class="line-clamp-1 break-all">{&self.text}</p>
-                <Icon icon=Icon::from(FaIcon::FaCircleCheckSolid) width="1.5em" height="1.5em" />
+                <Icon icon=icondata::FaCircleCheckSolid width="1.5em" height="1.5em" />
             </div>
         }
     }
