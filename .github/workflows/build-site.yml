@@ -4,12 +4,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Install nightly with wasm
-        uses: ThexXTURBOXx/toolchain@master
+      - name: Install rust with wasm
+        uses: dtolnay/rust-toolchain@stable
         with:
           components: rust-src
-          override: true
-          profile: minimal
           target: wasm32-unknown-unknown
       - name: Install trunk
         run: "cargo install trunk"
