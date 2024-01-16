@@ -45,7 +45,7 @@ jobs:
 
 name: Build & Deploy Site
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches:
+      - "main"
   workflow_dispatch:
