@@ -45,7 +45,7 @@ jobs:
 
 name: Build & Deploy Site
 on:
-  push:
-    branches:
-      - "main"
+  release:
+    types:
+      - published
   workflow_dispatch:
