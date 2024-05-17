@@ -4,7 +4,7 @@
 //! The [`Icon`] type alias refers to an [`IconData`] struct, which contains the SVG data
 //! used by a component library.
 //!
-//! __Available icons can be searched and seleted [here](https://carlosted.github.io/icondata/).__
+//! __Available icons can be searched and seleted [here](https://carloskiki.github.io/icondata/).__
 //!
 //! [`IconData`]: icondata_core::IconData
 //!
