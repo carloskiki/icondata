@@ -1,7 +1,7 @@
 # Icondata
 This crate provides SVG icon data from popular and free icon libraries.
 
-A [site](https://carlosted.github.io/icondata) referencing every icon is available!
+A [site](https://carloskiki.github.io/icondata) referencing every icon is available!
 
 ## Table of Contents
 - [Icondata](#icondata)
