@@ -25,6 +25,12 @@
 //! __Note:__ importing `icondata::*` will import all icons, which can heavily slow down rust-analyzer.
 //! This can be avoided by importing only the icons you need: `use icondata::{..., ...};`, or by
 //! using the qualified path as above.
+//!
+//! If you only need one or a few icon packs, you can enable only the features you need:
+//! ```toml
+//! [dependencies]
+//! icondata = { version = "...", features = ["ant_design", "box"] }
+//! ```
 
 #[cfg(feature = "ant_design")]
 pub use icondata_ai::*;
