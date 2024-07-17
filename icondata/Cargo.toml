@@ -34,6 +34,26 @@ icondata_vs = { path = "../icondata_vs", version = "0.0.10", optional = true }
 icondata_wi = { path = "../icondata_wi", version = "0.0.10", optional = true }
 
 [features]
+default = [
+    "ant_design",
+    "box",
+    "bootstrap",
+    "css_gg",
+    "charm",
+    "font_awesome",
+    "feather",
+    "heroicons",
+    "icomoon",
+    "ionicons",
+    "lucide",
+    "octicons",
+    "remix",
+    "simple",
+    "tabler",
+    "typicons",
+    "vscode",
+    "weather",
+]
 serde = ["icondata_core/serde"]
 ant_design = ["dep:icondata_ai"]
 box = ["dep:icondata_bi"]
