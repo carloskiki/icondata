@@ -29,44 +29,44 @@
 //! If you only need one or a few icon packs, you can enable only the features you need:
 //! ```toml
 //! [dependencies]
-//! icondata = { version = "...", features = ["ant_design", "box"] }
+//! icondata = { version = "...", default-features = false, features = ["lu", "bi"] }
 //! ```
 
-#[cfg(feature = "ant_design")]
+#[cfg(feature = "ai")]
 pub use icondata_ai::*;
-#[cfg(feature = "box")]
+#[cfg(feature = "bi")]
 pub use icondata_bi::*;
-#[cfg(feature = "bootstrap")]
+#[cfg(feature = "bs")]
 pub use icondata_bs::*;
-#[cfg(feature = "css_gg")]
+#[cfg(feature = "cg")]
 pub use icondata_cg::*;
-#[cfg(feature = "charm")]
+#[cfg(feature = "ch")]
 pub use icondata_ch::*;
-#[cfg(feature = "font_awesome")]
+#[cfg(feature = "fa")]
 pub use icondata_fa::*;
-#[cfg(feature = "feather")]
+#[cfg(feature = "fi")]
 pub use icondata_fi::*;
-#[cfg(feature = "heroicons")]
+#[cfg(feature = "hi")]
 pub use icondata_hi::*;
-#[cfg(feature = "icomoon")]
+#[cfg(feature = "im")]
 pub use icondata_im::*;
-#[cfg(feature = "ionicons")]
+#[cfg(feature = "io")]
 pub use icondata_io::*;
-#[cfg(feature = "lucide")]
+#[cfg(feature = "lu")]
 pub use icondata_lu::*;
-#[cfg(feature = "octicons")]
+#[cfg(feature = "oc")]
 pub use icondata_oc::*;
-#[cfg(feature = "remix")]
+#[cfg(feature = "ri")]
 pub use icondata_ri::*;
-#[cfg(feature = "simple")]
+#[cfg(feature = "si")]
 pub use icondata_si::*;
-#[cfg(feature = "tabler")]
+#[cfg(feature = "tb")]
 pub use icondata_tb::*;
-#[cfg(feature = "typicons")]
+#[cfg(feature = "ti")]
 pub use icondata_ti::*;
-#[cfg(feature = "vscode")]
+#[cfg(feature = "vs")]
 pub use icondata_vs::*;
-#[cfg(feature = "weather")]
+#[cfg(feature = "wi")]
 pub use icondata_wi::*;
 
 /// An Icon from any of the icondata_* crates.

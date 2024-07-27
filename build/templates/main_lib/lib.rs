@@ -1,4 +1,4 @@
-//! This crate provides a collection of icons in the form of SVG data. 
+//! This crate provides a collection of icons in the form of SVG data.
 //! It re-exports all icon libraries from the icondata_* crates.
 //!
 //! The [`Icon`] type alias refers to an [`IconData`] struct, which contains the SVG data
@@ -21,11 +21,18 @@
 //! let icon = icondata::BsBuildingDown;
 //! let icon = icondata::AiAlertFilled;
 //! ```
-//! 
+//!
 //! __Note:__ importing `icondata::*` will import all icons, which can heavily slow down rust-analyzer.
 //! This can be avoided by importing only the icons you need: `use icondata::{..., ...};`, or by
 //! using the qualified path as above.
+//!
+//! If you only need one or a few icon packs, you can enable only the features you need:
+//! ```toml
+//! [dependencies]
+//! icondata = { version = "...", default-features = false, features = ["lu", "bi"] }
+//! ```
 {% for short_name in short_names %}
+#[cfg(feature = "{{short_name}}")]
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
 

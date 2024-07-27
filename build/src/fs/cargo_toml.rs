@@ -37,15 +37,20 @@ impl CargoToml {
                     sn_version: Vec<(&'a str, String)>,
                 }
 
-                let sn_version: Vec<_> = crate::Packages::get()?.iter().map(|package| {
-
-                    (&*package.meta.short_name, package.meta.crate_version.to_string())
-                }).collect();
+                let sn_version: Vec<_> = crate::Packages::get()?
+                    .iter()
+                    .map(|package| {
+                        (
+                            &*package.meta.short_name,
+                            package.meta.crate_version.to_string(),
+                        )
+                    })
+                    .collect();
 
                 Ok(Template { sn_version }.render()?)
             }
 
-            LibType::IconIndex => unimplemented!("IconIndex does not generate a Cargo.toml file.")
+            LibType::IconIndex => unimplemented!("IconIndex does not generate a Cargo.toml file."),
         }
     }
 }

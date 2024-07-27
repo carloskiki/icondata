@@ -15,10 +15,19 @@ rust-version = "1.67.0"
 icondata_core = { version = "0.1.0", path = "../icondata_core" }
 
 {% for (short_name, version) in sn_version -%}
-icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{version}}" }
-{% endfor -%}
+icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{version}}", optional = true }
+{% endfor %}
 
 [features]
-serde = [
-"icondata_core/serde",
+serde = ["icondata_core/serde"]
+ant_design = ["dep:icondata_ai"]
+
+default = [
+    {% for (short_name, version) in sn_version -%}
+    "{{short_name}}",
+    {% endfor -%}
 ]
+
+{% for (short_name, version) in sn_version -%}
+{{short_name}} = ["dep:icondata_{{short_name}}"]
+{% endfor -%}
