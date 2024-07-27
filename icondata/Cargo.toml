@@ -36,7 +36,6 @@ icondata_wi = { path = "../icondata_wi", version = "0.0.10", optional = true }
 
 [features]
 serde = ["icondata_core/serde"]
-ant_design = ["dep:icondata_ai"]
 
 default = [
     "ai",

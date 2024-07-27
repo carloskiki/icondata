@@ -20,7 +20,6 @@ icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{ve
 
 [features]
 serde = ["icondata_core/serde"]
-ant_design = ["dep:icondata_ai"]
 
 default = [
     {% for (short_name, version) in sn_version -%}
