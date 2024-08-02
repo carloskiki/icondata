@@ -22,11 +22,11 @@ icondata_{{short_name}} = { path = "../icondata_{{short_name}}", version = "{{ve
 serde = ["icondata_core/serde"]
 
 default = [
-    {% for (_, full_name) in short_name_full_name -%}
-    "{{full_name}}",
+    {% for (_, feature_name) in short_name_feature_name -%}
+    "{{feature_name}}",
     {% endfor -%}
 ]
 
-{% for (short_name, full_name) in short_name_full_name -%}
-{{full_name}} = ["dep:icondata_{{short_name}}"]
+{% for (short_name, feature_name) in short_name_feature_name -%}
+{{feature_name}} = ["dep:icondata_{{short_name}}"]
 {% endfor -%}

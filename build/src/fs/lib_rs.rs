@@ -44,15 +44,15 @@ impl LibRs {
                 #[derive(Template)]
                 #[template(path = "main_lib/lib.rs", escape = "none")]
                 struct Template<'a> {
-                    short_name_full_name: Vec<(&'a str, String)>,
+                    short_name_feature_name: Vec<(&'a str, String)>,
                 }
 
-                let short_name_full_name = Packages::get()?
+                let short_name_feature_name = Packages::get()?
                     .iter()
                     .map(|package| (package.meta.short_name.as_ref(), package.meta.package_name.to_kebab_case()))
                     .collect::<Vec<_>>();
 
-                Ok(Template { short_name_full_name }.render()?)
+                Ok(Template { short_name_feature_name }.render()?)
             }
             LibType::IconIndex => {
                 #[derive(Template)]
