@@ -31,8 +31,8 @@
 //! [dependencies]
 //! icondata = { version = "...", default-features = false, features = ["lu", "bi"] }
 //! ```
-{% for short_name in short_names %}
-#[cfg(feature = "{{short_name}}")]
+{% for (short_name, full_name) in short_name_full_name %}
+#[cfg(feature = "{{full_name}}")]
 pub use icondata_{{short_name}}::*;
 {%- endfor %}
 

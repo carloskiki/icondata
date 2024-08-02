@@ -1,6 +1,7 @@
 use anyhow::Result;
 use askama::Template;
 use std::path::PathBuf;
+use heck::ToKebabCase;
 
 use crate::dirs::LibType;
 
@@ -34,10 +35,11 @@ impl CargoToml {
                 #[derive(Template)]
                 #[template(path = "main_lib/Cargo.toml", escape = "none")]
                 struct Template<'a> {
-                    sn_version: Vec<(&'a str, String)>,
+                    short_name_version: Vec<(&'a str, String)>,
+                    short_name_full_name: Vec<(&'a str, String)>,
                 }
 
-                let sn_version: Vec<_> = crate::Packages::get()?
+                let short_name_version: Vec<_> = crate::Packages::get()?
                     .iter()
                     .map(|package| {
                         (
@@ -47,7 +49,12 @@ impl CargoToml {
                     })
                     .collect();
 
-                Ok(Template { sn_version }.render()?)
+                let short_name_full_name: Vec<_> = crate::Packages::get()?
+                    .iter()
+                    .map(|package| (&*package.meta.short_name, package.meta.package_name.to_kebab_case()))
+                    .collect();
+
+                Ok(Template { short_name_version, short_name_full_name }.render()?)
             }
 
             LibType::IconIndex => unimplemented!("IconIndex does not generate a Cargo.toml file."),
