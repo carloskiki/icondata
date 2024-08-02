@@ -1,10 +1,10 @@
 [build]
 # The index HTML file to drive the bundling process.
-target = "index.html"
+target = "icon_index/index.html"
 # Build in release mode.
 release = true
 # The output dir for all final assets.
-dist = "../docs/"
+dist = "../site/"
 # The public URL from which assets are to be served.
 public_url = "/icondata/"
 
