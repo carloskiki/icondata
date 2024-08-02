@@ -1,6 +1,6 @@
 [build]
 # The index HTML file to drive the bundling process.
-target = "icon_index/index.html"
+target = "index.html"
 # Build in release mode.
 release = true
 # The output dir for all final assets.

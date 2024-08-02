@@ -14,7 +14,7 @@ jobs:
       - name: Install trunk
         run: "cargo binstall --no-confirm trunk"
       - name: Build website
-        run: "trunk build"
+        run: "cd icon_index && trunk build"
   
   deploy:
     # Deploy to the github-pages environment
