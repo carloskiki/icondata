@@ -12,7 +12,7 @@ jobs:
       - name: Install Binstall
         uses: cargo-bins/cargo-binstall@main
       - name: Install trunk
-        run: "cargo binstall trunk"
+        run: "cargo binstall --no-confirm trunk"
       - name: Build website
         run: "cd icon_index && trunk build"
   
