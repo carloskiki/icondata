@@ -32,41 +32,41 @@
 //! icondata = { version = "...", default-features = false, features = ["lu", "bi"] }
 //! ```
 
-#[cfg(feature = "ai")]
+#[cfg(feature = "ant-design-icons")]
 pub use icondata_ai::*;
-#[cfg(feature = "bi")]
+#[cfg(feature = "box-icons")]
 pub use icondata_bi::*;
-#[cfg(feature = "bs")]
+#[cfg(feature = "bootstrap-icons")]
 pub use icondata_bs::*;
-#[cfg(feature = "cg")]
+#[cfg(feature = "css-gg")]
 pub use icondata_cg::*;
-#[cfg(feature = "ch")]
+#[cfg(feature = "charm")]
 pub use icondata_ch::*;
-#[cfg(feature = "fa")]
+#[cfg(feature = "font-awesome")]
 pub use icondata_fa::*;
-#[cfg(feature = "fi")]
+#[cfg(feature = "feather")]
 pub use icondata_fi::*;
-#[cfg(feature = "hi")]
+#[cfg(feature = "heroicons")]
 pub use icondata_hi::*;
-#[cfg(feature = "im")]
+#[cfg(feature = "ico-moon-free")]
 pub use icondata_im::*;
-#[cfg(feature = "io")]
+#[cfg(feature = "ionicons")]
 pub use icondata_io::*;
-#[cfg(feature = "lu")]
+#[cfg(feature = "lucide")]
 pub use icondata_lu::*;
-#[cfg(feature = "oc")]
+#[cfg(feature = "github-octicons")]
 pub use icondata_oc::*;
-#[cfg(feature = "ri")]
+#[cfg(feature = "remix-icon")]
 pub use icondata_ri::*;
-#[cfg(feature = "si")]
+#[cfg(feature = "simple-icons")]
 pub use icondata_si::*;
-#[cfg(feature = "tb")]
+#[cfg(feature = "tabler-icons")]
 pub use icondata_tb::*;
-#[cfg(feature = "ti")]
+#[cfg(feature = "typicons")]
 pub use icondata_ti::*;
-#[cfg(feature = "vs")]
+#[cfg(feature = "vs-code-icons")]
 pub use icondata_vs::*;
-#[cfg(feature = "wi")]
+#[cfg(feature = "weather-icons")]
 pub use icondata_wi::*;
 
 /// An Icon from any of the icondata_* crates.
