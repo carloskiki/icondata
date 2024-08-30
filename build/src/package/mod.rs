@@ -396,7 +396,7 @@ impl PackageType {
             PackageType::BoxIcons => PackageMetadata {
                 short_name: Cow::Borrowed("bi"),
                 package_name: Cow::Borrowed("BoxIcons"),
-                licenses: &[Cow::Borrowed("CC BY 4.0")],
+                licenses: &[Cow::Borrowed("MIT")],
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/atisawd/boxicons"),
                     target: GitTarget::Branch {
@@ -578,6 +578,8 @@ impl PackageType {
                     build: None,
                 },
             },
+            // NOTE: we cannot update to a version later than 2.1.1 because of the non-permissive
+            // license of the newer versions.
             PackageType::CssGg => PackageMetadata {
                 short_name: Cow::Borrowed("cg"),
                 package_name: Cow::Borrowed("css.gg"),

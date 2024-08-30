@@ -23,7 +23,7 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | Icon Library | Version | Source | License | Crate Name |
 | ------------ | ------- | ------ | ------- | ---------- |
 | Ant Design Icons | 4.3.1 | Git: <https://github.com/ant-design/ant-design-icons> - Branch: master - Commit: e09efdead14961d3cc9ec0c24a182f66241436de | MIT,  | icondata_ai |
-| BoxIcons | 2.1.4 | Git: <https://github.com/atisawd/boxicons> - Branch: master - Commit: 9ffa9136e8681886bb7bd2145cd4098717ce1c11 | CC BY 4.0,  | icondata_bi |
+| BoxIcons | 2.1.4 | Git: <https://github.com/atisawd/boxicons> - Branch: master - Commit: 9ffa9136e8681886bb7bd2145cd4098717ce1c11 | MIT,  | icondata_bi |
 | Bootstrap Icons | 1.11.0 | Git: <https://github.com/twbs/icons> - Tag: v1.11.0 | MIT,  | icondata_bs |
 | css.gg | 2.1.1 | Git: <https://github.com/astrit/css.gg> - Tag: 2.1.1 | MIT,  | icondata_cg |
 | Charm | 0.18.0 | Git: <https://github.com/jaynewey/charm-icons> - Tag: v0.18.0 | MIT,  | icondata_ch |
