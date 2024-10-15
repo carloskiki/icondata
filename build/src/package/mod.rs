@@ -173,6 +173,7 @@ pub enum PackageType {
     GithubOcticons,
     Lucide,
     Charm,
+    MaterialDesignIcons,
 }
 
 #[derive(Debug, Clone)]
@@ -707,6 +708,33 @@ impl PackageType {
                 },
                 download_dir: Cow::Borrowed("charm"),
                 svg_dir: Cow::Borrowed("icons"),
+                crate_version: SemVer {
+                    major: 0,
+                    minor: 0,
+                    patch: 10,
+                    prerelease: None,
+                    build: None,
+                },
+            },
+            PackageType::MaterialDesignIcons => PackageMetadata {
+                short_name: Cow::Borrowed("mdi"),
+                package_name: Cow::Borrowed("Material Design Icons"),
+                licenses: &[Cow::Borrowed("Apache 2.0")],
+                source: PackageSource::Git {
+                    url: Cow::Borrowed("https://github.com/Templarian/MaterialDesign-SVG"),
+                    target: GitTarget::Tag {
+                        name: Cow::Borrowed("v7.4.47"),
+                        version: SemVer {
+                            major: 7,
+                            minor: 4,
+                            patch: 47,
+                            prerelease: None,
+                            build: None,
+                        },
+                    },
+                },
+                download_dir: "MaterialDesign-SVG".into(),
+                svg_dir: Cow::Borrowed("svg"),
                 crate_version: SemVer {
                     major: 0,
                     minor: 0,

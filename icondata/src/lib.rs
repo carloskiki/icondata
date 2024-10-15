@@ -54,6 +54,8 @@ pub use icondata_im::*;
 pub use icondata_io::*;
 #[cfg(feature = "lucide")]
 pub use icondata_lu::*;
+#[cfg(feature = "material-design-icons")]
+pub use icondata_mdi::*;
 #[cfg(feature = "github-octicons")]
 pub use icondata_oc::*;
 #[cfg(feature = "remix-icon")]
