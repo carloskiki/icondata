@@ -1,0 +1,30 @@
+jobs: 
+  deploy-site:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install rust with wasm
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rust-src
+          target: wasm32-unknown-unknown
+      - name: Install Binstall
+        uses: cargo-bins/cargo-binstall@main
+      - name: Install trunk
+        run: "cargo binstall --no-confirm trunk"
+      - name: Build website
+        run: "cd icon_index && trunk build"
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+
+name: Build & Deploy Site
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
