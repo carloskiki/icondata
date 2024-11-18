@@ -1,0 +1,15 @@
+[package]
+name = "icondata_mdi"
+version = "0.0.10"
+authors = ["Charles Edward Gagnon"]
+edition = "2021"
+description = "Library providing SVG and corresponding metadata for \"Material Design Icons\"."
+readme = "./README.md"
+repository = "https://github.com/Carlosted/icondata"
+license = "MIT"
+keywords = ["icons"]
+categories = ["web-programming"]
+rust-version = "1.67.0"
+
+[dependencies]
+icondata_core = { path = "../icondata_core", version = "0.1.0" }

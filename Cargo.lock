@@ -18,6 +18,7 @@ dependencies = [
  "icondata_im",
  "icondata_io",
  "icondata_lu",
+ "icondata_mdi",
  "icondata_oc",
  "icondata_ri",
  "icondata_si",
@@ -106,6 +107,13 @@ dependencies = [
 
 [[package]]
 name = "icondata_lu"
+version = "0.0.10"
+dependencies = [
+ "icondata_core",
+]
+
+[[package]]
+name = "icondata_mdi"
 version = "0.0.10"
 dependencies = [
  "icondata_core",
