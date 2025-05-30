@@ -669,7 +669,7 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/lucide-icons/lucide"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v0.510.0"),
+                        name: Cow::Borrowed("0.510.0"),
                         version: SemVer {
                             major: 0,
                             minor: 510,
