@@ -32,7 +32,7 @@ but must only be taken as a hint. Please check the individual icon repositories 
 | Heroicons | 2.0.18 | Git: <https://github.com/refactoringui/heroicons> - Tag: v2.0.18 | MIT,  | icondata_hi |
 | IcoMoon Free | unknown | Git: <https://github.com/Keyamoon/IcoMoon-Free> - Branch: master - Commit: d006795ede82361e1bac1ee76f215cf1dc51e4ca | CC BY 4.0, GPL,  | icondata_im |
 | Ionicons | 7.1.2 | Git: <https://github.com/ionic-team/ionicons> - Tag: v7.1.2 | MIT,  | icondata_io |
-| Lucide | 0.265.0 | Git: <https://github.com/lucide-icons/lucide> - Tag: v0.265.0 | ISC,  | icondata_lu |
+| Lucide | 0.510.0 | Git: <https://github.com/lucide-icons/lucide> - Tag: 0.510.0 | ISC,  | icondata_lu |
 | Material Design Icons | 7.4.47 | Git: <https://github.com/Templarian/MaterialDesign-SVG> - Tag: v7.4.47 | Apache 2.0,  | icondata_mdi |
 | Github Octicons | 19.7.0 | Git: <https://github.com/primer/octicons> - Tag: v19.7.0 | MIT,  | icondata_oc |
 | Remix Icon | 3.5.0 | Git: <https://github.com/Remix-Design/RemixIcon> - Tag: v3.5.0 | Apache 2.0,  | icondata_ri |
