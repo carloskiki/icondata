@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "icondata"
-version = "0.5.0"
+version = "0.6.0"
 dependencies = [
  "icondata_ai",
  "icondata_bi",
@@ -30,35 +30,35 @@ dependencies = [
 
 [[package]]
 name = "icondata_ai"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_bi"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_bs"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_cg"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_ch"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
@@ -72,98 +72,98 @@ dependencies = [
 
 [[package]]
 name = "icondata_fa"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_fi"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_hi"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_im"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_io"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_lu"
-version = "0.0.11"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_mdi"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_oc"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_ri"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_si"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_tb"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_ti"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_vs"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
 
 [[package]]
 name = "icondata_wi"
-version = "0.0.10"
+version = "0.1.0"
 dependencies = [
  "icondata_core",
 ]
