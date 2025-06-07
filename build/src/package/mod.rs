@@ -239,11 +239,11 @@ impl PackageType {
                     url: Cow::Borrowed("https://github.com/ant-design/ant-design-icons"),
                     target: GitTarget::Branch {
                         name: Cow::Borrowed("master"),
-                        commit_ref: Cow::Borrowed("e09efdead14961d3cc9ec0c24a182f66241436de"),
+                        commit_ref: Cow::Borrowed("f8416b8b99b91cbdcebb5b4450a815f2b8edc16f"),
                         version_hint: Some(SemVer {
                             major: 4,
-                            minor: 3,
-                            patch: 1,
+                            minor: 4,
+                            patch: 2,
                             prerelease: None,
                             build: None,
                         }),
@@ -253,8 +253,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("packages/icons-svg/svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -266,10 +266,10 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/FortAwesome/Font-Awesome"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("6.4.2"),
+                        name: Cow::Borrowed("6.7.2"),
                         version: SemVer {
                             major: 6,
-                            minor: 4,
+                            minor: 7,
                             patch: 2,
                             prerelease: None,
                             build: None,
@@ -280,8 +280,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("svgs"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -307,8 +307,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -320,11 +320,11 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/feathericons/feather"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v4.29.1"),
+                        name: Cow::Borrowed("v4.29.2"),
                         version: SemVer {
                             major: 4,
                             minor: 29,
-                            patch: 1,
+                            patch: 2,
                             prerelease: None,
                             build: None,
                         },
@@ -334,8 +334,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -347,11 +347,11 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/microsoft/vscode-codicons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("0.0.33"),
+                        name: Cow::Borrowed("0.0.36"),
                         version: SemVer {
                             major: 0,
                             minor: 0,
-                            patch: 33,
+                            patch: 36,
                             prerelease: None,
                             build: None,
                         },
@@ -361,8 +361,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("src/icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -374,11 +374,11 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/twbs/icons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v1.11.0"),
+                        name: Cow::Borrowed("v1.13.1"),
                         version: SemVer {
                             major: 1,
-                            minor: 11,
-                            patch: 0,
+                            minor: 13,
+                            patch: 1,
                             prerelease: None,
                             build: None,
                         },
@@ -388,8 +388,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -416,8 +416,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -438,8 +438,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("SVG"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -451,11 +451,11 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/ionic-team/ionicons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v7.1.2"),
+                        name: Cow::Borrowed("v8.0.9"),
                         version: SemVer {
-                            major: 7,
-                            minor: 1,
-                            patch: 2,
+                            major: 8,
+                            minor: 0,
+                            patch: 9,
                             prerelease: None,
                             build: None,
                         },
@@ -465,8 +465,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("src/svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -478,10 +478,10 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/Remix-Design/RemixIcon"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v3.5.0"),
+                        name: Cow::Borrowed("v4.6.0"),
                         version: SemVer {
-                            major: 3,
-                            minor: 5,
+                            major: 4,
+                            minor: 6,
                             patch: 0,
                             prerelease: None,
                             build: None,
@@ -492,8 +492,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -505,10 +505,10 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/simple-icons/simple-icons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("9.14.0"),
+                        name: Cow::Borrowed("15.0.0"),
                         version: SemVer {
-                            major: 9,
-                            minor: 14,
+                            major: 15,
+                            minor: 0,
                             patch: 0,
                             prerelease: None,
                             build: None,
@@ -519,8 +519,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -546,8 +546,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("src/svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -559,11 +559,11 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/refactoringui/heroicons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v2.0.18"),
+                        name: Cow::Borrowed("v2.2.0"),
                         version: SemVer {
                             major: 2,
-                            minor: 0,
-                            patch: 18,
+                            minor: 2,
+                            patch: 0,
                             prerelease: None,
                             build: None,
                         },
@@ -573,8 +573,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("src"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -602,8 +602,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons/svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -615,9 +615,9 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/tabler/tabler-icons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v2.34.0"),
+                        name: Cow::Borrowed("v3.34.0"),
                         version: SemVer {
-                            major: 2,
+                            major: 3,
                             minor: 34,
                             patch: 0,
                             prerelease: None,
@@ -629,8 +629,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -642,10 +642,10 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/primer/octicons"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("v19.7.0"),
+                        name: Cow::Borrowed("v19.15.0"),
                         version: SemVer {
                             major: 19,
-                            minor: 7,
+                            minor: 15,
                             patch: 0,
                             prerelease: None,
                             build: None,
@@ -656,8 +656,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -669,10 +669,10 @@ impl PackageType {
                 source: PackageSource::Git {
                     url: Cow::Borrowed("https://github.com/lucide-icons/lucide"),
                     target: GitTarget::Tag {
-                        name: Cow::Borrowed("0.510.0"),
+                        name: Cow::Borrowed("0.513.0"),
                         version: SemVer {
                             major: 0,
-                            minor: 510,
+                            minor: 513,
                             patch: 0,
                             prerelease: None,
                             build: None,
@@ -683,8 +683,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 11,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -710,8 +710,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("icons"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },
@@ -737,8 +737,8 @@ impl PackageType {
                 svg_dir: Cow::Borrowed("svg"),
                 crate_version: SemVer {
                     major: 0,
-                    minor: 0,
-                    patch: 10,
+                    minor: 1,
+                    patch: 0,
                     prerelease: None,
                     build: None,
                 },

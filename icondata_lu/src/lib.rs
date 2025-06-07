@@ -2008,8 +2008,10 @@ pub static LuAxis3d: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 4v16h16" />
-<path d="m4 20 7-7" />"###
+    data: r###"<path d="M13.5 10.5 15 9" />
+<path d="M4 4v15a1 1 0 0 0 1 1h15" />
+<path d="M4.293 19.707 6 18" />
+<path d="m9 15 1.5-1.5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2587,8 +2589,8 @@ pub static LuBattery: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-<line x1="22" x2="22" y1="11" y2="13" />"###
+    data: r###"<path d="M 22 14 L 22 10" />
+<rect x="2" y="6" width="16" height="12" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2604,10 +2606,10 @@ pub static LuBatteryCharging: &icondata_core::IconData = &icondata_core::IconDat
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
-<path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1" />
-<path d="m11 7-3 5h4l-3 5" />
-<line x1="22" x2="22" y1="11" y2="13" />"###
+    data: r###"<path d="m11 7-3 5h4l-3 5" />
+<path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935" />
+<path d="M22 14v-4" />
+<path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2623,11 +2625,11 @@ pub static LuBatteryFull: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-<line x1="22" x2="22" y1="11" y2="13" />
-<line x1="6" x2="6" y1="11" y2="13" />
-<line x1="10" x2="10" y1="11" y2="13" />
-<line x1="14" x2="14" y1="11" y2="13" />"###
+    data: r###"<path d="M10 10v4" />
+<path d="M14 10v4" />
+<path d="M22 14v-4" />
+<path d="M6 10v4" />
+<rect x="2" y="6" width="16" height="12" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2643,9 +2645,9 @@ pub static LuBatteryLow: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-<line x1="22" x2="22" y1="11" y2="13" />
-<line x1="6" x2="6" y1="11" y2="13" />"###
+    data: r###"<path d="M22 14v-4" />
+<path d="M6 14v-4" />
+<rect x="2" y="6" width="16" height="12" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2661,10 +2663,10 @@ pub static LuBatteryMedium: &icondata_core::IconData = &icondata_core::IconData 
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="16" height="10" x="2" y="7" rx="2" ry="2" />
-<line x1="22" x2="22" y1="11" y2="13" />
-<line x1="6" x2="6" y1="11" y2="13" />
-<line x1="10" x2="10" y1="11" y2="13" />"###
+    data: r###"<path d="M10 14v-4" />
+<path d="M22 14v-4" />
+<path d="M6 14v-4" />
+<rect x="2" y="6" width="16" height="12" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2681,10 +2683,10 @@ pub static LuBatteryPlus: &icondata_core::IconData = &icondata_core::IconData {
     stroke: Some("currentColor"),
     fill: Some("none"),
     data: r###"<path d="M10 9v6" />
-<path d="M13.5 7H16a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2.5" />
-<path d="M22 11v2" />
-<path d="M6.5 17H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2.5" />
-<path d="M7 12h6" />"###
+<path d="M12.543 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.605" />
+<path d="M22 14v-4" />
+<path d="M7 12h6" />
+<path d="M7.606 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.606" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2702,9 +2704,9 @@ pub static LuBatteryWarning: &icondata_core::IconData = &icondata_core::IconData
     fill: Some("none"),
     data: r###"<path d="M10 17h.01" />
 <path d="M10 7v6" />
-<path d="M14 7h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
-<path d="M22 11v2" />
-<path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />"###
+<path d="M14 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2" />
+<path d="M22 14v-4" />
+<path d="M6 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5370,6 +5372,25 @@ pub static LuCaravan: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static LuCardSim: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M12 14v4" />
+<path d="M14.172 2a2 2 0 0 1 1.414.586l3.828 3.828A2 2 0 0 1 20 7.828V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+<path d="M8 14h8" />
+<rect x="8" y="10" width="8" height="8" rx="1" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static LuCarrot: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6246,11 +6267,11 @@ pub static LuChevronsLeftRightEllipsis: &icondata_core::IconData = &icondata_cor
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m18 8 4 4-4 4" />
-<path d="m6 8-4 4 4 4" />
-<path d="M8 12h.01" />
-<path d="M12 12h.01" />
-<path d="M16 12h.01" />"###
+    data: r###"<path d="M12 12h.01" />
+<path d="M16 12h.01" />
+<path d="m17 7 5 5-5 5" />
+<path d="m7 7-5 5 5 5" />
+<path d="M8 12h.01" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -7044,6 +7065,25 @@ pub static LuCirclePlus: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static LuCirclePoundSterling: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M10 16V9.5a1 1 0 0 1 5 0" />
+<path d="M8 12h4" />
+<path d="M8 16h7" />
+<circle cx="12" cy="12" r="10" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static LuCirclePower: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7617,8 +7657,8 @@ pub static LuClock6: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<circle cx="12" cy="12" r="10" />
-<polyline points="12 6 12 12 12 16.5" />"###
+    data: r###"<path d="M12 16.5V6" />
+<circle cx="12" cy="12" r="10" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -7801,6 +7841,23 @@ pub static LuCloudAlert: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12 12v4" />
 <path d="M12 20h.01" />
 <path d="M17 18h.5a1 1 0 0 0 0-9h-1.79A7 7 0 1 0 7 17.708" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static LuCloudCheck: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="m17 15-5.5 5.5L9 18" />
+<path d="M5 17.743A7 7 0 1 1 15.71 10h1.79a4.5 4.5 0 0 1 1.5 8.742" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8165,8 +8222,8 @@ pub static LuCode: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="16 18 22 12 16 6" />
-<polyline points="8 6 2 12 8 18" />"###
+    data: r###"<path d="m16 18 6-6-6-6" />
+<path d="m8 6-6 6 6 6" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8800,8 +8857,8 @@ pub static LuCornerDownLeft: &icondata_core::IconData = &icondata_core::IconData
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="9 10 4 15 9 20" />
-<path d="M20 4v7a4 4 0 0 1-4 4H4" />"###
+    data: r###"<path d="M20 4v7a4 4 0 0 1-4 4H4" />
+<path d="m9 10-5 5 5 5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8817,7 +8874,7 @@ pub static LuCornerDownRight: &icondata_core::IconData = &icondata_core::IconDat
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="15 10 20 15 15 20" />
+    data: r###"<path d="m15 10 5 5-5 5" />
 <path d="M4 4v7a4 4 0 0 0 4 4h12" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -8834,7 +8891,7 @@ pub static LuCornerLeftDown: &icondata_core::IconData = &icondata_core::IconData
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="14 15 9 20 4 15" />
+    data: r###"<path d="m14 15-5 5-5-5" />
 <path d="M20 4h-7a4 4 0 0 0-4 4v12" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -8851,7 +8908,7 @@ pub static LuCornerLeftUp: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="14 9 9 4 4 9" />
+    data: r###"<path d="M14 9 9 4 4 9" />
 <path d="M20 20h-7a4 4 0 0 1-4-4V4" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -8868,7 +8925,7 @@ pub static LuCornerRightDown: &icondata_core::IconData = &icondata_core::IconDat
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="10 15 15 20 20 15" />
+    data: r###"<path d="m10 15 5 5 5-5" />
 <path d="M4 4h7a4 4 0 0 1 4 4v12" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -8885,7 +8942,7 @@ pub static LuCornerRightUp: &icondata_core::IconData = &icondata_core::IconData 
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="10 9 15 4 20 9" />
+    data: r###"<path d="m10 9 5-5 5 5" />
 <path d="M4 20h7a4 4 0 0 0 4-4V4" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -8902,8 +8959,8 @@ pub static LuCornerUpLeft: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="9 14 4 9 9 4" />
-<path d="M20 20v-7a4 4 0 0 0-4-4H4" />"###
+    data: r###"<path d="M20 20v-7a4 4 0 0 0-4-4H4" />
+<path d="M9 14 4 9l5-5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8919,7 +8976,7 @@ pub static LuCornerUpRight: &icondata_core::IconData = &icondata_core::IconData 
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="15 14 20 9 15 4" />
+    data: r###"<path d="m15 14 5-5-5-5" />
 <path d="M4 20v-7a4 4 0 0 1 4-4h12" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -9853,9 +9910,9 @@ pub static LuDownload: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-<polyline points="7 10 12 15 17 10" />
-<line x1="12" x2="12" y1="15" y2="3" />"###
+    data: r###"<path d="M12 15V3" />
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+<path d="m7 10 5 5 5-5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -10297,9 +10354,8 @@ pub static LuEraser: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21" />
-<path d="M22 21H7" />
-<path d="m5 11 9 9" />"###
+    data: r###"<path d="M21 21H8a2 2 0 0 1-1.42-.587l-3.994-3.999a2 2 0 0 1 0-2.828l10-10a2 2 0 0 1 2.829 0l5.999 6a2 2 0 0 1 0 2.828L12.834 21" />
+<path d="m5.082 11.09 8.828 8.828" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -10466,10 +10522,10 @@ pub static LuFactory: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-<path d="M17 18h1" />
-<path d="M12 18h1" />
-<path d="M7 18h1" />"###
+    data: r###"<path d="M12 16h.01" />
+<path d="M16 16h.01" />
+<path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
+<path d="M8 16h.01" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -10698,10 +10754,10 @@ pub static LuFileBadge: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+    data: r###"<path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.072" />
 <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-<path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-<path d="M7 16.5 8 22l-3-1-3 1 1-5.5" />"###
+<path d="m6.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.88.001l-1.846.85a.5.5 0 0 1-.693-.593l1.29-4.88" />
+<circle cx="5" cy="14" r="3" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -12863,7 +12919,7 @@ pub static LuForward: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="15 17 20 12 15 7" />
+    data: r###"<path d="m15 17 5-5-5-5" />
 <path d="M4 18v-2a4 4 0 0 1 4-4h12" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -13808,6 +13864,25 @@ pub static LuGrid2x2X: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3" />
 <path d="m16 16 5 5" />
 <path d="m16 21 5-5" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static LuGrid3x2: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M15 3v18" />
+<path d="M3 12h18" />
+<path d="M9 3v18" />
+<rect x="3" y="3" width="18" height="18" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -14895,6 +14970,26 @@ pub static LuIdCard: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static LuIdCardLanyard: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M13.5 8h-3" />
+<path d="m15 2-1 2h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3" />
+<path d="M16.899 22A5 5 0 0 0 7.1 22" />
+<path d="m9 2 3 6" />
+<circle cx="12" cy="15" r="3" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static LuImage: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -15267,8 +15362,8 @@ pub static LuIterationCcw: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8h8" />
-<polyline points="16 14 20 18 16 22" />"###
+    data: r###"<path d="m16 14 4 4-4 4" />
+<path d="M20 10a8 8 0 1 0-8 8h8" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -15284,8 +15379,8 @@ pub static LuIterationCw: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8H4" />
-<polyline points="8 22 4 18 8 14" />"###
+    data: r###"<path d="M4 10a8 8 0 1 1 8 8H4" />
+<path d="m8 22-4-4 4-4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -15610,12 +15705,12 @@ pub static LuLandmark: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="3" x2="21" y1="22" y2="22" />
-<line x1="6" x2="6" y1="18" y2="11" />
-<line x1="10" x2="10" y1="18" y2="11" />
-<line x1="14" x2="14" y1="18" y2="11" />
-<line x1="18" x2="18" y1="18" y2="11" />
-<polygon points="12 2 20 7 4 7" />"###
+    data: r###"<path d="M10 18v-7" />
+<path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" />
+<path d="M14 18v-7" />
+<path d="M18 18v-7" />
+<path d="M3 22h18" />
+<path d="M6 18v-7" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -16229,11 +16324,11 @@ pub static LuListCollapse: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="m3 10 2.5-2.5L3 5" />
-<path d="m3 19 2.5-2.5L3 14" />
+    data: r###"<path d="M10 12h11" />
+<path d="M10 18h11" />
 <path d="M10 6h11" />
-<path d="M10 12h11" />
-<path d="M10 18h11" />"###
+<path d="m3 10 3-3-3-3" />
+<path d="m3 20 3-3-3-3" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -16715,9 +16810,9 @@ pub static LuLogIn: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-<polyline points="10 17 15 12 10 7" />
-<line x1="15" x2="3" y1="12" y2="12" />"###
+    data: r###"<path d="m10 17 5-5-5-5" />
+<path d="M15 12H3" />
+<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -16733,9 +16828,9 @@ pub static LuLogOut: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-<polyline points="16 17 21 12 16 7" />
-<line x1="21" x2="9" y1="12" y2="12" />"###
+    data: r###"<path d="m16 17 5-5-5-5" />
+<path d="M21 12H9" />
+<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -17364,10 +17459,10 @@ pub static LuMaximize2: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="15 3 21 3 21 9" />
-<polyline points="9 21 3 21 3 15" />
-<line x1="21" x2="14" y1="3" y2="10" />
-<line x1="3" x2="10" y1="21" y2="14" />"###
+    data: r###"<path d="M15 3h6v6" />
+<path d="m21 3-7 7" />
+<path d="m3 21 7-7" />
+<path d="M9 21H3v-6" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -18227,10 +18322,10 @@ pub static LuMinimize2: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="4 14 10 14 10 20" />
-<polyline points="20 10 14 10 14 4" />
-<line x1="14" x2="21" y1="10" y2="3" />
-<line x1="3" x2="10" y1="21" y2="14" />"###
+    data: r###"<path d="m14 10 7-7" />
+<path d="M20 10h-6V4" />
+<path d="m3 21 7-7" />
+<path d="M4 14h6v6" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -20114,8 +20209,7 @@ pub static LuPaperclip: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M13.234 20.252 21 12.3" />
-<path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486" />"###
+    data: r###"<path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -22148,8 +22242,8 @@ pub static LuReply: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="9 17 4 12 9 7" />
-<path d="M20 18v-2a4 4 0 0 0-4-4H4" />"###
+    data: r###"<path d="M20 18v-2a4 4 0 0 0-4-4H4" />
+<path d="m9 17-5-5 5-5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -22165,9 +22259,9 @@ pub static LuReplyAll: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="7 17 2 12 7 7" />
-<polyline points="12 17 7 12 12 7" />
-<path d="M22 18v-2a4 4 0 0 0-4-4H7" />"###
+    data: r###"<path d="m12 17-5-5 5-5" />
+<path d="M22 18v-2a4 4 0 0 0-4-4H7" />
+<path d="m7 17-5-5 5-5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -22638,11 +22732,11 @@ pub static LuSatellite: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M13 7 9 3 5 7l4 4" />
-<path d="m17 11 4 4-4 4-4-4" />
-<path d="m8 12 4 4 6-6-4-4Z" />
-<path d="m16 8 3-3" />
-<path d="M9 21a6 6 0 0 0-6-6" />"###
+    data: r###"<path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5" />
+<path d="M16.5 7.5 19 5" />
+<path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5" />
+<path d="M9 21a6 6 0 0 0-6-6" />
+<path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -23303,9 +23397,9 @@ pub static LuSeparatorHorizontal: &icondata_core::IconData = &icondata_core::Ico
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="3" x2="21" y1="12" y2="12" />
-<polyline points="8 8 12 4 16 8" />
-<polyline points="16 16 12 20 8 16" />"###
+    data: r###"<path d="m16 16-4 4-4-4" />
+<path d="M3 12h18" />
+<path d="m8 8 4-4 4 4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -23321,9 +23415,9 @@ pub static LuSeparatorVertical: &icondata_core::IconData = &icondata_core::IconD
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="12" x2="12" y1="3" y2="21" />
-<polyline points="8 8 4 12 8 16" />
-<polyline points="16 16 20 12 16 8" />"###
+    data: r###"<path d="M12 3v18" />
+<path d="m16 16 4-4-4-4" />
+<path d="m8 8-4 4 4 4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -23480,9 +23574,9 @@ pub static LuShare: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-<polyline points="16 6 12 2 8 6" />
-<line x1="12" x2="12" y1="2" y2="15" />"###
+    data: r###"<path d="M12 2v13" />
+<path d="m16 6-4-4-4 4" />
+<path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -25134,7 +25228,7 @@ pub static LuSquareCheckBig: &icondata_core::IconData = &icondata_core::IconData
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5" />
+    data: r###"<path d="M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344" />
 <path d="m9 11 3 3L22 4" />"###
 };
 #[allow(non_upper_case_globals)]
@@ -25219,9 +25313,9 @@ pub static LuSquareCode: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M10 9.5 8 12l2 2.5" />
-<path d="m14 9.5 2 2.5-2 2.5" />
-<rect width="18" height="18" x="3" y="3" rx="2" />"###
+    data: r###"<path d="m10 9-3 3 3 3" />
+<path d="m14 15 3-3-3-3" />
+<rect x="3" y="3" width="18" height="18" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -25342,6 +25436,30 @@ pub static LuSquareDashedMousePointer: &icondata_core::IconData = &icondata_core
 <path d="M3 9v1" />
 <path d="M21 9v2" />
 <path d="M3 14v1" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static LuSquareDashedTopSolid: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: Some("round"),
+    stroke_linejoin: Some("round"),
+    stroke_width: Some("2"),
+    stroke: Some("currentColor"),
+    fill: Some("none"),
+    data: r###"<path d="M14 21h1" />
+<path d="M21 14v1" />
+<path d="M21 19a2 2 0 0 1-2 2" />
+<path d="M21 9v1" />
+<path d="M3 14v1" />
+<path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+<path d="M3 9v1" />
+<path d="M5 21a2 2 0 0 1-2-2" />
+<path d="M9 21h1" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -27048,8 +27166,8 @@ pub static LuTerminal: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="4 17 10 11 4 5" />
-<line x1="12" x2="20" y1="19" y2="19" />"###
+    data: r###"<path d="M12 19h8" />
+<path d="m4 17 6-6-6-6" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28037,8 +28155,8 @@ pub static LuTrendingDown: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="22 17 13.5 8.5 8.5 13.5 2 7" />
-<polyline points="16 17 22 17 22 11" />"###
+    data: r###"<path d="M16 17h6v-6" />
+<path d="m22 17-8.5-8.5-5 5L2 7" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28054,8 +28172,8 @@ pub static LuTrendingUp: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-<polyline points="16 7 22 7 22 13" />"###
+    data: r###"<path d="M16 7h6v6" />
+<path d="m22 7-8.5 8.5-5-5L2 17" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28246,8 +28364,8 @@ pub static LuTv: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<rect width="20" height="15" x="2" y="7" rx="2" ry="2" />
-<polyline points="17 2 12 7 7 2" />"###
+    data: r###"<path d="m17 2-5 5-5-5" />
+<rect width="20" height="15" x="2" y="7" rx="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28330,9 +28448,9 @@ pub static LuType: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<polyline points="4 7 4 4 20 4 20 7" />
-<line x1="9" x2="15" y1="20" y2="20" />
-<line x1="12" x2="12" y1="4" y2="20" />"###
+    data: r###"<path d="M12 4v16" />
+<path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2" />
+<path d="M9 20h6" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28533,13 +28651,13 @@ pub static LuUniversity: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<circle cx="12" cy="10" r="1" />
-<path d="M22 20V8h-4l-6-4-6 4H2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2" />
-<path d="M6 17v.01" />
-<path d="M6 13v.01" />
-<path d="M18 17v.01" />
-<path d="M18 13v.01" />
-<path d="M14 22v-5a2 2 0 0 0-2-2a2 2 0 0 0-2 2v5" />"###
+    data: r###"<path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+<path d="M18 12h.01" />
+<path d="M18 16h.01" />
+<path d="M22 7a1 1 0 0 0-1-1h-2a2 2 0 0 1-1.143-.359L13.143 2.36a2 2 0 0 0-2.286-.001L6.143 5.64A2 2 0 0 1 5 6H3a1 1 0 0 0-1 1v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+<path d="M6 12h.01" />
+<path d="M6 16h.01" />
+<circle cx="12" cy="10" r="2" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28613,9 +28731,9 @@ pub static LuUpload: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-<polyline points="17 8 12 3 7 8" />
-<line x1="12" x2="12" y1="3" y2="15" />"###
+    data: r###"<path d="M12 3v12" />
+<path d="m17 8-5-5-5 5" />
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -28670,9 +28788,9 @@ pub static LuUserCheck: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-<circle cx="9" cy="7" r="4" />
-<polyline points="16 11 18 13 22 9" />"###
+    data: r###"<path d="m16 11 2 2 4-4" />
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+<circle cx="9" cy="7" r="4" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -29570,10 +29688,10 @@ pub static LuWarehouse: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z" />
-<path d="M6 18h12" />
-<path d="M6 14h12" />
-<rect width="12" height="12" x="6" y="10" />"###
+    data: r###"<path d="M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11" />
+<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z" />
+<path d="M6 13h12" />
+<path d="M6 17h12" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -30055,10 +30173,10 @@ pub static LuWrapText: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<line x1="3" x2="21" y1="6" y2="6" />
+    data: r###"<path d="m16 16-2 2 2 2" />
 <path d="M3 12h15a3 3 0 1 1 0 6h-4" />
-<polyline points="16 16 14 18 16 20" />
-<line x1="3" x2="10" y1="18" y2="18" />"###
+<path d="M3 18h7" />
+<path d="M3 6h18" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]

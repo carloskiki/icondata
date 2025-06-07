@@ -4504,7 +4504,7 @@ pub static FiTwitch: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: Some("2"),
     stroke: Some("currentColor"),
     fill: Some("none"),
-    data: r###"<path d="M21 2H3v16h5v4l4-4h5l4-4V2zM11 11V7M16 11V7" />"###
+    data: r###"<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]

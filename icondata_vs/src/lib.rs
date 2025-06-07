@@ -770,6 +770,22 @@ pub static VsChevronUp: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsChip: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 1H6V3H7V1H8V3H9V1H10V3H11L12 4V5L14 5V6H12V7L14 7V8H12V9L14 9V10H12V11L11 12H10V14H9V12H8V14H7V12H6V14H5V12H4L3 11L3 10H1V9L3 9L3 8H1V7L3 7L3 6H1V5L3 5L3 4L4 3H5L5 1ZM4 11H11V4L4 4L4 11Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsChromeClose: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1092,6 +1108,47 @@ pub static VsCode: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsCodeOss: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 2H6V13H5V2Z" />
+<path d="M7 3H11V4H7V3Z" />
+<path d="M9 5H13V6H9V5Z" />
+<path d="M9 7H13V8H9V7Z" />
+<path d="M9 9H13V10H9V9Z" />
+<path d="M7 11H11V12H7V11Z" />
+<path d="M2.00012 1L1.00012 2V7H2.00012V2H14.0001V13H2.00012V7H1.00012V13L2.00012 14H14.0001L15.0001 13V2L14.0001 1H2.00012Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsCoffee: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M3 1V1.5C3 1.96954 3.27449 2.20587 3.8 2.6L3.83977 2.62978C4.31392 2.98457 5 3.49793 5 4.5V5H4V4.5C4 4.03046 3.72551 3.79413 3.2 3.4L3.16023 3.37022C2.68608 3.01543 2 2.50207 2 1.5V1H3Z" />
+<path d="M6 1V1.5C6 1.96954 6.27449 2.20587 6.8 2.6L6.83977 2.62978C7.31392 2.98457 8 3.49793 8 4.5V5H7V4.5C7 4.03046 6.72551 3.79413 6.2 3.4L6.16023 3.37022C5.68608 3.01543 5 2.50207 5 1.5V1H6Z" />
+<path d="M9 1V1.5C9 1.96954 9.27449 2.20587 9.8 2.6L9.83977 2.62978C10.3139 2.98457 11 3.49793 11 4.5V5H10V4.5C10 4.03046 9.72551 3.79413 9.2 3.4L9.16023 3.37022C8.68608 3.01543 8 2.50207 8 1.5V1H9Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 7L3 6H13.5C14.8807 6 16 7.11929 16 8.5C16 9.88071 14.8807 11 13.5 11H12.874C12.4299 12.7252 10.8638 14 9 14H6C3.79086 14 2 12.2091 2 10V7ZM12 10V7H3V10C3 11.6569 4.34315 13 6 13H9C10.6569 13 12 11.6569 12 10ZM13 7V10H13.5C14.3284 10 15 9.32843 15 8.5C15 7.67157 14.3284 7 13.5 7H13Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsCollapseAll: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1257,6 +1314,24 @@ pub static VsCompassDot: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsCopilot: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("15"),
+    view_box: Some("0 0 16 15"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M6.25 8.99987C6.66421 8.99987 7 9.33566 7 9.74987V11.2499C7 11.6641 6.66421 11.9999 6.25 11.9999C5.83579 11.9999 5.5 11.6641 5.5 11.2499V9.74987C5.5 9.33566 5.83579 8.99987 6.25 8.99987Z" />
+<path d="M10.5 9.74987C10.5 9.33566 10.1642 8.99987 9.75 8.99987C9.33579 8.99987 9 9.33566 9 9.74987V11.2499C9 11.6641 9.33579 11.9999 9.75 11.9999C10.1642 11.9999 10.5 11.6641 10.5 11.2499V9.74987Z" />
+<path d="M7.86079 1.76938C7.91028 1.8224 7.95663 1.87717 8 1.93356C8.04337 1.87717 8.08972 1.8224 8.13921 1.76938C8.82116 1.03872 9.87702 0.870479 11.0828 1.00446C12.3131 1.14115 13.2283 1.53222 13.8072 2.26504C14.3725 2.98056 14.5 3.87915 14.5 4.74987C14.5 5.3219 14.447 5.897 14.2459 6.40494L14.4135 7.24309L14.4798 7.27626C15.4115 7.74209 16 8.69432 16 9.73594V10.9999C16 11.2394 15.9143 11.4382 15.844 11.567C15.7691 11.7042 15.6751 11.8282 15.5851 11.9333C15.4049 12.1435 15.181 12.3462 14.9801 12.5135C14.7751 12.6844 14.5728 12.836 14.4235 12.9438C14.1842 13.1166 13.9389 13.276 13.6826 13.4234C13.3756 13.6 12.9344 13.8329 12.3867 14.0653C11.2956 14.5282 9.75604 14.9999 8 14.9999C6.24396 14.9999 4.70442 14.5282 3.61334 14.0653C3.06559 13.8329 2.62435 13.6 2.31739 13.4234C2.0611 13.276 1.81581 13.1166 1.57651 12.9438C1.42716 12.836 1.2249 12.6844 1.01986 12.5135C0.819 12.3462 0.595113 12.1435 0.414932 11.9333C0.3249 11.8282 0.230849 11.7042 0.156031 11.567C0.0857453 11.4382 0 11.2394 1.90735e-06 10.9999L0 9.73594C0 8.69432 0.588507 7.74209 1.52017 7.27626L1.5865 7.24309L1.75413 6.40493C1.55295 5.89699 1.5 5.3219 1.5 4.74987C1.5 3.87915 1.62745 2.98056 2.19275 2.26504C2.77172 1.53222 3.68694 1.14115 4.91718 1.00446C6.12298 0.870479 7.17884 1.03872 7.86079 1.76938ZM3.0231 7.70862L3 7.82413V12.0852C3.02086 12.0974 3.04268 12.1101 3.06543 12.1232C3.32878 12.2747 3.71567 12.4793 4.19916 12.6844C5.17058 13.0965 6.50604 13.4999 8 13.4999C9.49396 13.4999 10.8294 13.0965 11.8008 12.6844C12.2843 12.4793 12.6712 12.2747 12.9346 12.1232C12.9573 12.1101 12.9791 12.0974 13 12.0852V7.82413L12.9769 7.70862C12.4867 7.91826 11.9022 7.99987 11.25 7.99987C10.1037 7.99987 9.19051 7.67234 8.54033 7.00859C8.3213 6.78499 8.14352 6.5347 8 6.26581C7.85648 6.5347 7.6787 6.78499 7.45967 7.00859C6.80949 7.67234 5.89633 7.99987 4.75 7.99987C4.09776 7.99987 3.51325 7.91826 3.0231 7.70862ZM6.76421 2.79286C6.57116 2.58602 6.12702 2.37926 5.08282 2.49528C4.06306 2.60859 3.60328 2.89934 3.36975 3.19493C3.12255 3.50781 3 3.98422 3 4.74987C3 5.54218 3.12905 5.92064 3.3082 6.12028C3.47045 6.30109 3.82768 6.49987 4.75 6.49987C5.60367 6.49987 6.08903 6.26426 6.38811 5.95894C6.70349 5.63698 6.91507 5.13264 7.00579 4.40684C7.12274 3.47123 6.96805 3.01126 6.76421 2.79286ZM9.23579 2.79286C9.03195 3.01126 8.87726 3.47123 8.99421 4.40684C9.08493 5.13264 9.29651 5.63698 9.61189 5.95894C9.91097 6.26426 10.3963 6.49987 11.25 6.49987C12.1723 6.49987 12.5295 6.30109 12.6918 6.12028C12.871 5.92064 13 5.54218 13 4.74987C13 3.98422 12.8775 3.50781 12.6303 3.19493C12.3967 2.89934 11.9369 2.60859 10.9172 2.49528C9.87298 2.37926 9.42884 2.58602 9.23579 2.79286Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsCopy: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -1271,6 +1346,24 @@ pub static VsCopy: &icondata_core::IconData = &icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4l1-1h5.414L14 6.586V14l-1 1H5l-1-1V4zm9 3l-3-3H5v10h8V7z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 1L2 2v10l1 1V2h6.414l-1-1H3z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsCoverage: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8.88415 8.32009L6.38415 11.3201L5.64648 11.3535L4.14648 9.85355L4.85359 9.14644L5.96644 10.2593L8.11593 7.6799L8.88415 8.32009Z" />
+<path d="M11.9803 9.96948C12.6105 9.33654 13 8.46376 13 7.5C13 5.567 11.433 4 9.5 4C9.03097 4 8.58349 4.09226 8.17472 4.25962C7.69756 4.10726 7.19209 4.01826 6.66821 4.00252C7.44155 3.37561 8.42691 3 9.5 3C11.9853 3 14 5.01472 14 7.5C14 9.2103 13.0459 10.6978 11.6408 11.4591C11.8197 10.99 11.9362 10.4901 11.9803 9.96948Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C4.567 13 3 11.433 3 9.5C3 7.567 4.567 6 6.5 6C8.433 6 10 7.567 10 9.5C10 11.433 8.433 13 6.5 13ZM6.5 14C8.98528 14 11 11.9853 11 9.5C11 7.01472 8.98528 5 6.5 5C4.01472 5 2 7.01472 2 9.5C2 11.9853 4.01472 14 6.5 14Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -1853,7 +1946,7 @@ pub static VsDebugStop: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M2 2v12h12V2H2zm10.75 10.75h-9.5v-9.5h9.5v9.5z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.99976L14 2.99976V12.9998L13 13.9998H3L2 12.9998L2 2.99976L3 1.99976H13ZM12.7461 3.25057L3.25469 3.25057L3.25469 12.7504H12.7461V3.25057Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -1986,6 +2079,23 @@ pub static VsDiffModified: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsDiffMultiple: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M9.70994 1.29L12.7099 4.29L12.9999 5V14L11.9999 15H2.99994L1.99994 14V2L2.99994 1H8.99994L9.70994 1.29ZM2.99994 14H11.9999V5L8.99994 2H2.99994V14ZM7 6H5V7H7V9H8V7H10V6H8V4H7V6ZM5 11H10V12H5V11Z" />
+<path d="M12.4199 0.999756L14.7099 3.28976L14.9999 3.99976L15 13.9998L14 14.9998L13.9999 3.99976L10.9999 0.999756H12.4199Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsDiffRemoved: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2016,6 +2126,22 @@ pub static VsDiffRenamed: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 1h13l.5.5v13l-.5.5h-13l-.5-.5v-13l.5-.5zM2 14h12V2H2v12zm2-5h3v3l5-4-5-4v3H4v2z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsDiffSingle: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7099 1.28902L13.7099 4.28902L13.9999 4.99902V13.999L12.9999 14.999H3.99994L2.99994 13.999V1.99902L3.99994 0.999023H9.99994L10.7099 1.28902ZM3.99994 13.999H12.9999V4.99902L9.99994 1.99902H3.99994V13.999ZM8 5.99902H6V6.99902H8V8.99902H9V6.99902H11V5.99902H9V3.99902H8V5.99902ZM6 10.999H11V11.999H6V10.999Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2242,7 +2368,8 @@ pub static VsFeedback: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M7.549 10.078c.46.182.88.424 1.258.725.378.3.701.65.97 1.046a4.829 4.829 0 0 1 .848 2.714V15H9.75v-.438a3.894 3.894 0 0 0-1.155-2.782 4.054 4.054 0 0 0-1.251-.84 3.898 3.898 0 0 0-1.532-.315A3.894 3.894 0 0 0 3.03 11.78a4.06 4.06 0 0 0-.84 1.251c-.206.474-.31.985-.315 1.531V15H1v-.438a4.724 4.724 0 0 1 .848-2.713 4.918 4.918 0 0 1 2.229-1.77 2.994 2.994 0 0 1-.555-.493 3.156 3.156 0 0 1-.417-.602 2.942 2.942 0 0 1-.26-.683 3.345 3.345 0 0 1-.095-.739c0-.423.08-.82.24-1.189a3.095 3.095 0 0 1 1.626-1.627 3.067 3.067 0 0 1 2.386-.007 3.095 3.095 0 0 1 1.627 1.627 3.067 3.067 0 0 1 .157 1.928c-.06.237-.148.465-.266.684a3.506 3.506 0 0 1-.417.608c-.16.187-.345.35-.554.492zM5.812 9.75c.301 0 .584-.057.848-.17a2.194 2.194 0 0 0 1.162-1.163c.119-.269.178-.554.178-.854a2.138 2.138 0 0 0-.643-1.538 2.383 2.383 0 0 0-.697-.472 2.048 2.048 0 0 0-.848-.178c-.3 0-.583.057-.847.17a2.218 2.218 0 0 0-1.17 1.17c-.113.264-.17.547-.17.848 0 .3.057.583.17.847.115.264.27.497.466.697a2.168 2.168 0 0 0 1.552.643zM15 1v7h-1.75l-2.625 2.625V8H9.75v-.875h1.75v1.388l1.388-1.388h1.237v-5.25h-8.75v1.572a7.255 7.255 0 0 0-.438.069 2.62 2.62 0 0 0-.437.123V1H15z" />"###
+    data: r###"<path d="M4.5 1L4 1.5V3.02746C4.16417 3.00932 4.331 3 4.5 3C4.669 3 4.83583 3.00932 5 3.02746V2H14V7H12.2929L11 8.29289V7H8.97254C8.99068 7.16417 9 7.331 9 7.5C9 7.669 8.99068 7.83583 8.97254 8H10V9.5L10.8536 9.85355L12.7071 8H14.5L15 7.5V1.5L14.5 1H4.5Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.41705 10.4288C7.37039 9.80348 8 8.72527 8 7.5C8 5.567 6.433 4 4.5 4C2.567 4 1 5.567 1 7.5C1 8.72527 1.62961 9.80348 2.58295 10.4288C2.11364 10.6498 1.68557 10.9505 1.31802 11.318C0.900156 11.7359 0.568688 12.232 0.342542 12.7779C0.180451 13.1692 0.0747425 13.5807 0.0278638 14C0.00933826 14.1657 0 14.3326 0 14.5V15H1L0.999398 14.5C0.999398 14.4784 0.999599 14.4567 1 14.4351C1.00811 13.9975 1.09823 13.5651 1.26587 13.1604C1.44179 12.7357 1.69964 12.3498 2.0247 12.0247C2.34976 11.6996 2.73566 11.4418 3.16038 11.2659C3.57088 11.0958 4.00986 11.0056 4.45387 10.9997C4.46922 10.9999 4.4846 11 4.5 11C4.5154 11 4.53078 10.9999 4.54613 10.9997C4.99014 11.0056 5.42912 11.0958 5.83962 11.2659C6.26433 11.4418 6.65024 11.6996 6.9753 12.0247C7.30036 12.3498 7.55821 12.7357 7.73413 13.1604C7.90177 13.5651 7.99189 13.9975 8 14.4351C8.0004 14.4567 8.0006 14.4784 8.0006 14.5L8 15H9V14.5C9 14.3326 8.99066 14.1657 8.97214 14C8.92526 13.5807 8.81955 13.1692 8.65746 12.7779C8.43131 12.232 8.09984 11.7359 7.68198 11.318C7.31443 10.9505 6.88636 10.6498 6.41705 10.4288ZM4.5 10C3.11929 10 2 8.88071 2 7.5C2 6.11929 3.11929 5 4.5 5C5.88071 5 7 6.11929 7 7.5C7 8.88071 5.88071 10 4.5 10Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2570,6 +2697,25 @@ pub static VsFolderOpened: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsGame: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 3H12C14.2091 3 16 4.79086 16 7V10C16 12.2091 14.2091 14 12 14H4C1.79086 14 0 12.2091 0 10V7C0 4.79086 1.79086 3 4 3ZM4 4C2.34315 4 1 5.34315 1 7V10C1 11.6569 2.34315 13 4 13H12C13.6569 13 15 11.6569 15 10V7C15 5.34315 13.6569 4 12 4H4Z" />
+<path d="M5.5 6C5.22386 6 5 6.22386 5 6.5V8H3.5C3.22386 8 3 8.22386 3 8.5C3 8.77614 3.22386 9 3.5 9H5V10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5V9H7.5C7.77614 9 8 8.77614 8 8.5C8 8.22386 7.77614 8 7.5 8H6V6.5C6 6.22386 5.77614 6 5.5 6Z" />
+<path d="M13 7C13 7.55228 12.5523 8 12 8C11.4477 8 11 7.55228 11 7C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7Z" />
+<path d="M12 10C12 10.5523 11.5523 11 11 11C10.4477 11 10 10.5523 10 10C10 9.44772 10.4477 9 11 9C11.5523 9 12 9.44772 12 10Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsGear: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2663,6 +2809,25 @@ pub static VsGitCompare: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.389 12.99l-1.27-1.27.67-.7 2.13 2.13v.7l-2.13 2.13-.71-.71L7.349 14h-1.85a2.49 2.49 0 0 1-2.5-2.5V5.95a2.59 2.59 0 0 1-1.27-.68 2.52 2.52 0 0 1-.54-2.73A2.5 2.5 0 0 1 3.499 1a2.45 2.45 0 0 1 1 .19 2.48 2.48 0 0 1 1.35 1.35c.133.317.197.658.19 1a2.5 2.5 0 0 1-2 2.45v5.5a1.5 1.5 0 0 0 1.5 1.5h1.85zm-4.68-8.25a1.5 1.5 0 0 0 2.08-2.08 1.55 1.55 0 0 0-.68-.56 1.49 1.49 0 0 0-.86-.08 1.49 1.49 0 0 0-1.18 1.18 1.49 1.49 0 0 0 .08.86c.117.277.311.513.56.68zm10.33 6.3c.48.098.922.335 1.27.68a2.51 2.51 0 0 1 .31 3.159 2.5 2.5 0 1 1-3.47-3.468c.269-.182.571-.308.89-.37V5.49a1.5 1.5 0 0 0-1.5-1.5h-1.85l1.27 1.27-.71.71-2.13-2.13v-.7l2.13-2.13.71.71-1.27 1.27h1.85a2.49 2.49 0 0 1 2.5 2.5v5.55zm-.351 3.943a1.5 1.5 0 0 0 1.1-2.322 1.55 1.55 0 0 0-.68-.56 1.49 1.49 0 0 0-.859-.08 1.49 1.49 0 0 0-1.18 1.18 1.49 1.49 0 0 0 .08.86 1.5 1.5 0 0 0 1.539.922z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsGitFetch: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9 2H8V3H9V2Z" />
+<path d="M8.14644 14L3.14645 9.00001L3.85356 8.2929L8 12.4393L8 11L9 11L9 12.4393L13.1464 8.2929L13.8535 9.00001L8.85354 14H8.14644Z" />
+<path d="M8 5H9V6H8V5Z" />
+<path d="M9 8H8V9H9V8Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2784,6 +2949,59 @@ pub static VsGitPullRequestNewChanges: &icondata_core::IconData = &icondata_core
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsGitStash: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.00013 6.79289L7.00013 1H8.00013L8.00013 6.79289L10.6466 4.14644L11.3537 4.85355L7.85368 8.35355H7.14658L3.64658 4.85355L4.35368 4.14644L7.00013 6.79289Z" />
+<path d="M1.50012 9L1.00012 9.5V14.5L1.50012 15H13.5001L14.0001 14.5V9.5L13.5001 9H9.95012C9.71848 10.1411 8.7096 11 7.50012 11C6.29064 11 5.28177 10.1411 5.05013 9H1.50012ZM10.6633 10H13.0001V14H2.00012V10H4.33694C4.89867 11.1825 6.10392 12 7.50012 12C8.89632 12 10.1016 11.1825 10.6633 10Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsGitStashApply: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.00013 3.20711L7.00013 5H8.00013L8.00013 3.20711L10.6466 5.85356L11.3537 5.14645L7.85368 1.64645H7.14658L3.64658 5.14645L4.35368 5.85356L7.00013 3.20711Z" />
+<path d="M1.50012 9L1.00012 9.5V14.5L1.50012 15H13.5001L14.0001 14.5V9.5L13.5001 9H9.95012C9.71848 10.1411 8.7096 11 7.50012 11C6.29064 11 5.28177 10.1411 5.05013 9H1.50012ZM10.6633 10H13.0001V14H2.00012V10H4.33694C4.89867 11.1825 6.10392 12 7.50012 12C8.89632 12 10.1016 11.1825 10.6633 10Z" />
+<rect x="7" y="6" width="1" height="1" />
+<rect x="7" y="8" width="1" height="1" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsGitStashPop: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M7.00013 3.20711L7.00013 9H8.00013L8.00013 3.20711L10.6466 5.85356L11.3537 5.14645L7.85368 1.64645H7.14658L3.64658 5.14645L4.35368 5.85356L7.00013 3.20711Z" />
+<path d="M1.50012 9L1.00012 9.5V14.5L1.50012 15H13.5001L14.0001 14.5V9.5L13.5001 9H9.95012C9.71848 10.1411 8.7096 11 7.50012 11C6.29064 11 5.28177 10.1411 5.05013 9H1.50012ZM10.6633 10H13.0001V14H2.00012V10H4.33694C4.89867 11.1825 6.10392 12 7.50012 12C8.89632 12 10.1016 11.1825 10.6633 10Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsGithub: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2848,6 +3066,23 @@ pub static VsGithubInverted: &icondata_core::IconData = &icondata_core::IconData
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsGithubProject: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6.00012 13H7.00012L7.00012 7.00001L13.0001 7.00001V6.00001L7.00012 6.00001L7.00012 3H6.00012L6.00012 6.00001L3.00012 6.00001V7.00001H6.00012L6.00012 13Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.50012 2H13.5001L14.0001 2.5V13.5L13.5001 14H2.50012L2.00012 13.5V2.5L2.50012 2ZM3.00012 13H13.0001V3H3.00012V13Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsGlobe: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2877,6 +3112,24 @@ pub static VsGoToFile: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 5.914l2.06-2.06v-.708L5.915 1l-.707.707.043.043.25.25 1 1h-3a2.5 2.5 0 0 0 0 5H4V7h-.5a1.5 1.5 0 1 1 0-3h3L5.207 5.293 5.914 6 6 5.914zM11 2H8.328l-1-1H12l.71.29 3 3L16 5v9l-1 1H6l-1-1V6.5l1 .847V14h9V6h-4V2zm1 0v3h3l-3-3z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsGoToSearch: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M4.80005 10.1501L1 13.84L1.75 14.5L5.53003 10.83L4.80005 10.1501Z" />
+<path d="M3.99982 9C4.91017 10.7808 6.76276 12 8.90011 12C11.9377 12 14.4001 9.53757 14.4001 6.5C14.4001 3.46243 11.9377 1 8.90011 1C8.468 1 8.04754 1.04983 7.64414 1.14406L8.51623 2.01614C8.64277 2.00545 8.7708 2 8.90011 2C11.3854 2 13.4001 4.01472 13.4001 6.5C13.4001 8.98528 11.3854 11 8.90011 11C7.3399 11 5.96514 10.206 5.15788 9H3.99982Z" />
+<path d="M8.06075 3.8535L5.91431 5.99994L5.2072 5.29283L6.50009 3.99994H3.50012C3.1023 3.99994 2.72077 4.15798 2.43946 4.43928C2.15816 4.72059 2.00012 5.10212 2.00012 5.49994C2.00012 5.89777 2.15816 6.2793 2.43946 6.5606C2.72077 6.84191 3.1023 6.99994 3.50012 6.99994H4.00012V7.99994H3.50012C2.83708 7.99994 2.2012 7.73655 1.73236 7.26771C1.26351 6.79887 1.00012 6.16298 1.00012 5.49994C1.00012 4.8369 1.26351 4.20102 1.73236 3.73218C2.2012 3.26334 2.83708 2.99994 3.50012 2.99994H6.50009L5.2072 1.70705L5.91431 0.999939L8.06075 3.14639L8.06075 3.8535Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -3679,6 +3932,24 @@ pub static VsLightbulbAutofix: &icondata_core::IconData = &icondata_core::IconDa
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsLightbulbSparkle: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8.96712 9.60787C9.14342 9.26307 9.37775 8.94649 9.67076 8.65806C9.85736 8.47395 10.0257 8.28064 10.1757 8.07816C10.2158 7.96017 10.2532 7.8333 10.2873 7.69683C10.3615 7.40021 10.5382 7.15079 10.7739 6.98253C10.945 6.51978 11.0303 6.0252 11.0303 5.49953C11.0303 5.08664 10.9769 4.68802 10.8698 4.30397C10.763 3.92088 10.6112 3.56285 10.4143 3.23016C10.2177 2.89376 9.98251 2.5891 9.70882 2.31641C9.43513 2.0437 9.12939 1.80938 8.79183 1.61351C8.45803 1.41739 8.09883 1.2662 7.71451 1.15983C7.32923 1.0532 6.92934 1 6.51514 1C6.10094 1 5.70106 1.0532 5.31578 1.15983C4.93146 1.2662 4.56979 1.41764 4.23195 1.61364C3.89858 1.80953 3.59503 2.04383 3.32146 2.31641C3.04777 2.58911 2.81257 2.89377 2.61595 3.23018C2.41907 3.56286 2.26728 3.92089 2.16048 4.30397C2.05342 4.68802 2 5.08664 2 5.49953C2 6.11672 2.11756 6.69107 2.35361 7.22134C2.58896 7.75003 2.92468 8.22903 3.35953 8.65806C3.69832 8.99156 3.95683 9.36336 4.13553 9.77209C4.31772 10.1795 4.40927 10.622 4.40927 11.1009V12.7012C4.40927 12.8807 4.44311 13.0503 4.51141 13.2091C4.57895 13.3661 4.67168 13.5038 4.78961 13.6213C4.90753 13.7388 5.04564 13.8311 5.20306 13.8984C5.36223 13.9663 5.53223 14 5.71205 14H7.31823C7.49806 14 7.66806 13.9663 7.82723 13.8984C7.98464 13.8311 8.12275 13.7388 8.24068 13.6213C8.35861 13.5038 8.45134 13.3661 8.51887 13.2091C8.58718 13.0503 8.62102 12.8807 8.62102 12.7012V12.2734C8.61586 12.2723 8.61079 12.2712 8.60581 12.2701C8.54613 12.2576 8.50299 12.2525 8.48241 12.2506L8.47329 12.2498C8.1415 12.2429 7.8415 12.1066 7.62162 11.8894V12.7012C7.62162 12.7823 7.59309 12.8512 7.5314 12.9127C7.46971 12.9741 7.40022 13.0028 7.31823 13.0028H5.71205C5.63007 13.0028 5.56058 12.9741 5.49888 12.9127C5.4372 12.8512 5.40867 12.7823 5.40867 12.7012V10.5H7.35405C7.54359 10.0663 7.97213 9.76091 8.4732 9.75037L8.48232 9.7496C8.50289 9.74769 8.54604 9.74259 8.60572 9.73002C8.69843 9.7105 8.82494 9.67428 8.96712 9.60787Z" />
+<path d="M11.5 14C12.25 11.0001 14.5 11.0001 14.5 11.0001C14.5 11.0001 12.25 11 11.5 8C10.75 11 8.5 11.0001 8.5 11.0001C8.5 11.0001 10.75 11 11.5 14Z" stroke="#FFCC00" stroke-width="0.75" stroke-linejoin="round" />
+<path d="M12.926 13.2393C13.2849 12.977 13.5538 12.6663 13.7328 12.4216C13.8545 12.2553 14.1455 12.2553 14.2672 12.4216C14.4462 12.6663 14.7151 12.977 15.074 13.2393C15.2403 13.3609 15.2403 13.6393 15.074 13.7609C14.7151 14.0231 14.4462 14.3337 14.2672 14.5784C14.1455 14.7447 13.8545 14.7447 13.7328 14.5784C13.5538 14.3337 13.2849 14.0231 12.926 13.7609C12.7597 13.6393 12.7597 13.3609 12.926 13.2393Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsLink: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3978,6 +4249,40 @@ pub static VsMapFilled: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsMapVertical: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.77711 2.49976L12.0979 2.49976L10.2229 5.49976L3.90211 5.49976L5.77711 2.49976ZM3.90211 6.49976L10.2229 6.49976L12.0979 9.49976L5.77711 9.49976L3.90211 6.49976ZM11.0896 5.99976L13.424 2.26475L13 1.49976L5.49999 1.49976L5.07599 1.73476L2.57599 5.73476L2.57599 6.26476L4.91036 9.99976L2.57599 13.7348L2.99999 14.4998L10.5 14.4998L10.924 14.2648L13.424 10.2648L13.424 9.73476L11.0896 5.99976ZM5.77711 10.4998L12.0979 10.4998L10.2229 13.4998L3.90211 13.4998L5.77711 10.4998Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsMapVerticalFilled: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.5 2L13 2L10.8125 5.5L3.3125 5.5L5.5 2Z" />
+<path d="M12.6875 9.5L5.1875 9.5L3.3125 6.5L10.8125 6.5L12.6875 9.5Z" />
+<path d="M12.6875 10.5L5.1875 10.5L3 14L10.5 14L12.6875 10.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsMarkdown: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4058,6 +4363,42 @@ pub static VsMerge: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsMic: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.50012 8.5V4.5C5.50012 3.11929 6.61941 2 8.00012 2C9.38083 2 10.5001 3.11929 10.5001 4.5V8.5C10.5001 9.88071 9.38083 11 8.00012 11C6.61941 11 5.50012 9.88071 5.50012 8.5ZM8.00012 1C6.06713 1 4.50012 2.567 4.50012 4.5V8.5C4.50012 10.433 6.06713 12 8.00012 12C9.93312 12 11.5001 10.433 11.5001 8.5V4.5C11.5001 2.567 9.93312 1 8.00012 1Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.50012 16V14H8.50012V16H7.50012Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.50012 14C4.7387 14 2.50012 11.7614 2.50012 9H3.50012C3.50012 11.2091 5.29098 13 7.50012 13H8.50012C10.7093 13 12.5001 11.2091 12.5001 9H13.5001C13.5001 11.7614 11.2615 14 8.50012 14H7.50012Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsMicFilled: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.00012 4.5C5.00012 2.84315 6.34327 1.5 8.00012 1.5C9.65698 1.5 11.0001 2.84315 11.0001 4.5V8.5C11.0001 10.1569 9.65698 11.5 8.00012 11.5C6.34327 11.5 5.00012 10.1569 5.00012 8.5V4.5Z" stroke="#C5C5C5" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.50012 16V14H8.50012V16H7.50012Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.50012 14C4.7387 14 2.50012 11.7614 2.50012 9H3.50012C3.50012 11.2091 5.29098 13 7.50012 13H8.50012C10.7093 13 12.5001 11.2091 12.5001 9H13.5001C13.5001 11.7614 11.2615 14 8.50012 14H7.50012Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsMilestone: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4135,6 +4476,23 @@ pub static VsMultipleWindows: &icondata_core::IconData = &icondata_core::IconDat
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.5l.5-.5h8l.5.5v7l-.5.5H12V8h2V4H7v1H6V1.5zM7 2v1h7V2H7zM1.5 7l-.5.5v7l.5.5h8l.5-.5v-7L9.5 7h-8zM2 9V8h7v1H2zm0 1h7v4H2v-4z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsMusic: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M14 7H13V9.49982C12.5822 9.18597 12.0628 9 11.5 9C10.1193 9 9 10.1193 9 11.5C9 12.8807 10.1193 14 11.5 14C12.8807 14 14 12.8807 14 11.5V7ZM11.5 10C12.3284 10 13 10.6716 13 11.5C13 12.3284 12.3284 13 11.5 13C10.6716 13 10 12.3284 10 11.5C10 10.6716 10.6716 10 11.5 10Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.4688 2.00098L5.46881 2.50098L5 3V10.4998C4.58217 10.186 4.0628 10 3.5 10C2.11929 10 1 11.1193 1 12.5C1 13.8807 2.11929 15 3.5 15C4.88071 15 6 13.8807 6 12.5V6.46974L13 6.03224V7H14V2.5L13.4688 2.00098ZM13 3.03223V5.03029L6 5.46779V3.46973L13 3.03223ZM3.5 11C4.32843 11 5 11.6716 5 12.5C5 13.3284 4.32843 14 3.5 14C2.67157 14 2 13.3284 2 12.5C2 11.6716 2.67157 11 3.5 11Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -4397,6 +4755,24 @@ pub static VsPassFilled: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsPercentage: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.60962 12.6877L11.6096 2.68765L12.3905 3.31235L4.39049 13.3123L3.60962 12.6877Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6.5C3.67157 6.5 3 5.82843 3 5C3 4.17157 3.67157 3.5 4.5 3.5C5.32843 3.5 6 4.17157 6 5C6 5.82843 5.32843 6.5 4.5 6.5ZM4.5 7.5C5.88071 7.5 7 6.38071 7 5C7 3.61929 5.88071 2.5 4.5 2.5C3.11929 2.5 2 3.61929 2 5C2 6.38071 3.11929 7.5 4.5 7.5Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 12.5C10.6716 12.5 10 11.8284 10 11C10 10.1716 10.6716 9.5 11.5 9.5C12.3284 9.5 13 10.1716 13 11C13 11.8284 12.3284 12.5 11.5 12.5ZM11.5 13.5C12.8807 13.5 14 12.3807 14 11C14 9.61929 12.8807 8.5 11.5 8.5C10.1193 8.5 9 9.61929 9 11C9 12.3807 10.1193 13.5 11.5 13.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsPerson: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4426,6 +4802,22 @@ pub static VsPersonAdd: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13 10h-1v2h-2v1h2v2h1v-2h2v-1h-2v-2zM8.556 2.169a1 1 0 1 0-1.112 1.663 1 1 0 0 0 1.112-1.663zm-1.667-.832A2 2 0 1 1 9.11 4.663a2 2 0 0 1-2.22-3.326zM6.77 5.49h2.46A1.77 1.77 0 0 1 11 7.26V8h-1v-.74a.76.76 0 0 0-.77-.77H6.77a.76.76 0 0 0-.77.77V10h1v3.31a.2.2 0 0 0 .2.2H8v1.02h-.8a1.2 1.2 0 0 1-1.2-1.2V11a1.06 1.06 0 0 1-1-1.1V7.26a1.77 1.77 0 0 1 1.77-1.77z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsPiano: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M1 2L0 3V9H1V3H3V8.5L3.5 9H4.5L5 8.5V3H7V8.5L7.5 9H8.5L9 8.5V3H11V8.5L11.5 9H12.5L13 8.5V3H15V13H12V10H11V13H8.5V10H7.5V13H5V10H4V13H1V9H0V13L1 14H15L16 13V3L15 2H1Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -4929,6 +5321,27 @@ pub static VsRepoClone: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsRepoFetch: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<rect x="8" y="4" width="1" height="1" rx="0.5" />
+<rect x="8" y="6" width="1" height="1" rx="0.5" />
+<rect x="8" y="2" width="1" height="1" rx="0.5" />
+<rect x="8" width="1" height="1" rx="0.5" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 6.43935L9.00016 6.43935L12.6466 2.79291L13.3537 3.50001L8.85371 8.00001H8.14661L3.64661 3.50001L4.35371 2.79291L8.00016 6.43935Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.03544 12H2V13H5.03544C5.27806 14.6961 6.73676 16 8.5 16C10.2632 16 11.7219 14.6961 11.9646 13H15.0001V12H11.9646C11.7219 10.3039 10.2632 9 8.5 9C6.73676 9 5.27806 10.3039 5.03544 12ZM11 12.5C11 13.8807 9.88071 15 8.5 15C7.11929 15 6 13.8807 6 12.5C6 11.1193 7.11929 10 8.5 10C9.88071 10 11 11.1193 11 12.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsRepoForcePush: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4941,7 +5354,9 @@ pub static VsRepoForcePush: &icondata_core::IconData = &icondata_core::IconData 
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.74 1h9.76l.5.5v12l-.5.5H10v-1h3v-2h-3v-1h3V2H4v8h3v1H3.74a.74.74 0 0 0-.74.75v.5a.74.74 0 0 0 .74.75H7v1H3.74A1.74 1.74 0 0 1 2 12.25v-9.5A1.74 1.74 0 0 1 3.74 1zm1.6 4.83l.71.7L8 4.58v1.45L5.38 8.65l.71.7 1.92-1.92V15h1V7.328l2.03 2.022.7-.7L9 5.9V4.538l2 1.992.7-.7L8.88 3h-.71L5.34 5.83z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 2.56065L8 3.5H9L9.00016 2.56065L12.6466 6.20709L13.3537 5.49999L8.85371 0.999986H8.14661L3.64661 5.49999L4.35371 6.20709L8.00016 2.56065Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 5.56065V7.99999H9.00016V5.56065L12.6466 9.20709L13.3537 8.49999L8.85371 3.99999H8.14661L3.64661 8.49999L4.35371 9.20709L8.00016 5.56065Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.03544 12H2V13H5.03544C5.27806 14.6961 6.73676 16 8.5 16C10.2632 16 11.7219 14.6961 11.9646 13H15.0001V12H11.9646C11.7219 10.3039 10.2632 9 8.5 9C6.73676 9 5.27806 10.3039 5.03544 12ZM11 12.5C11 13.8807 9.88071 15 8.5 15C7.11929 15 6 13.8807 6 12.5C6 11.1193 7.11929 10 8.5 10C9.88071 10 11 11.1193 11 12.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -4973,7 +5388,8 @@ pub static VsRepoPull: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.5V3h-1V2H3v8h10v3.5l-.5.5H8v-1h4v-2H2.735a.72.72 0 0 0-.285.06.74.74 0 0 0-.4.4.93.93 0 0 0-.05.29v.5a.93.93 0 0 0 .05.29.74.74 0 0 0 .4.4c.091.04.19.06.29.06H3v1h-.26a1.9 1.9 0 0 1-.67-.13 1.77 1.77 0 0 1-.94-.95 1.7 1.7 0 0 1-.13-.67v-9.5a1.7 1.7 0 0 1 .13-.62 1.77 1.77 0 0 1 .94-1A1.9 1.9 0 0 1 2.74 1h9.76l.5.5zM2 10.17V2.748v7.422zM5 3H4v1h1V3zm0 2H4v1h1V5zM4 7h1v1H4V7zm8.07-3.61l-.7.71 1.92 1.92H7v1h6.39l-2.02 2.03.7.7 2.83-2.82v-.71l-2.83-2.83zM5.5 13.49L4.28 15H4v-3h3v3h-.28L5.5 13.49z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5.03544 12H2V13H5.03544C5.27806 14.6961 6.73676 16 8.5 16C10.2632 16 11.7219 14.6961 11.9646 13H15.0001V12H11.9646C11.7219 10.3039 10.2632 9 8.5 9C6.73676 9 5.27806 10.3039 5.03544 12ZM11 12.5C11 13.8807 9.88071 15 8.5 15C7.11929 15 6 13.8807 6 12.5C6 11.1193 7.11929 10 8.5 10C9.88071 10 11 11.1193 11 12.5Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 6.43934V0H9.00016V6.43934L12.6466 2.7929L13.3537 3.5L8.85371 8H8.14661L3.64661 3.5L4.35371 2.7929L8.00016 6.43934Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -4989,7 +5405,8 @@ pub static VsRepoPush: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1H3.74A1.74 1.74 0 0 0 2 2.75v9.5A1.74 1.74 0 0 0 3.74 14H7v-1H3.74a.74.74 0 0 1-.74-.75v-.5a.74.74 0 0 1 .74-.75H7v-1H4V2h9v8h-3v1h3v2h-3v1h3.5l.5-.5v-12l-.5-.5zM3 2.73a.75.75 0 0 0 0 .02v7.42-7.44zM6 3H5v1h1V3zm-.62 5.65l.71.7 1.92-1.92V15h1V7.328l2.03 2.022.7-.7-2.82-2.83h-.71L5.38 8.65zM5 5h1v1H5V5z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 2.56066V8H9.00016V2.56066L12.6466 6.2071L13.3537 5.5L8.85371 0.999996H8.14661L3.64661 5.5L4.35371 6.2071L8.00016 2.56066Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.03544 12H2V13H5.03544C5.27806 14.6961 6.73676 16 8.5 16C10.2632 16 11.7219 14.6961 11.9646 13H15.0001V12H11.9646C11.7219 10.3039 10.2632 9 8.5 9C6.73676 9 5.27806 10.3039 5.03544 12ZM11 12.5C11 13.8807 9.88071 15 8.5 15C7.11929 15 6 13.8807 6 12.5C6 11.1193 7.11929 10 8.5 10C9.88071 10 11 11.1193 11 12.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5022,6 +5439,25 @@ pub static VsRequestChanges: &icondata_core::IconData = &icondata_core::IconData
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7099 1.29L13.7099 4.29L13.9999 5V14L12.9999 15H3.99994L2.99994 14V2L3.99994 1H9.99994L10.7099 1.29ZM3.99994 14H12.9999V5L9.99994 2H3.99994V14ZM8 6H6V7H8V9H9V7H11V6H9V4H8V6ZM6 11H11V12H6V11Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsRobot: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 9.10457 7.10457 10 6 10C4.89543 10 4 9.10457 4 8C4 6.89543 4.89543 6 6 6C7.10457 6 8 6.89543 8 8ZM5 8C5 8.55228 5.44772 9 6 9C6.55228 9 7 8.55228 7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C8 9.10457 8.89543 10 10 10C11.1046 10 12 9.10457 12 8C12 6.89543 11.1046 6 10 6C8.89543 6 8 6.89543 8 8ZM11 8C11 8.55228 10.5523 9 10 9C9.44772 9 9 8.55228 9 8C9 7.44772 9.44772 7 10 7C10.5523 7 11 7.44772 11 8Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.51001 11.251C9.02924 11.1436 9.50557 10.8864 9.88001 10.511L10.58 11.221C9.89283 11.901 8.96678 12.2851 8.00001 12.291C7.51235 12.2873 7.03006 12.1888 6.58001 12.001C6.13507 11.8188 5.73061 11.5503 5.39001 11.211L6.09001 10.501C6.40274 10.8119 6.78661 11.0418 7.20833 11.1708C7.63005 11.2998 8.07687 11.3238 8.51001 11.241V11.251Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 1.5C9.5 2.15311 9.0826 2.70873 8.5 2.91465V3H11C12.6569 3 14 4.34315 14 6V7L15 8V10L14 11V12C14 13.6569 12.6569 15 11 15H5C3.34315 15 2 13.6569 2 12V11L1 10V8L2 7V6C2 4.34315 3.34315 3 5 3H7.5V2.91465C6.9174 2.70873 6.5 2.15311 6.5 1.5C6.5 0.671573 7.17157 0 8 0C8.82843 0 9.5 0.671573 9.5 1.5ZM5 4C3.89543 4 3 4.89543 3 6V12C3 13.1046 3.89543 14 5 14H11C12.1046 14 13 13.1046 13 12V6C13 4.89543 12.1046 4 11 4H5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5142,6 +5578,24 @@ pub static VsRunAll: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsRunAllCoverage: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("17"),
+    height: Some("16"),
+    view_box: Some("0 0 17 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9 13.3497L15.7795 8.83V8L6.99951 2.14667V3.35L14.5995 8.42L9 12.1481V13.3497Z" />
+<path d="M2.99951 2.41L3.77951 2L12.7795 8V8.83L9 11.3497V10.1507L11.5995 8.42L3.99951 3.35V7H2.99951V2.41Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.87227 7.80803C4.02215 7.7549 3.16715 7.9667 2.46857 8.44931C1.71646 8.9338 1.23555 9.6327 0.970474 10.4798C0.70131 11.2888 0.756984 12.1983 1.07646 12.997C1.39862 13.8024 1.98841 14.444 2.73373 14.8699C3.48976 15.3019 4.34985 15.407 5.20068 15.2475C6.06198 15.086 6.81126 14.6028 7.34443 13.963L7.34919 13.9568C7.87759 13.2698 8.20141 12.468 8.20141 11.6053C8.20141 10.5403 7.82698 9.63047 7.13464 8.88488L7.12941 8.87965C6.54444 8.29468 5.74055 7.8623 4.87227 7.80803ZM2.95059 9.18281C3.4627 8.81037 4.12262 8.66604 4.74312 8.71377L4.74421 8.71385C5.40049 8.76073 5.9647 9.04069 6.44119 9.51719C6.95689 10.0329 7.24402 10.7907 7.24402 11.5546V11.5618L7.24453 11.5689C7.29089 12.2179 7.0608 12.8292 6.67758 13.3579C6.25159 13.8765 5.68456 14.2071 5.06818 14.3493C4.45885 14.49 3.80161 14.3963 3.23776 14.0674C2.66626 13.7341 2.23786 13.259 1.95045 12.6362C1.67052 12.0297 1.66791 11.3722 1.85872 10.752L1.85983 10.7482C2.04996 10.0827 2.42849 9.56252 2.95059 9.18281ZM6.35355 10.8536L4.35355 12.8536H3.64645L2.64645 11.8536L3.35355 11.1464L4 11.7929L5.64645 10.1464L6.35355 10.8536Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsRunBelow: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5155,6 +5609,23 @@ pub static VsRunBelow: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M1.8 1.01l-.78.41v12l.78.42 9-6v-.83l-9-6zm.22 11.48V2.36l7.6 5.07-7.6 5.06zM12.85 15h-.71l-2.5-2.5.71-.71L12 13.44V8h1v5.45l1.65-1.65.71.71L12.85 15z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsRunCoverage: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M5 2.41L5.78 2L14.78 8V8.83L9 12.6833V11.4826L13.6 8.42L6 3.35V7H5V2.41Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.87227 7.80803C4.02215 7.7549 3.16715 7.9667 2.46857 8.44931C1.71646 8.9338 1.23555 9.6327 0.970474 10.4798C0.70131 11.2888 0.756984 12.1983 1.07646 12.997C1.39862 13.8024 1.98841 14.444 2.73373 14.8699C3.48976 15.3019 4.34985 15.407 5.20068 15.2475C6.06198 15.086 6.81126 14.6028 7.34443 13.963L7.34919 13.9568C7.87759 13.2698 8.20141 12.468 8.20141 11.6053C8.20141 10.5403 7.82698 9.63047 7.13464 8.88488L7.12941 8.87965C6.54444 8.29468 5.74055 7.8623 4.87227 7.80803ZM2.95059 9.18281C3.4627 8.81037 4.12262 8.66604 4.74312 8.71377L4.74421 8.71385C5.40049 8.76073 5.96469 9.04069 6.44119 9.51719C6.95689 10.0329 7.24402 10.7907 7.24402 11.5546V11.5618L7.24453 11.5689C7.29089 12.2179 7.0608 12.8292 6.67758 13.3579C6.25159 13.8765 5.68456 14.2071 5.06818 14.3493C4.45885 14.49 3.80161 14.3963 3.23776 14.0674C2.66626 13.7341 2.23786 13.259 1.95045 12.6362C1.67052 12.0297 1.66791 11.3722 1.85872 10.752L1.85983 10.7482C2.04996 10.0827 2.42849 9.56252 2.95059 9.18281ZM6.35355 10.8536L4.35355 12.8536H3.64645L2.64645 11.8536L3.35355 11.1464L4 11.7929L5.64645 10.1464L6.35355 10.8536Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5316,7 +5787,7 @@ pub static VsSend: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M15 8L1 14L2.55634 8L1 2L15 8ZM2.32996 3.52208L3.38403 7.5855H11.8024L2.32996 3.52208ZM3.36988 8.45527L2.32996 12.4779L11.7175 8.45527H3.36988Z" />"###
+    data: r###"<path d="M1 1.91L1.78 1.5L15 7.44899V8.3999L1.78 14.33L1 13.91L2.58311 8L1 1.91ZM3.6118 8.5L2.33037 13.1295L13.5 7.8999L2.33037 2.83859L3.6118 7.43874L9 7.5V8.5H3.6118Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5380,7 +5851,7 @@ pub static VsSettings: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2h-1v5h1V2zm6.1 5H6.4L6 6.45v-1L6.4 5h3.2l.4.5v1l-.4.5zm-5 3H1.4L1 9.5v-1l.4-.5h3.2l.4.5v1l-.4.5zm3.9-8h-1v2h1V2zm-1 6h1v6h-1V8zm-4 3h-1v3h1v-3zm7.9 0h3.19l.4-.5v-.95l-.4-.5H11.4l-.4.5v.95l.4.5zm2.1-9h-1v6h1V2zm-1 10h1v2h-1v-2z" />"###
+    data: r###"<path d="M6 9.5C6.93191 9.5 7.71496 10.1374 7.93699 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7455 13.8231 11.9496 13.5899 11.9919L13.5 12L7.93673 12.001C7.71435 12.8631 6.93155 13.5 6 13.5C5.06845 13.5 4.28565 12.8631 4.06327 12.001L2.5 12C2.22386 12 2 11.7761 2 11.5C2 11.2545 2.17688 11.0504 2.41012 11.0081L2.5 11H4.06301C4.28504 10.1374 5.06809 9.5 6 9.5ZM6 10.5C5.44772 10.5 5 10.9477 5 11.5C5 12.0523 5.44772 12.5 6 12.5C6.55228 12.5 7 12.0523 7 11.5C7 10.9477 6.55228 10.5 6 10.5ZM10 2.5C10.9319 2.5 11.715 3.13738 11.937 3.99998L13.5 4C13.7761 4 14 4.22386 14 4.5C14 4.74546 13.8231 4.94961 13.5899 4.99194L13.5 5L11.9367 5.00102C11.7144 5.86312 10.9316 6.5 10 6.5C9.06845 6.5 8.28565 5.86312 8.06327 5.00102L2.5 5C2.22386 5 2 4.77614 2 4.5C2 4.25454 2.17688 4.05039 2.41012 4.00806L2.5 4L8.06301 3.99998C8.28504 3.13738 9.06809 2.5 10 2.5ZM10 3.5C9.44772 3.5 9 3.94772 9 4.5C9 5.05228 9.44772 5.5 10 5.5C10.5523 5.5 11 5.05228 11 4.5C11 3.94772 10.5523 3.5 10 3.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5397,6 +5868,25 @@ pub static VsSettingsGear: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M19.85 8.75l4.15.83v4.84l-4.15.83 2.35 3.52-3.43 3.43-3.52-2.35-.83 4.15H9.58l-.83-4.15-3.52 2.35-3.43-3.43 2.35-3.52L0 14.42V9.58l4.15-.83L1.8 5.23 5.23 1.8l3.52 2.35L9.58 0h4.84l.83 4.15 3.52-2.35 3.43 3.43-2.35 3.52zm-1.57 5.07l4-.81v-2l-4-.81-.54-1.3 2.29-3.43-1.43-1.43-3.43 2.29-1.3-.54-.81-4h-2l-.81 4-1.3.54-3.43-2.29-1.43 1.43L6.38 8.9l-.54 1.3-4 .81v2l4 .81.54 1.3-2.29 3.43 1.43 1.43 3.43-2.29 1.3.54.81 4h2l.81-4 1.3-.54 3.43 2.29 1.43-1.43-2.29-3.43.54-1.3zm-8.186-4.672A3.43 3.43 0 0 1 12 8.57 3.44 3.44 0 0 1 15.43 12a3.43 3.43 0 1 1-5.336-2.852zm.956 4.274c.281.188.612.288.95.288A1.7 1.7 0 0 0 13.71 12a1.71 1.71 0 1 0-2.66 1.422z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsShare: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5 4.00098H1.5L1 4.50098V14.501L1.5 15.001H12.5L13 14.501V11.5H12V14.001H2V5.00098H5V4.00098Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 11H5V8.5C5 6.08104 6.71776 4.06329 9 3.60002L9.00001 2.34885C9.00001 1.6039 9.60391 1 10.3489 1C10.7217 1 11.0779 1.15432 11.3329 1.42632L14.9795 5.31606V6.68394L11.3329 10.5737C11.0779 10.8457 10.7217 11 10.3489 11C9.60391 11 9 10.3961 9 9.65114L9 8.60178C8.06714 8.81236 7.61607 9.31244 7.36824 9.74614C7.18768 10.0621 7.09298 10.3875 7.04484 10.6402C7.02115 10.7646 7.00983 10.8656 7.0045 10.931C7.00184 10.9635 7.00072 10.9866 7.00025 10.9988L7.00019 11.0007C6.82645 11.0003 6.16755 11 6 11ZM10 4.5C7.89378 4.5 6.16778 6.12788 6.01152 8.1941C6.00389 8.29507 6 8.39708 6 8.5V10H6.1758C6.31381 9.55711 6.56019 9.03517 7 8.58307C7.44225 8.12846 8.08008 7.74446 9 7.58244C9.30193 7.52926 9.63424 7.5 10 7.5L10 9.65114C10 9.84381 10.1562 10 10.3489 10C10.4453 10 10.5374 9.96009 10.6034 9.88974L14.25 6L10.6034 2.11026C10.5374 2.03991 10.4453 2 10.3489 2C10.1562 2 10 2.15619 10 2.34886L10 4.5Z" />
+<path d="M7.00019 11.0007C7.05203 11.0008 7.06069 11.0006 7.00019 11.0007Z" />
+<path d="M7.00019 11.0007L6.99996 11.0079L6.99997 11.0065L6.99999 11.0039L7 11.0021L7.00019 11.0007V11.0007Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5464,6 +5954,23 @@ pub static VsSmiley: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsSnake: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M8 3.5C8 3.77614 7.77614 4 7.5 4C7.22386 4 7 3.77614 7 3.5C7 3.22386 7.22386 3 7.5 3C7.77614 3 8 3.22386 8 3.5Z" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 1C4.11929 1 3 2.11929 3 3.5C3 4.00954 3.15244 4.48348 3.4142 4.8787L2.29289 6H0.5V7H2V8.5H3V6.70711L4.1213 5.5858C4.51652 5.84756 4.99046 6 5.5 6H7V8H6C4.89543 8 4 8.89543 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14H13C14.1046 14 15 13.1046 15 12C15 10.8954 14.1046 10 13 10C13 8.89543 12.1046 8 11 8V4.5C11 2.567 9.433 1 7.5 1H5.5ZM4 3.5C4 2.67157 4.67157 2 5.5 2H7.5C8.88071 2 10 3.11929 10 4.5V8.5L10.5 9H11C11.5523 9 12 9.44772 12 10V11H13C13.5523 11 14 11.4477 14 12C14 12.5523 13.5523 13 13 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H5V10C5 9.44772 5.44772 9 6 9H7.5L8 8.5V5.5L7.5 5H5.5C4.67157 5 4 4.32843 4 3.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsSortPrecedence: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5509,6 +6016,22 @@ pub static VsSparkle: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M5.39804 10.8069C5.57428 10.9312 5.78476 10.9977 6.00043 10.9973C6.21633 10.9975 6.42686 10.93 6.60243 10.8043C6.77993 10.6739 6.91464 10.4936 6.98943 10.2863L7.43643 8.91335C7.55086 8.56906 7.74391 8.25615 8.00028 7.99943C8.25665 7.74272 8.56929 7.54924 8.91343 7.43435L10.3044 6.98335C10.4564 6.92899 10.5936 6.84019 10.7055 6.7239C10.8174 6.60762 10.9008 6.467 10.9492 6.31308C10.9977 6.15916 11.0098 5.99611 10.9847 5.83672C10.9596 5.67732 10.8979 5.52591 10.8044 5.39435C10.6703 5.20842 10.4794 5.07118 10.2604 5.00335L8.88543 4.55635C8.54091 4.44212 8.22777 4.24915 7.97087 3.99277C7.71396 3.73638 7.52035 3.42363 7.40543 3.07935L6.95343 1.69135C6.88113 1.48904 6.74761 1.31428 6.57143 1.19135C6.43877 1.09762 6.28607 1.03614 6.12548 1.01179C5.96489 0.987448 5.80083 1.00091 5.64636 1.05111C5.49188 1.1013 5.35125 1.18685 5.23564 1.30095C5.12004 1.41505 5.03265 1.55454 4.98043 1.70835L4.52343 3.10835C4.40884 3.44317 4.21967 3.74758 3.97022 3.9986C3.72076 4.24962 3.41753 4.44067 3.08343 4.55735L1.69243 5.00535C1.54065 5.05974 1.40352 5.14852 1.29177 5.26474C1.18001 5.38095 1.09666 5.52145 1.04824 5.67523C0.999819 5.82902 0.987639 5.99192 1.01265 6.1512C1.03767 6.31048 1.0992 6.46181 1.19243 6.59335C1.32027 6.7728 1.50105 6.90777 1.70943 6.97935L3.08343 7.42435C3.52354 7.57083 3.90999 7.84518 4.19343 8.21235C4.35585 8.42298 4.4813 8.65968 4.56443 8.91235L5.01643 10.3033C5.08846 10.5066 5.22179 10.6826 5.39804 10.8069ZM5.48343 3.39235L6.01043 2.01535L6.44943 3.39235C6.61312 3.8855 6.88991 4.33351 7.25767 4.70058C7.62544 5.06765 8.07397 5.34359 8.56743 5.50635L9.97343 6.03535L8.59143 6.48335C8.09866 6.64764 7.65095 6.92451 7.28382 7.29198C6.9167 7.65945 6.64026 8.10742 6.47643 8.60035L5.95343 9.97835L5.50443 8.59935C5.34335 8.10608 5.06943 7.65718 4.70443 7.28835C4.3356 6.92031 3.88653 6.64272 3.39243 6.47735L2.01443 5.95535L3.40043 5.50535C3.88672 5.33672 4.32775 5.05855 4.68943 4.69235C5.04901 4.32464 5.32049 3.88016 5.48343 3.39235ZM11.5353 14.8494C11.6713 14.9456 11.8337 14.9973 12.0003 14.9974C12.1654 14.9974 12.3264 14.9464 12.4613 14.8514C12.6008 14.7529 12.7058 14.6129 12.7613 14.4514L13.0093 13.6894C13.0625 13.5309 13.1515 13.3869 13.2693 13.2684C13.3867 13.1498 13.5307 13.0611 13.6893 13.0094L14.4613 12.7574C14.619 12.7029 14.7557 12.6004 14.8523 12.4644C14.9257 12.3614 14.9736 12.2424 14.9921 12.1173C15.0106 11.9922 14.9992 11.8645 14.9588 11.7447C14.9184 11.6249 14.8501 11.5163 14.7597 11.428C14.6692 11.3396 14.5591 11.2739 14.4383 11.2364L13.6743 10.9874C13.5162 10.9348 13.3724 10.8462 13.2544 10.7285C13.1364 10.6109 13.0473 10.4674 12.9943 10.3094L12.7423 9.53638C12.6886 9.37853 12.586 9.24191 12.4493 9.14638C12.3473 9.07343 12.2295 9.02549 12.1056 9.00642C11.9816 8.98736 11.8549 8.99772 11.7357 9.03665C11.6164 9.07558 11.508 9.142 11.4192 9.23054C11.3304 9.31909 11.2636 9.42727 11.2243 9.54638L10.9773 10.3084C10.925 10.466 10.8375 10.6097 10.7213 10.7284C10.6066 10.8449 10.4667 10.9335 10.3123 10.9874L9.53931 11.2394C9.38025 11.2933 9.2422 11.3959 9.1447 11.5326C9.04721 11.6694 8.99522 11.8333 8.99611 12.0013C8.99699 12.1692 9.0507 12.3326 9.14963 12.4683C9.24856 12.604 9.38769 12.7051 9.54731 12.7574L10.3103 13.0044C10.4692 13.0578 10.6136 13.1471 10.7323 13.2654C10.8505 13.3836 10.939 13.5283 10.9903 13.6874L11.2433 14.4614C11.2981 14.6178 11.4001 14.7534 11.5353 14.8494ZM10.6223 12.0564L10.4433 11.9974L10.6273 11.9334C10.9291 11.8284 11.2027 11.6556 11.4273 11.4284C11.6537 11.1994 11.8248 10.9216 11.9273 10.6164L11.9853 10.4384L12.0443 10.6194C12.1463 10.9261 12.3185 11.2047 12.5471 11.4332C12.7757 11.6617 13.0545 11.8336 13.3613 11.9354L13.5563 11.9984L13.3763 12.0574C13.0689 12.1596 12.7898 12.3322 12.5611 12.5616C12.3324 12.791 12.1606 13.0707 12.0593 13.3784L12.0003 13.5594L11.9423 13.3784C11.8409 13.0702 11.6687 12.7901 11.4394 12.5605C11.2102 12.3309 10.9303 12.1583 10.6223 12.0564Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsSparkleFilled: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M 5.398 10.807 C 5.574 10.931 5.785 10.998 6 10.997 C 6.216 10.998 6.427 10.93 6.602 10.804 C 6.78 10.674 6.915 10.494 6.989 10.286 L 7.436 8.913 C 7.551 8.569 7.744 8.256 8 7.999 C 8.257 7.743 8.569 7.549 8.913 7.434 L 10.304 6.983 C 10.456 6.929 10.594 6.84 10.706 6.724 C 10.817 6.608 10.901 6.467 10.949 6.313 C 10.998 6.159 11.01 5.996 10.985 5.837 C 10.96 5.677 10.898 5.526 10.804 5.394 C 10.67 5.208 10.479 5.071 10.26 5.003 L 8.885 4.556 C 8.541 4.442 8.228 4.249 7.971 3.993 C 7.714 3.736 7.52 3.424 7.405 3.079 L 6.953 1.691 C 6.881 1.489 6.748 1.314 6.571 1.191 C 6.439 1.098 6.286 1.036 6.125 1.012 C 5.965 0.987 5.801 1.001 5.646 1.051 C 5.492 1.101 5.351 1.187 5.236 1.301 C 5.12 1.415 5.033 1.555 4.98 1.708 L 4.523 3.108 C 4.409 3.443 4.22 3.748 3.97 3.999 C 3.721 4.25 3.418 4.441 3.083 4.557 L 1.692 5.005 C 1.541 5.06 1.404 5.149 1.292 5.265 C 1.18 5.381 1.097 5.521 1.048 5.675 C 1 5.829 0.988 5.992 1.013 6.151 C 1.038 6.31 1.099 6.462 1.192 6.593 C 1.32 6.773 1.501 6.908 1.709 6.979 L 3.083 7.424 C 3.524 7.571 3.91 7.845 4.193 8.212 C 4.356 8.423 4.481 8.66 4.564 8.912 L 5.016 10.303 C 5.088 10.507 5.222 10.683 5.398 10.807 Z M 11.535 14.849 C 11.671 14.946 11.834 14.997 12 14.997 C 12.165 14.997 12.326 14.946 12.461 14.851 C 12.601 14.753 12.706 14.613 12.761 14.451 L 13.009 13.689 C 13.063 13.531 13.152 13.387 13.269 13.268 C 13.387 13.15 13.531 13.061 13.689 13.009 L 14.461 12.757 C 14.619 12.703 14.756 12.6 14.852 12.464 C 14.926 12.361 14.974 12.242 14.992 12.117 C 15.011 11.992 14.999 11.865 14.959 11.745 C 14.918 11.625 14.85 11.516 14.76 11.428 C 14.669 11.34 14.559 11.274 14.438 11.236 L 13.674 10.987 C 13.516 10.935 13.372 10.846 13.254 10.729 C 13.136 10.611 13.047 10.467 12.994 10.309 L 12.742 9.536 C 12.689 9.379 12.586 9.242 12.449 9.146 C 12.347 9.073 12.23 9.025 12.106 9.006 C 11.982 8.987 11.855 8.998 11.736 9.037 C 11.616 9.076 11.508 9.142 11.419 9.231 C 11.33 9.319 11.264 9.427 11.224 9.546 L 10.977 10.308 C 10.925 10.466 10.838 10.61 10.721 10.728 C 10.607 10.845 10.467 10.934 10.312 10.987 L 9.539 11.239 C 9.38 11.293 9.242 11.396 9.145 11.533 C 9.047 11.669 8.995 11.833 8.996 12.001 C 8.997 12.169 9.051 12.333 9.15 12.468 C 9.249 12.604 9.388 12.705 9.547 12.757 L 10.31 13.004 C 10.469 13.058 10.614 13.147 10.732 13.265 C 10.851 13.384 10.939 13.528 10.99 13.687 L 11.243 14.461 C 11.298 14.618 11.4 14.753 11.535 14.849 Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5622,6 +6145,22 @@ pub static VsStopCircle: &icondata_core::IconData = &icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path d="M6 6h4v4H6z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 1c1.6.1 3.1.9 4.2 2 1.3 1.4 2 3.1 2 5.1 0 1.6-.6 3.1-1.6 4.4-1 1.2-2.4 2.1-4 2.4-1.6.3-3.2.1-4.6-.7-1.4-.8-2.5-2-3.1-3.5C.9 9.2.8 7.5 1.3 6c.5-1.6 1.4-2.9 2.8-3.8C5.4 1.3 7 .9 8.6 1zm.5 12.9c1.3-.3 2.5-1 3.4-2.1.8-1.1 1.3-2.4 1.2-3.8 0-1.6-.6-3.2-1.7-4.3-1-1-2.2-1.6-3.6-1.7-1.3-.1-2.7.2-3.8 1-1.1.8-1.9 1.9-2.3 3.3-.4 1.3-.4 2.7.2 4 .6 1.3 1.5 2.3 2.7 3 1.2.7 2.6.9 3.9.6z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsSurroundWith: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.99988H3V2.99988H1.5L1 3.49988V12.4999L1.5 12.9999H3V11.9999H2V3.99988ZM14.5 2.99988H13V3.99988H14V11.9999H13V12.9999H14.5L15 12.4999V3.49988L14.5 2.99988ZM5 8.99988C5.55228 8.99988 6 8.55216 6 7.99988C6 7.44759 5.55228 6.99988 5 6.99988C4.44772 6.99988 4 7.44759 4 7.99988C4 8.55216 4.44772 8.99988 5 8.99988ZM9 7.99988C9 8.55216 8.55228 8.99988 8 8.99988C7.44772 8.99988 7 8.55216 7 7.99988C7 7.44759 7.44772 6.99988 8 6.99988C8.55228 6.99988 9 7.44759 9 7.99988ZM11 8.99988C11.5523 8.99988 12 8.55216 12 7.99988C12 7.44759 11.5523 6.99988 11 6.99988C10.4477 6.99988 10 7.44759 10 7.99988C10 8.55216 10.4477 8.99988 11 8.99988Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6153,7 +6692,9 @@ pub static VsTerminal: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M3 1.5L1.5 3v18L3 22.5h18l1.5-1.5V3L21 1.5H3zM3 21V3h18v18H3zm5.656-4.01l1.038 1.061 5.26-5.243v-.912l-5.26-5.26-1.035 1.06 4.59 4.702-4.593 4.592z" />"###
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3L3 1.5H21L22.5 3V21L21 22.5H3L1.5 21V3ZM3 3V21H21V3H3Z" />
+<path d="M7.06078 7.49988L6.00012 8.56054L10.2427 12.8032L6 17.0459L7.06066 18.1066L12 13.1673V12.4391L7.06078 7.49988Z" />
+<rect x="12" y="16.5" width="6" height="1.5" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6266,7 +6807,12 @@ pub static VsTerminalUbuntu: &icondata_core::IconData = &icondata_core::IconData
     stroke_width: None,
     stroke: None,
     fill: Some("currentColor"),
-    data: r###"<path d="M3.26 8A1.37 1.37 0 1 1 .52 8a1.37 1.37 0 0 1 2.74 0zm7.79 6.66a1.37 1.37 0 1 0 2.374-1.37 1.37 1.37 0 0 0-2.374 1.37zm2.37-11.95a1.37 1.37 0 1 0-2.37-1.373 1.37 1.37 0 0 0 2.37 1.373zM8.79 4.1a3.9 3.9 0 0 1 3.89 3.55h2a5.93 5.93 0 0 0-1.73-3.8 1.91 1.91 0 0 1-1.66-.12 2.001 2.001 0 0 1-.94-1.38 6 6 0 0 0-1.54-.2 5.83 5.83 0 0 0-2.61.61l1 1.73a3.94 3.94 0 0 1 1.59-.39zM4.88 8a3.93 3.93 0 0 1 1.66-3.2l-1-1.7A5.93 5.93 0 0 0 3.1 6.5a1.92 1.92 0 0 1 0 3 5.93 5.93 0 0 0 2.42 3.4l1-1.7A3.93 3.93 0 0 1 4.88 8zm3.91 3.91a4 4 0 0 1-1.65-.37l-1 1.73c.81.403 1.704.612 2.61.61.52 0 1.038-.067 1.54-.2a2 2 0 0 1 .94-1.38 1.911 1.911 0 0 1 1.66-.12 5.93 5.93 0 0 0 1.73-3.8h-2a3.91 3.91 0 0 1-3.83 3.53z" />"###
+    data: r###"<path d="M13.1365 3.06502C13.1365 4.20551 12.1841 5.13005 11.0093 5.13005C9.83451 5.13005 8.88214 4.20551 8.88214 3.06502C8.88214 1.92454 9.83451 1 11.0093 1C12.1841 1 13.1365 1.92454 13.1365 3.06502Z" />
+<path d="M4.25439 7.59961C4.25439 8.74009 3.30201 9.66464 2.12719 9.66464C0.952378 9.66464 0 8.74009 0 7.59961C0 6.45913 0.952378 5.53459 2.12719 5.53459C3.30201 5.53459 4.25439 6.45913 4.25439 7.59961Z" />
+<path d="M6.93725 12.9266C5.40046 12.6063 4.11546 11.6538 3.39482 10.3052C2.83046 10.5581 2.18796 10.634 1.57151 10.5244C2.44843 12.6063 4.29779 14.115 6.5639 14.587C7.0588 14.6881 7.57106 14.7387 8.07464 14.7387C7.68394 14.2414 7.46687 13.6346 7.44951 13.0108L7.38203 13.0005C7.23751 12.9786 7.08738 12.9557 6.93725 12.9266Z" />
+<path d="M12.6503 12.935C12.6503 14.0755 11.6979 15 10.5231 15C9.34827 15 8.3959 14.0755 8.3959 12.935C8.3959 11.7945 9.34827 10.87 10.5231 10.87C11.6979 10.87 12.6503 11.7945 12.6503 12.935Z" />
+<path d="M13.4924 12.1763C14.1523 11.3672 14.6212 10.4063 14.8469 9.38645C15.2376 7.608 14.8729 5.74526 13.8397 4.23653C13.5966 4.80125 13.1799 5.27326 12.6416 5.60198C13.2146 6.65556 13.3883 7.86929 13.1365 9.04088C13.0062 9.61403 12.7892 10.1535 12.4766 10.6423C12.9715 11.03 13.3275 11.5695 13.4924 12.1763Z" />
+<path d="M2.03825 4.6288C2.01224 4.63083 1.9872 4.63278 1.96215 4.63278C3.29057 2.35703 5.89529 1.01688 8.56948 1.21916C8.28296 1.57317 8.08326 1.98617 7.98776 2.43289C7.96171 2.5846 7.93566 2.73633 7.92698 2.89647C6.25127 2.93018 4.7058 3.73091 3.74205 5.07107C3.44685 4.89406 3.11692 4.76763 2.76962 4.69178C2.56124 4.64963 2.34418 4.62435 2.12712 4.62435C2.09556 4.62435 2.06634 4.62662 2.03825 4.6288Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6318,6 +6864,22 @@ pub static VsThumbsdown: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static VsThumbsdownFilled: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M5.46 14.11a1.46 1.46 0 0 1-.81-.25 1.38 1.38 0 0 1-.45-1.69L5.17 10H2.38a1.36 1.36 0 0 1-1.16-.61 1.35 1.35 0 0 1-.09-1.32C1.8 6.62 3 4 3.4 2.9A1.38 1.38 0 0 1 4.69 2h8.93A1.4 1.4 0 0 1 15 3.4v3.51a1.38 1.38 0 0 1-1.38 1.38h-1.38L6.4 13.75a1.41 1.41 0 0 1-.94.36z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static VsThumbsup: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -6331,6 +6893,22 @@ pub static VsThumbsup: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: Some("currentColor"),
     data: r###"<path d="M10.54 2c.289.001.57.088.81.25a1.38 1.38 0 0 1 .45 1.69l-.97 2.17h2.79a1.36 1.36 0 0 1 1.16.61 1.35 1.35 0 0 1 .09 1.32c-.67 1.45-1.87 4.07-2.27 5.17a1.38 1.38 0 0 1-1.29.9H2.38A1.4 1.4 0 0 1 1 12.71V9.2a1.38 1.38 0 0 1 1.38-1.38h1.38L9.6 2.36a1.41 1.41 0 0 1 .94-.36zm.77 11.11a.39.39 0 0 0 .36-.25c.4-1.09 1.47-3.45 2.33-5.24a.39.39 0 0 0 0-.36.37.37 0 0 0-.38-.15h-3.3l-.52-.68v-.46l1.09-2.44a.37.37 0 0 0-.13-.46.38.38 0 0 0-.48 0L4.22 8.66l-.47.13H2.38A.38.38 0 0 0 2 9.2v3.51a.4.4 0 0 0 .38.4h8.93z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsThumbsupFilled: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M10.54 2c.289.001.57.088.81.25a1.38 1.38 0 0 1 .45 1.69l-.97 2.17h2.79a1.36 1.36 0 0 1 1.16.61 1.35 1.35 0 0 1 .09 1.32c-.67 1.45-1.87 4.07-2.27 5.17a1.38 1.38 0 0 1-1.29.9H2.38A1.4 1.4 0 0 1 1 12.71V9.2a1.38 1.38 0 0 1 1.38-1.38h1.38L9.6 2.36a1.41 1.41 0 0 1 .94-.36z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6721,6 +7299,61 @@ pub static VsVmRunning: &icondata_core::IconData = &icondata_core::IconData {
     fill: Some("currentColor"),
     data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2h13l.5.5v5.503a5.006 5.006 0 0 0-1-.583V3H2v9h5a5 5 0 0 0 1 3H4v-1h3v-1H1.5l-.5-.5v-10l.5-.5z" />
 <path d="M12 8c.367 0 .721.047 1.063.14.34.094.658.23.953.407.294.177.563.385.808.625.245.24.455.509.63.808a4.03 4.03 0 0 1 .405 3.082c-.093.342-.229.66-.406.954a4.382 4.382 0 0 1-.625.808c-.24.245-.509.455-.808.63a4.029 4.029 0 0 1-3.082.405 3.784 3.784 0 0 1-.954-.406 4.382 4.382 0 0 1-.808-.625 3.808 3.808 0 0 1-.63-.808 4.027 4.027 0 0 1-.405-3.082c.093-.342.229-.66.406-.954.177-.294.385-.563.625-.808.24-.245.509-.455.808-.63A4.028 4.028 0 0 1 12 8zm2 3.988L11 10v4l3-2.012z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsVr: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path fill-rule="evenodd" clip-rule="evenodd" d="M4 3H12C13.6569 3 15 4.34315 15 6V10C15 11.6569 13.6569 13 12 13H11.6056C11.0133 13 10.4343 12.8247 9.94145 12.4962L9.1094 11.9415C8.4376 11.4936 7.5624 11.4936 6.8906 11.9415L6.05855 12.4962C5.56575 12.8247 4.98672 13 4.39445 13H4C2.34315 13 1 11.6569 1 10V6C1 4.34315 2.34315 3 4 3ZM4 4C2.89543 4 2 4.89543 2 6V10C2 11.1046 2.89543 12 4 12H4.39445C4.7893 12 5.17531 11.8831 5.50385 11.6641L6.3359 11.1094C7.3436 10.4376 8.6564 10.4376 9.6641 11.1094L10.4962 11.6641C10.8247 11.8831 11.2107 12 11.6056 12H12C13.1046 12 14 11.1046 14 10V6C14 4.89543 13.1046 4 12 4H4Z" />
+<path d="M0 7H1V10H0V7Z" />
+<path d="M15 7H16V10H15V7Z" />
+<path d="M6.5 8C6.77614 8 7 8.22386 7 8.5C7 8.77614 6.77614 9 6.5 9H4C3.72386 9 3.5 8.77614 3.5 8.5C3.5 8.22386 3.72386 8 4 8H6.5Z" />
+<path d="M12 8C12.2761 8 12.5 8.22386 12.5 8.5C12.5 8.77614 12.2761 9 12 9H9.5C9.22386 9 9 8.77614 9 8.5C9 8.22386 9.22386 8 9.5 8H12Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsVscode: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M10.8634 13.9195C10.6568 14.0195 10.4233 14.0246 10.2185 13.9444C10.1162 13.9044 10.021 13.843 9.93997 13.7614L4.81616 9.06268L2.58433 10.7656C2.37657 10.9241 2.08597 10.9111 1.89301 10.7347L1.17719 10.0802C0.941168 9.86437 0.940898 9.49112 1.17661 9.27496L3.11213 7.5L1.17661 5.72504C0.940898 5.50888 0.941168 5.13563 1.17719 4.91982L1.89301 4.2653C2.08597 4.08887 2.37657 4.07588 2.58433 4.2344L4.81616 5.93732L9.93997 1.23855C9.97037 1.20797 10.0028 1.18023 10.0368 1.15538C10.2748 0.981429 10.5922 0.949298 10.8634 1.08048L13.5399 2.37507C13.8212 2.5111 14 2.79721 14 3.11109V8H10.752V4.53356L6.86419 7.5L10.752 10.4664V8H14V11.8889C14 12.2028 13.8211 12.4889 13.5399 12.625L10.8634 13.9195Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static VsVscodeInsiders: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: Some("currentColor"),
+    data: r###"<path d="M9.7851 1.38057L5.56484 5.25075L7.68844 6.87108L10 5.10733V2C10 1.76607 9.91968 1.5509 9.7851 1.38057Z" />
+<path d="M10 9.89268L2.58433 4.23442C2.37657 4.0759 2.08597 4.08889 1.89301 4.26532L1.17719 4.91984C1.08223 5.00667 1.02543 5.11898 1.00681 5.23629C0.979153 5.41056 1.03574 5.59585 1.17661 5.72504L9.7851 13.6194C9.91968 13.4491 10 13.2339 10 13V9.89268Z" />
+<path d="M10.7532 1.0368C10.9105 1.32251 11 1.65081 11 2V13C11 13.3492 10.9105 13.6775 10.7532 13.9632C10.7906 13.9515 10.8274 13.9369 10.8634 13.9195L13.5399 12.625C13.8211 12.4889 14 12.2028 14 11.8889V3.11109C14 2.79721 13.8212 2.5111 13.5399 2.37507L10.8634 1.08048C10.8274 1.06306 10.7906 1.04852 10.7532 1.0368Z" />
+<path d="M1.17661 9.27496L2.37233 8.17842L4.00854 9.6789L2.58433 10.7656C2.37657 10.9241 2.08597 10.9111 1.89301 10.7347L1.17719 10.0802C0.941168 9.86437 0.940898 9.49112 1.17661 9.27496Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]

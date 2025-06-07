@@ -58,7 +58,7 @@ impl Packages {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    init_tracing(tracing::level_filters::LevelFilter::INFO);
+    init_tracing(tracing::level_filters::LevelFilter::WARN);
 
     assert_paths();
 

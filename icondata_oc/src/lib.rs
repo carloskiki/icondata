@@ -3,6 +3,22 @@
 
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcAccessibilityInsetLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0Zm2.5 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM12 9h6.375a.75.75 0 0 1 0 1.5h-4.028l.542 4.42.482 4.5a.75.75 0 1 1-1.492.16l-.41-3.83H10.53l-.41 3.83a.75.75 0 1 1-1.492-.16l.484-4.511.54-4.409H5.625a.75.75 0 0 1 0-1.5H12Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcAccessibilityInsetSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -15,7 +31,23 @@ pub static OcAccessibilityInsetSm: &icondata_core::IconData = &icondata_core::Ic
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm2 4a2 2 0 1 0-2.95 1.76 1.87 1.87 0 0 0-.32.24H3.75a.75.75 0 0 0 0 1.5h2.363l-.607 5.67a.75.75 0 1 0 1.49.16l.25-2.33h1.508l.25 2.33a.75.75 0 0 0 1.492-.16L9.888 7.5h2.362a.75.75 0 0 0 0-1.5H9.27a1.98 1.98 0 0 0-.32-.24A2 2 0 0 0 10 4Z" />"###
+    data: r###"<path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM3.75 6a.75.75 0 0 0 0 1.5h2.409a1.9 1.9 0 0 0-.025.151l-.307 2.508-.323 3.011a.75.75 0 0 0 1.492.16l.25-2.33h1.509l.25 2.33a.748.748 0 0 0 1.199.552.75.75 0 0 0 .291-.712l-.32-3-.309-2.519a1.9 1.9 0 0 0-.025-.151h2.409a.75.75 0 0 0 0-1.5h-8.5ZM8 6a2 2 0 1 0 .001-3.999A2 2 0 0 0 8 6Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcAccessibilityLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M13.974 8.114a3.573 3.573 0 1 0-3.947 0c-.302.21-.57.467-.79.762H3.708a.75.75 0 1 0 0 1.5h4.885a2.93 2.93 0 0 0-.026.188l-.814 7.267-.499 4.142a.75.75 0 1 0 1.49.18l.42-3.486h5.67l.42 3.485a.75.75 0 0 0 1.49-.18l-.5-4.142-.813-7.266a3.502 3.502 0 0 0-.026-.188h4.885a.75.75 0 1 0 0-1.5h-5.527a3.466 3.466 0 0 0-.79-.762Zm.099-2.979a2.073 2.073 0 1 1-4.146 0 2.073 2.073 0 0 1 4.146 0Zm-.131 5.596.72 6.436H9.338l.72-6.436a1.954 1.954 0 0 1 3.884 0Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -32,6 +64,38 @@ pub static OcAccessibilitySm: &icondata_core::IconData = &icondata_core::IconDat
     stroke: None,
     fill: None,
     data: r###"<path d="M9.923 5.302c.063.063.122.129.178.198H14A.75.75 0 0 1 14 7h-3.3l.578 5.163.362 2.997a.75.75 0 0 1-1.49.18L9.868 13H6.132l-.282 2.34a.75.75 0 0 1-1.49-.18l.362-2.997L5.3 7H2a.75.75 0 0 1 0-1.5h3.9a2.54 2.54 0 0 1 .176-.198 3 3 0 1 1 3.847 0ZM9.2 7.073h-.001a1.206 1.206 0 0 0-2.398 0L6.305 11.5h3.39ZM9.5 3a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 3Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcAiModelLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M19.375 8.5a3.25 3.25 0 1 1-3.163 4h-3a3.252 3.252 0 0 1-4.443 2.509L7.214 17.76a3.25 3.25 0 1 1-1.342-.674l1.672-2.957A3.238 3.238 0 0 1 6.75 12c0-.907.371-1.727.97-2.316L6.117 6.846A3.253 3.253 0 0 1 1.875 3.75a3.25 3.25 0 1 1 5.526 2.32l1.603 2.836A3.25 3.25 0 0 1 13.093 11h3.119a3.252 3.252 0 0 1 3.163-2.5ZM10 10.25a1.75 1.75 0 1 0-.001 3.499A1.75 1.75 0 0 0 10 10.25ZM5.125 2a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5Zm12.5 9.75a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0Zm-14.25 8.5a1.75 1.75 0 1 0 3.501-.001 1.75 1.75 0 0 0-3.501.001Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcAiModelSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M10.628 7.25a2.25 2.25 0 1 1 0 1.5H8.622a2.25 2.25 0 0 1-2.513 1.466L5.03 12.124a2.25 2.25 0 1 1-1.262-.814l1.035-1.832A2.245 2.245 0 0 1 4.25 8c0-.566.209-1.082.553-1.478L3.768 4.69a2.25 2.25 0 1 1 1.262-.814l1.079 1.908A2.25 2.25 0 0 1 8.622 7.25ZM2.5 2.5a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm4 4.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm6.25 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-9.5 5.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -113,6 +177,22 @@ pub static OcAlertSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcAppsLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M5.5 2.75A2.75 2.75 0 0 0 2.75 5.5v3a2.75 2.75 0 0 0 2.75 2.75h3a2.75 2.75 0 0 0 2.75-2.75v-3A2.75 2.75 0 0 0 8.5 2.75h-3ZM4.25 5.5c0-.69.56-1.25 1.25-1.25h3c.69 0 1.25.56 1.25 1.25v3c0 .69-.56 1.25-1.25 1.25h-3c-.69 0-1.25-.56-1.25-1.25v-3Zm1.25 7.25a2.75 2.75 0 0 0-2.75 2.75v3a2.75 2.75 0 0 0 2.75 2.75h3a2.75 2.75 0 0 0 2.75-2.75v-3a2.75 2.75 0 0 0-2.75-2.75h-3ZM4.25 15.5c0-.69.56-1.25 1.25-1.25h3c.69 0 1.25.56 1.25 1.25v3c0 .69-.56 1.25-1.25 1.25h-3c-.69 0-1.25-.56-1.25-1.25v-3Zm8.5-10a2.75 2.75 0 0 1 2.75-2.75h3a2.75 2.75 0 0 1 2.75 2.75v3a2.75 2.75 0 0 1-2.75 2.75h-3a2.75 2.75 0 0 1-2.75-2.75v-3Zm2.75-1.25c-.69 0-1.25.56-1.25 1.25v3c0 .69.56 1.25 1.25 1.25h3c.69 0 1.25-.56 1.25-1.25v-3c0-.69-.56-1.25-1.25-1.25h-3Zm0 8.5a2.75 2.75 0 0 0-2.75 2.75v3a2.75 2.75 0 0 0 2.75 2.75h3a2.75 2.75 0 0 0 2.75-2.75v-3a2.75 2.75 0 0 0-2.75-2.75h-3Zm-1.25 2.75c0-.69.56-1.25 1.25-1.25h3c.69 0 1.25.56 1.25 1.25v3c0 .69-.56 1.25-1.25 1.25h-3c-.69 0-1.25-.56-1.25-1.25v-3Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -725,6 +805,22 @@ pub static OcBookmarkFillLg: &icondata_core::IconData = &icondata_core::IconData
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcBookmarkFilledSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.75.75 0 0 1 3 14.25V2.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcBookmarkLg: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -754,6 +850,22 @@ pub static OcBookmarkSlashFillLg: &icondata_core::IconData = &icondata_core::Ico
     stroke: None,
     fill: None,
     data: r###"<path d="m3.232 2.175 18.5 15.5a.75.75 0 1 1-.964 1.15L19 17.343v3.907a.75.75 0 0 1-1.218.585L12 17.21l-5.781 4.626A.75.75 0 0 1 5 21.253L4.947 5.569 2.268 3.325a.75.75 0 1 1 .964-1.15ZM7.421 2h9.829c.966 0 1.75.784 1.75 1.75v8.073a.75.75 0 0 1-1.232.575L6.94 3.325A.75.75 0 0 1 7.421 2Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcBookmarkSlashFillSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M1.19 1.143a.75.75 0 1 0-.88 1.215L3 4.305v9.945a.75.75 0 0 0 1.206.596L8 11.944l3.794 2.902A.75.75 0 0 0 13 14.25v-2.703l1.81 1.31a.75.75 0 1 0 .88-1.214l-2.994-2.168a1.09 1.09 0 0 0-.014-.01L4.196 3.32a.712.712 0 0 0-.014-.01L1.19 1.143Zm2.934.203A.5.5 0 0 1 4.6 1h7.233C12.478 1 13 1.522 13 2.167v5.05a.5.5 0 0 1-.793.405l-7.9-5.717a.5.5 0 0 1-.183-.559Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -930,6 +1042,23 @@ pub static OcBugSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcCacheLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M5.505 9.117a7.723 7.723 0 0 1-1.497-.852V12c0 .524.473 1.23 1.8 1.883 1.267.625 3.085 1.071 5.18 1.182a.76.76 0 0 1-.08 1.517c-2.242-.118-4.274-.598-5.772-1.336a7.264 7.264 0 0 1-1.128-.68V18.3c0 .282.127.61.476.973.352.366.899.732 1.633 1.055 1.466.645 3.545 1.063 5.881 1.063.577 0 1.14-.025 1.683-.074a.76.76 0 0 1 .135 1.513 20.47 20.47 0 0 1-1.818.08c-2.496 0-4.792-.443-6.493-1.192-.849-.374-1.584-.838-2.117-1.393-.536-.558-.9-1.244-.9-2.025V5.7c0-.782.364-1.467.9-2.025.533-.555 1.268-1.02 2.117-1.393 1.7-.749 3.997-1.193 6.493-1.193 2.497 0 4.793.444 6.493 1.193.85.373 1.585.838 2.117 1.393.537.558.9 1.243.9 2.025 0 .781-.363 1.467-.9 2.025-.532.554-1.267 1.02-2.117 1.393-1.7.748-3.996 1.192-6.493 1.192-2.496 0-4.792-.444-6.493-1.192Zm-1.021-4.39c-.35.362-.476.69-.476.972 0 .282.127.61.476.972.352.367.899.732 1.633 1.055 1.466.646 3.545 1.064 5.881 1.064 2.337 0 4.415-.418 5.882-1.064.734-.323 1.28-.688 1.633-1.055.35-.363.476-.69.476-.972 0-.282-.127-.61-.476-.973-.353-.367-.9-.732-1.633-1.055-1.467-.645-3.545-1.063-5.882-1.063-2.336 0-4.415.418-5.88 1.063-.735.323-1.282.688-1.634 1.055Z" />
+<path d="M21.425 11.11a.5.5 0 0 0-.881-.418l-5.438 6.937a.5.5 0 0 0 .394.808h3.268l-.945 4.46a.5.5 0 0 0 .888.405l4.688-6.188a.5.5 0 0 0-.399-.802h-2.745l1.17-5.202Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -1238,6 +1367,22 @@ pub static OcChevronLeftSm: &icondata_core::IconData = &icondata_core::IconData 
     stroke: None,
     fill: None,
     data: r###"<path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcChevronLeftXs: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("12"),
+    height: Some("12"),
+    view_box: Some("0 0 12 12"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3.587 6.025c0 .2.1.4.2.5l3.3 3.3c.3.3.8.3 1.1 0 .3-.3.3-.8 0-1.1l-2.7-2.7 2.7-2.7c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.1 0l-3.2 3.2c-.2.2-.3.4-.3.6Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -1891,23 +2036,6 @@ pub static OcCommentSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
-pub static OcCommitLg: &icondata_core::IconData = &icondata_core::IconData {
-    style: None,
-    x: None,
-    y: None,
-    width: Some("24"),
-    height: Some("24"),
-    view_box: Some("0 0 24 24"),
-    stroke_linecap: None,
-    stroke_linejoin: None,
-    stroke_width: None,
-    stroke: None,
-    fill: None,
-    data: r###"<path d="M0 11.75A.75.75 0 0 1 .75 11h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75Zm17.5 0a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75Z" />
-<path d="M12 17.75a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-1.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" />"###
-};
-#[allow(non_upper_case_globals)]
-#[doc(hidden)]
 pub static OcContainerLg: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2307,6 +2435,22 @@ pub static OcDesktopDownloadSm: &icondata_core::IconData = &icondata_core::IconD
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcDeviceCameraLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M21.333 5.333c.734 0 1.334.6 1.334 1.334v12c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333v-12c0-.734.6-1.334 1.334-1.334C2.667 4.6 3.267 4 4 4h5.333c.734 0 1.334.6 1.334 1.333h10.666Zm-6 12A4.655 4.655 0 0 0 20 12.667 4.655 4.655 0 0 0 15.333 8a4.655 4.655 0 0 0-4.666 4.667 4.655 4.655 0 0 0 4.666 4.666Zm3.334-4.666A3.343 3.343 0 0 1 15.333 16 3.352 3.352 0 0 1 12 12.667a3.352 3.352 0 0 1 3.333-3.334 3.352 3.352 0 0 1 3.334 3.334ZM9.333 8V6.667H4V8h5.333Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcDeviceCameraSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2486,6 +2630,23 @@ pub static OcDiamondSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcDiffAddedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.75 7a.75.75 0 0 0-1.5 0v4.25H7a.75.75 0 0 0 0 1.5h4.25V17a.75.75 0 0 0 1.5 0v-4.25H17a.75.75 0 0 0 0-1.5h-4.25V7Z" />
+<path d="M3.75 2A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 20.25V3.75A1.75 1.75 0 0 0 20.25 2H3.75ZM3.5 3.75a.25.25 0 0 1 .25-.25h16.5a.25.25 0 0 1 .25.25v16.5a.25.25 0 0 1-.25.25H3.75a.25.25 0 0 1-.25-.25V3.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcDiffAddedSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2499,6 +2660,22 @@ pub static OcDiffAddedSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M2.75 1h10.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25V2.75C1 1.784 1.784 1 2.75 1Zm10.5 1.5H2.75a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM8 4a.75.75 0 0 1 .75.75v2.5h2.5a.75.75 0 0 1 0 1.5h-2.5v2.5a.75.75 0 0 1-1.5 0v-2.5h-2.5a.75.75 0 0 1 0-1.5h2.5v-2.5A.75.75 0 0 1 8 4Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcDiffIgnoredLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3.75 2A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 20.25V3.75A1.75 1.75 0 0 0 20.25 2H3.75ZM3.5 3.75a.25.25 0 0 1 .25-.25h16.5a.25.25 0 0 1 .25.25v16.5a.25.25 0 0 1-.25.25H3.75a.25.25 0 0 1-.25-.25V3.75Zm4.737 11.233a.75.75 0 0 0 1.061 1.06l7.027-7.026a.75.75 0 0 0-1.06-1.06l-7.028 7.026Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2534,6 +2711,23 @@ pub static OcDiffLg: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcDiffModifiedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25V3.75Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75Z" />
+<path d="M14.5 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcDiffModifiedSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2550,6 +2744,23 @@ pub static OcDiffModifiedSm: &icondata_core::IconData = &icondata_core::IconData
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcDiffRemovedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M7.313 11.25a.75.75 0 0 0 0 1.5h9.937a.75.75 0 0 0 0-1.5H7.312Z" />
+<path d="M3.75 2A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 20.25V3.75A1.75 1.75 0 0 0 20.25 2H3.75ZM3.5 3.75a.25.25 0 0 1 .25-.25h16.5a.25.25 0 0 1 .25.25v16.5a.25.25 0 0 1-.25.25H3.75a.25.25 0 0 1-.25-.25V3.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcDiffRemovedSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -2563,6 +2774,23 @@ pub static OcDiffRemovedSm: &icondata_core::IconData = &icondata_core::IconData 
     stroke: None,
     fill: None,
     data: r###"<path d="M13.25 1c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25V2.75C1 1.784 1.784 1 2.75 1ZM2.75 2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25Zm8.5 6.25h-6.5a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcDiffRenamedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M13.75 12.75v3.347a.25.25 0 0 0 .436.166l3.672-4.096a.25.25 0 0 0 0-.334l-3.672-4.096a.25.25 0 0 0-.436.166v3.347h-7a.75.75 0 0 0 0 1.5h7Z" />
+<path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25V3.75Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -2825,6 +3053,22 @@ pub static OcDuplicateSm: &icondata_core::IconData = &icondata_core::IconData {
     data: r###"<path d="M10.5 3a.75.75 0 0 1 .75.75v1h1a.75.75 0 0 1 0 1.5h-1v1a.75.75 0 0 1-1.5 0v-1h-1a.75.75 0 0 1 0-1.5h1v-1A.75.75 0 0 1 10.5 3Z" />
 <path d="M6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25v-7.5C5 .784 5.784 0 6.75 0ZM6.5 1.75v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25Z" />
 <path d="M1.75 5A1.75 1.75 0 0 0 0 6.75v7.5C0 15.216.784 16 1.75 16h7.5A1.75 1.75 0 0 0 11 14.25v-1.5a.75.75 0 0 0-1.5 0v1.5a.25.25 0 0 1-.25.25h-7.5a.25.25 0 0 1-.25-.25v-7.5a.25.25 0 0 1 .25-.25h1.5a.75.75 0 0 0 0-1.5h-1.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcEllipsisLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M22 9.75v5.5A1.75 1.75 0 0 1 20.25 17H3.75A1.75 1.75 0 0 1 2 15.25v-5.5C2 8.784 2.784 8 3.75 8h16.5c.966 0 1.75.784 1.75 1.75Zm-8.75 2.75a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0Zm-6.5 1.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm10.5 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -3216,6 +3460,23 @@ pub static OcFeedTrophySm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcFileAddedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 8.25a.75.75 0 0 1 .75.75v2.25H15a.75.75 0 0 1 0 1.5h-2.25V15a.75.75 0 0 1-1.5 0v-2.25H9a.75.75 0 0 1 0-1.5h2.25V9a.75.75 0 0 1 .75-.75Z" />
+<path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3Zm2-.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5V7.018a.5.5 0 0 0-.146-.354l-4.018-4.018a.5.5 0 0 0-.354-.146H5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcFileAddedSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3229,6 +3490,24 @@ pub static OcFileAddedSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073Zm4.48 3.758a.75.75 0 0 1 .755.745l.01 1.497h1.497a.75.75 0 0 1 0 1.5H9v1.507a.75.75 0 0 1-1.5 0V9.005l-1.502.01a.75.75 0 0 1-.01-1.5l1.507-.01-.01-1.492a.75.75 0 0 1 .745-.755Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcFileBadgeLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4 2.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h6a.75.75 0 0 1 0 1.5H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10.982a2 2 0 0 1 1.414.586l.064.064.01.008.31.312a.75.75 0 0 1-1.06 1.06l-.078-.078-.004-.003-.093-.093c-.003-.003 0 0 0 0l-.21-.21a.5.5 0 0 0-.353-.146H4Z" />
+<path d="M18 6.25a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Zm-5.75 4.25a5.75 5.75 0 1 1 11.5 0 5.75 5.75 0 0 1-11.5 0Z" />
+<path d="m21.283 14.866 1.455 8a.75.75 0 0 1-1.002.836l-3.296-1.24a1.25 1.25 0 0 0-.88 0l-3.296 1.24a.75.75 0 0 1-1.002-.836l1.455-8 1.475.268-1.217 6.698 2.056-.774a2.75 2.75 0 0 1 1.938 0l2.056.774-1.217-6.698 1.475-.268Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -3396,6 +3675,22 @@ pub static OcFileDirectoryLg: &icondata_core::IconData = &icondata_core::IconDat
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcFileDirectoryOpenFillLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M2 4.75C2 3.784 2.784 3 3.75 3h4.971c.58 0 1.12.286 1.447.765l1.404 2.063a.25.25 0 0 0 .207.11h6.224c.966 0 1.75.783 1.75 1.75v.117H5.408a.848.848 0 0 0 0 1.695h15.484a1 1 0 0 1 .995 1.102L21 19.25c-.106 1.05-.784 1.75-1.75 1.75H3.75A1.75 1.75 0 0 1 2 19.25V4.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcFileDirectoryOpenFillSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3494,6 +3789,39 @@ pub static OcFileMediaLg: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcFileMediaSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M16 13.25A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25V2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75ZM1.75 2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h.94l.03-.03 6.077-6.078a1.75 1.75 0 0 1 2.412-.06L14.5 10.31V2.75a.25.25 0 0 0-.25-.25Zm12.5 11a.25.25 0 0 0 .25-.25v-.917l-4.298-3.889a.25.25 0 0 0-.344.009L4.81 13.5ZM7 6a2 2 0 1 1-3.999.001A2 2 0 0 1 7 6ZM5.5 6a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcFileMovedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H4.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V7a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5H5a.5.5 0 0 0-.5.5v6.25a.75.75 0 0 1-1.5 0V3Z" />
+<path d="M7.21 14.25H1.75a.75.75 0 0 0 0 1.5h5.46s-.008 2.249 0 3.256a.75.75 0 0 0 1.262.542l4.285-4a.75.75 0 0 0 0-1.096l-4.285-4A.75.75 0 0 0 7.21 11v3.249Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcFileMovedSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3508,6 +3836,23 @@ pub static OcFileMovedSm: &icondata_core::IconData = &icondata_core::IconData {
     fill: None,
     data: r###"<path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-3.5a.75.75 0 0 1 0-1.5h3.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177l-2.914-2.914a.25.25 0 0 0-.177-.073H3.75a.25.25 0 0 0-.25.25v6.5a.75.75 0 0 1-1.5 0v-6.5Z" />
 <path d="m5.427 15.573 3.146-3.146a.25.25 0 0 0 0-.354L5.427 8.927A.25.25 0 0 0 5 9.104V11.5H.75a.75.75 0 0 0 0 1.5H5v2.396c0 .223.27.335.427.177Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcFileRemovedLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3Zm2-.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5V7.018a.5.5 0 0 0-.146-.354l-4.018-4.018a.5.5 0 0 0-.354-.146H5Z" />
+<path d="M8 12c0-.414.358-.75.8-.75h6.4c.442 0 .8.336.8.75s-.358.75-.8.75H8.8c-.442 0-.8-.336-.8-.75Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -3656,6 +4001,38 @@ pub static OcFilterLg: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcFilterRemoveLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M21.587 9.273a.75.75 0 1 0 1.061-1.061l-1.591-1.591 1.591-1.591a.749.749 0 1 0-1.061-1.06l-1.591 1.591-1.591-1.591a.749.749 0 1 0-1.06 1.06l1.591 1.591-1.591 1.591a.75.75 0 0 0 1.06 1.061l1.591-1.591 1.591 1.591ZM1.75 6a.75.75 0 0 0 0 1.5H14.5a.75.75 0 0 0 0-1.5H1.75ZM5 11.75a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H5.75a.75.75 0 0 1-.75-.75Zm4 4.938a.75.75 0 0 1 .75-.75h2.5a.75.75 0 1 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcFilterRemoveSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M14.384 4.57a.752.752 0 0 0 1.061 0 .752.752 0 0 0 0-1.061l-.884-.884.883-.884A.75.75 0 0 0 14.384.68l-.884.884-.884-.884a.75.75 0 0 0-1.06 1.061l.883.884-.883.884a.75.75 0 0 0 1.06 1.061l.884-.884.884.884ZM.75 3a.75.75 0 0 0 0 1.5H9A.75.75 0 0 0 9 3H.75ZM3 7.75A.75.75 0 0 1 3.75 7h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 7.75Zm3 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcFilterSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -3669,6 +4046,22 @@ pub static OcFilterSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M.75 3h14.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1 0-1.5ZM3 7.75A.75.75 0 0 1 3.75 7h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 7.75Zm3 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcFiscalHostLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 20.25 20H19v.25a1 1 0 1 1-2 0V20H6.997v.25a1 1 0 1 1-2 0V20H3.75A1.75 1.75 0 0 1 2 18.25V3.75Zm1.75-.25a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75ZM14.318 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8.5A.75.75 0 1 0 6 10h1.5v2H6a.75.75 0 0 0 0 1.5h1.5V15A1.5 1.5 0 0 0 9 16.5h8a1.5 1.5 0 0 0 1.5-1.5V7A1.5 1.5 0 0 0 17 5.5H9A1.5 1.5 0 0 0 7.5 7v1.5H6ZM9 10a.75.75 0 0 0 0-1.5V7h8v8H9v-1.5A.75.75 0 0 0 9 12v-2Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -4460,6 +4853,22 @@ pub static OcHomeFillLg: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcHomeFillSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M6.906.384a1.75 1.75 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019a1.75 1.75 0 0 1-1.75 1.75h-2.5a.75.75 0 0 1-.75-.75V8.72H6v5.25a.75.75 0 0 1-.75.75h-2.5A1.75 1.75 0 0 1 1 12.97V5.95c0-.531.242-1.034.657-1.366l5.249-4.2Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcHomeLg: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -4586,6 +4995,23 @@ pub static OcHubotSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M0 8a8 8 0 0 1 16 0v5.25a.75.75 0 0 1-1.5 0V8a6.5 6.5 0 1 0-13 0v5.25a.75.75 0 0 1-1.5 0Zm3-1.25C3 5.784 3.784 5 4.75 5h6.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 11.25 10h-6.5A1.75 1.75 0 0 1 3 8.25Zm1.47-.53a.75.75 0 0 0 0 1.06l1.5 1.5a.75.75 0 0 0 1.06 0L8 7.81l.97.97a.75.75 0 0 0 1.06 0l1.5-1.5a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215l-.97.97-.97-.97a.75.75 0 0 0-1.06 0l-.97.97-.97-.97a.75.75 0 0 0-1.06 0Zm1.03 6.03a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcIdBadgeLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11 11.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Zm0 2.525a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75ZM6.5 10a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-3Z" />
+<path d="M10.75 2A1.75 1.75 0 0 0 9 3.75V6H3.75A1.75 1.75 0 0 0 2 7.75v10.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0 0 22 18.25V7.75A1.75 1.75 0 0 0 20.25 6H15V3.75A1.75 1.75 0 0 0 13.25 2h-2.5Zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v3.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25v-3.5Zm4.482 3.75A1.75 1.75 0 0 1 13.25 9h-2.5a1.75 1.75 0 0 1-1.732-1.5H3.75a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V7.75a.25.25 0 0 0-.25-.25h-5.268Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5032,6 +5458,23 @@ pub static OcKebabHorizontalSm: &icondata_core::IconData = &icondata_core::IconD
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcKeyAsteriskLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.75 8a.75.75 0 0 0-1.5 0v2.701l-2.34-1.35a.75.75 0 0 0-.75 1.298L10.5 12l-2.34 1.35a.75.75 0 1 0 .75 1.3l2.34-1.35V16a.75.75 0 0 0 1.5 0v-2.701l2.34 1.35a.75.75 0 0 0 .75-1.298L13.5 12l2.34-1.35a.75.75 0 0 0-.75-1.3l-2.34 1.351V8Z" />
+<path d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25V3.75Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcKeyAsteriskSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5375,6 +5818,22 @@ pub static OcLogSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcLogoGistLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("38"),
+    height: Some("24"),
+    view_box: Some("0 0 38 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M7.05 13.095v-1.5h5.28v8.535c-1.17.555-2.925.96-5.385.96C1.665 21.09 0 17.055 0 12.045S1.695 3 6.945 3c2.43 0 3.96.495 4.92.99v1.575c-1.83-.75-3-1.095-4.92-1.095-3.855 0-5.22 3.315-5.22 7.59s1.365 7.575 5.205 7.575c1.335 0 2.97-.105 3.795-.51v-6.03H7.05Zm16.47 1.035h.045c3.33.3 4.125 1.425 4.125 3.345 0 1.815-1.14 3.615-4.71 3.615-1.125 0-2.745-.285-3.495-.585v-1.41c.705.255 1.83.54 3.495.54 2.43 0 3.09-1.035 3.09-2.13 0-1.065-.33-1.815-2.655-2.01-3.39-.3-4.095-1.5-4.095-3.12 0-1.665 1.08-3.465 4.38-3.465 1.095 0 2.34.135 3.375.585v1.41c-.915-.3-1.83-.54-3.405-.54-2.325 0-2.82.855-2.82 2.01 0 1.035.42 1.56 2.67 1.755Zm12.87-4.995v1.275h-3.63v7.305c0 1.425.795 2.01 2.25 2.01.3 0 .63 0 .915-.045v1.335c-.255.045-.75.075-1.035.075-1.965 0-3.75-.9-3.75-3.195v-7.5H28.8v-.72l2.34-.66V5.85l1.62-.465v3.75h3.63ZM16.635 9.09v9.615c0 .81.285 1.05 1.005 1.05v1.335c-1.71 0-2.58-.705-2.58-2.58V9.09h1.575Zm.375-3.495c0 .66-.51 1.17-1.17 1.17a1.14 1.14 0 0 1-1.155-1.17c0-.66.48-1.17 1.155-1.17s1.17.51 1.17 1.17Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcLogoGistSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5388,6 +5847,22 @@ pub static OcLogoGistSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M4.7 8.73v-1h3.52v5.69c-.78.37-1.95.64-3.59.64C1.11 14.06 0 11.37 0 8.03 0 4.69 1.13 2 4.63 2c1.62 0 2.64.33 3.28.66v1.05c-1.22-.5-2-.73-3.28-.73-2.57 0-3.48 2.21-3.48 5.06 0 2.85.91 5.05 3.47 5.05.89 0 1.98-.07 2.53-.34V8.73Zm10.98.69h.03c2.22.2 2.75.95 2.75 2.23 0 1.21-.76 2.41-3.14 2.41-.75 0-1.83-.19-2.33-.39v-.94c.47.17 1.22.36 2.33.36 1.62 0 2.06-.69 2.06-1.42 0-.71-.22-1.21-1.77-1.34-2.26-.2-2.73-1-2.73-2.08 0-1.11.72-2.31 2.92-2.31.73 0 1.56.09 2.25.39v.94c-.61-.2-1.22-.36-2.27-.36-1.55 0-1.88.57-1.88 1.34 0 .69.28 1.04 1.78 1.17Zm8.58-3.33v.85h-2.42v4.87c0 .95.53 1.34 1.5 1.34.2 0 .42 0 .61-.03v.89c-.17.03-.5.05-.69.05-1.31 0-2.5-.6-2.5-2.13v-5H19.2v-.48l1.56-.44V3.9l1.08-.31v2.5h2.42Zm-13.17-.03v6.41c0 .54.19.7.67.7v.89c-1.14 0-1.72-.47-1.72-1.72V6.06h1.05Zm.25-2.33c0 .44-.34.78-.78.78a.76.76 0 0 1-.77-.78c0-.44.32-.78.77-.78s.78.34.78.78Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcLogoGithubLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("68"),
+    height: Some("24"),
+    view_box: Some("0 0 68 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M27.8 17.908h-.03c.013 0 .022.014.035.017l.01-.002-.016-.015Zm.005.017c-.14.001-.49.073-.861.073-1.17 0-1.575-.536-1.575-1.234v-4.652h2.385c.135 0 .24-.12.24-.283V9.302c0-.133-.12-.252-.24-.252H25.37V5.913c0-.119-.075-.193-.21-.193h-3.24c-.136 0-.21.074-.21.193V9.14s-1.636.401-1.741.416a.255.255 0 0 0-.195.253v2.021c0 .164.12.282.255.282h1.665v4.876c0 3.627 2.55 3.998 4.29 3.998.796 0 1.756-.252 1.906-.327.09-.03.135-.134.135-.238v-2.23a.264.264 0 0 0-.219-.265Zm35.549-3.272c0-2.69-1.095-3.047-2.25-2.928-.9.06-1.62.505-1.62.505v5.232s.735.506 1.83.536c1.545.044 2.04-.506 2.04-3.345ZM67 14.415c0 5.099-1.665 6.555-4.576 6.555-2.46 0-3.78-1.233-3.78-1.233s-.06.683-.135.773c-.045.089-.12.118-.21.118h-2.22c-.15 0-.286-.119-.286-.252l.03-16.514a.26.26 0 0 1 .255-.252h3.196a.26.26 0 0 1 .255.252v5.604s1.23-.788 3.03-.788l-.015-.03c1.8 0 4.456.67 4.456 5.767ZM53.918 9.05h-3.15c-.165 0-.255.119-.255.282v8.086s-.826.58-1.95.58c-1.126 0-1.456-.506-1.456-1.62v-7.06a.262.262 0 0 0-.255-.254h-3.21a.262.262 0 0 0-.256.253v7.596c0 3.27 1.846 4.087 4.381 4.087 2.085 0 3.78-1.145 3.78-1.145s.076.58.12.67c.03.074.136.133.24.133h2.011a.243.243 0 0 0 .255-.253l.03-11.103c0-.133-.12-.252-.285-.252Zm-35.556-.015h-3.195c-.135 0-.255.134-.255.297v10.91c0 .297.195.401.45.401h2.88c.3 0 .375-.134.375-.401V9.287a.262.262 0 0 0-.255-.252ZM16.787 4.01c-1.155 0-2.07.907-2.07 2.051 0 1.145.915 2.051 2.07 2.051a2.04 2.04 0 0 0 2.04-2.05 2.04 2.04 0 0 0-2.04-2.052Zm24.74-.372H38.36a.262.262 0 0 0-.255.253v6.08H33.14v-6.08a.262.262 0 0 0-.255-.253h-3.196a.262.262 0 0 0-.255.253v16.514c0 .133.135.252.255.252h3.196a.262.262 0 0 0 .255-.253v-7.06h4.966l-.03 7.06c0 .134.12.253.255.253h3.195a.262.262 0 0 0 .255-.253V3.892a.262.262 0 0 0-.255-.253Zm-28.31 7.313v8.532c0 .06-.015.163-.09.193 0 0-1.875 1.323-4.966 1.323C4.426 21 0 19.84 0 12.2S3.87 2.986 7.651 3c3.27 0 4.59.728 4.8.862.06.075.09.134.09.208l-.63 2.646c0 .134-.134.297-.3.253-.54-.164-1.35-.49-3.255-.49-2.205 0-4.575.623-4.575 5.543s2.25 5.5 3.87 5.5c1.38 0 1.875-.164 1.875-.164V13.94H7.321c-.165 0-.285-.12-.285-.253v-2.735c0-.134.12-.252.285-.252h5.61c.166 0 .286.118.286.252Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5439,6 +5914,22 @@ pub static OcMailSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcMarkGithubLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcMarkGithubSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -5452,6 +5943,22 @@ pub static OcMarkGithubSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcMarkdownLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M22.289 4.5A1.71 1.71 0 0 1 24 6.226v11.557c0 .946-.766 1.726-1.726 1.726H1.726A1.74 1.74 0 0 1 0 17.768V6.226C0 5.28.78 4.5 1.726 4.5Zm-8.781 12.007V7.501h-3.002l-2.251 3.002-2.252-3.002H3.002v9.006h3.001v-4.503l2.252 2.882 2.251-2.882v4.503Zm4.489.75 3.767-5.253h-2.251V7.501h-3.002v4.503h-2.252Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -5534,6 +6041,22 @@ pub static OcMentionSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M4.75 2.37a6.501 6.501 0 0 0 6.5 11.26.75.75 0 0 1 .75 1.298A7.999 7.999 0 0 1 .989 4.148 8 8 0 0 1 16 7.75v1.5a2.75 2.75 0 0 1-5.072 1.475 3.999 3.999 0 0 1-6.65-4.19A4 4 0 0 1 12 8v1.25a1.25 1.25 0 0 0 2.5 0V7.867a6.5 6.5 0 0 0-9.75-5.496ZM10.5 8a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcMeterLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 2.5a9.5 9.5 0 1 0 9.5 9.5c0-1.406-.305-2.74-.852-3.939a.75.75 0 0 1 1.364-.622C22.648 8.829 23 10.374 23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1c1.626 0 3.17.353 4.561.988a.75.75 0 1 1-.622 1.364A9.463 9.463 0 0 0 12 2.5Zm9.03.47a.75.75 0 0 1 0 1.06l-6.445 6.446a3 3 0 1 1-1.06-1.06L19.97 2.97a.75.75 0 0 1 1.06 0ZM12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6147,6 +6670,22 @@ pub static OcPackageSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcPaintbrushLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M19.642 6.653c-1.31 1.812-3.251 3.86-4.945 5.575l-.091.092-2.69-2.69.098-.098c1.69-1.71 3.732-3.656 5.544-4.962.911-.657 1.715-1.115 2.353-1.318.652-.207.915-.091 1.039.033.113.113.231.367.019 1.02-.207.635-.668 1.436-1.327 2.348ZM10.9 10.736l2.605 2.605c-.88.754-1.684 1.294-2.378 1.655a4.832 4.832 0 0 0-1.892-1.89c.36-.69.903-1.482 1.665-2.37Zm-3.086 1.856a4.825 4.825 0 0 0-4.33 1.328c-.525.525-.88 1.302-1.13 2.079-.256.795-.43 1.682-.541 2.507a19.055 19.055 0 0 0-.173 2.216c-.004.3.003.567.022.778.009.104.022.212.044.31.01.05.027.113.053.18.02.051.074.178.19.295.117.117.245.17.297.19.066.026.13.043.178.054.099.021.207.035.31.044.211.019.479.025.779.021.603-.008 1.39-.06 2.216-.172.825-.112 1.711-.285 2.507-.54.776-.25 1.553-.606 2.079-1.132a4.825 4.825 0 0 0 1.327-4.333c1.209-.6 2.622-1.618 4.121-3.135 1.694-1.714 3.709-3.835 5.093-5.75.688-.952 1.258-1.904 1.538-2.764.274-.842.334-1.826-.384-2.544-.72-.719-1.703-.672-2.555-.401-.865.275-1.822.843-2.776 1.53-1.92 1.384-4.036 3.407-5.733 5.125-1.5 1.518-2.53 2.896-3.132 4.114Zm1.44 2.388a3.33 3.33 0 0 1 0 4.71c-.271.27-.774.537-1.478.763-.684.22-1.477.378-2.248.482-.769.104-1.495.152-2.035.16a9.247 9.247 0 0 1-.351-.002 9.182 9.182 0 0 1-.002-.35c.007-.542.055-1.267.16-2.036.104-.771.261-1.564.481-2.249.227-.703.493-1.206.764-1.478a3.33 3.33 0 0 1 4.71 0Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -6950,6 +7489,22 @@ pub static OcReadSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcRedoLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M14.72 2.22a.75.75 0 0 1 1.06 0l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 1 1-1.06-1.06l4.97-4.97H8.25c-.797 0-2.008.245-3 .959-.952.686-1.75 1.835-1.75 3.791s.798 3.105 1.75 3.791c.992.714 2.203.959 3 .959h3a.75.75 0 0 1 0 1.5h-3c-1.037 0-2.575-.305-3.876-1.241C3.035 18.545 2 16.944 2 14.5c0-2.444 1.035-4.045 2.374-5.009C5.675 8.555 7.214 8.25 8.25 8.25h11.44l-4.97-4.97a.75.75 0 0 1 0-1.06Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcRedoSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -7061,6 +7616,23 @@ pub static OcRepoCloneSm: &icondata_core::IconData = &icondata_core::IconData {
     fill: None,
     data: r###"<path d="M3.5 0A2.5 2.5 0 0 0 1 2.5v9A2.5 2.5 0 0 0 3.5 14h2.75a.75.75 0 0 0 0-1.5H3.5a1 1 0 0 1 0-2h2.75a.75.75 0 0 0 0-1.5H3.5c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8v2.75a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75H3.5Z" />
 <path d="M8 8.058C8 7.023 8.75 6 9.887 6h5.363a.75.75 0 0 1 .75.75v8.5a.75.75 0 0 1-.75.75h-5A2.25 2.25 0 0 1 8 13.75Zm6.5 3.442v-4H9.887c-.07 0-.156.031-.238.125a.663.663 0 0 0-.149.433v3.57c.235-.083.487-.128.75-.128Zm-5 2.25c0 .414.336.75.75.75h4.25V13h-4.25a.75.75 0 0 0-.75.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcRepoDeleteLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M4.75 0A2.75 2.75 0 0 0 2 2.75v16.5A2.75 2.75 0 0 0 4.75 22h8a.75.75 0 0 0 0-1.5h-8c-.69 0-1.25-.56-1.25-1.25V18A1.5 1.5 0 0 1 5 16.5h7.75a.75.75 0 0 0 0-1.5H5c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25 1.25-1.25H18.5v12.25a.75.75 0 0 0 1.5 0v-13a.75.75 0 0 0-.75-.75H4.75Z" />
+<path d="M15.22 16.22a.75.75 0 0 1 1.06 0L19 18.94l2.72-2.72a.75.75 0 1 1 1.06 1.06L20.06 20l2.72 2.72a.75.75 0 1 1-1.06 1.06L19 21.06l-2.72 2.72a.75.75 0 1 1-1.06-1.06L17.94 20l-2.72-2.72a.75.75 0 0 1 0-1.06Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8028,6 +8600,23 @@ pub static OcSkipSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcSlidersLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11 18.25a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75Zm-8-12a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 3 6.25Zm13 6a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75ZM8.75 16a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z" />
+<path d="M3 18.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm0-6a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1-.75-.75ZM16.75 10a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75ZM14 6.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75ZM11.25 4a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcSlidersSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8142,6 +8731,22 @@ pub static OcSortDescSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcSparkleFillLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M11.296 1.924c.24-.656 1.168-.656 1.408 0l.717 1.958a11.25 11.25 0 0 0 6.697 6.697l1.958.717c.657.24.657 1.168 0 1.408l-1.958.717a11.25 11.25 0 0 0-6.697 6.697l-.717 1.958c-.24.657-1.168.657-1.408 0l-.717-1.958a11.25 11.25 0 0 0-6.697-6.697l-1.958-.717c-.656-.24-.656-1.168 0-1.408l1.958-.717a11.25 11.25 0 0 0 6.697-6.697l.717-1.958Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcSparkleFillSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8155,6 +8760,38 @@ pub static OcSparkleFillSm: &icondata_core::IconData = &icondata_core::IconData 
     stroke: None,
     fill: None,
     data: r###"<path d="M7.53 1.282a.5.5 0 0 1 .94 0l.478 1.306a7.492 7.492 0 0 0 4.464 4.464l1.305.478a.5.5 0 0 1 0 .94l-1.305.478a7.492 7.492 0 0 0-4.464 4.464l-.478 1.305a.5.5 0 0 1-.94 0l-.478-1.305a7.492 7.492 0 0 0-4.464-4.464L1.282 8.47a.5.5 0 0 1 0-.94l1.306-.478a7.492 7.492 0 0 0 4.464-4.464Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcSparklesFillLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M14.4 3.419a.639.639 0 0 1 1.2 0l.61 1.668a9.587 9.587 0 0 0 5.703 5.703l1.668.61a.639.639 0 0 1 0 1.2l-1.668.61a9.587 9.587 0 0 0-5.703 5.703l-.61 1.668a.639.639 0 0 1-1.2 0l-.61-1.668a9.587 9.587 0 0 0-5.703-5.703l-1.668-.61a.639.639 0 0 1 0-1.2l1.668-.61a9.587 9.587 0 0 0 5.703-5.703l.61-1.668ZM8 16.675a.266.266 0 0 1 .5 0l.254.694a3.992 3.992 0 0 0 2.376 2.377l.695.254a.266.266 0 0 1 0 .5l-.695.254a3.992 3.992 0 0 0-2.376 2.377l-.254.694a.266.266 0 0 1-.5 0l-.254-.694a3.992 3.992 0 0 0-2.376-2.377l-.695-.254a.266.266 0 0 1 0-.5l.695-.254a3.992 3.992 0 0 0 2.376-2.377L8 16.675ZM4.2.21a.32.32 0 0 1 .6 0l.305.833a4.793 4.793 0 0 0 2.852 2.852l.833.305a.32.32 0 0 1 0 .6l-.833.305a4.793 4.793 0 0 0-2.852 2.852L4.8 8.79a.32.32 0 0 1-.6 0l-.305-.833a4.793 4.793 0 0 0-2.852-2.852L.21 4.8a.32.32 0 0 1 0-.6l.833-.305a4.793 4.793 0 0 0 2.852-2.852L4.2.21Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcSparklesFillSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M9.6 2.279a.426.426 0 0 1 .8 0l.407 1.112a6.386 6.386 0 0 0 3.802 3.802l1.112.407a.426.426 0 0 1 0 .8l-1.112.407a6.386 6.386 0 0 0-3.802 3.802l-.407 1.112a.426.426 0 0 1-.8 0l-.407-1.112a6.386 6.386 0 0 0-3.802-3.802L4.279 8.4a.426.426 0 0 1 0-.8l1.112-.407a6.386 6.386 0 0 0 3.802-3.802L9.6 2.279Zm-4.267 8.837a.178.178 0 0 1 .334 0l.169.464a2.662 2.662 0 0 0 1.584 1.584l.464.169a.178.178 0 0 1 0 .334l-.464.169a2.662 2.662 0 0 0-1.584 1.584l-.169.464a.178.178 0 0 1-.334 0l-.169-.464a2.662 2.662 0 0 0-1.584-1.584l-.464-.169a.178.178 0 0 1 0-.334l.464-.169a2.662 2.662 0 0 0 1.584-1.584l.169-.464ZM2.8.14a.213.213 0 0 1 .4 0l.203.556a3.2 3.2 0 0 0 1.901 1.901l.556.203a.213.213 0 0 1 0 .4l-.556.203a3.2 3.2 0 0 0-1.901 1.901L3.2 5.86a.213.213 0 0 1-.4 0l-.203-.556A3.2 3.2 0 0 0 .696 3.403L.14 3.2a.213.213 0 0 1 0-.4l.556-.203A3.2 3.2 0 0 0 2.597.696L2.8.14Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8187,6 +8824,40 @@ pub static OcSponsorTiersSm: &icondata_core::IconData = &icondata_core::IconData
     stroke: None,
     fill: None,
     data: r###"<path d="M10.586 1C12.268 1 13.5 2.37 13.5 4.25c0 1.745-.996 3.359-2.622 4.831-.166.15-.336.297-.509.438l1.116 5.584a.75.75 0 0 1-.991.852l-2.409-.876a.25.25 0 0 0-.17 0l-2.409.876a.75.75 0 0 1-.991-.852L5.63 9.519a13.78 13.78 0 0 1-.51-.438C3.497 7.609 2.5 5.995 2.5 4.25 2.5 2.37 3.732 1 5.414 1c.963 0 1.843.403 2.474 1.073L8 2.198l.112-.125a3.385 3.385 0 0 1 2.283-1.068L10.586 1Zm-3.621 9.495-.718 3.594 1.155-.42a1.75 1.75 0 0 1 1.028-.051l.168.051 1.154.42-.718-3.592c-.199.13-.37.235-.505.314l-.169.097a.75.75 0 0 1-.72 0 9.54 9.54 0 0 1-.515-.308l-.16-.105ZM10.586 2.5c-.863 0-1.611.58-1.866 1.459-.209.721-1.231.721-1.44 0C7.025 3.08 6.277 2.5 5.414 2.5 4.598 2.5 4 3.165 4 4.25c0 1.23.786 2.504 2.128 3.719.49.443 1.018.846 1.546 1.198l.325.21.076-.047.251-.163a13.341 13.341 0 0 0 1.546-1.198C11.214 6.754 12 5.479 12 4.25c0-1.085-.598-1.75-1.414-1.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcSquareCircleLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M12 23C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11Zm0-1.5a9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5Z" />
+<path d="M7 8.75C7 7.784 7.784 7 8.75 7h6.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 15.25 17h-6.5A1.75 1.75 0 0 1 7 15.25v-6.5Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcSquareCircleSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm0-1.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z" />
+<path d="M5 5.75A.75.75 0 0 1 5.75 5h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8545,6 +9216,23 @@ pub static OcSyncSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcTabExternalLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3 5.75C3 4.784 3.784 4 4.75 4h14.5c.966 0 1.75.784 1.75 1.75V18.5h2a.75.75 0 0 1 0 1.5h-2.65a.85.85 0 0 1-.85-.85V5.75a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25v13.4c0 .47-.38.85-.85.85H1a.75.75 0 0 1 0-1.5h2V5.75Z" />
+<path d="M16.404 13.7a.75.75 0 0 1-1.29.547 689.448 689.448 0 0 0-1.92-1.976l-4.141 4.14a.75.75 0 0 1-1.061-1.06l4.14-4.14-1.94-1.94A.75.75 0 0 1 10.703 8h4.95a.75.75 0 0 1 .75.75v4.95Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcTabExternalSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8575,6 +9263,22 @@ pub static OcTabLg: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M22 4.25a.75.75 0 0 0-1.5 0v15a.75.75 0 0 0 1.5 0v-15Zm-9.72 14.28a.75.75 0 1 1-1.06-1.06l4.97-4.97H1.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.75.75 0 0 1 1.06-1.06l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcTabSm: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("16"),
+    height: Some("16"),
+    view_box: Some("0 0 16 16"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="m10.78 8.53-3.75 3.75a.749.749 0 1 1-1.06-1.06l2.469-2.47H1.75a.75.75 0 0 1 0-1.5h6.689L5.97 4.78a.749.749 0 1 1 1.06-1.06l3.75 3.75a.749.749 0 0 1 0 1.06ZM13 12.25v-8.5a.75.75 0 0 1 1.5 0v8.5a.75.75 0 0 1-1.5 0Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8772,6 +9476,22 @@ pub static OcTerminalSm: &icondata_core::IconData = &icondata_core::IconData {
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
+pub static OcThreeBarsLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M3.75 5.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Zm0 6a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
 pub static OcThreeBarsSm: &icondata_core::IconData = &icondata_core::IconData {
     style: None,
     x: None,
@@ -8800,7 +9520,7 @@ pub static OcThumbsdownLg: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M12.596 21.957c-1.301.092-2.303-.986-2.303-2.206v-1.053c0-2.666-1.813-3.785-2.774-4.2a1.884 1.884 0 0 0-.523-.13A1.75 1.75 0 0 1 5.25 16h-1.5A1.75 1.75 0 0 1 2 14.25V3.75C2 2.784 2.784 2 3.75 2h1.5a1.75 1.75 0 0 1 1.742 1.58c.838-.06 1.667-.296 2.69-.586l.602-.17C11.748 2.419 13.497 2 15.828 2c2.188 0 3.693.204 4.583 1.372.422.554.65 1.255.816 2.05.148.708.262 1.57.396 2.58l.051.39c.319 2.386.328 4.18-.223 5.394-.293.644-.743 1.125-1.355 1.431-.59.296-1.284.404-2.036.404h-2.05l.056.429c.025.18.05.372.076.572.06.483.117 1.006.117 1.438 0 1.245-.222 2.253-.92 2.942-.684.674-1.668.879-2.743.955ZM7 5.082v7.779c.383.025.759.113 1.113.26 1.192.514 3.68 2.027 3.68 5.577v1.053c0 .436.347.734.698.71 1.021-.072 1.52-.258 1.795-.528.26-.256.473-.748.473-1.873 0-.328-.045-.768-.105-1.25l-.07-.527c-.04-.297-.079-.59-.105-.834-.082-.758.53-1.328 1.211-1.328h2.37c.625 0 1.06-.092 1.365-.245.285-.142.5-.359.66-.711.355-.78.422-2.176.102-4.574l-.05-.385c-.137-1.027-.243-1.827-.379-2.477-.152-.73-.324-1.165-.54-1.448-.386-.507-1.113-.781-3.39-.781-2.136 0-3.736.379-5.142.771-.191.052-.38.106-.568.16-1.039.296-2.059.587-3.118.651ZM3.75 3.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z" />"###
+    data: r###"<path d="M10.651 21.622a.748.748 0 0 1-.808.361l-.127-.027a3.875 3.875 0 0 1-2.879-4.97L7.473 15H6.336c-2.645 0-4.513-2.591-3.676-5.1l1.559-4.678A3.25 3.25 0 0 1 7.302 3h5.289c1.031 0 2.029.354 2.828.999A1.75 1.75 0 0 1 17 3h2.25c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 19.25 15h-4.67a.251.251 0 0 0-.217.126l-3.712 6.496ZM15.25 5.84l-.684-.598a2.999 2.999 0 0 0-1.975-.742H7.302a1.75 1.75 0 0 0-1.66 1.197l-1.559 4.677A2.375 2.375 0 0 0 6.336 13.5H8.5a.75.75 0 0 1 .714.979l-.948 2.964a2.375 2.375 0 0 0 1.373 2.927l3.422-5.988a1.749 1.749 0 0 1 1.519-.882h.67V5.84Zm1.5 7.66h2.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25H17a.25.25 0 0 0-.25.25v8.75Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8816,7 +9536,7 @@ pub static OcThumbsdownSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M7.083 15.986c-.763-.087-1.499-.295-2.011-.884-.504-.581-.655-1.378-.655-2.299 0-.468.087-1.12.157-1.638l.015-.112H3.167c-.603 0-1.174-.086-1.669-.334a2.415 2.415 0 0 1-1.136-1.2c-.454-.998-.438-2.447-.188-4.316l.04-.306C.32 4.108.41 3.424.526 2.864c.132-.63.316-1.209.669-1.672C1.947.205 3.211.053 4.917.053c1.848 0 3.234.332 4.388.652l.474.133c.658.187 1.201.341 1.726.415a1.75 1.75 0 0 1 1.662-1.2h1c.966 0 1.75.784 1.75 1.75v7.5a1.75 1.75 0 0 1-1.75 1.75h-1a1.75 1.75 0 0 1-1.514-.872c-.259.105-.59.268-.919.508-.671.491-1.317 1.285-1.317 2.614v.5c0 1.201-.994 2.336-2.334 2.183Zm4.334-13.232c-.706-.089-1.39-.284-2.072-.479l-.441-.125c-1.096-.304-2.335-.597-3.987-.597-1.794 0-2.28.222-2.529.548-.147.193-.275.505-.393 1.07-.105.502-.188 1.124-.295 1.93l-.04.3c-.25 1.882-.19 2.933.067 3.497a.923.923 0 0 0 .443.48c.208.104.52.175.997.175h1.75c.685 0 1.295.577 1.205 1.335-.022.192-.049.39-.075.586-.066.488-.13.97-.13 1.329 0 .808.144 1.15.288 1.316.137.157.401.303 1.048.377.307.035.664-.237.664-.693v-.5c0-1.922.978-3.127 1.932-3.825a5.878 5.878 0 0 1 1.568-.809Zm1.75 6.798h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25Z" />"###
+    data: r###"<path d="M7.653 15.369a.75.75 0 0 1-.776.371l-.238-.04a3.25 3.25 0 0 1-2.591-4.099L4.506 10h-.665A3.25 3.25 0 0 1 .723 5.833l1.135-3.859A2.75 2.75 0 0 1 4.482 0H9.43c.78.003 1.538.25 2.168.702A1.752 1.752 0 0 1 12.989 0h1.272A1.75 1.75 0 0 1 16 1.75v6.5A1.75 1.75 0 0 1 14.25 10h-3.417a.25.25 0 0 0-.217.127ZM11.25 2.351l-.396-.33a2.248 2.248 0 0 0-1.44-.521H4.496a1.25 1.25 0 0 0-1.199.897L2.162 6.256A1.75 1.75 0 0 0 3.841 8.5H5.5a.75.75 0 0 1 .721.956l-.731 2.558a1.75 1.75 0 0 0 1.127 2.14L9.31 9.389a1.75 1.75 0 0 1 1.523-.889h.417Zm1.5 6.149h1.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25H13a.25.25 0 0 0-.25.25Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8832,7 +9552,7 @@ pub static OcThumbsupLg: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M12.596 2.043c1.075.076 2.059.281 2.743.956.698.688.92 1.696.92 2.941 0 .432-.057.955-.117 1.438-.026.2-.051.392-.076.572l-.056.429h2.05c.752 0 1.446.108 2.036.404.612.306 1.062.787 1.355 1.431.551 1.214.542 3.008.223 5.394l-.051.39c-.134 1.01-.248 1.872-.396 2.58-.166.795-.394 1.496-.816 2.05-.89 1.168-2.395 1.372-4.583 1.372-2.331 0-4.08-.418-5.544-.824l-.602-.17c-1.023-.29-1.852-.526-2.69-.586A1.75 1.75 0 0 1 5.25 22h-1.5A1.75 1.75 0 0 1 2 20.25V9.75C2 8.784 2.784 8 3.75 8h1.5a1.75 1.75 0 0 1 1.746 1.633 1.85 1.85 0 0 0 .523-.131c.961-.415 2.774-1.534 2.774-4.2V4.249c0-1.22 1.002-2.298 2.303-2.206ZM7 18.918c1.059.064 2.079.355 3.118.652l.568.16c1.406.39 3.006.77 5.142.77 2.277 0 3.004-.274 3.39-.781.216-.283.388-.718.54-1.448.136-.65.242-1.45.379-2.477l.05-.384c.32-2.4.253-3.795-.102-4.575-.16-.352-.375-.568-.66-.711-.305-.153-.74-.245-1.365-.245h-2.37c-.681 0-1.293-.57-1.211-1.328.026-.243.065-.537.105-.834l.07-.527c.06-.482.105-.921.105-1.25 0-1.125-.213-1.617-.473-1.873-.275-.27-.774-.455-1.795-.528-.351-.024-.698.274-.698.71v1.053c0 3.55-2.488 5.063-3.68 5.577-.372.16-.754.232-1.113.26ZM3.75 20.5h1.5a.25.25 0 0 0 .25-.25V9.75a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25Z" />"###
+    data: r###"<path d="M13.349 2.378a.748.748 0 0 1 .808-.361l.127.027a3.875 3.875 0 0 1 2.879 4.97L16.527 9h1.137c2.645 0 4.513 2.591 3.676 5.1l-1.559 4.678A3.25 3.25 0 0 1 16.698 21h-5.289a4.503 4.503 0 0 1-2.828-.999A1.75 1.75 0 0 1 7 21H4.75A1.75 1.75 0 0 1 3 19.25v-8.5C3 9.784 3.784 9 4.75 9h4.67a.251.251 0 0 0 .217-.126l3.712-6.496ZM8.75 18.16l.683.598a3.003 3.003 0 0 0 1.976.742h5.289a1.75 1.75 0 0 0 1.66-1.197l1.559-4.677a2.375 2.375 0 0 0-2.253-3.126H15.5a.75.75 0 0 1-.714-.979l.948-2.964a2.375 2.375 0 0 0-1.373-2.927l-3.422 5.988a1.749 1.749 0 0 1-1.519.882h-.67v7.66Zm-1.5-7.66h-2.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25H7a.25.25 0 0 0 .25-.25V10.5Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -8848,7 +9568,7 @@ pub static OcThumbsupSm: &icondata_core::IconData = &icondata_core::IconData {
     stroke_width: None,
     stroke: None,
     fill: None,
-    data: r###"<path d="M8.834.066c.763.087 1.5.295 2.01.884.505.581.656 1.378.656 2.3 0 .467-.087 1.119-.157 1.637L11.328 5h1.422c.603 0 1.174.085 1.668.333.508.254.911.679 1.137 1.2.453.998.438 2.447.188 4.316l-.04.306c-.105.79-.195 1.473-.313 2.033-.131.63-.315 1.209-.668 1.672C13.97 15.847 12.706 16 11 16c-1.848 0-3.234-.333-4.388-.653-.165-.045-.323-.09-.475-.133-.658-.186-1.2-.34-1.725-.415A1.75 1.75 0 0 1 2.75 16h-1A1.75 1.75 0 0 1 0 14.25v-7.5C0 5.784.784 5 1.75 5h1a1.75 1.75 0 0 1 1.514.872c.258-.105.59-.268.918-.508C5.853 4.874 6.5 4.079 6.5 2.75v-.5c0-1.202.994-2.337 2.334-2.184ZM4.5 13.3c.705.088 1.39.284 2.072.478l.441.125c1.096.305 2.334.598 3.987.598 1.794 0 2.28-.223 2.528-.549.147-.193.276-.505.394-1.07.105-.502.188-1.124.295-1.93l.04-.3c.25-1.882.189-2.933-.068-3.497a.921.921 0 0 0-.442-.48c-.208-.104-.52-.174-.997-.174H11c-.686 0-1.295-.577-1.206-1.336.023-.192.05-.39.076-.586.065-.488.13-.97.13-1.328 0-.809-.144-1.15-.288-1.316-.137-.158-.402-.304-1.048-.378C8.357 1.521 8 1.793 8 2.25v.5c0 1.922-.978 3.128-1.933 3.825a5.831 5.831 0 0 1-1.567.81ZM2.75 6.5h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z" />"###
+    data: r###"<path d="M8.347.631A.75.75 0 0 1 9.123.26l.238.04a3.25 3.25 0 0 1 2.591 4.098L11.494 6h.665a3.25 3.25 0 0 1 3.118 4.167l-1.135 3.859A2.751 2.751 0 0 1 11.503 16H6.586a3.75 3.75 0 0 1-2.184-.702A1.75 1.75 0 0 1 3 16H1.75A1.75 1.75 0 0 1 0 14.25v-6.5C0 6.784.784 6 1.75 6h3.417a.25.25 0 0 0 .217-.127ZM4.75 13.649l.396.33c.404.337.914.521 1.44.521h4.917a1.25 1.25 0 0 0 1.2-.897l1.135-3.859A1.75 1.75 0 0 0 12.159 7.5H10.5a.75.75 0 0 1-.721-.956l.731-2.558a1.75 1.75 0 0 0-1.127-2.14L6.69 6.611a1.75 1.75 0 0 1-1.523.889H4.75ZM3.25 7.5h-1.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H3a.25.25 0 0 0 .25-.25Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
@@ -9174,6 +9894,22 @@ pub static OcTypographySm: &icondata_core::IconData = &icondata_core::IconData {
     stroke: None,
     fill: None,
     data: r###"<path d="M6.71 10H2.332l-.874 2.498a.75.75 0 0 1-1.415-.496l3.39-9.688a1.217 1.217 0 0 1 2.302.018l3.227 9.681a.75.75 0 0 1-1.423.474Zm3.13-4.358C10.53 4.374 11.87 4 13 4c1.5 0 3 .939 3 2.601v5.649a.75.75 0 0 1-1.448.275C13.995 12.82 13.3 13 12.5 13c-.77 0-1.514-.231-2.078-.709-.577-.488-.922-1.199-.922-2.041 0-.694.265-1.411.887-1.944C11 7.78 11.88 7.5 13 7.5h1.5v-.899c0-.54-.5-1.101-1.5-1.101-.869 0-1.528.282-1.84.858a.75.75 0 1 1-1.32-.716ZM6.21 8.5 4.574 3.594 2.857 8.5Zm8.29.5H13c-.881 0-1.375.22-1.637.444-.253.217-.363.5-.363.806 0 .408.155.697.39.896.249.21.63.354 1.11.354.732 0 1.26-.209 1.588-.449.35-.257.412-.495.412-.551Z" />"###
+};
+#[allow(non_upper_case_globals)]
+#[doc(hidden)]
+pub static OcUndoLg: &icondata_core::IconData = &icondata_core::IconData {
+    style: None,
+    x: None,
+    y: None,
+    width: Some("24"),
+    height: Some("24"),
+    view_box: Some("0 0 24 24"),
+    stroke_linecap: None,
+    stroke_linejoin: None,
+    stroke_width: None,
+    stroke: None,
+    fill: None,
+    data: r###"<path d="M9.53 2.22a.75.75 0 0 0-1.06 0L2.22 8.47a.75.75 0 0 0 0 1.06l6.25 6.25a.75.75 0 0 0 1.06-1.06L4.56 9.75H16c.797 0 2.008.245 3 .959.952.686 1.75 1.835 1.75 3.791s-.798 3.105-1.75 3.791c-.992.714-2.203.959-3 .959h-3a.75.75 0 0 0 0 1.5h3c1.037 0 2.575-.305 3.876-1.241 1.339-.964 2.374-2.565 2.374-5.009 0-2.444-1.035-4.045-2.374-5.009C18.575 8.555 17.036 8.25 16 8.25H4.56l4.97-4.97a.75.75 0 0 0 0-1.06Z" />"###
 };
 #[allow(non_upper_case_globals)]
 #[doc(hidden)]
