@@ -16,7 +16,7 @@ impl CargoToml {
         match lib_type {
             LibType::IconLib(pkg) => {
                 #[derive(Template)]
-                #[template(path = "icon_lib/Cargo.toml", escape = "none")]
+                #[template(path = "icon_lib/Cargo.template.toml", escape = "none")]
                 struct Template<'a> {
                     short_name: &'a str,
                     crate_version: String,
@@ -33,7 +33,7 @@ impl CargoToml {
 
             LibType::MainLib => {
                 #[derive(Template)]
-                #[template(path = "main_lib/Cargo.toml", escape = "none")]
+                #[template(path = "main_lib/Cargo.template.toml", escape = "none")]
                 struct Template<'a> {
                     short_name_version: Vec<(&'a str, String)>,
                     short_name_feature_name: Vec<(&'a str, String)>,
