@@ -570,7 +570,7 @@ impl PackageType {
                     },
                 },
                 download_dir: Cow::Borrowed("heroicons"),
-                svg_dir: Cow::Borrowed("src"),
+                svg_dir: Cow::Borrowed("optimized"),
                 crate_version: SemVer {
                     major: 0,
                     minor: 1,
