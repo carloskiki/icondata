@@ -10,7 +10,7 @@ codegen-units = 1
 
 [dependencies]
 leptos = { version = "0.8", features = ["csr"] }
-leptos_meta = { version = "0.8", features = ["csr"] }
+leptos_meta = "0.8"
 console_error_panic_hook = "0.1"
 console_log = "1"
 log = "0.4"
