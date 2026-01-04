@@ -1,4 +1,4 @@
-use leptos::{ev::MouseEvent, *};
+use leptos::{prelude::*, ev::MouseEvent};
 use leptos_icons::Icon;
 use web_sys::{HtmlHeadingElement, ScrollBehavior, ScrollToOptions};
 
@@ -21,7 +21,7 @@ pub fn Header() -> impl IntoView {
 
 #[component]
 pub fn HeaderLogo() -> impl IntoView {
-    let (pos, set_pos) = create_signal((0, 0));
+    let (pos, set_pos) = signal((0, 0));
     let DarkModeRw(dark_mode) = use_context::<DarkModeRw>().unwrap();
 
     let logo_animation = move |ev: MouseEvent| {
@@ -55,8 +55,9 @@ pub fn HeaderLogo() -> impl IntoView {
     };
 
     let scroll_to_top = move |_: MouseEvent| {
-        let mut options = ScrollToOptions::new();
-        options.top(0f64).behavior(ScrollBehavior::Smooth);
+        let options = ScrollToOptions::new();
+        options.set_top(0f64);
+        options.set_behavior(ScrollBehavior::Smooth);
 
         window().scroll_to_with_scroll_to_options(&options);
     };

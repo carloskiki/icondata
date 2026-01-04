@@ -1,6 +1,6 @@
 use std::collections::VecDeque;
 
-use leptos::*;
+use leptos::prelude::*;
 use leptos_icons::Icon;
 
 #[derive(Copy, Clone, Debug)]
@@ -11,7 +11,7 @@ pub struct AlertManager {
 impl AlertManager {
     pub fn new() -> AlertManager {
         Self {
-            alerts: create_rw_signal(VecDeque::new()),
+            alerts: RwSignal::new(VecDeque::new()),
         }
     }
 
@@ -49,7 +49,7 @@ impl Alert {
     fn render(&self) -> impl IntoView {
         view! {
             <div class="flex w-72 h-14 rounded-md bg-green-300 dark:bg-green-600 px-4 gap-2 justify-between items-center">
-                <p class="line-clamp-1 break-all">{&self.text}</p>
+                <p class="line-clamp-1 break-all">{self.text.clone()}</p>
                 <Icon icon=icondata::FaCircleCheckSolid width="1.5em" height="1.5em" />
             </div>
         }

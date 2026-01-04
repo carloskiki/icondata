@@ -7,8 +7,3 @@ release = true
 dist = "../site/"
 # The public URL from which assets are to be served.
 public_url = "/icondata/"
-
-[[hooks]]
-stage = "pre_build"
-command = "sh"
-command_arguments = ["-c", "npx tailwindcss -m -i input.css -o output.css"]

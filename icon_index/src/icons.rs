@@ -4,7 +4,7 @@ use std::{
 };
 
 use icon_index::ICONS;
-use leptos::{html::Main, *};
+use leptos::{html::Main, prelude::*, ev};
 use leptos_icons::Icon;
 use web_sys::MouseEvent;
 
@@ -17,9 +17,9 @@ use crate::{
 #[component]
 pub fn Icons() -> impl IntoView {
     let SearchContent(search_content) = use_context::<SearchContent>().unwrap();
-    let container_ref: NodeRef<Main> = create_node_ref();
-    let (window_size, set_window_size) = create_signal(fetch_window_size());
-    let (scroll_pos, set_scroll_pos) = create_signal(0);
+    let container_ref: NodeRef<Main> = NodeRef::new();
+    let (window_size, set_window_size) = signal(fetch_window_size());
+    let (scroll_pos, set_scroll_pos) = signal(0);
 
     // Set event listener for the resize of the window, to update the number of columns
     window_event_listener(ev::resize, move |_| {
@@ -32,7 +32,7 @@ pub fn Icons() -> impl IntoView {
         set_scroll_pos.set(scroll_y);
     });
 
-    let search_content_memo = create_memo(move |_| {
+    let search_content_memo = Memo::new(move |_| {
         search_content.get()
     });
     let filtered_search = Memo::new(move |_| {
@@ -56,7 +56,7 @@ pub fn Icons() -> impl IntoView {
 
     let skipped_items = Memo::new(move |_| scroll_pos.get() / item_size * col_count.get());
 
-    let items = create_memo(move |_| {
+    let items = move || {
         filtered_search.with(|icons: &Vec<(&str, icondata::Icon)>| {
             let end = skipped_items.get() + col_count.get() * (row_count.get() + 1);
             let show_range = (min(skipped_items.get() as usize, icons.len()))..(min(end as usize, icons.len()));
@@ -77,7 +77,7 @@ pub fn Icons() -> impl IntoView {
                 })
                 .collect_view()
         })
-    });
+    };
 
     // 0. Get rem conversion
     // 1. Get the number of columns
@@ -92,7 +92,7 @@ pub fn Icons() -> impl IntoView {
     };
 
     view! {
-        <main _ref=container_ref class="relative mx-4"
+        <main node_ref=container_ref class="relative mx-4"
             // Set the number of columns
             style=container_height
         >
@@ -134,7 +134,7 @@ pub fn IconItem(icon: icondata::Icon, name: &'static str, top: u32, left: u32) -
     let alert_manager = use_context::<AlertManager>().unwrap();
 
     let copy_name = move |_: MouseEvent| {
-        let clipboard = window().navigator().clipboard().unwrap();
+        let clipboard = window().navigator().clipboard();
         let _ = clipboard.write_text(name);
 
         let alert = Alert {
@@ -153,7 +153,7 @@ pub fn IconItem(icon: icondata::Icon, name: &'static str, top: u32, left: u32) -
             on:click=copy_name
             style=move || format!("top: {top}px; left: {left}px;")
             >
-            <Icon icon=icon width="4em" height="4em" class="group-hover:text-emphasis
+            <Icon icon=icon width="4em" height="4em" {..} class="group-hover:text-emphasis
             group-hover:dark:text-emphasis-dark transition-colors delay-75 duration-200
             ease-in-out" />
             <p class={"line-clamp-1 break-all px-1 ".to_owned() + text_size}>{move || name}</p>
