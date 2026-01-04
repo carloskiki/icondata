@@ -21,7 +21,7 @@ icondata_cg = { path = "../icondata_cg", version = "0.1.0", optional = true }
 icondata_ch = { path = "../icondata_ch", version = "0.1.0", optional = true }
 icondata_fa = { path = "../icondata_fa", version = "0.1.0", optional = true }
 icondata_fi = { path = "../icondata_fi", version = "0.1.0", optional = true }
-icondata_hi = { path = "../icondata_hi", version = "0.1.0", optional = true }
+icondata_hi = { path = "../icondata_hi", version = "0.2.0", optional = true }
 icondata_im = { path = "../icondata_im", version = "0.1.0", optional = true }
 icondata_io = { path = "../icondata_io", version = "0.1.0", optional = true }
 icondata_lu = { path = "../icondata_lu", version = "0.1.0", optional = true }
